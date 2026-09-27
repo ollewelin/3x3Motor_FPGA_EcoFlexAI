@@ -1,0 +1,111 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.1.110.2.15 
+           Compiled: Jun 21 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T20F169" ...
+           
+           ***** Beginning stage routing graph generation ... *****
+INFO     : Read ipin pattern from /home/olle/efinix/efinity/2025.1/arch/./routing/ipin_oph.xml
+INFO     : Finished parsing ipin pattern file '/home/olle/efinix/efinity/2025.1/arch/./routing/ipin_oph.xdb'.
+INFO     : Finished parsing switch_block file '/home/olle/efinix/efinity/2025.1/arch/./routing/sb_connectivity_subset.xdb'.
+INFO     : BuildGraph process took 2.99444 seconds.
+INFO     : 	BuildGraph process took 2.87 seconds (approximately) in total CPU time.
+INFO     : BuildGraph process virtual memory usage: begin = 376.972 MB, end = 567.276 MB, delta = 190.304 MB
+INFO     : BuildGraph process resident set memory usage: begin = 252.864 MB, end = 473.28 MB, delta = 220.416 MB
+INFO     : 	BuildGraph process peak resident set memory usage = 473.28 MB
+INFO     : check rr_graph process took 0.110043 seconds.
+INFO     : 	check rr_graph process took 0.11 seconds (approximately) in total CPU time.
+INFO     : check rr_graph process virtual memory usage: begin = 594.9 MB, end = 604.116 MB, delta = 9.216 MB
+INFO     : check rr_graph process resident set memory usage: begin = 500.928 MB, end = 510.144 MB, delta = 9.216 MB
+INFO     : 	check rr_graph process peak resident set memory usage = 510.144 MB
+INFO     : Generated 1178479 RR nodes and 4469847 RR edges
+INFO     : This design has 0 global control net(s). See /home/olle/efinity_p2/BRAM/outflow/BRAM.route.rpt for details.
+INFO     : Routing graph took 3.18299 seconds.
+INFO     : 	Routing graph took 3.04 seconds (approximately) in total CPU time.
+INFO     : Routing graph virtual memory usage: begin = 376.972 MB, end = 604.116 MB, delta = 227.144 MB
+INFO     : Routing graph resident set memory usage: begin = 252.224 MB, end = 510.4 MB, delta = 258.176 MB
+INFO     : 	Routing graph peak resident set memory usage = 510.4 MB
+           ***** Ending stage routing graph generation *****
+           
+           ***** Beginning stage routing ... *****
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+INFO     :  ---------      -------     --------------      -------------
+INFO     :  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+INFO     :  ---------      -------     --------------      -------------
+INFO     :          1        21597              8.815               4.03
+INFO     :          2         3009              8.474               3.64
+INFO     :          3         1398              8.474               2.54
+INFO     :          4          271              8.474               2.09
+INFO     :          5           87              8.346               1.18
+INFO     :          6           36              8.346              0.809
+INFO     :          7           14              8.346               1.47
+INFO     :          8            7               8.48              0.237
+INFO     :          9            1              8.346              0.203
+INFO     :         10            0              8.346              0.207
+           
+INFO     : Successfully routed netlist after 10 routing iterations and 50228423 heapops
+INFO     : Completed net delay value cross check successfully.
+           ***** Beginning stage routing check ... *****
+           ***** Ending stage routing check *****
+           
+INFO     : Serial number (magic cookie) for the routing is: 1903982693
+INFO     : Netlist fully routed.
+INFO     : Successfully created FPGA route file '/home/olle/efinity_p2/BRAM/outflow/BRAM.route'
+INFO     : Routing took 17.3444 seconds.
+INFO     : 	Routing took 17.51 seconds (approximately) in total CPU time.
+INFO     : Routing virtual memory usage: begin = 604.116 MB, end = 794.524 MB, delta = 190.408 MB
+INFO     : Routing resident set memory usage: begin = 510.4 MB, end = 661.44 MB, delta = 151.04 MB
+INFO     : 	Routing peak resident set memory usage = 661.44 MB
+           ***** Ending stage routing *****
+           
+           ***** Beginning stage final timing analysis ... *****
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+  pll_clk       8.502        117.619         (R-R)
+
+Geomean max period: 8.502
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+    pll_clk          pll_clk           7.000            -1.502           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+    pll_clk          pll_clk           0.000            0.119            (R-R)
+
+WARNING  : Clock domain between pll_clk (rising) and pll_clk (rising) may not meet (slack: -1.502 ns) the setup (max) timing requirement
+INFO     : Write Timing Report to "/home/olle/efinity_p2/BRAM/outflow/BRAM.timing.rpt" ...
+INFO     : final timing analysis took 0.400111 seconds.
+INFO     : 	final timing analysis took 0.42 seconds (approximately) in total CPU time.
+INFO     : final timing analysis virtual memory usage: begin = 794.524 MB, end = 794.524 MB, delta = 0 MB
+INFO     : final timing analysis resident set memory usage: begin = 661.44 MB, end = 661.952 MB, delta = 0.512 MB
+INFO     : 	final timing analysis peak resident set memory usage = 661.952 MB
+           ***** Ending stage final timing analysis *****
+           
+           ***** Beginning stage bitstream generation ... *****
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Finished writing bitstream file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.lbf.
+INFO     : Bitstream generation took 0.602533 seconds.
+INFO     : 	Bitstream generation took 0.59 seconds (approximately) in total CPU time.
+INFO     : Bitstream generation virtual memory usage: begin = 794.524 MB, end = 794.524 MB, delta = 0 MB
+INFO     : Bitstream generation resident set memory usage: begin = 661.952 MB, end = 662.72 MB, delta = 0.768 MB
+INFO     : 	Bitstream generation peak resident set memory usage = 662.72 MB
+           ***** Ending stage bitstream generation *****
+           
+INFO     : The entire flow of EFX_PNR took 37.5267 seconds.
+INFO     : 	The entire flow of EFX_PNR took 56.69 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 119.632 MB, end = 794.524 MB, delta = 674.892 MB
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 38.4 MB, end = 662.72 MB, delta = 624.32 MB
+INFO     : 	The entire flow of EFX_PNR peak resident set memory usage = 662.72 MB

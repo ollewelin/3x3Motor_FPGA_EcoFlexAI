@@ -1,0 +1,27 @@
+[2025-08-23 10:33:34] [INFO    ] EFXPGM_HOME : /home/olle/efinix/efinity/2025.1/pgm
+[2025-08-23 10:33:34] [INFO    ] EFINITY_HOME : /home/olle/efinix/efinity/2025.1
+[2025-08-23 10:33:34] [INFO    ] EFINITY_USER_DIR : /home/olle/efinity_p2/BRAM
+[2025-08-23 10:33:35] [INFO    ] Loading /home/olle/efinity_p2/BRAM/pgm/layout.ini
+[2025-08-23 10:33:35] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-23 10:33:35] [INFO    ] Sat August 23 25 10:33:35 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:35] [INFO    ] Sat August 23 25 10:33:35 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:35] [INFO    ] Sat August 23 25 10:33:35 - Switching to SPI mode because JTAG is not connected…
+[2025-08-23 10:33:40] [INFO    ] Sat August 23 25 10:33:40 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:40] [INFO    ] Sat August 23 25 10:33:40 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:43] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-23 10:33:43] [INFO    ] Sat August 23 25 10:33:43 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:43] [INFO    ] Sat August 23 25 10:33:43 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:43] [INFO    ] Sat August 23 25 10:33:43 - Switching to SPI mode because JTAG is not connected…
+[2025-08-23 10:33:46] [INFO    ] Sat August 23 25 10:33:46 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:46] [INFO    ] Sat August 23 25 10:33:46 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:33:59] [INFO    ] Sat August 23 25 10:33:59 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:34:01] [INFO    ] Sat August 23 25 10:34:01 - ERROR: The FPGA given in the bitstream file does not match the FPGA you are trying to program. Check that you are using the correct bitstream file.
+[2025-08-23 10:34:12] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-23 10:34:12] [INFO    ] Sat August 23 25 10:34:12 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:34:12] [INFO    ] Sat August 23 25 10:34:12 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:34:12] [INFO    ] Sat August 23 25 10:34:12 - Switching to SPI mode because JTAG is not connected…
+[2025-08-23 10:34:27] [INFO    ] Sat August 23 25 10:34:27 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:34:27] [INFO    ] Sat August 23 25 10:34:27 - ERROR: The FPGA given in the bitstream file does not match the FPGA you are trying to program. Check that you are using the correct bitstream file.
+[2025-08-23 10:34:31] [INFO    ] Sat August 23 25 10:34:31 - ERROR: The FPGA given in the bitstream file does not match the FPGA you are trying to program. Check that you are using the correct bitstream file.
+[2025-08-23 10:34:52] [INFO    ] Sat August 23 25 10:34:52 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 10:34:53] [INFO    ] Sat August 23 25 10:34:53 - ERROR: The FPGA given in the bitstream file does not match the FPGA you are trying to program. Check that you are using the correct bitstream file.

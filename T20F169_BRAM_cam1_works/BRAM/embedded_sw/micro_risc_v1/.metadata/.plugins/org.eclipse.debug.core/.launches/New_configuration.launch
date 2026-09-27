@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ease.launchConfigurationType">
+    <booleanAttribute key="Display dynamic code" value="false"/>
+    <stringAttribute key="File location" value=""/>
+    <stringAttribute key="Libraries" value=""/>
+    <stringAttribute key="Script engine" value=""/>
+    <stringAttribute key="Startup parameters" value=""/>
+    <booleanAttribute key="Suspend on script load" value="false"/>
+    <booleanAttribute key="Suspend on startup" value="false"/>
+</launchConfiguration>

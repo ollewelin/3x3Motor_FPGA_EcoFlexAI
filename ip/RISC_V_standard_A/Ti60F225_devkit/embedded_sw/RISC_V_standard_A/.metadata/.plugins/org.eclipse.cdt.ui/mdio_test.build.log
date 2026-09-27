@@ -1,0 +1,10 @@
+18:47:38 **** Build of configuration Default for project mdio_test ****
+make all 
+CC src/mdio_test.c
+CC ../common/start.S
+LD mdio_test
+Memory region         Used Size  Region Size  %age Used
+             ram:       93472 B       124 KB     73.61%
+
+18:47:39 Build Finished. 0 errors, 0 warnings. (took 575ms)
+

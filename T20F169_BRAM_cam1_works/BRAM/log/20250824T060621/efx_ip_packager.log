@@ -1,0 +1,220 @@
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x79c5c199a440>
+[2025-08-24 08:11:34] [INFO    ] [common.efinity_grpc_watcher] [id-1756015893] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:11:34] [INFO    ] [logger] [id-1756015893] IP Packager has started running
+[2025-08-24 08:11:34] [INFO    ] [logger] [id-1756015893] Initializing IP Packager Window...
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x79c5c199b5b0>
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:11:34] [INFO    ] [common.console] [id-1756015893] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x79c5c18d16c0>
+[2025-08-24 08:11:34] [INFO    ] [logger] [id-1756015893] Packager connections setup done.
+[2025-08-24 08:14:58] [INFO    ] [ip_packager.model.gui_config_model] [id-1756015893] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 08:14:58] [INFO    ] [common.console] [id-1756015893] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 08:15:07] [INFO    ] [common.console] [id-1756015893] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-24 08:17:22] [INFO    ] [ip_packager.model.gui_config_model] [id-1756015893] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 08:17:22] [INFO    ] [common.console] [id-1756015893] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 08:17:24] [INFO    ] [common.console] [id-1756015893] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-24 08:26:12] [INFO    ] [logger] [id-1756015893] IP Packager Window has closed
+[2025-08-24 08:26:12] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x79c5c18d16c0>
+[2025-08-24 08:26:12] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:26:13] [INFO    ] [common.console] [id-1756015893] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:26:13] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x79c5c199b5b0>
+[2025-08-24 08:26:13] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:26:13] [INFO    ] [common.console] [id-1756015893] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:26:13] [INFO    ] [common.console] [id-1756015893] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:26:13] [INFO    ] [common.efinity_grpc_watcher] [id-1756015893] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:26:13] [INFO    ] [common.efinity_grpc_watcher] [id-1756015893] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:26:13] [INFO    ] [common.efinity_grpc_watcher] [id-1756015893] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:26:14] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x79c5c199a440>
+[2025-08-24 08:26:14] [INFO    ] [common.console] [id-1756015893] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:26:14] [INFO    ] [common.console] [id-1756015893] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:26:14] [INFO    ] [common.console] [id-1756015893] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:26:14] [INFO    ] [common.console] [id-1756015893] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7b2481796440>
+[2025-08-24 08:29:30] [INFO    ] [logger] [id-1756016969] IP Packager has started running
+[2025-08-24 08:29:30] [INFO    ] [logger] [id-1756016969] Initializing IP Packager Window...
+[2025-08-24 08:29:30] [INFO    ] [common.efinity_grpc_watcher] [id-1756016969] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7b24817975b0>
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:29:30] [INFO    ] [logger] [id-1756016969] Packager connections setup done.
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:29:30] [INFO    ] [common.console] [id-1756016969] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7b24813cd6c0>
+[2025-08-24 08:30:12] [INFO    ] [ip_packager.model.gui_config_model] [id-1756016969] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 08:30:12] [INFO    ] [common.console] [id-1756016969] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 08:30:14] [INFO    ] [common.console] [id-1756016969] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-24 08:31:03] [INFO    ] [logger] [id-1756016969] IP Packager Window has closed
+[2025-08-24 08:31:03] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7b24813cd6c0>
+[2025-08-24 08:31:03] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:31:03] [INFO    ] [common.console] [id-1756016969] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:31:03] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7b24817975b0>
+[2025-08-24 08:31:03] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:31:04] [INFO    ] [common.console] [id-1756016969] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:31:04] [INFO    ] [common.console] [id-1756016969] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:31:04] [INFO    ] [common.efinity_grpc_watcher] [id-1756016969] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:31:04] [INFO    ] [common.efinity_grpc_watcher] [id-1756016969] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:31:04] [INFO    ] [common.efinity_grpc_watcher] [id-1756016969] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:31:04] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7b2481796440>
+[2025-08-24 08:31:04] [INFO    ] [common.console] [id-1756016969] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:31:05] [INFO    ] [common.console] [id-1756016969] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:31:05] [INFO    ] [common.console] [id-1756016969] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x791711f96440>
+[2025-08-24 08:34:30] [INFO    ] [logger] [id-1756017269] IP Packager has started running
+[2025-08-24 08:34:30] [INFO    ] [logger] [id-1756017269] Initializing IP Packager Window...
+[2025-08-24 08:34:30] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x791711f975b0>
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:34:30] [INFO    ] [logger] [id-1756017269] Packager connections setup done.
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:34:30] [INFO    ] [common.console] [id-1756017269] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x791711bcd6c0>
+[2025-08-24 08:45:29] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 08:56:12] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 08:57:59] [INFO    ] [ip_packager.model.gui_config_model] [id-1756017269] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 08:57:59] [INFO    ] [common.console] [id-1756017269] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 08:58:01] [INFO    ] [common.console] [id-1756017269] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-24 08:58:05] [INFO    ] [ip_packager.model.gui_config_model] [id-1756017269] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 08:58:05] [INFO    ] [common.console] [id-1756017269] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 08:58:07] [INFO    ] [common.console] [id-1756017269] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-24 08:58:10] [INFO    ] [logger] [id-1756017269] IP Packager Window has closed
+[2025-08-24 08:58:10] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x791711bcd6c0>
+[2025-08-24 08:58:10] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:58:10] [INFO    ] [common.console] [id-1756017269] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:58:10] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x791711f975b0>
+[2025-08-24 08:58:10] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:58:11] [INFO    ] [common.console] [id-1756017269] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:58:11] [INFO    ] [common.console] [id-1756017269] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:58:11] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:58:11] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:58:11] [INFO    ] [common.efinity_grpc_watcher] [id-1756017269] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:58:11] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x791711f96440>
+[2025-08-24 08:58:11] [INFO    ] [common.console] [id-1756017269] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:58:12] [INFO    ] [common.console] [id-1756017269] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:58:12] [INFO    ] [common.console] [id-1756017269] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:58:12] [INFO    ] [common.console] [id-1756017269] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7374fbd9a440>
+[2025-08-24 09:00:10] [INFO    ] [logger] [id-1756018809] IP Packager has started running
+[2025-08-24 09:00:10] [INFO    ] [logger] [id-1756018809] Initializing IP Packager Window...
+[2025-08-24 09:00:10] [INFO    ] [common.efinity_grpc_watcher] [id-1756018809] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7374fbd9b640>
+[2025-08-24 09:00:10] [INFO    ] [logger] [id-1756018809] Packager connections setup done.
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 09:00:10] [INFO    ] [common.console] [id-1756018809] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7374fbcd16c0>
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Efinix FPGA Synthesis.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Version: 2025.1.110.2.15
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Compiled: Jun 21 2025.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : 
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] 
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+[2025-08-24 09:00:52] [WARNING ] [ip_packager.utility.scanner] [id-1756018809] WARNING  : Include dir 'ip/micro_risc_v1' does not exist and will be skipped. [EFX-0017]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : ***** Beginning Analysis ... *****
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : default VHDL library search path is now "/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/top_level.vhd' [VHDL-1481]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Restoring VHDL unit 'ieee.std_logic_1164' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/std_logic_1164.vdb' [VHDL-1493]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Restoring VHDL unit 'std.standard' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/standard.vdb' [VHDL-1493]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Restoring VHDL unit 'std.textio' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' [VHDL-1493]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Restoring VHDL unit 'ieee.numeric_std' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/numeric_std.vdb' [VHDL-1493]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(6): analyzing entity 'top_level' [VHDL-1012]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(48): analyzing architecture 'behavior' [VHDL-1010]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd' [VHDL-1481]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(5): analyzing entity 'rmii_udp_tx_top' [VHDL-1012]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(14): analyzing architecture 'rtl' [VHDL-1010]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/efx_csi2/source_efinity/efx_csi2_rx.sv' [VERI-1482]
+[2025-08-24 09:00:52] [WARNING ] [ip_packager.utility.scanner] [id-1756018809] WARNING  : /home/olle/efinity_p2/BRAM/ip/efx_csi2/source_efinity/efx_csi2_rx.sv(6): use of undefined macro 'IP_MODULE_NAME' [VERI-1158]
+[2025-08-24 09:00:52] [ERROR   ] [ip_packager.utility.scanner] [id-1756018809] ERROR    : /home/olle/efinity_p2/BRAM/ip/efx_csi2/source_efinity/efx_csi2_rx.sv(6): syntax error near '(' [VERI-1137]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Verilog file '/home/olle/efinity_p2/BRAM/ip/efx_csi2/source_efinity/efx_csi2_rx.sv' ignored due to errors [VERI-1483]
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analysis took 0.0725832 seconds.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : 	Analysis took 0.06 seconds (approximately) in total CPU time.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analysis virtual memory usage: begin = 124.56 MB, end = 128.656 MB, delta = 4.096 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : Analysis resident set memory usage: begin = 71.808 MB, end = 76.672 MB, delta = 4.864 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : 	Analysis peak resident set memory usage = 138.116 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : ***** Ending Analysis ... *****
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : The entire flow of EFX_MAP took 0.830756 seconds.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : 	The entire flow of EFX_MAP took 0.75 seconds (approximately) in total CPU time.
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 88.4 MB, end = 128.656 MB, delta = 40.256 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 27.264 MB, end = 76.672 MB, delta = 49.408 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] INFO     : 	The entire flow of EFX_MAP peak resident set memory usage = 138.116 MB
+[2025-08-24 09:00:52] [INFO    ] [ip_packager.utility.scanner] [id-1756018809] 
+[2025-08-24 09:07:28] [INFO    ] [common.efinity_grpc_watcher] [id-1756018809] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 09:10:06] [INFO    ] [ip_packager.model.gui_config_model] [id-1756018809] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json
+[2025-08-24 09:10:06] [INFO    ] [ip_packager.model.gui_config_model] [id-1756018809] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 09:10:06] [INFO    ] [common.console] [id-1756018809] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml
+[2025-08-24 09:10:55] [INFO    ] [common.console] [id-1756018809] IP Packaging Successful. The IP has been successfully packaged and archived.
+[2025-08-24 09:10:56] [INFO    ] [ip_packager.model.gui_config_model] [id-1756018809] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-24 09:10:56] [INFO    ] [common.console] [id-1756018809] File Successfully Generated At 
+ /home/olle/efinity_p2/BRAM/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-24 09:52:27] [INFO    ] [logger] [id-1756018809] IP Packager Window has closed
+[2025-08-24 09:52:27] [INFO    ] [common.efinity_grpc_watcher] [id-1756018809] [WATCHER-RUN] Received Exit from efinity
+[2025-08-24 09:52:27] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7374fbcd16c0>
+[2025-08-24 09:52:27] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7374fbd9b640>
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 09:52:28] [INFO    ] [common.console] [id-1756018809] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 10:02:03] [INFO    ] [common.efinity_grpc_watcher] [id-1756018809] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 10:02:03] [INFO    ] [common.efinity_grpc_watcher] [id-1756018809] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 10:02:03] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7374fbd9a440>
+[2025-08-24 10:02:03] [INFO    ] [common.console] [id-1756018809] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 10:02:04] [INFO    ] [common.console] [id-1756018809] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish

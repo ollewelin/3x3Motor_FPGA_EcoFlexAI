@@ -1,0 +1,36 @@
+--ramHex "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/generator/bootloader/bootloader_124K.hex"
+--withRiscvDebugPriv
+--PeripheralClock false
+--iCacheSize 4096
+--ddrAEnable true
+--ddrAAxi4
+--dCacheSize 4096
+--Fpu false
+--uart name=system_uart_0_io,address=0x010000,interruptId=1,fifoDepth=128
+--cpuCount 1
+--hardwareBreakpoints 0
+--iCacheWays 1
+--Linux false
+--onChipRamSize 0x20000
+--L1D true
+--ddrADataWidth 128
+--L1I true
+--axiAEnable true
+--ddrMaster name=io_ddrMasters_0,dataWidth=32
+--i2c name=system_i2c_0_io,address=0x016000,interruptId=8
+--apbSlave name=io_apbSlave_0,address=0x100000,size=65536
+--onChipRamAddress 0xf9000000
+--softTap false
+--systemFrequency 50000000
+--ddrASize 0x08000000
+--spi name=system_spi_0_io,address=0x014000,interruptId=4,width=8,ssCount=1,fifoDepth=256
+--ddrAIdWidth 8
+--apbBridgeAddress 0xf8000000
+--dCacheWays 1
+--interrupt name=userInterruptA,id=16
+--customInstruction false
+--axiAAddress 0x09000000
+--axiASize 0x8000000
+--FpuDouble false
+--Atomic false
+--gpio name=system_gpio_0_io,address=0x015000,width=4,interrupts="0->12;1->13"

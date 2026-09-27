@@ -1,0 +1,579 @@
+================================================================================
+GPIO MAPPINGS FOR T120F324_A.peri.xml
+================================================================================
+
+UART DEBUG CONSOLE (HIGH PRIORITY):
+------------------------------------
+
+UART_TX (fpga_uart_tx):
+   Signal Name: fpga_uart_tx
+   GPIO Def: GPIOB_TXP02  (or XB2)
+   BGA Pin: P10
+   Direction: OUTPUT
+   Purpose: UART TX (from Sapphire RISC-V @ 115200 baud)
+
+UART_RX (fpga_uart_rx):
+   Signal Name: fpga_uart_rx
+   GPIO Def: GPIOB_TXP03  (or XB3)
+   BGA Pin: N10
+   Direction: INPUT
+   Purpose: UART RX (to Sapphire RISC-V @ 115200 baud)
+
+NON-DDRAM GPIO ENTRIES (add these next):
+----------------------------------------
+
+1. ADC_2_DIN
+   Original: ADC_2_DIN
+   GPIO: GPIOB_TXN00
+   BGA Pin: R17
+
+2. ADC_3_DIN
+   Original: ADC_3_DIN
+   GPIO: GPIOB_TXN02
+   BGA Pin: P18
+
+3. M1_SSCS
+   Original: M1-SSCS
+   GPIO: GPIOB_TXN10
+   BGA Pin: U12
+
+4. M3_SSCS
+   Original: M3-SSCS
+   GPIO: GPIOB_TXN11
+   BGA Pin: T12
+
+5. MX_SCLK
+   Original: MX-SCLK
+   GPIO: GPIOB_TXN12
+   BGA Pin: N12
+
+6. MX_MISO_SDO
+   Original: MX-MISO-SDO
+   GPIO: GPIOB_TXN19
+   BGA Pin: R9
+
+7. M2_SSCS
+   Original: M2-SSCS
+   GPIO: GPIOB_TXP10
+   BGA Pin: V12
+
+8. MX_ENABLE
+   Original: MX-ENABLE
+   GPIO: GPIOB_TXP11
+   BGA Pin: R12
+
+9. MX_MOSI_SDI
+   Original: MX-MOSI-SDI
+   GPIO: GPIOB_TXP12
+   BGA Pin: P12
+
+10. MX_NFAULT
+   Original: MX-NFAULT
+   GPIO: GPIOB_TXP19
+   BGA Pin: T9
+
+11. DC_M1_IN1
+   Original: DC_M1_IN1
+   GPIO: GPIOL_17_EXTFB0
+   BGA Pin: L15
+
+12. ADC_3_DOUT
+   Original: ADC_3_DOUT
+   GPIO: GPIOL_62_CTRL0
+   BGA Pin: K16
+
+13. ADC_1_DIN
+   Original: ADC_1_DIN
+   GPIO: GPIOL_63_CTRL1
+   BGA Pin: K15
+
+14. ENC1A
+   Original: ENC1A
+   GPIO: GPIOL_75_CTRL5
+   BGA Pin: G13
+
+15. ENC1B
+   Original: ENC1B
+   GPIO: GPIOR_173_CTRL12
+   BGA Pin: G5
+
+16. ENC2A
+   Original: ENC2A
+   GPIO: GPIOR_183_CTRL10
+   BGA Pin: K6
+
+17. M2_INHC
+   Original: M2-INHC
+   GPIO: GPIOT_RXN01
+   BGA Pin: C13
+
+18. M2_INHB
+   Original: M2-INHB
+   GPIO: GPIOT_RXN02
+   BGA Pin: D16
+
+19. M2_INHA
+   Original: M2-INHA
+   GPIO: GPIOT_RXN03
+   BGA Pin: C11
+
+20. M1_INHC
+   Original: M1-INHC
+   GPIO: GPIOT_RXN04
+   BGA Pin: E15
+
+21. M1_INHB
+   Original: M1-INHB
+   GPIO: GPIOT_RXN05
+   BGA Pin: E14
+
+22. XB25
+   Original: XB25
+   GPIO: GPIOT_RXN06
+   BGA Pin: D12
+
+23. DC_M2_IN1
+   Original: DC_M2_IN1
+   GPIO: GPIOT_RXN07
+   BGA Pin: F13
+
+24. DC_M3_IN1
+   Original: DC_M3_IN1
+   GPIO: GPIOT_RXN08_EXTFB0
+   BGA Pin: F11
+
+25. DC_M4_IN1
+   Original: DC_M4_IN1
+   GPIO: GPIOT_RXN09_CLKN0
+   BGA Pin: F16
+
+26. M1_INHA
+   Original: M1-INHA
+   GPIO: GPIOT_RXN11
+   BGA Pin: H17
+
+27. ADC_SHDN
+   Original: ADC_SHDN
+   GPIO: GPIOT_RXN12
+   BGA Pin: H16
+
+28. ADC_2_DOUT
+   Original: ADC_2_DOUT
+   GPIO: GPIOT_RXN13
+   BGA Pin: H15
+
+29. XB24
+   Original: XB24
+   GPIO: GPIOT_RXN14
+   BGA Pin: F14
+
+30. M3_INLB
+   Original: M3-INLB
+   GPIO: GPIOT_RXN15
+   BGA Pin: E17
+
+31. M3_INHB
+   Original: M3-INHB
+   GPIO: GPIOT_RXN16
+   BGA Pin: E18
+
+32. M3_INHA
+   Original: M3-INHA
+   GPIO: GPIOT_RXN17
+   BGA Pin: G18
+
+33. RXP19_CLK_N
+   Original: RXP19_CLK_N
+   GPIO: GPIOT_RXN19_CLKN1
+   BGA Pin: B17
+
+34. ENC3A
+   Original: ENC3A
+   GPIO: GPIOT_RXN20
+   BGA Pin: A16
+
+35. M1_HALL_A
+   Original: M1-HALL-A
+   GPIO: GPIOT_RXN21
+   BGA Pin: A15
+
+36. M1_HALL_C
+   Original: M1-HALL-C
+   GPIO: GPIOT_RXN22
+   BGA Pin: A14
+
+37. M2_HALL_B
+   Original: M2-HALL-B
+   GPIO: GPIOT_RXN23
+   BGA Pin: A13
+
+38. M3_HALL_A
+   Original: M3-HALL-A
+   GPIO: GPIOT_RXN24
+   BGA Pin: B12
+
+39. M3_HALL_C
+   Original: M3-HALL-C
+   GPIO: GPIOT_RXN27
+   BGA Pin: B11
+
+40. GYRO_CS_2
+   Original: GYRO-CS-2
+   GPIO: GPIOT_RXN28_EXTFB2
+   BGA Pin: B10
+
+41. M2_INLC
+   Original: M2-INLC
+   GPIO: GPIOT_RXP01
+   BGA Pin: D13
+
+42. M2_INLB
+   Original: M2-INLB
+   GPIO: GPIOT_RXP02
+   BGA Pin: C16
+
+43. M2_INLA
+   Original: M2-INLA
+   GPIO: GPIOT_RXP03
+   BGA Pin: D11
+
+44. M1_INLC
+   Original: M1-INLC
+   GPIO: GPIOT_RXP04
+   BGA Pin: D15
+
+45. M1_INLB
+   Original: M1-INLB
+   GPIO: GPIOT_RXP05
+   BGA Pin: D14
+
+46. DC_M1_IN2
+   Original: DC_M1_IN2
+   GPIO: GPIOT_RXP06
+   BGA Pin: E12
+
+47. DC_M2_IN2
+   Original: DC_M2_IN2
+   GPIO: GPIOT_RXP07
+   BGA Pin: E13
+
+48. DC_M3_IN2
+   Original: DC_M3_IN2
+   GPIO: GPIOT_RXP08_EXTFB0
+   BGA Pin: E11
+
+49. DC_M4_IN2
+   Original: DC_M4_IN2
+   GPIO: GPIOT_RXP09_CLKP0
+   BGA Pin: E16
+
+50. M1_INLA
+   Original: M1-INLA
+   GPIO: GPIOT_RXP11
+   BGA Pin: G17
+
+51. ADC_CLK
+   Original: ADC_CLK
+   GPIO: GPIOT_RXP12
+   BGA Pin: G16
+
+52. ADC_1_DOUT
+   Original: ADC_1_DOUT
+   GPIO: GPIOT_RXP13
+   BGA Pin: G15
+
+53. XB23
+   Original: XB23
+   GPIO: GPIOT_RXP14
+   BGA Pin: G14
+
+54. M3_INLA
+   Original: M3-INLA
+   GPIO: GPIOT_RXP17
+   BGA Pin: H18
+
+55. RXP19_CLK_P
+   Original: RXP19_CLK_P
+   GPIO: GPIOT_RXP19_CLKP1
+   BGA Pin: A17
+
+56. ENC2B
+   Original: ENC2B
+   GPIO: GPIOT_RXP20
+   BGA Pin: B16
+
+57. ENC3B
+   Original: ENC3B
+   GPIO: GPIOT_RXP21
+   BGA Pin: B15
+
+58. M1_HALL_B
+   Original: M1-HALL-B
+   GPIO: GPIOT_RXP22
+   BGA Pin: B14
+
+59. M2_HALL_A
+   Original: M2-HALL-A
+   GPIO: GPIOT_RXP23
+   BGA Pin: B13
+
+60. M2_HALL_C
+   Original: M2-HALL-C
+   GPIO: GPIOT_RXP24
+   BGA Pin: A12
+
+61. M3_HALL_B
+   Original: M3-HALL-B
+   GPIO: GPIOT_RXP27
+   BGA Pin: A11
+
+62. GYRO_CS_1
+   Original: GYRO-CS-1
+   GPIO: GPIOT_RXP28_EXTFB2
+   BGA Pin: A10
+
+63. GYRO_CS_3
+   Original: GYRO-CS-3
+   GPIO: GPIOT_RXP29_CLKP2
+   BGA Pin: B9
+
+
+================================================================================
+DDRAM GPIO ENTRIES (add these last):
+----------------------------------------
+
+
+================================================================================
+SKIPPED PINS:
+----------------------------------------
+
+  A1: GND - power/internal net
+  A18: GND - power/internal net
+  A9: $1I324958\CAM3_EN - power/internal net
+  C10: 3.3V - power/internal net
+  C12: GND - power/internal net
+  C14: 3.3V - power/internal net
+  C15: GND - power/internal net
+  C17: 3.3V - power/internal net
+  C3: GND - power/internal net
+  C7: GND - power/internal net
+  C8: GND - power/internal net
+  C9: $1N329769 - power/internal net
+  D10: GND - power/internal net
+  D17: $1I324958\CAM2_EN - power/internal net
+  D18: $1I324958\DDR3_PGOOD - power/internal net
+  D4: $1I324958\CAM3_D0_P - power/internal net
+  D5: $1I324958\CAM2_D0_N - power/internal net
+  D8: $1I324958\CAM2_D1_N - power/internal net
+  D9: $1N329771 - power/internal net
+  E10: 3.3V - power/internal net
+  E4: $1I324958\CAM3_D0_N - power/internal net
+  E5: $1I324958\CAM2_D0_P - power/internal net
+  E8: $1I324958\CAM2_D1_P - power/internal net
+  E9: M3-INLC - reserved GPIO: GPIOR_168_PLLIN2
+  F1: $1I324958\CAM3_CLK_N - power/internal net
+  F10: $1I324958\$1N149398 - power/internal net
+  F15: 3.3V - power/internal net
+  F17: GND - power/internal net
+  F18: 3.3V - power/internal net
+  F2: GND - power/internal net
+  F3: $1I324958\CAM3_D1_P - power/internal net
+  F4: GND - power/internal net
+  F5: $1I324958\CAM2_CLK_N - power/internal net
+  F6: $1I324958\CAM2_CLK_P - power/internal net
+  G1: $1I324958\CAM3_CLK_P - power/internal net
+  G10: 1.2V - power/internal net
+  G11: GND - power/internal net
+  G12: 1.2V - power/internal net
+  G3: $1I324958\CAM3_D1_N - power/internal net
+  G4: $1I324958\DQ15 - power/internal net
+  G6: $1I324958\F2-EXT_CLK - power/internal net
+  G7: GND - power/internal net
+  G8: 1.2V - power/internal net
+  G9: GND - power/internal net
+  H1: GND - power/internal net
+  H10: GND - power/internal net
+  H11: 1.2V - power/internal net
+  H12: GND - power/internal net
+  H13: $1I324958\$1N159698 - power/internal net
+  H14: $1I324958\$1N159687 - power/internal net
+  H4: $1I324958\DQ13 - power/internal net
+  H5: $1I324958\LPDDR3_DM1 - power/internal net
+  H6: $1I324958\F2-RXC - power/internal net
+  H7: 1.2V - power/internal net
+  H8: GND - power/internal net
+  H9: 1.2V - power/internal net
+  J1: $1I324958\DQ8 - power/internal net
+  J10: 1.2V - power/internal net
+  J11: GND - power/internal net
+  J12: 1.2V - power/internal net
+  J13: 3.3V - power/internal net
+  J14: $1I324958\T120_NSTATUS - power/internal net
+  J15: $1I324958\T120_TEST - power/internal net
+  J16: GND - power/internal net
+  J17: $1I324958\T120_CBSEL0 - power/internal net
+  J18: $1I324958\T120_CBSEL1 - power/internal net
+  J2: 1.2V - power/internal net
+  J3: $1I324958\DQ10 - power/internal net
+  J4: $1I324958\DQ12 - power/internal net
+  J5: $1I324958\DQ14 - power/internal net
+  J6: 3.3V - power/internal net
+  J7: GND - power/internal net
+  J8: 1.2V - power/internal net
+  J9: GND - power/internal net
+  K1: $1I324958\DQ6 - power/internal net
+  K10: GND - power/internal net
+  K11: 1.2V - power/internal net
+  K12: GND - power/internal net
+  K13: 3.3V - power/internal net
+  K14: $1I324958\T120_CDI2 - power/internal net
+  K17: $1I324958\T120_GCLK - power/internal net
+  K18: $1I324958\T120_CDI3 - power/internal net
+  K2: $1I324958\DQ9 - power/internal net
+  K3: $1I324958\DQ11 - power/internal net
+  K4: 1.2V - power/internal net
+  K5: $1I324958\DQS1_P - power/internal net
+  K7: 1.2V - power/internal net
+  K8: GND - power/internal net
+  K9: 1.2V - power/internal net
+  L1: $1I324958\LPDDR3_DM0 - power/internal net
+  L10: 1.2V - power/internal net
+  L11: GND - power/internal net
+  L12: 1.2V - power/internal net
+  L13: 3.3V - power/internal net
+  L14: $1I324958\T120_PLLIN0 - power/internal net
+  L16: $1N329791 - power/internal net
+  L17: $1N329787 - power/internal net
+  L18: $1N329785 - power/internal net
+  L2: 1.2V - power/internal net
+  L3: $1I324958\DQ5 - power/internal net
+  L4: $1I324958\DQ7 - power/internal net
+  L5: $1I324958\DQS1_N - power/internal net
+  L6: 1.2V - power/internal net
+  L7: GND - power/internal net
+  L8: 1.2V - power/internal net
+  L9: GND - power/internal net
+  M1: GND - power/internal net
+  M10: GND - power/internal net
+  M11: 1.2V - power/internal net
+  M12: GND - power/internal net
+  M13: $1I324958\T120_CDI0 - power/internal net
+  M14: $1I324958\T120_CBUS0 - power/internal net
+  M15: $1I324958\EEPROM_SDA - power/internal net
+  M16: $1I324958\T120_CBUS1 - power/internal net
+  M17: $1I324958\T120_CBUS2 - power/internal net
+  M18: $1N329783 - power/internal net
+  M2: $1I324958\DQ3 - power/internal net
+  M3: $1I324958\DQS0_P - power/internal net
+  M4: $1I324958\DQ4 - power/internal net
+  M5: GND - power/internal net
+  M6: $1I324958\VTTREF - power/internal net
+  M7: 1.2V - power/internal net
+  M8: GND - power/internal net
+  M9: 1.2V - power/internal net
+  N1: $1I324958\DQ2 - power/internal net
+  N10: $1N329755 - power/internal net
+  N11: $1N329751 - power/internal net
+  N13: $1I324958\T120_CCK - power/internal net
+  N14: $1I324958\T120_CDI1 - power/internal net
+  N15: $1I324958\EEPROM_SCL - power/internal net
+  N16: GND - power/internal net
+  N18: $1I324958\T120_CONDONE - power/internal net
+  N2: $1I324958\DQ1 - power/internal net
+  N3: $1I324958\DQS0_N - power/internal net
+  N4: $1I324958\DQ0 - power/internal net
+  N5: $1I324958\$1N181082 - power/internal net
+  N6: $1I324958\LPDDR3_MEM_CS_N - power/internal net
+  N7: $1I324958\LPDDR3_MEM_CKE - power/internal net
+  N9: $1N329759 - power/internal net
+  P1: $1I324958\LPDDR3_MEM_CLK_P - power/internal net
+  P10: $1N329753 - power/internal net
+  P11: $1N329749 - power/internal net
+  P13: $1I324958\CAM2_SDA - power/internal net
+  P14: $1I324958\F2-TXC - power/internal net
+  P15: $1I324958\T120_SS - power/internal net
+  P16: $1I324958\T120_TMS - power/internal net
+  P17: $1I324958\T120_TDO - power/internal net
+  P2: 1.2V - power/internal net
+  P3: $1I324958\LPDDR3_CA0 - power/internal net
+  P4: $1I324958\LPDDR3_CA1 - power/internal net
+  P5: 1.2V - power/internal net
+  P6: $1I324958\LPDDR3_CA3 - power/internal net
+  P7: GND - power/internal net
+  P9: $1N329757 - power/internal net
+  R1: $1I324958\LPDDR3_MEM_CLK_N - power/internal net
+  R10: GND - power/internal net
+  R11: 3.3V - power/internal net
+  R13: $1I324958\CAM2_SCL - power/internal net
+  R14: $1I324958\F2-RXD3 - power/internal net
+  R15: $1I324958\F2-MDIO - power/internal net
+  R16: $1I324958\T120_TDI - power/internal net
+  R18: $1I324958\F2-INTB - power/internal net
+  R2: GND - power/internal net
+  R3: $1I324958\LPDDR3_CA5 - power/internal net
+  R4: GND - power/internal net
+  R5: $1I324958\DUM_BA_2 - power/internal net
+  R6: $1I324958\LPDDR3_CA2 - power/internal net
+  R7: $1I324958\LPDDR3_CA6 - power/internal net
+  R8: M3-INHC - reserved GPIO: GPIOR_188_PLLIN2
+  T1: $1I324958\LPDDR3_CA4 - power/internal net
+  T10: 3.3V - power/internal net
+  T11: $1N329765 - power/internal net
+  T13: GND - power/internal net
+  T14: 3.3V - power/internal net
+  T15: $1I324958\F2-TXD3 - power/internal net
+  T16: $1I324958\T120_TCK - power/internal net
+  T17: $1I324958\F2-RSTB - power/internal net
+  T18: $1I324958\F2-MDC - power/internal net
+  T2: $1I324958\DUM_RST - power/internal net
+  T3: $1I324958\LPDDR3_CA9 - power/internal net
+  T4: $1I324958\LPDDR3_CA8 - power/internal net
+  T5: $1I324958\DUM_BA_0 - power/internal net
+  T7: 1.2V - power/internal net
+  T8: $1N329773 - power/internal net
+  U1: $1I324958\LPDDR3_MEM_ODT - power/internal net
+  U10: $1N329763 - power/internal net
+  U11: $1N329767 - power/internal net
+  U13: $1I324958\F2-RXD0 - power/internal net
+  U14: $1I324958\F2-RXD2 - power/internal net
+  U15: $1I324958\F2-TXD0 - power/internal net
+  U16: $1I324958\F2-TXD2 - power/internal net
+  U17: 3.3V - power/internal net
+  U18: $1I324958\DDR_VTT_EN - power/internal net
+  U2: 1.2V - power/internal net
+  U3: $1I324958\DUM_BA_1 - power/internal net
+  U4: $1I324958\DUM_WE - power/internal net
+  U5: 1.2V - power/internal net
+  U8: $1N329775 - power/internal net
+  U9: $1N329777 - power/internal net
+  V1: GND - power/internal net
+  V10: $1N329761 - power/internal net
+  V11: $1I324958\$1N148787 - power/internal net
+  V13: $1I324958\F2-RXCTL - power/internal net
+  V14: $1I324958\F2-RXD1 - power/internal net
+  V15: $1I324958\F2-TXCTL - power/internal net
+  V16: $1I324958\F2-TXD1 - power/internal net
+  V17: $1I324958\$1N240613 - power/internal net
+  V18: GND - power/internal net
+  V2: $1I324958\DUM_CAS - power/internal net
+  V3: $1I324958\DUM_RAS - power/internal net
+  V4: GND - power/internal net
+  V8: $1I324958\LPDDR3_CA7 - power/internal net
+  V9: $1N329779 - power/internal net
+
+================================================================================
+PINS WITHOUT GPIO MAPPING:
+----------------------------------------
+
+  C2: 1.2VA_MIPI_T1
+  C4: 2.5VA_MIPI_T1
+  C5: 1.2VA_MIPI_T1
+  C6: 1.2VA_MIPI_T1
+  D7: 2.5VA_MIPI_T1
+  F12: 1.2VA_PLL_T1
+  F8: 1.2VA_PLL_T1
+  F9: 1.2VA_PLL_T1
+  H3: 1.2VA_MIPI_T1
+  N17: T120_CRESET_N
+  N8: 1.2VA_PLL_T1
+  P8: 1.2VA_PLL_T1

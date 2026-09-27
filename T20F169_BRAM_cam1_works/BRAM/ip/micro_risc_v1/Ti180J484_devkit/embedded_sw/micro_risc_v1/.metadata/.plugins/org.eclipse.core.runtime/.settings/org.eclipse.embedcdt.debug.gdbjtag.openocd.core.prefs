@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+gdb.client.commands=set mem inaccessible-by-default off\nset arch riscv\:rv32\nset remotetimeout 250
+gdb.client.doStart=true
+gdb.client.executable=${eclipse_home}/../toolchain/bin/riscv-none-embed-gdb
+gdb.client.other=
+gdb.openocd.doDebugInRam=true
+gdb.openocd.doInitialReset=true
+gdb.openocd.doPreRunReset=false
+gdb.openocd.enableSemihosting=true
+gdb.openocd.init.other=
+gdb.openocd.initialReset.type=init
+gdb.openocd.preRun.other=
+gdb.openocd.preRunReset.type=halt
+gdb.server.doStart=true
+gdb.server.executable=${eclipse_home}/../openocd/bin/openocd
+gdb.server.other=-f '/home/olle/openocd/olle_ftdi_wrap.cfg'\n-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'

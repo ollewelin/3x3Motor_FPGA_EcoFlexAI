@@ -1,0 +1,89 @@
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb996440>
+[2025-08-23 16:36:11] [INFO    ] [logger] [id-1755959771] IP Packager has started running
+[2025-08-23 16:36:11] [INFO    ] [logger] [id-1755959771] Initializing IP Packager Window...
+[2025-08-23 16:36:11] [INFO    ] [common.efinity_grpc_watcher] [id-1755959771] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb9975b0>
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:36:11] [INFO    ] [common.console] [id-1755959771] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb5cd6c0>
+[2025-08-23 16:36:11] [INFO    ] [logger] [id-1755959771] Packager connections setup done.
+[2025-08-23 16:36:30] [INFO    ] [logger] [id-1755959771] IP Packager Window has closed
+[2025-08-23 16:36:30] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb5cd6c0>
+[2025-08-23 16:36:30] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:36:30] [INFO    ] [common.console] [id-1755959771] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:36:30] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb9975b0>
+[2025-08-23 16:36:30] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:36:31] [INFO    ] [common.console] [id-1755959771] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:36:31] [INFO    ] [common.console] [id-1755959771] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 16:36:31] [INFO    ] [common.efinity_grpc_watcher] [id-1755959771] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 16:36:31] [INFO    ] [common.efinity_grpc_watcher] [id-1755959771] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 16:36:31] [INFO    ] [common.efinity_grpc_watcher] [id-1755959771] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 16:36:31] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7ab3eb996440>
+[2025-08-23 16:36:31] [INFO    ] [common.console] [id-1755959771] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:36:32] [INFO    ] [common.console] [id-1755959771] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:36:32] [INFO    ] [common.console] [id-1755959771] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 16:36:32] [INFO    ] [common.console] [id-1755959771] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x716c68b96440>
+[2025-08-23 16:59:32] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:59:32] [INFO    ] [logger] [id-1755961171] IP Packager has started running
+[2025-08-23 16:59:32] [INFO    ] [logger] [id-1755961171] Initializing IP Packager Window...
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x716c68b97640>
+[2025-08-23 16:59:32] [INFO    ] [logger] [id-1755961171] Packager connections setup done.
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:59:32] [INFO    ] [common.console] [id-1755961171] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x716c687cd6c0>
+[2025-08-23 17:13:47] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:17:25] [INFO    ] [ip_packager.model.gui_config_model] [id-1755961171] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-23 17:17:25] [INFO    ] [common.console] [id-1755961171] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-23 17:17:31] [INFO    ] [common.console] [id-1755961171] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-23 17:18:57] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:28:12] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:28:52] [INFO    ] [logger] [id-1755961171] IP Packager Window has closed
+[2025-08-23 17:28:52] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x716c687cd6c0>
+[2025-08-23 17:28:52] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:28:53] [INFO    ] [common.console] [id-1755961171] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:28:53] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x716c68b97640>
+[2025-08-23 17:28:53] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:28:53] [INFO    ] [common.console] [id-1755961171] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:28:53] [INFO    ] [common.console] [id-1755961171] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 17:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 17:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 17:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1755961171] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 17:28:54] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x716c68b96440>
+[2025-08-23 17:28:54] [INFO    ] [common.console] [id-1755961171] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:28:54] [INFO    ] [common.console] [id-1755961171] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:28:54] [INFO    ] [common.console] [id-1755961171] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7101eb396440>
+[2025-08-23 17:30:12] [INFO    ] [logger] [id-1755963011] IP Packager has started running
+[2025-08-23 17:30:12] [INFO    ] [logger] [id-1755963011] Initializing IP Packager Window...
+[2025-08-23 17:30:12] [INFO    ] [common.efinity_grpc_watcher] [id-1755963011] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7101eb3975b0>
+[2025-08-23 17:30:12] [INFO    ] [logger] [id-1755963011] Packager connections setup done.
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:30:12] [INFO    ] [common.console] [id-1755963011] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7101eafcd6c0>
+[2025-08-23 17:31:37] [INFO    ] [common.efinity_grpc_watcher] [id-1755963011] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:37:56] [INFO    ] [ip_packager.model.gui_config_model] [id-1755963011] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_tx/ipm/gui/config_template.json.tmp
+[2025-08-23 17:37:56] [INFO    ] [common.console] [id-1755963011] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_tx/ipm/ip_component.xml.tmp
+[2025-08-23 17:37:58] [INFO    ] [common.console] [id-1755963011] IP Packaging Save Successful. The IP has been successfully saved.
+[2025-08-23 17:38:48] [INFO    ] [ip_packager.model.gui_config_model] [id-1755963011] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/gui/config_template.json.tmp
+[2025-08-23 17:38:48] [INFO    ] [common.console] [id-1755963011] File Successfully Generated At 
+ /home/olle/efinix/efinity/2025.1/ipm/ip/efx_csi2/efx_csi2_rx/ipm/ip_component.xml.tmp
+[2025-08-23 17:38:49] [INFO    ] [common.console] [id-1755963011] IP Packaging Save Successful. The IP has been successfully saved.

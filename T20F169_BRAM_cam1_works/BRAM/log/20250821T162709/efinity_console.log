@@ -1,0 +1,19 @@
+Thu August 21 25 18:27:12 - Starting Efinity IP Manager RPC Service...
+
+Thu August 21 25 18:27:16 - IP Manager RPC Server Connected.
+
+DEBUG    : Initialising Efx::ConcurrencyControl with 4 threads [Debug]
+
+INFO     : --max_threads set to 4 
+
+Thu August 21 25 18:28:23 - Project loaded VM : 550.604 MB RSS : 225.62 MB
+
+Thu August 21 25 18:28:36 - Running Efinity Debugger...
+
+Error in running process. Process crash.
+Thu August 21 25 18:29:15 - Efinity Debugger finished. Exit code = 6 Exit status : Crash
+
+Thu August 21 25 18:29:17 - Running Efinity Debugger...
+
+Thu August 21 25 18:50:19 - Running Efinity Debugger...
+

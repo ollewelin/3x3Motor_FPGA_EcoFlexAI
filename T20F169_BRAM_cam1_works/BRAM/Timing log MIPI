@@ -1,0 +1,13 @@
+T_hs_seattle 130ns Bad
+T_hs_seattle 120ns OK
+T_hs_seattle 110ns OK
+T_hs_seattle 100ns Bad (change reset logic)
+
+CAM0 140ns T_clk and 110ns T_hs ERROR 0x000C0
+CAM0 150ns T_clk and 110ns T_hs slightly better 4 package in a row then 140_110  ERROR 0x000C0
+CAM0 170ns T_clk and 110ns T_hs slightly better 4 package in a row then 170_110  ERROR 0x000C0 sometimes ERROR 0x00040 seems to be best
+Clock Timer
+T_clk_settle (ns)                       : 180
+
+Data Timer
+T_hs_settle (ns)                        : 110

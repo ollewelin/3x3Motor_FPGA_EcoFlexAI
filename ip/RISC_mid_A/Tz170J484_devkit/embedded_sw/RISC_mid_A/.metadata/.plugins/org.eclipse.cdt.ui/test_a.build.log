@@ -1,0 +1,10 @@
+19:44:40 **** Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+CC ../common/start.S
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:        4432 B       124 KB      3.49%
+
+19:44:40 Build Finished. 0 errors, 0 warnings. (took 379ms)
+

@@ -1,0 +1,13 @@
+riscv-none-embed-objcopy -O verilog --verilog-data-width=32 --verilog-init-addr=0x0 \
+        uartEchoDemo.elf uartEchoDemo.mem
+
+
+# one-off for this terminal
+export PATH=$PATH:/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin
+
+# or make it permanent – append the same line to ~/.bashrc
+echo 'export PATH=$PATH:/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin' >> ~/.bashrc
+source ~/.bashrc
+
+        
+riscv-none-embed-objcopy -O verilog uartEchoDemo.elf uartEchoDemo.mem

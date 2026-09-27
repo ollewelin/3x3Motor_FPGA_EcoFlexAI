@@ -1,0 +1,70 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Sat Aug 30 15:34:10 2025
+[*]
+[dumpfile] "/tmp/tmpr1s47i82/la0tmp_continous.vcd"
+[dumpfile_mtime] "Sat Aug 30 15:33:23 2025"
+[dumpfile_size] 84817
+[savefile] "/home/olle/efinity_p2/BRAM/la0_waveform1.gtkw"
+[timestart] 0
+[size] 1920 1043
+[pos] -1 -1
+*-8.000000 566 50 1074 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 402
+[sst_expanded] 1
+[sst_vpaned_height] 298
+@22
+top.rst_n
+top.led4_OUT
+top.div[25:0]
+top.u_cam_ctrl/cam_setup_cnt
+top.u_cam_ctrl/done
+top.u_cam_ctrl/want_mux_byte[7:0]
+top.u_cam_ctrl/mux_val[7:0]
+top.u_cam_ctrl/mux_ok
+top.u_cam_ctrl/rst_n
+top.u_cam_ctrl/mst_num_bytes[7:0]
+top.u_cam_ctrl/i2c_busy
+@23
+top.u_cam_ctrl/mst_data_out_valid
+@22
+top.u_cam_ctrl/mst_read
+top.u_cam_ctrl/mst_write_done
+top.u_cam_ctrl/mst_command_byte[7:0]
+top.u_cam_ctrl/i2c_soft_rst
+top.u_cam_ctrl/mst_write
+top.u_cam_ctrl/i2c_slave_addr[7:0]
+top.FPGA_IO0_A2
+top.i2c_scl_line
+top.cam_i2c_done
+top.io_asyncReset_sig
+top.I2C_SDA_OUT
+top.cam_setup_cnt
+top.FPGA_IO0_A0
+top.I2C_SCL_OE
+top.FPGA_IO0_A1
+top.i2c_busy
+top.CAM0_EN
+top.I2C_SCL_OUT
+top.IO12_manual_reset_n
+top.I2C_SCL_IN
+top.I2C_SDA_IN
+top.I2C_SDA_OE
+top.CAM1_EN
+top.u_cam_ctrl/state[4:0]
+top.u_cam_ctrl/mst_data_out[31:0]
+top.u_cam_ctrl/mst_din[31:0]
+top.u_cam_ctrl/cam_idx
+top.u_cam_ctrl/to_cnt[30:0]
+top.u_cam_ctrl/sr_cnt[30:0]
+top.div[0]
+top.div[5]
+top.div[2]
+top.div[6]
+top.div[3]
+top.div[7]
+top.div[4]
+top.div[1]
+[pattern_trace] 1
+[pattern_trace] 0

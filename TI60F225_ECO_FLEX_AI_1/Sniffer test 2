@@ -1,0 +1,16 @@
+(base) olle@olle-SSD-256:~$ sudo tcpdump -i enp2s0 'udp port 5000' -xx -c 2
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp2s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+20:42:17.256337 IP 192.168.1.200.5000 > 255.255.255.255.5000: UDP, length 1472
+	0x0000:  ffff ffff ffff a8a0 a1a2 a3a4 0800 4500
+	0x0010:  05dc 0000 4000 4011 72a1 c0a8 01c8 ffff
+	0x0020:  ffff 1388 1388 05c8 0000 debf 3f0e 7ca7
+	0x0030:  be3c be3c 323b 005f ffff e200 00fc aaaa
+	0x0040:  aaaa aaaa aaaa aaaa aaaa debf 3f0e 7ca7
+	0x0050:  be3c be3c 323b 005f ffff 0200 00fc aaaa
+	0x0060:  aaaa aaaa aaaa aaaa aaaa debf 3f0e 7ca7
+	0x0070:  be3c be3c 323b 005f ffff 2200 00fc aaaa
+	0x0080:  aaaa aaaa aaaa aaaa aaaa debf 3f0e 7ca7
+	0x0090:  be3c be3c 323b 005f ffff 4200 00fc aaaa
+	0x00a0:  aaaa aaaa aaaa aaaa aaaa debf 3f0e 7ca7
+	0x00b0:  be3c be3c 323b 005f ffff 6200 00fc aaaa

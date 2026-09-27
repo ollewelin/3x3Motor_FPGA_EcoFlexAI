@@ -1,0 +1,1069 @@
+{
+    "debug_cores": [
+        {
+            "name": "la0",
+            "type": "la",
+            "uuid": "0704182fe9344ac696edba0aa50b0cc2",
+            "trigin_en": false,
+            "trigout_en": false,
+            "auto_inserted": true,
+            "capture_control": true,
+            "data_depth": 512,
+            "input_pipeline": 1,
+            "probes": [
+                {
+                    "name": "CAM4_CLK_CLKOUT",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "CAM4_CLK_LP_P_IN",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "CAM4_D0_RST",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "CAM4_CLK_HS_ENA",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_csi2_rx/datatype",
+                    "width": 6,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_csi2_rx/pixel_data",
+                    "width": 64,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_csi2_rx/pixel_per_clk",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_csi2_rx/pixel_data_valid",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_csi2_rx/mipi_debug_out",
+                    "width": 32,
+                    "probe_type": 1
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "command": "add_ports",
+            "id": 1,
+            "args": {
+                "netlist": "top_level",
+                "ports": [
+                    {
+                        "name": "jtag_inst2_CAPTURE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_DRCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RESET",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RUNTEST",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SEL",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SHIFT",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDI",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TMS",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_UPDATE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDO",
+                        "dir": "out",
+                        "width": 1
+                    }
+                ]
+            }
+        },
+        {
+            "command": "instantiate",
+            "netlist": "edb_top",
+            "id": 2,
+            "instance": "edb_top_inst"
+        },
+        {
+            "command": "connect",
+            "id": 3,
+            "args": {
+                "instance": "edb_top_inst",
+                "ports": [
+                    {
+                        "name": "bscan_CAPTURE",
+                        "net": "jtag_inst2_CAPTURE"
+                    },
+                    {
+                        "name": "bscan_DRCK",
+                        "net": "jtag_inst2_DRCK"
+                    },
+                    {
+                        "name": "bscan_RESET",
+                        "net": "jtag_inst2_RESET"
+                    },
+                    {
+                        "name": "bscan_RUNTEST",
+                        "net": "jtag_inst2_RUNTEST"
+                    },
+                    {
+                        "name": "bscan_SEL",
+                        "net": "jtag_inst2_SEL"
+                    },
+                    {
+                        "name": "bscan_SHIFT",
+                        "net": "jtag_inst2_SHIFT"
+                    },
+                    {
+                        "name": "bscan_TCK",
+                        "net": "jtag_inst2_TCK"
+                    },
+                    {
+                        "name": "bscan_TDI",
+                        "net": "jtag_inst2_TDI"
+                    },
+                    {
+                        "name": "bscan_TMS",
+                        "net": "jtag_inst2_TMS"
+                    },
+                    {
+                        "name": "bscan_UPDATE",
+                        "net": "jtag_inst2_UPDATE"
+                    },
+                    {
+                        "name": "bscan_TDO",
+                        "net": "jtag_inst2_TDO"
+                    },
+                    {
+                        "name": "la0_clk",
+                        "net": "PLL_125MHZ",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe0",
+                        "net": "CAM4_CLK_CLKOUT",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe1",
+                        "net": "CAM4_CLK_LP_P_IN",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe2",
+                        "net": "CAM4_D0_RST",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe3",
+                        "net": "CAM4_CLK_HS_ENA",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe4[0]",
+                        "net": "datatype[0]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[1]",
+                        "net": "datatype[1]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[2]",
+                        "net": "datatype[2]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[3]",
+                        "net": "datatype[3]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[4]",
+                        "net": "datatype[4]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4[5]",
+                        "net": "datatype[5]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[0]",
+                        "net": "pixel_data[0]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[1]",
+                        "net": "pixel_data[1]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[2]",
+                        "net": "pixel_data[2]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[3]",
+                        "net": "pixel_data[3]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[4]",
+                        "net": "pixel_data[4]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[5]",
+                        "net": "pixel_data[5]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[6]",
+                        "net": "pixel_data[6]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[7]",
+                        "net": "pixel_data[7]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[8]",
+                        "net": "pixel_data[8]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[9]",
+                        "net": "pixel_data[9]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[10]",
+                        "net": "pixel_data[10]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[11]",
+                        "net": "pixel_data[11]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[12]",
+                        "net": "pixel_data[12]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[13]",
+                        "net": "pixel_data[13]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[14]",
+                        "net": "pixel_data[14]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[15]",
+                        "net": "pixel_data[15]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[16]",
+                        "net": "pixel_data[16]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[17]",
+                        "net": "pixel_data[17]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[18]",
+                        "net": "pixel_data[18]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[19]",
+                        "net": "pixel_data[19]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[20]",
+                        "net": "pixel_data[20]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[21]",
+                        "net": "pixel_data[21]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[22]",
+                        "net": "pixel_data[22]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[23]",
+                        "net": "pixel_data[23]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[24]",
+                        "net": "pixel_data[24]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[25]",
+                        "net": "pixel_data[25]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[26]",
+                        "net": "pixel_data[26]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[27]",
+                        "net": "pixel_data[27]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[28]",
+                        "net": "pixel_data[28]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[29]",
+                        "net": "pixel_data[29]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[30]",
+                        "net": "pixel_data[30]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[31]",
+                        "net": "pixel_data[31]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[32]",
+                        "net": "pixel_data[32]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[33]",
+                        "net": "pixel_data[33]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[34]",
+                        "net": "pixel_data[34]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[35]",
+                        "net": "pixel_data[35]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[36]",
+                        "net": "pixel_data[36]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[37]",
+                        "net": "pixel_data[37]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[38]",
+                        "net": "pixel_data[38]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[39]",
+                        "net": "pixel_data[39]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[40]",
+                        "net": "pixel_data[40]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[41]",
+                        "net": "pixel_data[41]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[42]",
+                        "net": "pixel_data[42]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[43]",
+                        "net": "pixel_data[43]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[44]",
+                        "net": "pixel_data[44]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[45]",
+                        "net": "pixel_data[45]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[46]",
+                        "net": "pixel_data[46]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[47]",
+                        "net": "pixel_data[47]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[48]",
+                        "net": "pixel_data[48]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[49]",
+                        "net": "pixel_data[49]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[50]",
+                        "net": "pixel_data[50]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[51]",
+                        "net": "pixel_data[51]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[52]",
+                        "net": "pixel_data[52]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[53]",
+                        "net": "pixel_data[53]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[54]",
+                        "net": "pixel_data[54]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[55]",
+                        "net": "pixel_data[55]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[56]",
+                        "net": "pixel_data[56]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[57]",
+                        "net": "pixel_data[57]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[58]",
+                        "net": "pixel_data[58]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[59]",
+                        "net": "pixel_data[59]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[60]",
+                        "net": "pixel_data[60]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[61]",
+                        "net": "pixel_data[61]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[62]",
+                        "net": "pixel_data[62]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5[63]",
+                        "net": "pixel_data[63]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[0]",
+                        "net": "pixel_per_clk[0]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[1]",
+                        "net": "pixel_per_clk[1]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[2]",
+                        "net": "pixel_per_clk[2]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6[3]",
+                        "net": "pixel_per_clk[3]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7",
+                        "net": "pixel_data_valid",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[0]",
+                        "net": "mipi_debug_out[0]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[1]",
+                        "net": "mipi_debug_out[1]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[2]",
+                        "net": "mipi_debug_out[2]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[3]",
+                        "net": "mipi_debug_out[3]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[4]",
+                        "net": "mipi_debug_out[4]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[5]",
+                        "net": "mipi_debug_out[5]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[6]",
+                        "net": "mipi_debug_out[6]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[7]",
+                        "net": "mipi_debug_out[7]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[8]",
+                        "net": "mipi_debug_out[8]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[9]",
+                        "net": "mipi_debug_out[9]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[10]",
+                        "net": "mipi_debug_out[10]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[11]",
+                        "net": "mipi_debug_out[11]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[12]",
+                        "net": "mipi_debug_out[12]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[13]",
+                        "net": "mipi_debug_out[13]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[14]",
+                        "net": "mipi_debug_out[14]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[15]",
+                        "net": "mipi_debug_out[15]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[16]",
+                        "net": "mipi_debug_out[16]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[17]",
+                        "net": "mipi_debug_out[17]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[18]",
+                        "net": "mipi_debug_out[18]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[19]",
+                        "net": "mipi_debug_out[19]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[20]",
+                        "net": "mipi_debug_out[20]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[21]",
+                        "net": "mipi_debug_out[21]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[22]",
+                        "net": "mipi_debug_out[22]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[23]",
+                        "net": "mipi_debug_out[23]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[24]",
+                        "net": "mipi_debug_out[24]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[25]",
+                        "net": "mipi_debug_out[25]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[26]",
+                        "net": "mipi_debug_out[26]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[27]",
+                        "net": "mipi_debug_out[27]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[28]",
+                        "net": "mipi_debug_out[28]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[29]",
+                        "net": "mipi_debug_out[29]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[30]",
+                        "net": "mipi_debug_out[30]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[31]",
+                        "net": "mipi_debug_out[31]",
+                        "path": [
+                            "u_csi2_rx"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "vdbs": [
+        {
+            "file": "debug_top.post.vdb",
+            "instance": "edb_top_inst"
+        }
+    ],
+    "session": {
+        "wizard": {
+            "data_depth": 512,
+            "capture_control": true,
+            "selected_nets": [
+                {
+                    "name": "CAM4_CLK_CLKOUT",
+                    "width": 1,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "CAM4_CLK_LP_P_IN",
+                    "width": 1,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "CAM4_D0_RST",
+                    "width": 1,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "CAM4_CLK_HS_ENA",
+                    "width": 1,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "datatype",
+                    "width": 6,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_csi2_rx"
+                    ],
+                    "net_idx_left": 5,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "pixel_data",
+                    "width": 64,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_csi2_rx"
+                    ],
+                    "net_idx_left": 63,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "pixel_per_clk",
+                    "width": 4,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_csi2_rx"
+                    ],
+                    "net_idx_left": 3,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "pixel_data_valid",
+                    "width": 1,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_csi2_rx"
+                    ]
+                },
+                {
+                    "name": "mipi_debug_out",
+                    "width": 32,
+                    "clk_domain": "PLL_125MHZ",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_csi2_rx"
+                    ],
+                    "net_idx_left": 31,
+                    "net_idx_right": 0
+                }
+            ],
+            "top_module": "top_level",
+            "src": "elaborate",
+            "jtag_user": "USER2",
+            "input_pipeline": 1
+        }
+    }
+}

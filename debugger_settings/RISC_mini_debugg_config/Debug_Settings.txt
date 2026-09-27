@@ -1,0 +1,45 @@
+Whole Project root path:
+/home/olle/efinity_p2/BRAM/T120F324_A/
+
+
+RISC-V Eclips IDE settings:
+Debugger configuration panel settings:
+OpenOCD Setup:
+Excecutable path:
+${eclipse_home}/../openocd/bin/openocd
+~/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE
+Actual executable:
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd
+
+GDB port: 3333
+Telnet port: 4444
+Tcl port: 6666
+
+-c 'set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini}'
+-c 'set STANDARD_DEBUG 0'
+-c 'set FTDI_DEVICE_DESC {Dual RS232-HS}'
+-f '/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg'
+-f '/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+GDB Client setup
+Excecutable name:
+${eclipse_home}/../toolchain/bin/riscv-none-embed-gdb
+Actual excecutable:
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb
+
+Commands:
+set mem inaccessible-by-default off
+set arch riscv:rv32
+set remotetimeout 250
+
+Register file:
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/bsp/efinix/EfxSapphireSoc/openocd/sapphire_soc_32bit-reg.xml
+
+Restore known-good OpenOCD configs
+---------------------------------
+If the BSP or SoC files are regenerated and overwrite the openocd configs, restore these known-good files by running from the repo root:
+
+  bash debugger_settings/RISC_mini_debugg_config/restore_openocd_cfgs.sh
+
+This script backs up existing files in the BSP openocd directory and copies in the local copies from this folder.
+

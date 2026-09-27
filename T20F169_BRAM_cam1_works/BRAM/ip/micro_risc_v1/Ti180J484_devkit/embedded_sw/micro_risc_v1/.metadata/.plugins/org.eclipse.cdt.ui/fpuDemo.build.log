@@ -1,0 +1,5 @@
+22:56:46 **** Clean-only build of configuration Default for project fpuDemo ****
+make clean 
+
+22:56:47 Build Finished. 0 errors, 0 warnings. (took 282ms)
+

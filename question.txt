@@ -1,0 +1,79 @@
+Analyzer/second_8_byte_flip_order.tim
+Analyzer/logic_analyzer_focus.py
+record_video.sv
+Show strange flip order of data
+The first 8 bytes after line_wr_done pulse
+show that data from
+mipi_cam2_data [63:0] = 0x6459726165616F56
+at 4036 ns
+from code
+record_video.sv
+// Wait for first valid RAW8/RAW10 data = new frame start.
+// Alarms are cleared in pre-case section above.
+LC_WAIT_DATA: begin //lc_st = 1
+if (valid && good_dt && cnt > 4'd0) begin
+                // Capture first beat
+                for (int b = 0; b < PIXELS_PER_BEAT; b++) begin
+                    if (16'(b) < 16'(WIDTH_PIX)) begin
+                        if (!line_sel)
+                            line_ram_A[16'(b)] <= data64[b*8 +: 8];
+                        else
+                            line_ram_B[16'(b)] <= data64[b*8 +: 8];
+                    end
+                end
+                lc_px       <= {12'b0, cnt};
+                lc_wr_px    <= 16'(PIXELS_PER_BEAT);
+                lc_gap      <= '0;
+                lc_line_idx <= '0;
+                line_sel    <= 1'b0;   // always start from buffer A
+                frame_start <= 1'b1;
+                lc_st       <= LC_CAP_LINE;
+            end
+        end
+This come in same order at MSB first    vid_d[7:0]  in time last in time LSB to    vid_d[7:0] 
+time
+4096ns
+vid_d[7:0] = 
+0x64, 0x59, 0x72, 0x61 and so on 
+then the strange happen and the second 8 byte this switch order from fisrt the LSB byte than last the MSB byte 
+Now the secodn word from 
+mipi_cam2_data [63:0] = 0x6851645C695b6357
+at time 4037ns into ram
+put out later 
+in opposite order
+Fisrt LSB from 
+mipi_cam2_data [63:0] = 0x6851645C695b6357
+0x57,0x63,0x5b and so on from time
+4112nS
+from this code
+       LC_CAP_LINE: begin //lc_st = 2
+            // --- hsync timeout -> restart, set alarm ---
+            if (hsync_timeout_cnt >= 32'(HSYNC_TIMEOUT_CYCLES)) begin
+                hsync_timeout_alarm <= 1'b1;
+                lc_px       <= '0;
+                lc_wr_px    <= '0;
+                lc_gap      <= '0;
+                lc_line_idx <= '0;
+                line_sel    <= 1'b0;
+                lc_st       <= LC_WAIT_DATA;
+            end else begin
+                // Capture incoming RAW8 pixels
+                if (valid && good_dt && cnt > 4'd0) begin
+                    if (lc_px < 16'(WIDTH_PIX)) begin
+                        for (int b = 0; b < PIXELS_PER_BEAT; b++) begin
+                            if (lc_wr_px + 16'(b) < 16'(WIDTH_PIX)) begin
+                                if (!line_sel)
+                                    line_ram_A[lc_wr_px + 16'(b)] <= data64[b*8 +: 8];
+                                else
+                                    line_ram_B[lc_wr_px + 16'(b)] <= data64[b*8 +: 8];
+                            end
+                        end
+                        lc_px    <= lc_px    + {12'b0, cnt};
+                        lc_wr_px <= lc_wr_px + 16'(PIXELS_PER_BEAT);
+                    end
+                    lc_gap <= '0;
+                end else begin
+                    if (lc_gap < 16'(GAP_MIN_CYCLES))
+                        lc_gap <= lc_gap + 1;
+                end
+    Do you see any logic for this bahviour it should be fixed if there is an logic explanantion in code

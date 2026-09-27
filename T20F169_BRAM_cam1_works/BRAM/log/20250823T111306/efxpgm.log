@@ -1,0 +1,55 @@
+[2025-08-23 13:13:58] [INFO    ] EFXPGM_HOME : /home/olle/efinix/efinity/2025.1/pgm
+[2025-08-23 13:13:58] [INFO    ] EFINITY_HOME : /home/olle/efinix/efinity/2025.1
+[2025-08-23 13:13:58] [INFO    ] EFINITY_USER_DIR : /home/olle/efinity_p2/BRAM
+[2025-08-23 13:13:58] [INFO    ] Loading /home/olle/efinity_p2/BRAM/pgm/layout.ini
+[2025-08-23 13:13:58] [INFO    ] usb_target_list =  []
+[2025-08-23 13:14:01] [INFO    ] usb_target_list =  []
+[2025-08-23 13:14:08] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-23 13:14:09] [INFO    ] Sat August 23 25 13:14:09 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:09] [INFO    ] Sat August 23 25 13:14:09 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:09] [INFO    ] Sat August 23 25 13:14:09 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:09] [INFO    ] Sat August 23 25 13:14:09 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:09] [INFO    ] Sat August 23 25 13:14:09 - Valid device ID found: 0x00210A79
+[2025-08-23 13:14:26] [INFO    ] Sat August 23 25 13:14:26 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - Valid device ID found: 0x00210A79
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - jtag programming started!
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-23 13:14:28] [INFO    ] Sat August 23 25 13:14:28 - Programming '/home/olle/efinity_p2/BRAM (3rd copy)/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-23 13:14:29] [INFO    ] Sat August 23 25 13:14:29 - Device ID read from JTAG: 0x00210A79
+[2025-08-23 13:14:31] [INFO    ] Sat August 23 25 13:14:31 - ... finished with JTAG programming
+[2025-08-23 13:14:32] [INFO    ] Sat August 23 25 13:14:32 - Detecting device status...
+[2025-08-23 13:14:35] [INFO    ] Sat August 23 25 13:14:35 - Device is in user mode!
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - Valid device ID found: 0x00210A79
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - jtag programming started!
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - Programming '/home/olle/efinity_p2/BRAM (3rd copy)/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-23 13:14:46] [INFO    ] Sat August 23 25 13:14:46 - Device ID read from JTAG: 0x00210A79
+[2025-08-23 13:14:49] [INFO    ] Sat August 23 25 13:14:49 - ... finished with JTAG programming
+[2025-08-23 13:14:49] [INFO    ] Sat August 23 25 13:14:49 - Detecting device status...
+[2025-08-23 13:14:52] [INFO    ] Sat August 23 25 13:14:52 - Device is in user mode!
+[2025-08-23 13:15:04] [INFO    ] Sat August 23 25 13:15:04 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - Valid device ID found: 0x00210A79
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - jtag programming started!
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-23 13:15:06] [INFO    ] Sat August 23 25 13:15:06 - Programming '/home/olle/efinity_p2/BRAM (3rd copy)stuck RISC-V after ETH send/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-23 13:15:07] [INFO    ] Sat August 23 25 13:15:07 - Device ID read from JTAG: 0x00210A79
+[2025-08-23 13:15:09] [INFO    ] Sat August 23 25 13:15:09 - ... finished with JTAG programming
+[2025-08-23 13:15:10] [INFO    ] Sat August 23 25 13:15:10 - Detecting device status...
+[2025-08-23 13:15:13] [INFO    ] Sat August 23 25 13:15:13 - Device is in user mode!
+[2025-08-23 13:16:02] [INFO    ] Sat August 23 25 13:16:02 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - Valid device ID found: 0x00210A79
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - jtag programming started!
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - Programming '/home/olle/efinity_p2/BRAM (3rd copy) to small payload data/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-23 13:16:04] [INFO    ] Sat August 23 25 13:16:04 - Device ID read from JTAG: 0x00210A79
+[2025-08-23 13:16:07] [INFO    ] Sat August 23 25 13:16:07 - ... finished with JTAG programming
+[2025-08-23 13:16:07] [INFO    ] Sat August 23 25 13:16:07 - Detecting device status...
+[2025-08-23 13:16:10] [INFO    ] Sat August 23 25 13:16:10 - Device is in user mode!

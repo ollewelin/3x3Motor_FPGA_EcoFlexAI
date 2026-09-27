@@ -1,0 +1,60 @@
+{
+    "config": {
+        "legacy_mode": false,
+        "fast_spi_active_mode": false,
+        "creset_before_jtag_config": false,
+        "hw_servers": [],
+        "codebug_mode": false
+    },
+    "debugger": {
+        "always_launch_new_wave_window": false,
+        "gtkwave_repperiod": 500
+    },
+    "programmer": {},
+    "svf_player": {},
+    "connections": {
+        "": {
+            "00210a79": {
+                "recent_hex": [
+                    "/home/olle/efinity_p2/BRAM/outflow/BRAM.hex",
+                    "/home/olle/efinity_p2/BRAM/outflow/BRAM.bit"
+                ],
+                "recent_bit": [
+                    "/home/olle/efinity_p2/BRAM (3rd copy) to small payload data/outflow/BRAM.bit",
+                    "/home/olle/efinity_p2/BRAM (3rd copy)stuck RISC-V after ETH send/outflow/BRAM.bit",
+                    "/home/olle/efinity_p2/BRAM (3rd copy)/outflow/BRAM.bit",
+                    "/home/olle/efinity_p2/BRAM/outflow/BRAM.bit"
+                ],
+                "last_mode_used": "JTAG",
+                "flash_loader_filepath": {
+                    "spiloader": "",
+                    "spiloader_x8": "",
+                    "jtag2spiv3": "${EFINITY_HOME}/pgm/fli/trion/u00210A79_t20.bit",
+                    "jtag2spiv3_x8": ""
+                }
+            },
+            "00000000": {
+                "recent_hex": [],
+                "recent_bit": [],
+                "last_mode_used": "",
+                "flash_loader_filepath": {
+                    "spiloader": "",
+                    "spiloader_x8": "",
+                    "jtag2spiv3": "",
+                    "jtag2spiv3_x8": ""
+                }
+            },
+            "ffffffff": {
+                "recent_hex": [],
+                "recent_bit": [],
+                "last_mode_used": "",
+                "flash_loader_filepath": {
+                    "spiloader": "",
+                    "spiloader_x8": "",
+                    "jtag2spiv3": "",
+                    "jtag2spiv3_x8": ""
+                }
+            }
+        }
+    }
+}

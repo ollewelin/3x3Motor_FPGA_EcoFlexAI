@@ -1,0 +1,24 @@
+# Build output directories
+outflow/
+work_syn/
+work_pnr/
+work_pt/
+work_dbg/
+rom/
+__pycache__/
+*.pyc
+
+# RISC-V build artifacts
+embedded_sw/RISC_mini/software/standalone/test_b/build/
+embedded_sw/RISC_mini/.metadata/
+
+# Large temporary / PDF / backup files
+*.pdf
+*.zip
+*.tar.gz
+*.bin
+*.vdb
+*.place
+*.route
+*.asc
+*.tim

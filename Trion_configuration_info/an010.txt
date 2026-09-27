@@ -1,0 +1,570 @@
+AN 010: Using the Internal
+Reconfiguration Feature
+to Update Efinix FPGAs
+Remotely
+AN010-v2.5
+August 2024
+www.efinixinc.com
+
+Copyright © 2024. All rights reserved. Efinix, the Efinix logo, the Titanium logo, Quantum, Trion, and Efinity are trademarks of Efinix, Inc. All other
+trademarks and service marks are the property of their respective owners. All specifications subject to change without notice.
+
+Contents
+Introduction..................................................................................................................................... 3
+Planning for Remote Update.......................................................................................................... 4
+Dual-Purpose Configuration Pin Requirement................................................................................4
+Building the Golden Design............................................................................................................6
+Enable the Internal Reconfiguration Interface...................................................................................... 6
+Internal Reconfiguration Signals............................................................................................................. 7
+Combining Images....................................................................................................................................8
+Writing to Flash Memory................................................................................................................ 9
+Triggering Reconfiguration............................................................................................................. 9
+Next Steps..................................................................................................................................... 11
+Revision History.............................................................................................................................12
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Introduction
+Trion® and Titanium FPGAs have built-in hardware that supports an internal reconﬁguration
+feature in which the FPGA can reconﬁgure itself from a bitstream image stored in ﬂash
+memory. This feature is useful for performing system upgrades from a remote location. In
+these applications, the FPGA is the "brain" that controls the system functionality (that is,
+there is no microcontroller or CPU).
+In a typical reconﬁguration ﬂow, the FPGA ﬁrst conﬁgures itself using a "golden" bitstream
+image as usual. Then, the FPGA receives a new application image remotely, via Ethernet,
+Wi-Fi, etc., and saves it to ﬂash memory. Then, the FPGA triggers itself to reconﬁgure using
+the new image.
+Figure 1: Performing Remote Update Using Internal Reconfiguration
+2 Send New Image
+
+Flash
+Golden Image
+New Image
+Address
+
+1 Load Golden Image
+
+FPGA
+
+3 Save New Image
+5 Load New Image
+
+4
+
+Initiate
+Reconfiguration
+
+Board
+
+The following FPGAs support the internal reconﬁguration feature.
+Table 1: Internal Reconfiguration Support
+FPGA
+
+Package
+
+Supported
+
+T4
+
+BGA49, BGA81
+
+–
+
+T8
+
+BGA49, BGA81
+
+–
+
+QFP144
+T13, T20, T35, T55, T85, T120
+
+All
+
+Ti35, Ti60, Ti85, Ti90, Ti120,
+Ti135, Ti165, Ti180, Ti240, Ti375
+
+All
+
+www.efinixinc.com
+
+3
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Planning for Remote Update
+For remote update to work, your user design should be able to receive a new application
+image from an outside source, send it to the FPGA, and write it to a location in the ﬂash
+memory. When planning your system for remote updating, consider these guidelines:
+• Choose your ﬂash device size to accommodate future updates.
+• Ensure that the address ranges you choose for the images can accommodate future
+updates. (Refer to Writing to Flash Memory on page 9 for more details.)
+• Implement a controller to obtain the new application image from an outside source.
+• Incorporate a SPI ﬂash master block into your design to write and verify application
+images in ﬂash memory.
+• Ensure that any dual-purpose conﬁguration pins used as output adhere to the signal
+transition time requirement. (Refer to Dual-Purpose Conﬁguration Pin Requirement
+on page 4 for more details.)
+
+Dual-Purpose Configuration Pin Requirement
+Some conﬁguration pins are dual-purpose. These pins can be conﬁgured as a general-purpose
+input/output (GPIO) during user mode but must be set to the appropriate condition during
+reconﬁguration. As GPIO output, these signals can be used to drive external networks such as
+passive components or external devices.
+Table 2: Dual-Purpose Configuration Pins by Family
+Pin
+
+Trion
+
+Titanium
+
+CBUS2, CBUS1, CBUS0
+
+–
+
+SS_N
+
+–
+
+SSL_N
+
+–
+
+TEST_N
+Important: You must ensure that this requirement is met when using any of the dual-purpose
+configuration pins as output during user mode.
+
+When the internal reconﬁguration is triggered, all GPIOs including the dual-purpose
+conﬁguration pins that are conﬁgured as output are driven high or low depending on the
+design. These dual-purpose conﬁguration pins must be then set to the appropriate condition
+before reconﬁguring with a new image. The high-to-low or low-to-high transition time can
+be impacted by the external network connecting to the dual-conﬁguration pins. The risingtime and falling-time of the external network must fall within 800 ns to ensure that the
+conﬁguration pins are stable and the reconﬁguration is successful.
+
+www.efinixinc.com
+
+4
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Figure 2: Trion Dual-Purpose Configuration Pins to External Network Connections
+FPGA
+
+CBUS0
+
+External Network
+
+CBUS1
+
+External Network
+
+CBUS2
+
+External Network
+VCCIO VCCIO
+
+SS_N
+
+External Network
+
+TEST_N
+
+External Network
+
+Figure 3: Titanium Dual-Purpose Configuration Pins to External Network
+Connections
+VCCIO VCCIO
+
+FPGA
+
+SSL_N
+
+External Network
+
+TEST_N
+
+External Network
+
+www.efinixinc.com
+
+5
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Building the Golden Design
+In addition to user logic, the golden design should:
+• Enable the reconﬁguration interface in the Eﬁnity® Interface Designer.
+• Include a trigger to initiate reconﬁguration.
+• Use active conﬁguration mode.
+• Receive and save a new application image to the ﬂash memory.
+Note: Refer to AN 006: Configuring Trion FPGAs or AN 033: Configuring Titanium FPGAs for more
+information on using active configuration mode.
+
+Figure 4: Receiving New Image and Saving to Flash
+Application Image
+Flash
+
+Configuration
+Logic
+
+Golden Image
+Application Image 2
+Application Image 3
+
+SPI
+Bus
+
+Application Image 4
+
+FPGA
+
+User Logic
+SPI
+Flash
+Master
+
+Controller to
+Receive & Save
+Application Image
+
+The user logic and conﬁguration logic utilize the same SPI bus to access the images in the
+ﬂash memory.
+
+Enable the Internal Reconfiguration Interface
+You enable the interface in the Interface Designer.
+To enable internal reconﬁguration:
+1. Click Device Setting > Conﬁguration.
+2. In the Block Editor, turn on Enable Internal Reconﬁguration Interface.
+3. In the Block Editor Remote Update tab, turn on Enable Internal Reconﬁguration
+Interface. For Ti165, Ti240, and Ti375 FPGAs, you can specify the number of retries
+in the Eﬁnity software (v2024.1 and higher) by going to: Interface Designer >
+Conﬁguration > Remote Update tab > Remote Update Retries box.
+4. Indicate the name of the clock pin that will control the internal reconﬁguration.
+5. Deﬁne the FPGA pins that the interface uses.
+6. Save.
+
+www.efinixinc.com
+
+6
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Internal Reconfiguration Signals
+The internal reconﬁguration interface uses four control signals and a signal that selects the
+location of the new image. When you enable the internal reconﬁguration interface in the
+Interace Designer, the software adds these signals to your design.
+Note: The FPGA does not require input via the package pins to trigger reconfiguration.
+
+Figure 5: Internal Reconfiguration Block Diagram
+FPGA
+
+CLK
+<instance>_ENA
+
+User
+Logic
+
+<instance>_CONFIG
+<instance>_ERROR
+
+Internal
+Reconfiguration
+Interface
+
+<instance>_CBSEL[1:0]
+
+Table 3: Internal Reconfiguration Pins
+Signal
+
+Direction
+
+Description
+
+<instance>_CBSEL[1:0]
+
+Input
+
+Multi-image select signals to the internal reconfiguration
+interface (not package pins). Use these signals to choose which
+image to load from flash memory.
+
+CLK
+
+Input
+
+Clock used to latch <instance>_CBSEL when ENA is high. The
+maximum supported frequency is 100 MHz.
+
+<instance>_CONFIG
+
+Input
+
+Asynchronous control that initiates reconfiguration.
+
+<instance>_ENA
+
+Input
+
+When <instance>_ENA is high, read the value of
+<instance>_CBSEL.
+
+<instance>_ERROR
+
+Output
+
+Status signal. Signal is set to 0 during power-up.
+
+0 if reconfiguration is successful or no reconfiguration
+triggered.
+1 if the reconfiguration failed.(1)
+
+(1)
+
+If reconfiguration fails six times, the FPGA configures itself using the golden image. For Ti165, Ti240, and Ti375 FPGAs,
+you can specify the number of retries in the Efinity software (v2024.1 and higher).
+www.efinixinc.com
+
+7
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Combining Images
+You can store up to 4 images in ﬂash memory and use them to conﬁgure Trion or Titanium
+FPGAs. You use the Eﬁnity® Programmer to combine the images into one bitstream image
+that you load into the ﬂash device.
+Figure 6: Combine Multiple Image Files
+
+Output file name
+
+Select Image Type
+Golden
+Image
+Application
+Images
+
+1. Open the Combine Multiple Image Files tool in the Eﬁnity® Programmer.
+2. Enter the desired output ﬁle name and output directory.
+3. Select Remote Update Flash Image in the image type drop-down list.
+4. Select the ﬁrst row for image ﬁle, click on Add Image, and add the golden image.
+5. Select the subsequent image ﬁle row, and add the application image.
+6. Click Apply to generate the combined image.
+If you do not assign ﬂash addresses in the Programmer, the software automatically chooses
+them using 4096 boundaries. The Programmer reports the assigned addresses in the console
+and the report ﬁle.
+Note: To update the flash memory with a new golden image, create the new image and then use the
+Combine Multiple Image Files tool in the Efinity® Programmer to regenerate a combined bitstream image.
+You cannot use remote update to change the golden image.
+
+www.efinixinc.com
+
+8
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Writing to Flash Memory
+After you set up your system to receive an image remotely and communicate with the
+ﬂash device using the SPI interface, you are ready to process new images. Trion and
+Titanium FPGAs can read/write to up to 4 addresses in the ﬂash. When using the internal
+reconﬁguration feature, the golden image is assumed to be at address 0. You can use the other
+3 addresses for application images.
+Note: Even when you reconfigure with a new application image, Efinix recommends that you leave the
+golden image in the flash at address 0 as a fallback. Otherwise, you run the risk of not being able to
+communicate remotely with the FPGA in the system.
+
+For many SPI ﬂash devices, the manufacturer recommends that you erase the ﬂash memory
+before performing writes. You can erase the entire device, or just a sector. Eﬁnix recommends
+that the starting address for any image is an exact multiple of 4096. This boundary guarantees
+that you can erase/write any given image without corrupting other images or other data on
+the ﬂash device.
+
+Flow for Writing a New Application Image
+To ensure that the new image is written to the ﬂash correctly, use the following ﬂow:
+1. Erase the ﬂash address you want to use.
+2. Write the new image.
+3. Read back the image and verify that it is correct.
+
+Triggering Reconfiguration
+Now that you have the golden image and one or more application images programmed into
+ﬂash, you can trigger reconﬁguration. Upon device power up, the FPGA conﬁgures with the
+golden image and the CDONE pin goes high to indicate that conﬁguration is complete. To
+trigger reconﬁguration:
+1. Select the image using the <instance>_CBSEL signals.
+2. Hold <instance>_ENA high.
+3. Assert <instance>_CONFIG high to initiate reconﬁguration. The FPGA conﬁgures itself
+using the selected image.
+4. Check the value of the <instance>_ERROR signal. A 0 means successful reconﬁguration;
+a 1 means reconﬁguration failed.
+Important: The FPGA attempts to reconfigure itself with the new image 6 times. If configuration fails
+all 6 times, the FPGA falls back to the golden image. The total duration for 6 reconfiguration attempts
+are up to 41 seconds. Efinix recommends that you monitor the <instance>_ERROR pin; terminate
+the reconfiguration process if reconfiguration failed so that the FPGA does not continue the loop of
+reconfiguring with the golden image.
+
+The conﬁguration fails when the Trion® FPGA detected a CRC error in the conﬁguration
+RAM (CRAM) bit of the new image received from the ﬂash memory.
+
+www.efinixinc.com
+
+9
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Figure 7: Triggering Configuration Waveform
+clk
+reconfig_cfg
+reconfig_ena
+reconfig_cbsel[1:0]
+
+0x1
+
+Figure 8: Reconfiguration Flow Chart
+Power Up
+CRESET_N = 0
+Start Configuration
+CRESET_N = 1
+Configure with Golden Image
+
+Error
+
+no
+
+<instance>_ERROR = 1’b1
+
+Configuration
+Successful?
+yes
+User Mode
+
+Reconfiguration
+Triggered? (1)
+
+no
+
+yes
+Reconfigure with New Image
+no
+Reconfiguration
+Success? (2)
+
+no
+
+Tried to Reconfigure
+6 Times?
+
+yes
+
+yes
+<instance>_ERROR = 1’b0
+
+Note:
+1. Trigger reconfiguration with:
+<instance>_CBSEL[1:0] = 2’bXX where XX is the selection of the new image
+<instance>_ENA = 1’b1
+<instance>_CONFIG = 1’b1
+2. The FPGA performs a CRC check to ensure that the received image is correct.
+
+www.efinixinc.com
+
+10
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Next Steps
+Eﬁnix provides an example design that demonstrates how the T20 FPGA can conﬁgure itself
+on the ﬂy with a new image stored in serial NOR ﬂash memory. This design targets the
+Trion T20 BGA256 development board.
+Download: View the example design in the Support Center.
+
+www.efinixinc.com
+
+11
+
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely
+
+Revision History
+Table 4: Revision History
+Date
+August 2024
+
+Version
+2.5
+
+Description
+Added Figure 7: Triggering Configuration Waveform on page 10.
+(DOC-1838)
+
+Updated Table 1: Internal Reconfiguration Support on page 3, Enable the
+Internal Reconfiguration Interface on page 6. Added footnote for Table 3:
+Internal Reconfiguration Pins on page 7 (DOC-1923)
+June 2023
+
+2.4
+
+Updated Internal Flash Image GUI name to Remote Update Flash Image.
+(DOC-1337)
+
+December 2022
+
+2.3
+
+Added maximum supported CLK frequency. (DOC-1028)
+
+June 2022
+
+2.2
+
+Updated <instance>_ERROR description. (DOC-817)
+
+February 2022
+
+2.1
+
+Added details on what happens if reconfiguration fails. (DOC-685)
+
+August 2021
+
+2.0
+
+Added support for Titanium FPGAs.
+
+August 2020
+
+1.3
+
+Added the total duration for the 6 reconfiguration attempts.
+
+Added support for Ti90, Ti120, and Ti180 FPGAs.
+
+Added a note about configuration fails if the Trion FPGA detected CRC
+error in volatile CRAM bit on of the new image.
+Corrected CBSEL description as a selection instead of address.
+
+Removed the note about some Trion FPGA have CRC check at the end of
+configuration.
+Removed the note about referring to Efinity Software User Guide and
+added steps on how to combine bitstream files.
+Added steps to create multiple image files.
+May 2020
+
+1.2
+
+Updated device support.
+
+May 2020
+
+1.1
+
+Added a topic on dual-purpose configuration pin transition time
+requirement.
+
+February 2019
+
+1.0
+
+Initial release.
+
+www.efinixinc.com
+
+12
+
+

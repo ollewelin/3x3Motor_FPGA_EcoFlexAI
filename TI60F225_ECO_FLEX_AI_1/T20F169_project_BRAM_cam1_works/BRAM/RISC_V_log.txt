@@ -1,0 +1,24 @@
+(base) olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone$ 
+
+
+mkdir blink_led
+cd blink_led
+mkdir src build
+
+
+# stå i katalogen med BSP-roten
+cd ~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp
+
+# skapa aliaset “include” som pekar på rätt ställe
+ln -s efinix/EfxSapphireSoc/include include
+
+ln -s efinix/EfxSapphireSoc/linker linker
+
+
+
+make clean      # ta bort eventuella skräprester
+make
+
+riscv-none-embed-gcc ... -o build/blink_led.elf
+riscv-none-embed-objcopy -O verilog build/blink_led.elf build/blink_led.mem
+

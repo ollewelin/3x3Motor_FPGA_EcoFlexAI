@@ -1,0 +1,114 @@
+
+Efinity Interface Designer Timing Report
+Version: 2025.1.110.2.15
+Date: 2025-09-07 19:06
+
+Copyright (C) 2013 - 2025 Efinix Inc. All rights reserved.
+
+Device: T20F169
+Project: BRAM
+Timing Model: C3 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+| PLL Instance | Resource | Reference Clock | Core Clock Reference Pin | FB Mode  | Core Feedback Pin | PLL Compensation Delay Max (ns) | PLL Compensation Delay Min (ns) |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+|  pll_inst1   | PLL_TL0  |       core      |     clk~CLKOUT~3~242     | internal |                   |               N/A               |               N/A               |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+
++---------+-------------+-----------------------+
+|  Clock  | Period (ns) | Phase Shift (degrees) |
++---------+-------------+-----------------------+
+| pll_clk |    7.812    |           0           |
++---------+-------------+-----------------------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+-------------+-------------+----------+----------+
+| Instance Name |   Pin Name  |  Parameter  | Max (ns) | Min (ns) |
++---------------+-------------+-------------+----------+----------+
+|      clk      |     clk     | GPIO_CLK_IN |  1.657   |  0.637   |
+|  rmii_crs_dv  | rmii_crs_dv |   GPIO_IN   |  1.815   |  0.698   |
+|  rmii_rxd[0]  | rmii_rxd[0] |   GPIO_IN   |  2.205   |  0.848   |
+|    CAM0_EN    |   CAM0_EN   |   GPIO_OUT  |  4.978   |  1.915   |
+|    CAM1_EN    |   CAM1_EN   |   GPIO_OUT  |  4.978   |  1.915   |
+|      mdc      |     mdc     |   GPIO_OUT  |  4.978   |  1.915   |
+|   rmii_tx_en  |  rmii_tx_en |   GPIO_OUT  |  4.978   |  1.915   |
+|  rmii_txd[0]  | rmii_txd[0] |   GPIO_OUT  |  4.978   |  1.915   |
+|  rmii_txd[1]  | rmii_txd[1] |   GPIO_OUT  |  4.978   |  1.915   |
+|      mdio     |    mdio_i   |   GPIO_IN   |  1.815   |  0.698   |
+|      mdio     |    mdio_o   |   GPIO_OUT  |  4.978   |  1.915   |
+|      mdio     |   mdio_oe   |   GPIO_OUT  |  5.032   |  1.935   |
++---------------+-------------+-------------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. LVDS Rx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++---------------------+---------------------+-----------+----------+----------+
+|    Instance Name    |       Pin Name      | Parameter | Max (ns) | Min (ns) |
++---------------------+---------------------+-----------+----------+----------+
+| IO12_manual_reset_n | IO12_manual_reset_n |  GPIO_IN  |  2.228   |  0.857   |
+|      phy_intr_n     |      phy_intr_n     |  GPIO_IN  |  2.228   |  0.857   |
+|      rmii_rx_er     |      rmii_rx_er     |  GPIO_IN  |  2.228   |  0.857   |
+|     rmii_rxd[1]     |     rmii_rxd[1]     |  GPIO_IN  |  2.228   |  0.857   |
+|         led2        |         led2        |  GPIO_OUT |  2.915   |  1.121   |
+|      phy_rst_n      |      phy_rst_n      |  GPIO_OUT |  2.915   |  1.121   |
+|       RJ45_led      |       RJ45_led      |  GPIO_OUT |  2.915   |  1.121   |
+|         led4        |         led4        |  GPIO_IN  |  2.228   |  0.857   |
+|         led4        |       led4_OUT      |  GPIO_OUT |  2.915   |  1.121   |
+|         led4        |       led4_OE       |  GPIO_OUT |  2.860   |  1.100   |
++---------------------+---------------------+-----------+----------+----------+
+
+---------- LVDS Rx Timing Report (end) ----------
+
+---------- 4. LVDS Tx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++---------------+-------------+-----------+----------+----------+
+| Instance Name |   Pin Name  | Parameter | Max (ns) | Min (ns) |
++---------------+-------------+-----------+----------+----------+
+|  FPGA_IO0_A0  | FPGA_IO0_A0 |  GPIO_OUT |  3.026   |  1.164   |
+|  FPGA_IO0_A1  | FPGA_IO0_A1 |  GPIO_OUT |  3.026   |  1.164   |
+|  FPGA_IO0_A2  | FPGA_IO0_A2 |  GPIO_OUT |  3.026   |  1.164   |
+|    I2C_SCL    |  I2C_SCL_IN |  GPIO_IN  |  1.907   |  0.734   |
+|    I2C_SCL    | I2C_SCL_OUT |  GPIO_OUT |  3.026   |  1.164   |
+|    I2C_SCL    |  I2C_SCL_OE |  GPIO_OUT |  2.990   |  1.150   |
+|    I2C_SDA    |  I2C_SDA_IN |  GPIO_IN  |  1.907   |  0.734   |
+|    I2C_SDA    | I2C_SDA_OUT |  GPIO_OUT |  3.026   |  1.164   |
+|    I2C_SDA    |  I2C_SDA_OE |  GPIO_OUT |  2.990   |  1.150   |
++---------------+-------------+-----------+----------+----------+
+
+---------- LVDS Tx Timing Report (end) ----------
+
+---------- 6. JTAG Timing Report (begin) ----------
+
++---------------+----------------+-----------+----------+----------+
+| Instance Name |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++---------------+----------------+-----------+----------+----------+
+|   jtag_inst1  | jtag_inst1_TDI |  JTAG_IN  |  3.139   |  1.208   |
+|   jtag_inst1  | jtag_inst1_TMS |  JTAG_IN  |  2.281   |  0.877   |
++---------------+----------------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------
+
+---------- 7. Clock Network Delay Report (begin) ----------
+
++-----------+----------+----------+
+| Clock Pin | Max (ns) | Min (ns) |
++-----------+----------+----------+
+|    clk    |  5.343   |  2.055   |
++-----------+----------+----------+
+
+---------- Clock Network Delay Report (end) ----------

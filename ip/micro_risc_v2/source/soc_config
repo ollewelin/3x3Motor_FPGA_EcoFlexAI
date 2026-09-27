@@ -1,0 +1,29 @@
+--ramHex "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+--PeripheralClock false
+--Atomic false
+--L1D true
+--FpuDouble false
+--Fpu false
+--lowArea 5
+--dCacheWays 1
+--uart name=system_uart_0_io,address=0x010000,interruptId=2,fifoDepth=64
+--systemFrequency 50000000
+--onChipRamSize 0x4000
+--i2c name=system_i2c_0_io,address=0x016000,interruptId=8
+--ddrAEnable false
+--iCacheSize 4096
+--onChipRamAddress 0xf9000000
+--L1I true
+--axiAEnable false
+--dCacheSize 4096
+--cpuCount 1
+--noMulDiv
+--Linux false
+--apbSlave name=io_apbSlave_0,address=0x100000,size=65536
+--softTap false
+--apbBridgeAddress 0xf8000000
+--hardwareBreakpoints 0
+--gpio name=system_gpio_0_io,address=0x015000,width=2,interrupts="0->1;1->13"
+--withRiscvDebugPriv
+--iCacheWays 1
+--noBarrelShifter

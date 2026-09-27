@@ -1,0 +1,93 @@
+////////////////////////////////////////////////////////////////////////////////
+// APB3 Bus Debug Test - LED ONLY (No UART, just GPIO feedback)
+// Goal: Verify APB3 bus works using ONLY LED blinks for feedback
+////////////////////////////////////////////////////////////////////////////////
+#include <stdint.h>
+#include "bsp.h"
+#include "gpio.h"
+
+// APB3 Peripheral addresses (uart_mini_apb3 at 0xf8100000)
+#define UART_MINI_BASE      0xf8100000
+#define REG_STATUS          0x04
+#define REG_TX_DATA         0x08
+
+// LED patterns (GPIO bit 0 = LED #2)
+void led_on(void)  { gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1); }
+void led_off(void) { gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0); }
+void led_pulse(int ms) {
+    led_on();
+    bsp_uDelay(ms * 1000);
+    led_off();
+    bsp_uDelay(ms * 1000);
+}
+
+void main(void)
+{
+    bsp_init();
+    gpio_setOutputEnable(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+    led_pulse(300);
+    bsp_uDelay(200000);
+    led_pulse(300);
+    bsp_uDelay(500000);
+    // =========================================================================
+    // TEST 1: APB3 READ
+    // =========================================================================
+    volatile uint32_t *status_reg = (volatile uint32_t *)(UART_MINI_BASE + REG_STATUS);
+    uint32_t status_val = *status_reg;
+    
+    if (status_val == 0xFFFFFFFF) {
+        // APB3 READ FAILED - Halt with fast blink (100ms on/off)
+        while(1) {
+            led_pulse(100);  // Fast blink = APB3 broken
+        }
+    }
+    
+    // APB3 READ SUCCESS - One long pulse (500ms)
+    led_pulse(500);
+    bsp_uDelay(500000);
+    
+    // =========================================================================
+    // TEST 2: APB3 WRITE
+    // =========================================================================
+    volatile uint32_t *tx_data_reg = (volatile uint32_t *)(UART_MINI_BASE + REG_TX_DATA);
+    
+    uint32_t status_before = *status_reg;
+    *tx_data_reg = 0x41;  // Write 'A'
+    bsp_uDelay(1000);
+    uint32_t status_after = *status_reg;
+    
+    if (status_before != status_after) {
+        // APB3 WRITE SUCCESS - Two medium pulses (300ms each, 200ms apart)
+        led_pulse(300);
+        bsp_uDelay(200000);
+        led_pulse(300);
+        bsp_uDelay(500000);
+    } else {
+        // APB3 WRITE FAILED - Three quick pulses (150ms each)
+        led_pulse(150);
+        bsp_uDelay(150000);
+        led_pulse(150);
+        bsp_uDelay(150000);
+        led_pulse(150);
+        bsp_uDelay(500000);
+    }
+    
+    // =========================================================================
+    // TEST 3: FINAL STATUS - WITH CONTINUOUS TX WRITES
+    // =========================================================================
+    // If we get here, APB3 bus is working!
+    // Infinite loop with continuous TX writes to test uart_mini_apb3
+    // - CAM3_SCL should toggle rapidly (general APB3 activity)
+    // - CAM3_EN should toggle when TX writes occur (uart_mini_debug_tx_activity)
+    // - LED pulses for visual feedback
+    while(1) {
+        *tx_data_reg = 0x41;  // Write 'A' - should toggle CAM3_EN if reaching uart_mini
+        bsp_uDelay(10000);    // 10ms between writes
+        
+        led_pulse(500);       // Visual feedback
+        bsp_uDelay(200000);   // 200ms delay
+    }
+}
+
+void trap(void) { while(1); }

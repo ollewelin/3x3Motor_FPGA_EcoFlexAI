@@ -1,0 +1,2438 @@
+!SESSION 2026-01-21 19:26:22.437 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-21 19:26:25.847
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-21 19:48:35.650
+!MESSAGE Indexed 'olle_test1' (1 sources, 0 headers) in 0.173 sec: 3 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-21 19:49:44.978
+!MESSAGE Indexed 'mdio_test' (1 sources, 0 headers) in 0.012 sec: 3 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-01-21 19:49:52.567
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: attempt to set description for a project which does not exist or not open
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setCurrentDescription(XmlProjectDescriptionStorage.java:383)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.setLoaddedDescriptionOnLoad(XmlProjectDescriptionStorage.java:361)
+	at org.eclipse.cdt.internal.core.settings.model.xml.XmlProjectDescriptionStorage.getProjectDescription(XmlProjectDescriptionStorage.java:259)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescriptionInternal(CProjectDescriptionManager.java:427)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:409)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:403)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.getProjectDescription(CProjectDescriptionManager.java:396)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.isNewStyleProject(CProjectDescriptionManager.java:2464)
+	at org.eclipse.cdt.core.model.CoreModel.isNewStyleProject(CoreModel.java:1457)
+	at org.eclipse.cdt.ui.newui.ManageConfigSelector.getProjects(ManageConfigSelector.java:104)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.hasManagedCdtProjectSelection(HasManagedCdtProjectSelection.java:43)
+	at org.eclipse.cdt.internal.ui.workingsets.HasManagedCdtProjectSelection.test(HasManagedCdtProjectSelection.java:33)
+	at org.eclipse.core.internal.expressions.Property.test(Property.java:65)
+	at org.eclipse.core.expressions.TestExpression.evaluate(TestExpression.java:107)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:79)
+	at org.eclipse.ui.internal.services.EvaluationReference.evaluate(EvaluationReference.java:109)
+	at org.eclipse.ui.internal.services.EvaluationReference.changed(EvaluationReference.java:103)
+	at org.eclipse.e4.core.internal.contexts.TrackableComputationExt.update(TrackableComputationExt.java:105)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.processScheduled(EclipseContext.java:356)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.set(EclipseContext.java:372)
+	at org.eclipse.e4.core.internal.contexts.EclipseContext.deactivate(EclipseContext.java:679)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerHideProcessor.lambda$1(MenuManagerHideProcessor.java:138)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5101)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4584)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 org.eclipse.cdt.core 4 -1 2026-01-21 19:49:52.569
+!MESSAGE attempt to set description for a project which does not exist or not open
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:15:35.246
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:15:35.573
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:16:03.038
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:16:03.339
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:17:27.556
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:17:27.868
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:17:38.149
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:17:38.470
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:18:34.637
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:18:34.953
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:34:42.384
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:34:42.695
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:34:51.012
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:34:51.327
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:35:00.945
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:35:01.234
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-21 21:36:41.755
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-21 21:36:42.074
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.ui 2 2 2026-01-21 21:37:42.626
+!MESSAGE Invalid preference category path: org.eclipse.ease.preferences.global (bundle: org.eclipse.ease.lang.python.jython, page: org.eclipse.ease.lang.python.jython.libraryPrefPage)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2026-01-21 21:40:28.468
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2026-01-21 21:40:28.468
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2026-01-21 21:40:36.654
+!MESSAGE Program file does not exist
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2026-01-21 21:40:36.654
+!MESSAGE 
+
+!ENTRY org.eclipse.cdt.launch 4 104 2026-01-21 21:40:44.733
+!MESSAGE Program file does not exist
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-21 21:42:56.811
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007bb9ff446180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-21 21:43:57.667
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007919df0d1180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-21 21:44:27.671
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007354c7621180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-21 21:45:01.118
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007dfff4a5e180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-21 21:47:37.218
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007ba25064d180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-22 20:18:48.232 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 20:18:51.147
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.ui 2 2 2026-01-22 20:19:08.807
+!MESSAGE Invalid preference category path: org.eclipse.ease.preferences.global (bundle: org.eclipse.ease.lang.python.jython, page: org.eclipse.ease.lang.python.jython.libraryPrefPage)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 20:24:22.642
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:24:22.966
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 20:26:10.175
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi_ti.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug_ti.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:26:10.462
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 20:29:44.010
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:29:44.322
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 20:29:56.481
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:29:56.788
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 20:31:32.991
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:31:33.335
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 20:45:18.922 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 20:45:21.986
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+!SESSION 2026-01-22 20:45:56.288 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 20:45:59.169
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 20:46:30.056
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:46:35.896
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 20:47:10.084
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:47:10.907
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 20:48:30.385
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 20:48:36.200
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:52:42.073
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000784271730180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:52:59.914
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007bd61ff33180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:53:07.764
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007756da84d180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:53:34.176
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000718b9b43b180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-22 20:54:07.842 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 20:54:10.828
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:54:28.192
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000702fb8245180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:54:50.309
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000729294625180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:55:11.651
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007907e704d180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:56:30.235
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000078d27ca4c180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-22 20:56:58.745
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f2e0f42d180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-22 21:00:02.877 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:00:05.760
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:00:51.794
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:00:57.642
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 21:07:07.356 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:07:10.497
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+!SESSION 2026-01-22 21:07:37.748 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:07:40.634
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:08:02.906
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:08:03.223
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:10:02.108
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:10:02.408
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 21:10:35.096 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:10:38.046
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:11:04.302
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:11:04.616
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:11:19.381
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:11:19.677
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:11:30.171
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:11:30.471
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:11:40.877
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:11:41.165
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 21:12:06.013 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:12:08.889
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 21:12:30.804
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:12:31.116
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 21:12:50.230
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:12:50.568
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 21:17:31.141
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:17:31.447
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 21:19:06.940 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:19:09.825
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-22 21:19:27.475
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:19:27.785
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-22 21:22:08.538 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-22 21:22:11.551
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-22 21:22:31.832
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-22 21:22:37.663
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-23 19:30:18.100 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-23 19:30:20.937
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 19:31:32.371
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 19:31:38.194
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 19:53:55.582
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 19:53:56.397
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 19:54:21.679
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 19:54:22.478
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-23 20:01:11.546 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-23 20:01:14.010
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:02:22.008
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:02:27.809
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:04:05.083
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:04:05.885
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:04:35.855
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:04:36.642
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:05:06.599
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:05:12.402
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:05:25.223
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:05:26.030
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-23 20:08:48.198
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-23 20:08:53.995
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-24 13:13:35.861 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 13:13:38.963
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:14:09.918
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 13:14:10.243
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:16:13.748
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 13:16:14.030
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:23:45.789
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 13:23:46.081
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-24 13:27:25.511 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 13:27:28.151
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:27:52.827
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 13:27:53.174
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:28:12.832
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 13:28:13.118
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:36:02.372
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:36:02.672
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 13:38:13.797 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 13:38:16.846
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:38:47.660
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:38:47.972
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.ease.ui 4 0 2026-01-24 13:41:50.542
+!MESSAGE Could not launch L/mdio_test/build/mdio_test.elf
+!STACK 1
+org.eclipse.core.runtime.CoreException: 
+	at org.eclipse.ease.ui.launching.EaseLaunchDelegate.createLaunchConfiguration(EaseLaunchDelegate.java:217)
+	at org.eclipse.ease.ui.tools.AbstractLaunchDelegate.launch(AbstractLaunchDelegate.java:175)
+	at org.eclipse.ease.ui.tools.AbstractLaunchDelegate.launch(AbstractLaunchDelegate.java:60)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:430)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:88)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:135)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1546)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1307)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1207)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+!SUBENTRY 1 unknown 8 1 2026-01-24 13:41:50.543
+!MESSAGE 
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:47:21.813
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:47:22.103
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 13:48:59.133
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007ad4e5446180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 13:49:05.212
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000078469669a180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 13:49:34.184
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000772d19c1f180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 13:50:43.742
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f3b8244c180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-24 13:58:29.854 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 13:58:32.481
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:59:06.402
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:59:06.716
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:59:37.454
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 13:59:37.758
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 14:04:26.850 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 14:04:29.586
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:04:53.660
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:04:54.000
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 14:07:25.043 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 14:07:27.860
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:07:47.194
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 14:07:47.509
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-24 14:31:34.247 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 14:31:36.819
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:32:38.647
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 14:32:39.470
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:42:41.093
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:42:41.395
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:42:58.891
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:42:59.191
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 14:44:20.863 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 14:44:23.461
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:44:54.658
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 14:44:54.979
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.ui 2 2 2026-01-24 14:53:05.024
+!MESSAGE Invalid preference category path: org.eclipse.ease.preferences.global (bundle: org.eclipse.ease.lang.python.jython, page: org.eclipse.ease.lang.python.jython.libraryPrefPage)
+
+!ENTRY org.eclipse.ui 4 0 2026-01-24 14:56:50.766
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IllegalArgumentException: Argument cannot be null
+	at org.eclipse.swt.SWT.error(SWT.java:4899)
+	at org.eclipse.swt.SWT.error(SWT.java:4833)
+	at org.eclipse.swt.SWT.error(SWT.java:4804)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:565)
+	at org.eclipse.swt.widgets.Text.setText(Text.java:2695)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.ui.TabDebugger.updateGdbServerActualPath(TabDebugger.java:745)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.ui.TabDebugger$6.modifyText(TabDebugger.java:409)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:183)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1238)
+	at org.eclipse.debug.ui.DebugUITools.lambda$1(DebugUITools.java:630)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:74)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:636)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialogOnGroup(DebugUITools.java:574)
+	at org.eclipse.debug.ui.actions.OpenLaunchDialogAction.run(OpenLaunchDialogAction.java:85)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1546)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1529)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1307)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1207)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:5895)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1520)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:5126)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4581)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1440)
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 14:56:54.532
+!MESSAGE /usr/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 14:56:54.815
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 14:57:52.726
+!MESSAGE /usr/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 14:57:53.025
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 15:00:39.749
+!MESSAGE /usr/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.packs.core 4 1 2026-01-24 15:00:40.052
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 15:01:52.350 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 15:01:54.904
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 15:02:53.370
+!MESSAGE /usr/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 15:02:53.688
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 15:06:20.657 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 15:06:23.333
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 15:06:58.449
+!MESSAGE /usr/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 15:06:58.772
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:07:48.635
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007bdd88621180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:08:41.652
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000079c659220180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:08:51.770
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000074e7c4f32180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-24 15:09:19.602 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 15:09:22.218
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:09:35.244
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000753de1c46180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:09:53.904
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000077a53e278180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:10:05.239
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x000070e417446180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 15:17:35.580
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib:/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007c4867931180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 15:18:54.759
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 15:18:55.064
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-24 15:20:03.498
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 15:20:03.802
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-24 17:17:32.370 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 17:17:37.126
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+!SESSION 2026-01-24 17:20:23.769 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 17:20:26.385
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 5012 2026-01-24 17:21:18.604
+!MESSAGE Error while launching command: /home/olle/efinity/efinity-riscv-ide-2025.2/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --version
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 5012 2026-01-24 17:21:37.176
+!MESSAGE Error while launching command: /home/olle/efinity/efinity-riscv-ide-2025.2/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --version
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 5012 2026-01-24 17:22:12.466
+!MESSAGE Error while launching command: /home/olle/efinity/efinity-riscv-ide-2025.2/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --version
+!SESSION 2026-01-24 17:23:53.123 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 17:23:55.666
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 5012 2026-01-24 17:24:12.446
+!MESSAGE Error while launching command: /home/olle/efinity/efinity-riscv-ide-2025.2/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --version
+!SESSION 2026-01-24 17:24:52.957 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 17:24:55.999
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:25:10.390
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.2/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 17:25:10.718
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:26:03.422
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 17:26:03.725
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:26:57.248
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-24 17:26:57.575
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:38:03.813
+!MESSAGE /usr/local/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:38:04.681
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:38:35.821
+!MESSAGE /usr/local/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:38:36.633
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:39:42.290
+!MESSAGE /usr/local/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 17:39:43.123
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:03:44.570
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:03:45.405
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 5012 2026-01-24 18:03:46.577
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:453)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:178)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:154)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2026-01-24 18:03:46.579
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2026-01-24 18:03:46.579
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!STACK 0
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:15:53.224
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:15:54.095
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 5012 2026-01-24 18:15:55.233
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:453)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:178)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:154)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2026-01-24 18:15:55.233
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2026-01-24 18:15:55.233
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!STACK 0
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:18:22.474
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:18:23.314
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 5012 2026-01-24 18:18:24.416
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:453)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:178)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:154)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2026-01-24 18:18:24.416
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2026-01-24 18:18:24.416
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!STACK 0
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:19:22.816
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:19:23.652
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 5012 2026-01-24 18:19:27.791
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:453)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:178)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:154)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2026-01-24 18:19:27.792
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2026-01-24 18:19:27.792
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!STACK 0
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 18:21:01.444
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007b2d1ac21180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 18:21:48.358
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007a0f85424180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-24 18:22:25.510
+!MESSAGE Could not determine GDB version using command: gdb --version
+!STACK 0
+java.lang.Exception: Python path configuration:
+  PYTHONHOME = '/home/olle/efinix/efinity/2025.1'
+  PYTHONPATH = '/home/olle/efinix/efinity/2025.1/lib'
+  program name = '/usr/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 0
+  import site = 1
+  sys._base_executable = '/usr/bin/python'
+  sys.base_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.base_exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.platlibdir = 'lib'
+  sys.executable = '/usr/bin/python'
+  sys.prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.exec_prefix = '/home/olle/efinix/efinity/2025.1'
+  sys.path = [
+    '/home/olle/efinix/efinity/2025.1/lib',
+    '/home/olle/efinix/efinity/2025.1/lib/python310.zip',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10',
+    '/home/olle/efinix/efinity/2025.1/lib/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x0000781d60e4c180 (most recent call first):
+  <no Python frame>
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:353)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:547)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:23:32.525
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:23:33.369
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:24:15.629
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:24:16.481
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-24 18:24:23.757
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@49064b80): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2026-01-24 18:24:23.757
+!MESSAGE Context cannot be suspended.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:24:39.127
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:24:39.976
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:25:28.050
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:25:28.903
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-24 18:25:36.180
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.mi.service.MIRunControl$9@560d0bde): Status ERROR: org.eclipse.cdt.dsf.gdb code=10001 Context cannot be suspended.' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10001 2026-01-24 18:25:36.180
+!MESSAGE Context cannot be suspended.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:27:12.429
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:27:13.275
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:27:26.145
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:27:26.987
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:29:56.184
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:29:57.034
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:30:06.991
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:30:07.822
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+!SESSION 2026-01-24 18:31:10.795 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-24 18:31:13.664
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:31:56.190
+!MESSAGE /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-24 18:31:57.072
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 5012 2026-01-24 18:31:58.671
+!MESSAGE Error in final launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugSession(LaunchConfigurationDelegate.java:453)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launchDebugger(LaunchConfigurationDelegate.java:178)
+	at org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.LaunchConfigurationDelegate.launch(LaunchConfigurationDelegate.java:154)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 10004 2026-01-24 18:31:58.672
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!SUBENTRY 2 org.eclipse.cdt.dsf.gdb 4 10004 2026-01-24 18:31:58.672
+!MESSAGE Failed to execute MI command:
+load /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin
+Error message from debugger back end:
+"/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+!STACK 0
+java.lang.Exception: "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/build/mdio_test.bin" is not an object file: file format not recognized
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)

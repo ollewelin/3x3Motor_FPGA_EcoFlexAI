@@ -1,0 +1,7 @@
+design.assign_resource("clkin", "GPIOL_20", "GPIO")
+design.assign_resource("rstn", "GPIOL_12", "GPIO")
+design.assign_resource("led[0]", "GPIOL_03", "GPIO")
+design.assign_resource("led[1]", "GPIOL_09", "GPIO")
+design.assign_resource("led[2]", "GPIOL_16", "GPIO")
+design.assign_resource("led[3]", "GPIOL_18", "GPIO")
+design.assign_resource("led[4]", "GPIOL_21", "GPIO")

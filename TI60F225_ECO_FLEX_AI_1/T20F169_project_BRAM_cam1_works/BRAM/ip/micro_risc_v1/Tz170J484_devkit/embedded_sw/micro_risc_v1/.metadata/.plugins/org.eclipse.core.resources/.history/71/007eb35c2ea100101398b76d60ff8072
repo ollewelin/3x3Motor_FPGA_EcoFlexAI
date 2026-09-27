@@ -1,0 +1,102 @@
+#include "soc.h"
+#include "gpio.h"
+#include "bsp.h"
+#include "i2c.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+/* ---------------- I2C 8-bit addresses (7-bit << 1) ---------------- */
+#define PCA9542A_ADDR8   (0x70u << 1)   /* Adjust if A0..A2 straps differ */
+#define CAM_ADDR8        (0x3Cu << 1)   /* Your camera 7-bit address is 0x3C */
+
+#define REG_SW_RESET     0x0103u        /* Example camera reset register */
+
+/* ----------- Configure I2C for ~100 kHz using your I2c_Config ----------- */
+static void i2c_init_100khz(void) {
+    I2c_Config cfg;
+
+    /* Your i2c.h defines timing fields as "cycle count - 1".
+       We’ll derive cycles from the SoC clock. */
+    const uint32_t fclk_hz      = SYSTEM_CLINT_HZ;         // 128 MHz in your soc.h
+    const uint32_t cycles_per_us = fclk_hz / 1000000u;     // 128 cycles per µs
+
+    /* Target ~100 kHz SCL: period ~10 µs -> ~5 µs low, ~5 µs high. */
+    const uint32_t t_low_us  = 5u;
+    const uint32_t t_high_us = 5u;
+
+    /* Conservative setup/hold/buffer timings */
+    const uint32_t tsu_dat_us = 1u;   // SDA setup time
+    const uint32_t t_buf_us   = 5u;   // STOP to START
+
+    /* Fill config (all are "cycles - 1") */
+    cfg.samplingClockDivider = 3u;                                // modest oversampling
+    cfg.timeout              = (1000u * cycles_per_us) - 1u;      // ~1 ms bus timeout
+    cfg.tsuDat               = (tsu_dat_us * cycles_per_us) - 1u; // SDA setup
+    cfg.tLow                 = (t_low_us  * cycles_per_us) - 1u;  // SCL low
+    cfg.tHigh                = (t_high_us * cycles_per_us) - 1u;  // SCL high
+    cfg.tBuf                 = (t_buf_us  * cycles_per_us) - 1u;  // STOP→START
+
+    i2c_applyConfig(SYSTEM_I2C_0_IO_CTRL, &cfg);
+}
+
+/* ----------- PCA9542A: select CH0/CH1 or disable (single control byte) ----------- */
+/* ch = 0 → CH0, ch = 1 → CH1, else → disable all */
+static bool pca9542a_select(uint8_t pca_addr8, int ch) {
+    uint8_t ctrl = 0x00u;
+    if (ch == 0) ctrl = 0x01u;   // 0b001 -> CH0
+    if (ch == 1) ctrl = 0x02u;   // 0b010 -> CH1
+
+    /* Start + address(write) + 1 data byte + Stop */
+    i2c_masterStartBlocking(SYSTEM_I2C_0_IO_CTRL);
+    i2c_txByte(SYSTEM_I2C_0_IO_CTRL, pca_addr8 | I2C_WRITE);
+    i2c_txNackBlocking(SYSTEM_I2C_0_IO_CTRL);   // per your API after each byte
+    i2c_txByte(SYSTEM_I2C_0_IO_CTRL, ctrl);
+    i2c_txNackBlocking(SYSTEM_I2C_0_IO_CTRL);
+    i2c_masterStopBlocking(SYSTEM_I2C_0_IO_CTRL);
+
+    /* Tiny guard; selection takes effect after STOP */
+    bsp_uDelay(10);
+    return true; /* If you want to detect NACK explicitly, read status here */
+}
+
+/* ----------- Camera: 16-bit register write using your helper ----------- */
+static bool cam_write_reg16(uint8_t cam_addr8, uint16_t reg, const uint8_t *data, uint32_t len) {
+    /* i2c_writeData_w(u32 reg, u8 slaveAddr, u16 regAddr, u8 *data, u32 length) */
+    i2c_writeData_w(SYSTEM_I2C_0_IO_CTRL, cam_addr8, reg, (uint8_t*)data, len);
+    return true;
+}
+
+static void cam_sw_reset(void) {
+    uint8_t v = 0x01;                    // adjust for your sensor if needed
+    cam_write_reg16(CAM_ADDR8, REG_SW_RESET, &v, 1);
+    bsp_uDelay(5000);                    // 5 ms wait after reset
+}
+
+int main(void) {
+    bsp_init();
+ //   i2c_init_100khz();
+
+    /* 1) Route the upstream bus through PCA9542A to the camera’s channel first */
+ //   if (!pca9542a_select(PCA9542A_ADDR8, 0)) {
+ //       while (1) { /* NACK or wiring issue */ }
+ //   }
+
+    /* 2) Now do camera init over the selected channel */
+  //  cam_sw_reset();
+    /* Example further writes:
+       { uint8_t v = 0x12; cam_write_reg16(CAM_ADDR8, 0x0100, &v, 1); } // stream on, etc.
+    */
+
+    /* 3) Heartbeat blink */
+    while (1) {
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+        bsp_uDelay(200000);
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+        bsp_uDelay(200000);
+   //     cam_sw_reset();
+    }
+}
+
+/* Trap fallback */
+void trap(void) { while (1) { } }
+

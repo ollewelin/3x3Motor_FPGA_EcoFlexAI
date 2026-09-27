@@ -1,0 +1,5 @@
+22:56:50 **** Clean-only build of configuration Default for project smpDemo ****
+make clean 
+
+22:56:51 Build Finished. 0 errors, 0 warnings. (took 289ms)
+

@@ -1,0 +1,28 @@
+--ramHex "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/generator/bootloader/bootloader_16K.hex"
+--noBarrelShifter
+--gpio name=system_gpio_0_io,address=0x015000,width=1,interrupts="0->1"
+--dCacheWays 1
+--PeripheralClock false
+--noMulDiv
+--L1I true
+--systemFrequency 128000000
+--i2c name=system_i2c_0_io,address=0x016000,interruptId=8
+--lowArea 5
+--uart name=system_uart_0_io,address=0x010000,interruptId=2,fifoDepth=64
+--iCacheSize 4096
+--Fpu false
+--ddrAEnable false
+--hardwareBreakpoints 0
+--withRiscvDebugPriv
+--onChipRamSize 0x4000
+--softTap false
+--FpuDouble false
+--onChipRamAddress 0xf9000000
+--Linux false
+--Atomic false
+--iCacheWays 1
+--dCacheSize 4096
+--apbBridgeAddress 0xf8000000
+--cpuCount 1
+--L1D true
+--axiAEnable false

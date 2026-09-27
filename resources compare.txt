@@ -1,0 +1,23 @@
+Normal Debugger
+---------- Resource Summary (begin) ----------
+Inputs: 123 / 1076 (11.43%)
+Outputs: 51 / 1566 (3.26%)
+Clocks: 5 / 16 (31.25%)
+Logic Elements: 20209 / 112128 (18.02%)
+	LE: LUTs/Adders: 15649 / 112128 (13.96%)
+	LE: Registers: 10873 / 107520 (10.11%)
+Memory Blocks: 529 / 1056 (50.09%)
+Multipliers: 4 / 320 (1.25%)
+---------- Resource Summary (end) ----------
+
+Minimal debugg
+---------- Resource Summary (begin) ----------
+Inputs: 95 / 1076 (8.83%)
+Outputs: 51 / 1566 (3.26%)
+Clocks: 5 / 16 (31.25%)
+Logic Elements: 17396 / 112128 (15.51%)
+	LE: LUTs/Adders: 14196 / 112128 (12.66%)
+	LE: Registers: 8701 / 107520 (8.09%)
+Memory Blocks: 387 / 1056 (36.65%)
+Multipliers: 4 / 320 (1.25%)
+---------- Resource Summary (end) ----------

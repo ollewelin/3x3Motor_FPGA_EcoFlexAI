@@ -1,0 +1,31 @@
+(base) olle@olle-SSD-256:~$ # 1) CSI-2 sources expected at: ~/efinity_p2/BRAM/ip/source_efinity/
+mkdir -p ~/efinity_p2/BRAM/ip
+ln -sfn ~/efinix/efinity/2025.1/ipm/ip/efx_csi2/source_efinity \
+       ~/efinity_p2/BRAM/ip/source_efinity
+
+# 2) "common" helpers expected at: ~/efinity_p2/common/source/
+mkdir -p ~/efinity_p2
+mkdir -p ~/efinity_p2/common
+ln -sfn ~/efinix/efinity/2025.1/ipm/ip/common/source \
+       ~/efinity_p2/common/source
+
+# 3) dependency trees expected at: ~/efinity_p2/efx_dphy and ~/efinity_p2/efx_fifo_2
+ln -sfn ~/efinix/efinity/2025.1/ipm/ip/efx_dphy   ~/efinity_p2/efx_dphy
+ln -sfn ~/efinix/efinity/2025.1/ipm/ip/efx_fifo_2 ~/efinity_p2/efx_fifo_2
+(base) olle@olle-SSD-256:~$ test -f ~/efinity_p2/BRAM/ip/source_efinity/efx_csi2_byte2pixel.sv && echo OK
+test -f ~/efinity_p2/common/source/efx_asyncreg.v && echo OK
+test -d ~/efinity_p2/efx_dphy && echo OK
+test -d ~/efinity_p2/efx_fifo_2 && echo OK
+OK
+OK
+OK
+OK
+(base) olle@olle-SSD-256:~$ # remove the too-deep link (optional)
+rm -f ~/efinity_p2/BRAM/ip/source_efinity
+
+# create the link at the correct level (sibling of ip/)
+ln -sfn ~/efinix/efinity/2025.1/ipm/ip/efx_csi2/source_efinity \
+       ~/efinity_p2/BRAM/source_efinity
+(base) olle@olle-SSD-256:~$ 
+(base) olle@olle-SSD-256:~$ 
+

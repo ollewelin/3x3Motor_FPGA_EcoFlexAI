@@ -1,0 +1,25 @@
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ python3 read_frame_repeatly_224x224.py /dev/ttyACM0 115200
+Starting continuous capture on /dev/ttyACM0...
+Frame: 224x224 sensor px => 112x112 colour dots
+Beats/line=28, total_beats=6272, total_bytes=50176
+Saving to: frame_colour.png. Press Ctrl+C to stop.
+Frames captured: 13^C
+Stopping capture...
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ 
+
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ python3 read_frame_repeatly_224x224_col_patch_pix_offset.py /dev/ttyACM0 115200
+Starting continuous capture on /dev/ttyACM0...
+Raw frame   : 224x224 sensor px
+Colour full : 112x112
+Colour patch: 80x112  (cols 39..70 removed)
+Pixel offsets: [-2, -1, 0, 1, 2]  ×  2 byte orders (normal + 8-byte flip)
+  offset -2 -> frame_colour_off_m2.png  +  frame_colour_off_m2_flip.png
+  offset -1 -> frame_colour_off_m1.png  +  frame_colour_off_m1_flip.png
+  offset +0 -> frame_colour_off_p0.png  +  frame_colour_off_p0_flip.png
+  offset +1 -> frame_colour_off_p1.png  +  frame_colour_off_p1_flip.png
+  offset +2 -> frame_colour_off_p2.png  +  frame_colour_off_p2_flip.png
+Press Ctrl+C to stop.
+Frames captured: 31  (10 images each)^C
+Stopping capture...
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ 
+

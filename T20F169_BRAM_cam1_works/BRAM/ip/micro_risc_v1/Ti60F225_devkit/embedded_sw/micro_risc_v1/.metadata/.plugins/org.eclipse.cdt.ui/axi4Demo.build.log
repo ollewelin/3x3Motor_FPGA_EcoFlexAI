@@ -1,0 +1,5 @@
+22:56:44 **** Clean-only build of configuration Default for project axi4Demo ****
+make clean 
+
+22:56:45 Build Finished. 0 errors, 0 warnings. (took 289ms)
+

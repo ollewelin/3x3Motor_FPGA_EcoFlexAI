@@ -1,0 +1,146 @@
+{
+    "tabs": [
+        {
+            "name": "General",
+            "widgets": [
+                {
+                    "param_name": "NUM_DATA_LANE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "HS_BYTECLK_MHZ",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "CLOCK_FREQ_MHZ",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "DPHY_CLOCK_MODE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "PIXEL_FIFO_DEPTH",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "FRAME_MODE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "ENABLE_VCX",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "tLPX_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tINIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tINIT_SKEWCAL_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tLP_EXIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_ZERO_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_TRAIL_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_PRE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_POST_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_PREPARE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tWAKEUP_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_ZERO_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_TRAIL_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_EXIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_PREPARE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "ASYNC_STAGE",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "Pack_40",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_48",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_56",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_64",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "MIPI_CSI2_TX_DEBUG",
+                    "type": "CheckBox",
+                    "text": "enable associated debug ports"
+                }
+            ]
+        }
+    ]
+}

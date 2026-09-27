@@ -1,0 +1,315 @@
+[2025-08-24 08:07:09] [INFO    ] [common.console] [id-1756015627] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:07:09] [INFO    ] [common.console] [id-1756015627] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:07:09] [INFO    ] [common.console] [id-1756015627] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7450c67e39a0>
+[2025-08-24 08:07:09] [INFO    ] [__main__] [id-1756015627] [MAIN-BEGIN] IP Manager has started running
+[2025-08-24 08:07:09] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-24 08:07:09] [INFO    ] [gui.api_wrapper] [id-1756015627] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-24 08:07:09] [INFO    ] [gui.api_wrapper] [id-1756015627] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-24 08:07:09] [INFO    ] [gui.api_wrapper] [id-1756015627] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-24 08:07:09] [INFO    ] [gui.api_wrapper] [id-1756015627] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-24 08:07:09] [INFO    ] [gui.api_wrapper] [id-1756015627] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:07:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-24 08:08:07] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:07] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:07] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:07] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:08] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:08] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:08] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:08] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:09] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:10] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:11] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:11] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:12] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:08:13] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:11:23] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 08:18:46] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 08:19:02] [INFO    ] [gui.ip_catalog_window] [id-1756015627] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-24 08:19:02] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:19:02] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:19:02] [INFO    ] [common.efinity_grpc_watcher] [id-1756015627] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:19:02] [INFO    ] [common.console] [id-1756015627] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7450c67e39a0>
+[2025-08-24 08:19:02] [INFO    ] [common.console] [id-1756015627] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:19:03] [INFO    ] [common.console] [id-1756015627] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:31:25] [INFO    ] [common.console] [id-1756017083] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:31:25] [INFO    ] [common.console] [id-1756017083] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:31:25] [INFO    ] [common.console] [id-1756017083] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7fb701be79a0>
+[2025-08-24 08:31:25] [INFO    ] [__main__] [id-1756017083] [MAIN-BEGIN] IP Manager has started running
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-24 08:31:25] [INFO    ] [common.efinity_grpc_watcher] [id-1756017083] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:31:25] [INFO    ] [gui.api_wrapper] [id-1756017083] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-24 08:31:25] [INFO    ] [gui.api_wrapper] [id-1756017083] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-24 08:31:25] [INFO    ] [gui.api_wrapper] [id-1756017083] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-24 08:31:25] [INFO    ] [gui.api_wrapper] [id-1756017083] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-24 08:31:25] [INFO    ] [gui.api_wrapper] [id-1756017083] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:31:25] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-24 08:31:45] [INFO    ] [gui.ip_catalog_window] [id-1756017083] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-24 08:31:45] [INFO    ] [common.efinity_grpc_watcher] [id-1756017083] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:31:45] [INFO    ] [common.efinity_grpc_watcher] [id-1756017083] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:31:45] [INFO    ] [common.efinity_grpc_watcher] [id-1756017083] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:31:46] [INFO    ] [common.console] [id-1756017083] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7fb701be79a0>
+[2025-08-24 08:31:46] [INFO    ] [common.console] [id-1756017083] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:31:46] [INFO    ] [common.console] [id-1756017083] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:31:46] [INFO    ] [common.console] [id-1756017083] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:41:26] [INFO    ] [common.console] [id-1756017684] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:41:26] [INFO    ] [common.console] [id-1756017684] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:41:26] [INFO    ] [common.console] [id-1756017684] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x71df4d1cf9a0>
+[2025-08-24 08:41:26] [INFO    ] [__main__] [id-1756017684] [MAIN-BEGIN] IP Manager has started running
+[2025-08-24 08:41:26] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [JSON_DECODER-DONE] Decoding done
+[2025-08-24 08:41:26] [INFO    ] [common.efinity_grpc_watcher] [id-1756017684] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "BRAM_8192_bytes",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "memory",
+        "name": "efx_bram",
+        "version": "6.1"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-08T14:48:37.015768+00:00",
+    "params": {
+        "ADDR_WIDTH_A": "13",
+        "RESET_A_ENABLE": "1",
+        "RESET_B_ENABLE": "1",
+        "RSTA_POLARITY": "1",
+        "RSTB_POLARITY": "1",
+        "MEMORY_MODE": "\"SPEED\"",
+        "WRITE_MODE_A": "\"READ_FIRST\"",
+        "WRITE_MODE_B": "\"READ_FIRST\"",
+        "MEMORY_TYPE": "\"SDP_RAM\"",
+        "BYTEENA_POLARITY": "1",
+        "BYTEENB_POLARITY": "1",
+        "BYTEEN_POLARITY": "1",
+        "HexFile_PathEnable": "1",
+        "HexFile_Path": "\"Python/dimmer.mem\"",
+        "WIDTH_RATIO": "4",
+        "DATA_WIDTH_A": "8",
+        "ADDREN_ENABLE": "1",
+        "ADDREN_POLARITY": "1",
+        "CLKA_POLARITY": "1",
+        "CLKB_POLARITY": "1",
+        "CLKE_POLARITY": "1",
+        "CLKEA_POLARITY": "1",
+        "RESET_OUTREG_A": "\"ASYNC\"",
+        "RESET_OUTREG_B": "\"ASYNC\"",
+        "RESET_RAM_B": "\"ASYNC\"",
+        "WEA_ENABLE": "1",
+        "WEA_POLARITY": "1",
+        "WEB_ENABLE": "1",
+        "WEB_POLARITY": "1",
+        "RADDREN_ENABLE": "1",
+        "RADDREN_POLARITY": "1",
+        "WADDREN_ENABLE": "1",
+        "WADDREN_POLARITY": "1",
+        "RCLK_POLARITY": "1",
+        "ADDREN_A_ENABLE": "1",
+        "ADDREN_B_ENABLE": "1",
+        "ADDRENA_POLARITY": "1",
+        "ADDRENB_POLARITY": "1",
+        "WE_ENABLE": "1",
+        "WE_POLARITY": "1",
+        "WCLKE_POLARITY": "1",
+        "WCLK_POLARITY": "1",
+        "RESET_RAM_A": "\"ASYNC\"",
+        "RESET_RAM": "\"ASYNC\"",
+        "CLK_POLARITY": "1",
+        "RE_POLARITY": "1",
+        "RE_ENABLE": "1",
+        "WRITE_MODE": "\"READ_FIRST\"",
+        "RESET_OUTREG": "\"ASYNC\"",
+        "RESET_ENABLE": "1",
+        "RST_POLARITY": "1",
+        "CLKEB_POLARITY": "1",
+        "CLK_MODE_SDP": "1",
+        "CLK_MODE_TDP_DP": "1",
+        "DATA_WIDTH_A_FIXED": "16",
+        "DATA_WIDTH_A_FLEXIBLE": "8",
+        "BYTEEN_ENABLE_user": "0",
+        "BYTEENA_ENABLE_user": "0",
+        "DATA_WIDTH_A_FTDP": "16",
+        "WIDTH_RATIO_I": "4",
+        "WRITE_MODE_SP": "\"READ_FIRST\"",
+        "WRITE_MODE_SDP": "\"READ_FIRST\""
+    },
+    "output_info": {
+        "external_script_script": [],
+        "external_source_source": [
+            "BRAM_8192_bytes/BRAM_8192_bytes_tmpl.v",
+            "BRAM_8192_bytes/BRAM_8192_bytes_define.vh",
+            "BRAM_8192_bytes/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/BRAM_8192_bytes_tmpl.vhd"
+        ],
+        "external_example_example": [
+            "BRAM_8192_bytes/Ti60F225_devkit/bram.peri.xml",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram.xml",
+            "BRAM_8192_bytes/Ti60F225_devkit/debug_profile.wizard.json",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_top.sdc",
+            "BRAM_8192_bytes/Ti60F225_devkit/efx_simple_dual_port_ram.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_wrapper_mwm.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_primitive.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/dpram_top_titanium.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/reset.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/test_pattern.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/write_pattern.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_decompose.vh",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_ini.vh",
+            "BRAM_8192_bytes/Ti60F225_devkit/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/BRAM_8192_bytes_define.vh"
+        ],
+        "external_example_example_2": [
+            "BRAM_8192_bytes/T120F576_devkit/bram.peri.xml",
+            "BRAM_8192_bytes/T120F576_devkit/bram.xml",
+            "BRAM_8192_bytes/T120F576_devkit/debug_profile.wizard.json",
+            "BRAM_8192_bytes/T120F576_devkit/bram_top.sdc",
+            "BRAM_8192_bytes/T120F576_devkit/bram_wrapper_mwm.v",
+            "BRAM_8192_bytes/T120F576_devkit/bram_primitive.v",
+            "BRAM_8192_bytes/T120F576_devkit/dpram_top_trion.v",
+            "BRAM_8192_bytes/T120F576_devkit/reset.v",
+            "BRAM_8192_bytes/T120F576_devkit/test_pattern.v",
+            "BRAM_8192_bytes/T120F576_devkit/write_pattern.v",
+            "BRAM_8192_bytes/T120F576_devkit/efx_simple_dual_port_ram.v",
+            "BRAM_8192_bytes/T120F576_devkit/bram_decompose.vh",
+            "BRAM_8192_bytes/T120F576_devkit/bram_ini.vh",
+            "BRAM_8192_bytes/T120F576_devkit/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/T120F576_devkit/BRAM_8192_bytes_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "BRAM_8192_bytes/Testbench/tb.v",
+            "BRAM_8192_bytes/Testbench/efx_dpram_5k.v",
+            "BRAM_8192_bytes/Testbench/efx_dpram10.v",
+            "BRAM_8192_bytes/Testbench/efx_ram_5k.v",
+            "BRAM_8192_bytes/Testbench/efx_ram10.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sprom.v",
+            "BRAM_8192_bytes/Testbench/monitor_sp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sdp.v",
+            "BRAM_8192_bytes/Testbench/monitor_sdp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_tdp.v",
+            "BRAM_8192_bytes/Testbench/monitor_tdp.v",
+            "BRAM_8192_bytes/Testbench/tdp_test_pattern.v",
+            "BRAM_8192_bytes/Testbench/dp_test_pattern_rom.v",
+            "BRAM_8192_bytes/Testbench/modelsim.do",
+            "BRAM_8192_bytes/Testbench/flist",
+            "BRAM_8192_bytes/Testbench/bram_decompose.vh",
+            "BRAM_8192_bytes/Testbench/bram_ini.vh",
+            "BRAM_8192_bytes/Testbench/init_hex.mem",
+            "BRAM_8192_bytes/Testbench/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/Testbench/BRAM_8192_bytes_define.vh"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [LOAD_IP-DONE] Starting load IP
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_bram/ipm/doc/topics/hlp-bram-wrapper.html
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_bram/ipm/doc/topics/hlp-bram-wrapper.html
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-24 08:41:26] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_bram/ipm/gui/config_template.json
+[2025-08-24 08:41:26] [INFO    ] [efx_ipmgr.api_v2] [id-1756017684] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_bram/ipm/gui/config_template.json
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-24 08:41:26] [INFO    ] [gui.api_wrapper] [id-1756017684] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-24 08:41:27] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-24 08:41:27] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-24 08:41:27] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-24 08:41:27] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-24 08:41:32] [INFO    ] [gui.ip_config_window] [id-1756017684] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-24 08:41:32] [INFO    ] [common.efinity_grpc_watcher] [id-1756017684] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:41:32] [INFO    ] [common.efinity_grpc_watcher] [id-1756017684] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:41:32] [INFO    ] [common.efinity_grpc_watcher] [id-1756017684] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:41:32] [INFO    ] [common.console] [id-1756017684] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x71df4d1cf9a0>
+[2025-08-24 08:41:32] [INFO    ] [common.console] [id-1756017684] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:41:33] [INFO    ] [common.console] [id-1756017684] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:41:33] [INFO    ] [common.console] [id-1756017684] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 08:42:16] [INFO    ] [common.console] [id-1756017734] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 08:42:16] [INFO    ] [common.console] [id-1756017734] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 08:42:16] [INFO    ] [common.console] [id-1756017734] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7bd8bcdfb9a0>
+[2025-08-24 08:42:16] [INFO    ] [__main__] [id-1756017734] [MAIN-BEGIN] IP Manager has started running
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-24 08:42:16] [INFO    ] [common.efinity_grpc_watcher] [id-1756017734] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 08:42:16] [INFO    ] [gui.api_wrapper] [id-1756017734] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-24 08:42:16] [INFO    ] [gui.api_wrapper] [id-1756017734] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-24 08:42:16] [INFO    ] [gui.api_wrapper] [id-1756017734] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-24 08:42:16] [INFO    ] [gui.api_wrapper] [id-1756017734] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-24 08:42:16] [INFO    ] [gui.api_wrapper] [id-1756017734] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 08:42:16] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-24 08:58:15] [INFO    ] [common.efinity_grpc_watcher] [id-1756017734] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 08:59:01] [INFO    ] [gui.ip_catalog_window] [id-1756017734] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-24 08:59:01] [INFO    ] [common.efinity_grpc_watcher] [id-1756017734] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 08:59:01] [INFO    ] [common.efinity_grpc_watcher] [id-1756017734] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 08:59:01] [INFO    ] [common.efinity_grpc_watcher] [id-1756017734] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-24 08:59:01] [INFO    ] [common.console] [id-1756017734] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7bd8bcdfb9a0>
+[2025-08-24 08:59:01] [INFO    ] [common.console] [id-1756017734] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 08:59:02] [INFO    ] [common.console] [id-1756017734] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 08:59:02] [INFO    ] [common.console] [id-1756017734] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-24 09:47:53] [INFO    ] [common.console] [id-1756021671] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-24 09:47:53] [INFO    ] [common.console] [id-1756021671] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-24 09:47:53] [INFO    ] [common.console] [id-1756021671] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7a25f1bdf9a0>
+[2025-08-24 09:47:53] [INFO    ] [__main__] [id-1756021671] [MAIN-BEGIN] IP Manager has started running
+[2025-08-24 09:47:53] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-24 09:47:53] [INFO    ] [common.efinity_grpc_watcher] [id-1756021671] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-24 09:47:54] [INFO    ] [gui.api_wrapper] [id-1756021671] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-24 09:47:54] [INFO    ] [gui.api_wrapper] [id-1756021671] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-24 09:47:54] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-24 09:47:54] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-24 09:47:54] [INFO    ] [gui.api_wrapper] [id-1756021671] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-24 09:47:54] [INFO    ] [gui.api_wrapper] [id-1756021671] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-24 09:47:54] [INFO    ] [gui.api_wrapper] [id-1756021671] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-24 09:47:54] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-24 09:47:54] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-24 09:47:54] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-24 09:49:12] [INFO    ] [common.efinity_grpc_watcher] [id-1756021671] [WATCHER-RUN] Received Raise from efinity
+[2025-08-24 09:52:26] [INFO    ] [common.efinity_grpc_watcher] [id-1756021671] [WATCHER-RUN] Received Exit from efinity
+[2025-08-24 09:52:26] [INFO    ] [common.efinity_grpc_watcher] [id-1756021671] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-24 09:52:26] [INFO    ] [common.efinity_grpc_watcher] [id-1756021671] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-24 09:52:26] [INFO    ] [gui.ip_catalog_window] [id-1756021671] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-24 09:52:26] [INFO    ] [common.console] [id-1756021671] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7a25f1bdf9a0>
+[2025-08-24 09:52:26] [INFO    ] [common.console] [id-1756021671] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-24 09:52:27] [INFO    ] [common.console] [id-1756021671] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-24 09:52:27] [INFO    ] [common.console] [id-1756021671] [CONSOLE-CLEANUP] Consumer_thread cleanup done

@@ -1,0 +1,299 @@
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2025.1.110.2.15
+INFO     : Compiled: Jun 21 2025.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+INFO     : ***** Beginning Analysis ... *****
+INFO     : default VHDL library search path is now "/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd' [VHDL-1481]
+INFO     : Restoring VHDL unit 'ieee.std_logic_1164' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/std_logic_1164.vdb' [VHDL-1493]
+INFO     : Restoring VHDL unit 'std.standard' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/standard.vdb' [VHDL-1493]
+INFO     : Restoring VHDL unit 'std.textio' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' [VHDL-1493]
+INFO     : Restoring VHDL unit 'ieee.numeric_std' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/numeric_std.vdb' [VHDL-1493]
+INFO     : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(12): analyzing entity 'i2c_reg16_master' [VHDL-1012]
+INFO     : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(50): analyzing architecture 'rtl' [VHDL-1010]
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/top_level.vhd' [VHDL-1481]
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(5): analyzing entity 'top_level' [VHDL-1012]
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(115): analyzing architecture 'behavior' [VHDL-1010]
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd' [VHDL-1481]
+INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(5): analyzing entity 'rmii_udp_tx_top' [VHDL-1012]
+INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(14): analyzing architecture 'rtl' [VHDL-1010]
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd' [VHDL-1481]
+INFO     : /home/olle/efinity_p2/BRAM/control_camera_i2c.vhd(5): analyzing entity 'control_camera_i2c' [VHDL-1012]
+INFO     : /home/olle/efinity_p2/BRAM/control_camera_i2c.vhd(42): analyzing architecture 'rtl' [VHDL-1010]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-1482]
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(758): analyzing included file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/bram_ini.vh' [VERI-1328]
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(758): back to file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-2320]
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(985): analyzing included file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/bram_decompose.vh' [VERI-1328]
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(985): back to file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-2320]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/MIPI_X/MIPI_X.sv' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/MIPI_B2/MIPI_B2.sv' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v' [VERI-1482]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(348): parameter 'IDLE_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(349): parameter 'START_GEN0_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(350): parameter 'WRITE_CMDBYTE0_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(351): parameter 'WRITE_DAT0_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(352): parameter 'START_GEN1_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(353): parameter 'WRITE_CMDBYTE1_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(354): parameter 'RESTART_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(355): parameter 'WRITE_DAT2_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(356): parameter 'STOP_GEN_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(357): parameter 'DONE_ST' becomes localparam in 'i2c_master_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(996): parameter 'CLOCK_PERIOD_NS' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(999): parameter 'T_HIGH' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1003): parameter 'T_LOW' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1007): parameter 'T_HD_START' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1011): parameter 'T_SU_START' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1015): parameter 'T_HD_DATA' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1018): parameter 'T_SU_STOP' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1022): parameter 'T_BUF' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1028): parameter 'ST_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1029): parameter 'ST_SCL_START' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1030): parameter 'ST_SCL_LOW_EDGE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1031): parameter 'ST_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1032): parameter 'ST_SCL_LOW' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1033): parameter 'ST_SCL_HIGH_EDGE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1034): parameter 'ST_SCL_HIGH' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1035): parameter 'ST_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1037): parameter 'ST_SLV_SCL_IDLE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1038): parameter 'ST_SLV_SCL_HOLD_SDA' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1039): parameter 'ST_SLV_SCL_WAIT_uC' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1040): parameter 'ST_SLV_SCL_STOP_WAIT' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1043): parameter 'ST_I2C_IDLE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1044): parameter 'ST_I2C_HEADER' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1045): parameter 'ST_I2C_ACK_HEADER' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1046): parameter 'ST_I2C_RCV_DATA' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1047): parameter 'ST_I2C_ACK_DATA' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1048): parameter 'ST_I2C_XMIT_DATA' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1049): parameter 'ST_I2C_WAIT_ACK' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1050): parameter 'ST_I2C_STOP' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1053): parameter 'BYTE_CNT' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(1054): parameter 'XFER_DONE' becomes localparam in 'i2c_mstrslv_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2193): parameter 'IDLE_WRST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2194): parameter 'GEN_WR_STROBE' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2195): parameter 'GEN_TX_DONE' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2197): parameter 'IDLE_RDST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2198): parameter 'READ_CMDBYTE_ST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2199): parameter 'RESTART_ST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2200): parameter 'WAIT_4_READ_ST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2201): parameter 'READ_ST' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2202): parameter 'GEN_RD_STROBE' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+WARNING  : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v(2203): parameter 'GEN_RD_VALID' becomes localparam in 'i2c_slave_ctl_998d5f83dbed4d699dbc09af682838b7' with formal parameter declaration list [VERI-1199]
+INFO     : Analysis took 0.413352 seconds.
+INFO     : 	Analysis took 0.41 seconds (approximately) in total CPU time.
+INFO     : Analysis virtual memory usage: begin = 124.564 MB, end = 138.9 MB, delta = 14.336 MB
+INFO     : Analysis resident set memory usage: begin = 72.064 MB, end = 88.064 MB, delta = 16 MB
+INFO     : 	Analysis peak resident set memory usage = 274.216 MB
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(5): processing 'top_level(behavior)' [VHDL-1067]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(210): using initial value '0' for 'system_uart_0_io_txd' since it is never assigned [VHDL-1303]
+INFO     : /home/olle/efinity_p2/BRAM/control_camera_i2c.vhd(5): processing 'control_camera_i2c(rtl)' [VHDL-1067]
+INFO     : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(12): processing 'i2c_reg16_master(rtl)' [VHDL-1067]
+INFO     : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(345): 'others' clause is never selected [VHDL-1172]
+INFO     : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(389): 'others' clause is never selected [VHDL-1172]
+WARNING  : /home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd(392): latch inferred for net 'go_w' [VHDL-1840]
+INFO     : Elaboration took 0.0556628 seconds.
+INFO     : 	Elaboration took 0.05 seconds (approximately) in total CPU time.
+INFO     : Elaboration virtual memory usage: begin = 138.9 MB, end = 151.188 MB, delta = 12.288 MB
+INFO     : Elaboration resident set memory usage: begin = 88.064 MB, end = 100.352 MB, delta = 12.288 MB
+INFO     : 	Elaboration peak resident set memory usage = 274.216 MB
+INFO     : ***** Ending Elaboration ... *****
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+INFO     : Reading Mapping Library took 0.0247726 seconds.
+INFO     : 	Reading Mapping Library took 0.03 seconds (approximately) in total CPU time.
+INFO     : Reading Mapping Library virtual memory usage: begin = 158.356 MB, end = 158.356 MB, delta = 0 MB
+INFO     : Reading Mapping Library resident set memory usage: begin = 109.44 MB, end = 109.44 MB, delta = 0 MB
+INFO     : 	Reading Mapping Library peak resident set memory usage = 274.216 MB
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+WARNING  : The primary output port 'RJ45_led' wire 'RJ45_led' is not driven. [EFX-0256]
+WARNING  : The primary output port 'FPGA_IO0_A0' wire 'FPGA_IO0_A0' is not driven. [EFX-0256]
+WARNING  : The primary output port 'FPGA_IO0_A1' wire 'FPGA_IO0_A1' is not driven. [EFX-0256]
+WARNING  : The primary output port 'FPGA_IO0_A2' wire 'FPGA_IO0_A2' is not driven. [EFX-0256]
+WARNING  : The primary output port 'rmii_tx_en' wire 'rmii_tx_en' is not driven. [EFX-0256]
+WARNING  : The primary output port 'rmii_txd[1]' wire 'rmii_txd[1]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'rmii_txd[0]' wire 'rmii_txd[0]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mdc' wire 'mdc' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mdio_o' wire 'mdio_o' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mdio_oe' wire 'mdio_oe' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_DPHY_RSTN' wire 'mipi_rx_inst1_DPHY_RSTN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_RSTN' wire 'mipi_rx_inst1_RSTN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_VC_ENA[3]' wire 'mipi_rx_inst1_VC_ENA[3]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_VC_ENA[2]' wire 'mipi_rx_inst1_VC_ENA[2]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_VC_ENA[1]' wire 'mipi_rx_inst1_VC_ENA[1]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_VC_ENA[0]' wire 'mipi_rx_inst1_VC_ENA[0]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_LANES[1]' wire 'mipi_rx_inst1_LANES[1]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst1_LANES[0]' wire 'mipi_rx_inst1_LANES[0]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_DPHY_RSTN' wire 'mipi_rx_inst2_DPHY_RSTN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_RSTN' wire 'mipi_rx_inst2_RSTN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_VC_ENA[3]' wire 'mipi_rx_inst2_VC_ENA[3]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_VC_ENA[2]' wire 'mipi_rx_inst2_VC_ENA[2]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_VC_ENA[1]' wire 'mipi_rx_inst2_VC_ENA[1]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_VC_ENA[0]' wire 'mipi_rx_inst2_VC_ENA[0]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_LANES[1]' wire 'mipi_rx_inst2_LANES[1]' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mipi_rx_inst2_LANES[0]' wire 'mipi_rx_inst2_LANES[0]' is not driven. [EFX-0256]
+WARNING  : Removing redundant signal : i2c_ackerr. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:13) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[31]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[30]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[29]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[28]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[27]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[26]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[25]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[24]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[23]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[22]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[21]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[20]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[19]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[18]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[17]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[16]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[15]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[14]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : Removing redundant signal : rd_data[13]. (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:15) [EFX-0200]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+WARNING  : Re-wiring to GND non-driven net 'RJ45_led'. (/home/olle/efinity_p2/BRAM/top_level.vhd:22) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'FPGA_IO0_A0'. (/home/olle/efinity_p2/BRAM/top_level.vhd:44) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'FPGA_IO0_A1'. (/home/olle/efinity_p2/BRAM/top_level.vhd:45) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'FPGA_IO0_A2'. (/home/olle/efinity_p2/BRAM/top_level.vhd:46) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'rmii_tx_en'. (/home/olle/efinity_p2/BRAM/top_level.vhd:54) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'rmii_txd[1]'. (/home/olle/efinity_p2/BRAM/top_level.vhd:55) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'rmii_txd[0]'. (/home/olle/efinity_p2/BRAM/top_level.vhd:55) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'mdc'. (/home/olle/efinity_p2/BRAM/top_level.vhd:58) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'mdio_o'. (/home/olle/efinity_p2/BRAM/top_level.vhd:60) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'mdio_oe'. (/home/olle/efinity_p2/BRAM/top_level.vhd:61) [EFX-0201]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0201]
+INFO     : ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Mapping design "top_level"
+INFO     : ... Hierarchical pre-synthesis "control_camera_i2c" begin
+INFO     : ... Hierarchical pre-synthesis "control_camera_i2c" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Hierarchical pre-synthesis "i2c_reg16_master" begin
+INFO     : ... Hierarchical pre-synthesis "i2c_reg16_master" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Hierarchical pre-synthesis "top_level" begin
+INFO     : ... Clock Enable Synthesis Performed on 174 flops.
+INFO     : ... Hierarchical pre-synthesis "top_level" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Flat synthesis begin
+INFO     : ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Check and break combinational loops begin
+INFO     : ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Sequential Optimization begin
+INFO     : ... Clock Network 'pll_clk' with 147 loads will be considered for sequential optimization.
+INFO     : ... Sequential Optimization deduced 186 equivalent points.
+INFO     : ... Sequential Optimization end (Real time : 3s CPU user time : 5s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Setup for logic synthesis begin
+INFO     : ... Setup for logic synthesis end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... LUT mapping begin
+INFO     : ... LS, strategy: 3, nd: 317, ed: 1089, lv: 4, pw: 581.33
+INFO     : ... LUT mapping end (Real time : 1s CPU user time : 6s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Post-synthesis Verific netlist creation begin
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 6s CPU sys time : 0s MEM : 274216KB)
+INFO     : ... Postmap Retiming Optimization begin
+INFO     : ... Clock Network 'pll_clk~pll_clk' with 120 loads will be considered for retiming optimization.
+INFO     : ... Performed 0 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 9s CPU sys time : 0s MEM : 274216KB)
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(10): Input/inout port clk is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(12): Input/inout port pll_clk_lock is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(19): Input/inout port led4 is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(51): Input/inout port rmii_crs_dv is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(52): Input/inout port rmii_rx_er is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(53): Input/inout port rmii_rxd[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(59): Input/inout port mdio_i is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(62): Input/inout port phy_intr_n is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(69): Input/inout port mipi_rx_inst1_DATA[63] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(70): Input/inout port mipi_rx_inst1_VALID is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(71): Input/inout port mipi_rx_inst1_TYPE[5] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(72): Input/inout port mipi_rx_inst1_VC[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(73): Input/inout port mipi_rx_inst1_CNT[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(74): Input/inout port mipi_rx_inst1_HSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(75): Input/inout port mipi_rx_inst1_VSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(86): Input/inout port mipi_rx_inst2_DATA[63] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(87): Input/inout port mipi_rx_inst2_VALID is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(88): Input/inout port mipi_rx_inst2_TYPE[5] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(89): Input/inout port mipi_rx_inst2_VC[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(90): Input/inout port mipi_rx_inst2_CNT[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(91): Input/inout port mipi_rx_inst2_HSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(92): Input/inout port mipi_rx_inst2_VSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : Found 179 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.00196757 seconds.
+INFO     : 	VDB Netlist Checker took 0.01 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 239.732 MB, end = 239.732 MB, delta = 0 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 145.536 MB, end = 145.536 MB, delta = 0 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 274.216 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Resource Summary 
+INFO     : =============================== 
+INFO     : EFX_ADD         : 	38
+INFO     : EFX_LUT4        : 	316
+INFO     : EFX_FF          : 	115
+INFO     : EFX_GBUFCE      : 	1
+INFO     : =============================== 
+INFO     : ... Post-Map Verilog Writer begin
+INFO     : Writing netlist 'top_level' to Verilog file '/home/olle/efinity_p2/BRAM/outflow/BRAM.map.v' [VDB-1030]
+INFO     : ... Post-Map Verilog Writer end (Real time : 0s CPU user time : 10s CPU sys time : 0s MEM : 274216KB)
+INFO     : The entire flow of EFX_MAP took 9.77561 seconds.
+INFO     : 	The entire flow of EFX_MAP took 10.02 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 88.404 MB, end = 239.732 MB, delta = 151.328 MB
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 27.264 MB, end = 145.536 MB, delta = 118.272 MB
+INFO     : 	The entire flow of EFX_MAP peak resident set memory usage = 274.216 MB

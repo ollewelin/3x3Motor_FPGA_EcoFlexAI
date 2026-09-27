@@ -1,0 +1,7 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 24, 2025 09:00:52
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '(' (VERI-1137) (/home/olle/efinity_p2/BRAM/ip/efx_csi2/source_efinity/efx_csi2_rx.sv:6)

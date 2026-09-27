@@ -1,0 +1,60 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Fri Apr 10 06:57:53 2026
+[*]
+[dumpfile] "/tmp/tmpxmhmrlug/la0tmp_continous.vcd"
+[dumpfile_mtime] "Fri Apr 10 06:34:13 2026"
+[dumpfile_size] 93572
+[savefile] "/home/olle/efinity_p2/BRAM/T120F324_A/Analyzer/la0_waveform.gtkw"
+[timestart] 0
+[size] 1850 1016
+[pos] -1 -1
+*-10.000000 4095 200 6144 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 48
+[signals_width] 482
+[sst_expanded] 0
+[sst_vpaned_height] 289
+@23
+top.vid_overflow_int
+top.vid_clk_int
+top.debug_1mhz_clk
+top.mipi_rx_inst1_ULPS_CLK
+top.mipi_rx_inst1_CLEAR
+top.mipi_rx_inst1_VC[1:0]
+top.mipi_rx_inst1_TYPE[5:0]
+top.mipi_rx_inst1_VC_ENA[3:0]
+top.mipi_rx_inst1_ERROR[17:0]
+top.mipi_rx_inst1_HSYNC[3:0]
+top.mipi_rx_inst1_DPHY_RSTN
+top.mipi_rx_inst1_VSYNC[3:0]
+top.mipi_rx_inst1_ULPS[3:0]
+top.mipi_rx_inst1_VALID
+top.mipi_rx_inst1_DATA[63:0]
+top.mipi_rx_inst1_CNT[3:0]
+top.mipi_rx_inst1_RSTN
+top.mipi_rx_inst1_LANES[1:0]
+top.u_record_video/lc_st[2:0]
+top.u_record_video/vs_st[2:0]
+top.u_record_video/vs_gap_cnt[31:0]
+top.u_record_video/vs_px[15:0]
+top.u_record_video/lc_line_idx[15:0]
+top.u_record_video/line_wr_done
+top.u_record_video/line_sel
+top.u_record_video/lc_gap[15:0]
+top.vid_frame_sync_n_int
+top.u_blue_wire_recorder/vid_clk_fall
+top.u_blue_wire_recorder/kick_first
+top.u_blue_wire_recorder/frame_captured
+top.u_blue_wire_recorder/st[2:0]
+top.u_blue_wire_recorder/fsync_armed
+top.u_blue_wire_recorder/txd
+top.u_blue_wire_recorder/line_gap
+top.u_blue_wire_recorder/tx_busy_q
+top.u_blue_wire_recorder/tx_start
+top.u_blue_wire_recorder/gap_cnt[7:0]
+top.u_blue_wire_recorder/tx_send_S
+top.u_blue_wire_recorder/tx_busy
+top.u_blue_wire_recorder/wr_en
+top.u_record_video/lc_px[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

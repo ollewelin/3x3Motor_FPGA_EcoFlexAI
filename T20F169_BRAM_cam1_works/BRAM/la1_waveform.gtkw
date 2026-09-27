@@ -1,0 +1,29 @@
+[dumpfile] "/tmp/tmpo65qo2ve/la1tmp_continous.vcd"
+[dumpfile_mtime] "fre aug 29 19:30:53 2025"
+[dumpfile_size] 1382
+[savefile] "/home/olle/efinity_p2/BRAM/la1_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 512 1536 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.u_cam_ctrl/cam_setup_cnt
+top.u_cam_ctrl/done
+top.u_cam_ctrl/want_mux_byte[7:0]
+top.u_cam_ctrl/state[3:0]
+top.u_cam_ctrl/mux_val[7:0]
+top.u_cam_ctrl/mux_ok
+top.u_cam_ctrl/rst_n
+top.u_cam_ctrl/mst_num_bytes[7:0]
+top.u_cam_ctrl/mst_din[31:0]
+top.u_cam_ctrl/i2c_busy
+top.u_cam_ctrl/mst_data_out[31:0]
+top.u_cam_ctrl/mst_data_out_valid
+top.u_cam_ctrl/mst_read
+top.u_cam_ctrl/mst_write_done
+top.u_cam_ctrl/mst_command_byte[7:0]
+top.u_cam_ctrl/i2c_soft_rst
+top.u_cam_ctrl/mst_write
+top.u_cam_ctrl/i2c_slave_addr[7:0]

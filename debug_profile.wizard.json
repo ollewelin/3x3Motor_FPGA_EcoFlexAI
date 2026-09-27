@@ -1,0 +1,2278 @@
+{
+    "debug_cores": [
+        {
+            "name": "la0",
+            "type": "la",
+            "uuid": "d7d7206d60bb4d2088f373c2a5c0f4db",
+            "trigin_en": false,
+            "trigout_en": false,
+            "auto_inserted": true,
+            "capture_control": true,
+            "data_depth": 8192,
+            "input_pipeline": 1,
+            "probes": [
+                {
+                    "name": "u_blue_wire_recorder/gap_cnt",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_d_q2",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_d_q1",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_clk_q2",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_clk_fall",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_clk",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/line_gap",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/fsync_armed",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/st",
+                    "width": 3,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_fsync_q2",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_clk_q3",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_d",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_fsync_q1",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_fsync_sync",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_clk_q1",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/frame_captured",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/kick_first",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/dumping",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_blue_wire_recorder/vid_frame_sync_n",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/throughput_overflow_error",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vid_clk",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/line_wr_done",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/hsync_bit0",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vid_frame_sync_n",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vsync_frame_alarm",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/hsync0_q",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/lc_line_idx",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/frame_start",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vsync0_q",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vs_hp_tick",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/hsync_timeout_alarm",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/hsync0_rise",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vid_d",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/lc_gap",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vsync_bit0",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/line_just_done_sel",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/valid",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/line_sel",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vsync0_fall",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "mipi_cam2_data",
+                    "width": 64,
+                    "probe_type": 1
+                },
+                {
+                    "name": "mipi_cam2_type",
+                    "width": 6,
+                    "probe_type": 1
+                },
+                {
+                    "name": "mipi_cam2_valid",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "mipi_cam2_hsync",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "mipi_cam2_cnt",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vs_rd_sel",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vs_px",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/lc_wr_px",
+                    "width": 16,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_record_video/vs_clk_ph",
+                    "width": 1,
+                    "probe_type": 1
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "command": "add_ports",
+            "id": 1,
+            "args": {
+                "netlist": "top_level",
+                "ports": [
+                    {
+                        "name": "jtag_inst2_CAPTURE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_DRCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RESET",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_RUNTEST",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SEL",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_SHIFT",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TCK",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDI",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TMS",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_UPDATE",
+                        "dir": "in",
+                        "width": 1
+                    },
+                    {
+                        "name": "jtag_inst2_TDO",
+                        "dir": "out",
+                        "width": 1
+                    }
+                ]
+            }
+        },
+        {
+            "command": "instantiate",
+            "netlist": "edb_top",
+            "id": 2,
+            "instance": "edb_top_inst"
+        },
+        {
+            "command": "connect",
+            "id": 3,
+            "args": {
+                "instance": "edb_top_inst",
+                "ports": [
+                    {
+                        "name": "bscan_CAPTURE",
+                        "net": "jtag_inst2_CAPTURE"
+                    },
+                    {
+                        "name": "bscan_DRCK",
+                        "net": "jtag_inst2_DRCK"
+                    },
+                    {
+                        "name": "bscan_RESET",
+                        "net": "jtag_inst2_RESET"
+                    },
+                    {
+                        "name": "bscan_RUNTEST",
+                        "net": "jtag_inst2_RUNTEST"
+                    },
+                    {
+                        "name": "bscan_SEL",
+                        "net": "jtag_inst2_SEL"
+                    },
+                    {
+                        "name": "bscan_SHIFT",
+                        "net": "jtag_inst2_SHIFT"
+                    },
+                    {
+                        "name": "bscan_TCK",
+                        "net": "jtag_inst2_TCK"
+                    },
+                    {
+                        "name": "bscan_TDI",
+                        "net": "jtag_inst2_TDI"
+                    },
+                    {
+                        "name": "bscan_TMS",
+                        "net": "jtag_inst2_TMS"
+                    },
+                    {
+                        "name": "bscan_UPDATE",
+                        "net": "jtag_inst2_UPDATE"
+                    },
+                    {
+                        "name": "bscan_TDO",
+                        "net": "jtag_inst2_TDO"
+                    },
+                    {
+                        "name": "la0_clk",
+                        "net": "pll_clk_50Mhz",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe0[0]",
+                        "net": "gap_cnt[0]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[1]",
+                        "net": "gap_cnt[1]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[2]",
+                        "net": "gap_cnt[2]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[3]",
+                        "net": "gap_cnt[3]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[4]",
+                        "net": "gap_cnt[4]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[5]",
+                        "net": "gap_cnt[5]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[6]",
+                        "net": "gap_cnt[6]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe0[7]",
+                        "net": "gap_cnt[7]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[0]",
+                        "net": "vid_d_q2[0]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[1]",
+                        "net": "vid_d_q2[1]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[2]",
+                        "net": "vid_d_q2[2]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[3]",
+                        "net": "vid_d_q2[3]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[4]",
+                        "net": "vid_d_q2[4]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[5]",
+                        "net": "vid_d_q2[5]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[6]",
+                        "net": "vid_d_q2[6]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe1[7]",
+                        "net": "vid_d_q2[7]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[0]",
+                        "net": "vid_d_q1[0]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[1]",
+                        "net": "vid_d_q1[1]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[2]",
+                        "net": "vid_d_q1[2]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[3]",
+                        "net": "vid_d_q1[3]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[4]",
+                        "net": "vid_d_q1[4]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[5]",
+                        "net": "vid_d_q1[5]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[6]",
+                        "net": "vid_d_q1[6]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe2[7]",
+                        "net": "vid_d_q1[7]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe3",
+                        "net": "vid_clk_q2",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe4",
+                        "net": "vid_clk_fall",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe5",
+                        "net": "vid_clk",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe6",
+                        "net": "line_gap",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe7",
+                        "net": "fsync_armed",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[0]",
+                        "net": "st[0]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[1]",
+                        "net": "st[1]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe8[2]",
+                        "net": "st[2]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe9",
+                        "net": "vid_fsync_q2",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe10",
+                        "net": "vid_clk_q3",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[0]",
+                        "net": "vid_d[0]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[1]",
+                        "net": "vid_d[1]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[2]",
+                        "net": "vid_d[2]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[3]",
+                        "net": "vid_d[3]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[4]",
+                        "net": "vid_d[4]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[5]",
+                        "net": "vid_d[5]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[6]",
+                        "net": "vid_d[6]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe11[7]",
+                        "net": "vid_d[7]",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe12",
+                        "net": "vid_fsync_q1",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe13",
+                        "net": "vid_fsync_sync",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe14",
+                        "net": "vid_clk_q1",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe15",
+                        "net": "frame_captured",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe16",
+                        "net": "kick_first",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe17",
+                        "net": "dumping",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe18",
+                        "net": "vid_frame_sync_n",
+                        "path": [
+                            "u_blue_wire_recorder"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe19",
+                        "net": "throughput_overflow_error",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe20",
+                        "net": "vid_clk",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe21",
+                        "net": "line_wr_done",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe22",
+                        "net": "hsync_bit0",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe23",
+                        "net": "vid_frame_sync_n",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe24",
+                        "net": "vsync_frame_alarm",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe25",
+                        "net": "hsync0_q",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[0]",
+                        "net": "lc_line_idx[0]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[1]",
+                        "net": "lc_line_idx[1]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[2]",
+                        "net": "lc_line_idx[2]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[3]",
+                        "net": "lc_line_idx[3]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[4]",
+                        "net": "lc_line_idx[4]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[5]",
+                        "net": "lc_line_idx[5]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[6]",
+                        "net": "lc_line_idx[6]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[7]",
+                        "net": "lc_line_idx[7]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[8]",
+                        "net": "lc_line_idx[8]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[9]",
+                        "net": "lc_line_idx[9]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[10]",
+                        "net": "lc_line_idx[10]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[11]",
+                        "net": "lc_line_idx[11]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[12]",
+                        "net": "lc_line_idx[12]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[13]",
+                        "net": "lc_line_idx[13]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[14]",
+                        "net": "lc_line_idx[14]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe26[15]",
+                        "net": "lc_line_idx[15]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe27",
+                        "net": "frame_start",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe28",
+                        "net": "vsync0_q",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe29",
+                        "net": "vs_hp_tick",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe30",
+                        "net": "hsync_timeout_alarm",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe31",
+                        "net": "hsync0_rise",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[0]",
+                        "net": "vid_d[0]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[1]",
+                        "net": "vid_d[1]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[2]",
+                        "net": "vid_d[2]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[3]",
+                        "net": "vid_d[3]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[4]",
+                        "net": "vid_d[4]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[5]",
+                        "net": "vid_d[5]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[6]",
+                        "net": "vid_d[6]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe32[7]",
+                        "net": "vid_d[7]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[0]",
+                        "net": "lc_gap[0]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[1]",
+                        "net": "lc_gap[1]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[2]",
+                        "net": "lc_gap[2]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[3]",
+                        "net": "lc_gap[3]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[4]",
+                        "net": "lc_gap[4]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[5]",
+                        "net": "lc_gap[5]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[6]",
+                        "net": "lc_gap[6]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[7]",
+                        "net": "lc_gap[7]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[8]",
+                        "net": "lc_gap[8]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[9]",
+                        "net": "lc_gap[9]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[10]",
+                        "net": "lc_gap[10]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[11]",
+                        "net": "lc_gap[11]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[12]",
+                        "net": "lc_gap[12]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[13]",
+                        "net": "lc_gap[13]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[14]",
+                        "net": "lc_gap[14]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe33[15]",
+                        "net": "lc_gap[15]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe34",
+                        "net": "vsync_bit0",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe35",
+                        "net": "line_just_done_sel",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe36",
+                        "net": "valid",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe37",
+                        "net": "line_sel",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe38",
+                        "net": "vsync0_fall",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe39[0]",
+                        "net": "mipi_cam2_data[0]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[1]",
+                        "net": "mipi_cam2_data[1]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[2]",
+                        "net": "mipi_cam2_data[2]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[3]",
+                        "net": "mipi_cam2_data[3]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[4]",
+                        "net": "mipi_cam2_data[4]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[5]",
+                        "net": "mipi_cam2_data[5]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[6]",
+                        "net": "mipi_cam2_data[6]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[7]",
+                        "net": "mipi_cam2_data[7]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[8]",
+                        "net": "mipi_cam2_data[8]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[9]",
+                        "net": "mipi_cam2_data[9]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[10]",
+                        "net": "mipi_cam2_data[10]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[11]",
+                        "net": "mipi_cam2_data[11]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[12]",
+                        "net": "mipi_cam2_data[12]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[13]",
+                        "net": "mipi_cam2_data[13]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[14]",
+                        "net": "mipi_cam2_data[14]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[15]",
+                        "net": "mipi_cam2_data[15]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[16]",
+                        "net": "mipi_cam2_data[16]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[17]",
+                        "net": "mipi_cam2_data[17]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[18]",
+                        "net": "mipi_cam2_data[18]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[19]",
+                        "net": "mipi_cam2_data[19]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[20]",
+                        "net": "mipi_cam2_data[20]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[21]",
+                        "net": "mipi_cam2_data[21]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[22]",
+                        "net": "mipi_cam2_data[22]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[23]",
+                        "net": "mipi_cam2_data[23]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[24]",
+                        "net": "mipi_cam2_data[24]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[25]",
+                        "net": "mipi_cam2_data[25]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[26]",
+                        "net": "mipi_cam2_data[26]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[27]",
+                        "net": "mipi_cam2_data[27]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[28]",
+                        "net": "mipi_cam2_data[28]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[29]",
+                        "net": "mipi_cam2_data[29]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[30]",
+                        "net": "mipi_cam2_data[30]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[31]",
+                        "net": "mipi_cam2_data[31]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[32]",
+                        "net": "mipi_cam2_data[32]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[33]",
+                        "net": "mipi_cam2_data[33]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[34]",
+                        "net": "mipi_cam2_data[34]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[35]",
+                        "net": "mipi_cam2_data[35]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[36]",
+                        "net": "mipi_cam2_data[36]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[37]",
+                        "net": "mipi_cam2_data[37]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[38]",
+                        "net": "mipi_cam2_data[38]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[39]",
+                        "net": "mipi_cam2_data[39]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[40]",
+                        "net": "mipi_cam2_data[40]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[41]",
+                        "net": "mipi_cam2_data[41]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[42]",
+                        "net": "mipi_cam2_data[42]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[43]",
+                        "net": "mipi_cam2_data[43]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[44]",
+                        "net": "mipi_cam2_data[44]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[45]",
+                        "net": "mipi_cam2_data[45]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[46]",
+                        "net": "mipi_cam2_data[46]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[47]",
+                        "net": "mipi_cam2_data[47]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[48]",
+                        "net": "mipi_cam2_data[48]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[49]",
+                        "net": "mipi_cam2_data[49]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[50]",
+                        "net": "mipi_cam2_data[50]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[51]",
+                        "net": "mipi_cam2_data[51]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[52]",
+                        "net": "mipi_cam2_data[52]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[53]",
+                        "net": "mipi_cam2_data[53]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[54]",
+                        "net": "mipi_cam2_data[54]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[55]",
+                        "net": "mipi_cam2_data[55]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[56]",
+                        "net": "mipi_cam2_data[56]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[57]",
+                        "net": "mipi_cam2_data[57]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[58]",
+                        "net": "mipi_cam2_data[58]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[59]",
+                        "net": "mipi_cam2_data[59]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[60]",
+                        "net": "mipi_cam2_data[60]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[61]",
+                        "net": "mipi_cam2_data[61]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[62]",
+                        "net": "mipi_cam2_data[62]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe39[63]",
+                        "net": "mipi_cam2_data[63]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[0]",
+                        "net": "mipi_cam2_type[0]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[1]",
+                        "net": "mipi_cam2_type[1]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[2]",
+                        "net": "mipi_cam2_type[2]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[3]",
+                        "net": "mipi_cam2_type[3]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[4]",
+                        "net": "mipi_cam2_type[4]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe40[5]",
+                        "net": "mipi_cam2_type[5]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe41",
+                        "net": "mipi_cam2_valid",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe42[0]",
+                        "net": "mipi_cam2_hsync[0]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe42[1]",
+                        "net": "mipi_cam2_hsync[1]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe42[2]",
+                        "net": "mipi_cam2_hsync[2]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe42[3]",
+                        "net": "mipi_cam2_hsync[3]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe43[0]",
+                        "net": "mipi_cam2_cnt[0]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe43[1]",
+                        "net": "mipi_cam2_cnt[1]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe43[2]",
+                        "net": "mipi_cam2_cnt[2]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe43[3]",
+                        "net": "mipi_cam2_cnt[3]",
+                        "path": []
+                    },
+                    {
+                        "name": "la0_probe44",
+                        "net": "vs_rd_sel",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[0]",
+                        "net": "vs_px[0]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[1]",
+                        "net": "vs_px[1]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[2]",
+                        "net": "vs_px[2]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[3]",
+                        "net": "vs_px[3]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[4]",
+                        "net": "vs_px[4]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[5]",
+                        "net": "vs_px[5]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[6]",
+                        "net": "vs_px[6]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[7]",
+                        "net": "vs_px[7]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[8]",
+                        "net": "vs_px[8]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[9]",
+                        "net": "vs_px[9]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[10]",
+                        "net": "vs_px[10]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[11]",
+                        "net": "vs_px[11]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[12]",
+                        "net": "vs_px[12]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[13]",
+                        "net": "vs_px[13]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[14]",
+                        "net": "vs_px[14]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe45[15]",
+                        "net": "vs_px[15]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[0]",
+                        "net": "lc_wr_px[0]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[1]",
+                        "net": "lc_wr_px[1]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[2]",
+                        "net": "lc_wr_px[2]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[3]",
+                        "net": "lc_wr_px[3]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[4]",
+                        "net": "lc_wr_px[4]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[5]",
+                        "net": "lc_wr_px[5]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[6]",
+                        "net": "lc_wr_px[6]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[7]",
+                        "net": "lc_wr_px[7]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[8]",
+                        "net": "lc_wr_px[8]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[9]",
+                        "net": "lc_wr_px[9]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[10]",
+                        "net": "lc_wr_px[10]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[11]",
+                        "net": "lc_wr_px[11]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[12]",
+                        "net": "lc_wr_px[12]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[13]",
+                        "net": "lc_wr_px[13]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[14]",
+                        "net": "lc_wr_px[14]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe46[15]",
+                        "net": "lc_wr_px[15]",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    },
+                    {
+                        "name": "la0_probe47",
+                        "net": "vs_clk_ph",
+                        "path": [
+                            "u_record_video"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "vdbs": [
+        {
+            "file": "debug_top.post.vdb",
+            "instance": "edb_top_inst"
+        }
+    ],
+    "session": {
+        "wizard": {
+            "data_depth": 8192,
+            "capture_control": true,
+            "selected_nets": [
+                {
+                    "name": "gap_cnt",
+                    "width": 8,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ],
+                    "net_idx_left": 7,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vid_d_q2",
+                    "width": 8,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ],
+                    "net_idx_left": 7,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vid_d_q1",
+                    "width": 8,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ],
+                    "net_idx_left": 7,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vid_clk_q2",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_clk_fall",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_clk",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "line_gap",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "fsync_armed",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "st",
+                    "width": 3,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ],
+                    "net_idx_left": 2,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vid_fsync_q2",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_clk_q3",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_d",
+                    "width": 8,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ],
+                    "net_idx_left": 7,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vid_fsync_q1",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_fsync_sync",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_clk_q1",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "frame_captured",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "kick_first",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "dumping",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "vid_frame_sync_n",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_blue_wire_recorder"
+                    ]
+                },
+                {
+                    "name": "throughput_overflow_error",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vid_clk",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "line_wr_done",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "hsync_bit0",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vid_frame_sync_n",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vsync_frame_alarm",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "hsync0_q",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "lc_line_idx",
+                    "width": 16,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "frame_start",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vsync0_q",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vs_hp_tick",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "hsync_timeout_alarm",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "hsync0_rise",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vid_d",
+                    "width": 8,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ],
+                    "net_idx_left": 7,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "lc_gap",
+                    "width": 16,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vsync_bit0",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "line_just_done_sel",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "valid",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "line_sel",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vsync0_fall",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "mipi_cam2_data",
+                    "width": 64,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [],
+                    "net_idx_left": 63,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "mipi_cam2_type",
+                    "width": 6,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [],
+                    "net_idx_left": 5,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "mipi_cam2_valid",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": []
+                },
+                {
+                    "name": "mipi_cam2_hsync",
+                    "width": 4,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [],
+                    "net_idx_left": 3,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "mipi_cam2_cnt",
+                    "width": 4,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [],
+                    "net_idx_left": 3,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vs_rd_sel",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                },
+                {
+                    "name": "vs_px",
+                    "width": 16,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "lc_wr_px",
+                    "width": 16,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ],
+                    "net_idx_left": 15,
+                    "net_idx_right": 0
+                },
+                {
+                    "name": "vs_clk_ph",
+                    "width": 1,
+                    "clk_domain": "pll_clk_50Mhz",
+                    "selected_probe_type": "DATA AND TRIGGER",
+                    "child": [],
+                    "path": [
+                        "u_record_video"
+                    ]
+                }
+            ],
+            "top_module": "top_level",
+            "src": "elaborate",
+            "jtag_user": "USER2",
+            "input_pipeline": 1
+        }
+    }
+}

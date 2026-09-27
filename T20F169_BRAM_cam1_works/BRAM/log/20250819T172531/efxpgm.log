@@ -1,0 +1,21 @@
+[2025-08-19 20:15:18] [INFO    ] EFXPGM_HOME : /home/olle/efinix/efinity/2025.1/pgm
+[2025-08-19 20:15:18] [INFO    ] EFINITY_HOME : /home/olle/efinix/efinity/2025.1
+[2025-08-19 20:15:18] [INFO    ] EFINITY_USER_DIR : /home/olle/efinity_p2/BRAM
+[2025-08-19 20:15:19] [INFO    ] Loading /home/olle/efinity_p2/BRAM/pgm/layout.ini
+[2025-08-19 20:15:19] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-19 20:15:19] [INFO    ] Tue August 19 25 20:15:19 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:19] [INFO    ] Tue August 19 25 20:15:19 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:19] [INFO    ] Tue August 19 25 20:15:19 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:19] [INFO    ] Tue August 19 25 20:15:19 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:19] [INFO    ] Tue August 19 25 20:15:19 - Valid device ID found: 0x00210A79
+[2025-08-19 20:15:22] [INFO    ] Tue August 19 25 20:15:22 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - Valid device ID found: 0x00210A79
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - jtag programming started!
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-19 20:15:32] [INFO    ] Tue August 19 25 20:15:32 - Programming '/home/olle/efinity_p2/BRAM/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-19 20:15:33] [INFO    ] Tue August 19 25 20:15:33 - Device ID read from JTAG: 0x00210A79
+[2025-08-19 20:15:35] [INFO    ] Tue August 19 25 20:15:35 - ... finished with JTAG programming
+[2025-08-19 20:15:35] [INFO    ] Tue August 19 25 20:15:35 - Detecting device status...
+[2025-08-19 20:15:39] [INFO    ] Tue August 19 25 20:15:39 - Device is in user mode!

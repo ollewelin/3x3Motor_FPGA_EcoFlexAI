@@ -1,0 +1,77 @@
+#include "soc.h"
+#include "gpio.h"
+#include "bsp.h"
+#include "i2c.h"
+
+
+#define CAM_ADDR7     0x3C        // <-- your camera's 7-bit address
+#define REG_SW_RESET  0x0103
+
+static void i2c_init_100khz(void) {
+    I2c_Config cfg;
+
+    // Use your SoC clock to compute cycles (bsp exposes SYSTEM_CLINT_HZ)
+    const uint32_t fclk_hz = SYSTEM_CLINT_HZ;
+    const uint32_t cycles_per_us = fclk_hz / 1000000u;
+
+    // Conservative Standard-mode timings (~100 kHz)
+    cfg.samplingClockDivider = 1;                 // sample every 2 cycles (divider is "cycles-1") :contentReference[oaicite:8]{index=8}
+    cfg.timeout              = 1000u * cycles_per_us; // ~1 ms bus timeout
+    cfg.tsuDat               = 1u * cycles_per_us / 4u; // ~250 ns data setup
+
+    // SCL low/high durations (cycle-count-1 per header comments) :contentReference[oaicite:9]{index=9}
+    cfg.tLow  = 5u * cycles_per_us;  // ≥4.7 us
+    cfg.tHigh = 5u * cycles_per_us;  // ≥4.0 us
+    cfg.tBuf  = 5u * cycles_per_us;  // bus free time ~5 us
+
+    i2c_applyConfig(SYSTEM_I2C_0_IO_CTRL, &cfg);  // program the controller :contentReference[oaicite:10]{index=10}
+}
+
+static void cam_sw_reset(void) {
+    uint8_t one = 0x01;
+    // NOTE: API expects the *address byte*, so left-shift the 7-bit address
+    i2c_writeData_w(SYSTEM_I2C_0_IO_CTRL, (CAM_ADDR7 << 1), REG_SW_RESET, &one, 1);  // :contentReference[oaicite:11]{index=11}
+}
+
+
+
+int main(void) {
+    gpio_setOutputEnable(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+
+    i2c_init_100khz();
+    // Here whe need to tell a I2C hardware switch to set up fisrt lik this
+    /*
+        when PWRUP =>
+          -- Select CAM0 on mux (see NOTE: our i2c_reg16_master always sends two "reg bytes"
+          -- before data; the PCA9542A will simply accept 0x00,0x00, then our control byte)
+
+--VHDL code
+  -- PCA9542A 7-bit address: 0x70 (you previously used 0xE0 8-bit)
+  constant MUX_ADDR7       : std_logic_vector(6 downto 0) := "1110000"; -- 0x70
+  constant MUX_CAM0        : std_logic_vector(7 downto 0) := x"04";     -- your board mapping
+
+          if i2c_busy='0' then
+            slave_i   <= MUX_ADDR7;
+            reg_i     <= x"00" & MUX_CAM0;
+            reg_16bit <= '0';
+            wrlen_i   <= to_unsigned(0,3);           -- send 1 control byte (after the two 0x00)
+            wrdata_i  <= x"00000000";
+            start_wr_i<= '1';
+            cam_idx   <= 0;
+            st        <= MUX0_SEL;
+          end if;    
+    */
+    cam_sw_reset();
+
+    while (1) {
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+        bsp_uDelay(50000);
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+        bsp_uDelay(50000);
+    }
+}
+
+/* Called on any exception/interrupt that isn't handled elsewhere */
+void trap(void) {
+    while (1) { /* stay here so you can attach a debugger if needed */ }
+}

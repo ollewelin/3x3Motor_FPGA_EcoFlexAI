@@ -1,0 +1,779 @@
+!SESSION 2026-01-26 20:44:29.629 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-26 20:44:32.310
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-01-26 20:47:40.508
+!MESSAGE Indexed 'test_a' (1 sources, 0 headers) in 0.16 sec: 3 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.ui 2 2 2026-01-26 21:12:21.454
+!MESSAGE Invalid preference category path: org.eclipse.ease.preferences.global (bundle: org.eclipse.ease.lang.python.jython, page: org.eclipse.ease.lang.python.jython.libraryPrefPage)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:20:39.741
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:20:40.058
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:21:22.764
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:21:23.066
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:35:59.806
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:36:00.077
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:41:43.815
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:41:44.083
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:47:58.573
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:47:59.556
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:49:02.751
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:49:03.743
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:50:03.633
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:50:04.632
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 21:50:45.189
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 21:50:46.176
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 22:00:18.160
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:00:19.145
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 22:00:30.104
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:00:31.114
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 22:01:06.547
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:01:07.552
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-26 22:01:31.042
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:01:32.044
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-26 22:26:12.547 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-26 22:26:14.918
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-26 22:26:33.885
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:26:34.909
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-26 22:27:05.581
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-26 22:27:06.568
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-27 05:55:06.495 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 05:55:09.700
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+!SESSION 2026-01-27 19:36:19.367 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 19:36:22.477
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:37:45.038
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 19:37:45.347
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:38:02.126
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 19:38:09.393
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:38:17.449
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@e74cdab): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:38:17.450
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:38:17.455
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:38:17.456
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:38:18.296
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 19:38:27.936
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:38:33.428
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@211cb236): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:38:33.429
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:38:33.434
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:38:33.434
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:38:48.960
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 19:38:53.160
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:39:04.134
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1757bd37): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:39:04.134
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:39:04.136
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:39:04.137
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:39:38.180
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:39:53.316
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@5bb80390): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:39:53.316
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:39:53.321
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:39:53.321
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:40:03.667
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:40:18.790
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@b5d3d31): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:40:18.790
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:40:18.794
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:40:18.794
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:40:51.892
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:41:07.019
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@4f57f0b2): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:41:07.019
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:41:07.022
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:41:07.022
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 19:41:39.339
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 19:41:54.478
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@25ed2fa2): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:41:54.478
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 19:41:54.482
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 19:41:54.482
+!MESSAGE Starting OpenOCD timed out.
+!SESSION 2026-01-27 19:44:04.908 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 19:44:07.456
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2026-01-27 20:17:44.808
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 20:17:45.113
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+!SESSION 2026-01-27 21:06:11.674 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 21:06:14.443
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:13:56.598
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:14:05.202
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:14:11.729
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@57e16e17): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:14:11.729
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:14:11.743
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:14:11.744
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:14:23.425
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:14:38.546
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@2b011af2): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:14:38.546
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:14:38.550
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:14:38.551
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:15:18.149
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 -1 2026-01-27 21:15:33.285
+!MESSAGE Uncaught exception in DSF executor thread
+!STACK 0
+java.lang.IllegalStateException: The service has been unregistered {org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.GdbServerBackend, org.eclipse.embedcdt.debug.gdbjtag.core.services.IGdbServerBackendService, org.eclipse.cdt.dsf.service.IDsfService}={service.id=328, service.bundleid=169, service.scope=singleton, org.eclipse.cdt.dsf.service.IService.session_id=2}
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.unregister(ServiceRegistrationImpl.java:224)
+	at org.eclipse.cdt.dsf.service.AbstractDsfService.unregister(AbstractDsfService.java:270)
+	at org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend.access$1(GnuMcuGdbServerBackend.java:1)
+	at org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$RegisterStep.shutdown(GnuMcuGdbServerBackend.java:522)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl$InitializationShutdownStep.rollBack(GDBControl.java:539)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.rollBackStep(Sequence.java:511)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:603)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:15:33.287
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@8d1f022): Status ERROR: org.eclipse.cdt.dsf code=0 Sequence "" failed while rolling back. children=[Status ERROR: org.eclipse.cdt.dsf code=0 Unhandled exception when rolling back Sequence org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$2@ea449ba, step #0 java.lang.IllegalStateException: The service has been unregistered {org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.GdbServerBackend, org.eclipse.embedcdt.debug.gdbjtag.core.services.IGdbServerBackendService, org.eclipse.cdt.dsf.service.IDsfService}={service.id=328, service.bundleid=169, service.scope=singleton, org.eclipse.cdt.dsf.service.IService.session_id=2} Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf 4 0 2026-01-27 21:15:33.287
+!MESSAGE Unhandled exception when rolling back Sequence org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$2@ea449ba, step #0
+!STACK 0
+java.lang.IllegalStateException: The service has been unregistered {org.eclipse.embedcdt.debug.gdbjtag.openocd.core.dsf.GdbServerBackend, org.eclipse.embedcdt.debug.gdbjtag.core.services.IGdbServerBackendService, org.eclipse.cdt.dsf.service.IDsfService}={service.id=328, service.bundleid=169, service.scope=singleton, org.eclipse.cdt.dsf.service.IService.session_id=2}
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.unregister(ServiceRegistrationImpl.java:224)
+	at org.eclipse.cdt.dsf.service.AbstractDsfService.unregister(AbstractDsfService.java:270)
+	at org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend.access$1(GnuMcuGdbServerBackend.java:1)
+	at org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$RegisterStep.shutdown(GnuMcuGdbServerBackend.java:522)
+	at org.eclipse.cdt.dsf.gdb.service.command.GDBControl$InitializationShutdownStep.rollBack(GDBControl.java:539)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.rollBackStep(Sequence.java:511)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:603)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:15:33.287
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-01-27 21:15:33.289
+!MESSAGE An internal error occurred during: "Launching test_a_trion".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.DebugPlugin.getLaunchManager()" because the return value of "org.eclipse.debug.core.DebugPlugin.getDefault()" is null
+	at org.eclipse.debug.internal.core.LaunchConfiguration.getLaunchManager(LaunchConfiguration.java:497)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:807)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-01-27 21:15:52.062 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 21:15:54.483
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:16:09.620
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:16:21.599
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:16:24.757
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@f0da233): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:16:24.757
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:16:24.767
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:16:24.768
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:17:33.856
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:17:49.019
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@b5eea2a): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:17:49.019
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:17:49.023
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:17:49.023
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:21:01.562
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:21:05.284
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:21:16.688
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@1fe15002): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:21:16.688
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:21:16.692
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:21:16.692
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:22:08.120
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:22:23.241
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@27211dbd): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:22:23.241
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:22:23.244
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:22:23.244
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:23:14.106
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:23:14.414
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:26:55.526
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:27:01.538
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:27:09.176
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:27:10.672
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@371fa730): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:27:10.672
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:27:10.675
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:27:10.675
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:27:58.253
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:28:05.694
+!MESSAGE Debug session 'test_a_trion' already started. Terminate the first one before restarting.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:28:13.380
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@65168b28): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:28:13.380
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:28:13.383
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:28:13.383
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:29:09.866
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:29:24.986
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@b903223): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:29:24.986
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:29:24.989
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:29:24.989
+!MESSAGE Starting OpenOCD timed out.
+!SESSION 2026-01-27 21:30:21.038 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A
+
+!ENTRY org.eclipse.ui 4 4 2026-01-27 21:30:23.528
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:31:14.806
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:31:29.945
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@57eeb92a): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:31:29.946
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:31:29.969
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:31:29.970
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:33:03.662
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2026-01-27 21:33:03.966
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd console.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-01-27 21:34:41.775
+!MESSAGE /home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A} -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mid_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2026-01-27 21:34:56.899
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@69dbd8fa): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:34:56.899
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-01-27 21:34:56.904
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2026-01-27 21:34:56.904
+!MESSAGE Starting OpenOCD timed out.

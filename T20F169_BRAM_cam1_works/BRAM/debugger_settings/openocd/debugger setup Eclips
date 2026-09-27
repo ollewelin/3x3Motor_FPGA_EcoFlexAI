@@ -1,0 +1,50 @@
+target remote localhost:3333
+monitor reset halt
+set mem inaccessible-by-default off
+file /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.elf
+load
+break main
+continue
+
+
+
+set mem inaccessible-by-default off
+monitor reset halt
+break main
+continue
+
+
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="ilg.gnumcueclipse.debug.gdbjtag.openocd.launchConfigurationType">
+  <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doStartGdbServer" value="true"/>
+  <booleanAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.doStartGdbCLient" value="true"/>
+  <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerExecutable"
+                   value="${eclipse_home}/../openocd/bin/openocd"/>
+  <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerOther"
+                   value="-f /home/olle/openocd/olle_ftdi_wrap.cfg&#10;-f /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg"/>
+  <intAttribute    key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbServerGdbPortNumber" value="3333"/>
+  <stringAttribute key="org.eclipse.cdt.dsf.gdb.DEBUG_NAME"
+                   value="${eclipse_home}/../toolchain/bin/riscv-none-embed-gdb"/>
+
+  <!-- Use remote target -->
+  <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useRemoteTarget" value="true"/>
+  <stringAttribute key="org.eclipse.cdt.debug.gdbjtag.core.ipAddress" value="localhost"/>
+  <intAttribute    key="org.eclipse.cdt.debug.gdbjtag.core.portNumber" value="3333"/>
+
+  <!-- Auto load image & symbols from the project ELF -->
+  <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForImage" value="true"/>
+  <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.useProjBinaryForSymbols" value="true"/>
+  <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadImage" value="true"/>
+  <booleanAttribute key="org.eclipse.cdt.debug.gdbjtag.core.loadSymbols" value="true"/>
+
+  <!-- GDB init & run commands -->
+  <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.gdbClientOtherCommands"
+                   value="set mem inaccessible-by-default off"/>
+  <stringAttribute key="ilg.gnumcueclipse.debug.gdbjtag.openocd.otherRunCommands"
+                   value="monitor reset halt&#10;break main&#10;continue"/>
+
+  <!-- Point to your ELF and project -->
+  <stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="./build/blink_led.elf"/>
+  <stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="blink_led"/>
+</launchConfiguration>

@@ -1,0 +1,43 @@
+Sat August 23 25 11:29:09 - Starting Efinity IP Manager RPC Service...
+
+Sat August 23 25 11:29:11 - IP Manager RPC Server Connected.
+
+DEBUG    : Initialising Efx::ConcurrencyControl with 4 threads [Debug]
+
+INFO     : --max_threads set to 4 
+
+Sat August 23 25 11:29:16 - Project loaded VM : 544.46 MB RSS : 227.792 MB
+
+Sat August 23 25 11:29:18 - Running Efinity Programmer...
+
+Sat August 23 25 11:30:09 - Efinity Programmer finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:30:12 - Running Efinity Debugger...
+
+Sat August 23 25 11:30:45 - Efinity Debugger finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:30:47 - Running Efinity Programmer...
+
+Sat August 23 25 11:31:57 - Efinity Programmer finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:31:59 - Running Efinity Programmer...
+
+Sat August 23 25 11:32:07 - Efinity Programmer finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:32:41 - Running Efinity Programmer...
+
+Sat August 23 25 11:33:48 - Efinity Programmer finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:33:49 - Running Efinity Programmer...
+
+Sat August 23 25 11:34:17 - There is already a Programmer instance running. Bringing it to foreground...
+
+Sat August 23 25 11:34:26 - Efinity Programmer finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 11:34:29 - Running Efinity Programmer...
+
+Sat August 23 25 11:42:33 - Floorplan closed VM : 536.408 MB RSS : 229.456 MB
+
+Sat August 23 25 11:42:33 - Project close VM : 536.408 MB RSS : 165.252 MB
+
+

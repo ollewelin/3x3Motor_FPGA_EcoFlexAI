@@ -1,0 +1,5 @@
+22:56:52 **** Clean-only build of configuration Default for project userTimerDemo ****
+make clean 
+
+22:56:52 Build Finished. 0 errors, 0 warnings. (took 334ms)
+

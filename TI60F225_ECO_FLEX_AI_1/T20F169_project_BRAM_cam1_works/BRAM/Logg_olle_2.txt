@@ -1,0 +1,65 @@
+/home/olle/efinix/efinity/2025.1/pgm/fli/trion/u00210A79_t20.bit
+
+sudo ethtool enp2s0 | egrep 'Link detected|Speed|Duplex|Auto-negotiation'
+
+sudo ip addr flush dev enp2s0
+sudo ip addr add 192.168.1.20/24 dev enp2s0
+sudo ip link set enp2s0 up
+sudo tcpdump -ni enp2s0 'ether proto 0x0800 and udp and dst port 5678'
+
+
+(base) olle@olle-SSD-256:~$ sudo ethtool enp2s0 | egrep 'Link detected|Speed|Duplex|Auto-negotiation'
+	Speed: 100Mb/s
+	Duplex: Half
+	Auto-negotiation: on
+	Link detected: yes
+(base) olle@olle-SSD-256:~$ sudo ip addr flush dev enp2s0
+sudo ip addr add 192.168.1.20/24 dev enp2s0
+sudo ip link set enp2s0 up
+sudo tcpdump -ni enp2s0 'ether proto 0x0800 and udp and dst port 5678'
+tcpdump: verbose output suppressed, use -v[v]... for full protocol decode
+listening on enp2s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+
+
+--Test openocd
+
+$OCD \
+  -f "$BSP/ftdi.cfg" \
+  -c "ftdi device_desc \"Dual RS232-HS\"; ftdi channel 1; adapter speed 1000" \
+  -c "set _CPUTAPID 0x00210a79; set LEGACY_IDE 0; set STANDARD_DEBUG 1" \
+  -f "$BSP/debug.cfg" \
+  -c "jtag tapdisable fpga_spinal.bridge; jtag newtap fpga_spinal bridge -expected-id 0x00210a79 -irlen 8 -ircapture 0x5 -irmask 0xF; \
+      riscv set_bscan_tunnel_ir 0x8; init; scan_chain; targets; shutdown"
+
+------------
+olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ OCD=~/efinix/efinity/2025.1/debugger/openocd/bin/openocd
+olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ BSP=~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd
+olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ 
+olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ $OCD \
+>   -f "$BSP/ftdi.cfg" \
+>   -c "ftdi vid_pid 0x0403 0x6010; ftdi device_desc \"Dual RS232-HS\"; ftdi channel 1; adapter speed 1000" \
+>   -c "set _CPUTAPID 0x00210a79; set LEGACY_IDE 0; set STANDARD_DEBUG 1" \
+>   -f "$BSP/debug.cfg" \
+>   -c "init; scan_chain; targets; shutdown"
+Open On-Chip Debugger 0.11.0+dev-04041-gcb00d8669 (2025-03-22-13:40)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+adapter speed: 1000 kHz
+
+1
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+Info : Simple Register based Bscan Tunnel Selected
+Info : Bscan tunnel IR 0x8 selected
+Info : set servers polling period to 50ms
+Info : clock speed 800 kHz
+Info : JTAG tap: fpga_spinal.bridge tap/device found: 0x00210a79 (mfg: 0x53c (Efinix Inc), part: 0x0210, ver: 0x0)
+Info : [fpga_spinal.cpu0] datacount=1 progbufsize=2
+Info : Disabling abstract command reads from CSRs.
+Info : [fpga_spinal.cpu0] Examined RISC-V core; found 1 harts
+Info : [fpga_spinal.cpu0]  XLEN=32, misa=0x40001101
+[fpga_spinal.cpu0] Target successfully examined.
+Info : starting gdb server for fpga_spinal.cpu0 on 3333
+Info : Listening on port 3333 for gdb connections
+shutdown command invoked
+olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ 

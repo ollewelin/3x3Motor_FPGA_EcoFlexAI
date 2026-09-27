@@ -1,0 +1,611 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2025.1.110.2.15 
+           Compiled: Jun 21 2025.
+           
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T20F169" ...
+           
+           ***** Beginning stage netlist pre-processing ... *****
+INFO     : Successfully Read in Verific binary Netlist dump file "/home/olle/efinity_p2/BRAM/outflow/BRAM.dbg.vdb".
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(10): Input/inout port clk is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(12): Input/inout port pll_clk_lock is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(19): Input/inout port led4 is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(51): Input/inout port rmii_crs_dv is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(52): Input/inout port rmii_rx_er is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(53): Input/inout port rmii_rxd[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(59): Input/inout port mdio_i is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(62): Input/inout port phy_intr_n is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(69): Input/inout port mipi_rx_inst1_DATA[63] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(70): Input/inout port mipi_rx_inst1_VALID is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(71): Input/inout port mipi_rx_inst1_TYPE[5] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(72): Input/inout port mipi_rx_inst1_VC[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(73): Input/inout port mipi_rx_inst1_CNT[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(74): Input/inout port mipi_rx_inst1_HSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(75): Input/inout port mipi_rx_inst1_VSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(86): Input/inout port mipi_rx_inst2_DATA[63] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(87): Input/inout port mipi_rx_inst2_VALID is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(88): Input/inout port mipi_rx_inst2_TYPE[5] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(89): Input/inout port mipi_rx_inst2_VC[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(90): Input/inout port mipi_rx_inst2_CNT[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(91): Input/inout port mipi_rx_inst2_HSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(92): Input/inout port mipi_rx_inst2_VSYNC[3] is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_DRCK is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_RUNTEST is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_TMS is unconnected and will be removed. [VDB-8003]
+WARNING  : Found 182 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0355976 seconds.
+INFO     : 	VDB Netlist Checker took 0.05 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 228.656 MB, end = 245.068 MB, delta = 16.412 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 119.424 MB, end = 120.064 MB, delta = 0.64 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 274.216 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Net clk promoted to global due to interface constraints.
+INFO     : Creating interface clock buffer clk~CLKBUF.
+INFO     : Found 0 constant generator nets.
+INFO     : Pass 0: Swept away 0 nets with no fanout.
+INFO     : logical_block #2(pll_clk_lock) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #5(led4) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #20(rmii_crs_dv) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #21(rmii_rx_er) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #22(rmii_rxd[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #23(rmii_rxd[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #28(mdio_i) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #31(phy_intr_n) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #33(mipi_rx_inst1_DATA[63]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #34(mipi_rx_inst1_DATA[62]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #35(mipi_rx_inst1_DATA[61]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #36(mipi_rx_inst1_DATA[60]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #37(mipi_rx_inst1_DATA[59]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #38(mipi_rx_inst1_DATA[58]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #39(mipi_rx_inst1_DATA[57]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #40(mipi_rx_inst1_DATA[56]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #41(mipi_rx_inst1_DATA[55]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #42(mipi_rx_inst1_DATA[54]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #43(mipi_rx_inst1_DATA[53]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #44(mipi_rx_inst1_DATA[52]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #45(mipi_rx_inst1_DATA[51]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #46(mipi_rx_inst1_DATA[50]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #47(mipi_rx_inst1_DATA[49]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #48(mipi_rx_inst1_DATA[48]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #49(mipi_rx_inst1_DATA[47]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #50(mipi_rx_inst1_DATA[46]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #51(mipi_rx_inst1_DATA[45]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #52(mipi_rx_inst1_DATA[44]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #53(mipi_rx_inst1_DATA[43]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #54(mipi_rx_inst1_DATA[42]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #55(mipi_rx_inst1_DATA[41]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #56(mipi_rx_inst1_DATA[40]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #57(mipi_rx_inst1_DATA[39]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #58(mipi_rx_inst1_DATA[38]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #59(mipi_rx_inst1_DATA[37]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #60(mipi_rx_inst1_DATA[36]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #61(mipi_rx_inst1_DATA[35]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #62(mipi_rx_inst1_DATA[34]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #63(mipi_rx_inst1_DATA[33]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #64(mipi_rx_inst1_DATA[32]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #65(mipi_rx_inst1_DATA[31]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #66(mipi_rx_inst1_DATA[30]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #67(mipi_rx_inst1_DATA[29]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #68(mipi_rx_inst1_DATA[28]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #69(mipi_rx_inst1_DATA[27]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #70(mipi_rx_inst1_DATA[26]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #71(mipi_rx_inst1_DATA[25]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #72(mipi_rx_inst1_DATA[24]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #73(mipi_rx_inst1_DATA[23]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #74(mipi_rx_inst1_DATA[22]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #75(mipi_rx_inst1_DATA[21]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #76(mipi_rx_inst1_DATA[20]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #77(mipi_rx_inst1_DATA[19]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #78(mipi_rx_inst1_DATA[18]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #79(mipi_rx_inst1_DATA[17]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #80(mipi_rx_inst1_DATA[16]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #81(mipi_rx_inst1_DATA[15]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #82(mipi_rx_inst1_DATA[14]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #83(mipi_rx_inst1_DATA[13]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #84(mipi_rx_inst1_DATA[12]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #85(mipi_rx_inst1_DATA[11]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #86(mipi_rx_inst1_DATA[10]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #87(mipi_rx_inst1_DATA[9]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #88(mipi_rx_inst1_DATA[8]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #89(mipi_rx_inst1_DATA[7]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #90(mipi_rx_inst1_DATA[6]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #91(mipi_rx_inst1_DATA[5]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #92(mipi_rx_inst1_DATA[4]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #93(mipi_rx_inst1_DATA[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #94(mipi_rx_inst1_DATA[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #95(mipi_rx_inst1_DATA[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #96(mipi_rx_inst1_DATA[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #97(mipi_rx_inst1_VALID) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #98(mipi_rx_inst1_TYPE[5]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #99(mipi_rx_inst1_TYPE[4]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #100(mipi_rx_inst1_TYPE[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #101(mipi_rx_inst1_TYPE[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #102(mipi_rx_inst1_TYPE[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #103(mipi_rx_inst1_TYPE[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #104(mipi_rx_inst1_VC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #105(mipi_rx_inst1_VC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #106(mipi_rx_inst1_CNT[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #107(mipi_rx_inst1_CNT[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #108(mipi_rx_inst1_CNT[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #109(mipi_rx_inst1_CNT[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #110(mipi_rx_inst1_HSYNC[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #111(mipi_rx_inst1_HSYNC[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #112(mipi_rx_inst1_HSYNC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #113(mipi_rx_inst1_HSYNC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #114(mipi_rx_inst1_VSYNC[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #115(mipi_rx_inst1_VSYNC[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #116(mipi_rx_inst1_VSYNC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #117(mipi_rx_inst1_VSYNC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #126(mipi_rx_inst2_DATA[63]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #127(mipi_rx_inst2_DATA[62]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #128(mipi_rx_inst2_DATA[61]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #129(mipi_rx_inst2_DATA[60]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #130(mipi_rx_inst2_DATA[59]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #131(mipi_rx_inst2_DATA[58]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #132(mipi_rx_inst2_DATA[57]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #133(mipi_rx_inst2_DATA[56]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #134(mipi_rx_inst2_DATA[55]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #135(mipi_rx_inst2_DATA[54]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #136(mipi_rx_inst2_DATA[53]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #137(mipi_rx_inst2_DATA[52]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #138(mipi_rx_inst2_DATA[51]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #139(mipi_rx_inst2_DATA[50]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #140(mipi_rx_inst2_DATA[49]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #141(mipi_rx_inst2_DATA[48]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #142(mipi_rx_inst2_DATA[47]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #143(mipi_rx_inst2_DATA[46]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #144(mipi_rx_inst2_DATA[45]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #145(mipi_rx_inst2_DATA[44]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #146(mipi_rx_inst2_DATA[43]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #147(mipi_rx_inst2_DATA[42]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #148(mipi_rx_inst2_DATA[41]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #149(mipi_rx_inst2_DATA[40]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #150(mipi_rx_inst2_DATA[39]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #151(mipi_rx_inst2_DATA[38]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #152(mipi_rx_inst2_DATA[37]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #153(mipi_rx_inst2_DATA[36]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #154(mipi_rx_inst2_DATA[35]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #155(mipi_rx_inst2_DATA[34]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #156(mipi_rx_inst2_DATA[33]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #157(mipi_rx_inst2_DATA[32]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #158(mipi_rx_inst2_DATA[31]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #159(mipi_rx_inst2_DATA[30]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #160(mipi_rx_inst2_DATA[29]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #161(mipi_rx_inst2_DATA[28]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #162(mipi_rx_inst2_DATA[27]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #163(mipi_rx_inst2_DATA[26]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #164(mipi_rx_inst2_DATA[25]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #165(mipi_rx_inst2_DATA[24]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #166(mipi_rx_inst2_DATA[23]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #167(mipi_rx_inst2_DATA[22]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #168(mipi_rx_inst2_DATA[21]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #169(mipi_rx_inst2_DATA[20]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #170(mipi_rx_inst2_DATA[19]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #171(mipi_rx_inst2_DATA[18]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #172(mipi_rx_inst2_DATA[17]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #173(mipi_rx_inst2_DATA[16]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #174(mipi_rx_inst2_DATA[15]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #175(mipi_rx_inst2_DATA[14]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #176(mipi_rx_inst2_DATA[13]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #177(mipi_rx_inst2_DATA[12]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #178(mipi_rx_inst2_DATA[11]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #179(mipi_rx_inst2_DATA[10]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #180(mipi_rx_inst2_DATA[9]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #181(mipi_rx_inst2_DATA[8]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #182(mipi_rx_inst2_DATA[7]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #183(mipi_rx_inst2_DATA[6]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #184(mipi_rx_inst2_DATA[5]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #185(mipi_rx_inst2_DATA[4]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #186(mipi_rx_inst2_DATA[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #187(mipi_rx_inst2_DATA[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #188(mipi_rx_inst2_DATA[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #189(mipi_rx_inst2_DATA[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #190(mipi_rx_inst2_VALID) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #191(mipi_rx_inst2_TYPE[5]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #192(mipi_rx_inst2_TYPE[4]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #193(mipi_rx_inst2_TYPE[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #194(mipi_rx_inst2_TYPE[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #195(mipi_rx_inst2_TYPE[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #196(mipi_rx_inst2_TYPE[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #197(mipi_rx_inst2_VC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #198(mipi_rx_inst2_VC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #199(mipi_rx_inst2_CNT[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #200(mipi_rx_inst2_CNT[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #201(mipi_rx_inst2_CNT[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #202(mipi_rx_inst2_CNT[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #203(mipi_rx_inst2_HSYNC[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #204(mipi_rx_inst2_HSYNC[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #205(mipi_rx_inst2_HSYNC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #206(mipi_rx_inst2_HSYNC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #207(mipi_rx_inst2_VSYNC[3]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #208(mipi_rx_inst2_VSYNC[2]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #209(mipi_rx_inst2_VSYNC[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #210(mipi_rx_inst2_VSYNC[0]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #220(jtag_inst1_DRCK) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #222(jtag_inst1_RUNTEST) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #227(jtag_inst1_TMS) has no fanout.
+INFO     : Removing input.
+INFO     : Pass 0: Swept away 181 blocks with no fanout.
+INFO     : Pass 1: Swept away 0 nets with no fanout.
+INFO     : Pass 1: Swept away 0 blocks with no fanout.
+INFO     : Swept away 0 nets and 181 blocks in total.
+INFO     : Removed 0 LUT buffers
+INFO     : Sweept away 181 nodes
+INFO     : Successfully created VPR logical netlist from Verific binary DataBase file "/home/olle/efinity_p2/BRAM/outflow/BRAM.dbg.vdb".
+INFO     : Netlist pre-processing took 0.209202 seconds.
+INFO     : 	Netlist pre-processing took 0.22 seconds (approximately) in total CPU time.
+INFO     : Netlist pre-processing virtual memory usage: begin = 228.656 MB, end = 245.068 MB, delta = 16.412 MB
+INFO     : Netlist pre-processing resident set memory usage: begin = 118.4 MB, end = 120.32 MB, delta = 1.92 MB
+INFO     : 	Netlist pre-processing peak resident set memory usage = 274.216 MB
+           ***** Ending stage netlist pre-processing *****
+           
+           ***** Beginning stage pre-packing ... *****
+           ***** Ending stage pre-packing *****
+           
+           ***** Beginning stage packing ... *****
+INFO     : Generate proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.014661 seconds
+INFO     : Creating IO constraints file '/home/olle/efinity_p2/BRAM/work_pnr/BRAM.io_place'
+INFO     : Packing took 0.0459278 seconds.
+INFO     : 	Packing took 0.05 seconds (approximately) in total CPU time.
+INFO     : Packing virtual memory usage: begin = 245.068 MB, end = 245.068 MB, delta = 0 MB
+INFO     : Packing resident set memory usage: begin = 120.96 MB, end = 121.6 MB, delta = 0.64 MB
+INFO     : 	Packing peak resident set memory usage = 274.216 MB
+           ***** Ending stage packing *****
+           
+INFO     : Read proto netlist file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto
+INFO     : Read proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.010838 seconds
+INFO     : Setup net and block data structure took 0.190652 seconds
+WARNING  : Found 182 warnings in the post-synthesis netlist.
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Net clk promoted to global due to interface constraints.
+INFO     : Creating interface clock buffer clk~CLKBUF.
+           ***** Beginning stage packed netlist loading ... *****
+INFO     : Read proto netlist file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto
+INFO     : Read proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.010808 seconds
+INFO     : Setup net and block data structure took 0.167105 seconds
+INFO     : Packed netlist loading took 0.179691 seconds.
+INFO     : 	Packed netlist loading took 0.18 seconds (approximately) in total CPU time.
+INFO     : Packed netlist loading virtual memory usage: begin = 245.068 MB, end = 245.068 MB, delta = 0 MB
+INFO     : Packed netlist loading resident set memory usage: begin = 143.488 MB, end = 143.488 MB, delta = 0 MB
+INFO     : 	Packed netlist loading peak resident set memory usage = 274.216 MB
+           ***** Ending stage packed netlist loading *****
+           
+           ***** Beginning stage pre-placement ... *****
+           
+           ***** Ending stage pre-placement *****
+           
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+           ***** Beginning stage initial placement ... *****
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+INFO     : Writing IO placement constraints to "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.io"
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.io'.
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/work_pnr/BRAM.io_place'.
+WARNING  : Clock source jtag_inst1_TCK does not use a dedicated clock pad, so extra clock insertion delay is added
+WARNING  : Clock input pad, pll_clk, of net, pll_clk, drives both clock buffer and logic. Expect extra clock skew.
+           ***** Ending stage initial placement *****
+           
+           ***** Beginning stage placement ... *****
+INFO     : Starting Global Placer with 4 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1     4625005             184         0.7%
+INFO     :           2     6044331             276         1.5%
+INFO     :           3     4552629            -232         2.6%
+INFO     :           4     4110410            -631         4.8%
+INFO     :           5     1839027            -344         7.8%
+INFO     :           6      972068           -2246        13.8%
+INFO     :           7      566041           -1134        22.1%
+INFO     :           8      363435            -750        29.1%
+INFO     :           9      329645           -1031        35.1%
+INFO     :          10      306111           -1991        40.0%
+INFO     :          11      294087           -1954        43.2%
+INFO     :          12      286411           -2209        48.1%
+INFO     :          13      285210           -2745        51.3%
+INFO     :          14      276787           -2519        53.1%
+INFO     :          15      266900           -2802        57.1%
+INFO     :          16      271368           -2561        57.9%
+INFO     :          17      257642           -2425        58.7%
+INFO     :          18      260363           -2264        61.7%
+INFO     :          19      258420           -1932        61.9%
+INFO     :          20      256679           -1856        63.5%
+INFO     :          21      253900           -1793        64.4%
+INFO     :          22      252168           -1836        66.2%
+INFO     :          23      242577           -1929        68.3%
+INFO     :          24      242774           -2580        70.9%
+INFO     :          25      240017           -1806        70.9%
+INFO     :          26      240777           -1610        71.6%
+INFO     :          27      236727           -2586        73.0%
+INFO     :          28      238608           -2054        74.0%
+INFO     :          29      234961           -1888        74.1%
+INFO     :          30      237708           -2268        76.2%
+INFO     :          31      234926           -2279        76.2%
+INFO     :          32      236353           -2493        77.6%
+INFO     :          33      232553           -2465        77.8%
+INFO     :          34      231992           -2377        80.5%
+INFO     :          35      230476           -2837        80.8%
+INFO     :          36      231439           -2476        82.5%
+INFO     :          37      226703           -2713        82.9%
+INFO     :          38      227268           -3792        85.4%
+INFO     :          39      225278           -3013        85.5%
+INFO     :          40      225474           -2511        86.9%
+INFO     :          41      224864           -3091        87.1%
+INFO     :          42      225006           -2786        88.3%
+INFO     :          43      224003           -2737        88.6%
+INFO     :          44      224723           -3236        89.9%
+INFO     :          45      222555           -3083        90.3%
+INFO     :          46      223885           -4016        91.9%
+INFO     :          47      222917           -3357        92.7%
+INFO     :          48      224344           -3511        93.3%
+INFO     :          49      222810           -3451        93.6%
+INFO     :          50      223290           -3791        94.4%
+INFO     :          51      223960           -3422        95.1%
+INFO     :          52      222342           -3776        95.5%
+INFO     :          53      222864           -4417        96.3%
+INFO     :          54      223047           -4012        97.4%
+INFO     :          55      223773           -4541        98.0%
+INFO     :          56      224420           -4246        98.4%
+INFO     :          57      224629           -4022        98.6%
+INFO     :          58      225180           -4231        99.0%
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0       89114           11683        30.0
+INFO     :           1       73021            9420        29.1
+INFO     :           2       67785            9892        28.3
+INFO     :           3       61231            9036        27.2
+INFO     :           4       58551            8391        26.1
+INFO     :           5       57611            8377        24.8
+INFO     :           6       57198            8760        23.7
+INFO     :           7       55866            8288        22.4
+INFO     :           8       55018            8074        21.2
+INFO     :           9       54013            8318        20.1
+INFO     :          10       53185            8104        19.0
+INFO     :          11       52774            8048        18.0
+INFO     :          12       51987            8020        17.0
+INFO     :          13       51051            8507        16.0
+INFO     :          14       51012            8011        15.0
+INFO     :          15       50404            7869        14.1
+INFO     :          16       49864            8025        13.3
+INFO     :          17       49638            7993        12.5
+INFO     :          18       49554            7993        11.7
+INFO     :          19       48935            7913        11.0
+INFO     :          20       48533            7869        10.3
+INFO     :          21       48003            7990         9.7
+INFO     :          22       47650            7909         9.0
+INFO     :          23       47322            7953         8.4
+INFO     :          24       47041            7870         7.9
+INFO     :          25       46623            8011         7.4
+INFO     :          26       46340            8280         6.9
+INFO     :          27       46079            7870         6.4
+INFO     :          28       45771            7870         6.0
+INFO     :          29       45314            7870         5.6
+INFO     :          30       45172            7870         5.2
+INFO     :          31       45050            7870         4.9
+INFO     :          32       44783            7870         4.6
+INFO     :          33       44365            7870         4.3
+INFO     :          34       44200            7870         4.0
+INFO     :          35       44034            7870         3.7
+INFO     :          36       43724            7870         3.5
+INFO     :          37       43515            7870         3.3
+INFO     :          38       43203            7870         3.1
+INFO     :          39       43028            7870         2.9
+INFO     :          40       42952            7870         2.7
+INFO     :          41       42835            7870         2.5
+INFO     :          42       42769            7870         2.3
+INFO     :          43       42599            7870         2.2
+INFO     :          44       42454            7870         2.0
+INFO     :          45       42358            7870         1.9
+INFO     :          46       42185            8081         1.7
+INFO     :          47       41940            8054         1.6
+INFO     : Counted delay computer calls: 166255
+Placement successful: 6312 cells are placed
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.245302 at 69,70
+INFO     : Congestion-weighted HPWL per net: 25.3847
+INFO     : Post-placement cluster-level checks is successful
+INFO     : Checks is successful
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/outflow/BRAM.qplace'.
+INFO     : Finished Realigning Types (611 blocks needed type change)
+INFO     : Completed placement consistency check successfully.
+INFO     : Successfully created FPGA place file '/home/olle/efinity_p2/BRAM/outflow/BRAM.place'
+INFO     : Placement took 12.8421 seconds.
+INFO     : 	Placement took 31.72 seconds (approximately) in total CPU time.
+INFO     : Placement virtual memory usage: begin = 245.068 MB, end = 376.972 MB, delta = 131.904 MB
+INFO     : Placement resident set memory usage: begin = 143.744 MB, end = 252.224 MB, delta = 108.48 MB
+INFO     : 	Placement peak resident set memory usage = 274.216 MB
+           ***** Ending stage placement *****
+           

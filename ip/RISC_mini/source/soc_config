@@ -1,0 +1,31 @@
+--ramHex "/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b/build/test_b.hex"
+--axiAEnable false
+--onChipRamSize 0x20000
+--spi name=system_spi_1_io,address=0x004000,interruptId=5,width=8,ssCount=1,fifoDepth=256
+--iCacheSize 4096
+--spi name=system_spi_0_io,address=0x006000,interruptId=4,width=8,ssCount=1,fifoDepth=256
+--uart name=system_uart_0_io,address=0x001000,interruptId=1,fifoDepth=128
+--Linux false
+--Atomic false
+--iCacheWays 1
+--apbBridgeAddress 0xf8000000
+--systemFrequency 50000000
+--L1I true
+--hardwareBreakpoints 0
+--L1D true
+--Fpu false
+--i2c name=system_i2c_0_io,address=0x00a000,interruptId=8
+--interrupt name=userInterruptA,id=16
+--softTap false
+--PeripheralClock false
+--ddrAEnable false
+--cpuCount 1
+--noBarrelShifter
+--onChipRamAddress 0xf9000000
+--gpio name=system_gpio_0_io,address=0x00d000,width=4,interrupts="0->12;1->13"
+--FpuDouble false
+--lowArea 5
+--apbSlave name=io_apbSlave_0,address=0x100000,size=65536
+--withRiscvDebugPriv
+--dCacheSize 4096
+--dCacheWays 1

@@ -1,0 +1,2249 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:05:08
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:07:04
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:09:47
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:11:21
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:12:00
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:16:35
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:16:50
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:18:15
+///////////////////////////////////
+
+[EFX-0021 ERROR] Elaboration of module 'BRAM' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:18:56
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'test2_counter' remains a black box since it has no binding entity (VHDL-1250) (/home/olle/efinity_p2/BRAM/top_level.vhd:29)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:19:31
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:44:49
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:48:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 16:50:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:03:20
+///////////////////////////////////
+
+[EFX-0265 ERROR] Bi-directional port 'led4' is not supported in this device. Check synthesis options.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:06:42
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] character ''z'' is not in type 'std_logic' (VHDL-1040) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:07:02
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] character ''z'' is not in type 'std_logic' (VHDL-1040) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:07:28
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] character ''z'' is not in type 'std_logic' (VHDL-1040) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:08:02
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] character ''z'' is not in type 'std_logic' (VHDL-1040) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:08:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '(' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:09:13
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] type of aggregate cannot be determined without context ; 0 visible types match here (VHDL-1275) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:09:53
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] type of aggregate cannot be determined without context ; 0 visible types match here (VHDL-1275) (/home/olle/efinity_p2/BRAM/top_level.vhd:141)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:145)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:10:07
+///////////////////////////////////
+
+[EFX-0265 ERROR] Bi-directional port 'led4' is not supported in this device. Check synthesis options.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:14:46
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot update object 'led4_oe' of mode 'in' (VHDL-1327) (/home/olle/efinity_p2/BRAM/top_level.vhd:148)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:151)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:15:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 19:58:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 20:05:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 20:48:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_enable\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:52)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tdi\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:53)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_capture\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:54)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_shift\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:55)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_update\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:56)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_reset\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:57)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tck\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:59)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tms' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:32)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdi' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:33)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdo' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:34)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tck' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:35)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:23:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:40:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_enable\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:52)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tdi\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:53)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_capture\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:54)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_shift\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:55)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_update\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:56)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_reset\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:57)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tck\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:59)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tms' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:32)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdi' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:33)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdo' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:34)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tck' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:35)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:41:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:44:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:54:33
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_enable\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:52)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tdi\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:53)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_capture\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:54)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_shift\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:55)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_update\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:56)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_reset\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:57)
+[EFX-0010 VERI-ERROR] formal port '\jtagCtrl_tck\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v:59)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tms' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:32)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdi' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:33)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tdo' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:34)
+[EFX-0010 VERI-ERROR] binding entity 'micro_risc_v1' does not have port 'io_jtag_tck' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:35)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:55:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 21:58:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:03:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:21:10
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:24:27
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:26:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:48:21
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'component' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:57)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:165)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:49:03
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 22:51:08
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2025 23:05:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 12:28:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 12:30:56
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 12:37:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 13:21:29
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 17:50:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 20:57:13
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'uart_b_cnt' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:138)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:169)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 20:57:36
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 21:09:49
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 21:26:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 22:39:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 22:42:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 09, 2025 23:09:16
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 12:29:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 13:44:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:30:49
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'st' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:40)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:93)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:100)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:107)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:111)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:115)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:120)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:123)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:129)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:134)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:135)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:139)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:143)
+[EFX-0010 VERI-ERROR] type error near 'done'; expected type 'st_t' (VHDL-1272) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:143)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:146)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:150)
+[EFX-0010 VERI-ERROR] type error near 'done'; expected type 'st_t' (VHDL-1272) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:150)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:153)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:35:27
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'out_bit' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:46)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:47)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:54)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:57)
+[EFX-0010 VERI-ERROR] 'rw_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:58)
+[EFX-0010 VERI-ERROR] 'phy_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:59)
+[EFX-0010 VERI-ERROR] 'reg_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:60)
+[EFX-0010 VERI-ERROR] 'wdat_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:61)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:63)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:84)
+[EFX-0010 VERI-ERROR] 'rd_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:85)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:96)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:97)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:102)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:35:33
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'out_bit' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:46)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:47)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:54)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:57)
+[EFX-0010 VERI-ERROR] 'rw_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:58)
+[EFX-0010 VERI-ERROR] 'phy_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:59)
+[EFX-0010 VERI-ERROR] 'reg_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:60)
+[EFX-0010 VERI-ERROR] 'wdat_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:61)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:63)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:84)
+[EFX-0010 VERI-ERROR] 'rd_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:85)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:96)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:97)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:102)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:36:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'out_bit' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:46)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:47)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:54)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:57)
+[EFX-0010 VERI-ERROR] 'rw_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:58)
+[EFX-0010 VERI-ERROR] 'phy_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:59)
+[EFX-0010 VERI-ERROR] 'reg_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:60)
+[EFX-0010 VERI-ERROR] 'wdat_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:61)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:63)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:84)
+[EFX-0010 VERI-ERROR] 'rd_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:85)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:96)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:97)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:102)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:36:51
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'out_bit' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:46)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:47)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:54)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:57)
+[EFX-0010 VERI-ERROR] 'rw_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:58)
+[EFX-0010 VERI-ERROR] 'phy_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:59)
+[EFX-0010 VERI-ERROR] 'reg_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:60)
+[EFX-0010 VERI-ERROR] 'wdat_i' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:61)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:63)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:84)
+[EFX-0010 VERI-ERROR] 'rd_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:85)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:91)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:96)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'out_ena' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:98)
+[EFX-0010 VERI-ERROR] 'go' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:97)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:102)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:41:11
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'WAIT' (VHDL-1261) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:36)
+[EFX-0010 VERI-ERROR] 'rst_hold' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:37)
+[EFX-0010 VERI-ERROR] 'rst_hold' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:56)
+[EFX-0010 VERI-ERROR] 'rst_release' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:68)
+[EFX-0010 VERI-ERROR] 'read_id1' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:75)
+[EFX-0010 VERI-ERROR] syntax error near 'WAIT' (VHDL-1261) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:79)
+[EFX-0010 VERI-ERROR] syntax error near 'WAIT' (VHDL-1261) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:83)
+[EFX-0010 VERI-ERROR] syntax error near 'WAIT' (VHDL-1261) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:87)
+[EFX-0010 VERI-ERROR] syntax error near 'WAIT' (VHDL-1261) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:89)
+[EFX-0010 VERI-ERROR] 'read_id2' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:92)
+[EFX-0010 VERI-ERROR] 'poll_bmsr' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:93)
+[EFX-0010 VERI-ERROR] 'poll_bmsr' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:97)
+[EFX-0010 VERI-ERROR] 'poll_bmsr' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:98)
+[EFX-0010 VERI-ERROR] case expression type 'st_t' is not a discrete or 1-dimensional character array type (VHDL-1036) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:101)
+[EFX-0010 VERI-ERROR] missing full type definition for 'st_t' (VHDL-1432) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:36)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:105)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:45:13
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'phy_rst_n' is constantly driven from multiple places (VDB-1000) (/home/olle/efinity_p2/BRAM/top_level.vhd:271)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/olle/efinity_p2/BRAM/top_level.vhd:333)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 16:46:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:05:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:12:19
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:18:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:36:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:44:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 17:51:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 18:13:04
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'mdc' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:208)
+[EFX-0010 VERI-ERROR] 'mdio_i' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:209)
+[EFX-0010 VERI-ERROR] 'mdio_o' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:210)
+[EFX-0010 VERI-ERROR] 'mdio_oe' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:211)
+[EFX-0010 VERI-ERROR] cannot update object 'mdio_i' of mode 'in' (VHDL-1327) (/home/olle/efinity_p2/BRAM/top_level.vhd:346)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:351)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 18:14:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 18:45:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 19:03:04
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 10, 2025 21:53:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 18:48:31
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 19:15:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 19:30:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 19:57:47
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 20:38:40
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] illegal aggregate choice 'others' for an unconstrained target (VHDL-1174) (/home/olle/efinity_p2/BRAM/phy_bringup.vhd:132)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 20:43:25
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 21:14:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 21:19:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'done' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:39)
+[EFX-0010 VERI-ERROR] 'st' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:40)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "=" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:93)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:100)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:107)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:111)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:115)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:120)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:123)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:129)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:134)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:135)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:139)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:143)
+[EFX-0010 VERI-ERROR] type error near 'done'; expected type 'st_t' (VHDL-1272) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:143)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:146)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:150)
+[EFX-0010 VERI-ERROR] type error near 'done'; expected type 'st_t' (VHDL-1272) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:150)
+[EFX-0010 VERI-ERROR] 'st' is not a signal (VHDL-1236) (/home/olle/efinity_p2/BRAM/mdio_tiny.vhd:153)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 21:33:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 21:34:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 11, 2025 21:55:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 20:12:19
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "+" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/test_folder/test_cnt.vhd:20)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/test_folder/test_cnt.vhd:24)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 20:12:59
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] type error near 's_cnt'; expected type 'std_logic_vector' (VHDL-1272) (/home/olle/efinity_p2/BRAM/test_folder/test_cnt.vhd:22)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/test_folder/test_cnt.vhd:24)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 20:14:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 20:18:51
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] index value 26 is out of range 25 downto 0 (VHDL-1124) (/home/olle/efinity_p2/BRAM/top_level.vhd:151)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 20:19:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:29:34
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'unisim' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:9)
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'xpm' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:12)
+[EFX-0010 VERI-ERROR] unit 'fifo_in_async_xpm' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:40)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:44:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'unisim' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:9)
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'xpm' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:12)
+[EFX-0010 VERI-ERROR] unit 'fifo_in_async_xpm' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:40)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:45:33
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ')' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:96)
+[EFX-0010 VERI-ERROR] indexed name prefix type 'unsigned' expects 1 dimensions (VHDL-1121) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:96)
+[EFX-0010 VERI-ERROR] syntax error near '=' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:215)
+[EFX-0010 VERI-ERROR] type error near 'to_integer'; expected type ' void' (VHDL-1272) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:215)
+[EFX-0010 VERI-ERROR] could not find a match for subprogram 'to_integer' (VHDL-1773) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:215)
+[EFX-0010 VERI-ERROR] unit 'fifo_in_async_xpm_arch' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:233)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:51:01
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'unisim' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_cmd_async_xpm.vhd:9)
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'xpm' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_cmd_async_xpm.vhd:12)
+[EFX-0010 VERI-ERROR] unit 'fifo_cmd_async_xpm' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_cmd_async_xpm.vhd:36)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:55:50
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] default field of an assignment pattern cannot contain another assignment pattern (VERI-2489) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:51)
+[EFX-0010 VERI-ERROR] module 'rmii_ethernet' is ignored due to previous errors (VERI-1072) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:506)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 21:58:39
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'unisim' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:9)
+[EFX-0010 VERI-ERROR] 'vcomponents' is not compiled in library 'xpm' (VHDL-1240) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:12)
+[EFX-0010 VERI-ERROR] unit 'fifo_out_async_xpm' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:41)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 22:00:44
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '(' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:170)
+[EFX-0010 VERI-ERROR] unit 'fifo_out_async_xpm_arch' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:225)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 22:02:23
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'variable' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:170)
+[EFX-0010 VERI-ERROR] 'rptr_bin_synced' is not a variable (VHDL-1352) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:171)
+[EFX-0010 VERI-ERROR] unit 'fifo_out_async_xpm_arch' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:227)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 22:04:04
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 0 elements; formal 'phy_txd' expects 2 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:165)
+[EFX-0010 VERI-ERROR] expression has 0 elements; formal 'phy_rxd' expects 2 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:167)
+[EFX-0010 VERI-ERROR] formal port 'phy_rxd' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:79)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'xpm_cdc_async_rst' (VERI-1063) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:96)
+[EFX-0010 VERI-ERROR] formal port '\PHY_RXD\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:8)
+[EFX-0010 VERI-ERROR] formal port '\ETH_RX_AXIS_CLK\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:12)
+[EFX-0010 VERI-ERROR] binding entity 'rmii_ethernet' does not have port 'th_rx_axis_clk' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:83)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 22:05:54
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 0 elements; formal 'phy_txd' expects 2 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:165)
+[EFX-0010 VERI-ERROR] expression has 0 elements; formal 'phy_rxd' expects 2 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:167)
+[EFX-0010 VERI-ERROR] formal port 'phy_rxd' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:79)
+[EFX-0010 VERI-ERROR] instantiating unknown module 'xpm_cdc_async_rst' (VERI-1063) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:96)
+[EFX-0010 VERI-ERROR] formal port '\PHY_RXD\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:8)
+[EFX-0010 VERI-ERROR] formal port '\ETH_RX_AXIS_CLK\' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/rmii_ethernet.sv:12)
+[EFX-0010 VERI-ERROR] binding entity 'rmii_ethernet' does not have port 'th_rx_axis_clk' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:83)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 12, 2025 22:11:35
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] illegal aggregate choice 'others' for an unconstrained target (VHDL-1174) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_out_async_xpm.vhd:127)
+[EFX-0010 VERI-ERROR] illegal aggregate choice 'others' for an unconstrained target (VHDL-1174) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_in_async_xpm.vhd:136)
+[EFX-0010 VERI-ERROR] illegal aggregate choice 'others' for an unconstrained target (VHDL-1174) (/home/olle/efinity_p2/BRAM/rmii-ethernet-mac/source/fifo_cmd_async_xpm.vhd:109)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 20:05:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 20:29:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 22:28:09
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'io12_manual_reset_n' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:334)
+[EFX-0010 VERI-ERROR] 'io12_manual_reset_n' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:335)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "and" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/top_level.vhd:335)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:338)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 22:30:08
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'mdc' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:208)
+[EFX-0010 VERI-ERROR] 'mdio_i' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:209)
+[EFX-0010 VERI-ERROR] 'mdio_o' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:210)
+[EFX-0010 VERI-ERROR] 'mdio_oe' is already declared in this region (VHDL-1223) (/home/olle/efinity_p2/BRAM/top_level.vhd:211)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:348)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 22:31:27
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'rst_n' is constantly driven from multiple places (VDB-1000) (/home/olle/efinity_p2/BRAM/top_level.vhd:325)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/olle/efinity_p2/BRAM/top_level.vhd:341)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 22:32:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 13, 2025 22:42:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 14, 2025 19:52:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 14, 2025 21:47:31
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "*" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:180)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:310)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 14, 2025 21:51:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 15, 2025 19:58:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 15, 2025 20:09:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 15, 2025 21:28:15
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 08:22:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 08:44:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 09:02:47
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:116)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:117)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:118)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:119)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:120)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:121)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:122)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:123)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:124)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:125)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:126)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:127)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:128)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:129)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:130)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:131)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:132)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:133)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:134)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 09:04:29
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:116)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:117)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:118)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:119)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:120)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:121)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:122)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:123)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:124)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:125)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:126)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:127)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:128)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:129)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:130)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:131)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:132)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:133)
+[EFX-0010 VERI-ERROR] syntax error near '/' (VHDL-1261) (/home/olle/efinity_p2/BRAM/top_level.vhd:134)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 09:04:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 09:04:54
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 09:14:44
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 10:36:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 11:04:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 16, 2025 17:42:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 17, 2025 20:12:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 17, 2025 20:26:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 17, 2025 20:44:10
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:170)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:189)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:208)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:227)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:253)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:298)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/mdio_clause22.vhd:322)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 17, 2025 20:47:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 19, 2025 19:49:45
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 19, 2025 20:11:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 19, 2025 20:21:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 19, 2025 20:51:54
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 06:40:54
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] use <= to assign to signal 'ip_chksum' (VHDL-1288) (/home/olle/efinity_p2/BRAM/rmii_tx_udp_min.vhd:188)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii_tx_udp_min.vhd:293)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 06:43:43
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 2 definitions of operator "&" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/rmii_tx_udp_min.vhd:71)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii_tx_udp_min.vhd:240)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 06:45:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] binding entity 'rmii_tx_udp_min' does not have port 'clk50' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:75)
+[EFX-0010 VERI-ERROR] binding entity 'rmii_tx_udp_min' does not have port 'rst' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:76)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 06:47:26
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal clk is not declared (VHDL-1084) (/home/olle/efinity_p2/BRAM/top_level.vhd:128)
+[EFX-0010 VERI-ERROR] formal port 'clk50' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:132)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:157)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 06:47:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 19:25:04
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] binding entity 'rmii_tx_udp_min' does not have port 'clk50' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:75)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 19:28:35
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '(' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:297)
+[EFX-0010 VERI-ERROR] syntax error near '(' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:298)
+[EFX-0010 VERI-ERROR] syntax error near '(' (VHDL-1261) (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:299)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:317)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 19:33:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 19:39:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 20:20:12
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 20:48:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 20, 2025 21:29:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 22, 2025 20:49:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 22, 2025 21:16:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 23, 2025 11:16:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 23, 2025 12:04:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 18:54:40
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tdi' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:192)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_capture' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:193)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:194)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_update' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:195)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_reset' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:196)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tdo' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:197)
+[EFX-0010 VERI-ERROR] actual of formal out port 'jtagctrl_tdo' cannot be an expression (VHDL-1318) (/home/olle/efinity_p2/BRAM/top_level.vhd:197)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tck' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:198)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:232)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 19:02:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tdi' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:192)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_capture' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:193)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_shift' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:194)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_update' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:195)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_reset' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:196)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tdo' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:197)
+[EFX-0010 VERI-ERROR] actual of formal out port 'jtagctrl_tdo' cannot be an expression (VHDL-1318) (/home/olle/efinity_p2/BRAM/top_level.vhd:197)
+[EFX-0010 VERI-ERROR] 'jtag_dummy_tck' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:198)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:232)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 19:03:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 21:25:28
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal i2c_rxak is not declared (VHDL-1084) (/home/olle/efinity_p2/BRAM/top_level.vhd:275)
+[EFX-0010 VERI-ERROR] formal port 'mst_write_done' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:293)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:347)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 21:32:40
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] formal i2c_arb_lost is not declared (VHDL-1084) (/home/olle/efinity_p2/BRAM/top_level.vhd:276)
+[EFX-0010 VERI-ERROR] formal port 'mst_write_done' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:293)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:347)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 21:41:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'i2c_rxak' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/top_level.vhd:303)
+[EFX-0010 VERI-ERROR] actual of formal out port 'i2c_rxak' cannot be an expression (VHDL-1318) (/home/olle/efinity_p2/BRAM/top_level.vhd:303)
+[EFX-0010 VERI-ERROR] unit 'behavior' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/top_level.vhd:356)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 21:44:53
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot assign signal 'i2c_slave_addr' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:42)
+[EFX-0010 VERI-ERROR] cannot assign signal 'mst_command_byte' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:43)
+[EFX-0010 VERI-ERROR] cannot assign signal 'mst_num_bytes' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:44)
+[EFX-0010 VERI-ERROR] cannot assign signal 'mst_din' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:45)
+[EFX-0010 VERI-ERROR] cannot assign signal 'mst_write' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:46)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:122)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 26, 2025 21:50:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 32 elements; formal 'mst_data_out' expects 8 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:276)
+[EFX-0010 VERI-ERROR] formal port 'mst_data_out' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:175)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 27, 2025 18:57:16
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 32 elements; formal 'mst_data_out' expects 8 (VHDL-1549) (/home/olle/efinity_p2/BRAM/top_level.vhd:276)
+[EFX-0010 VERI-ERROR] formal port 'mst_data_out' has no actual or default value (VHDL-1768) (/home/olle/efinity_p2/BRAM/top_level.vhd:175)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 27, 2025 19:06:45
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 24 elements; expected 32 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:94)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 27, 2025 19:07:57
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 24 elements; expected 32 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:109)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 27, 2025 19:08:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 27, 2025 19:30:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 20:09:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 20:24:03
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "/" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:51)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'integer' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:51)
+[EFX-0010 VERI-ERROR] 0 definitions of operator "/" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:52)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'integer' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:52)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:298)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 20:27:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 22:04:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 22:08:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 23:36:48
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 23:46:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 29, 2025 23:52:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 09:31:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 09:44:25
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 32 elements; expected 8 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:212)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 09:46:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 10:55:29
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 11:20:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 11:32:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 12:18:56
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 12:58:04
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 13:47:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 13:55:36
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 14:22:10
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 14:33:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 15:50:47
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 16:27:05
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 16:37:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 16:51:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 16:52:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 18:04:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 18:31:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 18:43:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 18:52:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 19:19:01
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 19:37:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 19:48:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 19:49:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 20:02:44
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 21:26:46
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 8 elements; expected 5 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:110)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 30, 2025 21:27:29
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 09:04:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 09:24:47
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 11:02:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 11:22:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 11:32:38
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 11:52:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:10:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:29:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "&" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:304)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:433)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:29:59
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 0 definitions of operator "&" match here (VHDL-1052) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:304)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:433)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:30:45
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 4 elements; expected 8 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:304)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:32:01
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 12 elements; expected 8 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:304)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:32:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 12:33:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 13:17:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 13:41:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 13:41:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 14:58:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 15:18:10
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 15:44:23
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:45:35
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:41)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:42)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:43)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:44)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:47)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:48)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:51)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:52)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:53)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:54)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:55)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:56)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:57)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:58)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:61)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:62)
+[EFX-0010 VERI-ERROR] syntax error near ':' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:63)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:158)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:458)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:48:41
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] unexpected non-printable character with the hex value '0xa7' (VHDL-1852) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:29)
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:158)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:458)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:48:59
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '?' (VHDL-1261) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:158)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:458)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:53:24
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mst_write_done' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:173)
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_ok' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:184)
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_val' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:185)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:54:11
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mst_write_done' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:173)
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_ok' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:184)
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_val' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:185)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:54:56
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_ok' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:184)
+[EFX-0010 VERI-ERROR] binding entity 'control_camera_i2c' does not have port 'mux_val' (VHDL-1324) (/home/olle/efinity_p2/BRAM/top_level.vhd:185)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 16:55:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 20:08:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 20:37:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 20:46:25
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 21:28:08
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 22:08:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 31, 2025 22:17:43
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 01, 2025 19:06:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 01, 2025 19:18:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 01, 2025 19:51:53
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 01, 2025 20:02:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 19:56:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 20:29:39
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] left bound of slice is outside its index type range (VHDL-1132) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:295)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 20:29:56
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] left bound of slice is outside its index type range (VHDL-1132) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:295)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 20:31:26
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 21:04:08
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 02, 2025 21:18:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 04, 2025 20:32:09
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot assign signal 'sda_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:57)
+[EFX-0010 VERI-ERROR] cannot assign signal 'sda_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:58)
+[EFX-0010 VERI-ERROR] cannot assign signal 'scl_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:59)
+[EFX-0010 VERI-ERROR] cannot assign signal 'scl_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:60)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:91)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:163)
+[EFX-0010 VERI-ERROR] type error near 'slave_addr7'; expected type ' void' (VHDL-1272) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:163)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:173)
+[EFX-0010 VERI-ERROR] type error near 'slave_addr7'; expected type ' void' (VHDL-1272) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:173)
+[EFX-0010 VERI-ERROR] syntax error near 'else' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:301)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:320)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:320)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:382)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:382)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:408)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:408)
+[EFX-0010 VERI-ERROR] prefix of attribute left is not a type mark (VHDL-1519) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:469)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:478)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:485)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 19:49:09
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot assign signal 'sda_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:57)
+[EFX-0010 VERI-ERROR] cannot assign signal 'sda_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:58)
+[EFX-0010 VERI-ERROR] cannot assign signal 'scl_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:59)
+[EFX-0010 VERI-ERROR] cannot assign signal 'scl_oe' from within a subprogram (VHDL-1538) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:60)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:92)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:164)
+[EFX-0010 VERI-ERROR] type error near 'slave_addr7'; expected type ' void' (VHDL-1272) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:164)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:174)
+[EFX-0010 VERI-ERROR] type error near 'slave_addr7'; expected type ' void' (VHDL-1272) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:174)
+[EFX-0010 VERI-ERROR] syntax error near 'else' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:302)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:321)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:321)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:383)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:383)
+[EFX-0010 VERI-ERROR] syntax error near 'sla' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:409)
+[EFX-0010 VERI-ERROR] type conversion expression type for 'std_logic_vector' cannot be uniquely determined (VHDL-1155) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:409)
+[EFX-0010 VERI-ERROR] prefix of attribute left is not a type mark (VHDL-1519) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:470)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:479)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:486)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:11:52
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] prefix of attribute left is not a type mark (VHDL-1519) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:469)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:478)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:485)
+[EFX-0010 VERI-ERROR] syntax error near 'case' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:490)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:15:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:478)
+[EFX-0010 VERI-ERROR] syntax error near 'when' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:485)
+[EFX-0010 VERI-ERROR] syntax error near 'case' (VHDL-1261) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:490)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:17:38
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'slave_i[6]' is constantly driven from multiple places (VDB-1000) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:475)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:207)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:20:47
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:31:22
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 05, 2025 20:31:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 09:20:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 09:26:32
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 09:53:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] index value 26 is out of range 4 downto 0 (VHDL-1124) (/home/olle/efinity_p2/BRAM/top_level.vhd:382)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 09:55:04
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 10:08:44
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'cnt_from_clk[31]' is constantly driven from multiple places (VDB-1000) (/home/olle/efinity_p2/BRAM/top_level.vhd:363)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/olle/efinity_p2/BRAM/top_level.vhd:375)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 10:10:36
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 11:10:07
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:15:28
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] net 'SDA_OUT' is constantly driven from multiple places (VDB-1000) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:403)
+[EFX-0010 VERI-ERROR] found another driver here (VDB-1001) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:132)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:20:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:23:56
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:25:53
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:29:28
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:34:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 17:35:29
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 19:48:16
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 20:15:33
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 20:49:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 21:29:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 21:54:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 22:28:15
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 22:39:41
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 22:51:16
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 23:11:42
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 2 elements; expected 3 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:275)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 23:13:14
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] expression has 2 elements; expected 3 (VHDL-1077) (/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd:414)
+[EFX-0021 ERROR] Elaboration of module 'top_level' failed. Please check previous error messages.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 23:14:34
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 06, 2025 23:16:31
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 11:29:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 12:49:15
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'top_end' is not declared (VHDL-1241) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:368)
+[EFX-0010 VERI-ERROR] unit 'rtl' is ignored due to previous errors (VHDL-1284) (/home/olle/efinity_p2/BRAM/i2c_reg16_master.vhd:381)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 12:50:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 13:12:59
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 14:25:58
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 15:05:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 15:35:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 15:37:55
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 15:52:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 16:31:20
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 16:50:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 17:15:02
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 17:44:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 18:49:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 18:55:35
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 18:59:40
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 19:00:25
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 07, 2025 19:05:07
+///////////////////////////////////
+

@@ -1,0 +1,176 @@
+Efinity Synthesis report for project BRAM
+Version: 2025.1.110.2.15
+Generated at: Sep 07, 2025 19:05:08
+Copyright (C) 2013 - 2025  All rights reserved.
+
+Top-level Entity Name : top_level
+
+family : Trion
+device : T20F169
+project : BRAM
+project-xml : /home/olle/efinity_p2/BRAM/BRAM.xml
+root : top_level
+I,include : /home/olle/efinity_p2/BRAM
+I,include : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes
+I,include : /home/olle/efinity_p2/BRAM/ip/micro_risc_v1
+I,include : /home/olle/efinity_p2/BRAM/ip/MIPI_X
+I,include : /home/olle/efinity_p2/BRAM/ip/MIPI_B2
+I,include : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER
+I,include : ip/I2C_32_MASTER
+output-dir : /home/olle/efinity_p2/BRAM/outflow
+work-dir : /home/olle/efinity_p2/BRAM/work_syn
+write-efx-verilog : /home/olle/efinity_p2/BRAM/outflow/BRAM.map.v
+binary-db : /home/olle/efinity_p2/BRAM/outflow/BRAM.vdb
+insert-ios : 0
+max-carry-cascade : 240
+max_mult : -1
+max_ram : -1
+mode : speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+File List:
+
+/home/olle/efinity_p2/BRAM/top_level.vhd
+/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd
+/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd
+/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v
+/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v
+/home/olle/efinity_p2/BRAM/ip/MIPI_X/MIPI_X.sv
+/home/olle/efinity_p2/BRAM/ip/MIPI_B2/MIPI_B2.sv
+/home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER/I2C_32_MASTER.v
+
+### ### Report Section Start ### ###
+
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 26
+Total number of FFs with enable signals: 56
+CE signal <cnt_from_clk[24]>, number of controlling flip flops: 1
+CE signal <ceg_net451>, number of controlling flip flops: 5
+CE signal <ceg_net584>, number of controlling flip flops: 8
+CE signal <control_camera_i2c_inst/n10280>, number of controlling flip flops: 1
+CE signal <ceg_net26>, number of controlling flip flops: 1
+CE signal <rst_n>, number of controlling flip flops: 7
+CE signal <ceg_net444>, number of controlling flip flops: 1
+CE signal <control_camera_i2c_inst/n7280>, number of controlling flip flops: 1
+CE signal <ceg_net580>, number of controlling flip flops: 1
+CE signal <ceg_net586>, number of controlling flip flops: 1
+CE signal <ceg_net590>, number of controlling flip flops: 1
+CE signal <ceg_net591>, number of controlling flip flops: 1
+CE signal <ceg_net592>, number of controlling flip flops: 1
+CE signal <ceg_net593>, number of controlling flip flops: 2
+CE signal <ceg_net594>, number of controlling flip flops: 1
+CE signal <ceg_net595>, number of controlling flip flops: 1
+CE signal <ceg_net596>, number of controlling flip flops: 1
+CE signal <ceg_net325>, number of controlling flip flops: 3
+CE signal <ceg_net318>, number of controlling flip flops: 1
+CE signal <ceg_net473>, number of controlling flip flops: 7
+CE signal <ceg_net597>, number of controlling flip flops: 1
+CE signal <ceg_net177>, number of controlling flip flops: 1
+CE signal <ceg_net334>, number of controlling flip flops: 2
+CE signal <ceg_net179>, number of controlling flip flops: 1
+CE signal <ceg_net335>, number of controlling flip flops: 2
+CE signal <ceg_net600>, number of controlling flip flops: 3
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 1
+Total number of FFs with set/reset signals: 70
+SR signal <rst_n>, number of controlling flip flops: 70
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" removed instance : control_camera_i2c_inst/dff_201/i7
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" representative instance : control_camera_i2c_inst/dff_201/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" removed instance : control_camera_i2c_inst/dff_202/i6
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" representative instance : control_camera_i2c_inst/dff_202/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" removed instance : control_camera_i2c_inst/dff_202/i7
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" representative instance : control_camera_i2c_inst/dff_202/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" removed instance : control_camera_i2c_inst/dff_204/i7
+@ "/home/olle/efinity_p2/BRAM/control_camera_i2c.vhd (548)" representative instance : control_camera_i2c_inst/dff_204/i6
+FF Output: slave_addr7[0](=0)
+FF Output: slave_addr7[1](=0)
+FF Output: slave_addr7[2](=0)
+FF Output: slave_addr7[3](=0)
+FF Output: reg_addr16[4](=0)
+FF Output: reg_addr16[7](=0)
+FF Output: reg_addr16[10](=0)
+FF Output: reg_addr16[11](=0)
+FF Output: reg_addr16[12](=0)
+FF Output: reg_addr16[13](=0)
+FF Output: reg_addr16[14](=0)
+FF Output: reg_addr16[15](=0)
+FF Output: wr_len[2](=0)
+FF Output: wr_data[1](=0)
+FF Output: wr_data[3](=0)
+FF Output: wr_data[4](=0)
+FF Output: wr_data[7](=0)
+FF Output: wr_data[8](=0)
+FF Output: wr_data[9](=0)
+FF Output: wr_data[10](=0)
+FF Output: wr_data[11](=0)
+FF Output: wr_data[12](=0)
+FF Output: wr_data[13](=0)
+FF Output: wr_data[14](=0)
+FF Output: wr_data[15](=0)
+FF Output: wr_data[16](=0)
+FF Output: wr_data[17](=0)
+FF Output: wr_data[18](=0)
+FF Output: wr_data[19](=0)
+FF Output: wr_data[20](=0)
+FF Output: wr_data[21](=0)
+FF Output: wr_data[22](=0)
+FF Output: wr_data[23](=0)
+FF Output: wr_data[24](=0)
+FF Output: wr_data[25](=0)
+FF Output: wr_data[26](=0)
+FF Output: wr_data[27](=0)
+FF Output: wr_data[28](=0)
+FF Output: wr_data[29](=0)
+FF Output: wr_data[30](=0)
+FF Output: wr_data[31](=0)
+FF Output: rd_len[1](=0)
+FF Output: rd_len[2](=0)
+FF instance: cnt_from_clk[31]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                FFs        ADDs        LUTs      RAMs DSP/MULTs
+---------------------------------------------         ---        ----        ----      ---- ---------
+top_level:top_level                               115(32)      38(30)      316(1)      0(0)      0(0)
+ +control_camera_i2c_inst:control_camera_i2c       41(41)        0(0)    180(180)      0(0)      0(0)
+ +i2c_reg16_master_inst:i2c_reg16_master           42(42)        8(8)    135(135)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+   Clock     Flip-Flops   Memory Ports    Multipliers
+   -----     ----------   ------------    -----------
+ pll_clk            115              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	183
+OUTPUT PORTS    : 	36
+
+EFX_ADD         : 	38
+EFX_LUT4        : 	316
+   1-2  Inputs  : 	45
+   3    Inputs  : 	89
+   4    Inputs  : 	182
+EFX_FF          : 	115
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 8s
+Elapsed synthesis time : 9s

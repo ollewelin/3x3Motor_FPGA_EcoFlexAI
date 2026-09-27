@@ -1,0 +1,266 @@
+{
+    "debug_cores": [
+        {
+            "name": "la0",
+            "type": "la",
+            "uuid": "08cbacf6533b4eb19884295bc32277d7",
+            "probes": [
+                {
+                    "name": "rst_n",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "led4_OUT",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div",
+                    "width": 26,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/cam_setup_cnt",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/done",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/want_mux_byte",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mux_val",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mux_ok",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/rst_n",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_num_bytes",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/i2c_busy",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_data_out_valid",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_read",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_write_done",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_command_byte",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/i2c_soft_rst",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_write",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/i2c_slave_addr",
+                    "width": 8,
+                    "probe_type": 1
+                },
+                {
+                    "name": "FPGA_IO0_A2",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "i2c_scl_line",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "cam_i2c_done",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "io_asyncReset_sig",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SDA_OUT",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "cam_setup_cnt",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "FPGA_IO0_A0",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SCL_OE",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "FPGA_IO0_A1",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "i2c_busy",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "CAM0_EN",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SCL_OUT",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "IO12_manual_reset_n",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SCL_IN",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SDA_IN",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "I2C_SDA_OE",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "CAM1_EN",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/state",
+                    "width": 5,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_data_out",
+                    "width": 32,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/mst_din",
+                    "width": 32,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/cam_idx",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/to_cnt",
+                    "width": 31,
+                    "probe_type": 1
+                },
+                {
+                    "name": "u_cam_ctrl/sr_cnt",
+                    "width": 31,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[0]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[5]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[2]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[6]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[3]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[7]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[4]",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "div[1]",
+                    "width": 1,
+                    "probe_type": 1
+                }
+            ],
+            "data_depth": 1024,
+            "trigin_en": false,
+            "trigout_en": false,
+            "capture_control": true,
+            "input_pipeline": 1,
+            "auto_inserted": false
+        }
+    ],
+    "session": {
+        "debug_widget": [],
+        "wizard": {}
+    }
+}

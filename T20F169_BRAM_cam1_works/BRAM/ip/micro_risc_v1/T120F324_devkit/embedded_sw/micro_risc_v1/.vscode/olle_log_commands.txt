@@ -1,0 +1,22 @@
+olle_log_commands.txt
+
+/home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd \
+  -f "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg" \
+  -f "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg" \
+  -c "adapter speed 6000; init; scan_chain; shutdown"
+
+  (base) olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ /home/olle/efinix/efinity/2025.1/debugger/openocd/bin/openocd \
+  -f "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg" \
+  -f "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg" \
+  -c "adapter speed 6000; init; scan_chain; shutdown"
+Open On-Chip Debugger 0.11.0+dev-04041-gcb00d8669 (2025-03-22-13:40)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg:1: Error: can't read "0": no such variable
+in procedure 'script' 
+at file "embedded:startup.tcl", line 26
+at file "/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg", line 1
+(base) olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led$ 
+
+

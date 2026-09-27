@@ -1,0 +1,60 @@
+Sat August 23 25 16:34:43 - Starting Efinity IP Manager RPC Service...
+
+Sat August 23 25 16:34:46 - Opening Efinity IP Catalog...
+
+Sat August 23 25 16:34:47 - IP Manager RPC Server Connected.
+
+DEBUG    : Initialising Efx::ConcurrencyControl with 4 threads [Debug]
+
+INFO     : --max_threads set to 4 
+
+Sat August 23 25 16:35:02 - Project loaded VM : 551.148 MB RSS : 226.024 MB
+
+Sat August 23 25 16:35:02 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 16:35:05 - Opening Efinity IP Catalog...
+
+Sat August 23 25 16:36:06 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 16:36:11 - Opening Efinity IP Packager...
+
+Sat August 23 25 16:36:32 - Efinity IP Packager finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 16:36:32 - Opening Efinity IP Catalog...
+
+Sat August 23 25 16:37:31 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 16:37:47 - Opening Efinity IP Catalog...
+
+Sat August 23 25 16:59:31 - Opening Efinity IP Packager...
+
+Sat August 23 25 17:11:30 - There is already an IP Catalog instance running. Bringing it to foreground...
+
+Sat August 23 25 17:12:23 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 17:13:47 - There is already an IP Packager instance running. Bringing it to foreground...
+
+Sat August 23 25 17:18:30 - Opening Efinity IP Catalog...
+
+Sat August 23 25 17:18:54 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 17:18:57 - There is already an IP Packager instance running. Bringing it to foreground...
+
+Sat August 23 25 17:20:44 - Opening Efinity IP Catalog...
+
+Sat August 23 25 17:22:16 - There is already an IP Catalog instance running. Bringing it to foreground...
+
+Sat August 23 25 17:26:37 - There is already an IP Catalog instance running. Bringing it to foreground...
+
+Sat August 23 25 17:28:10 - Efinity IP Catalog finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 17:28:12 - There is already an IP Packager instance running. Bringing it to foreground...
+
+Sat August 23 25 17:28:55 - Efinity IP Packager finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 17:28:56 - Opening Efinity IP Catalog...
+
+Sat August 23 25 17:30:11 - Opening Efinity IP Packager...
+
+Sat August 23 25 17:31:37 - There is already an IP Packager instance running. Bringing it to foreground...
+

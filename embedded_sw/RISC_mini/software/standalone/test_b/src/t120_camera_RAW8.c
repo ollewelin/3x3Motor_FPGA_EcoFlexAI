@@ -1,0 +1,396 @@
+////////////////////////////////////////////////////////////////////////////////
+// t120_camera.c - CAM2 (IMX219) I2C Camera Setup for T120F324_A
+// 
+// Configures IMX219 camera via I2C for 96x96 RAW8 output to MIPI CSI-2 RX
+// Uses SoC I2C interface (SYSTEM_I2C_0) directly connected to CAM2 I2C pins
+// No PCA9542A mux required (unlike T20F169)
+////////////////////////////////////////////////////////////////////////////////
+
+#include <stdint.h>
+#include "bsp.h"
+#include "gpio.h"
+#include "i2c.h"
+#include "uart_mini_driver.h"
+
+// =============================================================================
+// CAM2 IMX219 Reference - Adapted from T20F169 PiCamDriver.h
+// =============================================================================
+
+// IMX219 7-bit I2C address
+#define CAM_I2C_ADDR7     0x10            // IMX219 native 7-bit address
+#define CAM_I2C_ADDR8     (CAM_I2C_ADDR7 << 1)  // 8-bit with R/W bit
+
+// IMX219 Register Address Map (from PiCamDriver.h reference - verified correct)
+#define mode_select             0x0100    // Standby/Streaming
+#define CSI_LANE_MODE           0x0114    // Number of CSI lanes
+#define DPHY_CTRL               0x0128    // DPHY control
+#define EXCK_FREQ_1             0x012A    // Input clock frequency [15:8]
+#define EXCK_FREQ_0             0x012B    // Input clock frequency [7:0]
+#define FRM_LENGTH_A_1          0x0160    // Frame length [15:8]
+#define FRM_LENGTH_A_0          0x0161    // Frame length [7:0]
+#define LINE_LENGTH_A_1         0x0162    // Line length [15:8]
+#define LINE_LENGTH_A_0         0x0163    // Line length [7:0]
+#define X_ADD_STA_A_1           0x0164    // Crop X start [11:8]
+#define X_ADD_STA_A_0           0x0165    // Crop X start [7:0]
+#define X_ADD_END_A_1           0x0166    // Crop X end [11:8]
+#define X_ADD_END_A_0           0x0167    // Crop X end [7:0]
+#define Y_ADD_STA_A_1           0x0168    // Crop Y start [11:8]
+#define Y_ADD_STA_A_0           0x0169    // Crop Y start [7:0]
+#define Y_ADD_END_A_1           0x016A    // Crop Y end [11:8]
+#define Y_ADD_END_A_0           0x016B    // Crop Y end [7:0]
+#define x_output_size_A_1       0x016C    // Output width [11:8]
+#define x_output_size_A_0       0x016D    // Output width [7:0]
+#define y_output_size_A_1       0x016E    // Output height [11:8]
+#define y_output_size_A_0       0x016F    // Output height [7:0]
+#define X_ODD_INC_A             0x0170    // X odd increment
+#define Y_ODD_INC_A             0x0171    // Y odd increment
+#define IMG_ORIENTATION_A       0x0172    // Image orientation
+#define BINNING_MODE_H_A        0x0174    // Horizontal binning
+#define BINNING_MODE_V_A        0x0175    // Vertical binning
+#define CSI_DATA_FORMAT_A_1     0x018C    // CSI data format [15:8]
+#define CSI_DATA_FORMAT_A_0     0x018D    // CSI data format [7:0]
+#define COARSE_INTEGRATION_TIME_A_1  0x015A  // Exposure time [15:8]
+#define COARSE_INTEGRATION_TIME_A_0  0x015B  // Exposure time [7:0]
+#define ANA_GAIN_GLOBAL_A       0x0157    // Analogue gain
+#define DIG_GAIN_GLOBAL_A_1     0x0158    // Digital gain [11:8]
+#define DIG_GAIN_GLOBAL_A_0     0x0159    // Digital gain [7:0]
+// PLL clock registers
+#define VTPXCK_DIV              0x0301
+#define VTSYCK_DIV              0x0303
+#define PREPLLCK_VT_DIV         0x0304
+#define PREPLLCK_OP_DIV         0x0305
+#define PLL_VT_MPY_1            0x0306    // [10:8]
+#define PLL_VT_MPY_0            0x0307    // [7:0]
+#define OPPXCK_DIV              0x0309
+#define OPSYCK_DIV              0x030B
+#define PLL_OP_MPY_1            0x030C    // [10:8]
+#define PLL_OP_MPY_0            0x030D    // [7:0]
+
+// =============================================================================
+// UART Helper Functions (from test_1g_udp.c)
+// =============================================================================
+void uart_drain(void) {
+    while (!(uart_mini_get_status() & UART_STATUS_TX_EMPTY)) { }
+    bsp_uDelay(2000);
+}
+
+void print(const char *s) {
+    uart_mini_tx_string(s);
+}
+
+void println(const char *s) {
+    print(s);
+    uart_mini_newline();
+    uart_drain();
+}
+
+void print_hex8(uint8_t val) {
+    static const char hex[] = "0123456789ABCDEF";
+    uart_mini_tx_byte(hex[(val >> 4) & 0xF]);
+    uart_mini_tx_byte(hex[val & 0xF]);
+}
+
+void print_hex16(uint16_t val) {
+    print_hex8((val >> 8) & 0xFF);
+    print_hex8(val & 0xFF);
+}
+
+void print_hex32(uint32_t val) {
+    print_hex16((val >> 16) & 0xFFFF);
+    print_hex16(val & 0xFFFF);
+}
+
+// =============================================================================
+// I2C Helper Functions
+// =============================================================================
+
+/**
+ * i2c_init_100khz - Configure I2C for ~100 kHz operation
+ * 
+ * Uses SoC clock (50 MHz assumed per soc.h) to generate ~100 kHz SCL
+ * Adapted from T20F169 reference code
+ */
+static void i2c_init_100khz(void) {
+    I2c_Config cfg;
+
+    // SoC clock frequency (50 MHz for T120_GCLK)
+    const uint32_t fclk_hz      = 50000000;  // 50 MHz
+    const uint32_t cycles_per_us = fclk_hz / 1000000;  // 50 cycles per µs
+
+    // Target 100 kHz SCL: period ~10 µs -> ~5 µs low, ~5 µs high
+    const uint32_t t_low_us  = 5;
+    const uint32_t t_high_us = 5;
+
+    // Conservative setup/hold timings
+    const uint32_t tsu_dat_us = 1;   // SDA setup time
+    const uint32_t t_buf_us   = 5;   // STOP to START
+
+    // Fill config (all are "cycles - 1")
+    cfg.samplingClockDivider = 3;                                    // modest oversampling
+    cfg.timeout              = (1000 * cycles_per_us) - 1;          // ~1 ms bus timeout
+    cfg.tsuDat               = (tsu_dat_us * cycles_per_us) - 1;    // SDA setup
+    cfg.tLow                 = (t_low_us  * cycles_per_us) - 1;     // SCL low
+    cfg.tHigh                = (t_high_us * cycles_per_us) - 1;     // SCL high
+    cfg.tBuf                 = (t_buf_us  * cycles_per_us) - 1;     // STOP→START
+
+    i2c_applyConfig(SYSTEM_I2C_0_IO_CTRL, &cfg);
+    
+    print("I2C 100kHz init OK"); println("");
+}
+
+/* --- Timeout-protected I2C primitives ----------------------------------- */
+
+/* Print raw I2C master status register as hex for analyzer debug */
+static void dbg_i2c_status(void) {
+    uint32_t s = read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_MASTER_STATUS);
+    print(" [MSTS=0x"); print_hex32(s); print("] ");
+    uart_drain();
+}
+
+/* cam_i2c_start - START with timeout; returns 0=ok, -1=timeout */
+static int cam_i2c_start(void) {
+    i2c_masterStart(SYSTEM_I2C_0_IO_CTRL);
+    volatile uint32_t t = 2000000;
+    while (read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_MASTER_STATUS) & I2C_MASTER_START) {
+        if (--t == 0) { print("[START_TO]"); dbg_i2c_status(); return -1; }
+    }
+    return 0;
+}
+
+/* cam_i2c_stop - STOP with timeout; always continues (best-effort cleanup) */
+static void cam_i2c_stop(void) {
+    i2c_masterStop(SYSTEM_I2C_0_IO_CTRL);
+    volatile uint32_t t = 2000000;
+    while (read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_MASTER_STATUS) & I2C_MASTER_BUSY) {
+        if (--t == 0) { print("[STOP_TO]"); uart_drain(); return; }
+    }
+}
+
+/* cam_i2c_txbyte_ack - TX byte + listen for ACK, timeout-protected.
+ * Mirrors TX_AND_CHECK macro: write byte, write NACK-slot to TX_ACK,
+ * wait for TX_ACK VALID to clear (= 9-bit frame done), then read RX_ACK. */
+static int cam_i2c_txbyte_ack(uint8_t byte) {
+    i2c_txByte(SYSTEM_I2C_0_IO_CTRL, byte);
+    /* Write NACK to TX_ACK - this releases SDA for the ACK bit clock cycle */
+    i2c_txNack(SYSTEM_I2C_0_IO_CTRL);
+    /* Wait for TX_ACK VALID to clear = 9-bit slot (8 data + 1 ACK) complete */
+    volatile uint32_t t = 1000000;
+    while (read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_TX_ACK) & I2C_TX_VALID) {
+        if (--t == 0) { print("[TXACK_TO]"); uart_drain(); return -1; }
+    }
+    /* RX_ACK bit: 0 = slave ACKed, 1 = slave NACKed */
+    if (read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_RX_ACK) & I2C_RX_VALUE) {
+        return -1;
+    }
+    return 0;
+}
+
+/* cam_write_reg8 - Write 8-bit value to 16-bit IMX219 register.
+ * Verbose: prints which step fails so you can correlate with analyzer. */
+static int cam_write_reg8(uint16_t reg, uint8_t data) {
+    if (cam_i2c_start()) { print("[WR:START_FAIL]"); uart_drain(); return -1; }
+    if (cam_i2c_txbyte_ack(CAM_I2C_ADDR8 | I2C_WRITE)) {
+        print("[WR:ADDR_NACK addr=0x"); print_hex8(CAM_I2C_ADDR8); print("]");
+        uart_drain(); goto fail;
+    }
+    if (cam_i2c_txbyte_ack((reg >> 8) & 0xFF)) {
+        print("[WR:REG_H_NACK]"); uart_drain(); goto fail;
+    }
+    if (cam_i2c_txbyte_ack(reg & 0xFF)) {
+        print("[WR:REG_L_NACK]"); uart_drain(); goto fail;
+    }
+    if (cam_i2c_txbyte_ack(data)) {
+        print("[WR:DATA_NACK]"); uart_drain(); goto fail;
+    }
+    cam_i2c_stop();
+    bsp_uDelay(500);
+    return 0;
+fail:
+    cam_i2c_stop();
+    bsp_uDelay(500);
+    return -1;
+}
+
+/* cam_read_reg8 - Read 8-bit value from 16-bit IMX219 register. */
+static uint8_t cam_read_reg8(uint16_t reg) {
+    uint8_t val = 0;
+    if (cam_i2c_start()) { print("[RD:START_FAIL]"); uart_drain(); return 0; }
+    if (cam_i2c_txbyte_ack(CAM_I2C_ADDR8 | I2C_WRITE)) { print("[RD:ADDR_W_NACK]"); uart_drain(); goto fail; }
+    if (cam_i2c_txbyte_ack((reg >> 8) & 0xFF))          { print("[RD:REG_H_NACK]");  uart_drain(); goto fail; }
+    if (cam_i2c_txbyte_ack(reg & 0xFF))                 { print("[RD:REG_L_NACK]");  uart_drain(); goto fail; }
+    if (cam_i2c_start()) { print("[RD:RESTART_FAIL]"); uart_drain(); goto fail; }
+    if (cam_i2c_txbyte_ack(CAM_I2C_ADDR8 | I2C_READ))  { print("[RD:ADDR_R_NACK]"); uart_drain(); goto fail; }
+    i2c_txByte(SYSTEM_I2C_0_IO_CTRL, 0xFF);
+    i2c_txNack(SYSTEM_I2C_0_IO_CTRL);
+    volatile uint32_t t = 500000;
+    while (read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_TX_ACK) & I2C_TX_VALID) {
+        if (--t == 0) break;
+    }
+    val = (uint8_t)i2c_rxData(SYSTEM_I2C_0_IO_CTRL);
+fail:
+    cam_i2c_stop();
+    bsp_uDelay(500);
+    return val;
+}
+
+// =============================================================================
+// IMX219 Camera Initialization (96x96 RAW8 for CAM2)
+// =============================================================================
+
+/**
+ * imx219_access_seq - Required access sequence before register writes
+ * 
+ * Some IMX219 internal states require this specific sequence
+ */
+static void imx219_access_seq(void) {
+    print("  Access seq..."); uart_drain();
+    
+    int e = 0;
+    e |= cam_write_reg8(0x30EB, 0x05);
+    e |= cam_write_reg8(0x30EB, 0x0C);
+    e |= cam_write_reg8(0x300A, 0xFF);
+    e |= cam_write_reg8(0x300B, 0xFF);
+    e |= cam_write_reg8(0x30EB, 0x05);
+    e |= cam_write_reg8(0x30EB, 0x09);
+    
+    if (e) println("NACK!");
+    else   println("OK");
+}
+
+/**
+ * imx219_init_96x96_raw8 - Full initialization for 96x96 RAW8 output
+ *
+ * Register sequence ported from working PiCamDriver.c (Ti60F225 reference).
+ * Key fixes vs previous version:
+ *   - Correct EXCK_FREQ addresses (0x012A/0x012B not 0x0137/0x0136)
+ *   - Correct COARSE_INTEGRATION_TIME addresses (0x015A/0x015B)
+ *   - All _1/_0 register pairs corrected (MSB first)
+ *   - PLL registers now programmed (required for MIPI clock generation)
+ *   - CSI_DATA_FORMAT_A set to RAW8 (0x08/0x08)
+ *   - Binning, X/Y ODD INC, gain registers added
+ *   - mode_select=0x01 remains last command
+ */
+static void imx219_init_96x96_raw8(void) {
+    println("=CAM2 IMX219 INIT=");
+
+    // Dump raw I2C peripheral state before first transaction
+    print("  I2C raw status:"); dbg_i2c_status();
+    print("  SCL_read="); print_hex8(read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_SLAVE_STATUS) & 0x4 ? 1 : 0);
+    print("  SDA_read="); print_hex8(read_u32(SYSTEM_I2C_0_IO_CTRL + I2C_SLAVE_STATUS) & 0x2 ? 1 : 0);
+    println("");
+
+    // Stop streaming (standby mode) - must be first
+    print("  Stop stream..."); uart_drain();
+    if (cam_write_reg8(mode_select, 0x00)) {
+        println(" FAIL");
+        print("  Final I2C status:"); dbg_i2c_status(); println("");
+        println("  Camera not responding - check power/XCLK/pullups");
+        return;
+    }
+    println(" OK");
+
+    // Required access sequence (manufacturer unlock)
+    imx219_access_seq();
+
+    // MIPI CSI-2: 2 lanes, DPHY auto, 24 MHz input clock
+    print("  MIPI config..."); uart_drain();
+    cam_write_reg8(CSI_LANE_MODE, 0x01);
+    cam_write_reg8(DPHY_CTRL,     0x00);
+    cam_write_reg8(EXCK_FREQ_1,   0x18);    // 24 MHz
+    cam_write_reg8(EXCK_FREQ_0,   0x00);
+    println("OK");
+
+    // Frame and line timing
+    print("  Frame timing..."); uart_drain();
+    cam_write_reg8(FRM_LENGTH_A_1,  0x06);
+    cam_write_reg8(FRM_LENGTH_A_0,  0xE3);
+    cam_write_reg8(LINE_LENGTH_A_1, 0x0D);
+    cam_write_reg8(LINE_LENGTH_A_0, 0x78);
+    println("OK");
+
+    // ROI: centered 96x96 from full 3280x2464 array
+    // XStart=680 XEnd=3279 (matches reference offset for central view, scaled to 96px out)
+    print("  ROI 96x96..."); uart_drain();
+    cam_write_reg8(X_ADD_STA_A_1, 0x02);    // XStart=680 = 0x02A8
+    cam_write_reg8(X_ADD_STA_A_0, 0xA8);
+    cam_write_reg8(X_ADD_END_A_1, 0x0C);    // XEnd=3327 = 0x0CFF (96px window, no binning)
+    cam_write_reg8(X_ADD_END_A_0, 0xFF);
+    cam_write_reg8(Y_ADD_STA_A_1, 0x00);    // YStart=0
+    cam_write_reg8(Y_ADD_STA_A_0, 0x00);
+    cam_write_reg8(Y_ADD_END_A_1, 0x09);    // YEnd=2463 = 0x099F
+    cam_write_reg8(Y_ADD_END_A_0, 0x9F);
+    // Output size: 96 x 96
+    cam_write_reg8(x_output_size_A_1, 0x00);
+    cam_write_reg8(x_output_size_A_0, 0x60);   // 96 = 0x0060
+    cam_write_reg8(y_output_size_A_1, 0x00);
+    cam_write_reg8(y_output_size_A_0, 0x60);   // 96 = 0x0060
+    println("OK");
+
+    // Pixel increment and binning (no binning = 1:1)
+    print("  Binning/inc..."); uart_drain();
+    cam_write_reg8(X_ODD_INC_A,      0x01);
+    cam_write_reg8(Y_ODD_INC_A,      0x01);
+    cam_write_reg8(BINNING_MODE_H_A, 0x00);    // no binning
+    cam_write_reg8(BINNING_MODE_V_A, 0x00);
+    println("OK");
+
+    // CSI data format: RAW8 (0x08 / 0x08)
+    print("  CSI fmt RAW8..."); uart_drain();
+    cam_write_reg8(CSI_DATA_FORMAT_A_1, 0x08);
+    cam_write_reg8(CSI_DATA_FORMAT_A_0, 0x08);
+    println("OK");
+
+    // PLL configuration (from working Ti60 reference, 24 MHz XCLK -> MIPI clock)
+    print("  PLL..."); uart_drain();
+    cam_write_reg8(VTPXCK_DIV,      0x05);
+    cam_write_reg8(VTSYCK_DIV,      0x01);
+    cam_write_reg8(PREPLLCK_VT_DIV, 0x03);
+    cam_write_reg8(PREPLLCK_OP_DIV, 0x03);
+    cam_write_reg8(PLL_VT_MPY_1,    0x00);
+    cam_write_reg8(PLL_VT_MPY_0,    0x39);
+    cam_write_reg8(OPPXCK_DIV,      0x0A);
+    cam_write_reg8(OPSYCK_DIV,      0x01);
+    cam_write_reg8(PLL_OP_MPY_1,    0x00);
+    cam_write_reg8(PLL_OP_MPY_0,    0x72);
+    println("OK");
+
+    // Exposure and gain
+    print("  Exposure/gain..."); uart_drain();
+    cam_write_reg8(COARSE_INTEGRATION_TIME_A_1, 0x04);
+    cam_write_reg8(COARSE_INTEGRATION_TIME_A_0, 0x54);
+    cam_write_reg8(ANA_GAIN_GLOBAL_A,           0xB9);
+    cam_write_reg8(DIG_GAIN_GLOBAL_A_1,         0x02);
+    cam_write_reg8(DIG_GAIN_GLOBAL_A_0,         0x00);
+    println("OK");
+
+    // Image orientation (normal)
+    cam_write_reg8(IMG_ORIENTATION_A, 0x00);
+
+    // Start streaming - MUST be last I2C command
+    print("  Start stream..."); uart_drain();
+    bsp_uDelay(10000);  // 10 ms settle before streaming
+    cam_write_reg8(mode_select, 0x01);
+    println("OK");
+
+    println("=CAM2 READY=");
+}
+
+// =============================================================================
+// Main Entry Point
+// =============================================================================
+
+void camera_init(void) {
+    // Initialize I2C interface
+    print("Init I2C.."); uart_drain();
+    i2c_init_100khz();
+
+    // Wait for camera to be fully powered up before first I2C access
+    print("Settling..."); uart_drain();
+    bsp_uDelay(50000);  // 50 ms power-on settlement
+    println("OK");
+
+    // Initialize CAM2
+    imx219_init_96x96_raw8();
+
+    println("=CAM SETUP COMPLETE=");
+}

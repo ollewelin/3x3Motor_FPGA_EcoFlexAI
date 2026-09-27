@@ -1,0 +1,13 @@
+# ---------- project name ---------------------------------------------------
+PROJ_NAME   := blink_led
+# ---------- path to the “standalone” framework -----------------------------
+STANDALONE  := ..
+# ---------- source files ---------------------------------------------------
+SRCS =  $(wildcard src/*.c) \
+        $(wildcard src/*.S) \
+        $(STANDALONE)/common/start.S \
+        $(STANDALONE)/common/trap.S
+# ---------- pull in BSP and tool-chain settings ----------------------------
+include $(STANDALONE)/common/bsp.mk            # sets BSP_PATH, CC, CFLAGS …
+include $(STANDALONE)/common/riscv64-unknown-elf.mk
+include $(STANDALONE)/common/standalone.mk     # generic rules

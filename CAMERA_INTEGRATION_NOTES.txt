@@ -1,0 +1,202 @@
+// =============================================================================
+// INTEGRATION SUMMARY: CAM2 I2C Setup + MIPI Frame Capture + UART Switching
+// =============================================================================
+
+// =============================================================================
+// 1. NEW FILE CREATED:
+// =============================================================================
+// embedded_sw/RISC_mini/software/standalone/test_b/src/t120_camera.c
+// 
+// Provides:
+//   - i2c_init_100khz()           : Configure SoC I2C for 100 kHz operation
+//   - cam_write_reg8(reg, data)   : Write to IMX219 camera register (16-bit addr, 8-bit data)
+//   - cam_read_reg8(reg)          : Read from IMX219 camera register
+//   - imx219_init_96x96_raw10()   : Full camera initialization for 96x96 RAW10 output
+//   - camera_init()               : Entry point - call from firmware main()
+//
+// Features:
+//   - Direct I2C (no PCA9542A mux required)
+//   - UART debug output showing each step (print/println via uart_mini)
+//   - 96x96 pixel centered crop from 3280x2464 full sensor array
+//   - 2-lane MIPI CSI-2 configuration
+//   - Adapted from T20F169 reference code for T120 hardware
+//
+// Usage in firmware:
+//   #include "t120_camera.c"  // or link t120_camera.o
+//   
+//   int main(void) {
+//       bsp_init();
+//       uart_mini_init();
+//       camera_init();  // <-- Performs I2C setup + prints status to UART
+//       // ... rest of main
+//   }
+
+// =============================================================================
+// 2. MODIFICATIONS TO: top_level.sv
+// =============================================================================
+
+// a) Added MIPI Signal Routing (lines ~755-780):
+//    - Connects MIPI RX IP fabric signals to internal logic
+//    - Configures MIPI: 2 lanes, VC0 enabled, VC1-3 disabled
+//    - Routes MIPI_CLEAR feedback from record_frame module back to IP
+//
+//    Signals:
+//      Input:  mipi_rx_inst1_DATA[63:0], VALID, TYPE[5:0], VC[1:0], CNT[3:0], 
+//              HSYNC[3:0], VSYNC[3:0], ERROR[17:0]
+//      Output: mipi_rx_inst1_DPHY_RSTN, RSTN, VC_ENA[3:0], LANES[1:0], CLEAR
+
+// b) Added 20-Second UART Switching Logic (lines ~790-810):
+//    - Implements a timer on sys_clk (50 MHz) that counts to 1 billion cycles
+//    - After 20 seconds:
+//      * uart_switching_enabled = 1
+//      * UART TX source switches from uart_mini_txd → cam_uart_tx
+//    - Purpose: Allow SoC I2C camera setup to complete (prints during init),
+//               then switch to camera frame data UART output
+//
+//    Block Diagram:
+//        uart_mini_txd ┐
+//                      ├─> MUX ──> fpga_uart_tx (physical pin)
+//        cam_uart_tx  ┘
+//        
+//        MUX select controlled by uart_switching_enabled (20-sec timer)
+
+// c) Instantiated record_frame_bram_counted Module (lines ~820-875):
+//    - Captures 96x96 RAW10 frames from MIPI RX
+//    - Stores in internal BRAM (96x96x4 = 36KB)
+//    - Auto-dumps to UART aligned with UART switching at 20 seconds
+//
+//    Connections:
+//      Clock/Reset: sys_clk, sys_rst_n_inv
+//      MIPI Input:  All CAM2 MIPI signals (data, valid, type, etc.)
+//      Control:     cam_arm (from firmware), produces cam_armed, cam_capturing, cam_done
+//      UART:        cam_uart_tx → UART MUX → physical pin
+//      Debug:       cam_beats_line, cam_line_idx, cam_words_used (unused in this version)
+
+// d) Replaced UART Output Assignment (line ~816):
+//    OLD: assign fpga_uart_tx = uart_mini_txd;
+//    NEW: assign fpga_uart_tx = fpga_uart_tx_mux;  // Switched source
+
+// =============================================================================
+// 3. DATA FLOW DIAGRAM
+// =============================================================================
+//
+// IMX219 Camera
+//    │
+//    └─> MIPI CSI-2 (2 lanes)
+//         │
+//         └─> MIPI RX IP (fabric)
+//              │
+//              ├─> mipi_data[63:0], valid, type, etc.
+//              │
+//              └──────────────────────┐
+//                                     │
+//                        record_frame_bram_counted
+//                        (96x96 frame @ sys_clk)
+//                             │
+//                             ├─> BRAM storage
+//                             │
+//                             └─> cam_uart_tx
+//                                  │
+//                                  └─> UART MUX (switches at T=20s)
+//                                      │
+//                                      └─> fpga_uart_tx → PC
+//
+// Timeline:
+//   T=0:            SoC boots, I2C camera init begins (UART: uart_mini_txd)
+//   T=0-20s:        UART switching_enabled = 0, output = uart_mini_txd
+//                   I2C camera init prints to UART (debug output)
+//   T=20s:          switching_enabled = 1, MUX switches to cam_uart_tx
+//   T=20s+:         record_frame module UART output (frame data dump)
+
+// =============================================================================
+// 4. FIRMWARE INTEGRATION CHECKLIST
+// =============================================================================
+// 
+// [ ] 1. Add t120_camera.c to build (Makefile / project settings)
+//        Ensure it's compiled with the same flags as other firmware modules
+//
+// [ ] 2. In main.c / test program, call camera_init() after bsp_init():
+//        ```c
+//        void main(void) {
+//            bsp_init();
+//            gpio_init();
+//            println("=T120 BOOT=");
+//            
+//            camera_init();  // <-- Performs I2C setup, prints to UART
+//                            // Takes ~1-2 seconds (depends on I2C timing)
+//            
+//            // Wait for 20s to pass before other UART output expected
+//            // (or use cam_done signal if integrating with firmware control)
+//            
+//            println("=MAIN LOOP=");
+//            while(1) { ... }
+//        }
+//        ```
+//
+// [ ] 3. Optional: Firmware control of frame capture
+//        - Currently cam_arm = 0 (tied off in top_level.sv)
+//        - Can be connected to GPIO or register for firmware trigger
+//        - Use cam_armed, cam_capturing, cam_done status for sequencing
+
+// [ ] 4. Verify I2C interface:
+//        - CAM2_SCL, CAM2_SDA pins have external pull-up resistors (~4.7k recommended)
+//        - I2C open-drain logic in top_level.sv handles tri-state correctly
+
+// [ ] 5. MIPI CSI-2 physical layer:
+//        - Verify MIPI RX IP is instantiated in your design (not shown in this snippet)
+//        - Ensure MIPI signals from top_level module ports connected to RX IP
+//        - Check MIPI clock domain (typically different from sys_clk)
+
+// =============================================================================
+// 5. TEST PROCEDURE
+// =============================================================================
+//
+// 1. Build firmware with t120_camera.c included
+// 2. Flash and run on T120F324_A FPGA
+// 3. Open USB-UART terminal @ 115200 baud:
+//    
+//    Expected output (T=0 to T=20s):
+//    ---
+//    Init I2C..I2C 100kHz init OK
+//    =CAM2 IMX219 INIT=
+//      Access seq...OK
+//      MIPI config...OK
+//      Timing setup...OK
+//      ROI 96x96 center (0x0638,0x04A0)..OK
+//      Exposure...OK
+//      Orientation...OK
+//      Start stream...OK
+//    =CAM2 READY=
+//    =CAM SETUP COMPLETE=
+//    
+//    [UART TX now silent for ~20 seconds while timer counts]
+//    
+//    Expected output (T=20s+):
+//    ---
+//    S                          <-- record_frame start marker
+//    00010203...                <-- Frame data in hex (96x96 RAW10 → BRAM → UART)
+//    FFFFFFFFFFFF              <-- Frame dump ends
+//    
+//    (To receive this, use: nc -ul 5001 or similar UDP listener on PC)
+
+// =============================================================================
+// 6. KNOWN LIMITATIONS / FUTURE ENHANCEMENTS
+// =============================================================================
+//
+// [ ] cam_arm signal currently tied to 0 (no frame capture trigger)
+//     - Can be connected to GPIO or APB3 register for firmware control
+//     - Enables multi-frame capture sequences
+//
+// [ ] CAM2_SCL feedback not implemented
+//     - Currently assumes pulled HIGH by external resistor
+//     - Could add tri-state read-back if needed
+//
+// [ ] No ISP (Image Signal Processing)
+//     - Current chain: RAW10 sensor → MIPI RX → BRAM → UART
+//     - Debayer, color correction, etc. would be added downstream
+//
+// [ ] Single frame capture only
+//     - AUTO_DUMP_UART=true means frame dumps immediately after capture
+//     - For continuous stream, would need different architecture
+//
+

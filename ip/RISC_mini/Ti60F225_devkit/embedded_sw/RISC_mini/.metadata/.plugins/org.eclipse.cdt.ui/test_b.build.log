@@ -1,0 +1,9 @@
+18:03:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+
+18:03:26 Build Finished. 0 errors, 0 warnings. (took 483ms)
+

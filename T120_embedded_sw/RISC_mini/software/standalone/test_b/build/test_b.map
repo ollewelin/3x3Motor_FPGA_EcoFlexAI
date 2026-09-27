@@ -1,0 +1,326 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+                              build/obj_files/start.o (__libc_init_array)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+ .group         0x0000000000000000        0xc build/obj_files/test_1g_udp.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x00000000f9000000 0x0000000000020000 axwl !r
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/obj_files/test_1g_udp.o
+LOAD build/obj_files/start.o
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+                0x0000000000004000                __stack_size = DEFINED (__stack_size)?__stack_size:0x4000
+
+.init           0x00000000f9000000       0x64
+ *(SORT_NONE(.init))
+ .init          0x00000000f9000000       0x64 build/obj_files/start.o
+                0x00000000f9000000                _start
+                0x00000000f9000060                _init
+
+.text           0x00000000f9000064     0x190c
+ *(.text.Proc_1)
+ *(.text.Proc_2)
+ *(.text.Proc_3)
+ *(.text.Proc_4)
+ *(.text.Proc_5)
+ *(.text.Proc_6)
+ *(.text.Proc_7)
+ *(.text.Proc_8)
+ *(.text.Func_1)
+ *(.text.Func_2)
+ *(.text.Func_3)
+ *(.text.strcpy)
+ *libc.a:*(.text .text.*)
+ .text          0x00000000f9000064        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x00000000f9000064       0x94 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+                0x00000000f9000064                __libc_init_array
+ *(.text.main)
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ *(.text .text.*)
+ .text          0x00000000f90000f8     0x1878 build/obj_files/test_1g_udp.o
+                0x00000000f9000378                led_on
+                0x00000000f9000388                led_off
+                0x00000000f9000394                led_pulse
+                0x00000000f90003f0                uart_drain
+                0x00000000f9000428                print
+                0x00000000f9000458                println
+                0x00000000f90004ac                print_hex16
+                0x00000000f90005f4                print_hex32
+                0x00000000f9000850                bmsr_read
+                0x00000000f9000994                rtl_physr
+                0x00000000f9000b7c                rtl_set_rgmii_delay
+                0x00000000f9000f54                eth_configure
+                0x00000000f9000fc4                eth_send_udp_test
+                0x00000000f90010f0                main
+                0x00000000f900196c                trap
+ .text          0x00000000f9001970        0x0 build/obj_files/start.o
+ *(.gnu.linkonce.t.*)
+ *(.note.gnu.build-id)
+
+.rela.dyn       0x00000000f9001970        0x0
+ .rela.init     0x00000000f9001970        0x0 build/obj_files/test_1g_udp.o
+ .rela.text.__libc_init_array
+                0x00000000f9001970        0x0 build/obj_files/test_1g_udp.o
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x00000000f9001970                . = ALIGN (0x4)
+
+.preinit_array  0x00000000f9001970        0x0
+                0x00000000f9001970                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000f9001970                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000f9001970        0x0
+                0x00000000f9001970                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000f9001970                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000f9001970        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.lalign         0x00000000f9001970        0x0
+                0x00000000f9001970                PROVIDE (_data_lma = .)
+
+.dalign         0x00000000f9001970        0x0
+                0x00000000f9001970                PROVIDE (_data = .)
+
+.data           0x00000000f9001970      0x19a
+ *(.rdata)
+ *(.rodata .rodata.*)
+ .rodata.str1.4
+                0x00000000f9001970      0x190 build/obj_files/test_1g_udp.o
+                                        0x195 (size before relaxing)
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ .data          0x00000000f9001b00        0x0 build/obj_files/test_1g_udp.o
+ .data          0x00000000f9001b00        0x0 build/obj_files/start.o
+ .data          0x00000000f9001b00        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ *(.gnu.linkonce.d.*)
+                0x00000000f9001b00                . = ALIGN (0x8)
+ *fill*         0x00000000f9001b00        0x0 
+                0x00000000f90022f0                PROVIDE (__global_pointer$ = (. + 0x7f0))
+ *(.sdata .sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x00000000f9001b00                . = ALIGN (0x8)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+                0x00000000f9001b0a                . = (. + 0xa)
+ *fill*         0x00000000f9001b00        0xa 
+                0x00000000f9001b0c                . = ALIGN (0x4)
+                0x00000000f9001b0c                PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                [!provide]                        PROVIDE (_fbss = .)
+                0x00000000f9001b0c                PROVIDE (__bss_start = .)
+
+.bss            0x00000000f9001b0a        0x2
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ .bss           0x00000000f9001b0a        0x0 build/obj_files/test_1g_udp.o
+ .bss           0x00000000f9001b0a        0x0 build/obj_files/start.o
+ .bss           0x00000000f9001b0a        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000f9001b0c                . = ALIGN (0x4)
+ *fill*         0x00000000f9001b0a        0x2 
+                0x00000000f9001b10                . = ALIGN (0x8)
+                0x00000000f9001b10                PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+
+.stack          0x00000000f9001b10     0x4000
+                [!provide]                        PROVIDE (_heap_end = .)
+                0x0000000000004000                . = __stack_size
+ *fill*         0x00000000f9001b10     0x4000 
+                0x00000000f9005b10                PROVIDE (_sp = .)
+                0x00000000f9005b10                __freertos_irq_stack_top = .
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libm.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+START GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libg.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+END GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+START GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32im/ilp32/libgcc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libnosys.a
+END GROUP
+OUTPUT(build/test_b.elf elf32-littleriscv)
+
+.debug_info     0x0000000000000000     0x42db
+ .debug_info    0x0000000000000000     0x42b5 build/obj_files/test_1g_udp.o
+ .debug_info    0x00000000000042b5       0x26 build/obj_files/start.o
+
+.debug_abbrev   0x0000000000000000      0x535
+ .debug_abbrev  0x0000000000000000      0x521 build/obj_files/test_1g_udp.o
+ .debug_abbrev  0x0000000000000521       0x14 build/obj_files/start.o
+
+.debug_loc      0x0000000000000000     0x29e3
+ .debug_loc     0x0000000000000000     0x29e3 build/obj_files/test_1g_udp.o
+
+.debug_aranges  0x0000000000000000       0x40
+ .debug_aranges
+                0x0000000000000000       0x20 build/obj_files/test_1g_udp.o
+ .debug_aranges
+                0x0000000000000020       0x20 build/obj_files/start.o
+
+.debug_ranges   0x0000000000000000      0x5c0
+ .debug_ranges  0x0000000000000000      0x5c0 build/obj_files/test_1g_udp.o
+
+.debug_macro    0x0000000000000000     0x23e6
+ .debug_macro   0x0000000000000000      0x34f build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000034f      0x760 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000aaf       0x22 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000ad1       0x8e build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000b5f       0x51 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000bb0      0x103 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000cb3       0x6a build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000d1d      0x1df build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000000efc      0x190 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000108c       0xc4 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001150       0x10 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001160       0x1c build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000117c       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001192      0x1d7 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001369       0x1c build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001385       0x70 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000013f5       0x58 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000144d       0x19 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001466       0x52 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000014b8       0x34 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000014ec       0x34 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001520       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001536      0x10e build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001644       0x8d build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000016d1       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000016e7       0x43 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000172a       0x34 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000175e       0x10 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000176e       0x52 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000017c0      0x182 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001942      0x339 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001c7b       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001c91       0x29 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001cba      0x1a9 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001e63       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001e79       0x35 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001eae       0x2e build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001edc       0x1c build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001ef8       0x10 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001f08       0x1c build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001f24       0x52 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001f76       0x40 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001fb6       0x10 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000001fc6       0x40 build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000002006       0xd5 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000020db       0x1c build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000020f7       0x3d build/obj_files/test_1g_udp.o
+ .debug_macro   0x0000000000002134       0x16 build/obj_files/test_1g_udp.o
+ .debug_macro   0x000000000000214a      0x16f build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000022b9       0x40 build/obj_files/test_1g_udp.o
+ .debug_macro   0x00000000000022f9       0xed build/obj_files/test_1g_udp.o
+
+.debug_line     0x0000000000000000     0x3250
+ .debug_line    0x0000000000000000     0x3196 build/obj_files/test_1g_udp.o
+ .debug_line    0x0000000000003196       0xba build/obj_files/start.o
+
+.debug_str      0x0000000000000000     0xa5e2
+ .debug_str     0x0000000000000000     0xa5c4 build/obj_files/test_1g_udp.o
+                                       0xa8c3 (size before relaxing)
+ .debug_str     0x000000000000a5c4       0x1e build/obj_files/start.o
+                                         0x76 (size before relaxing)
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 build/obj_files/test_1g_udp.o
+                                         0x34 (size before relaxing)
+
+.debug_frame    0x0000000000000000      0x254
+ .debug_frame   0x0000000000000000      0x218 build/obj_files/test_1g_udp.o
+ .debug_frame   0x0000000000000218       0x3c /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32im/ilp32/libc.a(lib_a-init.o)

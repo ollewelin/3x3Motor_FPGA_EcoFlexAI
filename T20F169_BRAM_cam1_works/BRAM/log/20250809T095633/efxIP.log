@@ -1,0 +1,4154 @@
+[2025-08-09 12:29:16] [INFO    ] [common.console] [id-1754735354] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 12:29:16] [INFO    ] [common.console] [id-1754735354] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 12:29:16] [INFO    ] [common.console] [id-1754735354] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x783314ddf9a0>
+[2025-08-09 12:29:16] [INFO    ] [__main__] [id-1754735354] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 12:29:16] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 12:29:16] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 12:29:16] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 12:29:16] [INFO    ] [common.efinity_grpc_watcher] [id-1754735354] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 12:29:16] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-08T21:05:28.772370+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh",
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh",
+            "micro_risc_v1/T120F324_devkit/soc.xml"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.xml"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh",
+            "micro_risc_v1/Ti180J484_devkit/soc.xml"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh",
+            "micro_risc_v1/Tz170J484_devkit/soc.xml"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 12:29:16] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 12:29:17] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 12:29:17] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 12:29:18] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 12:29:18] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 12:29:18] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 12:29:18] [INFO    ] [gui.api_wrapper] [id-1754735354] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 12:29:18] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 12:29:18] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 12:29:18] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 12:29:56] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE-BEGIN] Setup IP generation
+[2025-08-09 12:29:56] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE] Project_path: /home/olle/efinity_p2/BRAM//ip
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 12:29:56] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE] Chosen deliverables: 
+generator
+Source
+script
+embedded_sw
+Example Design (T120F324_devkit)
+Example Design (Ti60F225_devkit)
+Example Design (Ti180J484_devkit)
+Example Design (Tz170J484_devkit)
+Testbench
+Testbench/modelsim
+Testbench/aldec
+Testbench/ncsim
+Testbench/synopsys
+
+[2025-08-09 12:29:56] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE] Have thread pool start GenerateIpRunnable...
+[2025-08-09 12:29:56] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-BEFORE] Clean up old settings.json
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [CLEAN_IP-BEGIN] IN, setting_path = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/settings.json
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [CLEAN_IP-DONE] OUT, result = True
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [CONCAT_VALIDATE_PARAMS] Skipping put params. Validation not done ...
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GENERATE_IP] Prepare filesets for generation
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GENERATE_IP] Fileset preparation done.
+[2025-08-09 12:29:56] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/generator/soc_gen.py
+[2025-08-09 12:29:56] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --user_project_path ${USER_PROJECT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:29:56] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/generator/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --user_project_path ${USER_PROJECT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1')}
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:29:56] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/generator/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--user_project_path
+/home/olle/efinity_p2/BRAM
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:02] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: [Runtime] SpinalHDL dev    git head : 81793df2c4f55a20f7eff1130c4bb74a4b11319f
+[Runtime] JVM max memory : 3950.0MiB
+[Runtime] Current date : 2025.08.09 12:29:57
+[Progress] at 0.000 : Elaborate components
+[Info] No CounterService was found. Generating legacy counters and timer
+[Progress] at 2.926 : Checks and transforms
+[Progress] at 3.704 : Generate Verilog to hardware/netlist
+[Warning] toplevel/system_riscvJtag_debug_logic_dm/logic_progbufX_mem : Mem[2*32 bits].readAsync can only be write first into Verilog
+[Warning] 294 signals were pruned. You can call printPruned on the backend report to get more informations.
+[Done] at 4.477
+current path: /home/olle/efinity_p2/BRAM/ip/micro_risc_v1_outflow
+java -cp /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/generator/EfxSapphireSoc.jar saxon.board.efinix.EfxSapphireSoc  --ramHex "/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex" --L1I true --iCacheWays 1 --onChipRamAddress 0xf9000000 --dCacheWays 1 --FpuDouble false --uart name=system_uart_0_io,address=0x010000,interruptId=2,fifoDepth=64 --noBarrelShifter --ddrAEnable false --L1D true --apbBridgeAddress 0xf8000000 --Linux false --softTap false --PeripheralClock false --Fpu false --systemFrequency 128000000 --dCacheSize 4096 --axiAEnable false --cpuCount 1 --gpio name=system_gpio_0_io,address=0x015000,width=1,interrupts="0->1" --Atomic false --iCacheSize 4096 --lowArea 5 --hardwareBreakpoints 0 --onChipRamSize 0x2000 --withRiscvDebugPriv --noMulDiv
+loc upper: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc
+
+[2025-08-09 12:30:02] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:02] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1
+[2025-08-09 12:30:02] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/generator/remove_hash_for_bin.py
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/generator/remove_hash_for_bin.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/${IP_GEN_MODULE')}
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/generator/remove_hash_for_bin.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/${IP_GEN_MODULE
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/${IP_GEN_MODULE
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/embedded_sw/sw_script.py
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${PROJECT_PATH}/embedded_sw --ip_path ${PROJECT_PATH}/ip --gen_name ${IP_GEN_MODULE} --ipm_path ${IP_LIBRARY_ROOT} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '../${IP_GEN_MODULE}/embedded_sw', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/embedded_sw/sw_script.py', 'flags': '--out_path ${PROJECT_PATH}/embedded_sw --ip_path ${PROJECT_PATH}/ip --gen_name ${IP_GEN_MODULE} --ipm_path ${IP_LIBRARY_ROOT} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/../micro_risc_v1/embedded_sw')}
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/embedded_sw/sw_script.py
+--out_path
+/home/olle/efinity_p2/BRAM/embedded_sw
+--ip_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--ipm_path
+/home/olle/efinix/efinity/2025.1/ipm/ip
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: Removed file: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/bootloaderConfig.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/core_portme.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/coremark.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/DDRCali_i2c.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/i2cDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/i2cMcp4725.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/nestedInterruptDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/print.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/print_full.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/sdHostDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/semihosting.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/smpDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/spiDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/tseDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/userTimerDemo.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/app/freertosHalConfig.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/config
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/config_linux
+Removed folder: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/tool
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/coremark
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/apb3Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/axi4Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/semihosting
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/spiReadFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/spiWriteFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/userInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/coreTimerInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/dCacheFlushDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/iCacheFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/nestedInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/compatibilityDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/i2cDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/i2cMasterDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/inlineAsmDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/openocdServer
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/smpDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/fpuDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/uartInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/gpioDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/axi4Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/userTimerDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/uartEchoDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/spiDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/customInstructionDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/memTest
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/dhrystone
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/freertosDemo2
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/freertosUartInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/i2cEepromDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/i2cSlaveDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/iCacheFlushDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/semihostingDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/watchdogDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/coremark
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/apb3Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/axi4Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/semihosting
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/spiReadFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/spiWriteFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/userInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/coreTimerInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/dCacheFlushDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/iCacheFlashDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/nestedInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/compatibilityDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/i2cDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/i2cMasterDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/inlineAsmDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/openocdServer
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/smpDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/fpuDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/uartInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/gpioDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/axi4Demo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/userTimerDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/uartEchoDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/spiDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/customInstructionDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/memTest
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/dhrystone
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/freertosDemo2
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/freertosUartInterruptDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/i2cEepromDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/i2cSlaveDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/iCacheFlushDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/semihostingDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/watchdogDemo
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/makefile
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/apb3_cl.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/clint.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/dmasg.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/efx_mmc_driver.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/efx_tse_mac.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/efx_tse_phy.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/gpio.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/i2c.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/io.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/mmc.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/plic.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/prescaler.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/riscv.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/spi.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/spiFlash.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/start.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/timer.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/type.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/uart.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/vexriscv.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/makefile
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/apb3_cl.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/clint.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/dmasg.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/efx_mmc_driver.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/efx_tse_mac.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/efx_tse_phy.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/gpio.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/i2c.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/io.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/mmc.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/plic.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/prescaler.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/riscv.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/spi.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/spiFlash.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/start.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/timer.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/type.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/uart.h
+Not found: /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/freeRTOS/driver/vexriscv.h
+
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/../micro_risc_v1/embedded_sw
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/../micro_risc_v1/embedded_sw
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/soc.xml' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/soc_gen.py
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:03] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit/micro_risc_v1')}
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:03] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:04] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit/micro_risc_v1
+[2025-08-09 12:30:04] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit/micro_risc_v1
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/design_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/ddr_reset_sequencer.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/soc.hex' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:04] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/T120F324_devkit'
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/soc.xml' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:05] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_ti/soc_gen.py
+[2025-08-09 12:30:05] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:05] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_ti/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit/micro_risc_v1')}
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:05] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit/micro_risc_v1
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit/micro_risc_v1
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/design_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/hbram_top.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/hbram_top_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti/soc.hex' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti60F225_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti180/soc.xml' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_ti180/soc_gen.py
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_ti180/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit/micro_risc_v1')}
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti180/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit/micro_risc_v1
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit/micro_risc_v1
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_ti180/design_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Ti180J484_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_tz170/soc.xml' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit'
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_tz170/soc_gen.py
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:06] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/fpga/fpga_tz170/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit/micro_risc_v1')}
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:06] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_tz170/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit/micro_risc_v1
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit/micro_risc_v1
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/fpga/fpga_tz170/design_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Tz170J484_devkit'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/testbench/tb_gen.py
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}1', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/testbench/tb_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v11')}
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/tb_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v11
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v11
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] command_str = ${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/testbench/soc_gen.py
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] flags_str = --out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file = {'path': '${IP_GEN_MODULE}2', 'copiedPath': '', 'fileType': 'pythonScript', 'workdir': '', 'isInternal': '', 'isPresent': 'True', 'isPresentDefault': 'True', 'command': '${EFINITY_PYTHON} ${IP_LIBRARY_ROOT}/efx_soc/efx_soc/testbench/soc_gen.py', 'flags': '--out_path ${IP_OUTPUT_PATH} --gen_name ${IP_GEN_MODULE} --parameters ${IP_USER_PARAMETERS}', 'targetName': '', 'name': PosixPath('/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v12')}
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-BEGIN] Start build_command
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] CWD=/home/olle/efinity_p2/BRAM/
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] args: /home/olle/efinix/efinity/2025.1/bin/python3
+/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/soc_gen.py
+--out_path
+/home/olle/efinity_p2/BRAM/ip
+--gen_name
+micro_risc_v1
+--parameters
+HexFile_PathEnable="1"
+HexFile_Path="embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex"
+APBSlave4_Size="65536"
+APBSlave3_Size="65536"
+APBSlave2_Size="65536"
+APBSlave1_Size="65536"
+APBSlave0_Size="65536"
+DEVKIT_CUSTOM="sapphireBoard_rev0"
+LDSize="124"
+LDStackSize="4"
+DEVKIT="0"
+DEBUG="1"
+IDE_SEL="0"
+RISCV_DEBUG_PRIV="1"
+HARD_BREAKPOINT="0"
+SOFT_TAP="0"
+TAP_MODE="0"
+TAP_COUNT="2"
+TAP_SEL="8"
+Frequency="128"
+PeriFrequencyEnable="0"
+PeriFrequency="50"
+APBSlave0_Addr="1048576"
+APBSlave2_Addr="0"
+APBSlave4_Addr="0"
+UART2_FIFODEPTH="128"
+UART2_INT_ID="3"
+TEST="0"
+APBSlave3_Addr="0"
+I2C2_Addr="86016"
+Base_AXIS="16777216"
+Base_M_AXIS="3774873600"
+APBSlave0="0"
+Base_IM="4177526784"
+APBSlave2="0"
+Base_IO="4160749568"
+Base_M_IO="4160749568"
+Base_EM="4096"
+APBSlave1_Addr="0"
+APBSlave1="0"
+APBSlave3="0"
+USER_1_INTR_ID="17"
+USER_1_INTR="0"
+USER_0_INTR_ID="16"
+USER_0_INTR="0"
+USER_2_INTR="0"
+USER_2_INTR_ID="22"
+USER_3_INTR="0"
+USER_3_INTR_ID="23"
+USER_4_INTR="0"
+USER_4_INTR_ID="24"
+USER_5_INTR="0"
+USER_5_INTR_ID="25"
+USER_6_INTR="0"
+USER_6_INTR_ID="26"
+USER_7_INTR="0"
+USER_7_INTR_ID="27"
+APBSlave4="0"
+CustomInstruction="0"
+ATMEXT="0"
+CMREXT="0"
+FPEXT="1"
+FPU="0"
+LINUX="0"
+ICACHEWAY="1"
+DCACHEWAY="1"
+CpuCount="1"
+ICacheSize="4096"
+DCacheSize="4096"
+Cache="1"
+ICache_EN="1"
+DCache_EN="1"
+DDR="0"
+DDR_AXI4="0"
+DDRWidth="128"
+DDR_IdWidth="8"
+DDRSize="3758096384"
+OCRSize="8192"
+AXISlave="0"
+AXISlaveSize="16777216"
+GPIO1_Addr="86016"
+GPIO0_Addr="86016"
+GPIO1_INT_ID1="15"
+GPIO1_INT_ID0="14"
+GPIO0_INT_ID1="13"
+GPIO0_INT_ID0="1"
+GPIO0="1"
+GPIO0Width="1"
+GPIO1Width="8"
+GPIO1="0"
+UART0_FIFODEPTH="64"
+UART0_INT_ID="2"
+UART0_Addr="65536"
+IOSize="4096"
+UART0_M_Addr="4096"
+UART1_M_Addr="8192"
+UART2_M_Addr="12288"
+SPI0_M_Addr="24576"
+SPI1_M_Addr="16384"
+SPI2_M_Addr="20480"
+I2C0_M_Addr="40960"
+I2C1_M_Addr="45056"
+I2C2_M_Addr="49152"
+GPIO0_M_Addr="53248"
+GPIO1_M_Addr="57344"
+APBSlave0_M_Addr="1048576"
+APBSlave1_M_Addr="2097152"
+APBSlave2_M_Addr="3145728"
+APBSlave3_M_Addr="4194304"
+APBSlave4_M_Addr="5242880"
+UART0="1"
+UART2_Addr="86016"
+UART2="0"
+UART1_FIFODEPTH="128"
+UART1_INT_ID="2"
+UART1_Addr="86016"
+UART1="0"
+SPI2="0"
+SPI2DW="8"
+SPI2SS="1"
+SPI2_FIFODEPTH="256"
+SPI1_INT_ID="5"
+SPI1="0"
+SPI1DW="8"
+SPI1SS="1"
+SPI1_FIFODEPTH="256"
+SPI0_INT_ID="4"
+SPI0_Addr="81920"
+SPI0="0"
+SPI0DW="8"
+SPI0SS="1"
+SPI0_FIFODEPTH="256"
+I2C2_INT_ID="10"
+ADDR_Scheme="0"
+I2C2="0"
+I2C1_Addr="86016"
+I2C1="0"
+SPI2_INT_ID="6"
+SPI2_Addr="81920"
+SPI1_Addr="81920"
+I2C0_Addr="86016"
+I2C1_INT_ID="9"
+I2C0_INT_ID="8"
+I2C0="0"
+AXIMasterWidth_1="32"
+AXIMaster_1="0"
+AXIMasterWidth="32"
+AXIMaster="1"
+USER_TIMER0="0"
+USER_TIMER0_CNT_WIDTH="12"
+USER_TIMER0_PS_WIDTH="8"
+USER_TIMER0_INT_ID="19"
+USER_TIMER0_Addr="86016"
+USER_TIMER0_M_Addr="61440"
+USER_TIMER1="0"
+USER_TIMER1_CNT_WIDTH="12"
+USER_TIMER1_PS_WIDTH="8"
+USER_TIMER1_INT_ID="20"
+USER_TIMER1_Addr="86016"
+USER_TIMER1_M_Addr="65536"
+USER_TIMER2="0"
+USER_TIMER2_CNT_WIDTH="12"
+USER_TIMER2_PS_WIDTH="8"
+USER_TIMER2_INT_ID="21"
+USER_TIMER2_Addr="86016"
+USER_TIMER2_M_Addr="69632"
+WDT0="0"
+WDT0_PS_WIDTH="24"
+WDT0_TIMER_WIDTH="16"
+WDT0_Addr="86016"
+WDT0_M_Addr="73728"
+WDT0_INT_ID="32"
+RAM_OPT="0"
+SOC_MODE="1"
+MULDIV_EXT="0"
+BARREL_SHIFTER="0"
+REDUCED_CSR="1"
+DDRCLK_DOMAIN="1"
+DDR_OPT="1"
+SW_REMOVED="0"
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND] stdout: 
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_INVOKE_BUILD_COMMAND-DONE] Build Command Execution: Success
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] file_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v12
+[2025-08-09 12:30:07] [DEBUG   ] [efx_ipmgr.builder] [id-1754735354] [BUILDER_RUN] resolved_name = /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench/micro_risc_v12
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/MEM_IM.TXT' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/SECSI.TXT' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/SFDP.TXT' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/SREG.TXT' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/README' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/tb_soc.do' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/modelsim.do' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/wave.do' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/aldec.do' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/design_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/sim_modules.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/testbench/W25Q32JVxxIM.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] Copying file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1_define.vh' to '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/Testbench'
+[2025-08-09 12:30:07] [INFO    ] [efx_ipmgr.builder] [id-1754735354] [BUILDER-COPY] (('EfxSapphireSoc', 'micro_risc_v1'), ('EfxSapphireSoc_define.vh', 'micro_risc_v1_define.vh'), ('EfxSapphireSoc.v', 'micro_risc_v1.v'))
+[2025-08-09 12:30:10] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GENERATE_PICKLE-BEGIN] Beginning pickle generation to /home/olle/efinity_p2/BRAM/ip/micro_risc_v1/ipm
+[2025-08-09 12:30:11] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GENERATE_PICKLE-DONE] Pickle generation success!
+[2025-08-09 12:30:11] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [GENERATE_IP-DONE] Done Generate IP
+[2025-08-09 12:30:11] [INFO    ] [efx_ipmgr.api_v2] [id-1754735354] [JSON_ENCODER] Saved settings.json encoded as = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external script generator successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external source source successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external script script successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external script embedded sw successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external example design successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external example design ti successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external example design ti180 successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external example design tz170 successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external testbench testbench successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external testbench modelsim successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external testbench aldec successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external testbench ncsim successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.api_wrapper] [id-1754735354] [GENERATE-AFTER] Generated external testbench synopsys successfully
+[2025-08-09 12:30:11] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE-DONE] Result returned from GenerateIpRunnable..
+[2025-08-09 12:30:11] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE-DONE] Generate status: Success
+[2025-08-09 12:30:11] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-GENERATE-STOP] IP Generation thread finished run
+[2025-08-09 12:30:17] [INFO    ] [gui.ip_config_window] [id-1754735354] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 12:30:17] [INFO    ] [common.efinity_grpc_watcher] [id-1754735354] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 12:30:17] [INFO    ] [common.efinity_grpc_watcher] [id-1754735354] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 12:30:17] [INFO    ] [common.efinity_grpc_watcher] [id-1754735354] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 12:30:18] [INFO    ] [common.console] [id-1754735354] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x783314ddf9a0>
+[2025-08-09 12:30:18] [INFO    ] [common.console] [id-1754735354] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 12:30:18] [INFO    ] [common.console] [id-1754735354] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 12:30:18] [INFO    ] [common.console] [id-1754735354] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-09 12:30:27] [INFO    ] [common.console] [id-1754735425] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 12:30:27] [INFO    ] [common.console] [id-1754735425] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 12:30:27] [INFO    ] [common.console] [id-1754735425] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x783ebe3d39a0>
+[2025-08-09 12:30:27] [INFO    ] [__main__] [id-1754735425] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 12:30:27] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 12:30:27] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 12:30:27] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 12:30:27] [INFO    ] [common.efinity_grpc_watcher] [id-1754735425] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 12:30:27] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 12:30:27] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 12:30:27] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 12:30:27] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 12:30:28] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 12:30:28] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 12:30:28] [INFO    ] [efx_ipmgr.api_v2] [id-1754735425] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 12:30:28] [INFO    ] [gui.api_wrapper] [id-1754735425] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 12:30:28] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 12:30:28] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 12:30:28] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 12:30:43] [INFO    ] [gui.ip_config_window] [id-1754735425] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 12:30:43] [INFO    ] [common.efinity_grpc_watcher] [id-1754735425] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 12:30:43] [INFO    ] [common.efinity_grpc_watcher] [id-1754735425] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 12:30:43] [INFO    ] [common.efinity_grpc_watcher] [id-1754735425] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 12:30:44] [INFO    ] [common.console] [id-1754735425] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x783ebe3d39a0>
+[2025-08-09 12:30:44] [INFO    ] [common.console] [id-1754735425] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 12:30:44] [INFO    ] [common.console] [id-1754735425] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 13:01:59] [INFO    ] [common.console] [id-1754737317] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 13:01:59] [INFO    ] [common.console] [id-1754737317] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 13:01:59] [INFO    ] [common.console] [id-1754737317] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x74711bbf79a0>
+[2025-08-09 13:01:59] [INFO    ] [__main__] [id-1754737317] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 13:01:59] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 13:01:59] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 13:01:59] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 13:01:59] [INFO    ] [common.efinity_grpc_watcher] [id-1754737317] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 13:01:59] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 13:01:59] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 13:01:59] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 13:01:59] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 13:02:00] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 13:02:00] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 13:02:00] [INFO    ] [efx_ipmgr.api_v2] [id-1754737317] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 13:02:00] [INFO    ] [gui.api_wrapper] [id-1754737317] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 13:02:00] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 13:02:00] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 13:02:00] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 13:18:10] [INFO    ] [gui.ip_config_window] [id-1754737317] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 13:18:10] [INFO    ] [common.efinity_grpc_watcher] [id-1754737317] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 13:18:10] [INFO    ] [common.efinity_grpc_watcher] [id-1754737317] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 13:18:10] [INFO    ] [common.efinity_grpc_watcher] [id-1754737317] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 13:18:10] [INFO    ] [common.console] [id-1754737317] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x74711bbf79a0>
+[2025-08-09 13:18:10] [INFO    ] [common.console] [id-1754737317] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 13:18:11] [INFO    ] [common.console] [id-1754737317] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 13:18:11] [INFO    ] [common.console] [id-1754737317] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-09 13:19:33] [INFO    ] [common.console] [id-1754738370] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 13:19:33] [INFO    ] [common.console] [id-1754738370] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 13:19:33] [INFO    ] [common.console] [id-1754738370] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x718a7edd39a0>
+[2025-08-09 13:19:33] [INFO    ] [__main__] [id-1754738370] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 13:19:33] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 13:19:33] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 13:19:33] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 13:19:33] [INFO    ] [common.efinity_grpc_watcher] [id-1754738370] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 13:19:33] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 13:19:33] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 13:19:33] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 13:19:33] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 13:19:34] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 13:19:34] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 13:19:34] [INFO    ] [efx_ipmgr.api_v2] [id-1754738370] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 13:19:34] [INFO    ] [gui.api_wrapper] [id-1754738370] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 13:19:34] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 13:19:34] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 13:19:34] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 13:19:51] [INFO    ] [gui.ip_config_window] [id-1754738370] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 13:19:51] [INFO    ] [common.efinity_grpc_watcher] [id-1754738370] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 13:19:51] [INFO    ] [common.efinity_grpc_watcher] [id-1754738370] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 13:19:51] [INFO    ] [common.efinity_grpc_watcher] [id-1754738370] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 13:19:52] [INFO    ] [common.console] [id-1754738370] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x718a7edd39a0>
+[2025-08-09 13:19:52] [INFO    ] [common.console] [id-1754738370] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 13:19:52] [INFO    ] [common.console] [id-1754738370] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 13:19:56] [INFO    ] [common.console] [id-1754738394] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 13:19:56] [INFO    ] [common.console] [id-1754738394] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 13:19:56] [INFO    ] [common.console] [id-1754738394] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7e4a05fd79a0>
+[2025-08-09 13:19:56] [INFO    ] [__main__] [id-1754738394] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 13:19:56] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 13:19:56] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 13:19:56] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 13:19:56] [INFO    ] [common.efinity_grpc_watcher] [id-1754738394] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 13:19:56] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "BRAM_8192_bytes",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "memory",
+        "name": "efx_bram",
+        "version": "6.1"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-08T14:48:37.015768+00:00",
+    "params": {
+        "ADDR_WIDTH_A": "13",
+        "RESET_A_ENABLE": "1",
+        "RESET_B_ENABLE": "1",
+        "RSTA_POLARITY": "1",
+        "RSTB_POLARITY": "1",
+        "MEMORY_MODE": "\"SPEED\"",
+        "WRITE_MODE_A": "\"READ_FIRST\"",
+        "WRITE_MODE_B": "\"READ_FIRST\"",
+        "MEMORY_TYPE": "\"SDP_RAM\"",
+        "BYTEENA_POLARITY": "1",
+        "BYTEENB_POLARITY": "1",
+        "BYTEEN_POLARITY": "1",
+        "HexFile_PathEnable": "1",
+        "HexFile_Path": "\"Python/dimmer.mem\"",
+        "WIDTH_RATIO": "4",
+        "DATA_WIDTH_A": "8",
+        "ADDREN_ENABLE": "1",
+        "ADDREN_POLARITY": "1",
+        "CLKA_POLARITY": "1",
+        "CLKB_POLARITY": "1",
+        "CLKE_POLARITY": "1",
+        "CLKEA_POLARITY": "1",
+        "RESET_OUTREG_A": "\"ASYNC\"",
+        "RESET_OUTREG_B": "\"ASYNC\"",
+        "RESET_RAM_B": "\"ASYNC\"",
+        "WEA_ENABLE": "1",
+        "WEA_POLARITY": "1",
+        "WEB_ENABLE": "1",
+        "WEB_POLARITY": "1",
+        "RADDREN_ENABLE": "1",
+        "RADDREN_POLARITY": "1",
+        "WADDREN_ENABLE": "1",
+        "WADDREN_POLARITY": "1",
+        "RCLK_POLARITY": "1",
+        "ADDREN_A_ENABLE": "1",
+        "ADDREN_B_ENABLE": "1",
+        "ADDRENA_POLARITY": "1",
+        "ADDRENB_POLARITY": "1",
+        "WE_ENABLE": "1",
+        "WE_POLARITY": "1",
+        "WCLKE_POLARITY": "1",
+        "WCLK_POLARITY": "1",
+        "RESET_RAM_A": "\"ASYNC\"",
+        "RESET_RAM": "\"ASYNC\"",
+        "CLK_POLARITY": "1",
+        "RE_POLARITY": "1",
+        "RE_ENABLE": "1",
+        "WRITE_MODE": "\"READ_FIRST\"",
+        "RESET_OUTREG": "\"ASYNC\"",
+        "RESET_ENABLE": "1",
+        "RST_POLARITY": "1",
+        "CLKEB_POLARITY": "1",
+        "CLK_MODE_SDP": "1",
+        "CLK_MODE_TDP_DP": "1",
+        "DATA_WIDTH_A_FIXED": "16",
+        "DATA_WIDTH_A_FLEXIBLE": "8",
+        "BYTEEN_ENABLE_user": "0",
+        "BYTEENA_ENABLE_user": "0",
+        "DATA_WIDTH_A_FTDP": "16",
+        "WIDTH_RATIO_I": "4",
+        "WRITE_MODE_SP": "\"READ_FIRST\"",
+        "WRITE_MODE_SDP": "\"READ_FIRST\""
+    },
+    "output_info": {
+        "external_script_script": [],
+        "external_source_source": [
+            "BRAM_8192_bytes/BRAM_8192_bytes_tmpl.v",
+            "BRAM_8192_bytes/BRAM_8192_bytes_define.vh",
+            "BRAM_8192_bytes/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/BRAM_8192_bytes_tmpl.vhd"
+        ],
+        "external_example_example": [
+            "BRAM_8192_bytes/Ti60F225_devkit/bram.peri.xml",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram.xml",
+            "BRAM_8192_bytes/Ti60F225_devkit/debug_profile.wizard.json",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_top.sdc",
+            "BRAM_8192_bytes/Ti60F225_devkit/efx_simple_dual_port_ram.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_wrapper_mwm.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_primitive.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/dpram_top_titanium.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/reset.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/test_pattern.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/write_pattern.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_decompose.vh",
+            "BRAM_8192_bytes/Ti60F225_devkit/bram_ini.vh",
+            "BRAM_8192_bytes/Ti60F225_devkit/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/Ti60F225_devkit/BRAM_8192_bytes_define.vh"
+        ],
+        "external_example_example_2": [
+            "BRAM_8192_bytes/T120F576_devkit/bram.peri.xml",
+            "BRAM_8192_bytes/T120F576_devkit/bram.xml",
+            "BRAM_8192_bytes/T120F576_devkit/debug_profile.wizard.json",
+            "BRAM_8192_bytes/T120F576_devkit/bram_top.sdc",
+            "BRAM_8192_bytes/T120F576_devkit/bram_wrapper_mwm.v",
+            "BRAM_8192_bytes/T120F576_devkit/bram_primitive.v",
+            "BRAM_8192_bytes/T120F576_devkit/dpram_top_trion.v",
+            "BRAM_8192_bytes/T120F576_devkit/reset.v",
+            "BRAM_8192_bytes/T120F576_devkit/test_pattern.v",
+            "BRAM_8192_bytes/T120F576_devkit/write_pattern.v",
+            "BRAM_8192_bytes/T120F576_devkit/efx_simple_dual_port_ram.v",
+            "BRAM_8192_bytes/T120F576_devkit/bram_decompose.vh",
+            "BRAM_8192_bytes/T120F576_devkit/bram_ini.vh",
+            "BRAM_8192_bytes/T120F576_devkit/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/T120F576_devkit/BRAM_8192_bytes_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "BRAM_8192_bytes/Testbench/tb.v",
+            "BRAM_8192_bytes/Testbench/efx_dpram_5k.v",
+            "BRAM_8192_bytes/Testbench/efx_dpram10.v",
+            "BRAM_8192_bytes/Testbench/efx_ram_5k.v",
+            "BRAM_8192_bytes/Testbench/efx_ram10.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sprom.v",
+            "BRAM_8192_bytes/Testbench/monitor_sp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_sdp.v",
+            "BRAM_8192_bytes/Testbench/monitor_sdp.v",
+            "BRAM_8192_bytes/Testbench/signal_gen_tdp.v",
+            "BRAM_8192_bytes/Testbench/monitor_tdp.v",
+            "BRAM_8192_bytes/Testbench/tdp_test_pattern.v",
+            "BRAM_8192_bytes/Testbench/dp_test_pattern_rom.v",
+            "BRAM_8192_bytes/Testbench/modelsim.do",
+            "BRAM_8192_bytes/Testbench/flist",
+            "BRAM_8192_bytes/Testbench/bram_decompose.vh",
+            "BRAM_8192_bytes/Testbench/bram_ini.vh",
+            "BRAM_8192_bytes/Testbench/init_hex.mem",
+            "BRAM_8192_bytes/Testbench/BRAM_8192_bytes.v",
+            "BRAM_8192_bytes/Testbench/BRAM_8192_bytes_define.vh"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 13:19:56] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_bram/ipm/doc/topics/hlp-bram-wrapper.html
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_bram/ipm/doc/topics/hlp-bram-wrapper.html
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 13:19:57] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_bram/ipm/gui/config_template.json
+[2025-08-09 13:19:57] [INFO    ] [efx_ipmgr.api_v2] [id-1754738394] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_bram/ipm/gui/config_template.json
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 13:19:57] [INFO    ] [gui.api_wrapper] [id-1754738394] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 13:19:57] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 13:19:57] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 13:19:57] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 13:19:57] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 13:20:03] [INFO    ] [gui.ip_config_window] [id-1754738394] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 13:20:03] [INFO    ] [common.efinity_grpc_watcher] [id-1754738394] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 13:20:03] [INFO    ] [common.efinity_grpc_watcher] [id-1754738394] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 13:20:03] [INFO    ] [common.efinity_grpc_watcher] [id-1754738394] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 13:20:03] [INFO    ] [common.console] [id-1754738394] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7e4a05fd79a0>
+[2025-08-09 13:20:03] [INFO    ] [common.console] [id-1754738394] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 13:20:04] [INFO    ] [common.console] [id-1754738394] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 13:20:04] [INFO    ] [common.console] [id-1754738394] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-09 14:23:37] [INFO    ] [common.console] [id-1754742215] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 14:23:37] [INFO    ] [common.console] [id-1754742215] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 14:23:37] [INFO    ] [common.console] [id-1754742215] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7287649df9a0>
+[2025-08-09 14:23:37] [INFO    ] [__main__] [id-1754742215] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 14:23:37] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 14:23:37] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 14:23:37] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 14:23:37] [INFO    ] [common.efinity_grpc_watcher] [id-1754742215] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 14:23:37] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 14:23:37] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 14:23:37] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 14:23:37] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 14:23:38] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 14:23:38] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 14:23:38] [INFO    ] [efx_ipmgr.api_v2] [id-1754742215] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 14:23:38] [INFO    ] [gui.api_wrapper] [id-1754742215] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 14:23:38] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 14:23:38] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 14:23:38] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 14:28:49] [INFO    ] [common.console] [id-1754742526] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 14:28:49] [INFO    ] [common.console] [id-1754742526] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 14:28:49] [INFO    ] [common.console] [id-1754742526] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7261465d39a0>
+[2025-08-09 14:28:49] [INFO    ] [__main__] [id-1754742526] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-09 14:28:49] [INFO    ] [common.efinity_grpc_watcher] [id-1754742526] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 14:28:49] [INFO    ] [gui.api_wrapper] [id-1754742526] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-09 14:28:49] [INFO    ] [gui.api_wrapper] [id-1754742526] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-09 14:28:49] [INFO    ] [gui.api_wrapper] [id-1754742526] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-09 14:28:49] [INFO    ] [gui.api_wrapper] [id-1754742526] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-09 14:28:49] [INFO    ] [gui.api_wrapper] [id-1754742526] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-09 14:28:49] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-09 14:28:53] [INFO    ] [gui.ip_catalog_window] [id-1754742526] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-09 14:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1754742526] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 14:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1754742526] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 14:28:53] [INFO    ] [common.efinity_grpc_watcher] [id-1754742526] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 14:28:54] [INFO    ] [common.console] [id-1754742526] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7261465d39a0>
+[2025-08-09 14:28:54] [INFO    ] [common.console] [id-1754742526] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 14:28:54] [INFO    ] [common.console] [id-1754742526] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 14:28:57] [INFO    ] [gui.ip_config_window] [id-1754742215] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 14:28:57] [INFO    ] [common.efinity_grpc_watcher] [id-1754742215] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 14:28:57] [INFO    ] [common.efinity_grpc_watcher] [id-1754742215] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 14:28:57] [INFO    ] [common.efinity_grpc_watcher] [id-1754742215] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 14:28:57] [INFO    ] [common.console] [id-1754742215] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7287649df9a0>
+[2025-08-09 14:28:57] [INFO    ] [common.console] [id-1754742215] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 14:28:58] [INFO    ] [common.console] [id-1754742215] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 14:28:58] [INFO    ] [common.console] [id-1754742215] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-09 14:29:02] [INFO    ] [common.console] [id-1754742540] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 14:29:02] [INFO    ] [common.console] [id-1754742540] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 14:29:02] [INFO    ] [common.console] [id-1754742540] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x793eb65df9a0>
+[2025-08-09 14:29:02] [INFO    ] [__main__] [id-1754742540] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-09 14:29:02] [INFO    ] [common.efinity_grpc_watcher] [id-1754742540] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 14:29:02] [INFO    ] [gui.api_wrapper] [id-1754742540] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-09 14:29:02] [INFO    ] [gui.api_wrapper] [id-1754742540] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-09 14:29:02] [INFO    ] [gui.api_wrapper] [id-1754742540] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-09 14:29:02] [INFO    ] [gui.api_wrapper] [id-1754742540] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-09 14:29:02] [INFO    ] [gui.api_wrapper] [id-1754742540] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-09 14:29:02] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-09 14:30:07] [INFO    ] [common.console] [id-1754742605] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-09 14:30:07] [INFO    ] [common.console] [id-1754742605] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-09 14:30:07] [INFO    ] [common.console] [id-1754742605] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7a95227cf9a0>
+[2025-08-09 14:30:07] [INFO    ] [__main__] [id-1754742605] [MAIN-BEGIN] IP Manager has started running
+[2025-08-09 14:30:07] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-START-BEGIN] Initializing IP Config Window...
+[2025-08-09 14:30:07] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_SETTINGS_JSON-BEGIN] Getting parsed settings json...
+[2025-08-09 14:30:07] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [JSON_DECODER-DONE] Decoding done
+[2025-08-09 14:30:07] [INFO    ] [common.efinity_grpc_watcher] [id-1754742605] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-09 14:30:07] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_SETTINGS_JSON] IP Gen dict = {
+    "gen_name": "micro_risc_v1",
+    "vlnv": {
+        "vendor": "efinixinc.com",
+        "library": "soc",
+        "name": "efx_soc",
+        "version": "3.2.2"
+    },
+    "sw_version": "2025.1.110.2.15",
+    "base_path": "/home/olle/efinity_p2/BRAM/ip",
+    "generated_date": "2025-08-09T10:30:11.616535+00:00",
+    "params": {
+        "HexFile_PathEnable": "1'b1",
+        "HexFile_Path": "\"embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.hex\"",
+        "APBSlave0_Size": "65536",
+        "DEVKIT_CUSTOM": "\"sapphireBoard_rev0\"",
+        "LDSize": "124",
+        "LDStackSize": "4",
+        "DEVKIT": "0",
+        "DEBUG": "1'b1",
+        "IDE_SEL": "1'b0",
+        "RISCV_DEBUG_PRIV": "1'b1",
+        "HARD_BREAKPOINT": "0",
+        "SOFT_TAP": "1'b0",
+        "TAP_MODE": "1'b0",
+        "TAP_COUNT": "2",
+        "TAP_SEL": "8",
+        "Frequency": "128",
+        "PeriFrequencyEnable": "1'b0",
+        "PeriFrequency": "50",
+        "UART2_FIFODEPTH": "128",
+        "UART2_INT_ID": "3",
+        "TEST": "1'b0",
+        "Base_M_AXIS": "32'd3774873600",
+        "APBSlave0": "1'b0",
+        "APBSlave2": "1'b0",
+        "Base_M_IO": "32'd4160749568",
+        "APBSlave1": "1'b0",
+        "APBSlave3": "1'b0",
+        "USER_1_INTR_ID": "17",
+        "USER_1_INTR": "1'b0",
+        "USER_0_INTR_ID": "16",
+        "USER_0_INTR": "1'b0",
+        "USER_2_INTR": "1'b0",
+        "USER_2_INTR_ID": "22",
+        "USER_3_INTR": "1'b0",
+        "USER_3_INTR_ID": "23",
+        "USER_4_INTR": "1'b0",
+        "USER_4_INTR_ID": "24",
+        "USER_5_INTR": "1'b0",
+        "USER_5_INTR_ID": "25",
+        "USER_6_INTR": "1'b0",
+        "USER_6_INTR_ID": "26",
+        "USER_7_INTR": "1'b0",
+        "USER_7_INTR_ID": "27",
+        "APBSlave4": "1'b0",
+        "CustomInstruction": "1'b0",
+        "ATMEXT": "1'b0",
+        "CMREXT": "1'b0",
+        "FPEXT": "1'b1",
+        "FPU": "1'b0",
+        "LINUX": "1'b0",
+        "ICACHEWAY": "1",
+        "DCACHEWAY": "1",
+        "CpuCount": "1",
+        "ICacheSize": "4096",
+        "DCacheSize": "4096",
+        "Cache": "1'b1",
+        "ICache_EN": "1'b1",
+        "DCache_EN": "1'b1",
+        "DDR": "1'b0",
+        "DDR_AXI4": "1'b0",
+        "DDRWidth": "128",
+        "DDR_IdWidth": "8",
+        "DDRSize": "32'd3758096384",
+        "OCRSize": "8192",
+        "AXISlave": "1'b0",
+        "AXISlaveSize": "16777216",
+        "GPIO1_INT_ID1": "15",
+        "GPIO1_INT_ID0": "14",
+        "GPIO0_INT_ID1": "13",
+        "GPIO0_INT_ID0": "1",
+        "GPIO0": "1'b1",
+        "GPIO0Width": "1",
+        "GPIO1Width": "8",
+        "GPIO1": "1'b0",
+        "UART0_FIFODEPTH": "64",
+        "UART0_INT_ID": "2",
+        "UART0_M_Addr": "32'd4096",
+        "UART1_M_Addr": "32'd8192",
+        "UART2_M_Addr": "32'd12288",
+        "SPI0_M_Addr": "32'd24576",
+        "SPI1_M_Addr": "32'd16384",
+        "SPI2_M_Addr": "32'd20480",
+        "I2C0_M_Addr": "32'd40960",
+        "I2C1_M_Addr": "32'd45056",
+        "I2C2_M_Addr": "32'd49152",
+        "GPIO0_M_Addr": "32'd53248",
+        "GPIO1_M_Addr": "32'd57344",
+        "APBSlave0_M_Addr": "32'd1048576",
+        "APBSlave1_M_Addr": "32'd2097152",
+        "APBSlave2_M_Addr": "32'd3145728",
+        "APBSlave3_M_Addr": "32'd4194304",
+        "APBSlave4_M_Addr": "32'd5242880",
+        "UART0": "1'b1",
+        "UART2": "1'b0",
+        "UART1_FIFODEPTH": "128",
+        "UART1_INT_ID": "2",
+        "UART1": "1'b0",
+        "SPI2": "1'b0",
+        "SPI2DW": "8",
+        "SPI2SS": "1",
+        "SPI2_FIFODEPTH": "256",
+        "SPI1_INT_ID": "5",
+        "SPI1": "1'b0",
+        "SPI1DW": "8",
+        "SPI1SS": "1",
+        "SPI1_FIFODEPTH": "256",
+        "SPI0_INT_ID": "4",
+        "SPI0": "1'b0",
+        "SPI0DW": "8",
+        "SPI0SS": "1",
+        "SPI0_FIFODEPTH": "256",
+        "I2C2_INT_ID": "10",
+        "ADDR_Scheme": "1'b0",
+        "I2C2": "1'b0",
+        "I2C1": "1'b0",
+        "SPI2_INT_ID": "6",
+        "I2C1_INT_ID": "9",
+        "I2C0_INT_ID": "8",
+        "I2C0": "1'b0",
+        "AXIMasterWidth_1": "32",
+        "AXIMaster_1": "1'b0",
+        "AXIMasterWidth": "32",
+        "AXIMaster": "1'b1",
+        "USER_TIMER0": "1'b0",
+        "USER_TIMER0_CNT_WIDTH": "12",
+        "USER_TIMER0_PS_WIDTH": "8",
+        "USER_TIMER0_INT_ID": "19",
+        "USER_TIMER0_M_Addr": "32'd61440",
+        "USER_TIMER1": "1'b0",
+        "USER_TIMER1_CNT_WIDTH": "12",
+        "USER_TIMER1_PS_WIDTH": "8",
+        "USER_TIMER1_INT_ID": "20",
+        "USER_TIMER1_M_Addr": "32'd65536",
+        "USER_TIMER2": "1'b0",
+        "USER_TIMER2_CNT_WIDTH": "12",
+        "USER_TIMER2_PS_WIDTH": "8",
+        "USER_TIMER2_INT_ID": "21",
+        "USER_TIMER2_M_Addr": "32'd69632",
+        "WDT0": "1'b0",
+        "WDT0_PS_WIDTH": "24",
+        "WDT0_TIMER_WIDTH": "16",
+        "WDT0_M_Addr": "32'd73728",
+        "WDT0_INT_ID": "32",
+        "RAM_OPT": "1'b0",
+        "SOC_MODE": "1",
+        "MULDIV_EXT": "1'b0",
+        "BARREL_SHIFTER": "1'b0",
+        "REDUCED_CSR": "1'b1",
+        "DDRCLK_DOMAIN": "1",
+        "DDR_OPT": "1",
+        "SW_REMOVED": "1'b0"
+    },
+    "output_info": {
+        "external_script_generator": [],
+        "external_source_source": [
+            "micro_risc_v1/micro_risc_v1_tmpl.vhd",
+            "micro_risc_v1/micro_risc_v1_tmpl.v",
+            "micro_risc_v1/micro_risc_v1.v",
+            "micro_risc_v1/micro_risc_v1_define.vh"
+        ],
+        "external_script_script": [],
+        "external_script_embedded_sw": [],
+        "external_example_design": [
+            "micro_risc_v1/T120F324_devkit/soc.xml",
+            "micro_risc_v1/T120F324_devkit/design_modules.v",
+            "micro_risc_v1/T120F324_devkit/ddr_reset_sequencer.v",
+            "micro_risc_v1/T120F324_devkit/soc.hex",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1.v",
+            "micro_risc_v1/T120F324_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti": [
+            "micro_risc_v1/Ti60F225_devkit/soc.xml",
+            "micro_risc_v1/Ti60F225_devkit/design_modules.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top.v",
+            "micro_risc_v1/Ti60F225_devkit/hbram_top_define.vh",
+            "micro_risc_v1/Ti60F225_devkit/soc.hex",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti60F225_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_ti180": [
+            "micro_risc_v1/Ti180J484_devkit/soc.xml",
+            "micro_risc_v1/Ti180J484_devkit/design_modules.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Ti180J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_example_design_tz170": [
+            "micro_risc_v1/Tz170J484_devkit/soc.xml",
+            "micro_risc_v1/Tz170J484_devkit/design_modules.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1.v",
+            "micro_risc_v1/Tz170J484_devkit/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_testbench": [
+            "micro_risc_v1/Testbench/MEM_IM.TXT",
+            "micro_risc_v1/Testbench/SECSI.TXT",
+            "micro_risc_v1/Testbench/SFDP.TXT",
+            "micro_risc_v1/Testbench/SREG.TXT",
+            "micro_risc_v1/Testbench/README",
+            "micro_risc_v1/Testbench/tb_soc.do",
+            "micro_risc_v1/Testbench/modelsim.do",
+            "micro_risc_v1/Testbench/wave.do",
+            "micro_risc_v1/Testbench/aldec.do",
+            "micro_risc_v1/Testbench/design_modules.v",
+            "micro_risc_v1/Testbench/sim_modules.v",
+            "micro_risc_v1/Testbench/W25Q32JVxxIM.v",
+            "micro_risc_v1/Testbench/micro_risc_v1.v",
+            "micro_risc_v1/Testbench/micro_risc_v1_define.vh"
+        ],
+        "external_testbench_modelsim": [
+            "micro_risc_v1/Testbench/modelsim/micro_risc_v1.v"
+        ],
+        "external_testbench_aldec": [
+            "micro_risc_v1/Testbench/aldec/micro_risc_v1.v"
+        ],
+        "external_testbench_ncsim": [
+            "micro_risc_v1/Testbench/ncsim/micro_risc_v1.v"
+        ],
+        "external_testbench_synopsys": [
+            "micro_risc_v1/Testbench/synopsys/micro_risc_v1.v"
+        ]
+    },
+    "ooc_synthesis": {}
+}
+[2025-08-09 14:30:07] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_SETTINGS_JSON-DONE] Successfully parsed settings_json
+[2025-08-09 14:30:07] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [LOAD_IP-BEGIN] Starting load IP
+[2025-08-09 14:30:07] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [PICKLE_LOAD-BEGIN] using pickle to load...
+[2025-08-09 14:30:08] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [PICKLE_LOAD-DONE] Loading with pickle done.
+[2025-08-09 14:30:08] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [LOAD_IP-DONE] Starting load IP
+[2025-08-09 14:30:08] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_IP_DOCUMENTATION-BEGIN] Getting IP documentation...
+[2025-08-09 14:30:08] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [GET_IP_DOCUMENTATION] IP Documentation Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 14:30:08] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [GET_IP_DOCUMENTATION] Resolved ip documentation uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/doc/topics/hlp-sapphire-soc.html
+[2025-08-09 14:30:08] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_IP_DOCUMENTATION-DONE] IP documentation location successfully loaded
+[2025-08-09 14:30:08] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_PARAMS-BEGIN] Getting IP params...
+[2025-08-09 14:30:08] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_PARAMS-DONE] Choices and params obtained
+[2025-08-09 14:30:09] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-SETUP-PARAMS-BEGIN] Setting up params...
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 14:30:09] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-SETUP-PARAMS-DONE] Param setup done.
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_CONFIG_TEMPLATE-BEGIN] Getting config_template.json file...
+[2025-08-09 14:30:09] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [GET_IP_GUI_TEMPLATE] GUI Template Link: file://${IP_LIBRARY_ROOT}/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 14:30:09] [INFO    ] [efx_ipmgr.api_v2] [id-1754742605] [GET_IP_GUI_TEMPLATE] Resolved gui template uri: /home/olle/efinix/efinity/2025.1/ipm/ip/efx_soc/efx_soc/ipm/gui/config_template.json
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_CONFIG_TEMPLATE] UI Path obtained. Loading json file...
+[2025-08-09 14:30:09] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_CONFIG_TEMPLATE-DONE] Config_template.json file successfully loaded.
+[2025-08-09 14:30:09] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-BEGIN] Setting up block diagram viewer...
+[2025-08-09 14:30:09] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-SETUP-BLOCK-DIAGRAM-DONE] Block diagram viewer set up.
+[2025-08-09 14:30:09] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-START-DONE] IP Config Window initialized
+[2025-08-09 14:30:20] [INFO    ] [gui.api_wrapper] [id-1754742605] [VALIDATE_SINGLE_PARAM-BEGIN] Validating IP param...
+[2025-08-09 14:30:20] [DEBUG   ] [efx_ipmgr.api_v2] [id-1754742605] [VALIDATE_SINGLE_PARAM-BEGIN] Param: SOC_MODE, updated_param_value: 0
+[2025-08-09 14:30:21] [DEBUG   ] [efx_ipmgr.api_v2] [id-1754742605] [VALIDATE_SINGLE_PARAM-DONE] Param validation finished.
+[2025-08-09 14:30:21] [INFO    ] [gui.api_wrapper] [id-1754742605] [VALIDATE_SINGLE_PARAM-DONE] Validation result obtained
+[2025-08-09 14:30:21] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 14:30:21] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 14:30:21] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 14:30:21] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 14:30:40] [INFO    ] [gui.api_wrapper] [id-1754742605] [VALIDATE_SINGLE_PARAM-BEGIN] Validating IP param...
+[2025-08-09 14:30:40] [DEBUG   ] [efx_ipmgr.api_v2] [id-1754742605] [VALIDATE_SINGLE_PARAM-BEGIN] Param: SOC_MODE, updated_param_value: 1
+[2025-08-09 14:30:41] [DEBUG   ] [efx_ipmgr.api_v2] [id-1754742605] [VALIDATE_SINGLE_PARAM-DONE] Param validation finished.
+[2025-08-09 14:30:41] [INFO    ] [gui.api_wrapper] [id-1754742605] [VALIDATE_SINGLE_PARAM-DONE] Validation result obtained
+[2025-08-09 14:30:41] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-BEGIN] Getting ip filesets...
+[2025-08-09 14:30:41] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] IP filesets successfully obtained
+[2025-08-09 14:30:41] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS] Cross checking with compulsory table.
+[2025-08-09 14:30:41] [INFO    ] [gui.api_wrapper] [id-1754742605] [GET_FILESETS-DONE] GUI Filesets obtained.
+[2025-08-09 14:38:21] [INFO    ] [gui.ip_catalog_window] [id-1754742540] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-09 14:38:21] [INFO    ] [common.efinity_grpc_watcher] [id-1754742540] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 14:38:21] [INFO    ] [common.efinity_grpc_watcher] [id-1754742540] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 14:38:21] [INFO    ] [common.efinity_grpc_watcher] [id-1754742540] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 14:38:21] [INFO    ] [common.console] [id-1754742540] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x793eb65df9a0>
+[2025-08-09 14:38:21] [INFO    ] [common.console] [id-1754742540] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 14:38:22] [INFO    ] [common.console] [id-1754742540] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-09 17:42:24] [INFO    ] [gui.ip_config_window] [id-1754742605] [IP-CONFIG-STOP] IP Config Window has closed
+[2025-08-09 17:42:24] [INFO    ] [common.efinity_grpc_watcher] [id-1754742605] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-09 17:42:24] [INFO    ] [common.efinity_grpc_watcher] [id-1754742605] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-09 17:42:24] [INFO    ] [common.efinity_grpc_watcher] [id-1754742605] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-09 17:42:25] [INFO    ] [common.console] [id-1754742605] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7a95227cf9a0>
+[2025-08-09 17:42:25] [INFO    ] [common.console] [id-1754742605] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-09 17:42:25] [INFO    ] [common.console] [id-1754742605] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish

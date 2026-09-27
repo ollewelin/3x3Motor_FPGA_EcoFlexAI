@@ -1,0 +1,182 @@
+[2025-08-23 16:34:48] [INFO    ] [common.console] [id-1755959686] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:34:48] [INFO    ] [common.console] [id-1755959686] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:34:48] [INFO    ] [common.console] [id-1755959686] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x73a2ef7cf9a0>
+[2025-08-23 16:34:48] [INFO    ] [__main__] [id-1755959686] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 16:34:48] [INFO    ] [common.efinity_grpc_watcher] [id-1755959686] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:34:48] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 16:34:49] [INFO    ] [gui.api_wrapper] [id-1755959686] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 16:34:49] [INFO    ] [gui.api_wrapper] [id-1755959686] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 16:34:49] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 16:34:49] [INFO    ] [gui.api_wrapper] [id-1755959686] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 16:34:49] [INFO    ] [gui.api_wrapper] [id-1755959686] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 16:34:49] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 16:34:49] [INFO    ] [gui.api_wrapper] [id-1755959686] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 16:34:49] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:34:49] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:34:49] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 16:35:00] [INFO    ] [common.efinity_grpc_watcher] [id-1755959686] [WATCHER-RUN] Received Exit from efinity
+[2025-08-23 16:35:00] [INFO    ] [common.efinity_grpc_watcher] [id-1755959686] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 16:35:00] [INFO    ] [common.efinity_grpc_watcher] [id-1755959686] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 16:35:00] [INFO    ] [gui.ip_catalog_window] [id-1755959686] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 16:35:01] [INFO    ] [common.console] [id-1755959686] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x73a2ef7cf9a0>
+[2025-08-23 16:35:01] [INFO    ] [common.console] [id-1755959686] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:35:01] [INFO    ] [common.console] [id-1755959686] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:35:01] [INFO    ] [common.console] [id-1755959686] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 16:35:07] [INFO    ] [common.console] [id-1755959705] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:35:07] [INFO    ] [common.console] [id-1755959705] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:35:07] [INFO    ] [common.console] [id-1755959705] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7b82ebbe79a0>
+[2025-08-23 16:35:07] [INFO    ] [__main__] [id-1755959705] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 16:35:07] [INFO    ] [common.efinity_grpc_watcher] [id-1755959705] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:35:07] [INFO    ] [gui.api_wrapper] [id-1755959705] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 16:35:07] [INFO    ] [gui.api_wrapper] [id-1755959705] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 16:35:07] [INFO    ] [gui.api_wrapper] [id-1755959705] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 16:35:07] [INFO    ] [gui.api_wrapper] [id-1755959705] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 16:35:07] [INFO    ] [gui.api_wrapper] [id-1755959705] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:35:07] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 16:36:05] [INFO    ] [gui.ip_catalog_window] [id-1755959705] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 16:36:05] [INFO    ] [common.efinity_grpc_watcher] [id-1755959705] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 16:36:05] [INFO    ] [common.efinity_grpc_watcher] [id-1755959705] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 16:36:05] [INFO    ] [common.efinity_grpc_watcher] [id-1755959705] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 16:36:05] [INFO    ] [common.console] [id-1755959705] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7b82ebbe79a0>
+[2025-08-23 16:36:05] [INFO    ] [common.console] [id-1755959705] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:36:06] [INFO    ] [common.console] [id-1755959705] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:36:34] [INFO    ] [common.console] [id-1755959792] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:36:34] [INFO    ] [common.console] [id-1755959792] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:36:34] [INFO    ] [common.console] [id-1755959792] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7b4f3f1e39a0>
+[2025-08-23 16:36:34] [INFO    ] [__main__] [id-1755959792] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 16:36:34] [INFO    ] [common.efinity_grpc_watcher] [id-1755959792] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:36:34] [INFO    ] [gui.api_wrapper] [id-1755959792] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 16:36:34] [INFO    ] [gui.api_wrapper] [id-1755959792] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 16:36:34] [INFO    ] [gui.api_wrapper] [id-1755959792] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 16:36:34] [INFO    ] [gui.api_wrapper] [id-1755959792] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 16:36:34] [INFO    ] [gui.api_wrapper] [id-1755959792] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:36:34] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 16:37:30] [INFO    ] [gui.ip_catalog_window] [id-1755959792] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 16:37:30] [INFO    ] [common.efinity_grpc_watcher] [id-1755959792] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 16:37:30] [INFO    ] [common.efinity_grpc_watcher] [id-1755959792] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 16:37:30] [INFO    ] [common.efinity_grpc_watcher] [id-1755959792] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 16:37:30] [INFO    ] [common.console] [id-1755959792] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7b4f3f1e39a0>
+[2025-08-23 16:37:30] [INFO    ] [common.console] [id-1755959792] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 16:37:31] [INFO    ] [common.console] [id-1755959792] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 16:37:49] [INFO    ] [common.console] [id-1755959867] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 16:37:49] [INFO    ] [common.console] [id-1755959867] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 16:37:49] [INFO    ] [common.console] [id-1755959867] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7e0f3d1f39a0>
+[2025-08-23 16:37:49] [INFO    ] [__main__] [id-1755959867] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 16:37:49] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 16:37:49] [INFO    ] [common.efinity_grpc_watcher] [id-1755959867] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 16:37:49] [INFO    ] [gui.api_wrapper] [id-1755959867] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 16:37:49] [INFO    ] [gui.api_wrapper] [id-1755959867] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 16:37:49] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 16:37:49] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 16:37:49] [INFO    ] [gui.api_wrapper] [id-1755959867] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 16:37:49] [INFO    ] [gui.api_wrapper] [id-1755959867] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 16:37:49] [INFO    ] [gui.api_wrapper] [id-1755959867] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 16:37:49] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:37:50] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:37:50] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:37:54] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:37:55] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 16:38:04] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 16:38:04] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:11:30] [INFO    ] [common.efinity_grpc_watcher] [id-1755959867] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:12:22] [INFO    ] [gui.ip_catalog_window] [id-1755959867] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 17:12:22] [INFO    ] [common.efinity_grpc_watcher] [id-1755959867] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 17:12:22] [INFO    ] [common.efinity_grpc_watcher] [id-1755959867] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 17:12:22] [INFO    ] [common.efinity_grpc_watcher] [id-1755959867] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 17:12:22] [INFO    ] [common.console] [id-1755959867] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7e0f3d1f39a0>
+[2025-08-23 17:12:22] [INFO    ] [common.console] [id-1755959867] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:12:23] [INFO    ] [common.console] [id-1755959867] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:12:23] [INFO    ] [common.console] [id-1755959867] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 17:18:32] [INFO    ] [common.console] [id-1755962310] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:18:32] [INFO    ] [common.console] [id-1755962310] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:18:32] [INFO    ] [common.console] [id-1755962310] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7fbe2e5fb9a0>
+[2025-08-23 17:18:32] [INFO    ] [__main__] [id-1755962310] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 17:18:32] [INFO    ] [common.efinity_grpc_watcher] [id-1755962310] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 17:18:32] [INFO    ] [gui.api_wrapper] [id-1755962310] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 17:18:32] [INFO    ] [gui.api_wrapper] [id-1755962310] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 17:18:32] [INFO    ] [gui.api_wrapper] [id-1755962310] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 17:18:32] [INFO    ] [gui.api_wrapper] [id-1755962310] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 17:18:32] [INFO    ] [gui.api_wrapper] [id-1755962310] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:18:32] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 17:18:52] [INFO    ] [gui.ip_catalog_window] [id-1755962310] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 17:18:52] [INFO    ] [common.efinity_grpc_watcher] [id-1755962310] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 17:18:52] [INFO    ] [common.efinity_grpc_watcher] [id-1755962310] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 17:18:52] [INFO    ] [common.efinity_grpc_watcher] [id-1755962310] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 17:18:53] [INFO    ] [common.console] [id-1755962310] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x7fbe2e5fb9a0>
+[2025-08-23 17:18:53] [INFO    ] [common.console] [id-1755962310] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:18:53] [INFO    ] [common.console] [id-1755962310] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:20:46] [INFO    ] [common.console] [id-1755962444] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:20:46] [INFO    ] [common.console] [id-1755962444] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:20:46] [INFO    ] [common.console] [id-1755962444] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x735579ffb9a0>
+[2025-08-23 17:20:46] [INFO    ] [__main__] [id-1755962444] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 17:20:46] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 17:20:46] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 17:20:47] [INFO    ] [gui.api_wrapper] [id-1755962444] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 17:20:47] [INFO    ] [gui.api_wrapper] [id-1755962444] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 17:20:47] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 17:20:47] [INFO    ] [gui.api_wrapper] [id-1755962444] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 17:20:47] [INFO    ] [gui.api_wrapper] [id-1755962444] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 17:20:47] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 17:20:47] [INFO    ] [gui.api_wrapper] [id-1755962444] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 17:20:47] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:20:47] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:20:47] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful
+[2025-08-23 17:22:16] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:26:37] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-RUN] Received Raise from efinity
+[2025-08-23 17:28:02] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:02] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:02] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:02] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:03] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:03] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:04] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:09] [INFO    ] [gui.ip_catalog_window] [id-1755962444] [IP-CATALOG-STOP] IP Catalog Window has closed
+[2025-08-23 17:28:09] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-STOP-BEGIN] Stopping Efinity grpc watch...
+[2025-08-23 17:28:09] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-STOP-DONE] Efinity grpc watch stopped
+[2025-08-23 17:28:09] [INFO    ] [common.efinity_grpc_watcher] [id-1755962444] [WATCHER-RUN] Cancelling ping stream as ipm is closing.
+[2025-08-23 17:28:09] [INFO    ] [common.console] [id-1755962444] [CONSOLE-STOP] Exec Stop Process thread = <PyQt6.QtCore.QThread object at 0x735579ffb9a0>
+[2025-08-23 17:28:09] [INFO    ] [common.console] [id-1755962444] [CONSOLE-STOP] Console message consumer thread stops.
+[2025-08-23 17:28:10] [INFO    ] [common.console] [id-1755962444] [CONSOLE-DISCONNECTED] Consumer_obj disconnected on finish
+[2025-08-23 17:28:10] [INFO    ] [common.console] [id-1755962444] [CONSOLE-CLEANUP] Consumer_thread cleanup done
+[2025-08-23 17:28:58] [INFO    ] [common.console] [id-1755962936] ----------------------------NEW SESSION STARTING------------------------------
+[2025-08-23 17:28:58] [INFO    ] [common.console] [id-1755962936] [CONSOLE-START] Console message consumer thread starts...
+[2025-08-23 17:28:58] [INFO    ] [common.console] [id-1755962936] [CONSOLE-START] Exec Start Process thread = <PyQt6.QtCore.QThread object at 0x7d6705fdf9a0>
+[2025-08-23 17:28:58] [INFO    ] [__main__] [id-1755962936] [MAIN-BEGIN] IP Manager has started running
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-START-BEGIN] Initializing IP Catalog Window...
+[2025-08-23 17:28:58] [INFO    ] [common.efinity_grpc_watcher] [id-1755962936] [WATCHER-START-BEGIN] Efinity grpc start monitoring
+[2025-08-23 17:28:58] [INFO    ] [gui.api_wrapper] [id-1755962936] [CHECK_PICKLE-BEGIN] Check if pickle is valid.
+[2025-08-23 17:28:58] [INFO    ] [gui.api_wrapper] [id-1755962936] [CHECK_PICKLE-DONE] Pickle valid. Returning...
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-START-DONE] IP Catalog Window initialized
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-LOAD_IP_LIST-BEGIN] Start building IP catalog...
+[2025-08-23 17:28:58] [INFO    ] [gui.api_wrapper] [id-1755962936] [GET_LIST_OF_IPS-BEGIN] Getting list of IPs...
+[2025-08-23 17:28:58] [INFO    ] [gui.api_wrapper] [id-1755962936] [GET_LIST_OF_IPS-DONE] List of IPs obtained. Vlnv list of ips successfully loaded
+[2025-08-23 17:28:58] [INFO    ] [gui.api_wrapper] [id-1755962936] [GET_DISP_VLNV] Vlnv list of ips successfully converted Disp Vlnv
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-LOAD_IP_LIST] Filling up tree view
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-LOAD_IP_LIST] Complete filling up tree view
+[2025-08-23 17:28:58] [INFO    ] [gui.ip_catalog_window] [id-1755962936] [IP-CATALOG-LOAD_IP_LIST-DONE] IP catalog build successful

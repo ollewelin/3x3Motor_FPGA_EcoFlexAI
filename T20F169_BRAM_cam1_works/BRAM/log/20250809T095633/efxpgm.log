@@ -1,0 +1,134 @@
+[2025-08-09 19:00:22] [INFO    ] EFXPGM_HOME : /home/olle/efinix/efinity/2025.1/pgm
+[2025-08-09 19:00:22] [INFO    ] EFINITY_HOME : /home/olle/efinix/efinity/2025.1
+[2025-08-09 19:00:22] [INFO    ] EFINITY_USER_DIR : /home/olle/efinity_p2/BRAM
+[2025-08-09 19:00:22] [INFO    ] Loading /home/olle/efinity_p2/BRAM/pgm/layout.ini
+[2025-08-09 19:00:22] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-09 19:00:22] [INFO    ] Sat August 9 25 19:00:22 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 19:00:22] [INFO    ] Sat August 9 25 19:00:22 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 19:00:22] [INFO    ] Sat August 9 25 19:00:22 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 19:00:22] [INFO    ] Sat August 9 25 19:00:22 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 19:00:22] [INFO    ] Sat August 9 25 19:00:22 - Valid device ID found: 0x00210A79
+[2025-08-09 21:05:38] [INFO    ] Sat August 9 25 21:05:38 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - Valid device ID found: 0x00210A79
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - jtag programming started!
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-09 21:05:39] [INFO    ] Sat August 9 25 21:05:39 - Programming '/home/olle/efinity_p2/BRAM/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-09 21:05:40] [INFO    ] Sat August 9 25 21:05:40 - Device ID read from JTAG: 0x00210A79
+[2025-08-09 21:05:42] [INFO    ] Sat August 9 25 21:05:42 - ... finished with JTAG programming
+[2025-08-09 21:05:42] [INFO    ] Sat August 9 25 21:05:42 - Detecting device status...
+[2025-08-09 21:05:46] [INFO    ] Sat August 9 25 21:05:46 - Device is in user mode!
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - Valid device ID found: 0x00210A79
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - jtag programming started!
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - Programming '/home/olle/efinity_p2/BRAM/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-09 22:46:38] [INFO    ] Sat August 9 25 22:46:38 - Device ID read from JTAG: 0x00210A79
+[2025-08-09 22:46:41] [INFO    ] Sat August 9 25 22:46:41 - ... finished with JTAG programming
+[2025-08-09 22:46:41] [INFO    ] Sat August 9 25 22:46:41 - Detecting device status...
+[2025-08-09 22:46:44] [INFO    ] Sat August 9 25 22:46:44 - Device is in user mode!
+[2025-08-09 22:46:52] [INFO    ] Sat August 9 25 22:46:52 - Valid device ID found: 0x00210A79
+[2025-08-09 22:46:52] [INFO    ] Sat August 9 25 22:46:52 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 22:46:52] [INFO    ] Sat August 9 25 22:46:52 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-09 22:46:52] [INFO    ] Sat August 9 25 22:46:52 - jtag programming started!
+[2025-08-09 22:46:52] [INFO    ] Sat August 9 25 22:46:52 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-09 22:46:53] [INFO    ] Sat August 9 25 22:46:53 - Programming '/home/olle/efinity_p2/BRAM/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-09 22:46:53] [INFO    ] Sat August 9 25 22:46:53 - Device ID read from JTAG: 0x00210A79
+[2025-08-09 22:46:55] [INFO    ] Sat August 9 25 22:46:55 - ... finished with JTAG programming
+[2025-08-09 22:46:56] [INFO    ] Sat August 9 25 22:46:56 - Detecting device status...
+[2025-08-09 22:46:59] [INFO    ] Sat August 9 25 22:46:59 - Device is in user mode!
+[2025-08-09 23:13:19] [ERROR   ] USBTools error: No USB device matches URL ftdi://0x0403:0x6010/2
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - Traceback (most recent call last):
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/main_window.py", line 1018, in on_program
+    self.detect_jtag.update_detector(devices=jcfs, target_num=target_num, jtag_freq=self.jtag_clock_speed)
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/detect_jtag.py", line 130, in update_detector
+    self.detector = ProgDetector(self.device_db, self.device_desc, self.url, devices=devices, target_num=target_num, jtag_freq=jtag_freq)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/prog_detector.py", line 25, in __init__
+    self.scanner = JTAGScanner(jtag_freq, device_db, device_desc, url, devices, target_num)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag_scanner.py", line 36, in __init__
+    self.init_jtag_manager()
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag_scanner.py", line 57, in init_jtag_manager
+    self.jtag_tap = JtagManager().detect_jtag_tap(self.url, jcfs=self.devices, chip_num=self.target_num, freq=self.jtag_freq)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag.py", line 2406, in detect_jtag_tap
+    jtag_engine.configure(url=url)
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jcf.py", line 826, in configure
+    self._engine_provider.configure(url, init)
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/jtag.py", line 542, in configure
+    self._ctrl.configure(url, init)
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/jtag.py", line 192, in configure
+    self._ftdi.open_mpsse_from_url(
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/ftdi.py", line 633, in open_mpsse_from_url
+    devdesc, interface = self.get_identifiers(url)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/ftdi.py", line 399, in get_identifiers
+    return UsbTools.parse_url(url,
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/usbtools.py", line 328, in parse_url
+    raise UsbToolsError('No USB device matches URL %s' %
+pyftdi.usbtools.UsbToolsError: No USB device matches URL ftdi://0x0403:0x6010/2
+
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - No USB device matches URL ftdi://0x0403:0x6010/2. Check the usb driver installation for Windows.
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - jtag programming started!
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - USBTools error: No USB device matches URL ftdi://0x0403:0x6010/2
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - Check board is plugged in, and then click on "Refresh USB Targets"
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - Traceback (most recent call last):
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/main_window.py", line 1148, in on_program
+    self.detect_jtag.update_detector(devices=jcfs, target_num=target_num, jtag_freq=self.jtag_clock_speed)
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/detect_jtag.py", line 130, in update_detector
+    self.detector = ProgDetector(self.device_db, self.device_desc, self.url, devices=devices, target_num=target_num, jtag_freq=jtag_freq)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/pgm/bin/efx_pgm/prog_detector.py", line 25, in __init__
+    self.scanner = JTAGScanner(jtag_freq, device_db, device_desc, url, devices, target_num)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag_scanner.py", line 36, in __init__
+    self.init_jtag_manager()
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag_scanner.py", line 57, in init_jtag_manager
+    self.jtag_tap = JtagManager().detect_jtag_tap(self.url, jcfs=self.devices, chip_num=self.target_num, freq=self.jtag_freq)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jtag.py", line 2406, in detect_jtag_tap
+    jtag_engine.configure(url=url)
+  File "/home/olle/efinix/efinity/2025.1/debugger/bin/efx_dbg/jcf.py", line 826, in configure
+    self._engine_provider.configure(url, init)
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/jtag.py", line 542, in configure
+    self._ctrl.configure(url, init)
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/jtag.py", line 192, in configure
+    self._ftdi.open_mpsse_from_url(
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/ftdi.py", line 633, in open_mpsse_from_url
+    devdesc, interface = self.get_identifiers(url)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/ftdi.py", line 399, in get_identifiers
+    return UsbTools.parse_url(url,
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/olle/efinix/efinity/2025.1/lib/python3.11/site-packages/pyftdi/usbtools.py", line 328, in parse_url
+    raise UsbToolsError('No USB device matches URL %s' %
+pyftdi.usbtools.UsbToolsError: No USB device matches URL ftdi://0x0403:0x6010/2
+
+[2025-08-09 23:13:19] [INFO    ] Sat August 9 25 23:13:19 - No USB device matches URL ftdi://0x0403:0x6010/2. Check the usb driver installation for Windows.
+[2025-08-09 23:13:21] [INFO    ] usb_target_list =  []
+[2025-08-09 23:13:36] [INFO    ] Sat August 9 25 23:13:36 - on_program Device is not available
+[2025-08-09 23:13:41] [INFO    ] usb_target_list =  []
+[2025-08-09 23:13:50] [INFO    ] usb_target_list =  ['Dual RS232-HS']
+[2025-08-09 23:13:50] [INFO    ] Sat August 9 25 23:13:50 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:13:50] [INFO    ] Sat August 9 25 23:13:50 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:13:50] [INFO    ] Sat August 9 25 23:13:50 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:13:50] [INFO    ] Sat August 9 25 23:13:50 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:13:50] [INFO    ] Sat August 9 25 23:13:50 - Valid device ID found: 0x00210A79
+[2025-08-09 23:14:05] [INFO    ] Sat August 9 25 23:14:05 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - Valid device ID found: 0x00210A79
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - Board Profile: Generic Board Profile Using FT2232H
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - Using FTDI URL (SPI = ftdi://0x0403:0x6010/1, JTAG = ftdi://0x0403:0x6010/2)
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - jtag programming started!
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - JTAG Programming on ftdi://0x0403:0x6010/2
+[2025-08-09 23:14:06] [INFO    ] Sat August 9 25 23:14:06 - Programming '/home/olle/efinity_p2/BRAM/outflow/BRAM.bit' via JTAG at freq 6.0 MHz
+[2025-08-09 23:14:07] [INFO    ] Sat August 9 25 23:14:07 - Device ID read from JTAG: 0x00210A79
+[2025-08-09 23:14:09] [INFO    ] Sat August 9 25 23:14:09 - ... finished with JTAG programming
+[2025-08-09 23:14:09] [INFO    ] Sat August 9 25 23:14:09 - Detecting device status...
+[2025-08-09 23:14:13] [INFO    ] Sat August 9 25 23:14:13 - Device is in user mode!

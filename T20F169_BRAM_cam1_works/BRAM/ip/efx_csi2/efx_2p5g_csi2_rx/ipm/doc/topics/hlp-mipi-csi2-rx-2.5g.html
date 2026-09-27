@@ -1,0 +1,433 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="generator" content="DITA-OT"><meta name="description" content=""><meta name="prodname" content="Efinity"><meta name="version" content="UG-CORE-MIPI-2-5G-CSI2-RX-v2.6"><meta name="rights" content="© 2025 Efinix, Inc."><title>MIPI 2.5G CSI-2 RX Controller Core User Guide</title>
+	<link href="../../../../../../../doc/css/efx-styles.css" rel="stylesheet">
+	<link href="../../../../../../../doc/css/bootstrap.css" rel="stylesheet">
+	<script src="../../../../../../../doc/js/jquery-3.4.1.min.js"></script>
+	<script src="../../../../../../../doc/js/bootstrap.js"></script>
+</head><body><header role="banner"><div>
+  <script>
+    function store_nav_state(clicked_id) {
+    var id = $(clicked_id).attr("id");
+    var div_id = id.replace(/^btn-/, 'drop-');
+    // alert(div_id);
+    
+    if ( $('#'+div_id).hasClass( "in" ) ) {
+    // trigger is opposite of what you would think
+    localStorage.removeItem(div_id);
+    $('#'+id).children('span').addClass("glyphicon-plus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-minus-sign");
+    
+    $('#'+id).children('span').addClass("black");
+    $('#'+id).children('span').removeClass("blue");
+    }
+    else {
+    localStorage.setItem(div_id, "in");
+    $('#'+id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+id).children('span').addClass("blue");
+    $('#'+id).children('span').removeClass("black");
+    }
+    }
+    
+    $(function(){
+    
+    $( "div[id^=drop-]" ).each(function( index ) {
+    var drop_id = $(this).attr("id");	
+    var btn_id = drop_id.replace(/^drop-/, 'btn-');
+    // console.log( index + ": " + drop_id);	
+    
+    var nav_stored = localStorage.getItem(drop_id);
+    if (nav_stored == "in") {
+    // console.log( index + ": " + drop_id);
+    $( '#'+drop_id ).last().addClass( "in" );
+    
+    $('#'+btn_id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+btn_id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+btn_id).children('span').addClass("blue");
+    }
+    });
+    });
+  </script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../../../../../../../doc/topics/efnug-intro.html"><img src="../../../../../../../doc/logo/efinity-help.png" alt="Efinix, Inc."></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Efinity Help<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/topics/efnug-intro.html">Overview</a></li>
+            <li><a href="../../../../../../../doc/topics/efnug-new.html">New in This Release</a></li> 
+			      <li><a href="../../../../../../../doc/topics/efn-quickstart.html">Quick Start</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-hwsw-req.html">Hardware and Software Requirements</a></li>
+			  
+			       <li class="divider"></li>
+			  
+			      <li><a href="../../../../../../../doc/topics/efn-proj-prefs.html">Projects and Preferences</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-running-tool-flow.html">Running the Flow</a></li>
+            <li><a href="../../../../../../../doc/topics/ip-packager-intro.html">IP Packager</a></li>
+            <li><a href="../../../../../../../doc/topics/ipmgr.html">IP Manager</a></li>
+            <li><a href="../../../../../../../doc/topics/syn-intro.html">Synthesis</a></li>
+            <li><a href="../../../../../../../pt/doc/topics/hlp-id-intro.html">Interface Designer</a></li>
+            <li><a href="../../../../../../../doc/topics/tim-intro.html">Timing</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-simulating.html">Simulation</a></li>
+			      <li><a href="../../../../../../../pgm/doc/topics/hlp-pg-intro.html">Programmer</a></li>
+			      <li><a href="../../../../../../../debugger/doc/topics/hlp-dbg-intro.html">Debugger</a></li>
+			  
+            <li class="divider"></li>
+            <li><a href="../../../../../../../doc/topics/efinity-files.html">Reference: Efinity Project Files</a></li>
+            
+			<li class="divider"></li>
+			<li><a href="../../../../../../../doc/topics/efn-tut-intro.html">Tutorial</a></li>
+          </ul>
+        </li>
+		  
+        <li><a href="../../../../../../../doc/topics/ipmgr-supported-ip-byfamily.html">IP Help</a></li>
+     
+		
+      	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PDFs<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/pdf/efinity-ug.pdf" target="_blank">Efinity Software User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-installation.pdf" target="_blank">Efinity Installation User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-tutorial-trion.pdf" target="_blank">Efinity Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-tutorial-debugger.pdf" target="_blank">Efinity Debugger Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-ti-primitives-ug.pdf" target="_blank">Quantum Titanium Primitives User Guide</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-tz-primitives-ug.pdf" target="_blank">Quantum Topaz Primitives User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-quantum-primitives-ug.pdf" target="_blank">Quantum Trion Primitives User Guide</a></li>
+			       <li class="divider"></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-synthesis.pdf" target="_blank">Efinity Synthesis User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-timing-closure.pdf" target="_blank">Efinity Timing Closure User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-python-api.pdf" target="_blank">Efinity Python API</a></li>
+          </ul>
+        </li>
+		
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://www.efinixinc.com/support/index.php">Support Center</a></li>
+            <li><a href="https://www.efinixinc.com/products-efinity-training.html">Training Videos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+	
+</div></header><div class="col-xs-12 col-md-4"><nav class="toc" role="navigation"><ul id="toc"><li class="active"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#hlp-mipi-csi2-rx-2.5g">MIPI 2.5G CSI-2 RX Controller Core User Guide</a><button class="btn btn-default btn-xs dropdown-toggle btn-leftnav" data-toggle="collapse" aria-expanded="false" onClick="store_nav_state(this)" data-target="#drop-mipicsi2-5grx" id="btn-mipicsi2-5grx"><span class="glyphicon glyphicon-plus-sign"></span></button><div class="collapse" id="drop-mipicsi2-5grx"><ul><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi_dsi2_rx_core_features">Features</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-fd">Functional Description</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#ipm_main">IP Manager</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing">Customizing the MIPI 2.5G CSI-2 RX Controller</a></li></ul></div></li></ul></nav></div><div class="col-xs-12 col-md-8"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="hlp-mipi-csi2-rx-2.5g">
+    <h1 class="title topictitle1" id="ariaid-title1"><span class="ph"><span class="ph">MIPI 2.5G CSI-2 RX Controller</span> Core User Guide</span></h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p">The MIPI CSI-2 interface, which defines a simple, high-speed protocol, is the most widely
+            used camera interface for mobile<a name="fnsrc_1" href="#fntarg_1"><sup>1</sup></a>. Adding a MIPI interface
+            to an FPGA creates a powerful bridge to transmit or receive high-speed video data easily
+            to/from an application processor. The <span class="ph">MIPI 2.5G CSI-2 RX Controller</span> core allows you to
+            perform complex video and image processing as a part of a complete system solution with
+            a data rate of up to 2.5 Gbps. The <span class="ph">MIPI 2.5G CSI-2 RX Controller</span> uses the hard MIPI D-PHY
+            blocks in supported <span class="keyword">Titanium</span> FPGAs.</p>
+        <p class="p" id="hlp-mipi-csi2-rx-2.5g__ipmgr">Use the IP Manager to select IP, customize it, and generate files. The
+                <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> core has an interactive wizard to help you set
+            parameters. The wizard also has options to create a testbench and/or example design
+            targeting an <span class="ph">Efinix®</span> development board.</p>
+        <p class="p">This help gives you an overview of the <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> core
+            and how to configure it with the IP Manager. For detailed information, refer to <a class="xref" href="https://www.efinixinc.com/support/docsdl.php?s=ef&amp;pn=MIPI-2-5G-CSI2-TX-CORE" target="_blank" rel="external noopener"><span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> User Guide</a> in
+            the Support Center.</p>
+    </div>
+<article class="topic concept nested1" aria-labelledby="ariaid-title2" id="mipi_dsi2_rx_core_features">
+    <h2 class="title topictitle2" id="ariaid-title2">Features</h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <div class="p">
+            <ul class="ul" id="mipi_dsi2_rx_core_features__ul_byk_n23_z3b">
+                <li class="li">Configurable data lanes: 1, 2, <span class="ph">or 4</span></li>
+                <li class="li">High-speed (HS) mode and Low-power (LP) mode</li>
+                <li class="li">Arbitrary number of payload data bytes</li>
+                <li class="li">HS mode byte clock frequency from <span class="keyword">5</span> MHz
+                    up to <span class="keyword">156</span> MHz (from <span class="keyword">80</span> Mbps up to <span class="keyword">2,500</span> Mbps data rate)<a name="fnsrc_2" href="#fntarg_2"><sup>2</sup></a></li>
+                <li class="li">Continuous HS mode byte clock and discontinuous HS mode byte clock</li>
+                <li class="li"><span class="keyword">16</span>-bit HS mode data width</li>
+                <li class="li">Pixel format:<ul class="ul" id="mipi_dsi2_rx_core_features__ul_myt_st3_jpb">
+                        <li class="li">RAW: RAW6, RAW7, RAW8, RAW10, RAW12, RAW14, RAW16, RAW20, RAW24,
+                            RAW28</li>
+                        <li class="li">RGB: RGB444, RGB555, RGB565, RGB888</li>
+                        <li class="li">YUV: YUV420 8-bit (legacy), YUV420 8-bit, YUV420 10-bit, YUV420 8-bit
+                            (CSPS), YUV420 10-bit (CSPS), YUV422 8-bit, YUV422 10-bit</li>
+                    </ul></li>
+                <li class="li">User defined 8-bit data types</li>
+                <li class="li">Generic 8-bit long packet</li>
+                <li class="li">Null, blank, and embedded 8-bit non-image data</li>
+                <li class="li">PPI interface</li>
+                <li class="li">Generic frame mode and accurate frame mode</li>
+                <li class="li">Supports end of transmission error, start of transmission sync error, control
+                    error &amp; LP escape error</li>
+                <li class="li">Supports control status register (CSR) for status and error assertion accessed
+                    through AXI4-Lite interface</li>
+                <li class="li">Supports initial auto-skew calibration </li>
+            </ul>
+        </div>
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title3" id="mipi-csi2-rx-2.5g-core-fd">
+    <h2 class="title topictitle2" id="ariaid-title3">Functional Description</h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <div class="p">The <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> consists of the following blocks:<ul class="ul" id="mipi-csi2-rx-2.5g-core-fd__ul_qzd_skh_35b">
+                <li class="li"><em class="ph i">Control Status Registers</em>—Registers that the users can configure in
+                    runtime and statuses that user can read using the AXI4-lite interface</li>
+                <li class="li"><em class="ph i">ECC Checker</em>—Error correction code checker block</li>
+                <li class="li"><em class="ph i">CRC Checker</em>—Cyclic redundancy checker block</li>
+                <li class="li"><em class="ph i">Depacketizer</em>—Converts MIPI data to pixel data format</li>
+                <li class="li"><em class="ph i">Lane Aligner</em>—Aligns data lanes to each other</li>
+                <li class="li"><em class="ph i">Lane FIFO</em>—Manages clock domain conversion for the data from MIPI byte
+                    clock domain to pixel clock domain</li>
+                <li class="li"><em class="ph i">Byte-to-Pixel Converter</em>—Converts the 64-bit data from the packetizer to
+                    pixel data format and rearranges the data according to video data type</li>
+            </ul>The core has a video, AXI4-lite, MIPI D-PHY, and clock and reset interfaces.</div>
+        <div class="p">
+            <figure class="fig fignone" id="mipi-csi2-rx-2.5g-core-fd__fig_akd_pf3_z3b"><figcaption><span class="fig--title-label">Figure 1. </span><span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> System Block Diagram</figcaption>
+                
+                <img class="image" id="mipi-csi2-rx-2.5g-core-fd__image_e2j_jrz_jpb" src="../art/mipi-csi2-controller-rx-2.5g-bd.svg">
+            </figure>
+        </div>
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title4" id="ipm_main">
+    <h2 class="title topictitle2" id="ariaid-title4">IP Manager</h2>
+    
+    <div class="body conbody"><p class="shortdesc">
+        
+    </p>
+        <section class="section" id="ipm_main__section_bcl_5t3_snb">
+            <p class="p">The <span class="ph">Efinity®</span> IP Manager is an
+            interactive wizard that helps you customize and generate <span class="ph">Efinix®</span> IP cores. The IP Manager performs
+            validation checks on the parameters you set to ensure that your selections are valid.
+            When you generate the IP core, you can optionally generate an example design targeting
+            an <span class="ph">Efinix</span> development board and/or a
+            testbench. This wizard is helpful in situations in which you use several IP cores,
+            multiple instances of an IP core with different parameters, or the same IP core for
+            different projects.</p>
+            <div class="p">
+                <div class="note note note_note" id="ipm_main__note_dn1_zgr_sxb"><span class="note__title">Note:</span> Not all <span class="ph">Efinix</span> IP cores include
+            an example design or a testbench.</div>
+            </div>
+            <p class="p">The IP Manager is included with the <span class="ph">Efinity</span> software v2020.2 and higher.</p>
+  
+            <div class="p">The IP Manager consists of:<ul class="ul" id="ipm_main__ul_fm2_553_snb">
+                <li class="li"><em class="ph i">IP Catalog</em>—Provides a catalog of IP cores you can select. Open the IP
+                    Catalog using the toolbar button or using <span class="ph menucascade"><span class="ph uicontrol">Tools</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Open IP Catalog</span></span>.</li>
+                <li class="li"><em class="ph i">IP Configuration</em>—Wizard to customize IP core parameters, select IP core
+                    deliverables, review the IP core settings, and generate the custom
+                    variation.</li>
+                <li class="li"><em class="ph i">IP Editor</em>—Helps you manage IP, add IP, and import IP into your
+                    project.</li>
+            </ul></div>
+        </section>
+        <section class="section" id="ipm_main__section_o4q_vv3_snb"><h3 class="title sectiontitle">Generating the <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> Core with the IP Manager</h3>
+            
+            <div class="p" id="ipm_main__steps">The following steps explain how to customize an IP core with the IP
+                Configuration wizard.<ol class="ol" id="ipm_main__ol_gtf_cw3_snb">
+                    <li class="li">Open the IP Catalog.</li>
+                    <li class="li">Choose <span class="ph menucascade"><span class="ph uicontrol"><span class="keyword">MIPI</span></span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol"><span class="keyword">MIPI 2.5G CSI-2 RX Controller</span></span></span> core and click <span class="ph uicontrol">Next</span>. The <span class="ph uicontrol">IP
+                            Configuration</span> wizard opens.</li>
+                    <li class="li">Enter the module name in the <span class="ph uicontrol">Module Name</span> box.<div class="note note note_note" id="ipm_main__note_pb2_pfr_sxb"><span class="note__title">Note:</span> You cannot generate the core without a module
+                            name.</div></li>
+                    <li class="li">Customize the IP core using the options shown in the wizard. For detailed
+                        information on the options, refer to the <em class="ph i">Customizing the <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span></em> section.</li>
+                    <li class="li">(Optional) In the <span class="ph uicontrol">Deliverables</span> tab, specify whether
+                        to generate an IP core example design targeting an <span class="ph">Efinix®</span> development board
+                        and/or testbench. These options are turned on by default.</li>
+                    <li class="li">(Optional) In the <span class="ph uicontrol">Summary</span> tab, review your
+                        selections.</li>
+                    <li class="li">Click <span class="ph uicontrol">Generate</span> to generate the IP core and other
+                        selected deliverables. </li>
+                    <li class="li">In the <span class="ph uicontrol">Review configuration generation</span> dialog box,
+                        click <span class="ph uicontrol">Generate</span>. The Console in the
+                            <span class="ph uicontrol">Summary</span> tab shows the generation status.<div class="note note note_note" id="ipm_main__note_qb2_pfr_sxb"><span class="note__title">Note:</span> You can disable the <span class="ph uicontrol">Review
+                                configuration generation</span> dialog box by turning off the
+                                <span class="ph uicontrol">Show Confirmation Box</span> option in the
+                            wizard.</div></li>
+                    <li class="li">When generation finishes, the wizard displays the <span class="ph uicontrol">Generation
+                            Success</span> dialog box. Click <span class="ph uicontrol">OK</span> to close
+                        the wizard. </li>
+                </ol></div>
+            <p class="p" id="ipm_main__result2">The wizard adds the IP to your project and displays it under
+                    <span class="ph uicontrol">IP</span> in the Project pane.</p>
+
+        </section>
+        <section class="section" id="ipm_main__section_pnq_5t3_snb"><h3 class="title sectiontitle">Generated Files</h3>
+            
+            <div class="p" id="ipm_main__files">The IP Manager generates these files and directories:<ul class="ul" id="ipm_main__ul_vhg_3yn_vkb">
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_define.vh</span>—Contains the customized
+                        parameters.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_tmpl.v</span>—Verilog HDL instantiation
+                        template.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_tmpl.vhd</span>—VHDL instantiation
+                        template.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;.v</span>—IP source code.</li>
+                    <li class="li"><span class="ph filepath">settings.json</span>—Configuration file.</li>
+                    <li class="li"><span class="ph filepath">&lt;kit name&gt;_devkit</span>—Has generated RTL, example design,
+                        and <span class="ph">Efinity®</span> project targeting
+                        a specific development board.</li>
+                    <li class="li"><span class="ph filepath">Testbench</span>—Contains generated RTL and testbench
+                        files.</li>
+                </ul></div>
+        </section>
+        
+        <section class="section" id="ipm_main__section_pnq_5t3_sb"><h3 class="title sectiontitle">Instantiating the IP</h3>
+            
+        </section>
+        
+        <section class="section">
+            <div class="p">The IP Manager creates these template files in the
+                &lt;<em class="ph i">project</em>&gt;<span class="ph filepath">/ip/</span>&lt;<em class="ph i">module name</em>&gt; directory:<ul class="ul" id="ipm_main__ul_kym_qng_xnb">
+                    <li class="li">&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span><span class="ph filepath">_tmpl.sv</span>
+                        is the Verilog HDL module.</li>
+                    <li class="li">&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span><span class="ph filepath">_tmpl.vhd</span>
+                        is the VHDL component declaration and instantiation template.</li>
+                </ul>To use the IP, copy and paste the code from the template file into your design and
+                update the signal names to instantiate the IP.</div>
+            <div class="note important note_important"><span class="note__title">Important:</span> When you generate the IP, the software automatically adds the
+                module file (&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span>) to your project and
+                lists it in the <span class="ph uicontrol">IP</span> folder in the Project pane. Do not add the
+                    &lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span> file manually (for example, by
+                adding it using the Project Editor); otherwise the <span class="ph">Efinity®</span> software will issue errors
+                during compilation. <figure class="fig fignone" id="ipm_main__fig_z4q_dfh_xnb">
+                    
+                    <img class="image" id="ipm_main__image_qt3_2fh_xnb" src="../art/efinity/ip-folder.png" height="1867" width="2680">
+                </figure></div>
+        </section>
+        <section class="section" id="ipm_main__section_lqx_tzj_xcc">
+            
+        </section>
+        
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title5" id="mipi-csi2-rx-2.5g-core-customizing">
+    <h2 class="title topictitle2" id="ariaid-title5">Customizing the <span class="keyword">MIPI 2.5G CSI-2 RX Controller</span></h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <section class="section" id="mipi-csi2-rx-2.5g-core-customizing__section_ftt_fl4_snb">
+            
+            <p class="p" id="mipi-csi2-rx-2.5g-core-customizing__customizing-help">The core has parameters so you can customize its function. You
+                set the parameters in the <span class="ph uicontrol">General</span> tab of the core's IP
+                Configuration window. </p>
+        </section>
+        <section class="section" id="mipi-csi2-rx-2.5g-core-customizing__section_hnx_cl4_snb">
+            <table class="table frame-all" id="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb"><caption><span class="table--title-label">Table 1. </span><span class="title"><span class="keyword">MIPI 2.5G CSI-2 RX Controller</span> Core Parameter</span></caption><colgroup><col style="width:25%"><col style="width:25%"><col style="width:50%"></colgroup><thead class="thead">
+                        <tr class="row">
+                            <th class="entry colsep-1 rowsep-1" id="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Name</th>
+                            <th class="entry align-center colsep-1 rowsep-1" id="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Options</th>
+                            <th class="entry colsep-1 rowsep-1" id="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Data Lanes</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">1, 2, 4</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Number of data lanes.<div class="div">Default: 4</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">IP Core Clock Frequency</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">40 - 100</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">IP core clock frequency in MHz.<div class="div">Default: 100</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Pixel Data FIFO Depth Size</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">256 - 8192</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">FIFO depth size that stores the pixel packet data (set to power
+                                of 2 value).<div class="div">Minimum FIFO depth required &gt; horizontal_pixel
+                                    (HACT) x bits_per_pixel / 64</div><div class="div">Default:
+                                1024</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Image Frame Mode</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Generic, Accurate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Selects image frame mode.<div class="div">Generic mode: Frame format without
+                                    accurate synchronization timing via Line Start and Line
+                                    End.</div><div class="div">Accurate mode: Frame format with accurate
+                                    synchronization timing via Line Start and Line
+                                    End.</div><div class="div">Default: Generic</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Enable Extra Bit on Virtual Channel</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Disable, Enable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enables 16 virtual channel support.<div class="div">Default:
+                                Disable</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Enable Pipeline State for RXStopState Signal</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">8 – 15</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enable pipeline stage for RXStopState signal. The pipeline
+                                registers are clocked with HS mode byte clock. <div class="div">Compensates the
+                                    MIPI HSIO deserializer, read FIFO and data synchronizer latency
+                                    in designs with low MIPI data rate.</div><div class="div">Default:
+                                8</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Number of Asynchronous Register Stages</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">2 – 8</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Cross clock domain control signal synchronization stage.
+                                    <div class="div">Default: 2</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">t<sub class="ph sub">INIT_NS</sub></td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Values according to MIPI D-PHY specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">PHY initialization period in ns. Value must be 400,000 or
+                                    more.<div class="div">Default: 400,000</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Pack Type 40</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enables the controller to pack RAW10, RAW20, YUV_420_10, and
+                                YUV_422_10 data type.<a class="xref" href="hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing__fn_onlyenable"><sup><sup class="ph sup">3</sup></sup></a><div class="div">Default: Enable</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Pack Type 48</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enables the controller to pack RAW6, RAW12, RAW24, RGB888, and
+                                YUV_420_8_legacy data type.<a class="xref" href="hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing__fn_onlyenable"><sup><sup class="ph sup">3</sup></sup></a><div class="div">Default: Enable</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Pack Type 56</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3"> Enables the controller to pack RAW7 RAW14, and RAW28.<a class="xref" href="hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing__fn_onlyenable"><sup><sup class="ph sup">3</sup></sup></a><div class="div">Default: Enable</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">Pack Type 64</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enables the controller to pack RAW8, RAW16, RGB444, RGB565,
+                                RGB555, YUV_422_8, YUV_420_8, generic long packet, user define
+                                8-bit, and embedded 8-bit non image packet.<a class="xref" href="hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing__fn_onlyenable"><sup><sup class="ph sup">3</sup></sup></a><div class="div">Default: Enable</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">PPI Interface Data Width</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">16</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">HS mode data width.<div class="div">Default: 16</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">MIPI_CSI2_RX_DEBUG</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enables debug ports for internal signal observation and
+                                monitoring. <div class="div">Default: Disable</div></td>
+                        </tr>
+                        
+                        <tr class="row">
+                            
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__1">MIPI_CSI2_RX_PIXEL_<div class="div">SIDEBAND</div></td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__2">Enable, Disable</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi-csi2-rx-2.5g-core-customizing__table_fyb_m53_jpb__entry__3">Enabels more sideband ports under pixel interface. Refer to
+                                portlist for more details.<div class="div">Default: Disable</div></td>
+                            
+                        </tr>
+                        
+                    </tbody></table>
+        </section>
+    </div>
+</article></article><div class="fn"><a name="fntarg_1" href="#fnsrc_1"><sup>1</sup></a>  Source: MIPI Alliance.</div><div class="fn"><a name="fntarg_2" href="#fnsrc_2"><sup>2</sup></a>  The maximum data
+                        rate of IP depends on the devices. Refer to the respective device data sheet
+                        for more accurate information.</div><div class="fn"><a id="mipi-csi2-rx-2.5g-core-customizing__fn_onlyenable"><sup>3</sup></a>  Only enable the pack
+                                    type that you are using to save logic resources.</div></article></main></div><footer role="contentinfo"><div class="footer navbar-fixed-bottom">
+    <p id="copyright">Copyright (c) 2025 | All Rights Reserved</p>
+</div></footer></body></html>

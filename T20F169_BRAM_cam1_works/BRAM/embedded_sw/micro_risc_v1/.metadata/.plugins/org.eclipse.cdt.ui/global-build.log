@@ -1,0 +1,63 @@
+18:00:45 **** Incremental Build of configuration Default for project gpioDemo ****
+make all 
+cc -DSMP -I../../../../bsp/efinix/EfxSapphireSoc/include -I../../../../bsp/efinix/EfxSapphireSoc/app -DSYSTEM_UART_A_APB=SYSTEM_UART_0_IO_APB -DSYSTEM_GPIO_A_APB=SYSTEM_GPIO_0_IO_APB -DSYSTEM_I2C_A_APB=SYSTEM_I2C_0_IO_APB -g3 -Og -march=rv32i -mabi=ilp32 -DUSE_GP  -I../../include -I../../driver  -march=rv32i -mabi=ilp32 -lc -L../../common -specs=nosys.specs -lgcc -nostartfiles -ffreestanding -Wl,-Bstatic,-T,../../../../bsp/efinix/EfxSapphireSoc/linker/default.ld,-Map,build/gpioDemo.map,--print-memory-usage -lm  src/main.c   -o src/main
+cc: error: unrecognized argument in option ‘-mabi=ilp32’
+cc: note: valid arguments to ‘-mabi=’ are: ms sysv
+cc: error: unrecognized argument in option ‘-mabi=ilp32’
+cc: note: valid arguments to ‘-mabi=’ are: ms sysv
+cc: fatal error: cannot read spec file ‘nosys.specs’: No such file or directory
+compilation terminated.
+make: *** [<builtin>: src/main] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:56:44 **** Clean-only build of configuration Default for project apb3Demo ****
+make clean 
+22:56:44 **** Clean-only build of configuration Default for project axi4Demo ****
+make clean 
+22:56:45 **** Clean-only build of configuration Default for project bootloader ****
+make clean 
+22:56:45 **** Clean-only build of configuration Default for project clintTimerInterruptDemo ****
+make clean 
+22:56:45 **** Clean-only build of configuration Default for project coremark ****
+make clean 
+22:56:46 **** Clean-only build of configuration Default for project customInstructionDemo ****
+make clean 
+22:56:46 **** Clean-only build of configuration Default for project dCacheFlushDemo ****
+make clean 
+22:56:46 **** Clean-only build of configuration Default for project dhrystone ****
+make clean 
+22:56:46 **** Clean-only build of configuration Default for project fpuDemo ****
+make clean 
+22:56:47 **** Clean-only build of configuration Default for project freertosDemo ****
+make clean 
+22:56:47 **** Clean-only build of configuration Default for project gpioDemo ****
+make clean 
+22:56:47 **** Clean-only build of configuration Default for project i2cDemo ****
+make clean 
+22:56:48 **** Clean-only build of configuration Default for project i2cEepromDemo ****
+make clean 
+22:56:48 **** Clean-only build of configuration Default for project i2cMasterDemo ****
+make clean 
+22:56:48 **** Clean-only build of configuration Default for project i2cSlaveDemo ****
+make clean 
+22:56:49 **** Clean-only build of configuration Default for project iCacheFlushDemo ****
+make clean 
+22:56:49 **** Clean-only build of configuration Default for project inlineAsmDemo ****
+make clean 
+22:56:49 **** Clean-only build of configuration Default for project memTest ****
+make clean 
+22:56:50 **** Clean-only build of configuration Default for project nestedInterruptDemo ****
+make clean 
+22:56:50 **** Clean-only build of configuration Default for project semihostingDemo ****
+make clean 
+22:56:50 **** Clean-only build of configuration Default for project smpDemo ****
+make clean 
+22:56:51 **** Clean-only build of configuration Default for project spiDemo ****
+make clean 
+22:56:51 **** Clean-only build of configuration Default for project uartEchoDemo ****
+make clean 
+22:56:51 **** Clean-only build of configuration Default for project uartInterruptDemo ****
+make clean 
+22:56:52 **** Clean-only build of configuration Default for project userTimerDemo ****
+make clean 
+22:56:52 **** Clean-only build of configuration Default for project watchdogDemo ****
+make clean 

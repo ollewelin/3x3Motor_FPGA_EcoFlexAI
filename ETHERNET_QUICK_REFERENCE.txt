@@ -1,0 +1,187 @@
+# Quick Reference - Ethernet UDP Setup
+
+## Files Changed
+1. ✅ `embedded_sw/RISC_mini/software/standalone/test_b/src/test_b.c` - Complete rewrite
+2. ✅ `top_level.sv` - DDR3 removed, Ethernet added
+3. ✅ `ip/eth_2_soc_bridge/eth_2_soc_bridge.sv` - NEW module created
+
+## What Was Removed
+- All DDR3 memory testing code
+- DDR3 AXI4 bus connections (50+ ports)
+- DDR3 configuration signals
+- DDR3-specific blink patterns
+
+## What Was Added
+- Ethernet Bridge (APB3 interface at 0x80000000)
+- MDIO Master (APB3 interface at 0x80001000)
+- RGMII data path (RX and TX individually pin-mapped)
+- PHY initialization code (1Gbps auto-negotiation)
+- UDP test framework
+
+## Pin Connections
+
+### MDIO (Management)
+```
+F2_MDC      → PHY MDIO Clock
+F2_MDIO_IN  → PHY MDIO Data Input
+F2_MDIO_OUT → PHY MDIO Data Output
+F2_MDIO_OE  → PHY MDIO Output Enable
+F2_RSTB     → PHY Reset (active low)
+```
+
+### RGMII RX (Receive from PHY)
+```
+F2_RXC      → RX Clock (125 MHz)
+F2_RXCTL    → RX Control Signal
+F2_RXD0-3   → RX Data Nibbles
+```
+
+### RGMII TX (Transmit to PHY)
+```
+F2_TXC      → TX Clock (125 MHz)
+F2_TXCTL    → TX Control Signal
+F2_TXD0-3   → TX Data Nibbles
+```
+
+### Status/Control
+```
+F2_INTB     → PHY Interrupt (not used yet)
+F2_EXT_CLK  → External Clock Input (not used)
+```
+
+## Register Access (APB3)
+
+### Ethernet Bridge - Write TX Frame
+```c
+volatile uint32_t *eth_base = (volatile uint32_t *)(0x80000000);
+eth_base[0x08/4] = frame_data;      // TX_DATA
+eth_base[0x10/4] = frame_len;       // TX_LEN
+eth_base[0x00/4] = 0x02;            // CONTROL: TX_START
+```
+
+### Ethernet Bridge - Read RX Frame
+```c
+uint32_t rx_data = eth_base[0x0C/4];   // RX_DATA
+uint32_t status = eth_base[0x04/4];    // STATUS
+```
+
+### MDIO - Read PHY Register
+```c
+volatile uint32_t *mdio_base = (volatile uint32_t *)(0x80001000);
+uint32_t ctrl = 0x02 |                 // RW_READ bit
+                (phy_addr << 5) |      // PHY address
+                (reg_addr << 10);      // Register address
+mdio_base[0x00/4] = ctrl | 0x01;       // CTRL: START
+while (mdio_base[0x04/4] & 0x01) {}    // Wait for done
+uint16_t data = (mdio_base[0x04/4] >> 16) & 0xFFFF;  // Read data
+```
+
+### MDIO - Write PHY Register
+```c
+mdio_base[0x00/4] = 0x00 |             // RW_WRITE bit = 0
+                    (phy_addr << 5) |
+                    (reg_addr << 10) |
+                    (data << 16);
+mdio_base[0x00/4] |= 0x01;             // START bit
+while (mdio_base[0x04/4] & 0x01) {}    // Wait for done
+```
+
+## LED Control
+
+```
+CAM3_SDA_OUT (LED#2) ← GPIO bit 0 from firmware
+CAM3_SCL    (LED#1) ← PHY Link Status
+```
+
+## UART Debug
+
+```
+Speed: 115200 baud
+TX: fpga_uart_tx pin
+RX: fpga_uart_rx pin
+```
+
+## Test Firmware Flow
+
+1. Initialize GPIO bit 0 as output
+2. Blink LED 10 times (sanity check)
+3. Reset PHY via MDIO
+4. Read PHY ID registers
+5. Configure 1Gbps auto-negotiation
+6. Poll for link up
+7. Initialize Ethernet bridge
+8. Send test UDP frame
+9. Poll RX FIFO for received frame
+10. Enter continuous fast blink loop
+
+## Expected Blink Pattern
+
+```
+[Power On] → 10 quick blinks (program init)
+[During Test] → Fast 100ms on/off blink
+[Link Up] → LED#1 (CAM3_SCL) lit
+```
+
+## Ethernet Statistics Register (0x04)
+
+```
+Bit 0: RX Valid
+Bit 1: TX Ready
+Bit 2: TX Done
+Bit 3: RX Error
+Bit 4: TX Error
+Bit 5: PHY Link Up
+Bit 6: PHY Speed (1=1G, 0=10/100M)
+Bits 7-31: Reserved
+```
+
+## APB3 Address Map Summary
+
+```
+0x80000000-0x80000FFF  Ethernet Bridge
+  0x00: CONTROL
+  0x04: STATUS
+  0x08: TX_DATA
+  0x0C: RX_DATA
+  0x10: TX_LEN
+  0x14: RX_LEN
+  0x18: CONFIG
+  0x1C: INTERRUPT
+
+0x80001000-0x80001FFF  MDIO Master
+  0x00: CTRL
+  0x04: STATUS
+  0x08: CONFIG
+  0x0C: VERSION
+```
+
+## Next Build Steps
+
+```bash
+# 1. Verify all files are in place
+ls -la top_level.sv
+ls -la ip/eth_2_soc_bridge/eth_2_soc_bridge.sv
+ls -la embedded_sw/RISC_mini/software/standalone/test_b/src/test_b.c
+
+# 2. Synthesis (your build tool here)
+# Include eth_2_soc_bridge.sv in compilation
+
+# 3. Program FPGA
+# Use your standard programming procedure
+
+# 4. Monitor UART at 115200 baud
+picocom -b 115200 /dev/ttyUSB0
+
+# 5. Expected console output:
+# [BLINK] Initial LED test (10 blinks)...
+# [PHY] PHY ID: 0x001C-0xC816
+# [PHY] Link established!
+# [ETH] Bridge status: 0x00000001
+# [UDP] Testing Ethernet TX...
+# [MAIN] Entering LED blink loop...
+```
+
+---
+
+**Status:** Ready for synthesis and hardware testing!
+

@@ -1,0 +1,10 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Sep 07, 2025 19:05:08
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+top_level:top_level                          	    115(32)	     38(30)	     316(1)	     0(0)	     0(0)	
+ +control_camera_i2c_inst:control_camera_i2c 	     41(41)	       0(0)	   180(180)	     0(0)	     0(0)	
+ +i2c_reg16_master_inst:i2c_reg16_master     	     42(42)	       8(8)	   135(135)	     0(0)	     0(0)	

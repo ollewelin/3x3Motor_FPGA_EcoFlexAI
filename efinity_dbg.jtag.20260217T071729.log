@@ -1,0 +1,993 @@
+2026-02-17 07:17:29,905 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:17:33,965 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:17:34,075 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0011
+2026-02-17 07:17:34,090 DEBUG: efx_dbg.jtag.jcf (67): log(): read_dr(32): 32: 00000000 00100010 00001010 01111001
+2026-02-17 07:17:34,354 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0100
+2026-02-17 07:17:45,768 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0111
+2026-02-17 07:17:45,770 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr: 100: 0000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:17:45,771 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0011
+2026-02-17 07:17:46,071 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:17:49,404 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0010
+2026-02-17 07:17:49,438 DEBUG: efx_dbg.jtag.jcf (67): log(): read_dr_with_ir(1471): ir=4: 0010 data=1471: 0100100 10010010 01001001 10110110 11011011 01101101 10110110 11011011 01101101 00110100 10011011 01100001 00110100 11010011 01001101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11010000 01101101 10110110 11011011 01001101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110100 10011011 01101101 10110110 11000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000100 10010010 01001001 00100100 10010000 01001001 00100100 10000000 01001001 00100000 00000000 01001000 00100100 10000000 00000000 10010010 01001001 00100100 10010000 00000000 00100101 00100100 10010010 01101001 10110110 11011011 01101101 10110110 11011011 01101100 00000000 00110000 00000000 00000000 10000000 00101111 11101010 10111110 11101010 10101010 11111110 10101010 00000000 10000000 00000000 00000010 00000000 00000100 10011011 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000100 00000000 00000000 00000000 11100100 10010010 01001001 00100010 10000000 11000000 00000100 01010010 01001000 00100000 10110010
+2026-02-17 07:17:55,665 INFO: efx_dbg.jtag (2164): on_configure(): IN
+2026-02-17 07:17:55,665 DEBUG: efx_dbg.jtag (2178): on_configure(): IN, all_sessions = {}
+2026-02-17 07:17:55,665 DEBUG: efx_dbg.jtag (2179): on_configure(): IN, all_engins = []
+2026-02-17 07:17:55,666 INFO: efx_dbg.jtag (2188): on_configure(): Creaing new engine: url = ftdi://0x0403:0x6010/2, tap = efx
+2026-02-17 07:17:55,700 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,701 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,702 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:17:55,703 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:17:55,704 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:17:55,705 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:17:55,706 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:17:55,707 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:17:55,708 DEBUG: efx_dbg.jtag (2240): on_configure(): OUT, all_sessions = {'b91c16ed1ec549c08905a5ec1f26a022': <efx_dbg.jtag.JtagSession object at 0x7fe5de5bded0>}
+2026-02-17 07:17:55,708 DEBUG: efx_dbg.jtag (2241): on_configure(): OUT, all_engins = [<efx_dbg.engine.SharedJtagEngine object at 0x7fe5de4a73d0>]
+2026-02-17 07:17:55,708 INFO: efx_dbg.jtag (2242): on_configure(): OUT, session_id = b91c16ed1ec549c08905a5ec1f26a022
+2026-02-17 07:17:55,709 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,711 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1000 data=6: 100001
+2026-02-17 07:17:55,711 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,712 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1000 data=6: 100000
+2026-02-17 07:17:55,712 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,714 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,715 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1000 data=6: 100010
+2026-02-17 07:17:55,715 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,717 DEBUG: efx_dbg.jtag (1333): on_configure(): IN
+2026-02-17 07:17:55,717 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1000 data=19: 010 01000000 00001001
+2026-02-17 07:17:55,718 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,719 DEBUG: efx_dbg.jtag (1340): on_configure(): OUT
+2026-02-17 07:17:55,720 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,721 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001000
+2026-02-17 07:17:55,721 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,723 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:17:55,724 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001001
+2026-02-17 07:17:55,724 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,731 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:17:55,732 INFO: efx_dbg.jtag (1517): on_configure(): LA Core: la0, UUID = 00000000000000000000000000000000, Generated UUID = 30401acf9cf0475384a05a1d8880e5d5
+2026-02-17 07:17:55,732 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,732 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001000
+2026-02-17 07:17:55,733 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,747 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:17:55,747 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001001
+2026-02-17 07:17:55,747 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:17:55,763 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:18:00,193 INFO: efx_dbg.jtag (2164): on_configure(): IN
+2026-02-17 07:18:00,194 DEBUG: efx_dbg.jtag (2178): on_configure(): IN, all_sessions = {}
+2026-02-17 07:18:00,194 DEBUG: efx_dbg.jtag (2179): on_configure(): IN, all_engins = []
+2026-02-17 07:18:00,195 INFO: efx_dbg.jtag (2188): on_configure(): Creaing new engine: url = ftdi://0x0403:0x6010/2, tap = efx
+2026-02-17 07:18:00,229 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:18:00,230 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:18:00,231 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,232 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,233 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:18:00,234 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:18:00,235 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:18:00,236 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:18:00,237 DEBUG: efx_dbg.jtag (2240): on_configure(): OUT, all_sessions = {'29a0085543ac464b815e68f583b4430b': <efx_dbg.jtag.JtagSession object at 0x7fe5de726ad0>}
+2026-02-17 07:18:00,237 DEBUG: efx_dbg.jtag (2241): on_configure(): OUT, all_engins = [<efx_dbg.engine.SharedJtagEngine object at 0x7fe5e11bbed0>]
+2026-02-17 07:18:00,237 INFO: efx_dbg.jtag (2242): on_configure(): OUT, session_id = 29a0085543ac464b815e68f583b4430b
+2026-02-17 07:18:00,239 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,240 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100001
+2026-02-17 07:18:00,240 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,242 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100000
+2026-02-17 07:18:00,242 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,243 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,244 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100010
+2026-02-17 07:18:00,245 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,246 DEBUG: efx_dbg.jtag (1333): on_configure(): IN
+2026-02-17 07:18:00,246 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=19: 010 01000000 00001001
+2026-02-17 07:18:00,246 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,246 DEBUG: efx_dbg.jtag (1340): on_configure(): OUT
+2026-02-17 07:18:00,247 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,247 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001000
+2026-02-17 07:18:00,247 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,248 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 10000100 10100000 01011010 00011101 10001000 10000000 11100101 11010101
+2026-02-17 07:18:00,248 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001001
+2026-02-17 07:18:00,248 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:18:00,261 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00110000 01000000 00011010 11001111 10011100 11110000 01000111 01010011
+2026-02-17 07:18:00,261 INFO: efx_dbg.jtag (1517): on_configure(): LA Core: la0, UUID = 30401acf9cf0475384a05a1d8880e5d5, Generated UUID = 30401acf9cf0475384a05a1d8880e5d5
+2026-02-17 07:18:00,282 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,283 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:00,284 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,293 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:00,293 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:00,294 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7520>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7520>>)]
+2026-02-17 07:18:00,496 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,497 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:00,498 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,513 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:00,513 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:00,715 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,716 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:00,716 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,731 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:00,731 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:00,933 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,934 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:00,934 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:00,950 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:00,950 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:01,152 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,153 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:01,153 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,169 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:01,169 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:01,371 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,372 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:01,372 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,388 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:01,388 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:01,590 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,591 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:01,591 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,601 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:01,601 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:01,803 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,804 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:01,804 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:01,818 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:01,818 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:02,020 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,021 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:02,021 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,036 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:02,036 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:02,238 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,239 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:02,239 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,255 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:02,255 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:02,457 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,458 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:02,458 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,474 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:02,474 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:02,675 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,676 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:02,676 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,692 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:02,692 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:02,894 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,895 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:02,895 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:02,913 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:02,913 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:03,115 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,116 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:03,116 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,132 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:03,132 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:03,334 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,335 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:03,335 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,351 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:03,351 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:03,553 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,554 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:03,554 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,570 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:03,570 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:03,772 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,773 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:03,773 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,788 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:03,788 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:03,989 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:03,990 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:03,991 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,006 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:04,006 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:04,207 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,208 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:04,209 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,224 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:04,224 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:04,425 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,426 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:04,426 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,441 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:04,441 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:04,642 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,643 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:04,644 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,659 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:04,659 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:04,860 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,861 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:04,862 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:04,877 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:04,877 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:05,078 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,080 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:05,080 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,095 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:05,095 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:05,297 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,298 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:05,298 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,313 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:05,313 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:05,515 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,516 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:05,516 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,529 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:05,529 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:05,730 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,731 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:05,732 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,741 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:05,741 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:05,942 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,943 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:05,944 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:05,962 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:05,962 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:06,163 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,164 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:06,165 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,180 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:06,180 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:06,381 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,382 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:06,383 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,398 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:06,398 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:06,599 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,600 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:06,601 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,616 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:06,616 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:06,817 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,818 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:06,819 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:06,834 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:06,834 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:07,036 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,037 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:07,037 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,053 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:07,053 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:07,255 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,256 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:07,256 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,260 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:07,261 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:07,462 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,463 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:07,464 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,479 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:07,479 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:07,680 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,681 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:07,682 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,697 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:07,697 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:07,898 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,899 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:07,900 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:07,905 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:07,905 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:08,107 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,108 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:08,108 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,124 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:08,124 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:08,326 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,327 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:08,327 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,343 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:08,343 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:08,544 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,545 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:08,546 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,561 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:08,561 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:08,762 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,763 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:08,764 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,779 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:08,779 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:08,981 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,981 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:08,982 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:08,998 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:08,998 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:09,199 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,200 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:09,201 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,216 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:09,216 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:09,417 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,418 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:09,419 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,434 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:09,434 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:09,635 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,636 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:09,637 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,652 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:09,653 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:09,854 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,855 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:09,855 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:09,858 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:09,858 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:10,059 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,060 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:10,060 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,074 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:10,074 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:10,275 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,276 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:10,277 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,291 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:10,292 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:10,493 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,494 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:10,494 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,509 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:10,510 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:10,711 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,712 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:10,712 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,727 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:10,728 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:10,929 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,930 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:10,931 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:10,946 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:10,947 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:11,148 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,149 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:11,150 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,164 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:11,165 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:11,366 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,367 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:11,368 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,382 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:11,383 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:11,584 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,585 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:11,586 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,601 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:11,602 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:11,803 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,804 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:11,805 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:11,816 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:11,817 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:12,018 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,019 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:12,020 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,034 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:12,035 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:12,236 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,237 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:12,238 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,252 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:12,253 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:12,454 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,455 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:12,455 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,470 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:12,471 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:12,672 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,673 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:12,674 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,688 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:18:12,689 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:18:12,781 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,782 DEBUG: efx_dbg.jtag (1136): set_probe_regs(): probe_id = 4, regid = 640, pattr = {'trig_pttrn': 1, 'trig_cmpr': 0, 'trig_mask': 255}
+
+2026-02-17 07:18:12,783 INFO: efx_dbg.jtag (1139): set_probe_regs(): write_dr(offset=0): 82: 01 00100010 10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:18:12,783 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100010 10000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:18:12,783 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,785 INFO: efx_dbg.jtag (1127): _write_pyint_reg(): write_dr(offset=1): 82: 01 00100010 10000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:18:12,785 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100010 10000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:18:12,785 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,787 INFO: efx_dbg.jtag (1127): _write_pyint_reg(): write_dr(offset=2): 82: 01 00100010 10000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111
+2026-02-17 07:18:12,787 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100010 10000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 11111111
+2026-02-17 07:18:12,787 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,789 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,790 INFO: efx_dbg.jtag (1158): select_probes(): write_dr: 82: 01 00100000 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00010000
+2026-02-17 07:18:12,790 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00010000
+2026-02-17 07:18:12,791 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,792 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,793 DEBUG: efx_dbg.jtag (1176): enable_capture_condition_probes(): IN, probes_en = [False, False, False, False, False, False, False, False, False]
+
+2026-02-17 07:18:12,793 DEBUG: efx_dbg.jtag (982): _get_ctnl_reg_addr(): IN, field_type = LogicNControlField.PROBES_CAPTURE_CONDITION_ENABLE
+
+2026-02-17 07:18:12,794 DEBUG: efx_dbg.jtag (1006): _get_ctnl_reg_addr(): OUT, addr = 2
+
+2026-02-17 07:18:12,794 INFO: efx_dbg.jtag (1187): enable_capture_condition_probes(): write_dr: 82: 01 00100000 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:18:12,794 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:18:12,795 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,796 DEBUG: efx_dbg.jtag (1189): enable_capture_condition_probes(): OUT
+
+2026-02-17 07:18:12,797 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,797 INFO: efx_dbg.jtag (1167): set_trigger_skip_count(): write_dr: 82: 01 00100000 00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:18:12,798 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:18:12,798 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,799 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,800 DEBUG: efx_dbg.jtag (1193): set_window_regs(): IN, window_depth = 12, num_window = 1
+
+2026-02-17 07:18:12,800 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=40: 01001000 00000000 11011000 00000000 00000001
+2026-02-17 07:18:12,801 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,802 DEBUG: efx_dbg.jtag (1205): set_window_regs(): OUT
+
+2026-02-17 07:18:12,802 INFO: efx_dbg.jtag (1255): run_trig(): imdt = False, argv = {'trig_pos': 2048, 'tu_pttrn': 'AND', 'cu_pttrn': 'AND', 'num_window': 1, 'window_depth': 4096, 'skip_count': 1}
+
+2026-02-17 07:18:12,802 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,803 INFO: efx_dbg.jtag (1239): _set_cntrl_reg(): IN, run_trig = True, run_trig_imdt = False, stop_trig = False,
+                        trig_pos = 2048, tu_pttrn = AND, cu_pttrn = AND
+
+2026-02-17 07:18:12,803 INFO: efx_dbg.jtag (1251): _set_cntrl_reg(): write_dr: 42: 01 00100000 00000000 00000000 01000000 00000001
+2026-02-17 07:18:12,804 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=42: 01 00100000 00000000 00000000 01000000 00000001
+2026-02-17 07:18:12,804 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,890 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,891 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:18:12,891 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:18:12,908 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 10110001 10000001
+2026-02-17 07:18:12,908 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'PRE_TRIG', 'sample_cnt': 5680}
+2026-02-17 07:18:12,909 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7520>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7520>>)]
+2026-02-17 07:18:13,216 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:18:42,517 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:18:48,831 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:18:48,933 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0011
+2026-02-17 07:18:48,949 DEBUG: efx_dbg.jtag.jcf (67): log(): read_dr(32): 32: 00000000 00100010 00001010 01111001
+2026-02-17 07:18:49,213 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0100
+2026-02-17 07:19:00,452 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0111
+2026-02-17 07:19:00,454 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr: 100: 0000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:19:00,455 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0011
+2026-02-17 07:19:00,756 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111
+2026-02-17 07:19:04,094 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 0010
+2026-02-17 07:19:04,127 DEBUG: efx_dbg.jtag.jcf (67): log(): read_dr_with_ir(1471): ir=4: 0010 data=1471: 0100100 10010010 01001001 10110110 11011011 01101101 10110110 11011011 01101101 00110100 10011011 01100001 00110100 11010011 01001101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11010000 01101101 10110110 11011011 01001101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110110 11011011 01101101 10110100 10011011 01101101 10110110 11000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000100 10010010 01001001 00100100 10010000 01001001 00100100 10000000 01001001 00100000 00000000 01001000 00100100 10000000 00000000 10010010 01001001 00100100 10010000 00000000 00100101 00100100 10010010 01101001 10110110 11011011 01101101 10110110 11011011 01101100 00000000 00110000 00000000 00000000 10000000 00101111 11101010 10111110 11101010 10101010 11111110 10101010 00000000 10000000 00000000 00000010 00000000 00000100 10011011 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000100 00000000 00000000 00000000 11100100 10010010 01001001 00100010 10000000 11000000 00000100 01010010 01001000 00100000 10110010
+2026-02-17 07:19:19,453 INFO: efx_dbg.jtag (2164): on_configure(): IN
+2026-02-17 07:19:19,453 DEBUG: efx_dbg.jtag (2178): on_configure(): IN, all_sessions = {}
+2026-02-17 07:19:19,453 DEBUG: efx_dbg.jtag (2179): on_configure(): IN, all_engins = []
+2026-02-17 07:19:19,453 INFO: efx_dbg.jtag (2188): on_configure(): Creaing new engine: url = ftdi://0x0403:0x6010/2, tap = efx
+2026-02-17 07:19:19,479 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:19:19,480 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1000
+2026-02-17 07:19:19,481 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,482 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,483 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:19:19,485 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1010
+2026-02-17 07:19:19,486 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:19:19,487 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1011
+2026-02-17 07:19:19,488 DEBUG: efx_dbg.jtag (2240): on_configure(): OUT, all_sessions = {'18a853c8f08d4dce937b21a564b4245a': <efx_dbg.jtag.JtagSession object at 0x7fe5de45fe10>}
+2026-02-17 07:19:19,488 DEBUG: efx_dbg.jtag (2241): on_configure(): OUT, all_engins = [<efx_dbg.engine.SharedJtagEngine object at 0x7fe5de512790>]
+2026-02-17 07:19:19,488 INFO: efx_dbg.jtag (2242): on_configure(): OUT, session_id = 18a853c8f08d4dce937b21a564b4245a
+2026-02-17 07:19:19,489 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,490 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100001
+2026-02-17 07:19:19,490 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,492 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100000
+2026-02-17 07:19:19,492 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,494 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,495 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=6: 100010
+2026-02-17 07:19:19,495 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,496 DEBUG: efx_dbg.jtag (1333): on_configure(): IN
+2026-02-17 07:19:19,496 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_dr_with_ir: ir=4: 1001 data=19: 010 01000000 00001001
+2026-02-17 07:19:19,497 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,498 DEBUG: efx_dbg.jtag (1340): on_configure(): OUT
+2026-02-17 07:19:19,498 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,499 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001000
+2026-02-17 07:19:19,499 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,502 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 10000100 10100000 01011010 00011101 10001000 10000000 11100101 11010101
+2026-02-17 07:19:19,502 INFO: efx_dbg.jtag (1415): on_configure(): write_dr: 18: 01 10100000 00001001
+2026-02-17 07:19:19,502 DEBUG: efx_dbg.jtag.jcf (67): on_configure(): write_ir: 4: 1001
+2026-02-17 07:19:19,511 INFO: efx_dbg.jtag (1418): on_configure(): read_dr(64): 64: 00110000 01000000 00011010 11001111 10011100 11110000 01000111 01010011
+2026-02-17 07:19:19,511 INFO: efx_dbg.jtag (1517): on_configure(): LA Core: la0, UUID = 30401acf9cf0475384a05a1d8880e5d5, Generated UUID = 30401acf9cf0475384a05a1d8880e5d5
+2026-02-17 07:19:19,518 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,519 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:19,519 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,544 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:19,545 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:19,545 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>)]
+2026-02-17 07:19:19,747 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,748 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:19,748 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,764 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:19,764 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:19,966 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,966 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:19,966 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:19,982 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:19,982 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:20,183 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,184 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:20,184 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,200 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:20,200 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:20,402 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,403 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:20,403 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,419 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:20,419 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:20,620 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,621 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:20,621 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,637 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:20,637 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:20,838 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,838 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:20,839 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:20,854 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:20,854 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:21,055 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,056 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:21,057 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,072 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:21,072 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:21,273 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,274 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:21,275 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,290 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:21,290 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:21,491 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,492 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:21,493 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,500 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:21,501 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:21,702 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,703 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:21,703 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,706 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:21,706 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:21,907 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,908 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:21,909 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:21,924 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:21,924 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:22,125 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,126 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:22,127 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,142 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:22,142 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:22,343 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,344 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:22,345 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,360 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:22,360 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:22,562 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,563 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:22,563 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,579 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:22,579 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:22,781 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,782 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:22,782 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:22,797 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:22,798 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:22,999 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,000 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:23,001 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,016 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:23,016 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:23,217 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,218 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:23,219 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,234 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:23,234 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:23,436 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,437 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:23,437 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,452 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:23,452 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:23,653 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,654 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:23,654 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,666 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:23,666 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:23,867 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,868 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:23,868 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:23,883 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:23,883 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:24,084 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,085 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:24,085 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,100 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:24,101 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:24,302 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,303 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:24,304 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,313 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:24,313 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:24,514 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,515 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:24,515 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,530 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:24,531 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:24,732 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,733 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:24,733 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,748 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:24,748 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:24,950 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,950 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:24,951 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:24,965 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:24,965 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:25,166 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,167 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:25,168 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,182 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:25,183 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:25,384 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,385 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:25,385 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,401 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:25,401 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:25,602 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,603 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:25,604 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,613 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:25,613 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:25,815 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,816 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:25,816 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:25,818 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:25,819 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:26,020 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,021 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:26,021 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,036 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:26,037 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:26,238 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,239 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:26,239 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,254 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:26,255 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:26,456 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,457 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:26,457 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,472 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:26,473 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:26,674 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,675 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:26,676 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,691 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:26,692 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:26,893 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,894 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:26,894 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:26,909 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:26,910 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:27,111 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,112 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:27,112 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,127 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:27,128 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:27,329 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,330 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:27,330 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,345 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:27,346 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:27,547 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,548 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:27,548 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,563 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:27,564 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:27,765 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,766 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:27,766 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,777 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:27,777 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:27,978 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,979 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:27,979 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:27,994 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:27,995 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:28,196 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,197 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:28,197 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,212 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:28,212 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:28,413 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,414 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:28,415 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,430 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:28,431 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:28,632 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,633 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:28,633 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,648 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:28,649 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:28,850 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,851 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:28,851 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:28,867 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:28,868 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:29,069 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,070 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:29,071 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,085 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:29,086 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:29,287 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,288 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:29,289 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,304 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:29,305 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:29,506 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,506 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:29,506 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,522 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:29,522 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:29,724 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,724 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:29,724 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,730 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:29,730 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:29,932 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,932 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:29,932 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:29,947 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:29,947 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:30,149 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,150 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:30,150 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,165 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:30,166 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:30,367 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,368 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:30,368 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,384 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:30,384 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:30,586 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,586 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:30,586 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,602 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:30,602 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:30,804 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,805 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:30,805 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:30,820 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:30,821 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:31,022 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,023 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:31,023 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,038 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:31,038 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:31,240 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,241 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:31,241 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,257 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:31,257 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:31,458 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,459 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:31,460 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,475 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:31,476 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:31,677 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,678 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:31,678 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,689 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:31,689 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:31,891 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,892 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:31,892 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:31,907 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:31,908 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:32,109 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,110 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:32,111 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,126 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:32,126 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:32,327 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,328 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:32,328 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,343 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:32,344 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:32,545 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,546 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:32,546 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,561 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:32,561 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:32,762 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,763 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:32,764 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,781 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:32,782 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:32,983 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:32,984 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:32,985 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,000 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:33,000 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:33,202 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,203 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:33,203 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,218 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:33,218 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:33,420 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,420 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:33,420 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,436 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:33,437 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:33,638 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,639 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:33,640 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,643 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:33,643 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:33,845 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,846 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:33,847 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:33,862 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:33,862 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:34,064 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,065 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:34,065 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,080 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:34,080 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:34,282 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,283 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:34,283 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,298 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:34,298 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:34,500 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,501 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:34,501 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,516 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:34,516 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:34,718 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,719 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:34,719 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,734 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:34,734 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:34,935 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,937 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:34,937 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:34,952 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:34,952 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:35,153 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,154 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:35,154 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,170 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:35,170 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:35,371 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,372 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:35,372 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,388 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:35,388 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:35,590 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,591 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:35,591 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,602 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:35,602 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:35,804 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,805 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:35,805 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:35,810 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:35,810 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:36,012 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,013 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:36,013 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,026 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:36,026 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:36,228 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,229 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:36,229 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,245 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:36,245 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:36,446 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,447 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:36,448 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,463 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:36,463 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:36,665 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,666 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:36,666 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,681 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:36,681 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:36,882 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,883 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:36,884 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:36,899 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:36,899 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:37,101 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,102 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:37,102 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,105 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:37,105 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:37,306 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,307 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:37,308 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,323 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:37,323 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:37,525 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,526 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:37,526 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,541 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:37,541 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:37,742 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,743 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:37,743 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,759 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:37,759 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:37,961 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,962 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:37,962 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:37,978 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:37,978 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:38,180 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,181 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:38,181 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,196 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:38,196 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:38,397 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,399 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:38,399 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,414 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:38,414 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:38,616 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,617 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:38,617 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,633 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00000000 00000000
+2026-02-17 07:19:38,633 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'IDLE', 'sample_cnt': 0}
+2026-02-17 07:19:38,790 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,791 DEBUG: efx_dbg.jtag (1136): set_probe_regs(): probe_id = 7, regid = 1024, pattr = {'trig_pttrn': 1, 'trig_cmpr': 0, 'trig_mask': 15}
+
+2026-02-17 07:19:38,791 INFO: efx_dbg.jtag (1139): set_probe_regs(): write_dr(offset=0): 82: 01 00100100 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:19:38,792 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100100 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:19:38,792 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,794 INFO: efx_dbg.jtag (1127): _write_pyint_reg(): write_dr(offset=1): 82: 01 00100100 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:19:38,794 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100100 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:19:38,794 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,796 INFO: efx_dbg.jtag (1127): _write_pyint_reg(): write_dr(offset=2): 82: 01 00100100 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001111
+2026-02-17 07:19:38,796 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100100 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00001111
+2026-02-17 07:19:38,796 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,798 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,799 INFO: efx_dbg.jtag (1158): select_probes(): write_dr: 82: 01 00100000 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 10000000
+2026-02-17 07:19:38,799 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 10000000
+2026-02-17 07:19:38,800 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,801 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,802 DEBUG: efx_dbg.jtag (1176): enable_capture_condition_probes(): IN, probes_en = [False, False, False, False, False, False, False, False, False]
+
+2026-02-17 07:19:38,802 DEBUG: efx_dbg.jtag (982): _get_ctnl_reg_addr(): IN, field_type = LogicNControlField.PROBES_CAPTURE_CONDITION_ENABLE
+
+2026-02-17 07:19:38,803 DEBUG: efx_dbg.jtag (1006): _get_ctnl_reg_addr(): OUT, addr = 2
+
+2026-02-17 07:19:38,803 INFO: efx_dbg.jtag (1187): enable_capture_condition_probes(): write_dr: 82: 01 00100000 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:19:38,803 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00000010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+2026-02-17 07:19:38,803 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,805 DEBUG: efx_dbg.jtag (1189): enable_capture_condition_probes(): OUT
+
+2026-02-17 07:19:38,805 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,806 INFO: efx_dbg.jtag (1167): set_trigger_skip_count(): write_dr: 82: 01 00100000 00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:19:38,806 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=82: 01 00100000 00001010 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000001
+2026-02-17 07:19:38,807 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,808 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,809 DEBUG: efx_dbg.jtag (1193): set_window_regs(): IN, window_depth = 12, num_window = 1
+
+2026-02-17 07:19:38,809 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=40: 01001000 00000000 11011000 00000000 00000001
+2026-02-17 07:19:38,810 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,811 DEBUG: efx_dbg.jtag (1205): set_window_regs(): OUT
+
+2026-02-17 07:19:38,811 INFO: efx_dbg.jtag (1255): run_trig(): imdt = False, argv = {'trig_pos': 2048, 'tu_pttrn': 'AND', 'cu_pttrn': 'AND', 'num_window': 1, 'window_depth': 4096, 'skip_count': 1}
+
+2026-02-17 07:19:38,812 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,812 INFO: efx_dbg.jtag (1239): _set_cntrl_reg(): IN, run_trig = True, run_trig_imdt = False, stop_trig = False,
+                        trig_pos = 2048, tu_pttrn = AND, cu_pttrn = AND
+
+2026-02-17 07:19:38,813 INFO: efx_dbg.jtag (1251): _set_cntrl_reg(): write_dr: 42: 01 00100000 00000000 00000000 01000000 00000001
+2026-02-17 07:19:38,813 DEBUG: efx_dbg.jtag.jcf (67): log(): write_dr_with_ir: ir=4: 1001 data=42: 01 00100000 00000000 00000000 01000000 00000001
+2026-02-17 07:19:38,813 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,835 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,836 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:38,836 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:38,851 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 00011000 00101001
+2026-02-17 07:19:38,851 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'PRE_TRIG', 'sample_cnt': 773}
+2026-02-17 07:19:38,851 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>)]
+2026-02-17 07:19:39,062 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:39,063 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:39,063 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:39,079 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 01110100 11101011
+2026-02-17 07:19:39,079 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'POST_TRIG', 'sample_cnt': 3741}
+2026-02-17 07:19:39,079 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>)]
+2026-02-17 07:19:39,282 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:39,283 INFO: efx_dbg.jtag (1312): get_la_status(): write_dr: 18: 01 10100000 00000000
+2026-02-17 07:19:39,283 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1001
+2026-02-17 07:19:39,299 INFO: efx_dbg.jtag (1315): get_la_status(): read_dr(20): 20: 0000 10000100 00100011
+2026-02-17 07:19:39,299 DEBUG: efx_dbg.jtag (1326): get_la_status(): new status = {'state': 'POST_TRIG', 'sample_cnt': 4228}
+2026-02-17 07:19:39,299 DEBUG: efx_dbg.jtag (1530): on_update_wrapper(): on_update_wrapper, observers = [(<bound method QLogicNController.on_status_update of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>, <bound method QLogicNController.on_error of <efx_dbg.adapter.QLogicNController object at 0x7fe5de4f7880>>)]
+2026-02-17 07:19:39,597 DEBUG: efx_dbg.jtag.jcf (67): log(): write_ir: 4: 1111

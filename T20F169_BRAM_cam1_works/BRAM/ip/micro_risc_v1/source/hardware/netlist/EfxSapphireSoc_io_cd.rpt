@@ -1,0 +1,20 @@
+io_systemClk sampled by 
+io_asyncReset sampled by 
+jtagCtrl_tck sampled by 
+io_systemReset clocked by io_systemClk
+system_uart_0_io_txd clocked by io_systemClk
+system_uart_0_io_rxd sampled by 
+system_i2c_0_io_sda_write clocked by io_systemClk
+system_i2c_0_io_sda_read sampled by 
+system_i2c_0_io_scl_write clocked by io_systemClk
+system_i2c_0_io_scl_read sampled by 
+system_gpio_0_io_read sampled by io_systemClk
+system_gpio_0_io_write clocked by io_systemClk
+system_gpio_0_io_writeEnable clocked by io_systemClk
+jtagCtrl_tdi sampled by jtagCtrl_tck
+jtagCtrl_enable sampled by jtagCtrl_tck
+jtagCtrl_capture sampled by jtagCtrl_tck
+jtagCtrl_shift sampled by jtagCtrl_tck
+jtagCtrl_update sampled by jtagCtrl_tck
+jtagCtrl_reset sampled by jtagCtrl_tck
+jtagCtrl_tdo clocked by jtagCtrl_tck

@@ -1,0 +1,46 @@
+05:56:09 **** Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+CC ../common/start.S
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:       93232 B       124 KB     73.42%
+19:37:43 **** Incremental Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:        4432 B       124 KB      3.49%
+19:38:01 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:38:17 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:38:48 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:39:37 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:40:03 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:40:51 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+19:41:32 **** Incremental Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:        4432 B       124 KB      3.49%
+19:44:23 **** Clean-only build of configuration Default for project test_a ****
+make clean 
+19:44:40 **** Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+CC ../common/start.S
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:        4432 B       124 KB      3.49%

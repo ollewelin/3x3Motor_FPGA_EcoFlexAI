@@ -1,0 +1,516 @@
+Archive member included to satisfy reference by file (symbol)
+
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)
+                              build/obj_files/start.o (__libc_init_array)
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                              build/obj_files/common.o (__mulsi3)
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(div.o)
+                              build/obj_files/common.o (__udivsi3)
+
+Discarded input sections
+
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/common.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x74e build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x154 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x22 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x8e build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x51 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x103 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x6a build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x1df build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0xc4 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x1c build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x1d7 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x1c build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x70 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x58 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x19 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x52 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x10e build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x8d build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x43 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x52 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x182 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x339 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x29 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x1a9 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x35 build/obj_files/main.o
+ .debug_macro   0x0000000000000000      0x15a build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x22 build/obj_files/main.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/main.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .group         0x0000000000000000        0xc build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x74e build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x154 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x22 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x8e build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x51 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x103 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x6a build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x1df build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0xc4 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x1c build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x1d7 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x1c build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x70 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x58 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x19 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x52 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x10e build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x8d build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x43 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x34 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x52 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x182 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x339 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x29 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x1a9 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x16 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x35 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x15a build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000      0x89e build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x22 build/obj_files/PiCamDriver.o
+ .debug_macro   0x0000000000000000       0x10 build/obj_files/PiCamDriver.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x00000000f9000000 0x0000000000004000 axwl !r
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD build/obj_files/common.o
+LOAD build/obj_files/main.o
+LOAD build/obj_files/PiCamDriver.o
+LOAD build/obj_files/start.o
+LOAD build/obj_files/trap.o
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a
+                0x0000000000000800                __stack_size = DEFINED (__stack_size)?__stack_size:0x800
+
+.init           0x00000000f9000000       0x58
+ *(SORT_NONE(.init))
+ .init          0x00000000f9000000       0x58 build/obj_files/start.o
+                0x00000000f9000000                _start
+                0x00000000f9000054                _init
+
+.text           0x00000000f9000058     0x1134
+ *(.text.Proc_1)
+ *(.text.Proc_2)
+ *(.text.Proc_3)
+ *(.text.Proc_4)
+ *(.text.Proc_5)
+ *(.text.Proc_6)
+ *(.text.Proc_7)
+ *(.text.Proc_8)
+ *(.text.Func_1)
+ *(.text.Func_2)
+ *(.text.Func_3)
+ *(.text.strcpy)
+ *libc.a:*(.text .text.*)
+ .text          0x00000000f9000058        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)
+ .text.__libc_init_array
+                0x00000000f9000058       0x84 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)
+                0x00000000f9000058                __libc_init_array
+ *(.text.main)
+ *(.text.unlikely .text.unlikely.*)
+ *(.text.startup .text.startup.*)
+ *(.text .text.*)
+ .text          0x00000000f90000dc      0x194 build/obj_files/common.o
+                0x00000000f900017c                axi_slave_read32
+                0x00000000f9000184                number_pow
+                0x00000000f90001ec                msDelay
+                0x00000000f9000220                mipi_i2c_init
+ .text          0x00000000f9000270      0x61c build/obj_files/main.o
+                0x00000000f9000840                main
+                0x00000000f9000888                trap
+ .text          0x00000000f900088c      0x798 build/obj_files/PiCamDriver.o
+                0x00000000f900093c                PiCam_WriteRegData
+                0x00000000f90009dc                PiCam_ReadRegData
+                0x00000000f9000aa8                AccessCommSeq
+                0x00000000f9000b10                PiCam_Output_Size
+                0x00000000f9000b6c                PiCam_Output_activePixel
+                0x00000000f9000c10                PiCam_Output_activePixelX
+                0x00000000f9000c6c                PiCam_Output_activePixelY
+                0x00000000f9000cc8                PiCam_SetBinningMode
+                0x00000000f9000d18                PiCam_Output_ColorBarSize
+                0x00000000f9000d74                PiCam_TestPattern
+                0x00000000f9000de4                PiCam_Gainfilter
+                0x00000000f9000e2c                PiCam_init
+ .text          0x00000000f9001024        0x0 build/obj_files/start.o
+ .text          0x00000000f9001024       0x90 build/obj_files/trap.o
+                0x00000000f9001024                trap_entry
+ .text          0x00000000f90010b4       0x24 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(muldi3.o)
+                0x00000000f90010b4                __mulsi3
+ .text          0x00000000f90010d8       0xb4 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(div.o)
+                0x00000000f90010d8                __divsi3
+                0x00000000f90010e0                __udivsi3
+                0x00000000f9001128                __umodsi3
+                0x00000000f900115c                __modsi3
+ *(.gnu.linkonce.t.*)
+ *(.note.gnu.build-id)
+
+.rela.dyn       0x00000000f900118c        0x0
+ .rela.init     0x00000000f900118c        0x0 build/obj_files/common.o
+ .rela.text.__libc_init_array
+                0x00000000f900118c        0x0 build/obj_files/common.o
+
+.fini
+ *(SORT_NONE(.fini))
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x00000000f900118c                . = ALIGN (0x4)
+
+.preinit_array  0x00000000f900118c        0x0
+                0x00000000f900118c                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                0x00000000f900118c                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x00000000f900118c        0x0
+                0x00000000f900118c                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x00000000f900118c                PROVIDE (__init_array_end = .)
+
+.fini_array     0x00000000f900118c        0x0
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.lalign         0x00000000f900118c        0x0
+                0x00000000f900118c                PROVIDE (_data_lma = .)
+
+.dalign         0x00000000f900118c        0x0
+                0x00000000f900118c                PROVIDE (_data = .)
+
+.data           0x00000000f900118c        0xe
+ *(.rdata)
+ *(.rodata .rodata.*)
+ *(.gnu.linkonce.r.*)
+ *(.data .data.*)
+ .data          0x00000000f900118c        0x0 build/obj_files/common.o
+ .data          0x00000000f900118c        0x0 build/obj_files/main.o
+ .data          0x00000000f900118c        0x0 build/obj_files/PiCamDriver.o
+ .data          0x00000000f900118c        0x0 build/obj_files/start.o
+ .data          0x00000000f900118c        0x0 build/obj_files/trap.o
+ .data          0x00000000f900118c        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)
+ .data          0x00000000f900118c        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .data          0x00000000f900118c        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(div.o)
+ *(.gnu.linkonce.d.*)
+                0x00000000f9001190                . = ALIGN (0x8)
+ *fill*         0x00000000f900118c        0x4 
+                0x00000000f9001980                PROVIDE (__global_pointer$ = (. + 0x7f0))
+ *(.sdata .sdata.*)
+ *(.gnu.linkonce.s.*)
+                0x00000000f9001190                . = ALIGN (0x8)
+ *(.srodata.cst16)
+ *(.srodata.cst8)
+ *(.srodata.cst4)
+ *(.srodata.cst2)
+ *(.srodata .srodata.*)
+                0x00000000f900119a                . = (. + 0xa)
+ *fill*         0x00000000f9001190        0xa 
+                0x00000000f900119c                . = ALIGN (0x4)
+                0x00000000f900119c                PROVIDE (_edata = .)
+                [!provide]                        PROVIDE (edata = .)
+                [!provide]                        PROVIDE (_fbss = .)
+                0x00000000f900119c                PROVIDE (__bss_start = .)
+
+.bss            0x00000000f900119a        0x2
+ *(.sbss*)
+ *(.gnu.linkonce.sb.*)
+ *(.bss .bss.*)
+ .bss           0x00000000f900119a        0x0 build/obj_files/common.o
+ .bss           0x00000000f900119a        0x0 build/obj_files/main.o
+ .bss           0x00000000f900119a        0x0 build/obj_files/PiCamDriver.o
+ .bss           0x00000000f900119a        0x0 build/obj_files/start.o
+ .bss           0x00000000f900119a        0x0 build/obj_files/trap.o
+ .bss           0x00000000f900119a        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)
+ .bss           0x00000000f900119a        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(muldi3.o)
+ .bss           0x00000000f900119a        0x0 /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a(div.o)
+ *(.gnu.linkonce.b.*)
+ *(COMMON)
+                0x00000000f900119c                . = ALIGN (0x4)
+ *fill*         0x00000000f900119a        0x2 
+                0x00000000f90011a0                . = ALIGN (0x8)
+                0x00000000f90011a0                PROVIDE (_end = .)
+                [!provide]                        PROVIDE (end = .)
+
+.stack          0x00000000f90011a0      0x800
+                [!provide]                        PROVIDE (_heap_end = .)
+                0x0000000000000800                . = __stack_size
+ *fill*         0x00000000f90011a0      0x800 
+                0x00000000f90019a0                PROVIDE (_sp = .)
+                0x00000000f90019a0                __freertos_irq_stack_top = .
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libm.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a
+START GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libg.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a
+END GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a
+START GROUP
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/rv32i/ilp32/libgcc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a
+LOAD /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libnosys.a
+END GROUP
+OUTPUT(build/blink_led.elf elf32-littleriscv)
+
+.debug_info     0x0000000000000000     0x461d
+ .debug_info    0x0000000000000000      0xd90 build/obj_files/common.o
+ .debug_info    0x0000000000000d90     0x1c8d build/obj_files/main.o
+ .debug_info    0x0000000000002a1d     0x1bb4 build/obj_files/PiCamDriver.o
+ .debug_info    0x00000000000045d1       0x26 build/obj_files/start.o
+ .debug_info    0x00000000000045f7       0x26 build/obj_files/trap.o
+
+.debug_abbrev   0x0000000000000000      0xca7
+ .debug_abbrev  0x0000000000000000      0x38e build/obj_files/common.o
+ .debug_abbrev  0x000000000000038e      0x500 build/obj_files/main.o
+ .debug_abbrev  0x000000000000088e      0x3f1 build/obj_files/PiCamDriver.o
+ .debug_abbrev  0x0000000000000c7f       0x14 build/obj_files/start.o
+ .debug_abbrev  0x0000000000000c93       0x14 build/obj_files/trap.o
+
+.debug_loc      0x0000000000000000     0x13f5
+ .debug_loc     0x0000000000000000      0x384 build/obj_files/common.o
+ .debug_loc     0x0000000000000384      0x8c3 build/obj_files/main.o
+ .debug_loc     0x0000000000000c47      0x7ae build/obj_files/PiCamDriver.o
+
+.debug_aranges  0x0000000000000000       0xa0
+ .debug_aranges
+                0x0000000000000000       0x20 build/obj_files/common.o
+ .debug_aranges
+                0x0000000000000020       0x20 build/obj_files/main.o
+ .debug_aranges
+                0x0000000000000040       0x20 build/obj_files/PiCamDriver.o
+ .debug_aranges
+                0x0000000000000060       0x20 build/obj_files/start.o
+ .debug_aranges
+                0x0000000000000080       0x20 build/obj_files/trap.o
+
+.debug_macro    0x0000000000000000     0x2b82
+ .debug_macro   0x0000000000000000      0x1e9 build/obj_files/common.o
+ .debug_macro   0x00000000000001e9      0x74e build/obj_files/common.o
+ .debug_macro   0x0000000000000937      0x154 build/obj_files/common.o
+ .debug_macro   0x0000000000000a8b       0x22 build/obj_files/common.o
+ .debug_macro   0x0000000000000aad       0x8e build/obj_files/common.o
+ .debug_macro   0x0000000000000b3b       0x51 build/obj_files/common.o
+ .debug_macro   0x0000000000000b8c      0x103 build/obj_files/common.o
+ .debug_macro   0x0000000000000c8f       0x6a build/obj_files/common.o
+ .debug_macro   0x0000000000000cf9      0x1df build/obj_files/common.o
+ .debug_macro   0x0000000000000ed8       0xc4 build/obj_files/common.o
+ .debug_macro   0x0000000000000f9c       0x10 build/obj_files/common.o
+ .debug_macro   0x0000000000000fac       0x1c build/obj_files/common.o
+ .debug_macro   0x0000000000000fc8       0x16 build/obj_files/common.o
+ .debug_macro   0x0000000000000fde      0x1d7 build/obj_files/common.o
+ .debug_macro   0x00000000000011b5       0x1c build/obj_files/common.o
+ .debug_macro   0x00000000000011d1       0x70 build/obj_files/common.o
+ .debug_macro   0x0000000000001241       0x58 build/obj_files/common.o
+ .debug_macro   0x0000000000001299       0x19 build/obj_files/common.o
+ .debug_macro   0x00000000000012b2       0x52 build/obj_files/common.o
+ .debug_macro   0x0000000000001304       0x34 build/obj_files/common.o
+ .debug_macro   0x0000000000001338       0x34 build/obj_files/common.o
+ .debug_macro   0x000000000000136c       0x16 build/obj_files/common.o
+ .debug_macro   0x0000000000001382      0x10e build/obj_files/common.o
+ .debug_macro   0x0000000000001490       0x8d build/obj_files/common.o
+ .debug_macro   0x000000000000151d       0x16 build/obj_files/common.o
+ .debug_macro   0x0000000000001533       0x43 build/obj_files/common.o
+ .debug_macro   0x0000000000001576       0x34 build/obj_files/common.o
+ .debug_macro   0x00000000000015aa       0x10 build/obj_files/common.o
+ .debug_macro   0x00000000000015ba       0x52 build/obj_files/common.o
+ .debug_macro   0x000000000000160c      0x182 build/obj_files/common.o
+ .debug_macro   0x000000000000178e      0x339 build/obj_files/common.o
+ .debug_macro   0x0000000000001ac7       0x16 build/obj_files/common.o
+ .debug_macro   0x0000000000001add       0x29 build/obj_files/common.o
+ .debug_macro   0x0000000000001b06      0x1a9 build/obj_files/common.o
+ .debug_macro   0x0000000000001caf       0x16 build/obj_files/common.o
+ .debug_macro   0x0000000000001cc5       0x35 build/obj_files/common.o
+ .debug_macro   0x0000000000001cfa      0x15a build/obj_files/common.o
+ .debug_macro   0x0000000000001e54       0x22 build/obj_files/common.o
+ .debug_macro   0x0000000000001e76       0x10 build/obj_files/common.o
+ .debug_macro   0x0000000000001e86      0x21c build/obj_files/main.o
+ .debug_macro   0x00000000000020a2       0x2e build/obj_files/main.o
+ .debug_macro   0x00000000000020d0      0x89e build/obj_files/main.o
+ .debug_macro   0x000000000000296e       0x22 build/obj_files/main.o
+ .debug_macro   0x0000000000002990      0x1f2 build/obj_files/PiCamDriver.o
+
+.debug_line     0x0000000000000000     0x2111
+ .debug_line    0x0000000000000000      0x668 build/obj_files/common.o
+ .debug_line    0x0000000000000668      0xe23 build/obj_files/main.o
+ .debug_line    0x000000000000148b      0xabb build/obj_files/PiCamDriver.o
+ .debug_line    0x0000000000001f46       0xba build/obj_files/start.o
+ .debug_line    0x0000000000002000      0x111 build/obj_files/trap.o
+
+.debug_str      0x0000000000000000     0xb2d2
+ .debug_str     0x0000000000000000     0x8c9d build/obj_files/common.o
+                                       0x8f4d (size before relaxing)
+ .debug_str     0x0000000000008c9d     0x24c2 build/obj_files/main.o
+                                       0xb3ec (size before relaxing)
+ .debug_str     0x000000000000b15f      0x144 build/obj_files/PiCamDriver.o
+                                       0xb15b (size before relaxing)
+ .debug_str     0x000000000000b2a3       0x1e build/obj_files/start.o
+                                         0x71 (size before relaxing)
+ .debug_str     0x000000000000b2c1       0x11 build/obj_files/trap.o
+                                         0x70 (size before relaxing)
+
+.comment        0x0000000000000000       0x33
+ .comment       0x0000000000000000       0x33 build/obj_files/common.o
+                                         0x34 (size before relaxing)
+ .comment       0x0000000000000033       0x34 build/obj_files/main.o
+ .comment       0x0000000000000033       0x34 build/obj_files/PiCamDriver.o
+
+.debug_frame    0x0000000000000000      0x594
+ .debug_frame   0x0000000000000000       0xcc build/obj_files/common.o
+ .debug_frame   0x00000000000000cc      0x224 build/obj_files/main.o
+ .debug_frame   0x00000000000002f0      0x268 build/obj_files/PiCamDriver.o
+ .debug_frame   0x0000000000000558       0x3c /home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/lib/rv32i/ilp32/libc.a(lib_a-init.o)

@@ -1,0 +1,98 @@
+#include "soc.h"
+#include "bsp.h"
+#include "i2c.h"
+#include "gpio.h"
+#include <stdint.h>
+#include <stdbool.h>
+
+// ---- Addresses (7-bit) ----
+#define PCA9542A_ADDR7   0x70      // 0b1110 A2 A1 A0 ; change if A0..A2 strapped
+#define CAM_ADDR7        0x3C      // your camera 7-bit I2C address
+
+// ---- Example camera register ----
+#define REG_SW_RESET     0x0103     // 16-bit register address, 8-bit data
+
+// Thin wrapper: replace the body with your BSP's I2C "write bytes" call
+static bool i2c_write_bytes(uint32_t i2c_base, uint8_t addr7,
+                            const uint8_t *data, uint32_t len)
+{
+    // Example signatures seen on Efinix BSPs are like:
+    //   i2c_masterTransmit(i2c_base, addr7, data, len);
+    // or i2c_write(i2c_base, addr7, data, len);
+    // Return 'true' on ACK, 'false' on NACK.
+    extern int i2c_write(uint32_t base, uint8_t addr7, const uint8_t *buf, uint32_t len);
+    return i2c_write(i2c_base, addr7, data, len) == 0;
+}
+
+// Init to ~100 kHz (adjust if you already have this)
+static void i2c_init_100khz(void)
+{
+    I2c_Config cfg;
+    // Compute dividers from SYSTEM_CLINT_HZ (defined in soc.h)
+    const uint32_t fclk_hz      = SYSTEM_CLINT_HZ;
+    const uint32_t target_hz    = 100000;
+    const uint32_t divider      = (fclk_hz / (target_hz * 5u)); // simple ballpark; tune with your i2c.h
+    cfg.prescaler = divider;         // fields depend on your i2c.h; fill as your BSP expects
+    cfg.scl_low   = 3;               // keeping low/high near 50/50 duty
+    cfg.scl_high  = 2;
+    cfg.timeout   = 0xFFFF;
+    i2c_applyConfig(SYSTEM_I2C_0_IO_CTRL, &cfg);
+}
+
+// ---- PCA9542A channel select: write single control byte ----
+// ch = 0 -> channel 0, ch = 1 -> channel 1, ch = -1 -> deselect all
+static bool pca9542a_select(uint8_t sw_addr7, int ch)
+{
+    uint8_t ctrl;
+    if (ch == 0)      ctrl = 0x01;   // B2..B0 = 001 -> CH0
+    else if (ch == 1) ctrl = 0x02;   // B2..B0 = 010 -> CH1
+    else              ctrl = 0x00;   // none
+
+    // Single-byte write, no register address
+    bool ok = i2c_write_bytes(SYSTEM_I2C_0_IO_CTRL, sw_addr7, &ctrl, 1);
+    // Per datasheet, selection becomes active after STOP; add a tiny guard delay
+    bsp_uDelay(10);
+    return ok;
+}
+
+// ---- 16-bit register write helper for camera (reg16 + data8) ----
+static bool cam_write_reg16(uint8_t cam_addr7, uint16_t reg, uint8_t data)
+{
+    uint8_t buf[3];
+    buf[0] = (uint8_t)(reg >> 8);        // reg high
+    buf[1] = (uint8_t)(reg & 0xFF);      // reg low
+    buf[2] = data;                       // data
+    return i2c_write_bytes(SYSTEM_I2C_0_IO_CTRL, cam_addr7, buf, sizeof(buf));
+}
+
+static void cam_sw_reset(void)
+{
+    // Many sensors expect SW reset = 0x01 or 0x80 at reg 0x0103; adjust for your device
+    (void)cam_write_reg16(CAM_ADDR7, REG_SW_RESET, 0x01);
+    bsp_uDelay(5000); // 5 ms after reset
+}
+
+int main(void)
+{
+    bsp_init();
+    i2c_init_100khz();
+
+    // 1) Select the I2C switch channel which the camera hangs on
+    //    Use 0 for SC0/SD0, 1 for SC1/SD1
+    if (!pca9542a_select(PCA9542A_ADDR7, 0)) {
+        // handle NACK (wrong address or wiring)
+        while (1) { }
+    }
+
+    // 2) Now talk to the camera on that channel as usual
+    cam_sw_reset();
+    // ... your other camera register writes with cam_write_reg16(...)
+
+    // (Optional) Blink something so you see life:
+    while (1) {
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+        bsp_uDelay(200000);
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+        bsp_uDelay(200000);
+    }
+}

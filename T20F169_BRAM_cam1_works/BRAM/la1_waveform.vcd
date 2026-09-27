@@ -1,0 +1,94 @@
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 u_cam_ctrl/cam_setup_cnt $end
+$var wire 1 1 u_cam_ctrl/done $end
+$var wire 8 2 u_cam_ctrl/want_mux_byte $end
+$var wire 4 3 u_cam_ctrl/state $end
+$var wire 8 4 u_cam_ctrl/mux_val $end
+$var wire 1 5 u_cam_ctrl/mux_ok $end
+$var wire 1 6 u_cam_ctrl/rst_n $end
+$var wire 8 7 u_cam_ctrl/mst_num_bytes $end
+$var wire 32 8 u_cam_ctrl/mst_din $end
+$var wire 1 9 u_cam_ctrl/i2c_busy $end
+$var wire 32 a u_cam_ctrl/mst_data_out $end
+$var wire 1 b u_cam_ctrl/mst_data_out_valid $end
+$var wire 1 c u_cam_ctrl/mst_read $end
+$var wire 1 d u_cam_ctrl/mst_write_done $end
+$var wire 8 e u_cam_ctrl/mst_command_byte $end
+$var wire 1 f u_cam_ctrl/i2c_soft_rst $end
+$var wire 1 10 u_cam_ctrl/mst_write $end
+$var wire 8 11 u_cam_ctrl/i2c_slave_addr $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x0
+x1
+bx 2
+bx 3
+bx 4
+x5
+x6
+bx 7
+bx 8
+x9
+bx a
+xb
+xc
+xd
+bx e
+xf
+x10
+bx 11
+$end
+#0 $dumpon
+00
+01
+b00000001 2
+b0100 3
+b00000000 4
+05
+16
+b00000001 7
+b00000000000000000000000000000001 8
+09
+b00000000000000000000000000000000 a
+0b
+0c
+0d
+b00000000 e
+1f
+010
+b01110000 11
+#509
+b0010 3
+0f
+#510
+b0011 3
+#511
+b0100 3
+#512
+b0101 3
+110
+#513
+010
+#1023
+00
+01
+b00000001 2
+b0101 3
+b00000000 4
+05
+16
+b00000001 7
+b00000000000000000000000000000001 8
+09
+b00000000000000000000000000000000 a
+0b
+0c
+0d
+b00000000 e
+0f
+010
+b01110000 11

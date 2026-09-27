@@ -1,0 +1,71 @@
+gst-launch-1.0 nvarguscamerasrc ! fakesink
+
+scp jetson@192.168.1.69:~/Desktop/notes.txt ~/Desktop/
+
+(base) olle@olle-SSD-256:~$ ipaddr
+Command 'ipaddr' not found, did you mean:
+  command 'ibaddr' from deb infiniband-diags (39.0-1)
+  command 'ipmaddr' from deb net-tools (1.60+git20181103.0eebece-1ubuntu5.4)
+Try: sudo apt install <deb name>
+(base) olle@olle-SSD-256:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether a8:5e:45:b9:cb:08 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.129/24 brd 192.168.1.255 scope global dynamic noprefixroute enp2s0
+       valid_lft 3034sec preferred_lft 3034sec
+    inet6 2001:9b1:efd:2000:a491:c4e1:4a51:a9ed/128 scope global dynamic noprefixroute 
+       valid_lft 3013sec preferred_lft 3013sec
+    inet6 2001:9b1:efd:2000:d0cf:30c:6cab:afd5/64 scope global temporary dynamic 
+       valid_lft 79148sec preferred_lft 46748sec
+    inet6 2001:9b1:efd:2000:af1:73e9:d5ce:1acd/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 79148sec preferred_lft 46748sec
+    inet6 fe80::3ff2:5df:55e3:f64d/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp4s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
+    link/ether c0:e4:34:61:5f:11 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.1.149/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp4s0
+       valid_lft 2987sec preferred_lft 2987sec
+    inet6 2001:9b1:efd:2000:dc3c:33c4:9f9:9751/128 scope global dynamic noprefixroute 
+       valid_lft 2986sec preferred_lft 2986sec
+    inet6 2001:9b1:efd:2000:dc0b:cffa:ad29:49df/64 scope global temporary dynamic 
+       valid_lft 79148sec preferred_lft 46748sec
+    inet6 2001:9b1:efd:2000:a2e7:9845:2a0a:6def/64 scope global dynamic mngtmpaddr noprefixroute 
+       valid_lft 79148sec preferred_lft 46748sec
+    inet6 fe80::33e4:4aa0:8585:d88d/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+(base) olle@olle-SSD-256:~$ scp jetson@192.168.1.69:~/Desktop/notes.txt ~/Desktop/
+jetson@192.168.1.69's password: 
+notes.txt                                                                                                                                                                 100%  529   674.0KB/s   00:00    
+(base) olle@olle-SSD-256:~$ 
+
+
+
+(base) olle@olle-SSD-256:~$ ssh jetson@192.168.1.69
+
+
+sudo mount -t debugfs none /sys/kernel/debug 2>/dev/null || true
+sudo sh -c 'echo 0 > /sys/kernel/debug/tracing/tracing_on'
+sudo sh -c 'echo nop > /sys/kernel/debug/tracing/current_tracer'
+sudo sh -c 'echo 0 > /sys/kernel/debug/tracing/events/enable'
+
+sudo sh -c 'echo 1 > /sys/kernel/debug/tracing/events/i2c/i2c_write/enable'
+sudo sh -c 'echo 1 > /sys/kernel/debug/tracing/events/i2c/i2c_read/enable'
+sudo sh -c 'echo 1 > /sys/kernel/debug/tracing/events/i2c/i2c_reply/enable'
+sudo sh -c 'echo 1 > /sys/kernel/debug/tracing/events/i2c/i2c_result/enable'
+
+# filter (om fält finns)
+sudo sh -c "cat /sys/kernel/debug/tracing/events/i2c/i2c_write/format"
+sudo sh -c "echo 'adapter_nr==6 && addr==0x10' > /sys/kernel/debug/tracing/events/i2c/i2c_write/filter"
+sudo sh -c "echo 'adapter_nr==6 && addr==0x10' > /sys/kernel/debug/tracing/events/i2c/i2c_read/filter"
+sudo sh -c "echo 'adapter_nr==6 && addr==0x10' > /sys/kernel/debug/tracing/events/i2c/i2c_reply/filter"
+sudo sh -c "echo 'adapter_nr==6' > /sys/kernel/debug/tracing/events/i2c/i2c_result/filter"
+
+sudo sh -c 'echo 2048 > /sys/kernel/debug/tracing/buffer_size_kb'
+sudo sh -c 'echo 1 > /sys/kernel/debug/tracing/tracing_on'
+sudo cat /sys/kernel/debug/tracing/trace_pipe
+

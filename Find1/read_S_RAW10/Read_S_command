@@ -1,0 +1,27 @@
+RAW8 test
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ python3 read_frame_image.py /dev/ttyACM0 115200 --width 96 --height 96 --out frame.png
+Waiting for 'S' on /dev/ttyACM0 @ 115200...
+'S' seen. Reading 18432 ASCII-HEX decoded bytes...
+Saved frame.png (96x96)
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ python3 read_hex_after_S.py /dev/ttyACM0 115200 8192 -o frame.bin --preview
+Waiting for 'S' on /dev/ttyACM0 @ 115200...
+Sync 'S' detected. Reading ASCII-HEX payload...
+Wrote 8192 bytes to frame.bin
+33 3f 31 3a 35 3f 34 41 2e 3e 2b 3f 33 44 31 42 33 3e 33 39 36 39 32 3c 2c 3a 2d 3f 2e 3c 2d 34 2b 32 29 34 27 2f 27 32 25 2b 26 31 26 2c 25 2a 22 2b 26 2d 28 26 1f 29 28 2d 27 2b 25 25 29 2c 29 2b 2c 28 2e 2e 29 29 2f 30 2b 30 2d 31 31 2f 31 38 2a 35 36 39 32 3c 2c 3a 2d 3f 2e 3c 2d 34 39 27 41 2d 3d 2b 42 31 3b 2f 3c 30 43 2e 44 2d 40 2d 3d 25 40 28 3f 2b 3c 24 3a 2b 3b 23 37 28
+... (8064 more bytes)
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ 
+
+RAW10 test
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ python3 read_frame_image.py /dev/ttyACM0 115200 --width 96 --height 96 --out frame.png
+Waiting for 'S' on /dev/ttyACM0 @ 115200...
+'S' seen. Reading 18432 ASCII-HEX decoded bytes...
+Saved frame.png (96x96)
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ python3 read_hex_after_S.py /dev/ttyACM0 115200 8192 -o frame.bin --preview
+Waiting for 'S' on /dev/ttyACM0 @ 115200...
+Sync 'S' detected. Reading ASCII-HEX payload...
+Wrote 8192 bytes to frame.bin
+ae d0 a3 0b 41 00 00 00 d4 78 c3 0c 3e 00 00 00 dc 98 a3 8b 3c 00 00 00 be c0 63 8c 3f 00 00 00 d0 30 c4 8d 41 00 00 00 c6 58 c4 0b 44 00 00 00 c8 70 e3 0b 40 00 00 00 a6 88 43 0a 38 00 00 00 b4 10 03 8b 39 00 00 00 98 18 e3 89 33 00 00 00 8a 08 c3 09 31 00 00 00 9a 90 22 88 24 00 00 00 96 a8 42 09 2a 00 00 00 92 e8 42 88 26 00 00 00 96 d0 62 89 29 00 00 00 a2 c8 22 0a 2d 00 00 00
+... (8064 more bytes)
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ 
+
+

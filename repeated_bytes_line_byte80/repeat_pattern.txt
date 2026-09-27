@@ -1,0 +1,18 @@
+One Word = 8byte RAW8 data
+
+Word 0 pixels pattern 2 Word steps visual left before copy 0 
+Word 1 pixels pattern 1 Word steps visual left before copy 0
+Word 2 copy 0
+Word 3 copy 1
+...
+...
+Word 9  Some strange word not from visual sceen
+Word 10 repeated from word copy 0
+Word 11 repeated from word copy 1
+...
+...
+More pixels not seen at first words after Word 9
+...
+Word 23
+End
+

@@ -1,0 +1,6818 @@
+AN 006: Configuring Trion
+FPGAs
+
+®
+
+AN006-v6.6
+November 2025
+www.efinixinc.com
+
+Copyright © 2025. All rights reserved. Efinix, the Efinix logo, the Titanium logo, the Topaz logo, Quantum, Trion, and Efinity are trademarks of Efinix,
+Inc. All other trademarks and service marks are the property of their respective owners. All specifications subject to change without notice.
+
+AN 006: Configuring Trion FPGAs
+
+Contents
+About Configuring Trion FPGAs.................................................................................................... 4
+®
+
+Bitstream Size....................................................................................................................................................................4
+Configuration Time.......................................................................................................................................................... 5
+Planning Your Device Pinout.......................................................................................................................................... 5
+Other Factors to Consider.............................................................................................................................................. 6
+
+Configuration Pins........................................................................................................................... 7
+FPGA Configuration Modes.......................................................................................................... 10
+
+Selecting the Configuration Mode.............................................................................................................................. 10
+About SPI Clocking and Sampling.............................................................................................................................. 11
+SPI Active Mode............................................................................................................................................................. 12
+SPI Active Mode for SIP Packages...................................................................................................................... 17
+SPI Active Mode without CSI............................................................................................................................... 20
+Clocking.................................................................................................................................................................. 20
+SPI Passive Mode........................................................................................................................................................... 21
+SPI Passive Mode for SIP Packages.....................................................................................................................27
+SPI Passive Mode without CSI or CBUS2............................................................................................................28
+JTAG Mode..................................................................................................................................................................... 30
+
+Using FPGA, MCU, and SPI Flash Devices Together..................................................................... 35
+Flash Programming Modes........................................................................................................... 38
+Power Up....................................................................................................................................... 41
+
+Power Up Sequence...................................................................................................................................................... 41
+Power Supply Current Transient...................................................................................................................................42
+Power Up Configuration Circuitry Recommendation................................................................................................43
+Unused Resources and Features................................................................................................................................. 44
+
+Configuration Sequence................................................................................................................45
+Support for Multiple Images.........................................................................................................46
+Configuring Multiple FPGAs......................................................................................................... 48
+
+Daisy Chaining with a SPI Flash Device..................................................................................................................... 48
+Daisy Chaining with a Microcontroller or Microprocessor.......................................................................................50
+
+Resistors in Configuration Circuitry.............................................................................................. 51
+Configuration Timing.................................................................................................................... 52
+Selecting the Right SPI Flash Device............................................................................................ 53
+Supported Flash Devices...............................................................................................................53
+Connecting Programming Hardware............................................................................................ 54
+
+SPI Programming Connections.................................................................................................................................... 54
+JTAG Programming Connections................................................................................................................................ 56
+Supported Download Cables.......................................................................................................................................59
+
+Using the Efinity Programmer.......................................................................................................60
+
+Generate a Bitstream (Programming) File.................................................................................................................. 60
+Working with Bitstreams............................................................................................................................................... 61
+Edit the Bitstream Header....................................................................................................................................61
+Export to Raw Binary Format............................................................................................................................... 61
+Export to .svf Format............................................................................................................................................. 61
+Convert to Intel Hex Format at the Command Line......................................................................................... 62
+Combine Bitstreams and Other Files................................................................................................................. 63
+www.efinixinc.com
+
+AN 006: Configuring Trion FPGAs
+
+SPI Programming............................................................................................................................................................64
+Program a Single Image.......................................................................................................................................64
+Program Multiple Images (CBSEL)...................................................................................................................... 64
+Program Multiple Images (Internal Reconfiguration)........................................................................................65
+Program Multiple Images (Bitstream and Data)................................................................................................65
+Program a Daisy Chain......................................................................................................................................... 66
+JTAG Programming........................................................................................................................................................67
+Trion Family JTAG Device IDs..............................................................................................................................67
+Program a Single Image.......................................................................................................................................67
+Program Using a JTAG Chain.............................................................................................................................. 68
+Program using a JTAG Bridge.............................................................................................................................69
+JTAG Programming with FTDI Chip Hardware................................................................................................. 70
+FTDI Programming at the Command Line.........................................................................................................70
+Identifying FTDI URLs............................................................................................................................................73
+Using the Command-Line Programmer......................................................................................................................74
+Project-Based Programming Options..........................................................................................................................75
+
+Verifying Configuration.................................................................................................................77
+Installing USB Drivers....................................................................................................................80
+
+Installing the Linux USB Driver.................................................................................................................................... 80
+Installing the Windows USB Driver............................................................................................................................. 81
+
+Appendix: Programming the Flash Using JTAG Bridge (Legacy)................................................. 82
+Revision History.............................................................................................................................83
+
+www.efinixinc.com
+
+AN 006: Configuring Trion FPGAs
+
+About Configuring Trion® FPGAs
+This document describes how to conﬁgure Trion® FPGAs. These FPGAs contain volatile
+Conﬁguration RAM (CRAM) that you must conﬁgure with the desired logic function (via
+a bitstream) upon power-up and before the core enters normal operation. The Eﬁnity®
+software generates the bitstream, which is design dependent.
+Learn more: Refer to the Efinity Software User Guide for information on how to generate the bitstream.
+
+Bitstream Size
+The bitstream size is dependent on the FPGA you choose and the conﬁguration parameters
+you set in the Eﬁnity software.
+Note: In the Efinity software, you can optionally add header information to the bitstream file. This header
+information can add up to 1k bytes to the configuration size. The following maximums include the optional
+header size.
+
+Table 1: Trion® FPGA Bitstream Size
+FPGA
+
+Maximum Supported
+Configuration Bits (Single Image)
+
+Packages
+
+T4
+
+1,348,184
+
+All
+
+T8
+
+1,394,584
+
+BGA49, BGA81
+
+5,255,968
+
+QFP144
+
+T13
+
+5,261,920
+
+All
+
+T20
+
+5,255,968
+
+QFP144
+
+5,445,600
+
+WLCSP80, QFP100F3,
+BGA169, BGA256
+
+8,003,744
+
+BGA324, BGA400
+
+T35
+
+8,139,168
+
+All
+
+T55
+
+27,675,040
+
+All
+
+T85
+
+28,042,400
+
+All
+
+T120
+
+28,409,760
+
+All
+
+www.efinixinc.com
+
+4
+
+AN 006: Configuring Trion FPGAs
+
+Configuration Time
+The FPGA conﬁguration time depends on the frequency and data bus width. To estimate the
+conﬁguration time for a given FPGA, use the following equation:
+Conﬁguration Time = Bitstream Size ÷ (Conﬁguration Clock Frequency × Data Bus Width)
+Note: The maximum configuration clock frequency depends on the configuration mode and
+implementation.
+
+For example:
+• T8 FPGA—approximately 1.38 Mbits of conﬁguration data:
+• Conﬁguration clock frequency—10 MHz
+• T8 Conﬁguration data bus width—8 bits
+Conﬁguration time: 1.38 Mbits × 100 ns ÷ 8 = 17.25 ms
+
+Planning Your Device Pinout
+The conﬁguration mode you choose aﬀects your design's pinout. You should decide which
+mode you will use and plan for it before performing ﬂoorplanning or pin selection for your
+logic design.
+Active and passive conﬁguration modes use multi-function pins during conﬁguration. When
+conﬁguration completes, these multi-function pins are available for general use. JTAG
+conﬁguration uses dedicated conﬁguration pins that cannot be used for other functions.
+Additionally, the conﬁguration mode you choose can aﬀect the voltage restrictions for the
+I/O bank that contains the conﬁguration pins.
+Eﬁnix® recommends that you:
+• Choose the conﬁguration mode(s). Consider the primary conﬁguration mode as well as
+conﬁguration modes you may need for debugging or future updates.
+• Find the pin and the bank locations for the conﬁguration mode(s).
+• Understand how you use these pins and any restrictions when using multi-function
+conﬁguration pins as standard I/O pins. For example, consider internal and external pullups or pull-downs, connections to external devices, etc.
+Note: In some situations, you may want to use a multi-function configuration pin
+as an output pin in user mode. If the pin is driven by an external device during
+configuration, the source that drives this pin during configuration must be tri-stated
+before the device enters user mode and user logic begins driving it. Otherwise, the
+drivers can be in contention, and can damage the pin.
+
+• For each set of conﬁguration pins, determine the common required I/O voltage support
+for the required conﬁguration bank. You can only use compatible I/O standards
+elsewhere in that bank.
+
+www.efinixinc.com
+
+5
+
+AN 006: Configuring Trion FPGAs
+
+Other Factors to Consider
+Although conﬁguration is typically a one-time event independent of device operation, your
+conﬁguration choices can aﬀect your design options. Make conﬁguration decisions early in
+the design cycle to eliminate challenges later:
+• Do you need to support JTAG conﬁguration for debugging purposes?
+• How can you provide easy access to the conﬁguration control and status pins for
+debugging?
+• What multi-function pins are you using in your logic design and are they active during
+conﬁguration? If they are, check for conﬂicts with other uses of these pins.
+Additionally, you should:
+• Provide quality signal integrity for key signals during PCB layout, including the
+conﬁguration clock (even though conﬁguration can operate at a low frequency).
+• Understand the conﬁguration sequence to reduce conﬁguration time.
+• Generate the conﬁguration bitstream for your FPGA using Eﬁnity tools.
+
+www.efinixinc.com
+
+6
+
+AN 006: Configuring Trion FPGAs
+
+Configuration Pins
+Some conﬁguration pins are dedicated, and some are dual-purpose.
+• Dedicated pins cannot be used as general purpose I/O.
+• During conﬁguration, use dual-purpose pins as described in this document for the
+conﬁguration mode you are using. After conﬁguration (in user mode), you can use these
+pins as general-purpose I/O.
+Table 2: Dedicated Configuration Pins
+These pins cannot be used as general-purpose I/O after configuration.
+
+All the pins are in internal weak pull-up during configuration except for TCK and TDO.
+Pins
+
+Direction
+
+Description
+
+External Weak
+Pull- Up/
+Pull Down
+Requirement
+
+CDONE
+
+I/O
+
+Configuration done status pin. CDONE is an open drain output;
+connect it to an external pull-up resistor to VCCIO. When
+CDONE = 1, the configuration is complete and the FPGA
+enters user mode. You can hold CDONE low and release it to
+synchronize the FPGAs entering user mode.
+
+Pull up
+
+CRESET_N
+
+Input
+
+Active-low FPGA reset and re-configuration trigger.
+
+Pull up
+
+TCK
+
+Input
+
+JTAG test clock input (TCK). The rising edge loads signals
+applied at the TAP input pins (TMS and TDI). The falling edge
+clocks out signals through the TAP TDO pin.
+
+Pull up
+
+TMS
+
+Input
+
+JTAG test mode select input (TMS). The I/O sequence on this
+input controls the test logic operation . The signal value typically
+changes on the falling edge of TCK. TMS has an internal weak
+pull-up; when it is not driven by an external source, the test logic
+perceives a logic 1.
+
+Pull up
+
+TDI
+
+Input
+
+JTAG test data input (TDI). Data applied at this serial input is fed
+into the instruction register or into a test data register depending
+on the sequence previously applied at TMS. Typically, the signal
+applied at TDI changes state following the falling edge of TCK
+while the registers shift in the value received on the rising edge.
+Like TMS, TDI has an internal weak pull-up; when it is not driven
+from an external source, the test logic perceives a logic 1.
+
+Pull up
+
+TDO
+
+Output
+
+JTAG test data output (TDO). This serial output from the test
+logic is fed from the instruction register or a test data register
+depending on the sequence previously applied at TMS. The shift
+out content is based on the issued instruction. The signal driven
+through TDO changes state following the falling edge of TCK.
+When data is not being shifted through the device, TDO is set to
+an inactive drive state (e.g., high-impedance).
+
+Pull up
+
+Pulse CRESET_N low for a duration of tcreset_N before releasing
+CRESET_N from low to high to initiate FPGA re-configuration.
+This pin does not perform a system reset.
+
+www.efinixinc.com
+
+7
+
+AN 006: Configuring Trion FPGAs
+
+Table 3: Dual-Purpose Configuration Pins
+In user mode (after configuration), you can use these dual-purpose pins as general I/O.
+Configuration
+Functions
+
+Direction
+
+Description
+
+External Weak
+Pull- Up/
+Pull Down
+Requirement
+
+CBUS[2:0]
+
+Input
+
+Configuration bus width select. CBUS has an internal weak
+pull-up. However, Efinix recommends that you use an external
+pull-up accordingly. See Selecting the Configuration Mode in
+AN 006: Configuring Trion FPGAs.
+
+Pull up or
+pull down(1)
+
+CBSEL[1:0]
+
+Input
+
+Multi-image configuration selection pin. This function is not
+applicable to single-image bitstream configuration or internal
+reconfiguration (remote update).
+
+Pull up or
+pull down (2)
+
+Connect CBSEL[1:0] to the external resistors for the image you
+want to use:
+00 for image 1
+01 for image 2
+10 for image 3
+11 for image 4
+
+0: Connect to an external weak pull down.
+1: Connect to an external weak pull up.
+CCK
+
+I/O
+
+Passive SPI input configuration clock or active SPI output
+configuration clock (active low). Includes an internal weak pull-up.
+Important: The CCK pin in Q100F3 packages are only
+available in user mode when the LVDS TX resources are
+not in use. The CCK pin should not be toggled when any
+LVDS TX is used.
+
+CDIn
+
+I/O
+
+n is a number from 0 to 31 depending on the SPI configuration.
+0: Passive serial data input or active serial output.
+1: Passive serial data output or active serial input.
+n: Parallel I/O.
+
+Optional
+pull up if
+required by
+external load
+
+Optional
+pull up if
+required by
+external load
+
+In multi-bit daisy chain connection, the CDI (31:0) connects to the
+data bus in parallel.
+CSI
+
+Input
+
+Chip select.
+
+0: The FPGA is not selected or enabled and will not be configured.
+
+Pull up
+
+1: Selects the FPGA for all configuration modes. CSI must remain
+high throughout all configuration modes.
+CSO
+
+Output
+
+Chip select output. Selects the next device for cascading
+configuration.
+
+N/A
+
+NSTATUS
+
+Output
+
+Status (active low).
+
+N/A
+
+Indicates a configuration error. When the FPGA drives this pin low,
+it indicates either a device mismatch or a failed bitstream CRC
+check.
+For Trion® T4, T8 F49, and T8 F81 FPGAs, logic low indicates a
+configuration error due to ID mismatch.
+
+(1)
+(2)
+
+Optional for x1 mode.
+Not applicable to single-image or remote update.
+www.efinixinc.com
+
+8
+
+AN 006: Configuring Trion FPGAs
+
+Configuration
+Functions
+
+SS_N
+
+Direction
+
+Description
+
+External Weak
+Pull- Up/
+Pull Down
+Requirement
+
+I/O
+
+SPI configuration mode select. The FPGA senses the value of SS_N
+when it comes out of reset (i.e., CRESET_N transitions from low to
+high).
+
+Pull up or
+pull down
+
+0: SPI Passive mode; connect to external weak pull down.
+1: SPI Active mode; connect to external weak pull up.
+
+In active configuration mode, SS_N is an active-low chip select to
+the flash device (CDI0 - CDI3).
+TEST_N
+
+Input
+
+Active-low test mode enable signal. Set to 1 to disable test mode.
+
+Pull up
+
+RESERVED_OUT Output
+
+Reserved pin during user configuration. This pin drives high during
+user configuration.
+
+N/A
+
+Active-low internal SPI flash memory chip select. Available in
+QFP100F3 packages only.
+
+Pull up
+
+During all configuration modes, rely on the external weak pull-up
+or drive this pin high.
+
+F49 and F81 packages only.
+SPI_CS_N
+
+Input
+
+Note: Refer to the column Configuration Functions in device_pinout.xlxs.
+
+www.efinixinc.com
+
+9
+
+AN 006: Configuring Trion FPGAs
+
+FPGA Configuration Modes
+Trion® FPGAs have dedicated conﬁguration pins. You select the conﬁguration mode by
+setting the appropriate condition on the input conﬁguration pins. Trion® FPGAs support the
+following conﬁguration modes.
+Table 4: FPGA Configuration Modes
+Mode
+
+Description
+
+SPI Active (serial/parallel)
+
+The FPGA loads the bitstream itself from non-volatile SPI flash memory.
+
+SPI Passive (serial/parallel)
+
+An external microprocessor or microcontroller sends the bitstream to the FPGA
+using the SPI interface.
+
+JTAG
+
+A host computer sends instructions through a download cable to the FPGA's
+JTAG interface using JTAG instructions.
+
+Selecting the Configuration Mode
+Each conﬁguration interface corresponds to one or more conﬁguration modes and bus
+widths.
+• Select the conﬁguration mode by setting the appropriate condition on the CBUS[2:0],
+SS_N, and TEST_N input pins.
+• Set CBUS2, CBUS1, CBUS0, SS_N, and TEST_N using a pull-up or pull-down resistor, or
+drive them with an external active device.
+• Do not toggle the mode pins before the FPGA enters user mode.
+Table 5: SPI Hardware Settings
+If you do not make any connections, the default mode is x1 SPI active.
+Configuration
+Mode
+
+Parallel/Serial
+
+CSI
+
+TEST_N
+
+SS_N
+
+CBUS2,
+CBUS1,
+CBUS0
+
+Width
+
+SPI Active
+
+Serial
+
+1
+
+1
+
+1
+
+3’b111
+
+x1
+
+Parallel
+
+1
+
+1
+
+1
+
+3’b110
+
+x2
+
+Parallel
+
+1
+
+1
+
+1
+
+3’b101
+
+x4
+
+Serial
+
+1
+
+1
+
+0
+
+3’b111
+
+x1
+
+Parallel
+
+1
+
+1
+
+0
+
+3’b110
+
+x2
+
+Parallel
+
+1
+
+1
+
+0
+
+3’b101
+
+x4
+
+Parallel
+
+1
+
+1
+
+0
+
+3’b100
+
+x8
+
+Parallel
+
+1
+
+1
+
+0
+
+3’b011
+
+x16
+
+Parallel
+
+1
+
+1
+
+0
+
+3’b010
+
+x32
+
+SPI Passive
+
+www.efinixinc.com
+
+10
+
+AN 006: Configuring Trion FPGAs
+
+The JTAG/boundary-scan conﬁguration interface is always available regardless of pin
+settings. If you send conﬁguration instructions to the JTAG interface, the Trion® FPGA
+overwrites the previous conﬁguration.
+Note: You must set the configuration mode in the Efinity® software; the software includes the mode and
+other configuration options in the bitstream.
+
+The supported conﬁguration modes are FPGA speciﬁc. Refer to your FPGA's data sheet for
+information on the conﬁguration modes it supports.
+
+About SPI Clocking and Sampling
+Table 6: SPI Interface Clocking and Sampling
+Mode
+
+Clock
+
+Sampling Edge
+
+Passive
+
+The CCK clock comes from
+an external device
+
+Positive
+
+Active
+
+The FPGA generates the CCK Positive (not configurable)
+clock
+
+Important: Refer to the setup and hold times in the data sheet to ensure system timing closure based on
+your timing budget.
+
+The microprocessor or microcontroller can set the SPI clock polarity (CPOL bit) and the
+clock phase (CPHA bit) when the interface is idle, which results in four modes, depending
+on how you set these bits. Use Mode 3 in your microprocessor or microcontroller when
+programming the FPGA.
+Table 7: SPI Clock Polarity and Phase Modes
+Mode
+
+Clock Polarity
+when Idle
+
+Data Sampled On
+
+Data Shifted On
+
+0
+
+Low
+
+Rising edge
+
+Falling edge
+
+1
+
+Low
+
+Falling edge
+
+Rising edge
+
+2
+
+High
+
+Falling edge
+
+Rising edge
+
+3
+
+High
+
+Rising edge
+
+Falling edge
+
+www.efinixinc.com
+
+11
+
+AN 006: Configuring Trion FPGAs
+
+Eﬁnix uses Mode 3 for SPI passive mode, which is CPOL bit = 1 and CPHA bit =1 for all
+Trion FPGA devices.
+Figure 1: SPI Clock Polarity and Phase Modes Diagram
+
+CPOL Bit
+
+0
+
+1
+
+MODE
+
+0
+
+1
+
+CPHA Bit
+
+Sample
+
+Sample
+(CPOL Bit, CPHA Bit) = Mode #
+(0,0) = Mode 0
+(0,1) = Mode 1
+(1,0) = Mode 2
+(1,1) = Mode 3
+
+0
+
+1
+Sample
+MODE
+
+Sample
+
+2
+
+3
+
+SPI Active Mode
+In active mode, the FPGA loads conﬁguration data itself from a conﬁguration bitstream that
+typically resides in non-volatile memory on the same board. Active modes can be serial or
+parallel. The FPGA internally generates the conﬁguration clock signal (CCK) and controls
+conﬁguration by sending a clock or addresses to the ﬂash memory.
+The active SPI conﬁguration mode supports low pin count, industry-standard external SPI
+ﬂash devices to store the bitstream. The FPGA supports a direct connection to the ﬂash
+device's four-pin SPI interface. Active SPI conﬁguration mode can read from standard 1-bit
+serial SPI ﬂash devices as well as from ﬂash devices that support x2 and x4 fast output read
+operations. These modes are proportionally faster than the standard 1-bit SPI interface.
+Note: Trion® FPGAs only support SPI flash memory with 3-byte addressing mode for configuration.
+
+Table 8: Active Mode Instructions
+Instruction
+
+Description
+
+SPI Data Width
+
+0BH
+
+Fast Read
+
+x1
+
+3BH
+
+Dual Output Fast Read
+
+x2
+
+6BH
+
+Quad Output Fast Read
+
+x4
+
+The FPGA samples CBUS0, CBUS1, and CBUS2 after power-up or reconﬁguration;
+therefore, you must drive these signals to the correct value.(3)
+
+(3)
+
+Smaller packages may not have CBUS2 bonded out. In this case, CBUS2 is held high in the package.
+www.efinixinc.com
+
+12
+
+AN 006: Configuring Trion FPGAs
+
+Connection Examples
+Note: Circuitry is required to control the CRESET_N pin to meet the tCRESET_N requirement.
+Learn more: Refer to Trion Hardware Design Checklist and Guidelines for the detailed connection
+requirements.
+
+Figure 2: Active (x1)
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+
+x1 Mode
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+SPI Serial
+Flash
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Trion FPGA
+(Active Mode)
+CSI
+CCK (1)
+
+SCK
+
+CDONE
+
+CBUS0
+CBUS1
+CBUS2
+SDO
+
+CDI1 (1)
+VCCIO
+VCCIO
+
+VCCIO
+VCCIO
+
+Pushbutton
+CRESET_N
+
+SDI
+
+CDI0 (1)
+
+CS_B
+
+SS_N
+
+TEST_N
+
+Note: (1) The external pull-up is optional unless required by an external load.
+
+www.efinixinc.com
+
+13
+
+AN 006: Configuring Trion FPGAs
+
+Figure 3: Active (x2)
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+
+x2 Mode
+
+VCCIO
+
+VCCIO
+VCCIO
+
+SPI Serial
+Flash
+
+VCCIO
+VCCIO
+
+VCCIO
+Trion FPGA
+(Active Mode)
+
+CSI
+CCK (1)
+
+SCK
+
+CDONE
+
+CBUS0
+CBUS1
+CBUS2
+SDO
+
+CDI1 (1)
+VCCIO
+VCCIO
+VCCIO
+
+SDI
+CS_B
+
+Pushbutton
+
+VCCIO
+CRESET_N
+CDI0 (1)(2)
+
+TEST_N
+
+SS_N
+
+Note: The connections for x2 are the same as x1. However:
+
+The modes use different CBUS values (see Table 5: SPI Hardware Settings on page 10).
+In x2 the CDI0 pin is a bidirectional data I/O pin.
+
+www.efinixinc.com
+
+14
+
+AN 006: Configuring Trion FPGAs
+
+Figure 4: Active Quad (x4)
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+
+x4 Mode
+
+VCCIO
+
+SPI Flash VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+Trion FPGA
+(Active Mode)
+
+CSI
+CBUS0
+
+CDONE
+
+CBUS1
+CBUS2
+SCK
+
+CCK (1)
+
+DQ3
+
+CDI3 (1)
+
+DQ2
+
+CDI2 (1)
+
+DQ1
+
+CDI1 (1)
+VCCIO
+VCCIO
+
+Pushbutton
+
+VCCIO
+CRESET_N
+
+DQ0
+
+CDI0 (1)(2)
+
+CS_B
+
+SS_N
+
+TEST_N
+
+Timing
+The FPGA supplies the conﬁguration clock and issues instructions to interact with an
+external ﬂash through the SPI pins. When the FPGA powers up and enters active mode,
+SS_N is a weak pullup. Then, the FPGA:
+1. Starts conﬁguration by driving SS_N low to wake up the external SPI ﬂash.
+2. Issues a release from power-down instruction to wake up the external SPI ﬂash by driving
+the CDI0 pin.
+3. Waits for at least 30 µs.
+4. Issues a fast read command to read the content of SPI ﬂash from address 24h’000000. The
+maximum SPI ﬂash address width for conﬁguration is 24 bits.
+5. Optional: when conﬁguration completes, the FPGA issues a deep power-down instruction
+to force the external SPI ﬂash to enter into deep power-down state.
+
+www.efinixinc.com
+
+15
+
+AN 006: Configuring Trion FPGAs
+
+Figure 5: SPI Active (x1) Configuration
+VCC, VCCA_XX
+VCCAUX, VCCIO
+CRESET_N RC
+CRESET_N Monitor
+tCRESET_N
+
+CSI
+TEST_N
+CBSEL[n-1:0]
+CBUS[n-1:0]
+
+tDMIN
+User Mode
+
+tCRESET_N
+
+tDMIN
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+User Mode
+
+User Mode
+
+SPI
+Channel
+
+SS_N
+CCK
+CDI0
+CDI1
+
+JTAG
+Channel
+
+See detailed view
+
+TCK
+TMS
+TDI
+TDO
+
+See detailed view
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+See detailed view
+
+CSO
+CDONE
+
+See detailed view
+User Mode
+
+Power Up
+
+Programming (Initial)
+
+User Mode
+
+User Mode
+
+Programming (Subsequent)
+
+User Mode
+
+Notes:
+
+SPI
+Channel
+
+Figure 6: SPI Active (x1) Configuration (Detailed View)
+SS_N
+CCK
+CDI0
+CDI1
+
+User Mode
+User Mode
+Wake Up
+
+Read
+
+SA
+
+User Mode
+
+Dummy
+Header
+
+D
+
+D
+
+D
+
+D
+
+User Mode
+
+CSO
+CDONE
+
+User Mode
+
+Programming
+
+Legend:
+SA: Start Address
+
+max 1us
+
+tUSER
+
+User Mode
+
+D: Data
+
+Note: The waveforms are in control block perspective without any optional external pull-up or pull-down
+resistor connected.
+Note: Refer to "Power-up Sequence" in the Trion® data sheet for power-up details.
+Learn more: Refer to the Trion® FPGA data sheet for timing specifications.
+Important: Only a single configuration channel can be activated as running either SPI active and JTAG
+at the same time can result in configuratin failure. Therefore, JTAG pins must be inactive during SPI active
+configuration.
+
+www.efinixinc.com
+
+16
+
+AN 006: Configuring Trion FPGAs
+
+SPI Active Mode for SIP Packages
+Trion® FPGAs in QFP100F3 packages are a system-in-package (SIP) that includes an internal
+SPI ﬂash that you can use to store conﬁguration bitstreams. However, you can still use an
+external SPI ﬂash to store the conﬁguration bitstreams.
+Depending on the setup, you must observe the following pin connection requirements in
+addition to the connections shown in Connection Examples on page 13.
+Figure 7: Connections between FPGA and SPI Flash Inside the QFP100F3 Package
+QFP100F3
+GPIOL_00_SS_N
+
+SS_N
+
+GPIOL_01_CCK
+
+CCK
+
+GPIOL_08_CDI0
+
+CDI0
+
+GPIOL_09_CDI1
+
+CDI1
+
+GPIOL_12_CDI2
+
+CDI2
+
+GPIOL_13_CDI3
+
+CDI3
+
+SPI_CS_N
+
+CS_N
+
+T20
+
+CLOCK
+MOSI
+MISO
+
+SPI Flash
+
+WP_N
+HOLD_N
+
+www.efinixinc.com
+
+17
+
+AN 006: Configuring Trion FPGAs
+
+Configuration with Internal Flash
+For most use cases, Eﬁnix recommends using the internal ﬂash if you have only one or two
+conﬁguration images. You can remove the external SPI ﬂash connections if your user data
+is small enough that it can be stored in the internal SPI ﬂash after storing the conﬁguration
+images.
+Connecting:
+• SS_N to SPI_CS_N
+• GPIO to SPI Flash CS_B
+to allow:
+• conﬁguration with internal SPI ﬂash
+• user data storage in external SPI ﬂash.
+Figure 8: Configuration with Internal Flash
+x1 Mode
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+SPI Serial
+Flash
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Trion FPGA
+(Active Mode)
+CSI
+CCK(1)
+
+SCK
+
+CDONE
+
+CBUS0
+CBUS1
+CBUS2
+SDO
+
+CDI1(1)
+VCCIO
+VCCIO
+
+VCCIO
+VCCIO
+
+Pushbutton
+CRESET_N
+
+SDI
+
+CDI0(1)
+
+CS_B
+
+SS_N
+
+VCCIO
+
+TEST_N
+
+SPI_CS_N
+GPIO
+
+Note: (1) External pull-up is optional unless required by an external load.
+
+www.efinixinc.com
+
+18
+
+AN 006: Configuring Trion FPGAs
+
+Configuration with External Flash
+You will need to conﬁgure external ﬂash if you have three or more conﬁguration images
+that exceeds the capacity of the internal SPI ﬂash. You can remove the connection between
+SPI_CS_N and GPIO if the external SPI ﬂash capacity is large enough for your application to
+free up the GPIO.
+Connecting:
+• SS_N to SPI Flash CS_B
+• GPIO to SPI_CS_N
+to allow:
+• conﬁguration with external SPI ﬂash
+• user data storage in internal SPI ﬂash.
+Figure 9: Configuration with External Flash
+x1 Mode
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+SPI Serial
+Flash
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Trion FPGA
+(Active Mode)
+CSI
+CCK(1)
+
+SCK
+
+CDONE
+
+CBUS0
+CBUS1
+CBUS2
+SDO
+
+CDI1(1)
+VCCIO
+VCCIO
+
+VCCIO
+VCCIO
+
+Pushbutton
+CRESET_N
+
+SDI
+
+CDI0(1)
+
+CS_B
+
+SS_N
+
+VCCIO
+
+TEST_N
+
+SPI_CS_N
+GPIO
+
+Note: (1) External pull-up is optional unless required by an external load.
+
+Table 9: Additional Connection Requirements for SIP Packages
+Configuration Setup
+
+SPI_CS_N Pin
+
+External Flash Chip Select Pin
+
+Configure with internal flash only
+
+Connect to Trion SS_N pin
+
+Not applicable
+
+Configure with internal flash
+
+Connect to Trion SS_N pin
+
+Connect any Trion® GPIO pin
+
+Configure with external flash
+
+Connect any Trion® GPIO pin
+
+Connect to Trion® SS_N pin
+
+®
+®
+
+www.efinixinc.com
+
+19
+
+AN 006: Configuring Trion FPGAs
+
+SPI Active Mode without CSI
+Trion® FPGAs in smaller pin count packages, such as the WLCSP80 and BGA169, may not
+have the CSI signals bonded out. This pinout limits your programming options. Without
+CSI, you cannot use cascade conﬁguration.
+The schematics for programming without CSI are the same as the regular SPI active
+schematics except that you do not connect the CSI signal.
+Important: Daisy-chain configuration is not supported in packages without CSI.
+
+Clocking
+An internal oscillator generates the internal clocks the FPGA uses during conﬁguration.
+In SPI active conﬁguration mode, conﬁguration starts operating at the default frequency
+(10 MHz) and then switches to the user-selected clock to minimize conﬁguration time
+(assuming the SPI ﬂash device supports the faster fMAX).
+You set the conﬁguration clock frequency in the Eﬁnity® software.
+Table 10: Internal Oscillator Clock Settings
+SPI Clock Divider
+
+Frequency (MHz)
+
+DIV4
+
+20
+
+DIV8
+
+10
+
+www.efinixinc.com
+
+20
+
+AN 006: Configuring Trion FPGAs
+
+SPI Passive Mode
+In passive mode, the FPGA receives the conﬁguration clock and data from an external active
+module, such as an external microprocessor or microcontroller. This mode supports a data
+width of up to 32 bits.
+Learn more: Refer to the Trion® device data sheet for the widths your device supports.
+
+Design considerations are similar to active conﬁguration except CCK must be driven from an
+external clock source. Each conﬁguration image contains a synchronization pattern. When
+the Trion® FPGA detect the synchronization pattern, it begins conﬁguration. The external
+active device must supply data continuously on every clock until conﬁguration ends.
+Note: Efinix recommends that you use the same VCCIO on the banks of all configuration pins.
+
+Connection Examples
+These examples show SPI passive x1 and x32 modes. .
+Learn more: Refer to Trion Hardware Design Checklist and Guidelines for the detailed connection
+requirements.
+
+Figure 10: Passive (x1)
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+
+VCCIO
+Configuration
+Memory Source
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+Trion FPGA
+(Passive Mode)
+CBUS0
+
+TEST_N
+
+CBUS1
+
+Microprocessor
+
+CBUS2
+
+CLOCK
+
+CCK (1)
+
+DATA
+
+CDI0 (1)
+
+CDONE
+
+CDONE
+CSI
+SS_N (2)
+
+CS
+VCCIO
+Pushbutton
+
+GPIO
+
+CRESET_N
+
+Note: The microprocessor might disable either CS or CLOCK due to firmware latency.
+Important: You must complete the bitsteam transmission before enabling the CS of
+other devices sharing the same SPI bus.
+
+www.efinixinc.com
+
+21
+
+AN 006: Configuring Trion FPGAs
+
+You cannot disable the conﬁguration by driving either SS_N to high or CSI to low. You
+have to complete the bit stream transmission before communicating with other devices on
+the same SPI bus. The waveform as shown in Figure 11: Supported SPI Waveform on
+page 22 results in successful conﬁguration. While the waveform as shown in Figure 12:
+Unsupported SPI Waveform on page 22 results in conﬁguration failure.
+Figure 11: Supported SPI Waveform
+Complete bitstream transmission before activating other devices on the same SPI bus.
+Efinix FPGA SS_N
+Other device CS_B
+CCK
+CDONE
+
+Figure 12: Unsupported SPI Waveform
+Interleaving the bitstream transmission and communication with other devices on the same SPI bus.
+Efinix FPGA SS_N
+Other device CS_B
+CCK
+CDONE
+
+Table 11: Bitstream Bits in Series
+CBUS
+
+Byte Order
+
+Bit Order
+
+Cycle 1
+
+Byte 0
+
+Bit 7 (MSB)
+
+Cycle 2
+
+Bit 6
+
+Cycle 3
+
+Bit 5
+
+Cycle 4
+
+Bit 4
+
+Cycle 5
+
+Bit 3
+
+Cycle 6
+
+Bit 2
+
+Cycle 7
+
+Bit 1
+
+Cycle 8
+
+Bit 0 (LSB)
+
+Cycle 9
+
+Byte 1
+
+Bit 7 (MSB)
+
+Cycle 10
+
+Bit 7
+
+Cycle 11
+
+Bit 5
+
+Cycle 12
+
+Bit 4
+
+Cycle 13
+
+Bit 3
+
+Cycle 14
+
+Bit 2
+
+Cycle 15
+
+Bit 1
+
+Cycle 16
+
+Bit 0 (LSB)
+
+www.efinixinc.com
+
+22
+
+AN 006: Configuring Trion FPGAs
+
+Figure 13: Passive (x32)
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+Configuration
+Memory Source
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Trion FPGA
+(Passive Mode)
+CBUS0 TEST_N
+CBUS1
+
+Microprocessor
+
+CBUS2
+
+CLOCK
+
+CCK (1)
+
+32-bit System Bus
+
+DATA
+
+CDI[31:0] (1)
+
+CDONE
+
+CDONE
+CSI
+
+CS
+
+SS_N (2)
+VCCIO
+Pushbutton
+
+RESET
+
+CRESET_N
+
+Table 12: Bitstream Bytes Packed into 32 bit Parallel Bus
+CBUS 31
+Cycle 1
+
+24 23
+
+Bit 7
+(MSB)
+
+Bit 0
+(LSB)
+
+Bit 7
+(MSB)
+
+Byte 0
+Cycle 2
+
+Bit 7
+(MSB)
+
+Bit 0
+(LSB)
+
+16 15
+Bit 0
+(LSB)
+
+Bit 7
+(MSB)
+
+Byte 1
+Bit 7
+(MSB)
+
+Byte 4
+
+Bit 0
+(LSB)
+
+8
+Bit 0
+(LSB)
+
+7
+Bit 7
+(MSB)
+
+Byte 2
+Bit 7
+(MSB)
+
+Byte 5
+
+Bit 0
+(LSB)
+
+0
+Bit 0
+(LSB)
+
+Byte 3
+Bit 7
+(MSB)
+
+Byte 6
+
+Bit 0
+(LSB)
+
+Byte 7
+
+Table 13: Bitstream Bytes Packed into 16 bit Parallel Bus
+CBUS
+Cycle 1
+
+15
+
+8 7
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+
+0
+Bit 7 (MSB)
+
+Byte 0
+Cycle 2
+
+Bit 7 (MSB)
+
+Byte 1
+Bit 0 (LSB)
+
+Bit 7 (MSB)
+
+Byte 2
+Cycle 3
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+
+Bit 7 (MSB)
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 5
+
+Bit 0 (LSB)
+Byte 6
+
+Bit 0 (LSB)
+Byte 3
+
+Byte 4
+Cycle 4
+
+Bit 0 (LSB)
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 7
+
+www.efinixinc.com
+
+23
+
+AN 006: Configuring Trion FPGAs
+
+Table 14: Bitstream Bytes Packed into 8 bit Parallel Bus
+CBUS
+
+7
+
+0
+
+Cycle 1
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 0
+
+Cycle 2
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 1
+
+Cycle 3
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 2
+
+Cycle 4
+
+Bit 7 (MSB)
+
+Bit 0 (LSB)
+Byte 3
+
+Table 15: Bitstream Bits Packed into 4 bit Parallel Bus
+CBUS
+
+Byte
+Order
+
+3
+
+2
+
+1
+
+0
+
+Cycle 1
+
+Byte 0
+
+Bit 7 (MSB)
+
+Bit 6
+
+Bit 5
+
+Bit 4
+
+Bit 3
+
+Bit 2
+
+Bit 1
+
+Bit 0 (LSB)
+
+Bit 7 (MSB)
+
+Bit 6
+
+Bit 5
+
+Bit 4
+
+Bit 3
+
+Bit 2
+
+Bit 1
+
+Bit 0 (LSB)
+
+Cycle 2
+Cycle 3
+Cycle 4
+
+Byte 1
+
+Table 16: Bitstream Bits Packed into 2 bit Parallel Bus
+CBUS
+
+Byte Order
+
+1
+
+0
+
+Byte 0
+
+Bit 7 (MSB)
+
+Bit 6
+
+Cycle 2
+
+Bit 5
+
+Bit 4
+
+Cycle 3
+
+Bit 3
+
+Bit 2
+
+Cycle 4
+
+Bit 1
+
+Bit 0 (LSB)
+
+Bit 7 (MSB)
+
+Bit 6
+
+Cycle 6
+
+Bit 5
+
+Bit 4
+
+Cycle 7
+
+Bit 3
+
+Bit 2
+
+Cycle 8
+
+Bit 1
+
+Bit 0 (LSB)
+
+Cycle 1
+
+Cycle 5
+
+Byte 1
+
+www.efinixinc.com
+
+24
+
+AN 006: Configuring Trion FPGAs
+
+Timing
+The microprocessor or microcontroller supplies the conﬁguration clock and controls the
+reset signal. The microprocessor or microcontroller must hold CRESET_N low for a duration
+of tCRESET_N and then release it to start the SPI passive conﬁguration. After tDMIN, the Trion®
+FPGA samples the synchronization pattern and begins conﬁguration.
+Figure 14: SPI Passive (x1, Mode 3) Configuration
+VCC, VCCA_XX
+VCCAUX, VCCIO
+CRESET_N RC
+CRESET_N Monitor
+tCRESET_N
+
+SPI
+Channel
+
+SS_N
+CCK
+CDI0
+
+JTAG
+Channel
+
+CSI
+TEST_N
+CBUS[n-1:0]
+
+TCK
+TMS
+TDI
+TDO
+
+tDMIN
+
+tCRESET_N
+
+tDMIN
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+See detailed view
+
+User Mode
+See detailed view
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+See detailed view
+
+CSO
+CDONE
+
+See detailed view
+User Mode
+
+Power Up
+
+User Mode
+
+User Mode
+
+Programming (Initial)
+
+User Mode
+
+User Mode
+
+Programming (Subsequent)
+
+User Mode
+
+NOTES:
+1. CRESET_N RC refers to the CRESET_N pin connected to an RC circuit that delays the voltage supplied to the pin after power-up.
+2. CRESET Monitor refers to the CRESET_N pin connected to a pull-up resistor, where the supplied voltage is the same as VCCIO.
+
+Figure 15: SPI Passive (x1, Mode 3) Configuration (Detailed View)
+SPI
+Channel
+
+SS_N
+CCK
+CDI0
+
+User Mode
+User Mode
+Header
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+D
+
+CSO
+CDONE
+
+D
+
+User Mode
+
+min 100
+CCK cycles
+
+User Mode
+
+Programming
+
+max
+1us
+
+tUSER
+
+User Mode
+
+LEGEND:
+D: Data
+
+Note: Refer to "Power-up Sequence" in the Trion® data sheet for power-up details.
+Important: You can only use a single configuration channel (SPI or JTAG) at the same time. Using both at
+the same time can result in configuration failure. Therefore, JTAG pins must be inactive during SPI passive
+configuration.
+
+www.efinixinc.com
+
+25
+
+AN 006: Configuring Trion FPGAs
+
+• Refer to Figure 11: Supported SPI Waveform on page 22 for the supported waveform.
+• The waveform shows the perspective from the control block without any optional
+external pull-up or pull-down resistors connected.
+• CDI input data is clocked by CCK. To prevent conﬁguration failure, CCK must stop
+toggling if the bitstream data becomes invalid. You must resume with the next bitstream
+data before stopping to continue the conﬁguration.
+• CSI must stay high during conﬁguration.
+• It is recommended that SS_N remain low during conﬁguration. Sometimes, however, an
+SPI Master might release the SS_N to high during ﬁrmware latency. Refer to Figure 11:
+Supported SPI Waveform on page 22 for the supported waveform.
+• Eﬁnix does not recommend connecting multiple slaves on the same SPI bus to prevent
+signal contention.
+• Refer to the data sheet for timing speciﬁcations.
+Important: To ensure successful configuration, the microprocessor must continue to supply the
+configuration clock to the Trion® FPGA for at least 100 cycles after sending the last configuration data.
+Learn more: Refer to the Trion® FPGA data sheet for timing specifications.
+
+Refer to the AN 035: SPI Passive Programming with Raspberry Pi for a SPI passive programming example
+design.
+
+www.efinixinc.com
+
+26
+
+AN 006: Configuring Trion FPGAs
+
+SPI Passive Mode for SIP Packages
+You can start SPI Passive conﬁguration in QFP100F3 packages by pulling CDI3 low to
+prevent unexpected programming of the internal SPI Flash during SPI Passive conﬁguration.
+Figure 16: Configuration with Microprocessor in SPI Passive with Direct Access to
+Internal Flash
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+
+VCCIO
+Configuration
+Memory Source
+
+VCCIO
+
+VCCIO
+VCCIO
+
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+Trion FPGA
+(Passive Mode)
+
+CBUS0
+
+TEST_N
+
+CBUS1
+Microprocessor
+
+CBUS2
+
+CLOCK
+
+CCK(2)
+
+DATA
+
+CDI0(2)
+
+CDONE
+
+CDONE
+
+CS
+
+VCCIO
+
+GPIO
+
+SPI_CS_N
+
+CDI3
+
+VCCIO
+
+GPIO
+
+CSI(1)
+SS_N
+
+Pushbutton
+
+CRESET_N
+
+Important: You are strongly advised against sharing the same SPI bus with other
+devices if you also intend to use the internal SPI flash for user data storage. Sharing the
+same SPI bus in this manner can result in signal contention due to the microprocessor
+and FPGA accessing the bus simultaneously.
+
+You need to drive CRESET_N low and CDI3 high with the microprocessor if you intend to
+update the SPI ﬂash data through the microprocessor in user mode.
+Note: Refer to Using FPGA, MCU, and SPI Flash Devices Together on page 35 for
+more information.
+
+www.efinixinc.com
+
+27
+
+AN 006: Configuring Trion FPGAs
+
+SPI Passive Mode without CSI or CBUS2
+Trion® FPGAs in smaller pin count packages, such as the WLCSP80 and BGA169, may not
+have the CSI or CBUS2 signals bonded out. This pinout limits your programming options.
+• Without CSI, you cannot use cascade conﬁguration.
+• Without CBUS2 you can still use CBUS0 and CBUS1 to program using the passive serial
+x1, x2, and x4 modes.
+The following ﬁgures show the schematics for programming without CSI or CBUS2.
+Figure 17: Passive (x1) without CSI or CBUS2
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+Configuration
+Memory Source
+
+VCCIO VCCIO
+
+VCCIO
+VCCIO
+
+VCCIO
+Trion FPGA
+(Passive Mode)
+CBUS0
+
+TEST_N
+
+CBUS1
+
+Microprocessor
+CLOCK
+
+CCK(1)
+
+DATA
+
+CDI0(1)
+
+CDONE
+
+CDONE
+
+CS
+
+SS_N(2)
+VCCIO
+Pushbutton
+
+RESET
+
+CRESET_N
+
+www.efinixinc.com
+
+28
+
+AN 006: Configuring Trion FPGAs
+
+Figure 18: Passive (x2) without CSI or CBUS2
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+Configuration
+Memory Source
+
+VCCIO
+
+VCCIO
+
+VCCIO
+Trion FPGA
+(Passive Mode)
+
+VCCIO
+
+CBUS0 TEST_N
+CBUS1
+
+Microprocessor
+CLOCK
+
+2 bit System Bus
+
+DATA
+
+CCK (1)
+CDI[1:0] (1)
+
+CDONE
+
+CDONE
+
+CS
+
+SS_N (2)
+VCCIO
+Pushbutton
+
+RESET
+
+CRESET_N
+
+www.efinixinc.com
+
+29
+
+AN 006: Configuring Trion FPGAs
+
+JTAG Mode
+The JTAG serial conﬁguration mode is popular for prototyping and board testing. The fourpin JTAG boundary-scan interface is commonly available on board testers and debugging
+hardware.
+This section describes the JTAG conﬁguration mode, for JTAG boundary-scan testing, refer
+to AN 021: Performing Boundary-Scan Testing on Trion FPGAs.
+Learn more: Refer to the following web sites for more information about the JTAG interface:
+http://ieeexplore.ieee.org/document/6515989/
+https://en.wikipedia.org/wiki/JTAG
+
+Table 17: Supported Trion JTAG Instructions
+Instruction
+
+Binary
+Code [3:0]
+
+Description
+
+SAMPLE/PRELOAD
+
+0010
+
+Enables the boundary-scan SAMPLE/PRELOAD operation
+
+EXTEST
+
+0000
+
+Enables the boundary-scan EXTEST operation
+
+BYPASS
+
+1111
+
+Enables BYPASS
+
+IDCODE
+
+0011
+
+Enables shifting out the IDCODE
+
+PROGRAM
+
+0100
+
+JTAG configuration
+
+ENTERUSER
+
+0111
+
+Changes the FPGA into user mode.
+
+JTAG_USER1
+
+1000
+
+Connects the JTAG User TAP 1.
+
+JTAG_USER2
+
+1001
+
+Connects the JTAG User TAP 2.
+
+JTAG_USER3
+
+1010
+
+Connects the JTAG User TAP 3.
+
+JTAG_USER4
+
+1011
+
+Connects the JTAG User TAP 4.
+
+Learn more: Refer to AN 038: Programming with an MCU and the JTAG Interface for more information
+about programming Efinix® FPGAs with a microcontroller using JTAG mode.
+
+Connect the FPGA pins as shown in the following diagrams.
+
+www.efinixinc.com
+
+30
+
+AN 006: Configuring Trion FPGAs
+
+Figure 19: JTAG Programming for T4, T8, T13QFP100F3, T13BGA256,
+T20QFP100F3, T20QFP144, and T20BGA256 FPGAs
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+VCCIO
+VCCIO
+
+JTAG
+Module
+
+FPGA
+CSI
+
+TMS
+
+TEST_N
+
+TDO
+
+TCK
+JTAG
+Header
+
+TDI
+SS_N
+
+CRESET_N
+
+Figure 20: JTAG Programming for T13BGA169, T20WLCSP80, and T20BGA169
+FPGAs
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+JTAG
+Module
+
+FPGA
+TMS
+TCK
+TDO
+
+TEST_N
+
+JTAG
+Header
+
+TDI
+CRESET_N
+
+SS_N
+
+Figure 21: JTAG Programming for T20BGA324, T20BGA400, T35, T55, T85, and
+T120 FPGAs
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+VCCIO
+FPGA
+
+VCCIO
+CSI
+
+TMS
+
+TEST_N
+
+TDO
+
+JTAG
+Module
+
+TCK
+TDI
+
+JTAG Header
+
+The CRESET_N signal needs to be deasserted before JTAG conﬁguration begins.
+Only for T4, T8, T13, T20WLCSP80, T20QFP100F3,T20QFP144, T20BGA256, and
+T20BGA169 FPGAs, drive CRESET_N low, and then high prior to JTAG conﬁguration. When
+conﬁguration ends, the JTAG host issues the ENTERUSER instruction to the FPGA. After
+CDONE goes high and the FPGA receives the ENTERUSER instruction, the FPGA waits for
+tUSER to elapse, and then it goes into user mode.
+
+www.efinixinc.com
+
+31
+
+AN 006: Configuring Trion FPGAs
+
+Note: The FPGA may go into user mode before tUSER has elapsed. Therefore, you should keep the system
+interface with the FPGA in reset until tUSER has elapsed.
+Important: JTAG configuration is not supported in the F49 package.
+
+Figure 22: JTAG Programming Waveform (T4, T8, T13, T20W80, T20Q100F3, T20Q144, T20F256, and
+T20F169 FPGAs)
+VCC, VCCA_XX
+VCCAUX, VCCIO
+CRESET_N RC
+CRESET_N Monitor
+tCRESET_N
+
+JTAG
+Channel
+
+TCK
+TMS
+TDI
+TDO
+
+SPI
+Channel
+
+CSI
+TEST_N
+
+SS_N
+CCK
+CDI[N-1:0]
+
+tDMIN
+
+tCRESET_N
+
+tDMIN
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+See detailed view
+
+See detailed view
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+See detailed view
+
+CSO
+CDONE
+
+See detailed view
+User Mode
+
+Power Up
+
+Programming (Initial)
+
+User Mode
+
+User Mode
+
+Programming (Subsequent)
+
+User Mode
+
+Figure 23: JTAG Programming Waveform (T20F324, T20F400, T35, T55, T85, and T120 FPGAs)
+VCC, VCCA_XX
+VCCAUX, VCCIO
+CRESET_N RC
+CRESET_N Monitor
+tCRESET_N
+
+CSI
+TEST_N
+
+tDMIN
+User Mode
+
+JTAG
+Channel
+SPI
+Channel
+
+See detailed view
+
+TCK
+TMS
+TDI
+TDO
+SS_N
+CCK
+CDI[N-1:0]
+
+User Mode
+
+User Mode
+
+See detailed view
+
+CSO
+CDONE
+Power Up
+
+Programming (Initial)
+
+User Mode
+
+See detailed view
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+User Mode
+
+See detailed view
+
+Programming (Subsequent)
+
+User Mode
+
+User Mode
+
+NOTES:
+1. CRESET_N RC refers to the CRESET_N pin connected to an RC circuit that delays the voltage supplied to the pin after power-up.
+2. CRESET Monitor refers to the CRESET_N pin connected to a pull-up resistor, where the supplied voltage is the same as VCCIO.
+
+www.efinixinc.com
+
+32
+
+AN 006: Configuring Trion FPGAs
+
+Figure 24: JTAG Programming (All Trion FPGAs) (Detailed View)
+JTAG
+Channel
+
+TCK
+TMS
+TDI
+TDO
+
+Shift DR
+P
+
+Shift DR
+D0
+
+D1
+
+D2
+
+D3
+
+D4
+
+D5
+
+D0
+
+D1
+
+D2
+
+D3
+
+D4
+
+Shift IR
+Dn-2 Dn-1
+
+D5
+
+Dn-2 Dn-1
+
+1 TCK latency
+
+CSO
+CDONE
+
+EU
+min 100
+TCK cycles
+User Mode
+
+tUSER
+Programming
+
+User Mode
+
+Legend:
+P: PROGRAM EU: ENTERUSER
+
+Note: Refer to "Power-up Sequence" in the Trion® data sheet for power-up details.
+Note: Refer to the data sheet for timing specifications.
+Important: You can only use a single configuration channel (SPI or JTAG) at the same time. Using both
+at the same time can result in configuration failure. Therefore, the SPI bus must be inactive during JTAG
+configuration.
+Note: The waveform is shown from the control block perspective and it is required to connect to weak
+internal pull-up resistors.
+
+Design Considerations
+• Because the TCK and TMS signals connect devices in the JTAG chain, they must have good
+signal quality.
+• TCK should transition monotonically at the receiving devices and should be terminated
+correctly. Poor TCK quality can limit the maximum frequency you can use for
+conﬁguration.
+• Buﬀer TMS and TCK so they have suﬃcient drive strength at all receiving devices.
+• Ensure that the logic high voltage is compatible with all devices in the JTAG chain.
+• If your chain contains devices from diﬀferent vendors, you might need to drive optional
+JTAG signals, such as TRST and enables.
+• For Trion T4, T8, T13, T20 (WLCSP80, QFP100F3, QFP144, BGA256, and BGA169
+packages) FPGAs:
+— Drive CRESET_N low and then high prior to JTAG conﬁguration.
+— When using the Eﬁnity programmer to perform JTAG conﬁguration, the CRESET_N
+and SS_N pins are used in addition to the standard JTAG pins. If the JTAG-SPI
+bridge image has already been conﬁgured, neither CRESET_N or SS_N are required.
+However, you will need to establish both CRESET_N and SS_N connections if using
+"Auto conﬁgure JTAG Bridge Image" in SPI ﬂash programming through the JTAG
+bridge (see ﬁgure below).
+
+www.efinixinc.com
+
+33
+
+AN 006: Configuring Trion FPGAs
+
+Figure 25: CREST_N and SS_N are Required if Using Auto Configure JTAG Bridge Image
+
+Learn more: Refer to JTAG Programming Connections on page 56 for JTAG configuration connection
+examples and JTAG Programming on page 67 for details about JTAG programming using the Efinity
+Programmer.
+Learn more: Refer to the Virtual I/O Debug Core section in the Efinity Software User Guide for more
+information about JTAG User TAP interface.
+
+www.efinixinc.com
+
+34
+
+AN 006: Configuring Trion FPGAs
+
+Using FPGA, MCU, and SPI Flash Devices
+Together
+Most applications include some combination of FPGA, MCU, and SPI ﬂash in the system
+design. How the FPGA, MCU, and SPI ﬂash connected aﬀect what conﬁguration is
+supported and the conﬁguration sequence.
+
+MCU with Separate SPI Bus Connections
+In a system where the MCU relies on separate SPI buses connected to the SPI ﬂash and
+FPGA, respectively:
+• FPGA images can be stored in the SPI ﬂash so that the MCU can conﬁgure the FPGA
+through SPI passive mode.
+• MCU can transmit the user data stored in SPI ﬂash to the FPGA in user mode.
+Figure 26: MCU with Separate SPI Bus Connections to SPI Flash and FPGA
+
+SPI
+Flash
+
+CS_B
+SCK
+SDI
+SDO
+
+CS
+CS
+CLOCK
+CLOCK
+MCU
+Data
+Data
+Data
+Data
+GPIO
+
+SS_N
+CCK
+FPGA
+CDI0
+CDI1
+CSI
+CRESET_N
+
+FPGA with Separate SPI Bus Connections
+In a system where the FPGA relies on separate SPI buses connected to the SPI ﬂash and
+MCU, respectively, note the following guidance:
+• SS_N, CCK, CDI0, and CDI1 are connected to the SPI ﬂash with GPIO pins connecting
+to the MCU:
+— SPI active applies.
+— SPI ﬂash can be used for both FPGA images and user data storage.
+Figure 27: FPGA Configured with SPI Bus Connections to SPI Flash and GPIO
+Emulated MCU SPI Bus Connections to MCU
+
+SPI
+Flash
+
+CS_B
+SCK
+SDI
+SDO
+
+SS_N
+CCK
+CDI0
+CDI1
+CSI
+
+GPIO
+GPIO
+FPGA
+GPIO
+GPIO
+CRESET_N
+
+CS
+CLOCK
+Data0
+MCU
+Data1
+GPIO
+
+www.efinixinc.com
+
+35
+
+AN 006: Configuring Trion FPGAs
+
+• SS_N, CCK, and CDI0 are connected to MCU with GPIOs connecting to SPI ﬂash:
+— Only SPI passive through MCU applies.
+— SPI ﬂash can ONLY be used for data storage.
+Figure 28: FPGA Configured with SPI Bus Connections to MCU and GPIO Emulated
+MCU SPI Bus Connections to SPI Flash
+SPI
+Flash
+
+CS_B
+SCK
+SDI
+SDO
+
+GPIO
+GPIO
+GPIO
+GPIO
+
+SS_N
+CCK
+FPGA
+CDI0
+CRESET_N
+
+CS
+CLOCK
+MCU
+DATA0
+GPIO
+
+Shared SPI Bus Connections
+• Per the SPI protocol, the SPI master sets the CS_B/SS_N pin to a tri-state with external
+pull up to disable the SPI bus. In this conﬁguration, the FPGA shares the SPI bus between
+the SPI ﬂash and the MCU; therefore, the system defaults to SPI active conﬁguration after
+power up.
+• Whether the system is in SPI active or SPI passive mode depends upon the state of the
+SS_N pin when CRESET_N is driven low.
+• If there are no valid FPGA images stored in the SPI ﬂash (e.g., ﬁrst power up of a fresh
+system, SPI ﬂash for user data storage only, etc.), the FPGA keeps driving the SPI bus.
+Therefore, to ensure SPI bus access from the MCU, either to program the SPI ﬂash or to
+enter SPI passive conﬁguration, the MCU should:
+— Drive SS_N to low
+— Drive CRESET_N to low.
+Figure 29: Shared SPI Bus Connections
+SS_N
+CCK
+FPGA
+CDI0
+CDI1
+CSI
+CRESET_N
+
+SPI
+Flash
+
+CS
+CLOCK
+Data0 MCU
+Data1
+GPIO
+
+CS_B
+SCK
+SDI
+SDO
+
+To program the SPI ﬂash or to enter SPI passive conﬁguration, the oﬀ-chip MCU should:
+• Drive SS_N to low
+• Drive CRESET_N to low.
+Note: You can treat the T20Q100F3 SIP with SPI bus connected to the MCU as a
+system in which the SPI bus is shared between the FPGA, SPI flash, and MCU.
+Note: Refer to Support for Multiple Images on page 46 for valid bitstream
+searching behavior.
+Note: You can confirm the status of the FPGA by connecting the MCU to CDONE and
+NSTATUS. This connection helps you check whether the SPI bus can reliably determine
+when it needs to drive CRESET_N to prevent unexpected system interrupts. Refer to
+Verifying Configuration on page 77 for more information.
+
+www.efinixinc.com
+
+36
+
+AN 006: Configuring Trion FPGAs
+
+Note: If you have an off-chip MCU, the configuration advice is the same as Figure 31:
+Flash Programming Board Setup on page 39 with an SPI header.
+
+Figure 30: Shared SPI Bus Connections with Off-Chip MCU through SPI Header
+SS_N
+CCK
+FPGA CDI0
+CDI1
+CSI
+CRESET_N
+
+SPI
+Flash
+
+SPI
+Header
+
+MCU
+
+CS_B
+SCK
+SDI
+SDO
+
+Learn more: Refer to Flash Programming Modes on page 38 for further advice.
+
+www.efinixinc.com
+
+37
+
+AN 006: Configuring Trion FPGAs
+
+Flash Programming Modes
+The following table shows the methods you can use to program the conﬁguration bitstream
+into the ﬂash device on your board. Although you can program the ﬂash directly using the
+SPI interface, this method requires that you have a SPI header on your board or use an FDTI
+chip. Therefore, Eﬁnix recommends that you use a JTAG bridge, because that method only
+requires a JTAG header, which you would typically have on your board for other purposes.
+Table 18: Flash Programming Modes
+Mode
+SPI Active (serial/parallel)
+
+Description
+Use the Efinity Programmer and a cable connected to a SPI header on the board.
+
+SPI Active using JTAG Bridge A improved version of the SPI Active using JTAG Bridge (Legacy) mode with a
+(New)
+faster flash programming time.
+Learn more: Refer to Program using a JTAG Bridge on page 69 for more information.
+
+www.efinixinc.com
+
+38
+
+AN 006: Configuring Trion FPGAs
+
+Figure 31: Flash Programming Board Setup
+Board
+
+VCCIO VCCIO VCCIO VCCIO VCCIO VCCIO
+
+Programming
+Module (SPI)
+
+SPI Header
+SPI Flash
+
+FPGA
+
+SCK
+
+CCK (1)
+
+SDO
+
+CDI1 (1)
+
+SDI
+
+CDI0 (1)
+
+CS
+
+SS_N (1)
+
+HOLD
+CRESET_N (1)(2)
+SPI Active (Serial/Parallel)
+
+Notes:
+1) The external pull-up is optional unless required by an external load.
+2) Be sure to hold CRESET_N low to prevent signal contention during SPI flash programming.
+Board
+
+VCCIO VCCIO VCCIO VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Programming
+Module (JTAG)
+JTAG
+
+SPI Flash
+
+Header
+
+FPGA
+
+SCK
+
+CCK (1)
+
+SDO
+
+CDI1 (1)
+
+TCK
+
+SDI
+
+CDI0 (1)
+
+TDO
+
+CS
+
+SS_N (1)
+
+TDI
+
+TMS
+
+Note:
+1) The external pull-up is optional unless required by an external load.
+
+SPI Active using JTAG Bridge (New)
+
+www.efinixinc.com
+
+39
+
+AN 006: Configuring Trion FPGAs
+
+Important: Depending upon your vendor, your flash device may have been programmed in the
+factory. If this is the case, your vendor may have set the Status Register Protect (SRP) bits to protect the
+software and/or hardware, to prevent power supply lock-down, or to otherwise make the device one-time
+programmable. To overcome this issue, you will need to check your device flash specifications and status
+to ensure that it is quad enabled before attempting to re-program the device. The following table outlines
+the various states of the SRP bits.
+
+Table 19: Status Register Protect Bits
+SRP1
+
+SRP2
+
+/WP
+
+Status Register
+
+Description
+
+0
+
+0
+
+X
+
+Software Protection
+
+/WP pin has no control. Following a Write
+Enable instruction, the status register is
+writable, WEL=1.
+
+0
+
+1
+
+0
+
+Hardware Protected
+
+When /WP is low, the status register is locked
+and is unwritable.
+
+0
+
+1
+
+1
+
+Hardware
+Unprotected
+
+When /WP is high, the status register is
+unlocked. A Write Enable instruction will
+make the status register writable, WEL=1.
+
+1
+
+0
+
+X
+
+Power Supply LockDown
+
+The status register is locked and cannot be
+written to again until the next power-up cycle.
+
+1
+
+1
+
+X
+
+One Time Program
+
+The status register is permanently protected.
+
+www.efinixinc.com
+
+40
+
+AN 006: Configuring Trion FPGAs
+
+Power Up
+Power Up Sequence
+Eﬁnix® recommends the following power up sequence when powering Trion® FPGAs:
+Figure 32: Trion® FPGAs without MIPI Power Up Sequence
+VCC
+VCCA_xx
+
+1
+
+Max 10 ms
+
+All VCCIO
+
+2
+
+CRESET_N
+
+3
+
+tCRESET_N
+tDMIN
+
+JTAG
+Configuration
+SPI
+Passive
+
+4
+
+TCK
+TMS
+CCK
+Header and Data
+
+CDI
+
+Figure 33: Trion® FPGAs with MIPI Power Up Sequence
+VCC
+VCCA_xx
+All VCCIO
+VCC12A_MIPI_TX
+VCC12A_MIPI_RX
+VCC25A_MIPI
+CRESET_N
+
+1
+
+Max 10 ms
+2
+
+tMIPI_POWER
+3
+
+4
+
+tCRESET_N
+tDMIN
+
+JTAG
+Configuration
+SPI
+Passive
+
+5
+
+TCK
+TMS
+CCK
+CDI
+
+Header and Data
+
+1. Power up VCC and VCCA_xx ﬁrst.
+2. When VCC and VCCA_xx are stable, power up all VCCIO pins. There is no speciﬁc
+timing delay between the VCCIO pins.
+3. For FPGAs with MIPI: Apply power to VCC12A_MIPI_TX, VCC12A_MIPI_RX, and
+VCC25A_MIPI at least tMIPI_POWER after VCC is stable.
+
+www.efinixinc.com
+
+41
+
+AN 006: Configuring Trion FPGAs
+
+Important: Ensure the power ramp rate is within VCCIO/10 V/ms to 10 V/ms.
+
+4. After all power supplies are stable, hold CRESET_N low for a duration of tCRESET_N
+before asserting CRESET_N from low to high to trigger active SPI programming (the
+FPGA loads the conﬁguration data from an external ﬂash device).
+5. FPGA conﬁguration can begin after there has been a tDMIN minimum delay after
+CRESET_N goes high (see SPI Passive and JTAG for the delay speciﬁcation).
+When you are not using the GPIO, MIPI, DDR or PLL resources, connect the pins as shown
+in the following table.
+Note: Refer to Configuration Timing and MIPI Power Up Timing sections in the Trion® FPGA data sheets
+for timing information.
+
+Power Supply Current Transient
+You may observe an inrush current on the dedicated power rail during power-up. You must
+ensure that the power supplies selected in your board meets the current requirement during
+power-up and the estimated current during user mode. Use the Power Estimator to calculate
+the estimated current during user mode.
+Table 20: Maximum Power Supply Current Transient for VCC
+
+(4)
+(5)
+
+FPGA
+
+Package
+
+Maximum Power Supply
+Current Transient(4)(5) (mA)
+
+T4
+
+All
+
+18
+
+T8
+
+BGA49, BGA81
+
+18
+
+QFP144
+
+35
+
+T13
+
+All
+
+35
+
+T20
+
+WLCSP80, QFP100F3,
+QFP144, BGA169, BGA256
+
+35
+
+BGA324, BGA400
+
+57
+
+T35
+
+All
+
+57
+
+T55
+
+All
+
+200
+
+T85
+
+All
+
+200
+
+T120
+
+All
+
+200
+
+Inrush current for other power rails are not significant in Trion® FPGAs.
+Measured at room temperature.
+www.efinixinc.com
+
+42
+
+AN 006: Configuring Trion FPGAs
+
+Power Up Configuration Circuitry
+Recommendation
+You can use one of the following methods to hold the CRESET_N pin of the Trion® FPGA
+low after the power supplies are stable:
+• Supervisor integrated circuit (IC)
+• Microprocessor or microcontroller
+Important: Do not drive a signal to any Trion® I/O pins before the Trion® FPGA is powered up. Most
+FPGAs have electrostatic discharge (ESD) circuits to protect the devices from ESD events. Driving the I/O
+pins before VCCIO will result in an in-rush current driving the I/Os to a specific voltage through the ESD
+circuit to the VCCIO rail. Trion® FPGAs will remain in configuration mode after power-up if this unexpected
+voltage exists on the CRESET_N due to the improper power-up sequence.
+
+Supervisor IC Circuitry Example
+Assuming that the VCCIO1A is the last power supply to be stable in the system, the
+supervisor IC must hold the CRESET_N pin low for a duration of tRP (reset timeout period)
+after the VCCIO1A reaches the stable threshold.
+Ensure that the tRP of the selected supervisor IC is more than the required tCRESET_N. Refer
+to the supervisor IC vendor for the recommended operating circuitry.
+Figure 34: Supervisor IC Power Up Circuitry
+VCCIO1A
+
+VCC
+
+VCC
+SENSE
+VDD
+
+User
+Trigger
+
+Reset
+
+VCCIO
+
+CRESET_N
+
+MR
+Supervisor IC
+
+Trion FPGA
+
+Note: The user trigger (pushbutton, FTDI module) must be connected to the MR pin of
+the supervisor IC.
+
+www.efinixinc.com
+
+43
+
+AN 006: Configuring Trion FPGAs
+
+Microprocessor or Microcontroller Circuitry Example
+Figure 35: Microprocessor Power Up Circuitry
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+
+VCCIO
+Microprocessor
+
+Trion FPGA
+
+Reset
+
+CRESET_N
+
+The microprocessor or microcontroller must hold the CRESET_N pin low more than the
+required tCRESET_N duration.
+
+Unused Resources and Features
+Table 21: Connection Requirements for Unused Resources
+Unused Resource
+
+Pin
+
+Note
+
+GPIO Bank
+
+VCCIOxx
+
+Connect to either 1.8 V, 2.5 V, or 3.3 V.
+
+PLL
+
+VCCA_PLL
+
+Connect to VCC.
+
+MIPI
+
+VCC12A_MIPI_TX
+
+Connect to VCC (1.2 V).
+
+VCC12A_MIPI_RX
+
+Connect to VCC (1.2 V).
+
+VCC25A_MIPI
+
+Connect to VCC (1.2 V).
+
+VCCIO_DDR
+
+Floating. Leave unconnected.
+
+DDR_VREF
+
+Connect to ground.
+
+DDR
+
+www.efinixinc.com
+
+44
+
+AN 006: Configuring Trion FPGAs
+
+Configuration Sequence
+The Trion® FPGA conﬁguration logic uses the following sequence during conﬁguration:
+1. When CRESET_N returns high (logic 1) after being held low (logic 0), the FPGA samples
+the logical value on its SS_N pin. Like other programmable I/O pins, the SS_N pin has
+an internal pull-up resistor.
+Learn more: Refer to the Trion® data sheet for the pulse width requirements of
+CRESET_N.
+
+2. If the SS_N pin is sampled as a logic 1 (high), the FPGA conﬁgures using the SPI active
+conﬁguration interface.
+3. If the SS_N pin is sampled as a logic 0 (low), the FPGA waits to be conﬁgured from an
+external controller or from another FPGA in SPI active conﬁguration mode using an SPIlike interface.
+Figure 36: Configuration Flow Diagram
+Power Up
+CDONE = 0 when
+CRESET_N = 0
+
+TEST_N = 1
+CDONE = 0
+
+CRESET_N
+rising edge
+detected
+
+no
+
+Holding CRESET low delays
+the start of configuration
+
+yes
+SS_N = 1?
+
+no
+
+Configure in SPI
+Passive Mode
+
+yes
+Configure in SPI Active Mode
+
+CDONE = 1
+
+During tUSER, keep the system
+interface to the FPGA in reset.
+
+tUSER Elapsed?
+
+no
+
+yes
+User Mode
+
+Toggle CRESET_N high to low
+or power cycle the FPGA to
+restart configuration.
+
+CRESET_N = 0?
+
+no
+
+yes
+
+www.efinixinc.com
+
+45
+
+AN 006: Configuring Trion FPGAs
+
+Support for Multiple Images
+When powered up in SPI active mode, the Trion® FPGA defaults to the ﬁrst valid image
+it ﬁnds searching from address 0. If you enable the multi-image feature, you can optionally
+choose from three other images.
+Learn more: To enable the multi-image feature, use the Efinity Programmer to combine multiple images
+into a single hex file. See Program Multiple Images (CBSEL) on page 64 for more information.
+
+During multi-image conﬁguration, the Trion® FPGA monitors the CBSEL[1:0] pin logic
+value when conﬁguration or reconﬁguration begins to determine which bitstream image
+to use. Then, it loads the corresponding image starting from the address speciﬁed in the
+bitstream option bits by sending out a fast read instruction followed by the address.
+For multi-image conﬁguration, the Eﬁnity® software saves the images to the bitstream ﬁle
+with no conﬁguration bits between images by default.
+Note: Some Trion® FPGAs may not support multiple images for all configuration modes. The Supported
+Configuration Modes topic in your data sheet explains which modes the FPGA supports.
+
+Figure 37: Configuration Setup for Multiple Images
+Fast read instruction
+and 24 bit address
+
+CBSEL1
+CBSEL0
+
+Trion
+FPGA
+
+Configuration during
+Power Up
+or Reconfiguration
+
+SPI Flash Device
+CBSEL[1:0] = 00
+
+Address 0
+24’h000000
+
+CBSEL[1:0] = 01
+
+Address 1
+24’hxxxxxx
+
+CBSEL[1:0] = 10
+
+Address 2
+24’hxxxxxx
+
+CBSEL[1:0] = 11
+
+Address 3
+24’hxxxxxx
+
+Note: Efinix recommends you to store image 0 at the 24'h000000 address as Trion® FPGAs always start
+searching for a valid bit stream from the 24'h000000 address.
+
+Connect CBSEL[1:0] for the image you want to use:
+• 00 for image 1
+• 01 for image 2
+• 10 for image 3
+• 11 for image 4
+
+www.efinixinc.com
+
+46
+
+AN 006: Configuring Trion FPGAs
+
+During conﬁguration, the FPGA initially searches for a valid image starting at the memory
+location 0x0000_0000 in the SPI ﬂash. It then proceeds to read the memory location
+based on the CBSEL[1:0] setting. If no valid image is found at that memory location, the
+FPGA continues to search in ascending order until it locates a valid image. For example, if
+CBSEL[1:0] is set to 11 and the SPI ﬂash only contains valid images for 00 and 01, the
+FPGA will load the image from 00. The following table describes valid and invalid images.
+Image Details
+
+Note
+
+Valid image
+
+Configuration performs as expected.
+
+Invalid image
+
+FPGA The FPGA cannot recognize a valid image at the targeted SPI Flash
+address. It continues to search in ascending address and configure with the
+next valid image if any.
+
+Corrupted image
+
+Image is recognized, but the FPGA fails in configuration with
+CDONE = 0 and NSTATUS = 0 to indicate a device mismatch or CRC
+error (except T4, T8 F49, and F81).
+
+Learn more: You can also use the internal reconfiguration feature to reconfigure the FPGA
+with a different image. This feature uses internal logic instead of the CBSEL[1:0] pins. Refer to
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely for details on this
+feature.
+
+www.efinixinc.com
+
+47
+
+AN 006: Configuring Trion FPGAs
+
+Configuring Multiple FPGAs
+If your application uses multiple Trion® FPGAs, you can conﬁgure all of them using a single
+conﬁguration source.
+• FPGAs that use the same conﬁguration ﬁle can be loaded at the same time.
+• FPGAs that use diﬀerent conﬁguration ﬁles (images) can be loaded sequentially, either
+through Trion® FPGAs in a daisy chain, or using external logic.
+For daisy chain conﬁgurations, the Eﬁnity® software includes 2,048 conﬁguration bits
+between images in the bitstream ﬁle.
+Note: You cannot utilize daisy-chain packages that do not have the CSI signal bonded out (such as the
+WLCSP80 and BGA169).
+
+Daisy Chaining with a SPI Flash Device
+In a daisy chain, the FPGA closest to the conﬁguration data source is the most upstream
+FPGA and the FPGA furthest from the source is the most downstream FPGA. The most
+upstream FPGA typically provides the conﬁguration clock. All other FPGAs are in passive
+serial mode.
+Important: Do not connect the NSTATUS pins of multiple FPGAs together when configuring in daisy chain
+configuration.
+
+Figure 38: Serial Daisy Chain Configuration Interface Example
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+Pushbutton
+
+SPI Serial
+Flash
+SCK
+
+SDI
+SDO
+
+FPGA
+(Active Mode)
+
+FPGA
+(Passive Mode)
+
+CSI
+
+CSO
+
+CSI
+
+CCK (1) CDONE
+
+CCK
+
+CBUS0
+
+CBUS0
+
+CBUS1
+
+CBUS1
+
+CBUS2
+
+CBUS2
+
+CDI0 (1)
+
+CDI0
+
+CDI1(1)
+
+CRESET_N
+SS_N
+
+CRESET_N
+CS_B
+
+CSO
+CDONE
+
+VCCIO
+
+SS_N
+TEST_N
+
+TEST_N
+
+Note: 1) The external pull-up is optional unless required by an external load.
+
+www.efinixinc.com
+
+48
+
+AN 006: Configuring Trion FPGAs
+
+Figure 39: Parallel Daisy Chain Configuration (x4) Interface Example
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+
+VCCIO
+
+VCCIO
+VCCIO
+VCCIO
+VCCIO
+
+VCCIO
+
+Pushbutton
+
+SPI Serial
+Flash
+
+Trion FPGA
+(Active Mode)
+CSI
+
+SCK
+
+DQ[3:0]
+
+CS_B
+
+CCK (1)
+
+CSO
+CDONE
+
+Trion FPGA
+(Passive Mode)
+CSI
+CCK
+
+CBUS0
+
+CBUS0
+
+CBUS1
+
+CBUS1
+
+CBUS2
+
+CBUS2
+
+CDI[3:0] (1)
+
+CDI[3:0]
+
+CRESET_N
+
+CRESET_N
+
+SS_N
+
+SS_N
+
+TEST_N
+
+TEST_N
+
+CSO
+CDONE
+
+VCCIO
+
+Note: 1) The external pull-up is optional unless required by an external load.
+
+Important: For parallel daisy chain x2 and x4, you are required to set the active configuration clock
+frequency, fMAX_M, to DIV4 (20 MHz).
+
+www.efinixinc.com
+
+49
+
+AN 006: Configuring Trion FPGAs
+
+Daisy Chaining with a Microcontroller or
+Microprocessor
+A microcontroller or microprocesser can conﬁgure FPGAs in a daisy chain with a single
+cascaded bitstream ﬁle. All FPGAs must be in passive mode.
+This example shows serial daisy chain conﬁguration with SPI passive x32 mode. For other
+modes, set the value of CBUS[2:0] according to Table 5: SPI Hardware Settings on page
+10.
+Important: Do not connect the NSTATUS pins of multiple FPGAs together when configuring in daisy chain
+configuration.
+
+Figure 40: Serial Daisy Chain Configuration (x32 Passive Mode) Interface Example
+See Resistors in Configuration Circuitry on page 51 for the resistor values.
+VCCIO
+VCCIO
+
+VCCIO
+
+VCCIO
+
+VCCIO
+
+Trion FPGA
+(Passive Mode)
+CBUS0
+
+CSO
+
+CBUS1
+
+CDONE
+
+CBUS2
+CCK (1)
+
+VCCIO
+
+CDI[31:0] (1)
+CRESET_N
+
+Pushbutton
+
+CSI
+
+SS_N
+TEST_N
+Trion FPGA
+(Passive Mode)
+
+Configuration
+Memory Source
+
+Microprocessor
+DATA
+
+RESET
+CS
+
+CSO
+
+CBUS1
+
+CDONE
+
+CBUS2
+
+VCCIO
+
+CCK
+
+CLOCK
+CDONE
+
+CBUS0
+
+32 bit
+System Bus
+
+CDI[31:0]
+
+CRESET_N
+
+CSI
+
+SS_N
+TEST_N
+
+Note: 1) The external pull-up is optional unless required by an external load.
+
+www.efinixinc.com
+
+50
+
+AN 006: Configuring Trion FPGAs
+
+Resistors in Configuration Circuitry
+Eﬁnix recommends that you use 10 kΩ for all unspeciﬁed pull-up and pull-down resistors in
+conﬁguration circuitries.
+Important: Perform an IBIS simulation to analyze the impact of pull-up and pull-down
+resistors on the signal integrity of dual-purpose configuration pins. Typically, 10 kΩ
+pull-up and pull-down resistors do not significantly affect either the single-ended or
+differential signals.
+
+Alternatively, you can calculate your own pull-up or pull-down resistance, RUSER, shown in
+the following sections.
+Learn more: The internal weak pull-up resistance, internal weak pull-down resistance, and Schmitt
+Trigger thresholds values used in the following formulas are included in the Trion® Data Sheet in the
+Documentation page of the Support Center.
+
+User-Defined Pull-Up Resistor Values
+RUSER = (RCPU × RIPU) ÷ (RIPU - RCPU)
+where:
+• RUSER = User-deﬁned pull-up resistance
+• RCPU = Combined pull-up resistance
+• RIPU = Internal weak pull-up resistance
+The combined pull-up resistance, RCPU, can be derived using the following formula:
+VT+ ≤ VCCIO × (RIPD ÷ (RCPU + RIPD))
+where:
+• VT+ = Schmitt Trigger low-to-high threshold
+• VCCIO = I/O bank power supply
+• RIPD = Internal weak pull-down resistance
+
+User-Defined Pull-Down Resistor Values
+RUSER = (RCPD × RIPD) ÷ (RIPD - RCPD)
+where:
+• RUSER = User-deﬁned pull-down resistance
+• RCPD = Combined pull-down resistance
+• RIPD = Internal weak pull-down resistance
+The combined pull-down resistance, RCPD, can be derived using the following formula:
+VT- ≥ VCCIO × (RCPD ÷ (RCPD + RIPU))
+where:
+• VT- = Schmitt Trigger high-to-low threshold
+• VCCIO = I/O bank power supply
+• RIPU = Internal weak pull-up resistance
+
+www.efinixinc.com
+
+51
+
+AN 006: Configuring Trion FPGAs
+
+Configuration Timing
+Trion® FPGA conﬁguration timing is process dependent. The following tables show the
+timing parameters for the various conﬁguration modes.
+Important: Refer to the data sheet for your Trion® FPGA for the timing specifications for these
+parameters.
+
+Table 22: All Modes
+Symbol
+
+Parameter
+
+tCRESET_N
+
+Minimum CRESET_N low pulse width required to trigger re-configuration.
+
+tUSER
+
+Minimum configuration duration after CDONE goes high before entering user
+mode.
+
+Table 23: Active Mode
+Symbol
+
+Parameter
+
+fMAX_M
+
+Active mode configuration clock frequency.
+
+tSU
+
+Setup time.
+
+tH
+
+Hold time.
+
+Table 24: Passive Mode
+Symbol
+
+Parameter
+
+fMAX_S
+
+Passive mode configuration clock frequency.
+
+tCLKH
+
+Configuration clock pulse width high.
+
+tCLKL
+
+Configuration clock pulse width low.
+
+tSU
+
+Setup time.
+
+tH
+
+Hold time.
+
+tDMIN
+
+Minimum time between deassertion of CRESET_N to first valid configuration data.
+
+Table 25: JTAG Mode
+Symbol
+
+Parameter
+
+fTCK
+
+TCK frequency.
+
+tTDISU
+
+TDI setup time.
+
+tTDIH
+
+TDI hold time.
+
+tTMSSU
+
+TMS setup time.
+
+tTMSH
+
+TMS hold time.
+
+tTCKTDO
+
+TCK falling edge to TDO output.
+
+www.efinixinc.com
+
+52
+
+AN 006: Configuring Trion FPGAs
+
+Selecting the Right SPI Flash Device
+Trion® FPGAs support an SPI ﬂash memory interface for active mode conﬁguration. Use
+these guidelines to help choose the correct ﬂash device for your Trion® FPGA.
+• Conﬁguration Bits—Ensure that your chosen ﬂash device has enough bits to store the
+conﬁguration bitstream.
+— Single image—Find the conﬁguration bits a single image uses (refer to Table 1: Trion
+FPGA Bitstream Size on page 4).
+— Multiple images—Find the conﬁguration bits a single image uses (refer to Table 1).
+Multiply the number of bits times the number of images to determine the total bits
+required to store the full bitstream.
+— Daisy chain—Use the formula (i × b) + (2048 × (i - 1)) where i is the number of images
+and b is the conﬁguration bits for each image. For example, a daisy chain of three T8
+FPGAs uses (3 × 1,386,584) + (2,048 × (3-1)) = 4,159,752 + 4,096 = 4,163,848 bits.
+• Conﬁguration Bus Width—Determine the supported conﬁguration bus width for the
+SPI ﬂash device in Table 5: SPI Hardware Settings on page 10 .
+• SPI Clock Frequency—Ensure that your SPI ﬂash device supports a clock frequency
+that is higher than the SPI active conﬁguration clock frequency as described in Table 10:
+Internal Oscillator Clock Settings on page 20.
+• Required Voltage—Make sure the voltage your SPI ﬂash device requires is the same as the
+FPGA I/O bank voltage.
+• Temperature Range—Check that the SPI ﬂash device's temperature range is compatible
+with the operating temperature as described in the FPGA data sheet.
+
+Supported Flash Devices
+Table 26: Supported Flash Devices
+Manufacturer
+
+Family Part Number
+
+GigaDevice
+
+GD25Q, GD25WQ, and GD25LQ
+
+Macronix
+
+MX25L, MX25U, MX25V, MX75L, and MX75U
+
+Puya Semiconductor
+
+P25Q
+
+Winbond
+
+W25Q
+
+Micron
+
+M25P and MT25Q
+
+XTX
+
+XT25F
+
+Atmel (Adesto Technologies)
+
+AT25SF
+
+ISSI
+
+IS25LP128 and IS25WP512M
+
+Note: Efinix recommends using SPI NOR flash memories.
+
+www.efinixinc.com
+
+53
+
+AN 006: Configuring Trion FPGAs
+
+Connecting Programming Hardware
+You can program Eﬁnix FPGA or the SPI ﬂash using FTDI Mini Modules. This section
+describes the hardware connections required. See Using the Eﬁnity Programmer on page
+60 for instructions about SPI and JTAG programming using the Eﬁnity® Programmer.
+
+SPI Programming Connections
+The following ﬁgure illustrates the connection required when programming the SPI ﬂash
+with FTDI FT2232H and FT4232H Mini Module.
+Figure 41: SPI Flash Programming with FTDI FT2232H and FT4232H Mini Module Connections
+VCCIO
+
+FT2232H or
+FT4232H
+Mini Module
+
+PC
+
+USB
+
+Board
+Header
+CCK
+CDI0
+CDI1
+SS
+CRESET_N
+HOLD
+GND
+
+CN2 pin 7 (AD0)
+CN2 pin 10 (AD1)
+CN2 pin 9 (AD2)
+CN2 pin 12 (AD3)
+CN2 pin 14 (AD4)
+CN2 pin 16 (AD6)
+CN2 pin 2 (GND)
+
+FPGA
+CCK (1)
+CDI0 (1)
+CDI1(1)
+SS_N
+CRESET_N
+
+SPI Flash
+SCK
+SDI
+SDO
+CS
+HOLD
+
+Note: 1) The external pull-up is optional
+unless required by an external load.
+
+Figure 42: SPI Flash 1.8V Programming with FTDI FT2232H and FT4232H Mini-Module Connections
+1.8 V
+3.3 V
+
+1.8 V
+
+FT2232H or
+FT4232H
+Mini Module
+
+PC
+
+USB
+
+CN2 pin 7 (AD0)
+CN2 pin 10 (AD1)
+CN2 pin 9 (AD2)
+CN2 pin 12 (AD3)
+CN2 pin 14 (AD4)
+CN2 pin 16 (AD6)
+CN2 pin 2 (GND)
+
+Board
+Voltage
+Level
+Translator
+
+Note: 1) The external pull-up is optional unless required
+by an external load.
+
+Header
+CCK
+CDI0
+CDI1
+SS
+CRESET_N
+HOLD
+GND
+
+FPGA
+CCK
+CDI0 (1)
+CDI1 (1)
+SS_N
+CRESET_N
+
+SPI Flash
+SCK
+SDI
+SDO
+CS
+HOLD
+
+www.efinixinc.com
+
+54
+
+AN 006: Configuring Trion FPGAs
+
+Figure 43: SPI Flash Programming with Centron's Efinix Download Cable II
+VTARG
+
+Centron’s
+Efinix Download
+Cable II
+
+PC
+
+USB
+
+VTARG
+CLK
+MOSI
+MISO
+SS
+CRST
+HOLD
+GND
+
+Note: 1) The external pull-up is optional
+unless required by an external load.
+
+Board
+Header
+CCK
+CDI0
+CDI1
+SS
+CRESET_N
+HOLD
+GND
+
+FPGA
+CCK (1)
+CDI0 (1)
+CDI1 (1)
+SS_N
+CRESET_N
+
+SPI Flash
+SCK
+SDI
+SDO
+CS
+HOLD
+
+www.efinixinc.com
+
+55
+
+AN 006: Configuring Trion FPGAs
+
+JTAG Programming Connections
+Connecting a JTAG Cable
+Eﬁnix does not recommend using the FTDI cable C232HM-DDHSL-0 for JTAG
+programming due to the possibility of the FPGA not being recognized or the potential for
+programming failures.
+
+Connecting a JTAG Mini Module
+When programming T4, T8, T13, T20WLCSP80, T20QFP100F3, T20QFP144, T20BGA256,
+and T20BGA169 FPGAs, use this connection:
+Figure 44: Connect FT2232 Mini Module to JTAG Pins plus CRESET_N and SS_N
+Board
+
+FT2232H
+Mini Module
+
+PC
+
+USB
+
+CN3 pin 26 (BD0)
+CN3 pin 25 (BD1)
+CN3 pin 24 (BD2)
+CN3 pin 23 (BD3)
+CN3 pin 2 (GND)
+
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+CN2 pin 14 (AD4)
+CN2 pin 12 (AD3)
+
+Header
+GPIO0
+GPIO1
+
+3.3 V
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+CRESET_N
+SS_N
+
+Figure 45: Connect FT4232 Mini Module to JTAG Pins plus CRESET_N and SS_N
+Board
+FT4232H
+Mini Module
+
+PC
+
+USB
+
+CN2 pin 18 (BD0)
+CN2 pin 17 (BD1)
+CN2 pin 20 (BD2)
+CN2 pin 19 (BD3)
+CN2 pin 2 (GND)
+
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+CN2 pin 14 (AD4)
+CN2 pin 12 (AD3)
+
+Header
+GPIO0
+GPIO1
+
+3.3 V
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+CRESET_N
+SS_N
+
+www.efinixinc.com
+
+56
+
+AN 006: Configuring Trion FPGAs
+
+Figure 46: Connect Centron's Efinix Download Cable II to JTAG Pins
+Centron’s
+Efinix Download
+Cable II
+
+PC
+
+USB
+
+Board
+
+VTARG
+TCK
+TDI
+TDO
+TMS
+GND
+
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+CRST
+SS
+
+Header
+GPIO0
+GPIO1
+
+VTARG
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+CRESET_N
+SS_N
+
+Note: This figure uses the CRESET_N and SS_N pins in addition to the standard JTAG pins. However,
+this setup is only needed for JTAG configuration. You can use the standard 4 JTAG pins and any cable for
+other JTAG functions.
+
+www.efinixinc.com
+
+57
+
+AN 006: Configuring Trion FPGAs
+
+When programming T20BGA324, T20BGA400, T35, T55, T85, and T120 FPGAs, use this
+connection:
+Figure 47: Connect FT2232 Mini Module to JTAG Pins
+3.3 V
+
+FT2232H
+Mini Module
+
+PC
+
+USB
+
+CN3 pin 26 (BD0)
+CN3 pin 25 (BD1)
+CN3 pin 24 (BD2)
+CN3 pin 23 (BD3)
+CN3 pin 2 (GND)
+
+Board
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+Figure 48: Connect FT4232 Mini-Module to JTAG Pins
+3.3 V
+
+FT4232H
+Mini Module
+
+PC
+
+USB
+
+CN2 pin 18 (BD0)
+CN2 pin 17 (BD1)
+CN2 pin 20 (BD2)
+CN2 pin 19 (BD3)
+CN2 pin 2 (GND)
+
+Board
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+Figure 49: Connect Centron's Efinix Download Cable II to JTAG Pins
+Centron’s
+Efinix Download
+Cable II
+
+PC
+
+USB
+
+VTARG
+TCK
+TDI
+TDO
+TMS
+GND
+
+Board
+
+JTAG Header
+TCK
+TDI
+TDO
+TMS
+GND
+
+VTARG
+
+FPGA
+TCK
+TDI
+TDO
+TMS
+
+www.efinixinc.com
+
+58
+
+AN 006: Configuring Trion FPGAs
+
+Supported Download Cables
+Table 27: Verified Supported Download Cables
+Manufacturer
+
+Type
+
+Part Number
+
+FTDI
+
+Dual Channel
+
+FT2232
+
+Quad Channel
+
+FT4232
+
+Single Channel
+
+FT232L
+
+Single Channel
+
+Efinix Download Cable II
+
+Centron
+
+Note: For more details on the specifications and setup of the Centron's Efinix Download Cable II, refer to
+the Centron cable information sheet.
+
+www.efinixinc.com
+
+59
+
+AN 006: Configuring Trion FPGAs
+
+Using the Efinity Programmer
+The Eﬁnity® software has a Programmer you use to conﬁgure Trion® FPGAs. You can run
+the Programmer using the GUI or with the command line.
+
+Generate a Bitstream (Programming) File
+When you run the automated ﬂow, the software automatically generates bitstream ﬁles
+that you can use to conﬁgure your target device. You can also generate the bitstream ﬁles
+manually. To generate bitstream ﬁles from the command line, use the following command:
+Example: Generate a Bitstream File from the Command Line
+Linux:
+> efx_run.py <project name>.xml --flow pgm
+
+Windows:
+> efx_run.bat <project name>.xml --flow pgm
+
+The software generates these ﬁles in the outflow directory:
+• .hex ﬁle as <project name>.hex. Use this ﬁle to program in SPI active or passive mode.
+• .bit ﬁle as <project name>.bit. Use this ﬁle for JTAG programming.
+Important: With the Efinity software v2021.2 and higher, you must use .hex for SPI and .bit for JTAG.
+
+The bitstream ﬁle includes programming options you set for your project (e.g., to initialize
+user memory or set conﬁguration mode). If you change these options you must regenerate
+the bitstream ﬁle. See Project-Based Programming Options on page 75.
+Note: The software does not generate bitstream files for preliminary devices.
+
+www.efinixinc.com
+
+60
+
+AN 006: Configuring Trion FPGAs
+
+Working with Bitstreams
+You can use the Eﬁnity Programmer to manipulate a bitstream before programming an
+FPGA or ﬂash device.
+
+Edit the Bitstream Header
+You can use the Programmer to edit the bitstream header information, for example, to add
+project or revision information. To edit the header:
+1. In the Programmer, choose File > Edit Header... or click the toolbar icon to open the
+Edit Image Header dialog box. The window shows the default header information.
+2. Edit the header.
+3. Click Save.
+Important: When editing the bitstream header, if you remove any of the auto-generated information
+(such as Device: <name>), the Programmer may not be able to recognize the bitstream. Efinix
+recommends that you only append a small amount of information to the auto-generated data if you want
+to customize or annotate the header. The header can be a maximum of 256 characters, including the autogenerated text.
+If you want to write your own program to detect which device the bitstream targets (e.g., using a
+microprocessor and SPI passive mode), be sure to keep all of the auto-generated header, specifically the
+Device: <name> string.
+
+Export to Raw Binary Format
+The Eﬁnity® software v2018.4 and later supports raw binary (.bin) format for use with thirdparty ﬂash programmers. To export to this format:
+1. Open the Programmer.
+2. Select the bitstream ﬁle.
+3. Click Export.
+4. Specify the ﬁlename.
+5. Click Save.
+You can also convert the ﬁle to .bin at the command line as described in Convert to Intel
+Hex Format at the Command Line on page 62.
+
+Export to .svf Format
+The Eﬁnity® software v2021.1 and later supports serial vector format (.svf) ﬁles for use with
+third-party JTAG programmers. To export to this format:
+1. Open the Programmer.
+2. Select a bitstream ﬁle.
+3. Click Export.
+4. Specify the ﬁlename.
+5. Choose Serial Vector Format (*.svf) as the Files of type.
+6. Click Save.
+Note: For more information on using this bitstream format, refer to Working with JTAG .svf Files section of
+the Efinity® Programmer user Guide.
+You can also convert the file to .hex at the command line as described in Convert to Intel Hex Format at
+the Command Line on page 62.
+
+www.efinixinc.com
+
+61
+
+AN 006: Configuring Trion FPGAs
+
+Convert to Intel Hex Format at the Command Line
+You can convert a bitstream ﬁle to Intel Hex and other formats at the command line using
+this command:
+export_bitstream.py [--help] [--family FAMILY] [--idcode IDCODE] [--freq FREQ]
+[--sdr_size SDR_SIZE] [--tir_length TIR_LENGTH] [--hir_length HIR_LENGTH]
+[--tdr_length TDR_LENGTH] [--hdr_length HDR_LENGTH] [--enter_user_mode {on, off}]
+format input_file output_file
+
+Table 28: export_bitstream.py Positional Arguments
+Argument
+
+Input
+
+Description
+
+format
+
+hex_to_bin, hex_to_intelhex, bin_to_hex,
+intelhex_to_hex, hex_to_svf
+
+Conversion type.
+
+input_file
+
+Filename
+
+Image file source.
+
+output_file
+
+Filename
+
+Image file destination.
+
+Table 29: export_bitstream.py Options
+Option (Long)
+
+Option (Short)
+
+Input
+
+Description
+
+--help
+
+-h
+
+None
+
+Show help.
+
+--family
+
+N/A
+
+Family name
+
+Device family (SVF only)
+
+--idcode
+
+N/A
+
+Identification code
+
+JTAG IDCODE (SVF only).
+
+--freq
+
+N/A
+
+Number
+
+JTAG frequency (SVF only).
+
+--sdr_size
+
+N/A
+
+Number
+
+Approximate JTAG shift_dr size before
+cycling to idle state (SVF only).
+
+--tir_length
+
+N/A
+
+Number
+
+JTAG bypass trailer instruction register length
+(SVF only).
+
+--hir_length
+
+N/A
+
+Number
+
+JTAG bypass header instruction register
+length (SVF only).
+
+--tdr_length
+
+N/A
+
+Number
+
+JTAG bypass header data register length (SVF
+only).
+
+--enter_user_mode
+
+N/A
+
+on, off
+
+Enter user mode after JTAG configuration
+(SVF only).
+
+The following example shows conversion of the bitstream hex ﬁle to bin format:
+Example: Converting Hex to Bin
+%EFINITY_HOME%\bin\python3
+%EFINITY_HOME%\pgm\bin\efx_pgm\export_bitstream.py hex_to_bin new_project.hex test2.bin
+
+www.efinixinc.com
+
+62
+
+AN 006: Configuring Trion FPGAs
+
+Combine Bitstreams and Other Files
+You may want to store multiple bitstreams or other data into the same ﬂash device on your
+board. For example, you can combine ﬁles for:
+•
+•
+•
+•
+
+Multi-image conﬁguration using the CBSEL pins
+Internal reconﬁguration
+Programming FPGAs in a daisy chain
+Programming a bitstream and other ﬁles such as a RISC-V application binary
+
+You use the Combine Multiple Image Files dialog box to choose ﬁles to combine into a
+single ﬁle for programming. Choose one of the following modes:
+Table 30: Modes when Combining Images
+Mode
+Selectable Flash
+Image
+
+Use For
+
+Number of Images
+
+Notes
+
+Multi-image
+configuration
+
+Up to 4
+
+Use this mode if you want the CBSEL
+pins to control which image the FPGA
+loads. For this mode, you also need
+to choose Image Type > External
+Controller Flash Image. See Program
+Multiple Images (CBSEL) on page 64
+
+Internal
+reconfiguration
+
+Up to 4
+
+Use this mode if you want the internal
+reconfiguration pins to determine which
+image the FPGA loads. For this mode,
+you also need to choose Image Type
+> Remote Update Flash Image. See
+Program Multiple Images (Internal
+Reconfiguration) on page 65
+
+Daisy Chain
+
+Daisy chains
+
+Any number of JTAG
+devices including
+those from other
+vendors (6).
+
+See Program a Daisy Chain on page
+66
+
+Generic Image
+Combination
+
+A bitstream and other
+files
+
+One bitstream and
+any number of other
+files
+
+See Program Multiple Images
+(Bitstream and Data) on page 65
+
+Note: When you combine images for an MCU-controlled system or SPI passive daisy chain, the
+Programmer adds padding between the images as needed. Therefore, you can send the entire bitstream
+continuously until all devices in the chain are configured.
+
+(6)
+
+Efinity Programmer does not apply any constraints for combining multiple images. Efinix recommends that you run the
+IBIS simulation to check the signal integrity if you need to connect more than 4 devices in the same daisy chain.
+www.efinixinc.com
+
+63
+
+AN 006: Configuring Trion FPGAs
+
+SPI Programming
+You can program Eﬁnix FPGAs using the SPI interface and a .hex ﬁle.
+
+Program a Single Image
+In single image programming mode, you conﬁgure one FPGA with one image.
+1. Click the Select Image File button.
+
+2. Browse to the outflow directory and choose <ﬁlename>.hex.
+
+3. Choose SPI Active or SPI Passive conﬁguration mode.
+4. Click Start Program. The console displays programming messages.
+
+Program Multiple Images (CBSEL)
+In this programming mode, you specify up to four images that can conﬁgure one FPGA. You
+then use the FPGA's CBSEL pins to select which image to use. You can only use active mode.
+1. Click the Combine Multiple Images button.
+2. Choose Mode > Selectable Flash Image.
+3. Enter the output ﬁle name.
+4. Choose the output ﬁle location. The default is the project's outflow directory.
+
+5. Choose Image Type > External Flash Image. This setting tells the FPGA to use the
+CBSEL pins.
+6. Click in the table row corresponding to the position for which you want to add an image.
+7. Click Add Image.
+8. Select the image ﬁle to place in that location.
+9. Click OK.
+10. Repeat steps 6 through 9 as needed. You can add up to four images.
+11. Click Apply to generate the combined image ﬁle.
+12. Click Close to return to the Programmer, which displays the combined image ﬁle as the
+image to use for programming.
+13. Click Start Program.
+
+www.efinixinc.com
+
+64
+
+AN 006: Configuring Trion FPGAs
+
+Program Multiple Images (Internal Reconfiguration)
+In this programming mode, you specify up to four images that can conﬁgure one FPGA. You
+then use the FPGA's internal reconﬁguration interface to select which image to use. You can
+only use active mode.
+1. Click the Combine Multiple Images button.
+2. Choose Mode > Selectable Flash Image.
+3. Enter the output ﬁle name.
+4. Choose the output ﬁle location. The default is the project's outflow directory.
+5. Choose Image Type > Remote Update Flash Image.
+
+Note: When using internal reconfiguration, you must choose Remote Update
+Flash Image. If you choose External Flash Image, the FPGA reconfigures with the
+first image as specified by the CBSEL pins instead of the golden image.
+
+6. Click in the table row corresponding to the position for which you want to add an image.
+7. Click Add Image.
+8. Select the image ﬁle to place in that location.
+9. Click OK.
+10. Repeat steps 6 through 9 as needed. You can add up to four images.
+11. Click Apply to generate the combined image ﬁle.
+12. Click Close to return to the Programmer, which displays the combined image ﬁle as the
+image to use for programming.
+13. Click Start Program.
+Note: For more information on using the internal reconfiguration feature, refer to
+AN 010: Using the Internal Reconfiguration Feature to Update Efinix FPGAs Remotely.
+
+Program Multiple Images (Bitstream and Data)
+In this programming mode, you specify one bitstream and one or more data ﬁles to combine
+into a single ﬁle for programming. You can only use active mode.
+1. Click the Combine Multiple Images button.
+2. Choose Mode > Generic Image Combination.
+3. Enter the output ﬁle name.
+4. Choose the output ﬁle location. The default is the project's outflow directory.
+5. Click Add Image.
+
+6. Select the image ﬁle to place in that location.
+7. Click Open. The image ﬁle and ﬂash length are displayed in the table.
+8. Specify the ﬂash address.
+9. Repeat steps 5 through 8 as needed.
+Note: If you want to combine a bitstream and a RISC-V binary, use 0x00000000 as
+the bitstream's flash address and 0x00380000 as the binary's flash address.
+
+10. Click Apply to generate the combined image ﬁle.
+11. Click Close to return to the Programmer, which displays the combined image ﬁle as the
+image to use for programming.
+12. Click Start Program.
+
+www.efinixinc.com
+
+65
+
+AN 006: Configuring Trion FPGAs
+
+Program a Daisy Chain
+In this programming mode, you specify any number of images to conﬁgure a daisy chain of
+FPGAs. You can choose active or passive conﬁguration for ﬁrst FPGA; the rest are in passive
+mode.
+1. Click the Combine Multiple Images button.
+2. Select Daisy Chain as the Mode.
+3. Enter the output ﬁle name.
+4. Choose the output ﬁle location. The default is the project's outflow directory.
+
+5. Click Add Image to add a ﬁle to the daisy chain.
+6. Repeat step 5 to add as many ﬁles as you want to the chain. Use the up/down arrows to
+re-order the images if needed.
+7. Click Apply to generate the combined image ﬁle.
+8. Click Close to return to the Programmer, which displays the combined image ﬁle as the
+image to use for programming.
+9. Click Start Program.
+
+www.efinixinc.com
+
+66
+
+AN 006: Configuring Trion FPGAs
+
+JTAG Programming
+You can program Eﬁnix FPGAs using the JTAG interface and a .bit ﬁle.
+
+Trion Family JTAG Device IDs
+The following table lists the Trion JTAG device IDs.
+Table 31: Trion JTAG Device IDs
+FPGA
+
+Package
+
+JTAG Device ID
+
+T4, T8
+
+BGA81
+
+0x0
+
+T8
+
+QFP144
+
+0x00210A79
+
+T13
+
+All
+
+0x00210A79
+
+T20
+
+WLCSP80, QFP100F3,
+QFP144, BGA169, BGA256
+
+0x00210A79
+
+T20
+
+BGA324, BGA400
+
+0x00240A79
+
+T35
+
+All
+
+0x00240A79
+
+T55, T85, T120
+
+All
+
+0x00220A79
+
+Program a Single Image
+In single image programming mode, you conﬁgure one FPGA with one image.
+1. Click the Select Image File button.
+2. Browse to the outflow directory and choose <ﬁlename>.bit.
+
+3. Choose the JTAG conﬁguration mode.
+4. Click Start Program. The console displays programming messages.
+
+www.efinixinc.com
+
+67
+
+AN 006: Configuring Trion FPGAs
+
+Program Using a JTAG Chain
+You can program an FPGA that is part of a JTAG chain. The chain can include Trion®
+FPGAs as well as other devices. You deﬁne your JTAG chain using a JTAG chain ﬁle. You
+import the JTAG chain ﬁle into the Programmer to perform programming. The JTAG chain
+ﬁle is an XML ﬁle (.xml) that includes all of the devices in the chain. For example:
+<?xml version="1.0"?>
+<chain>
+<device chip_num="1" id_code="0x00210a79" ir_width="4" istr_code="1100" />
+<device chip_num="2" id_code="0x00210a79" ir_width="4" istr_code="1100" />
+<device chip_num="3" id_code="0x00210a79" ir_width="4" istr_code="1100" />
+</chain>
+
+where:
+• chip_num is the device order starting from position 1.
+• id_code is the hexadecimal JEDEC device ID (all lowercase letters)
+• ir_width is the width of the instruction register in bits
+• istr_code is the binary IDCODE instruction
+Note: For Trion FPGAs, use 1100 as the istr_code.
+
+To program using a JTAG chain:
+1. Create a JTAG Chain File using a text editor.
+2. Open the Programmer.
+3. Choose your USB Target and Image.
+4. Select JTAG as the Programming Mode.
+5. Click the Import JCF toolbar button.
+6. Browse to your JTAG Chain File and click Open.
+7. Select which device you want to program in the drop-down list next to the JTAG
+Programming Mode option.
+8. Click Start Program.
+Note: If you implement both the daisy chain and JTAG chain together, ensure that the daisy chain is fully
+completed before executing the JTAG chain. Because the daisy chain requires CSIs to be connected to
+CSOs, the JTAG chain will only configure successfully when the CSIs are high.
+
+www.efinixinc.com
+
+68
+
+AN 006: Configuring Trion FPGAs
+
+Program using a JTAG Bridge
+Programming with a JTAG bridge is a two-step process: ﬁrst you conﬁgure the FPGA to
+turn it into a ﬂash programmer (.bit) and second you use the FPGA to program the ﬂash
+device with the bitstream (.hex).
+The SPI Active using JTAG Bridge mode (formerly named SPI Active using JTAG Bridge
+(New)) has pre-built ﬂash loader (.bit) ﬁles that you can use. These .bit ﬁles do not require an
+external clock source. You can still use your own .bit ﬁle if you choose to do so.
+Note: The JTAG bridge modes were changed in the Efinity software v2025.1. If you are using an older
+version of software and want to use the SPI Active using JTAG Bridge (Legacy) mode, refer to Appendix:
+Program using a JTAG Bridge (Legacy).
+
+The JTAG bridge bitstream files bundled with v2025.1 and higher can only be used with v2025.1 or
+higher. You cannot use older bundled JTAG bridge bitstream files with v2025.1 or higher, and you cannot
+use the v2025.1 or higher bundled files with older software versions. If you need to use the older bundled
+files, use the Programmer v2024.2.
+Tip: If you would like to incorporate the RTL files for the new flash loader into your own design, use the JTAG to
+SPI Flash Bridge core in the IP Manager.
+
+To program using a JTAG bridge:
+1. Choose the USB Target.
+2. In the Image box, click the Select Image File button to browse for the .hex ﬁle to
+program the ﬂash device.
+3. Choose the SPI Active using JTAG Bridge programming mode.
+4. Turn on the Auto conﬁgure JTAG Bridge Image option.
+5. Specify your own .bit ﬁle.
+a) In the Programming Mode box, click Select Image File.
+b) The Open Image File dialog box opens to a directory of available pre-built .bit ﬁles.
+Choose the ﬁle for your FPGA, or browse to ﬁnd your own .bit ﬁle.
+
+The Programmer remembers which ﬁle you specify and uses it automatically the next
+time you run the Programmer.
+6. Choose the SPI Active Options and JTAG Options.
+Option
+
+Description
+
+Select Flash
+
+x8 mode only. Choose whether to use the upper flash, lowre, flash,
+or both.
+
+Starting Flash
+Address
+
+Specify the address if other than the default.
+
+Flash Length
+
+Specify the length if other than the default.
+
+Erase Before
+Programming
+
+Default: on. When turned on, the Programmer erases the flash
+device before re-programming it.
+
+Select Verify Method Normal verify—The FPGA computes an on-chip hash from the
+read back flash data to perform verification. Normal verify is
+significantly faster than in the Programmer v2024.2 and lower (so
+much faster that you might think it did not do anything).
+
+Fast verify—Similar to normal verify, but requires a SPI x4 width
+(quad mode). The Programmer cannot detect whether your board
+is using quad mode; if your board is not using it and you try to use
+fast verify, programming will fail.
+Skip verify—Do not verify the flash.
+
+www.efinixinc.com
+
+69
+
+AN 006: Configuring Trion FPGAs
+
+Option
+
+Description
+
+Device Select
+JTAG Clock Speed
+
+Choose the JTAG device ID of the FPGA to program.
+Choose a speed or specify a custom one.
+
+7. Click Start Program. The Programmer ﬁrst conﬁgures the FPGA and then programs the
+ﬂash device.
+
+JTAG Programming with FTDI Chip Hardware
+These instructions describe how to program Trion® FPGAs using the FTDI Chip FT2232H
+and FT4232H Mini Modules. Eﬁnix® has tested the hardware for use with Trion® FPGAs.
+Note: Efinix does not recommend the FTDI Chip C232HM-DDHSL-0 programming cable due to the
+possibility of the FPGA not being recognized or the potential for programming failures.
+
+1. Open the Eﬁnity® software.
+2. Open the Eﬁnity® Programmer.
+3. Click the Select Bitstream Image button.
+4. Browse to your image and click OK.
+5. Choose one of the following in the USB Target drop-down list:
+• Dual RS232 HS for FT2232H Mini Module
+• FT4232H_MM for FT4232H Mini Module
+6. Choose JTAG from the Programming Mode drop-down list.
+7. Click Start Program.
+
+FTDI Programming at the Command Line
+The Eﬁnity software includes a Python script you can use for programming FTDI modules at
+the command line.
+ftdi_pgm.py [--help] [--mode MODE] [--output_file OUTPUT_FILE] [--url URL] [--aurl AURL]
+[--xml XML] [--num NUM] [--board_profile BOARD_PROFILE] [--address ADDRESS]
+[--num_bytes NUM_BYTES] [--burst_size BURST_SIZE] [--jtag_bridge_mode JTAG_BRIDGE_MODE]
+[--jtag_clock_freq JTAG_CLOCK_FREQ] [--verify_method VERIFY_METHOD]
+[--check_flash_if_supported CHECK_FLASH_IF_SUPPORTED] [--spi_active_freq SPI_ACTIVE_FREQ]
+[--spi_passive_freq SPI_PASSIVE_FREQ] [--list_usb] [input_file]
+
+Table 32: ftdi_pgm.py Positional Arguments
+Argument
+input_file
+
+Description
+HEX file generated from efx_pgm.
+
+Table 33: ftdi_pgm.py Options
+Option (Long)
+--help
+
+Option (Short)
+-h
+
+Input
+None
+
+Description
+Show help.
+
+www.efinixinc.com
+
+70
+
+AN 006: Configuring Trion FPGAs
+
+Option (Long)
+--mode
+
+Option (Short)
+-m
+
+Input
+passive, active, jtag,
+jtag_chain, erase_flash,
+read_flash, jtag_bridge,
+jtag_bridge_x8
+
+Description
+Programming mode.
+
+See the Efinity Programmer User Guide.
+
+In Efinity software versions prior to v2025.1,
+the jtag_bridge and jtag_bridge_new
+options were named jtag_bridge_new and
+jtag_bridge_x8_new, respectively.
+(7)
+
+To use the JTAG bridge modes, you must
+have already configured the with the JTAG
+SPI flash loader.
+
+The Efinity software v2023.2 and higher
+includes pre-built flash loader.bit files in <
+installation directory>/pgm/fli/<family>.
+Refer to the JTAG SPI Flash Loader Core User
+Guide for information on using the legacy
+flash loader.
+--output_file
+
+-o
+
+Filename
+
+Output file used for read_flash mode.
+
+--url
+
+-u
+
+URL
+
+FTDI URL (see Identifying FTDI URLs on page
+73).
+
+--aurl
+
+-a
+
+URL
+
+Alternative URL (Deprecated).
+
+--xml
+
+-x
+
+Filename
+
+XML file for JTAG programming.
+
+--num
+
+-n
+
+Number
+
+Chip target number for JTAG chain
+programming.
+
+--board_profile
+
+-b
+
+Generic Board Profile
+Name of the board profile used.
+Using FT232, Digilent
+JTAG-HS3, FireAnt
+Development Board,
+Generic Board Profile
+Using FT2232H, ISX
+Programming Cable,
+Titanium Ti180J484
+Dev Board, Titanium
+Ti180M484 Development
+Kit, Generic Board Profile
+Using FT4232, JinChen
+Programming Cable,
+TJ180A484S Development
+Kit, Xyloni Development
+Board, Generic Board
+Profile Using FT4234HA
+
+--address
+
+N/A
+
+Hex number
+
+Starting flash address for flash read and write
+operations.
+
+--num_bytes
+
+N/A
+
+Number
+
+Number of bytes to erase or read. For modes
+erase and read only.
+
+--burst_size
+
+N/A
+
+Number
+
+Individual read or write burst size in multiples
+of 256 bytes. For legacy JTAG bridge modes
+only (jtag_bridge and jtag_bridge_x8).
+
+--jtag_bridge_
+mode
+
+N/A
+
+Erase, write,
+erase_and_write, read, all,
+all_no_erase
+
+JTAG bridge programming mode.
+
+(7)
+
+The jtag_bridge_x8 mode is only supported in some and FPGAs. Refer to the data sheet for the modes your FPGA
+supports.
+www.efinixinc.com
+
+71
+
+AN 006: Configuring Trion FPGAs
+
+Option (Long)
+
+Option (Short)
+
+Input
+
+Description
+
+--jtag_clock_freq
+
+N/A
+
+Number
+
+JTAG clock frequency.
+
+--verify_method
+
+N/A
+
+None, onchipx1, onchipx2, The method used to verify the downloaded
+onchipx4
+bitstream.
+
+Default: onchipx2 (On-chip hash calculation
+with SPI x2 mode)
+
+--check_flash_
+if_supported
+
+N/A
+
+Hex string
+
+Check if flash is supported using the JEDEC
+ID hex string (e.g., C84012).
+
+--spi_active_freq
+
+N/A
+
+Number
+
+Set SPI active frequency.
+
+--spi_passive_
+freq
+
+N/A
+
+Number
+
+Set SPI passive frequency.
+
+--list_usb
+
+-l
+
+None
+
+List the available USB target's URL.
+
+Default: 6000000 Hz
+Default: 3000000 Hz
+
+Linux Examples
+To program in Linux:
+1. Open a terminal and change to the Eﬁnity® installation directory.
+2. Type: source ./bin/setup.sh and press enter.
+3. Use the ftdi_program.py command.
+Example: Xyloni Development Board as the only board attached to your computer:
+ftdi_program.py <filename>.bit -m jtag
+
+Example: Trion T120 BGA324 Development Board with serial number FT5ECP6E when
+another board with an FTDI chip is connected to your computer:
+ftdi_program.py <filename>.bit -m jtag --url ftdi://ftdi:2232h:FT5ECP6E/1
+--aurl ftdi://ftdi:2232h:FT5ECP6E/1
+
+Windows Examples
+To program in Windows:
+1. Open a command prompt and change to the Eﬁnity® installation directory.
+2. Type: .\bin\setup.bat and press enter.
+3. Use the ftdi_program.py command.
+Example: Xyloni Development Board as the only board attached to your computer:
+%EFINITY_HOME%\bin\python3
+\ftdi_program.py <filename>.bit -m jtag
+
+Example: Trion T120 BGA324 Development Board with serial number FT5ECP6E when
+another board with an FTDI chip is connected to your computer:
+%EFINITY_HOME%\bin\python3
+\ftdi_program.py <filename>.bit
+-m jtag --url ftdi://ftdi:2232h:FT5ECP6E/1 --aurl ftdi://ftdi:2232h:FT5ECP6E/1
+
+www.efinixinc.com
+
+72
+
+AN 006: Configuring Trion FPGAs
+
+Identifying FTDI URLs
+Certain Eﬁnity® scripts contain the --url and --aurl options, which require the input of
+an FTDI URL.
+Important: You only need to specify the --url and --aurl options if you have more than one board
+with an FTDI chip connected to your computer.
+Only supported in T20 (BGA324 and BGA400), T35, T55, and T120 FPGAs.
+
+The FTDI URL is in the format:
+ftdi://ftdi:<product>:<serial>/<interface>
+
+where:
+<product> is the USB product ID of the device
+<product>
+
+Board
+
+232h
+
+Trion T8 Development Board
+
+2232h
+
+Trion T20 MIPI Development Board
+
+Trion T20 BGA256 Development Board
+
+Trion T120 BGA324 Development Board
+Trion T120 BGA576 Development Board
+4232h
+
+Xyloni Development Board
+
+<serial> is the serial number of the FTDI chip. (Optional)
+• If you only have one Eﬁnix® development board or FTDI device connected to your
+computer, you do not need to specify the serial number.
+• In the Eﬁnity® software v2020.2 and higher, the Programmer displays the serial number of
+the FTDI device in the USB Info string. The serial number is a string beginning with FT.
+
+The string after S/N is
+the FTDI serial number
+
+<interface> is the interface number. For Eﬁnix® development boards, <interface> is
+always 1.
+
+www.efinixinc.com
+
+73
+
+AN 006: Configuring Trion FPGAs
+
+Using the Command-Line Programmer
+To run the Programmer using the command line, use the command:
+Example: Command-Line Programmer
+Linux:
+efx_run.py <project name>.xml --flow program [--pgm_opts [mode=MODE] [settings_file]]
+
+Windows:
+efx_run.bat <project name>.xml --flow program [--pgm_opts [mode=MODE] [settings_file]]
+
+Options
+--pgm_opts mode speciﬁes the conﬁguration mode. The available modes are:
+Table 34: --pgm_opts Modes
+Mode
+
+Description
+
+active
+
+SPI Active configuration.
+
+passive
+
+SPI Passive configuration.
+
+jtag
+
+JTAG programming. See the Efinity Programmer User Guide for more
+information about programming with the JTAG interface.
+
+jtag_bridge
+
+SPI Active using JTAG bridge mode.
+
+jtag-bridge_x8
+
+SPI Active x8 using JTAG bridge mode (used with two flash devices). (8)
+
+In active mode, the FPGA conﬁgures itself from ﬂash memory; in passive mode, a CPU
+drives the conﬁguration. If you do not specify the mode, it defaults to active. For example, to
+use JTAG mode, use the command:
+efx_run.py <project name>.xml --flow program --pgm_opts mode=jtag
+
+--pgm_opts settings_file speciﬁes a ﬁle in which you have saved all of the programming
+options. A settings ﬁle is useful for performing batch programming of multiple devices.
+Note: See Programming Options for more programming options.
+
+(8)
+
+Used with two flash devices. Only supported in some FPGAs. Refer to the data sheet for the modes your FPGA supports.
+www.efinixinc.com
+
+74
+
+AN 006: Configuring Trion FPGAs
+
+Project-Based Programming Options
+You specify project-based programming options in the Project Editor > Bitstream
+Generation tab in the Eﬁnity® software. Eﬁnix FPGAs support active and passive
+conﬁguration in a variety of modes.
+Note: Some of these project settings affect bits in the bitstream. Therefore, when you program an FPGA
+with the Programmer, the setting you make in the Project Editor should match what you intend to use in
+the Programmer.
+
+Table 35: Project-Specific Programming Options
+Option
+Active/Passive
+
+Notes
+Active: SPI active mode.
+
+Passive: SPI passive mode.
+
+Your choice of active or passive affects the pinout and determines which choices are
+available in the Programming Mode box.
+JTAG USERCODE
+
+Fixed at: 0xFFFFFFFF
+
+Clock Source
+
+For Trion FPGAs, this option is always Internal Oscillator.
+
+SPI Programming
+Clock Divider
+
+Choose the divider for the SPI clock. This setting is reflected in the bitstream file.
+
+Clock Sampling
+Edge
+
+For Trion FPGAs, this option is always Rising.
+
+Power down flash
+after programming
+
+Enable this option to power down the flash device after the FPGA finishes programming.
+This setting is reflected in the bitstream file, and you can only set it here.
+
+Use 4-byte
+addressing during
+configuration
+
+This option is not supported for all Trion FPGAs.
+
+Programming mode
+
+Choose the programming mode and width; the choices depend on the FPGA and
+package you are targeting. This setting is reflected in the bitstream file, and you can only
+set it here.
+
+Default: DIV8
+
+Default: On
+
+Default: SPI <active or passive> x1
+Enable Initialized
+Memory in User
+RAMs
+
+This setting is reflected in the bitstream file, and you can only set it here.
+on: The bitstream has initialized memory.
+
+off: The bitstream does not have initialized memory.
+smart:
+
+For the Trion family, this option has the same effect as on.
+Release Tri-States
+before Reset
+
+During configuration, core signals are held in reset and the I/O pins are tri-stated. These
+states are released when the FPGA enters user mode.
+On: (default) I/O pins are released from tri-state before the core is released from reset
+(use this option when the application is core sensitive).
+
+Off: Core signals are released from reset before the I/O pins are released from tri-state
+(use this option when the application is I/O sensitive).
+Generate JTAG
+configuration file
+
+On (always): Generate a .bit file for JTAG configuration.
+
+Generate JTAG raw
+binary configuration
+file
+
+On: Generate a .bin file (raw binary) for JTAG configuration.
+Off (default): Do not generate a .bin file.
+
+www.efinixinc.com
+
+75
+
+AN 006: Configuring Trion FPGAs
+
+Option
+
+Notes
+
+Generate SPI
+configuration file
+
+On (always): Generate a .hex file for SPI programming.
+
+Generate SPI raw
+binary configuration
+file
+
+On: Generate a .bin file (raw binary) for SPI programming.
+Off (default): Do not generate a .bin file.
+
+When you change one of these options, you can simply re-run the bitstream generation ﬂow
+step. You do not need to recompile the design.
+Figure 50: Setting Programming Options
+
+Notice: Refer to the data sheet for your FPGA for information on which configuration options it supports.
+
+www.efinixinc.com
+
+76
+
+AN 006: Configuring Trion FPGAs
+
+Verifying Configuration
+You can conﬁrm that the FPGA is conﬁgured by your bitstream successfully by checking on
+the following:
+• Use the Eﬁnity Programmer to check whether the FPGA is in user mode. In the
+Programmer, click the Device Conﬁguration Status > Refresh Device Conﬁguration
+Status button. The console displays the FPGA status.
+• Monitor the CDONE and NSTATUS pins to determine the status of the FPGA. The status
+lets you know if there is a conﬁguration error (CDONE = 0 and NSTATUS = 0).
+• You can verify the bit stream stored in the SPI ﬂash after programming is completed in
+SPI Active mode. Turn on the option in Project Editor > Programmer > SPI Active
+Options > Verify After Programming to check for errors such as ﬂash image being
+corrupted during a write, an improperly skipped erase step, etc.
+Note: Generally, Efinix recommends that you keep the Verify After Programming
+option turned on. However, if you are using the FPGA's built-in CRC checking
+(enabled by default) with NSTATUS monitoring to verify configuration, you can use
+that method as a way of verifying the flash (that is, if the FPGA goes into user mode,
+the flash write is verified).
+Note: The Verify After Programming confirms the correctness of the bit stream
+programmed into the SPI Flash. It doesn't confirm if the device is in use afterwards.
+
+The Eﬁnity software adds a CRC to the bitstream. During conﬁguration, the FPGA generates
+another CRC as it reads the bitstream. Then, it compares the two CRCs to see if they match.
+If they do not, it indicates a conﬁguration error. The CRC error is reﬂected by CDONE =
+0 and NSTATUS = 0. The CRC check can be useful for debugging board problems such as
+signal integrity issues between the ﬂash device and the FPGA.
+Note: The CRC check is not supported in T4 or T8 FPGAs in F49 and F81 packages.
+The CRC is only applicable to the core logic portion of the design (not the interface).
+
+In some cases, you may need to debug possible conﬁguration errors. To simplify this
+debugging process, add logic to your RTL design that generates a signal you can monitor to
+conﬁrm that the FPGA has entered user mode.
+
+Monitoring with the Efinity Programmer
+With the board connected to your computer, you can monitor the FPGA's status with the
+Programmer. The following table describes the values of CDONE and NSTATUS and their
+meaning.
+Table 36: Monitoring with the Efinity Programmer
+CDONE
+
+NSTATUS
+
+Programmer
+Message
+
+Description
+
+0
+
+0
+
+Failure to
+configure
+was detected
+
+Configuration failed. This may be cause by:
+• The configured bitstream is for a different configuration mode
+or width.
+• Wrong device ID.
+• CRC error is detected during configuration.
+
+0
+
+1
+
+Programming ...
+
+The FPGA is in configuration mode.
+
+www.efinixinc.com
+
+77
+
+AN 006: Configuring Trion FPGAs
+
+CDONE
+
+NSTATUS
+
+Programmer
+Message
+
+Description
+
+1
+
+0
+
+–
+
+The FPGA is in transition from configuration mode to user mode
+conditionally.
+
+1
+
+1
+
+Device is in
+user mode!
+
+The FPGA is functioning correctly according to the user design.
+
+Note: As NSTATUS is a dual purpose GPIO, you may observe different behavior from Efinity Programmer
+on NSTATUS if NSTATUS is applied as a GPIO in your bit stream.
+
+Monitoring with a Microcontroller or LEDs
+You can optionally monitor the status of CRESET_N, CDONE and NSTATUS with a
+microcontroller or LEDs. CDONE is a dedicated conﬁguration pin and you can monitor
+it directly. However, NSTATUS is a dual-purpose conﬁguration pin. To use it to monitor
+conﬁguration, you can connect it to a GPIO and set it's output value to a constant 0.
+To add NSTATUS to your design as a GPIO for monitoring:
+1. In the Interface Designer, create a GPIO block for NSTATUS with the following settings:
+• Instance Name: NSTATUS
+• Mode: Output
+2. In the Instance View pane, assign the NSTATUS instance to the NSTATUS package pin
+(refer to the pinout ﬁle to ﬁnd the package pin).
+3. Follow these steps to set the external or internal conﬁguration:
+a. For single image (SPI active, SPI passive, and JTAG) and external controller ﬂash
+image,
+• Set Constant Output: 0 for the NSTATUS
+b. For internal conﬁguration,
+• Assign the cfg_error to the NSTATUS in the RTL top module.
+4. Recompile the design.
+5. Download the bitstream to the ﬂash memory on your board.
+The following ﬁgure shows example schematics connecting a microcontroller to the FPGA's
+CDONE and NSTATUS pins:
+Figure 51: Connect CDONE and NSTATUS to a Microcontroller
+VCCIO1A
+FPGA
+CDONE
+NSTATUS
+
+VCCIO_MCU
+
+VCCIO_MCU
+
+10 kΩ
+
+10 kΩ
+
+10 kΩ
+
+Microprocessor
+
+100 kΩ
+100 kΩ
+
+The MCU can verify the conﬁguration with the following steps:
+• Reset the FPGA.
+• Poll CDONE for 1.
+• Wait for tUSER.
+• Sample NSTATUS.
+
+www.efinixinc.com
+
+78
+
+AN 006: Configuring Trion FPGAs
+
+Note: You can add a watchdog timer in the MCU to time the system's configuration, thus preventing the
+system from hanging if any configuration issues arise.
+
+Table 37: Monitoring with a Microcontroller
+CRESET_N
+
+CDONE
+
+NSTATUS
+(After tUSER)
+
+Description
+
+1
+
+0
+
+0
+
+Configuration failed. This may be caused by:
+• The configured bitstream is for a different configuration mode or
+width.
+• Wrong device ID.
+• CRC error is detected during configuration.
+
+1
+
+0
+
+1
+
+The FPGA is in configuration mode.
+
+1
+
+1
+
+0
+
+The FPGA is functioning correctly according to the user design.
+
+1
+
+1
+
+1
+
+For internal reconfiguration only. The targeted application image
+FPGA cannot be configured successfully after 6 trials or a timeout
+with the golden image restored.
+
+The following ﬁgure shows example schematics connecting LED's to the FPGA's CDONE and
+NSTATUS pins:
+Figure 52: Connect CDONE and NSTATUS to LEDs
+VCCIO
+
+VCCIO
+
+VCCIO
+
+FPGA
+
+220 kΩ,
+5%
+
+10 kΩ
+
+NSTATUS
+
+CDONE
+
+220 kΩ,
+5%
+
+100 kΩ
+
+Table 38: Observation through LEDs
+CRESET_N
+
+CDONE
+LED
+
+NSTATUS
+LED
+
+Description
+
+1
+
+Off
+
+Off
+
+The FPGA is in configuration mode.
+
+1
+
+Off
+
+On
+
+Configuration fails. This may be caused by:
+• The configured bitstream is for a different configuration mode or
+width.
+• Wrong device ID.
+• CRC error is detected during configuration.
+
+1
+
+On
+
+On
+
+The FPGA is functioning correctly according to the user design.
+
+1
+
+On
+
+Off
+
+The internal reconfiguration only, the targeted application image
+cannot be configured successfully after 6 trials or a timeout with the
+golden image restored.
+
+www.efinixinc.com
+
+79
+
+AN 006: Configuring Trion FPGAs
+
+Installing USB Drivers
+To program Trion® FPGAs using the Eﬁnity® software and programming cables, you need to
+install drivers.
+Eﬁnix development boards have FTDI chips (FT232H, FT2232H, or FT4232H) to
+communicate with the USB port and other interfaces such as SPI, JTAG, or UART. Refer
+to the Eﬁnix development kit user guide for details on installing drivers for the development
+board.
+Note: If you are using more than one Efinix development board, you must manage drivers accordingly.
+Refer to AN 050: Managing Windows Drivers for more information.
+Notice: The Trion T8 BGA81 Development Boards do not have FTDI chip for USB communication. Refer
+to the T8 BGA81 Development Kit User Guide for more information about installing its Windows USB
+driver.
+
+For your own development board, Eﬁnix suggests using the FTDI Chip FT2232H or
+FT4232H Mini Modules for JTAG programming Trion® FPGAs. (You can use any JTAG
+cable for JTAG functions other than programming.)
+Note: Efinix does not recommend the FTDI Chip C232HM-DDHSL-0 programming
+cable due to the possibility of the FPGA not being recognized or the potential for
+programming failures.
+
+Table 39: USB Programming Connections
+Board
+
+Connect to Computer with
+
+Efinix development boards
+
+USB cable
+
+Your own board
+
+FTDI x232H programming kit. For example:
+• FT2232H Mini Module
+• FT4232H Mini Module
+
+Note: The FTDI Chip Mini Module supports 3.3 V I/O voltage only. Refer to the FTDI Chip website for
+more information about the modules.
+
+Installing the Linux USB Driver
+The following instructions explain how to install a USB driver for Linux operating systems.
+1. Disconnect your board from your computer.
+2. In a terminal, use these commands:
+> sudo <installation directory>/bin/install_usb_driver.sh
+> sudo udevadm control --reload-rules
+> sudo udevadm trigger
+
+Note: If your board was connected to your computer before you executed these
+commands, you need to disconnect it, then re-connect it.
+
+www.efinixinc.com
+
+80
+
+AN 006: Configuring Trion FPGAs
+
+Installing the Windows USB Driver
+On Windows, you use software from Zadig to install drivers. Download the Zadig software
+(version 2.7 or later) from zadig.akeo.ie. (You do not need to install it; simply run the
+downloaded executable.)
+Important: For some Efinix development boards, Windows automatically installs drivers for some
+interfaces when you connect the board to your computer. You do not need to install another driver
+for these interfaces. Refer to the user guide for your development board for specific driver installation
+requirements.
+
+To install the driver:
+1. Connect the board to your computer with the appropriate cable and power it up.
+2. Run the Zadig software.
+Note: To ensure that the USB driver is persistent across user sessions, run the
+Zadig software as administrator.
+
+3. Choose Options > List All Devices.
+4. Repeat the following steps for each interface. The interface names end with (Interface N),
+where N is the channel number.
+• Select libusb-win32 in the Driver drop-down list.
+• Click Replace Driver.
+5. Close the Zadig software.
+Note: This section describes how to install the libusb-win32 driver for each interface separately. If you
+have previously installed a composite driver or installed using libusbK drivers, you do not need to update
+or reinstall the driver. They should continue to work correctly.
+
+www.efinixinc.com
+
+81
+
+AN 006: Configuring Trion FPGAs
+
+Appendix: Programming the Flash Using JTAG
+Bridge (Legacy)
+JTAG Bridge (Legacy) and JTAG SPI Flash Loader are EOL. The section has been kept to
+provide legacy support. For new designs, Eﬁnix recommends using JTAG Bridge (New).
+You can use the JTAG SPI Flash Loader to load a new user image into the SPI ﬂash device on
+your board. The Trion® FPGA bridges the JTAG commands sent from the computer to the
+ﬂash device. This mode lets you save board space because you can use the JTAG header on
+your board to program the ﬂash instead of using a separate SPI header.
+The ﬂash programming ﬂow consists of these steps:
+1. Turn the Trion® FPGA into a ﬂash programmer by conﬁguring the FPGA via JTAG
+with the JTAG SPI Flash Loader IP core. You can conﬁgure the IP core using the Eﬁnity
+IP Manager. You use a .bit bitstream ﬁle to conﬁgure the FPGA.
+2. Use the Eﬁnity Programmer and the SPI Active using JTAG Bridge mode to program
+the user image into the ﬂash device. The Programmer sends the command through the
+Trion® FPGA, which in turn programs the ﬂash. You use a .hex bitstream ﬁle for the
+user image.
+3. After the ﬂash is programmed, toggle the Trion® FPGA's CRESET_N signal to trigger
+reconﬁguration using the new ﬂash image.
+Figure 53: SPI Flash Programming Flow
+
+1
+
+Programmer
+(JTAG)
+
+.bit
+
+FPGA
+
+Design turns the FPGA
+into a flash loader
+
+2
+
+Programmer
+(SPI Active Using
+JTAG Bridge)
+
+.hex
+
+FPGA
+
+SPI Flash
+Device
+
+User Design
+Reconfigure
+
+3
+
+Trigger
+CRESET_N
+
+FPGA
+
+SPI Flash
+Device
+
+When using this mode, you need to connect the JTAG pins. Refer to the diagrams in
+Connecting a JTAG Mini Module and JTAG Programming Connections on page 56 for
+the pins to connect.
+Learn more: For more information on using the JTAG SPI Flash Loader and the SPI Active using JTAG
+Bridge programming mode, refer to the JTAG SPI Flash Loader Core User Guide.
+
+www.efinixinc.com
+
+82
+
+AN 006: Configuring Trion FPGAs
+
+Revision History
+Table 40: Revision History
+Date
+
+Version
+
+November 2025
+
+6.6
+
+Description
+Added Supported Download Cables section. (DOC-1303)
+Added IS25WP512M for ISSI in Supported Flash Devices.
+
+Corrected and Updated Verify Configuration topic including sub-topic
+Monitoring with a Microcontroller or LEDs.
+
+Added note about padding in combined bitstream images in Combine
+Bitstreams and Other Files on page 63.
+March 2025
+
+6.5
+
+Added Figure 5: SPI Active (x1) Configuration on page 16.
+
+Added Figure 6: SPI Active (x1) Configuration (Detailed View) on page
+16.
+Added Figure 14: SPI Passive (x1, Mode 3) Configuration on page 25.
+
+Added Figure 15: SPI Passive (x1, Mode 3) Configuration (Detailed View)
+on page 25.
+Update Figure 22: JTAG Programming Waveform (T4, T8, T13, T20W80,
+T20Q100F3, T20Q144, T20F256, and T20F169 FPGAs) on page 32.
+Update Figure 23: JTAG Programming Waveform (T20F324, T20F400,
+T35, T55, T85, and T120 FPGAs) on page 32.
+
+Added Figure 24: JTAG Programming (All Trion FPGAs) (Detailed View)
+on page 33.
+Fix typo in Figure 31: Flash Programming Board Setup on page 39.
+
+Added note to Program Using a JTAG Chain on page 68. (DOC-2310)
+February 2025
+
+6.4
+
+Corrected timing waveforms. (DOC-2325)
+
+January 2025
+
+6.3
+
+Fixed typo in title of referenced document. (DOC-2302)
+
+Move information about unused resources to Unused Resources and
+Features on page 44.
+
+www.efinixinc.com
+
+83
+
+AN 006: Configuring Trion FPGAs
+
+Date
+
+Version
+
+December 2024
+
+6.2
+
+Description
+Added Table 19: Status Register Protect Bits on page 40. (DOC-2254)
+
+Updated Figure 10: Passive (x1) on page 21 and added important note.
+(DOC-2076)
+Added Figure 11: Supported SPI Waveform on page 22. (DOC-2176)
+
+Added Figure 12: Unsupported SPI Waveform on page 22. (DOC-2176)
+Added SPI Passive Mode for SIP Packages on page 27. (DOC-2077)
+Updated Table 3: Dual-Purpose Configuration Pins on page 8.
+(DOC-2077)
+
+Added Figure 7: Connections between FPGA and SPI Flash Inside the
+QFP100F3 Package on page 17. (DOC-2077)
+Added Figure 9: Configuration with External Flash on page 19.
+(DOC-2077)
+Added Figure 8: Configuration with Internal Flash on page 18.
+(DOC-2077)
+
+Updated Figure 51: Connect CDONE and NSTATUS to a Microcontroller
+on page 78 and Figure 52: Connect CDONE and NSTATUS to LEDs on
+page 79. (DOC-2165)
+Notes added to SPI Active Mode on page 12. (DOC-2046)
+
+Notes added to SPI Passive Mode on page 21. (DOC-2046)
+Notes added to JTAG Mode on page 30. (DOC-2046)
+
+Updated entry for SS_N configuration function in Table 3: Dual-Purpose
+Configuration Pins on page 8. (DOC-2077)
+Updated Figure 31: Flash Programming Board Setup on page 39.
+(DOC-1408)
+Fixed typo in Table 3: Dual-Purpose Configuration Pins on page 8.
+(DOC-2038)
+
+Changed column name from Pins to Configuration Functions in Table 3:
+Dual-Purpose Configuration Pins on page 8. (DOC-2038)
+Added note after Table 3: Dual-Purpose Configuration Pins on page 8
+directing the reader to device_pinout.xlxs. (DOC-2038)
+August 2024
+
+6.1
+
+Updated Design Considerations on page 33 for CRESET_N and SS_N
+requirements when using JTAG bridge programming. (DOC-2011)
+
+February 2024
+
+6.0
+
+Updated figures Flash Programming Board Setup and SPI Flash
+Programming with FTDI FT2232H and FT4232H Mini Module Connections.
+(DOC-1256)
+Updated on table Dedicated Configuration Pins and Dual-Purpose
+Configuration Pins. (DOC-1490)
+
+Updated SPI Flash Programming with FTDI Mini Module Connections.
+(DOC-1497)
+
+Updated note about multiple FTDI connection to mention the supported
+FPGAs. (DOC-1512)
+Updated notes in figure SPI Passive Mode (x1) Timing Sequence.
+(DOC-1690)
+
+Updated the waveform for figures SPI Active Mode (x1) Timing Sequence,
+SPI Passive Mode (x1, Mode 3) Timing Sequence, and JTAG Programming
+Waveform.
+September 2023
+
+5.9
+
+Updated CCK pin description. (DOC-1451)
+
+June 2023
+
+5.8
+
+Updated Internal Flash Image option to Remote Update Flash Image in
+Programmer. (DOC-1302)
+Trion FPGAs only support SPI Active Using JTAG Bridge. (DOC-1319)
+
+May 2023
+
+5.7
+
+Added IS25LP128 to list of supported flash devices. (DOC-1247)
+
+www.efinixinc.com
+
+84
+
+AN 006: Configuring Trion FPGAs
+
+Date
+April 2023
+
+Version
+5.6
+
+Description
+Added information about QFP100F3 packages and SPI active
+configuration for SIP packages. (DOC-1188)
+
+Updated JTAG configuration design considerations. (DOC-994)
+February 2023
+
+5.5
+
+Added more description about valid and invalid image. (DOC-1118)
+
+Corrected user-defined pull-up/pull-down resistor formula. (DOC-1136)
+Updated power up sequence diagram. (DOC-954)
+
+December 2022
+
+5.4
+
+Corrected SPI Clock Polarity and Phase Mode table. (DOC-946)
+
+Added note about not recommending user to pause FPGA configuration.
+(DOC-944)
+
+Added description about CRESET_N needs to be deasserted before JTAG
+configuration begins. (DOC-1069)
+September 2022
+
+5.3
+
+Updated Verifying Configuration topic.
+
+Enable CRC Check option removed from the Project Editor (always on
+with Efinity v2022.1 and higher). (DOC-912)
+Removed support for C232HM-DDHSL-0 cable. (DOC-860)
+
+Removed JTAG Device ID for BGA49 packages. (DOC-899)
+
+Added note about Trion only supports SPI flash with 3-byte addressing
+mode for configuration. (DOC-910)
+Updated supported flash devices. (DOC-896)
+
+Updated Project-Based Programming Options topic for new options.
+August 2022
+
+5.2
+
+Defined VCC is 1.2 V in the Connection Requirements for Unused
+Resources table. (DOC-770)
+
+Corrected SPI active x1 SDI to CDI0 example connection. (DOC-783)
+Added topic on SPI clocking and sampling. (DOC-625)
+
+Corrected SS_N connection to be bidirectional in active SPI mode
+connection diagrams.
+Updated configuration flow diagram.
+Added JTAG USER TAP instructions.
+April 2022
+
+5.1
+
+Added user-defined pull-down resistance formula. (DOC-747)
+Added Program using a JTAG Bridge topic.
+
+Added topic on combining a bitstream and other data into a single file for
+programming.
+Re-organized topics about working with bitstreams.
+March 2022
+
+5.0
+
+Moved FTDI hardware connection diagrams into Programming Hardware
+Connections topic.
+Added topic about external pull-up resistors. (WEB-39)
+
+Removed optional pull-up resistors from SPI active circuitry diagrams.
+
+Updated power up sequence stating that all supplies must be powered up
+within 10 ms. (DOC-631)
+
+www.efinixinc.com
+
+85
+
+AN 006: Configuring Trion FPGAs
+
+Date
+January 2022
+
+Version
+4.9
+
+Description
+Improved connection diagrams to show pull-ups to point upwards.
+(DOC-612)
+
+Added Bitstream Bytes Packed into Parallel Bus for x16, x8, x4, x2, and x1.
+(DOC-626)
+Added reference to AN 035: SPI Passive Programming with Raspberry Pi.
+(DOC-569)
+With the Efinity software v2021.2 and higher, you must use .hex for SPI
+and .bit for JTAG. (DOC-638)
+Added Exporting to .svf Format topic. (DOC-569)
+
+Corrected Passive (x2) without CSI or CBUS2 figure.
+
+Added note about if the flash device does not have a valid image in the
+location the FPGA expects based on the CBSEL setting, the FPGA looks
+at the image locations in ascending order until it finds a valid image.
+(DOC-686)
+Updated active mode connection diagram.
+November 2021
+
+4.8
+
+Corrected the power-up sequence waveform.
+
+November 2021
+
+4.7
+
+Updated JTAG mode connection diagram. (DOC-546)
+
+Updated the Project-Based Programming Options topic. (DOC-550)
+Added Macronix MX75L and MX75U to supported flash devices.
+(DOC-573)
+
+Updated note about not driving any Trion® I/O pins before the Trion®
+FPGA is powered up. (DOC-587)
+Added support for FTDI FT4232H Mini Module. (DOC-597)
+September 2021
+
+4.6
+
+Updated the Project-Based Programming Options topic. (DOC-523)
+Added XT25F family to list of supported flash devices. (DOC-529)
+
+Minor text corrections to the Programming the Flash Using a JTAG Bridge
+topic. (DOC-543)
+Updated Verifying Configuration topic. (DOC-539, DOC-486)
+
+Removed x4 from Passive (x2) without CSI or CBUS2 figure as the figure is
+showing x1 CBUS settings.
+August 2021
+
+4.5
+
+Updated FPGA configuration mode topic.
+Added flash programming mode topic.
+
+Added topic on verifying configuration. (DOC-508)
+
+Corrected FPGA pin names for the SPI passive FTDI FT2232H Mini Module
+Connections figure.
+Updated for T20QFP144 package. (DOC-519)
+
+Added note about not connecting the NSTATUS pins of multiple FPGAs in
+daisy chain configuration. (DOC-518)
+Added note about FTDI Chip FT2232H Mini Module supports 3.3 V I/O
+voltage only. (DOC-495)
+Added note about using DIV4 in x2 and x4 parallel daisy chain
+configuration. (DOC-525)
+July 2021
+
+4.4
+
+Described more detail on the Enable Initialized Memory in User RAMs
+option in the Project Editor > Bitstream Generation tab. (DOC-458)
+Updated the Windows USB driver installation topic.
+
+Updated the FTDI command-line programming topic. Added the
+command-line programmer configuration mode options. (DOC-430)
+
+Corrected SPI flash daisy chain configuration example figures. (DOC-483)
+Updated CDIn pin description. (DOC-483)
+
+www.efinixinc.com
+
+86
+
+AN 006: Configuring Trion FPGAs
+
+Date
+May 2021
+
+Version
+4.3
+
+Description
+Added Macronix MX25U and Micron M25P16 to list of supported flash
+devices.
+
+Added the SENSE pin to Figure 34: Supervisor IC Power Up Circuitry on
+page 43.
+Removed T120S content. (DOC-445)
+
+Updated CRESET_N pin description. (DOC-450)
+March 2021
+
+4.2
+
+SPI Active using JTAG Bridge mode only requires the 4 JTAG pins.
+(DOC-404)
+
+For Windows, plug in the board and power it up before installing USB
+drivers. (DOC-415)
+February 2021
+
+4.1
+
+Updated Power Up Sequence topic. (DOC-396)
+
+February 2021
+
+4.0
+
+Added note stating a circuitry is needed to control CRESET_N pin to meet
+timing requirement for SPI active mode. (DOC-380)
+
+December 2020
+
+3.9
+
+Updated NSTATUS pin description. (DOC-335)
+
+Added bitstream length for T20W80. (DOC-393)
+
+Added MX25V to list of supported flash devices.
+
+Corrected JTAG Mini Module pin names for T4, T8, T13, T20BGA256, and
+T20BGA169 connection setup. (DOC-348)
+Removed instance pin connection notes and replaced with a table in the
+Power Up Sequence topic.
+November 2020
+
+3.8
+
+Updated Added note to power-up sequence and DDR about DDR_VREF
+and VCCIO_DDR connection when not using DDR. (DOC-325)
+
+Updated About USB Drivers and subtopics to support separate interfaces
+driver installation and FTDI4232H. (DOC-334)
+October 2020
+
+3.7
+
+Corrected serial and parallel daisy chain configuration interface example
+figures. (DOC-135)
+
+August 2020
+
+3.6
+
+Corrected maximum power supply current transient table.
+
+August 2020
+
+3.5
+
+Clarified settings for CBSEL.
+
+Added missing CBUS2 signal in SPI active mode schematics.
+Removed T165 and T200 device information.
+
+July 2020
+
+3.4
+
+Updated timing parameter symbols in boundary scan timing waveform to
+reflect JTAG mode parameter symbols in datasheet.
+Added note to refer to AN021 for boundary-scan testing information.
+
+Removed Efinity Interface Designer JTAG User TAP Interface subsection
+and added note and link to Efinity® Software User Guide for more
+information about JTAG User TAP interface.
+Added note about sending additional 100 CCK cycles after sending the
+last configuration data for passive mode configuration.
+Added support for FTDI FT2232H module for JTAG anf SPI passive
+programming.
+Corrected configuration clock signal name from CCKO to CCK.
+Added JTAG device IDs for T20BGA324 and T20BGA400.
+April 2020
+
+3.3
+
+Corrected GigaDevice supported family (GD25 not GD32).
+Added T8 QFP144 bitstream length.
+
+Added Micron to table of supported flash devices.
+February 2020
+
+3.2
+
+Added GigaDevice to table of supported flash devices.
+
+February 2020
+
+3.1
+
+Added table of supported flash devices.
+
+www.efinixinc.com
+
+87
+
+AN 006: Configuring Trion FPGAs
+
+Date
+January 2020
+
+Version
+
+Description
+
+3.0
+
+Added schematics and information on active and passive configuration for
+packages that do not have the CSI or CBUS2 pins bonded out.
+Clarified usage of TEST_N pin in configuration and user modes.
+Clarified dedicated vs. dual-purpose configuration pins.
+
+Removed DIV1 and DIV2 SPI clock divider settings; currently they are not
+supported.
+Added information on programming with the SPI Active using JTAG
+Bridge mode.
+Added JTAG device IDs for T35, T55, T85, and T120 FPGAs.
+
+Added bitstream lengths for T20 (BGA324 and BGA400), T35, T55, T85,
+and T120 FPGAs.
+
+Clarified handling of multi-function configuration pins that are outputs in
+user mode.
+
+When installing USB drivers for Windows using the Zadig software. specify
+the libusb-win32 driver instead of libusbK.
+Added a note to the Support for Multiple Images topic to refer readers to
+the data sheet for which modes support multiple images.
+September 2019
+
+2.1
+
+Added information on JTAG chain programming.
+Added a note that adding optional header information to the bitstream
+file using the Efinity® software can add up to 1k bits to the bitstream
+length.
+Updated the maximum supported configuration bits.
+Updated CBUS[2:0] setting for SPI active mode.
+
+March 2019
+
+2.0
+
+Added information about JTAG programming support.
+
+Updated information on installing the programming cable USB driver.
+Added additional information on using the Efinity® Programmer.
+
+December 2018
+
+1.2
+
+Added sections on using the Efinity® Programmer.
+Added note for SPI passive mode that the CSI pin can also be connected
+to VCCIO.
+Fixed incorrect equation for calculating bitstream length.
+
+Changed TCK to have a recommended weak pull down.
+Fixed typo in Daisy Chaining with a SPI Flash Device on page 48, Parallel
+Daisy Chain Configuration (x4) Interface Example.
+August 2018
+
+1.1
+
+Added section on choosing an SPI flash device.
+
+June 2018
+
+1.0
+
+Initial release.
+
+www.efinixinc.com
+
+88
+
+

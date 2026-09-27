@@ -1,0 +1,39 @@
+[dumpfile] "/tmp/tmpld6rr3n9/la0tmp_continous.vcd"
+[dumpfile_mtime] "lör okt 04 18:20:47 2025"
+[dumpfile_size] 9193
+[savefile] "/home/olle/efinity_p2/BRAM/la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 1024 3072 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.record_frame_bram_counted_inst/valid
+top.record_frame_bram_counted_inst/uart_tx
+top.MIPI_test_reset_n
+top.record_frame_bram_counted_inst/tx_busy_i
+top.record_frame_bram_counted_inst/tx_start_i
+top.record_frame_bram_counted_inst/tx_byte_i[7:0]
+top.record_frame_bram_counted_inst/dumping
+top.record_frame_bram_counted_inst/dump_byte_idx[2:0]
+top.record_frame_bram_counted_inst/tx_send_S
+top.record_frame_bram_counted_inst/uart_core/st[2:0]
+top.record_frame_bram_counted_inst/uart_core/hi[3:0]
+top.record_frame_bram_counted_inst/uart_core/lo[3:0]
+top.mipi_rx_inst1_CLEAR
+top.mipi_rx_inst1_DATA[63:0]
+top.mipi_rx_inst1_ERROR[17:0]
+top.mipi_rx_inst1_VSYNC[3:0]
+top.mipi_rx_inst1_VALID
+top.mipi_rx_inst1_CNT[3:0]
+top.mipi_rx_inst1_TYPE[5:0]
+top.mipi_rx_inst1_DPHY_RSTN
+top.mipi_rx_inst1_ULPS_CLK
+top.mipi_rx_inst1_VC_ENA[3:0]
+top.mipi_rx_inst1_HSYNC[3:0]
+top.mipi_rx_inst1_LANES[1:0]
+top.mipi_rx_inst1_VC[1:0]
+top.mipi_rx_inst1_ULPS[3:0]
+top.mipi_rx_inst1_RSTN
+top.record_frame_bram_counted_inst/good_dt

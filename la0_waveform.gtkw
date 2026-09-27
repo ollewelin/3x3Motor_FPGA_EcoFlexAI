@@ -1,0 +1,55 @@
+[dumpfile] "/tmp/tmplfdx50ch/la0tmp_continous.vcd"
+[dumpfile_mtime] "sön apr 12 13:10:56 2026"
+[dumpfile_size] 151771
+[savefile] "/home/olle/efinity_p2/BRAM/T120F324_A/la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 4096 12288 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.u_blue_wire_recorder/gap_cnt[7:0]
+top.u_blue_wire_recorder/vid_d_q2[7:0]
+top.u_blue_wire_recorder/vid_d_q1[7:0]
+top.u_blue_wire_recorder/vid_clk_q2
+top.u_blue_wire_recorder/vid_clk_fall
+top.u_blue_wire_recorder/vid_clk
+top.u_blue_wire_recorder/line_gap
+top.u_blue_wire_recorder/fsync_armed
+top.u_blue_wire_recorder/st[2:0]
+top.u_blue_wire_recorder/vid_fsync_q2
+top.u_blue_wire_recorder/vid_clk_q3
+top.u_blue_wire_recorder/vid_d[7:0]
+top.u_blue_wire_recorder/vid_fsync_q1
+top.u_blue_wire_recorder/vid_fsync_sync
+top.u_blue_wire_recorder/vid_clk_q1
+top.u_blue_wire_recorder/frame_captured
+top.u_blue_wire_recorder/kick_first
+top.u_blue_wire_recorder/dumping
+top.u_blue_wire_recorder/vid_frame_sync_n
+top.u_record_video/throughput_overflow_error
+top.u_record_video/vid_clk
+top.u_record_video/line_wr_done
+top.u_record_video/hsync_bit0
+top.u_record_video/vid_frame_sync_n
+top.u_record_video/vsync_frame_alarm
+top.u_record_video/hsync0_q
+top.u_record_video/lc_line_idx[15:0]
+top.u_record_video/frame_start
+top.u_record_video/vsync0_q
+top.u_record_video/vs_hp_tick
+top.u_record_video/hsync_timeout_alarm
+top.u_record_video/hsync0_rise
+top.u_record_video/vid_d[7:0]
+top.u_record_video/lc_gap[15:0]
+top.u_record_video/vsync_bit0
+top.u_record_video/line_just_done_sel
+top.u_record_video/valid
+top.u_record_video/line_sel
+top.u_record_video/vsync0_fall
+top.mipi_cam2_data[63:0]
+top.mipi_cam2_type[5:0]
+top.mipi_cam2_valid
+top.mipi_cam2_hsync[3:0]
+top.mipi_cam2_cnt[3:0]

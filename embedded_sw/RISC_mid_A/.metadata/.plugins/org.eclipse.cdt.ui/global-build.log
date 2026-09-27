@@ -1,0 +1,52 @@
+21:11:26 **** Build of configuration Default for project test_a ****
+make all 
+CC src/test_a.c
+CC ../common/start.S
+LD test_a
+Memory region         Used Size  Region Size  %age Used
+             ram:       16720 B       128 KB     12.76%
+21:13:55 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:22 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:17 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:08 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:54 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:17:33 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:21:00 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:22:07 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:23:13 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:26:54 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:57 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:29:09 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:31:13 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:33:03 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.
+21:34:41 **** Incremental Build of configuration Default for project test_a ****
+make all 
+make: Nothing to be done for 'all'.

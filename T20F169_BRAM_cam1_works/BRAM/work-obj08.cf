@@ -1,0 +1,7 @@
+v 4
+file . "i2c_reg16_master_tb.vhd" "e0fec3762afca8adc8da32d677bbad03241bdc9a" "20250906181809.347":
+  entity i2c_reg16_master_tb at 1( 0) + 0 on 73;
+  architecture sim of i2c_reg16_master_tb at 8( 113) + 0 on 74;
+file . "i2c_reg16_master.vhd" "5e99e334d82f5378160bc13496705ca0d2414fd2" "20250906184840.523":
+  entity i2c_reg16_master at 1( 0) + 0 on 77;
+  architecture rtl of i2c_reg16_master at 49( 1936) + 0 on 78;

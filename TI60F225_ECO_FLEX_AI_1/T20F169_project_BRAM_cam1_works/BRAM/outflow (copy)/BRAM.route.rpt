@@ -1,0 +1,12 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2025.1.110.2.15 
+Date: Sun Sep  7 19:06:54 2025
+
+Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F169
+Top-level Entity Name: BRAM
+Elapsed time for routing: 0 hours 0 minutes 17 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 37 seconds

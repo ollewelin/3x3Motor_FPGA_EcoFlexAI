@@ -1,0 +1,1241 @@
+Efinity Synthesis report for project edb_top
+Version: 2025.1.110.2.15
+Generated at: Sep 07, 2025 19:05:20
+Copyright (C) 2013 - 2025  All rights reserved.
+
+Top-level Entity Name : edb_top
+
+family : Trion
+device : T20F169
+project : edb_top
+root : edb_top
+I,include : /home/olle/efinity_p2/BRAM
+I,include : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes
+I,include : /home/olle/efinity_p2/BRAM/ip/micro_risc_v1
+I,include : /home/olle/efinity_p2/BRAM/ip/MIPI_X
+I,include : /home/olle/efinity_p2/BRAM/ip/MIPI_B2
+I,include : /home/olle/efinity_p2/BRAM/ip/I2C_32_MASTER
+output-dir : /home/olle/efinity_p2/BRAM/outflow
+work-dir : /home/olle/efinity_p2/BRAM/work_dbg
+insert-ios : 0
+max-carry-cascade : 240
+max_mult : -1
+max_ram : -1
+mode : speed
+gen-mark-debug-json : 0
+
+File List:
+
+/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v
+
+### ### Report Section Start ### ###
+
+"MEM|SYN-0677" : ... Memory 'ram' is not initialized, assuming empty initial contents. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:589)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 187
+Total number of FFs with enable signals: 1584
+CE signal <ceg_net2>, number of controlling flip flops: 3
+CE signal <la0/n55969>, number of controlling flip flops: 21
+CE signal <la0/n1190>, number of controlling flip flops: 64
+CE signal <la0/n1707>, number of controlling flip flops: 64
+CE signal <la0/n1840>, number of controlling flip flops: 22
+CE signal <la0/addr_ct_en>, number of controlling flip flops: 27
+CE signal <la0/op_reg_en>, number of controlling flip flops: 4
+CE signal <ceg_net5>, number of controlling flip flops: 6
+CE signal <la0/word_ct_en>, number of controlling flip flops: 16
+CE signal <ceg_net8>, number of controlling flip flops: 64
+CE signal <la0/n2699>, number of controlling flip flops: 3
+CE signal <la0/n3110>, number of controlling flip flops: 3
+CE signal <la0/n3558>, number of controlling flip flops: 3
+CE signal <la0/n3573>, number of controlling flip flops: 3
+CE signal <la0/n3771>, number of controlling flip flops: 3
+CE signal <la0/n3969>, number of controlling flip flops: 3
+CE signal <la0/n3984>, number of controlling flip flops: 3
+CE signal <la0/n4182>, number of controlling flip flops: 3
+CE signal <la0/n4399>, number of controlling flip flops: 3
+CE signal <la0/n4810>, number of controlling flip flops: 3
+CE signal <la0/n5237>, number of controlling flip flops: 3
+CE signal <la0/n5648>, number of controlling flip flops: 3
+CE signal <la0/n6138>, number of controlling flip flops: 3
+CE signal <la0/n6153>, number of controlling flip flops: 9
+CE signal <la0/n6351>, number of controlling flip flops: 9
+CE signal <la0/n6549>, number of controlling flip flops: 3
+CE signal <la0/n6564>, number of controlling flip flops: 9
+CE signal <la0/n6762>, number of controlling flip flops: 9
+CE signal <la0/n6985>, number of controlling flip flops: 3
+CE signal <la0/n7396>, number of controlling flip flops: 3
+CE signal <la0/n7823>, number of controlling flip flops: 3
+CE signal <la0/n8234>, number of controlling flip flops: 3
+CE signal <la0/n8661>, number of controlling flip flops: 3
+CE signal <la0/n9072>, number of controlling flip flops: 3
+CE signal <la0/n9723>, number of controlling flip flops: 3
+CE signal <la0/n9738>, number of controlling flip flops: 32
+CE signal <la0/n9936>, number of controlling flip flops: 32
+CE signal <la0/n10134>, number of controlling flip flops: 3
+CE signal <la0/n10149>, number of controlling flip flops: 32
+CE signal <la0/n10347>, number of controlling flip flops: 32
+CE signal <la0/n10614>, number of controlling flip flops: 3
+CE signal <la0/n10629>, number of controlling flip flops: 3
+CE signal <la0/n10827>, number of controlling flip flops: 3
+CE signal <la0/n11025>, number of controlling flip flops: 3
+CE signal <la0/n11040>, number of controlling flip flops: 3
+CE signal <la0/n11238>, number of controlling flip flops: 3
+CE signal <la0/n11455>, number of controlling flip flops: 3
+CE signal <la0/n11866>, number of controlling flip flops: 3
+CE signal <la0/n12405>, number of controlling flip flops: 3
+CE signal <la0/n12420>, number of controlling flip flops: 16
+CE signal <la0/n12618>, number of controlling flip flops: 16
+CE signal <la0/n12816>, number of controlling flip flops: 3
+CE signal <la0/n12831>, number of controlling flip flops: 16
+CE signal <la0/n13029>, number of controlling flip flops: 16
+CE signal <la0/n13273>, number of controlling flip flops: 3
+CE signal <la0/n13288>, number of controlling flip flops: 2
+CE signal <la0/n13486>, number of controlling flip flops: 2
+CE signal <la0/n13684>, number of controlling flip flops: 3
+CE signal <la0/n13699>, number of controlling flip flops: 2
+CE signal <la0/n13897>, number of controlling flip flops: 2
+CE signal <la0/n14113>, number of controlling flip flops: 3
+CE signal <la0/n14524>, number of controlling flip flops: 3
+CE signal <la0/n15007>, number of controlling flip flops: 3
+CE signal <la0/n15022>, number of controlling flip flops: 8
+CE signal <la0/n15220>, number of controlling flip flops: 8
+CE signal <la0/n15418>, number of controlling flip flops: 3
+CE signal <la0/n15433>, number of controlling flip flops: 8
+CE signal <la0/n15631>, number of controlling flip flops: 8
+CE signal <la0/n15853>, number of controlling flip flops: 3
+CE signal <la0/n16264>, number of controlling flip flops: 3
+CE signal <la0/n16691>, number of controlling flip flops: 3
+CE signal <la0/n17102>, number of controlling flip flops: 3
+CE signal <la0/n17529>, number of controlling flip flops: 3
+CE signal <la0/n17940>, number of controlling flip flops: 3
+CE signal <la0/n18367>, number of controlling flip flops: 3
+CE signal <la0/n18778>, number of controlling flip flops: 3
+CE signal <la0/n19205>, number of controlling flip flops: 3
+CE signal <la0/n19616>, number of controlling flip flops: 3
+CE signal <la0/n20043>, number of controlling flip flops: 3
+CE signal <la0/n20454>, number of controlling flip flops: 3
+CE signal <la0/n20881>, number of controlling flip flops: 3
+CE signal <la0/n21292>, number of controlling flip flops: 3
+CE signal <la0/n21768>, number of controlling flip flops: 3
+CE signal <la0/n21783>, number of controlling flip flops: 7
+CE signal <la0/n21981>, number of controlling flip flops: 7
+CE signal <la0/n22179>, number of controlling flip flops: 3
+CE signal <la0/n22194>, number of controlling flip flops: 7
+CE signal <la0/n22392>, number of controlling flip flops: 7
+CE signal <la0/n22613>, number of controlling flip flops: 3
+CE signal <la0/n23024>, number of controlling flip flops: 3
+CE signal <la0/n23451>, number of controlling flip flops: 3
+CE signal <la0/n23862>, number of controlling flip flops: 3
+CE signal <la0/n24289>, number of controlling flip flops: 3
+CE signal <la0/n24700>, number of controlling flip flops: 3
+CE signal <la0/n25183>, number of controlling flip flops: 3
+CE signal <la0/n25198>, number of controlling flip flops: 8
+CE signal <la0/n25396>, number of controlling flip flops: 8
+CE signal <la0/n25594>, number of controlling flip flops: 3
+CE signal <la0/n25609>, number of controlling flip flops: 8
+CE signal <la0/n25807>, number of controlling flip flops: 8
+CE signal <la0/n26043>, number of controlling flip flops: 3
+CE signal <la0/n26058>, number of controlling flip flops: 2
+CE signal <la0/n26256>, number of controlling flip flops: 2
+CE signal <la0/n26454>, number of controlling flip flops: 3
+CE signal <la0/n26469>, number of controlling flip flops: 2
+CE signal <la0/n26667>, number of controlling flip flops: 2
+CE signal <la0/n27107>, number of controlling flip flops: 3
+CE signal <la0/n27122>, number of controlling flip flops: 32
+CE signal <la0/n27320>, number of controlling flip flops: 32
+CE signal <la0/n27518>, number of controlling flip flops: 3
+CE signal <la0/n27533>, number of controlling flip flops: 32
+CE signal <la0/n27731>, number of controlling flip flops: 32
+CE signal <la0/n27998>, number of controlling flip flops: 3
+CE signal <la0/n28013>, number of controlling flip flops: 3
+CE signal <la0/n28211>, number of controlling flip flops: 3
+CE signal <la0/n28409>, number of controlling flip flops: 3
+CE signal <la0/n28424>, number of controlling flip flops: 3
+CE signal <la0/n28622>, number of controlling flip flops: 3
+CE signal <la0/n28874>, number of controlling flip flops: 3
+CE signal <la0/n28889>, number of controlling flip flops: 5
+CE signal <la0/n29087>, number of controlling flip flops: 5
+CE signal <la0/n29285>, number of controlling flip flops: 3
+CE signal <la0/n29300>, number of controlling flip flops: 5
+CE signal <la0/n29498>, number of controlling flip flops: 5
+CE signal <la0/n29717>, number of controlling flip flops: 3
+CE signal <la0/n30128>, number of controlling flip flops: 3
+CE signal <la0/n30576>, number of controlling flip flops: 3
+CE signal <la0/n30591>, number of controlling flip flops: 3
+CE signal <la0/n30789>, number of controlling flip flops: 3
+CE signal <la0/n30987>, number of controlling flip flops: 3
+CE signal <la0/n31002>, number of controlling flip flops: 3
+CE signal <la0/n31200>, number of controlling flip flops: 3
+CE signal <la0/n31417>, number of controlling flip flops: 3
+CE signal <la0/n31828>, number of controlling flip flops: 3
+CE signal <la0/n32255>, number of controlling flip flops: 3
+CE signal <la0/n32666>, number of controlling flip flops: 3
+CE signal <la0/n33135>, number of controlling flip flops: 3
+CE signal <la0/n33150>, number of controlling flip flops: 6
+CE signal <la0/n33348>, number of controlling flip flops: 6
+CE signal <la0/n33546>, number of controlling flip flops: 3
+CE signal <la0/n33561>, number of controlling flip flops: 6
+CE signal <la0/n33759>, number of controlling flip flops: 6
+CE signal <la0/n33979>, number of controlling flip flops: 3
+CE signal <la0/n34390>, number of controlling flip flops: 3
+CE signal <la0/n34852>, number of controlling flip flops: 3
+CE signal <la0/n34867>, number of controlling flip flops: 5
+CE signal <la0/n35065>, number of controlling flip flops: 5
+CE signal <la0/n35263>, number of controlling flip flops: 3
+CE signal <la0/n35278>, number of controlling flip flops: 5
+CE signal <la0/n35476>, number of controlling flip flops: 5
+CE signal <la0/n35695>, number of controlling flip flops: 3
+CE signal <la0/n36106>, number of controlling flip flops: 3
+CE signal <la0/n36533>, number of controlling flip flops: 3
+CE signal <la0/n36944>, number of controlling flip flops: 3
+CE signal <la0/n37427>, number of controlling flip flops: 3
+CE signal <la0/n37442>, number of controlling flip flops: 8
+CE signal <la0/n37640>, number of controlling flip flops: 8
+CE signal <la0/n37838>, number of controlling flip flops: 3
+CE signal <la0/n37853>, number of controlling flip flops: 8
+CE signal <la0/n38051>, number of controlling flip flops: 8
+CE signal <la0/n38273>, number of controlling flip flops: 3
+CE signal <la0/n38684>, number of controlling flip flops: 3
+CE signal <la0/n39167>, number of controlling flip flops: 3
+CE signal <la0/n39182>, number of controlling flip flops: 8
+CE signal <la0/n39380>, number of controlling flip flops: 8
+CE signal <la0/n39578>, number of controlling flip flops: 3
+CE signal <la0/n39593>, number of controlling flip flops: 8
+CE signal <la0/n39791>, number of controlling flip flops: 8
+CE signal <la0/n40013>, number of controlling flip flops: 3
+CE signal <la0/n40424>, number of controlling flip flops: 3
+CE signal <la0/n40841>, number of controlling flip flops: 44
+CE signal <la0/regsel_ld_en>, number of controlling flip flops: 13
+CE signal <ceg_net11>, number of controlling flip flops: 32
+CE signal <la0/tu_trigger>, number of controlling flip flops: 64
+CE signal <la0/trigger_skipper_n/equal_6/n127>, number of controlling flip flops: 1
+CE signal <la0/la_biu_inst/n1746>, number of controlling flip flops: 4
+CE signal <la0/la_biu_inst/n512>, number of controlling flip flops: 15
+CE signal <la0/la_biu_inst/n1882>, number of controlling flip flops: 65
+CE signal <ceg_net18>, number of controlling flip flops: 1
+CE signal <ceg_net24>, number of controlling flip flops: 1
+CE signal <la0/la_biu_inst/fifo_with_read_inst/is_last_data>, number of controlling flip flops: 12
+CE signal <la0/la_biu_inst/fifo_pop>, number of controlling flip flops: 12
+CE signal <la0/la_biu_inst/fifo_push>, number of controlling flip flops: 12
+CE signal <~ceg_net27>, number of controlling flip flops: 26
+CE signal <debug_hub_inst/n267>, number of controlling flip flops: 4
+CE signal <debug_hub_inst/n265>, number of controlling flip flops: 1
+CE signal <debug_hub_inst/n96>, number of controlling flip flops: 82
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 10
+Total number of FFs with set/reset signals: 1600
+SR signal <edb_soft_reset>, number of controlling flip flops: 1308
+SR signal <la0/n2683>, number of controlling flip flops: 2
+SR signal <la0/ts_resetn>, number of controlling flip flops: 64
+SR signal <la0/trigger_skipper_n/n469>, number of controlling flip flops: 1
+SR signal <la0/la_resetn>, number of controlling flip flops: 78
+SR signal <la0/la_biu_inst/n2577>, number of controlling flip flops: 1
+SR signal <la0/la_biu_inst/fifo_rstn>, number of controlling flip flops: 25
+SR signal <la0/la_biu_inst/fifo_with_read_inst/n1474>, number of controlling flip flops: 37
+SR signal <la0/la_biu_inst/n2584>, number of controlling flip flops: 1
+SR signal <bscan_RESET>, number of controlling flip flops: 83
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i6
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i25
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i24
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i1
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i5
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i6
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i73
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i16
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i17
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i82
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i18
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i83
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i84
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i149
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i85
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i86
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i87
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i88
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i153
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i154
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i96
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i161
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i97
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i98
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i167
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i168
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i177
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i54
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (4588)" removed instance : la0/dff_2453/i186
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5702)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[43].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[41].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[39].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[38].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[36].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[34].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[33].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[31].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[25].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[24].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[23].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[21].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[20].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[19].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[18].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[17].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[16].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[15].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[13].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[10].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[7].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[6].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[5].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[3].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[2].genblk7.genblk3.trigger_cu/i26
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i29
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i29
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i28
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i28
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i27
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i27
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" removed instance : la0/GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu/i26
+@ "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v (5763)" representative instance : la0/GEN_PROBE[0].genblk7.genblk3.trigger_cu/i26
+FF instance: la0/address_counter[27]~FF(unreachable)
+FF instance: la0/address_counter[28]~FF(unreachable)
+FF instance: la0/address_counter[29]~FF(unreachable)
+FF instance: la0/address_counter[30]~FF(unreachable)
+FF instance: la0/address_counter[31]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_rd_pointer[12]~FF(unreachable)
+FF instance: la0/la_biu_inst/fifo_with_read_inst/segment_wr_pointer[12]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
+------------------------------------------------------------         ---        ----        ----      ---- ---------
+edb_top:edb_top                                                  4051(0)      166(0)     3260(0)    187(0)      0(0)
+ +la0:edb_la_top_renamed_due_excessive_length_1               3964(2535)     166(43)  3219(1233)    187(0)      0(0)
+  +axi_crc_i:edb_adbg_crc32                                       32(32)        0(0)      57(57)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[0].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[1].genblk7.genblk2.genblk1.capture_cu:compar...        9(9)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[1].genblk7.genblk3.trigger_cu:compare_unit(W...        9(9)        0(0)      15(15)      0(0)      0(0)
+  +GEN_PROBE[2].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[2].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[3].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[3].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[4].genblk7.genblk2.genblk1.capture_cu:compar...      21(21)        0(0)      28(28)      0(0)      0(0)
+  +GEN_PROBE[4].genblk7.genblk3.trigger_cu:compare_unit(W...      21(21)        0(0)      30(30)      0(0)      0(0)
+  +GEN_PROBE[5].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[5].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[6].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[6].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[7].genblk7.genblk2.genblk1.capture_cu:compar...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[7].genblk7.genblk3.trigger_cu:compare_unit(W...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[8].genblk7.genblk2.genblk1.capture_cu:compar...      67(67)        0(0)    110(110)      0(0)      0(0)
+  +GEN_PROBE[8].genblk7.genblk3.trigger_cu:compare_unit(W...      67(67)        0(0)    107(107)      0(0)      0(0)
+  +GEN_PROBE[9].genblk7.genblk2.genblk1.capture_cu:compar...        9(9)        0(0)      14(14)      0(0)      0(0)
+  +GEN_PROBE[9].genblk7.genblk3.trigger_cu:compare_unit(W...        9(9)        0(0)      15(15)      0(0)      0(0)
+  +GEN_PROBE[10].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[10].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[11].genblk7.genblk2.genblk1.capture_cu:compa...      35(35)        0(0)      50(50)      0(0)      0(0)
+  +GEN_PROBE[11].genblk7.genblk3.trigger_cu:compare_unit(...      35(35)        0(0)      48(48)      0(0)      0(0)
+  +GEN_PROBE[12].genblk7.genblk2.genblk1.capture_cu:compa...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[12].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[13].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[13].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[14].genblk7.genblk2.genblk1.capture_cu:compa...      19(19)        0(0)      25(25)      0(0)      0(0)
+  +GEN_PROBE[14].genblk7.genblk3.trigger_cu:compare_unit(...      19(19)        0(0)      27(27)      0(0)      0(0)
+  +GEN_PROBE[15].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[15].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[16].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[16].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[17].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[17].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[18].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[18].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[19].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[19].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[20].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        3(3)      0(0)      0(0)
+  +GEN_PROBE[20].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[21].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        1(1)      0(0)      0(0)
+  +GEN_PROBE[21].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[22].genblk7.genblk2.genblk1.capture_cu:compa...      17(17)        0(0)      24(24)      0(0)      0(0)
+  +GEN_PROBE[22].genblk7.genblk3.trigger_cu:compare_unit(...      17(17)        0(0)      24(24)      0(0)      0(0)
+  +GEN_PROBE[23].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[23].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[24].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[24].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[25].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[25].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[26].genblk7.genblk2.genblk1.capture_cu:compa...      19(19)        0(0)      26(26)      0(0)      0(0)
+  +GEN_PROBE[26].genblk7.genblk3.trigger_cu:compare_unit(...      19(19)        0(0)      25(25)      0(0)      0(0)
+  +GEN_PROBE[27].genblk7.genblk2.genblk1.capture_cu:compa...        7(7)        0(0)        9(9)      0(0)      0(0)
+  +GEN_PROBE[27].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)        9(9)      0(0)      0(0)
+  +GEN_PROBE[28].genblk7.genblk2.genblk1.capture_cu:compa...      67(67)        0(0)      99(99)      0(0)      0(0)
+  +GEN_PROBE[28].genblk7.genblk3.trigger_cu:compare_unit(...      67(67)        0(0)    110(110)      0(0)      0(0)
+  +GEN_PROBE[29].genblk7.genblk2.genblk1.capture_cu:compa...        9(9)        0(0)      15(15)      0(0)      0(0)
+  +GEN_PROBE[29].genblk7.genblk3.trigger_cu:compare_unit(...        9(9)        0(0)      15(15)      0(0)      0(0)
+  +GEN_PROBE[30].genblk7.genblk2.genblk1.capture_cu:compa...      13(13)        0(0)      19(19)      0(0)      0(0)
+  +GEN_PROBE[30].genblk7.genblk3.trigger_cu:compare_unit(...      13(13)        0(0)      19(19)      0(0)      0(0)
+  +GEN_PROBE[31].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[31].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[32].genblk7.genblk2.genblk1.capture_cu:compa...        9(9)        0(0)      14(14)      0(0)      0(0)
+  +GEN_PROBE[32].genblk7.genblk3.trigger_cu:compare_unit(...        9(9)        0(0)      13(13)      0(0)      0(0)
+  +GEN_PROBE[33].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        3(3)      0(0)      0(0)
+  +GEN_PROBE[33].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[34].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[34].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[35].genblk7.genblk2.genblk1.capture_cu:compa...      15(15)        0(0)      22(22)      0(0)      0(0)
+  +GEN_PROBE[35].genblk7.genblk3.trigger_cu:compare_unit(...      15(15)        0(0)      20(20)      0(0)      0(0)
+  +GEN_PROBE[36].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        3(3)      0(0)      0(0)
+  +GEN_PROBE[36].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[37].genblk7.genblk2.genblk1.capture_cu:compa...      13(13)        0(0)      20(20)      0(0)      0(0)
+  +GEN_PROBE[37].genblk7.genblk3.trigger_cu:compare_unit(...      13(13)        0(0)      19(19)      0(0)      0(0)
+  +GEN_PROBE[38].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[38].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[39].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        3(3)      0(0)      0(0)
+  +GEN_PROBE[39].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      12(12)      0(0)      0(0)
+  +GEN_PROBE[40].genblk7.genblk2.genblk1.capture_cu:compa...      19(19)        0(0)      27(27)      0(0)      0(0)
+  +GEN_PROBE[40].genblk7.genblk3.trigger_cu:compare_unit(...      19(19)        0(0)      26(26)      0(0)      0(0)
+  +GEN_PROBE[41].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        3(3)      0(0)      0(0)
+  +GEN_PROBE[41].genblk7.genblk3.trigger_cu:compare_unit(...        7(7)        0(0)      11(11)      0(0)      0(0)
+  +GEN_PROBE[42].genblk7.genblk2.genblk1.capture_cu:compa...      19(19)        0(0)      27(27)      0(0)      0(0)
+  +GEN_PROBE[42].genblk7.genblk3.trigger_cu:compare_unit(...      19(19)        0(0)      26(26)      0(0)      0(0)
+  +GEN_PROBE[43].genblk7.genblk2.genblk1.capture_cu:compa...        1(1)        0(0)        2(2)      0(0)      0(0)
+  +GEN_PROBE[43].genblk7.genblk3.trigger_cu:compare_unit(...        8(8)        0(0)      12(12)      0(0)      0(0)
+  +trigger_tu:trigger_unit(WIDTH=32'b0101100,PIPE=1)                1(1)        0(0)        4(4)      0(0)      0(0)
+  +genblk2.global_capture_inst:trigger_unit(WIDTH=32'b010...        1(1)        0(0)        4(4)      0(0)      0(0)
+  +trigger_skipper_n:trigger_skipper                              65(65)      63(63)      97(97)      0(0)      0(0)
+  +la_biu_inst:la_biu(CAPTURE_WIDTH=32'b010111010,DATA_DE...     373(98)       60(0)    351(247)    187(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read(DATA_WIDTH=32'b010...    275(251)      60(60)     104(60)    187(0)      0(0)
+    +transcode_write_addr:fifo_address_trancode_unit(TOTA...      12(12)        0(0)      20(20)      0(0)      0(0)
+    +transcode_read_addr:fifo_address_trancode_unit(TOTAL...      12(12)        0(0)      24(24)      0(0)      0(0)
+    +simple_dual_port_ram_inst:edb_simple_dual_port_ram(D...        0(0)        0(0)        0(0)  187(187)      0(0)
+ +debug_hub_inst:debug_hub                                        87(87)        0(0)      41(41)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+     Clock     Flip-Flops   Memory Ports    Multipliers
+     -----     ----------   ------------    -----------
+ bscan_TCK           1395              0              0
+   la0_clk           2656            374              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	197
+OUTPUT PORTS    : 	1
+
+EFX_ADD         : 	166
+EFX_LUT4        : 	3260
+   1-2  Inputs  : 	1087
+   3    Inputs  : 	715
+   4    Inputs  : 	1458
+EFX_FF          : 	4051
+EFX_RAM_5K      : 	187
+EFX_GBUFCE      : 	2
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 41s
+Elapsed synthesis time : 43s

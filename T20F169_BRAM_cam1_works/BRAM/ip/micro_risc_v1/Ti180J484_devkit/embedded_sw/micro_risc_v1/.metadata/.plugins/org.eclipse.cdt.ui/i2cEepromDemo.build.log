@@ -1,0 +1,5 @@
+22:56:48 **** Clean-only build of configuration Default for project i2cEepromDemo ****
+make clean 
+
+22:56:48 Build Finished. 0 errors, 0 warnings. (took 385ms)
+

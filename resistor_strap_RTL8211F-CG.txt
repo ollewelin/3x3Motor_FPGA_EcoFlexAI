@@ -1,0 +1,51 @@
+Resistor strap RTL8211F-CG at V3.0.4 3x3Motor FPGA EcoFlexAI. Delta arm sorting robot hardware
+-----------------------------------------------------------
+PHYAD0/RXD3 hardware floating no mounted PU or PD, internal chip PU = 1
+PHYAD1/RXC hardware floating no mounted PU or PD,  internal chip PD = 0
+PHYAD2/RXCTL hardware floating no mounted PU or PD,  internal chip PD = 0
+PLLOFF/RXD2 hardware PD = 0, 4.7k PD, (intrernal chip PD overided)
+TXDLY/RXD1 hardware floating no mounted PU or PD,  internal chip PD = 0
+RXDLY/RXD0 hardware floating no mounted PU or PD,  internal chip PU = 1
+CFG_EXT/LED0 hardware PU = 1, (internal chip PD overided)
+CFG_LDO0/LED1 hardware PD = 0,  (internal chip PU overided)
+CFG_LDO1/LED2 hardware PD = 0,  (internal chip PD overided)
+
+==PHY Test v5==
+HW RST... OK
+ID=0x001C/0xC916
+=DEFAULTS=
+BMCR=0x1040
+BMSR=0x7989
+ANAR=0x01E1
+GBCR=0x0200
+CR1=0x2118
+CR2=0x0863
+DLY=0x018A
+PHSR=0x3002
+INSR=0x0000
+=DIS GREEN ETH=
+R27=0x8013 R28=0x573F
+=CABLE STATUS=
+PHSR=0x3002 PLUG RtNO
+SSR=0x3002
+=LOOPBACK TEST=
+10M  LB: BMSR=0x798D UP
+100M LB: BMSR=0x798D UP
+1G   LB: BMSR=0x798D UP
+=AUTO-NEG=
+Wait..
+B=0x79AD UP AN
+LP=0xC5E1 E=0x006F
+I=0x0000 GS=0x3800
+PHSR=0x312E
+PHSR=0x312E 1000M FD
+** LINK OK **
+--MON--
+[0000]=0x79AD UP
+[001E]=0x79AD UP
+[003C]=0x79AD UP
+[005A]=0x79AD UP
+[0078]=0x79AD UP
+[0096]=0x79AD UP
+[00B4]=0x79AD UP
+[00D2]=0x79AD UP

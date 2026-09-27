@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "bsp.h": "c",
+        "i2c.h": "c",
+        "stdbool.h": "c"
+    }
+}

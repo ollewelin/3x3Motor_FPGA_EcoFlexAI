@@ -1,0 +1,67 @@
+{
+    "args": [
+        "-o",
+        "I2C_32_MASTER",
+        "--base_path",
+        "/home/olle/efinity_p2/BRAM/ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "serial_interface",
+            "name": "efx_i2c_controller",
+            "version": "5.3"
+        }
+    ],
+    "conf": {
+        "SLAVE_ADDR": "84",
+        "I2C_FAST_MODE": "0",
+        "I2C_MODE": "\"MASTER\"",
+        "DATA_BYTE_WIDTH": "32",
+        "CLOCK_FREQ": "50",
+        "SPIKE_FILTER_CYCLE": "2"
+    },
+    "output": {
+        "external_source_source": [
+            "I2C_32_MASTER/I2C_32_MASTER_tmpl.vhd",
+            "I2C_32_MASTER/I2C_32_MASTER.v",
+            "I2C_32_MASTER/I2C_32_MASTER_define.vh",
+            "I2C_32_MASTER/I2C_32_MASTER_tmpl.v"
+        ],
+        "external_example_example": [
+            "I2C_32_MASTER/T20F256_devkit/i2c_clock_gen.v",
+            "I2C_32_MASTER/T20F256_devkit/i2c_controller_test.v",
+            "I2C_32_MASTER/T20F256_devkit/efx_i2c_master_controller.v",
+            "I2C_32_MASTER/T20F256_devkit/efx_i2c_slave_controller.v",
+            "I2C_32_MASTER/T20F256_devkit/i2c_T20.sdc",
+            "I2C_32_MASTER/T20F256_devkit/i2c_functions.vh",
+            "I2C_32_MASTER/T20F256_devkit/I2C_32_MASTER.v",
+            "I2C_32_MASTER/T20F256_devkit/I2C_32_MASTER_define.vh",
+            "I2C_32_MASTER/T20F256_devkit/i2c_controller_test.peri.xml",
+            "I2C_32_MASTER/T20F256_devkit/i2c_controller_test.xml"
+        ],
+        "external_example_2": [
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_clock_gen.v",
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_controller_test.v",
+            "I2C_32_MASTER/Ti60F225_devkit/efx_i2c_master_controller.v",
+            "I2C_32_MASTER/Ti60F225_devkit/efx_i2c_slave_controller.v",
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_Ti60.sdc",
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_functions.vh",
+            "I2C_32_MASTER/Ti60F225_devkit/I2C_32_MASTER.v",
+            "I2C_32_MASTER/Ti60F225_devkit/I2C_32_MASTER_define.vh",
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_controller_test.peri.xml",
+            "I2C_32_MASTER/Ti60F225_devkit/i2c_controller_test.xml"
+        ],
+        "external_testbench_testbench": [
+            "I2C_32_MASTER/Testbench/i2c_controller_tb.v",
+            "I2C_32_MASTER/Testbench/i2c_controller_test.v",
+            "I2C_32_MASTER/Testbench/efx_i2c_master_controller.v",
+            "I2C_32_MASTER/Testbench/efx_i2c_slave_controller.v",
+            "I2C_32_MASTER/Testbench/modelsim.do",
+            "I2C_32_MASTER/Testbench/I2C_32_MASTER.v",
+            "I2C_32_MASTER/Testbench/I2C_32_MASTER_define.vh"
+        ]
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2025.1.110.2.15",
+    "generated_date": "2025-08-31T10:13:37.582334+00:00"
+}

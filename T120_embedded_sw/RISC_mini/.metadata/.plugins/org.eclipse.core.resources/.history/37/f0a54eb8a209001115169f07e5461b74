@@ -1,0 +1,156 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (C) 2013-2025 Efinix Inc. All rights reserved.
+// Full license header bsp/efinix/EfxSapphireSoc/include/LICENSE.MD
+////////////////////////////////////////////////////////////////////////////////
+
+/******************************************************************************
+*
+* @file test_b.c: uart_mini APB3 UART Driver Test
+*
+* @brief This demo performs:
+*   1. UART initialization via uart_mini APB3 peripheral
+*   2. Simple loopback test: send 'A', verify reception
+*   3. LED blink pattern indicating success/failure
+*   4. Continuous "HELLO" string transmission for oscilloscope probing
+*
+******************************************************************************/
+#include <stdint.h>
+#include <string.h>
+#include "bsp.h"
+#include "riscv.h"
+#include "gpio.h"
+#include "uart_mini_driver.h"
+
+
+// =============================================================================
+// Main Function
+// =============================================================================
+void main(void)
+{
+    // Initialize board support package
+    bsp_init();
+    
+    bsp_printf("\r\n");
+    bsp_printf("================================================================================\r\n");
+    bsp_printf("  uart_mini APB3 UART Test - RISC_mini\r\n");
+    bsp_printf("  Compiled: %s %s\r\n", __DATE__, __TIME__);
+    bsp_printf("================================================================================\r\n\r\n");
+
+    // Configure GPIO bit 0 as output for LED blink
+    gpio_setOutputEnable(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+    bsp_printf("[GPIO] Configured bit 0 as output (LED #2 - CAM3_SDA_OUT)\r\n");
+    
+    // Initialize uart_mini
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+    uart_mini_init();
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+    bsp_printf("[UART_MINI] Initialized at base 0x1000 (APB3)\r\n");
+    bsp_printf("[UART_MINI] Baud: 115200, Data: 8-bit, Stop: 1-bit, Parity: None\r\n\r\n");
+    
+    // =============================================================================
+    // Test 1: UART Loopback - Send 'A' and check echo
+    // =============================================================================
+    bsp_printf("[TEST 1] UART Loopback Test\r\n");
+    bsp_printf("  Sending test character 'A' to TX FIFO...\r\n");
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+    if (!uart_mini_tx_byte('A')) {
+        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+    } else {
+        bsp_printf("  'A' sent successfully.\r\n");
+    }
+    
+    bsp_uDelay(50000);  // Wait 50ms for transmission and loopback echo
+    
+    uint8_t received_char = 0;
+    int uart_success = 0;
+    
+    if (uart_mini_rx_available()) {
+        uart_mini_rx_byte(&received_char);
+        bsp_printf("  SUCCESS! Received character: 0x%02X ('%c')\r\n", received_char, received_char);
+        uart_success = 1;
+    } else {
+        bsp_printf("  TIMEOUT! No character received.\r\n");
+        uart_success = 0;
+    }
+    
+    // =============================================================================
+    // Test 2: LED Blink Pattern Indicator
+    // =============================================================================
+    bsp_printf("\r\n[TEST 2] LED Blink Pattern\r\n");
+    if (uart_success) {
+        bsp_printf("  FAST BLINK (50ms on/off) = uart_mini working!\r\n");
+        int i;
+        for (i = 0; i < 20; i++) {
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+            bsp_uDelay(50000);   // 50ms on
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+            bsp_uDelay(50000);   // 50ms off
+        }
+    } else {
+        bsp_printf("  SLOW BLINK (250ms on/off) = uart_mini NOT working\r\n");
+        int i;
+        for (i = 0; i < 10; i++) {
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+            bsp_uDelay(250000);  // 250ms on
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+            bsp_uDelay(250000);  // 250ms off
+        }
+    }
+    
+    bsp_uDelay(500000);
+    
+    // =============================================================================
+    // Test 3: Continuous TX Test
+    // =============================================================================
+    bsp_printf("\r\n[TEST 3] Continuous UART TX Test\r\n");
+    bsp_printf("  Sending 'HELLO' repeatedly to validate TX pin activity.\r\n");
+    bsp_printf("  Oscilloscope setup:\r\n");
+    bsp_printf("    - Channel 1: Probe P10 (fpga_uart_tx from GPIOB_TXN14)\r\n");
+    bsp_printf("    - Baud: 115200, Samples: 1M+, Time/div: 10us\r\n");
+    bsp_printf("  Expected: UART data signal (bit transitions) on P10\r\n");
+    bsp_printf("  If P10 = constant 3.3V: Pin not connected to UART TX\r\n\r\n");
+    
+    int loop_count = 0;
+    int message_count = 0;
+    
+    while (1) {
+        // Send "HELLO" string
+        uart_mini_tx_string("HELLO");
+        uart_mini_tx_byte('\r');
+        uart_mini_tx_byte('\n');
+        
+        message_count++;
+        loop_count++;
+        
+        // Toggle LED every 10 messages as alive indicator
+        if (loop_count >= 10) {
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1);  // LED ON
+            bsp_uDelay(5000);   // 5ms
+            gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);  // LED OFF
+            bsp_uDelay(5000);   // 5ms
+            loop_count = 0;
+        }
+        
+        // Add inter-message delay for oscilloscope observation
+        bsp_uDelay(100000);  // 100ms between "HELLO" messages
+        
+        // Print progress every 50 messages (5.5 seconds)
+        if (message_count % 50 == 0) {
+            bsp_printf("  [%d messages sent]\r\n", message_count);
+        }
+    }
+}
+
+// Entry point for C runtime initialization
+void trap_entry(void);
+
+void trap(void)
+{
+    // Basic trap handler - just loop on error
+    bsp_printf("Trap occurred! Halting...\r\n");
+    while(1);
+}

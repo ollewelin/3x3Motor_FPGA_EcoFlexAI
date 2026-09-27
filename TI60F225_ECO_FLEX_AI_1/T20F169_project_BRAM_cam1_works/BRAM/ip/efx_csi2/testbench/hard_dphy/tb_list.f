@@ -1,0 +1,10 @@
+./TI180_MIPI_csi_tb.sv
+/projects/DIP/shlim/efx_IP/efx_csi2/project_new/top.sv
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/reset.v
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/datatype_gen.v  
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/dual_clock_fifo.v  
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/shift_reg.v             
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/vga_gen.v
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/data_unpack.v   
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/pattern_gen.v      
+/projects/DIP/shlim/efx_IP/efx_csi2/source_exp/videogen_n_comparator/simple_dual_port_ram.v

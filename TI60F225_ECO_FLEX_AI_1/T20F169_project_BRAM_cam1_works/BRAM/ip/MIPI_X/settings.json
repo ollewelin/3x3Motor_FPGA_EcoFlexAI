@@ -1,0 +1,50 @@
+{
+    "args": [
+        "-o",
+        "MIPI_X",
+        "--base_path",
+        "/home/olle/efinity_p2/BRAM/ip",
+        "--vlnv",
+        {
+            "vendor": "efinixinc.com",
+            "library": "mipi",
+            "name": "efx_csi2_rx",
+            "version": "5.12"
+        }
+    ],
+    "conf": {
+        "tLPX_NS": "50",
+        "tINIT_NS": "100000",
+        "tCLK_TERM_EN_NS": "38",
+        "tD_TERM_EN_NS": "35",
+        "tHS_SETTLE_NS": "85",
+        "tHS_PREPARE_ZERO_NS": "145",
+        "NUM_DATA_LANE": "1",
+        "ASYNC_STAGE": "2",
+        "HS_BYTECLK_MHZ": "100",
+        "CLOCK_FREQ_MHZ": "50",
+        "DPHY_CLOCK_MODE": "\"Continuous\"",
+        "PIXEL_FIFO_DEPTH": "512",
+        "AREGISTER": "8",
+        "ENABLE_USER_DESKEWCAL": "1'b0",
+        "Pack_40": "1'b1",
+        "Pack_48": "1'b1",
+        "Pack_56": "1'b1",
+        "Pack_64": "1'b1",
+        "FRAME_MODE": "\"GENERIC\"",
+        "ENABLE_VCX": "1'b0",
+        "MIPI_CSI2_RX_DEBUG": "1'b1",
+        "MIPI_CSI2_RX_PIXEL_SIDEBAND": "1'b0"
+    },
+    "output": {
+        "external_source_source": [
+            "MIPI_X/MIPI_X_tmpl.vhd",
+            "MIPI_X/MIPI_X.sv",
+            "MIPI_X/MIPI_X_define.svh",
+            "MIPI_X/MIPI_X_tmpl.sv"
+        ]
+    },
+    "ooc_synthesis": {},
+    "sw_version": "2025.1.110.2.15",
+    "generated_date": "2025-08-24T19:08:59.823614+00:00"
+}

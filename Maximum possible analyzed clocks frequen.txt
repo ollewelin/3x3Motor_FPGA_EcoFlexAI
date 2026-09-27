@@ -1,0 +1,16 @@
+Maximum possible analyzed clocks frequency
+ Clock Name   Period (ns)  Frequency (MHz)     Edge
+T120_GCLK        16.666        60.002         (R-R)
+pll_clk_60Mhz    14.702        68.018         (R-R)
+
+Geomean max period: 15.653
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ T120_GCLK        T120_GCLK            20.000           3.334            (R-R)
+ pll_clk_60Mhz    pll_clk_60Mhz        16.667           1.965            (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+ T120_GCLK        T120_GCLK            0.000            0.116            (R-R)
+ pll_clk_60Mhz    pll_clk_60Mhz        0.000            0.116            (R-R)

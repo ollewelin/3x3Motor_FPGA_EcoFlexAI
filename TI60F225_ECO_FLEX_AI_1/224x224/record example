@@ -1,0 +1,8 @@
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ python3 read_frame_repeatly_224x224.py /dev/ttyACM0 115200
+Starting continuous capture on /dev/ttyACM0...
+Frame: 224x224 sensor px => 112x112 colour dots
+Beats/line=28, total_beats=6272, total_bytes=50176
+Saving to: frame_colour.png. Press Ctrl+C to stop.
+Frames captured: 13^C
+Stopping capture...
+(base) olle@olle-SSD-256:~/efinity_p2/TI60F225_ECO_FLEX_AI_1/224x224$ 

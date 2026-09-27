@@ -1,0 +1,6 @@
+(base) olle@olle-SSD-256:~/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone$ 
+
+
+mkdir blink_led
+cd blink_led
+mkdir src build

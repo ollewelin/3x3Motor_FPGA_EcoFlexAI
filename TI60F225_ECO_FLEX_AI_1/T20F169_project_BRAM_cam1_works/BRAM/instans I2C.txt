@@ -1,0 +1,25 @@
+  I2C_32_MASTER_inst : I2C_32_MASTER
+  port map (
+    clk => clk,
+    rst => not rst_n,
+    mst_scl_in => mst_scl_in,
+    mst_sda_in => mst_sda_in,
+    mst_scl_out => mst_scl_out,
+    mst_sda_out => mst_sda_out,
+    mst_sda_oe => mst_sda_oe,
+    mst_scl_oe => mst_scl_oe,
+    i2c_busy => i2c_busy,
+    i2c_soft_rst => i2c_soft_rst,
+    i2c_rxak => i2c_rxak,
+    i2c_arb_lost => i2c_arb_lost,
+    i2c_arb_lost_clr => i2c_arb_lost_clr,
+    i2c_slave_addr => i2c_slave_addr,
+    mst_command_byte => mst_command_byte,
+    mst_num_bytes => mst_num_bytes,
+    mst_read => mst_read,
+    mst_write => mst_write,
+    mst_write_done => mst_write_done,
+    mst_data_out_valid => mst_data_out_valid,
+    mst_data_out => mst_data_out,
+    mst_din => mst_din
+  );

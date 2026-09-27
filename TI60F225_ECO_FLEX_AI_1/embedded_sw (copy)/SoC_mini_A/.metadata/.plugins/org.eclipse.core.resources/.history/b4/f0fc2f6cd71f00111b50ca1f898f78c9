@@ -1,0 +1,267 @@
+
+#include <stdint.h>
+#include "gpio.h"
+#include "soc.h"
+#include "bsp.h"
+#include "mdio_driver.h"
+
+/* APB3 UART (uart_mini_apb3) register offsets */
+#define APB_UART_BASE        0xF8100000u
+#define REG_UART_CTRL        0x00u
+#define REG_UART_STATUS      0x04u
+#define REG_UART_TX_DATA     0x08u
+#define REG_UART_RX_DATA     0x0Cu
+#define REG_UART_RX_CTRL     0x10u
+
+static inline void mmio_write32(uint32_t addr, uint32_t val) {
+	volatile uint32_t *p = (volatile uint32_t *)addr;
+	*p = val;
+}
+
+static inline uint32_t mmio_read32(uint32_t addr) {
+	volatile uint32_t *p = (volatile uint32_t *)addr;
+	return *p;
+}
+
+// Wait until TX FIFO is not full
+static void uart_wait_not_full(void) {
+	while (mmio_read32(APB_UART_BASE + REG_UART_STATUS) & 0x02u) {
+		// spin
+	}
+}
+
+// Wait until TX FIFO is empty (all bytes shifted out)
+static void uart_wait_tx_empty(void) {
+	while (!(mmio_read32(APB_UART_BASE + REG_UART_STATUS) & 0x01u)) {
+		// spin
+	}
+}
+
+static void uart_putc(char c) {
+	uart_wait_not_full();
+	mmio_write32(APB_UART_BASE + REG_UART_TX_DATA, (uint32_t)(uint8_t)c);
+	// Add 2ms delay per character to prevent buffer underrun (9600 baud = ~1 char per ~1ms)
+	bsp_uDelay(2000);
+}
+
+static void uart_puts(const char *s) {
+	while (*s) uart_putc(*s++);
+}
+
+static void uart_puts_ln(const char *s) {
+	uart_puts(s);
+	uart_putc('\n');
+	uart_wait_tx_empty();
+}
+
+// ---------------------------------------------------------------------------
+// Simple hex printing helpers (nibbles only, no dependencies)
+// ---------------------------------------------------------------------------
+static void uart_put_hex_nibble(uint8_t nib) {
+	char c = (nib < 10) ? ('0' + nib) : ('A' + (nib - 10));
+	uart_putc(c);
+}
+
+// forward decls needed by logging wrappers below
+static void uart_put_hex8(uint8_t v);
+static void uart_put_hex16(uint16_t v);
+
+
+// wrapper that prints every MDIO read
+static uint16_t mdio_read_log(uint8_t phy_addr, uint8_t reg_addr)
+{
+	uint16_t val = mdio_read(phy_addr, reg_addr);
+	// print the transaction details
+	uart_puts("MDIO R phy="); uart_put_hex8(phy_addr);
+	uart_puts(" reg="); uart_put_hex8(reg_addr);
+	uart_puts(" => 0x"); uart_put_hex16(val);
+	uart_puts_ln("");
+	return val;
+}
+
+// wrapper that prints every MDIO write (success or timeout)
+static int mdio_write_log(uint8_t phy_addr, uint8_t reg_addr, uint16_t data)
+{
+	int ok = mdio_write(phy_addr, reg_addr, data);
+	uart_puts("MDIO W phy="); uart_put_hex8(phy_addr);
+	uart_puts(" reg="); uart_put_hex8(reg_addr);
+	uart_puts(" val=0x"); uart_put_hex16(data);
+	uart_puts(" "); uart_puts(ok ? "OK" : "TIMEOUT");
+	uart_puts_ln("");
+	return ok;
+}
+
+// hex helpers (moved after log wrappers)
+static void uart_put_hex8(uint8_t v) {
+	uart_put_hex_nibble((v >> 4) & 0xF);
+	uart_put_hex_nibble(v & 0xF);
+}
+
+static void uart_put_hex16(uint16_t v) {
+	uart_put_hex8((uint8_t)(v >> 8));
+	uart_put_hex8((uint8_t)(v & 0xFF));
+}
+void ksz9131_disable_inband_status(uint8_t phy_addr) {
+    // Läs nuvarande värde från Register 0x1F (PHY Control Register)
+    uint16_t val = mdio_read(phy_addr, 0x1F);
+    
+    uart_puts("MDIO: Register 0x1F before: 0x");
+    uart_put_hex16(val);
+    
+    // Maskera bort bit 0 (In-band Status Enable)
+    val &= ~(1 << 0);
+    
+    // Skriv tillbaka värdet
+    mdio_write(phy_addr, 0x1F, val);
+    
+    uart_puts(" -> After: 0x");
+    uart_put_hex16(val);
+    uart_puts_ln(" [In-band Status Disabled]");
+}
+uint16_t mdio_read_mmd(uint8_t phy_addr, uint8_t dev_addr, uint16_t reg_addr) {
+    // Steg 1: Skriv Device Address till register 0x0D
+    mdio_write(phy_addr, 0x0D, dev_addr);
+    // Steg 2: Skriv Register Address till register 0x0E
+    mdio_write(phy_addr, 0x0E, reg_addr);
+    // Steg 3: Sätt mode till "Data" (ingen post-increment) i register 0x0D
+    mdio_write(phy_addr, 0x0D, 0x4000 | dev_addr);
+    // Steg 4: Läs värdet från register 0x0E
+    return mdio_read(phy_addr, 0x0E);
+}
+int main(int argc, char **argv) {
+    const char *msg = " **** KSZ9131 100Mbit Fixed Mode starting *** ";
+
+    bsp_init();
+    // Enable GPIO bits: bit [0] = LED toggle, bit [1] = UDP trigger signal
+    gpio_setOutputEnable(SYSTEM_GPIO_0_IO_CTRL, 0x3);
+
+    // Welcome message
+    uart_puts_ln(msg);
+
+    // PHY Reset
+    uart_puts_ln("MDIO: PHY reset...");
+    mdio_phy_reset_assert();
+    bsp_uDelay(50000);
+    mdio_phy_reset_release();
+    bsp_uDelay(300000);
+
+    uint8_t phy = 0x00;
+    uint16_t id1 = mdio_read(phy, PHY_REG_PHYID1);
+    uint16_t id2 = mdio_read(phy, PHY_REG_PHYID2);
+    uart_puts("ID="); uart_put_hex16(id1); uart_puts("/"); uart_put_hex16(id2); uart_puts_ln("");
+
+    // =========================================================================
+    // Fas 1: Konfigurera för 1000Mbps mode med Auto-negotiation
+    // =========================================================================
+    uart_puts_ln("MDIO: Enabling 1000Mbps advertisement...");
+    
+    // 1. Aktivera 1000Mbps reklam i GBCR (Reg 0x09)
+    // Sätt bit 9 (1000Base-T FD) och bit 8 (1000Base-T HD) till 1
+    mdio_write(phy, PHY_REG_GBCR, 0x0300);
+
+    // 2. Aktivera Auto-negotiation med 1000Mbps stöd i BMCR (Reg 0x00)
+    // Bit 12=1 (Auto-Negotiation Enable), Bit 9=1 (Restart Auto-Neg)
+    // Låt PHY förhandla för högsta möjlig hastighet (1000Mbps)
+    uint16_t bmcr_1000_auto = 0x1200;
+    mdio_write(phy, PHY_REG_BMCR, bmcr_1000_auto);
+    bsp_uDelay(100000);  // Vänta på auto-neg att starta
+
+    uart_puts_ln("MDIO: 1000Mbps auto-negotiation enabled.");
+    // --- Konfigurera RGMII Delay (2ns) ---
+    // MMD 2, Reg 4 = RXC Skew, MMD 2, Reg 5 = TXC Skew
+    // Värdet 0x0007 motsvarar ca 2.0ns enligt databladet
+
+ //   uart_puts_ln("MDIO: Configuring RGMII delays...");
+    uart_puts_ln("MDIO: Configuring TX RGMII NOT TXC delays...");
+
+    // Skriv TX Delay
+    mdio_write(phy, 0x0D, 0x0002);
+    mdio_write(phy, 0x0E, 0x0005);
+    mdio_write(phy, 0x0D, 0x4002);
+    mdio_write(phy, 0x0E, 0x0007);
+ //   bsp_uDelay(10000);
+    uart_puts_ln("MDIO: Configuring RX RGMII delays...");
+    // Skriv RX Delay
+    mdio_write(phy, 0x0D, 0x0002); 
+    mdio_write(phy, 0x0E, 0x0004); 
+    mdio_write(phy, 0x0D, 0x4002); 
+    mdio_write(phy, 0x0E, 0x0007); 
+    bsp_uDelay(10000);
+
+    // MDIO: Stäng av TX RGMII delay
+    mdio_write(phy, 0x0D, 0x0002); // Sätt DEVADDR till 2 (Digital Internal)
+    mdio_write(phy, 0x0E, 0x0005); // Peka på register 0x0005 (RGMII Control)
+    mdio_write(phy, 0x0D, 0x4002); // Aktivera data-skrivning utan post-increment
+
+    // Aktivera TX Delay (2.0ns)
+    mdio_write(phy, 0x0D, 0x0002);      // Set MMD device 2
+    mdio_write(phy, 0x0E, 0x0004);      // Set register 0x04
+    mdio_write(phy, 0x0D, 0x4002);      // Data mode for MMD 2
+    mdio_write(phy, 0x0E, 0x0200);      // Write 0x0200 (2.0ns)
+    uart_puts_ln("MDIO: TX delay set to 2.0ns");
+
+    // HÄR ÄR ÄNDRINGEN:
+    // Om du vill ha både TX och RX delay AV: 0x0000
+    // Om du vill ha endast RX delay PÅ men TX delay AV: 0x0001
+    mdio_write(phy, 0x0E, 0x0000);
+    bsp_uDelay(10000);
+
+    // --- VERIFIERING ---
+    uint16_t verify_tx = mdio_read_mmd(phy, 2, 5);
+    uint16_t verify_rx = mdio_read_mmd(phy, 2, 4);
+
+    uart_puts("VERIFY TX Delay (Reg 2.5): 0x");
+    uart_put_hex16(verify_tx);
+    if (verify_tx == 0x0007) uart_puts(" [OK]"); else uart_puts(" [FAIL!]");
+    uart_puts_ln("");
+
+    uart_puts("VERIFY RX Delay (Reg 2.4): 0x");
+    uart_put_hex16(verify_rx);
+    if (verify_rx == 0x0007) uart_puts(" [OK]"); else uart_puts(" [FAIL!]");
+    uart_puts_ln("");
+
+    uart_puts_ln("UDP debug: Monitor GPIO signals and RGMII TX activity");
+    uart_puts_ln("");
+    mdio_write(phy, PHY_REG_BMCR, bmcr_1000_auto); // Ta bort bit 14
+
+    uint32_t stat_counter = 0;
+    while (1) {
+        uint16_t bmsr = mdio_read(phy, PHY_REG_BMSR);
+        // Läs även register 0x1F för att se länkstatus (PHY Specific)
+        uint16_t physpec = mdio_read(phy, 0x1F);
+
+        uart_puts("["); uart_put_hex16(stat_counter & 0xFFFF); uart_puts("] STAT 1G: BMSR=0x"); uart_put_hex16(bmsr);
+        
+        uint8_t link_up = (bmsr & 0x0004) ? 1 : 0;
+        uint8_t autoneg_done = (bmsr & 0x0020) ? 1 : 0;
+        if (link_up && autoneg_done) {
+            uart_puts(" [LINK UP 1G - AutoNeg Complete]");
+        } else if (link_up) {
+            uart_puts(" [LINK UP - Negotiating...]");
+        } else {
+            uart_puts(" [LINK DOWN]");
+        }
+        
+        uart_puts_ln("");
+        
+        // UDP trigger signal: GPIO bit [1] = 1 when link is up and ready for UDP tx
+        // Bit [0] = LED toggle for heartbeat, Bit [1] = UDP ready signal
+        uint8_t led_toggle = (stat_counter & 0x1);  // toggle every iteration
+        uint8_t gpio_val = (link_up << 1) | led_toggle;
+        gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, gpio_val);
+        
+        // Debug: print GPIO state every 10 iterations
+        if ((stat_counter % 10) == 0) {
+            uart_puts("  DEBUG GPIO: [1]=");
+            uart_put_hex_nibble(link_up);
+            uart_puts(" (UDP enable), [0]=");
+            uart_put_hex_nibble(led_toggle);
+            uart_puts(" (LED)");
+            uart_puts_ln("");
+        }
+        
+        stat_counter++;
+        bsp_uDelay(1000000);
+    }
+    return 0;
+}

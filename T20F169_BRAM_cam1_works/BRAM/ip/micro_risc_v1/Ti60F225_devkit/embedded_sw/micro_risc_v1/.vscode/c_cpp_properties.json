@@ -1,0 +1,26 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Efinix-RISCV",
+      "compilerPath": "/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/riscv-none-embed-gcc",
+      "intelliSenseMode": "gcc-x64",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}/software/standalone/blink_led/src",
+        "${workspaceFolder}/software/standalone",
+        "${workspaceFolder}/software/standalone/driver",
+        "${workspaceFolder}/software/standalone/gpio",
+        "${workspaceFolder}/software/standalone/i2c",
+        "${workspaceFolder}/bsp/include"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/software/standalone",
+          "${workspaceFolder}/bsp/include"
+        ]
+      }
+    }
+  ]
+}

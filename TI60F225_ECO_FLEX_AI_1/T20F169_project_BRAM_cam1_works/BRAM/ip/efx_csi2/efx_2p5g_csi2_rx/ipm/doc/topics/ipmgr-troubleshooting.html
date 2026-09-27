@@ -1,0 +1,178 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="copyright" content="(C) Copyright 2025"><meta name="generator" content="DITA-OT"><meta name="description" content=""><title>Resolving IP Manager Issues</title>
+	<link href="../../../../../../../doc/css/efx-styles.css" rel="stylesheet">
+	<link href="../../../../../../../doc/css/bootstrap.css" rel="stylesheet">
+	<script src="../../../../../../../doc/js/jquery-3.4.1.min.js"></script>
+	<script src="../../../../../../../doc/js/bootstrap.js"></script>
+</head><body id="concept_kdw_qzt_32c"><header role="banner"><div>
+  <script>
+    function store_nav_state(clicked_id) {
+    var id = $(clicked_id).attr("id");
+    var div_id = id.replace(/^btn-/, 'drop-');
+    // alert(div_id);
+    
+    if ( $('#'+div_id).hasClass( "in" ) ) {
+    // trigger is opposite of what you would think
+    localStorage.removeItem(div_id);
+    $('#'+id).children('span').addClass("glyphicon-plus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-minus-sign");
+    
+    $('#'+id).children('span').addClass("black");
+    $('#'+id).children('span').removeClass("blue");
+    }
+    else {
+    localStorage.setItem(div_id, "in");
+    $('#'+id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+id).children('span').addClass("blue");
+    $('#'+id).children('span').removeClass("black");
+    }
+    }
+    
+    $(function(){
+    
+    $( "div[id^=drop-]" ).each(function( index ) {
+    var drop_id = $(this).attr("id");	
+    var btn_id = drop_id.replace(/^drop-/, 'btn-');
+    // console.log( index + ": " + drop_id);	
+    
+    var nav_stored = localStorage.getItem(drop_id);
+    if (nav_stored == "in") {
+    // console.log( index + ": " + drop_id);
+    $( '#'+drop_id ).last().addClass( "in" );
+    
+    $('#'+btn_id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+btn_id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+btn_id).children('span').addClass("blue");
+    }
+    });
+    });
+  </script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../../../../../../../doc/topics/efnug-intro.html"><img src="../../../../../../../doc/logo/efinity-help.png" alt="Efinix, Inc."></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Efinity Help<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/topics/efnug-intro.html">Overview</a></li>
+            <li><a href="../../../../../../../doc/topics/efnug-new.html">New in This Release</a></li> 
+			      <li><a href="../../../../../../../doc/topics/efn-quickstart.html">Quick Start</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-hwsw-req.html">Hardware and Software Requirements</a></li>
+			  
+			       <li class="divider"></li>
+			  
+			      <li><a href="../../../../../../../doc/topics/efn-proj-prefs.html">Projects and Preferences</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-running-tool-flow.html">Running the Flow</a></li>
+            <li><a href="../../../../../../../doc/topics/ip-packager-intro.html">IP Packager</a></li>
+            <li><a href="../../../../../../../doc/topics/ipmgr.html">IP Manager</a></li>
+            <li><a href="../../../../../../../doc/topics/syn-intro.html">Synthesis</a></li>
+            <li><a href="../../../../../../../pt/doc/topics/hlp-id-intro.html">Interface Designer</a></li>
+            <li><a href="../../../../../../../doc/topics/tim-intro.html">Timing</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-simulating.html">Simulation</a></li>
+			      <li><a href="../../../../../../../pgm/doc/topics/hlp-pg-intro.html">Programmer</a></li>
+			      <li><a href="../../../../../../../debugger/doc/topics/hlp-dbg-intro.html">Debugger</a></li>
+			  
+            <li class="divider"></li>
+            <li><a href="../../../../../../../doc/topics/efinity-files.html">Reference: Efinity Project Files</a></li>
+            
+			<li class="divider"></li>
+			<li><a href="../../../../../../../doc/topics/efn-tut-intro.html">Tutorial</a></li>
+          </ul>
+        </li>
+		  
+        <li><a href="../../../../../../../doc/topics/ipmgr-supported-ip-byfamily.html">IP Help</a></li>
+     
+		
+      	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PDFs<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/pdf/efinity-ug.pdf" target="_blank">Efinity Software User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-installation.pdf" target="_blank">Efinity Installation User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-tutorial-trion.pdf" target="_blank">Efinity Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-tutorial-debugger.pdf" target="_blank">Efinity Debugger Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-ti-primitives-ug.pdf" target="_blank">Quantum Titanium Primitives User Guide</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-tz-primitives-ug.pdf" target="_blank">Quantum Topaz Primitives User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-quantum-primitives-ug.pdf" target="_blank">Quantum Trion Primitives User Guide</a></li>
+			       <li class="divider"></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-synthesis.pdf" target="_blank">Efinity Synthesis User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-timing-closure.pdf" target="_blank">Efinity Timing Closure User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-python-api.pdf" target="_blank">Efinity Python API</a></li>
+          </ul>
+        </li>
+		
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://www.efinixinc.com/support/index.php">Support Center</a></li>
+            <li><a href="https://www.efinixinc.com/products-efinity-training.html">Training Videos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+	
+</div></header><div class="col-xs-12 col-md-4"><nav class="toc" role="navigation"><ul id="toc"><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#hlp-mipi-csi2-rx-2.5g">MIPI 2.5G CSI-2 RX Controller Core User Guide</a><button class="btn btn-default btn-xs dropdown-toggle btn-leftnav" data-toggle="collapse" aria-expanded="false" onClick="store_nav_state(this)" data-target="#drop-mipicsi2-5grx" id="btn-mipicsi2-5grx"><span class="glyphicon glyphicon-plus-sign"></span></button><div class="collapse" id="drop-mipicsi2-5grx"><ul><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi_dsi2_rx_core_features">Features</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-fd">Functional Description</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#ipm_main">IP Manager</a></li><li class="nav-item"><a href="../topics/hlp-mipi-csi2-rx-2.5g.html#mipi-csi2-rx-2.5g-core-customizing">Customizing the MIPI 2.5G CSI-2 RX Controller</a></li></ul></div></li></ul></nav></div><div class="col-xs-12 col-md-8"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Resolving
+        IP Manager Issues</h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <div class="p">When you launch the <span class="ph"></span> software, it creates two server instances on
+            localhost for the IP Manager. The IP Manager uses these server instances for
+            inter-process communications. These server instances use randomly chosen port numbers
+            based on preset upper and lower bounds. The server instances are:<ul class="ul" id="concept_kdw_qzt_32c__ul_pcb_125_32c">
+                <li class="li">IPM_Server = 127.0.0.1:&lt;<em class="ph i">port number</em>&gt;</li>
+                <li class="li">RPC_Server= 127.0.0.1:&lt;<em class="ph i">port number</em>&gt;</li>
+            </ul></div>
+        <p class="p">If your computer has closed the default port ranges (for example, your IT department has
+            closed ports for security reasons), the two RPC server instances cannot connect to
+            localhost and the software issues the message <strong class="ph b">IP Manager RPC Server Not
+            Connected</strong>.</p>
+        <p class="p">To resolve this issue you need to:</p>
+        <div class="p">
+            <ol class="ol" id="concept_kdw_qzt_32c__ol_wfs_bd5_32c">
+                <li class="li">Talk to your IT department about opening ports for the IP Manager.</li>
+                <li class="li">Set specific default ports for the software to use instead of a range (so the IT
+                    department only has to open 2 ports).</li>
+            </ol>
+        </div>
+        <p class="p">The software defaults to using the port range 49152 – 65535 because these ports are
+            dynamic, private, or ephemeral ports. They are open for any application to use and are
+            not reserved by the Internet Assigned Numbers Authority (IANA).</p>
+        <div class="p">To change the default port range to specific ports:<ol class="ol" id="concept_kdw_qzt_32c__ol_yqv_k25_32c">
+                <li class="li">In a text editor, open the <span class="ph filepath">app_session.ini</span> file, which is
+                    located in the <span class="ph"></span>
+                    <span class="ph filepath">bin</span> directory (&lt;<em class="ph i">install
+                        directory</em>&gt;<span class="ph filepath">/bin</span>). The contents
+                    are:<pre class="pre codeblock" id="concept_kdw_qzt_32c__codeblock_dst_hf5_32c"><code>[config] 
+ipm_server_port_lower_bound = 49152
+ipm_server_port_upper_bound = 65535 
+efxg_rpc_port_lower_bound = 49152
+efxg_rpc_port_upper_bound = 65535</code></pre></li>
+                <li class="li">Change the configuration to use a single port by changing the upper and lower
+                    bound numbers. The software selects ports using the scheme <em class="ph i">port_lower_bound
+                        &lt;= port_number &lt; port_upper_bound</em>. Therefore, set the lower bound
+                    as the port you want to use and the upper nound as the next higher number; the
+                    software uses the lower bound number for the port setting. For
+                    example:<pre class="pre codeblock" id="concept_kdw_qzt_32c__codeblock_phl_qf5_32c"><code>[config] 
+ipm_server_port_lower_bound = 53123 
+ipm_server_port_upper_bound = 53124
+# Software uses port number 53123
+
+efxg_rpc_port_lower_bound = 49153
+efxg_rpc_port_upper_bound = 49154
+# Software uses port number 49153</code></pre></li>
+            <li class="li">Save the <span class="ph filepath">app_session.ini</span> file and then re-launch the <span class="ph"></span> software.</li>
+            </ol></div>
+    </div>
+</article></main></div><footer role="contentinfo"><div class="footer navbar-fixed-bottom">
+    <p id="copyright">Copyright (c) 2025 | All Rights Reserved</p>
+</div></footer></body></html>

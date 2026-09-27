@@ -1,0 +1,9 @@
+ghdl -a --std=08 i2c_reg16_master.vhd
+ghdl -a --std=08 i2c_reg16_master_tb.vhd
+ghdl -e --std=08 i2c_reg16_master_tb
+ghdl -r --std=08 i2c_reg16_master_tb --vcd=wave.vcd --stop-time=5ms
+gtkwave wave.vcd
+Obs kör 
+gtkwave wave.vcd 
+i separat Crtl + T terminal (kör inte i VS code terminal funkar inte) 
+

@@ -1,0 +1,5 @@
+22:56:47 **** Clean-only build of configuration Default for project i2cDemo ****
+make clean 
+
+22:56:48 Build Finished. 0 errors, 0 warnings. (took 384ms)
+

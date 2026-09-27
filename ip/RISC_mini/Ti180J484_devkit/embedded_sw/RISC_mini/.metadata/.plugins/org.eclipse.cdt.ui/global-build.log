@@ -1,0 +1,3358 @@
+22:34:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18832 B       128 KB     14.37%
+22:35:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:15:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:35:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18832 B       128 KB     14.37%
+20:05:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:22:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18848 B       128 KB     14.38%
+20:25:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:25:19 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:25:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18848 B       128 KB     14.38%
+20:25:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:29:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:30:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:33:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19568 B       128 KB     14.93%
+20:34:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:36:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:37:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:38:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:40:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:43:44 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:43:54 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19568 B       128 KB     14.93%
+20:44:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:48:56 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:48:59 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:89:24: error: redefinition of 'ddr3_base'
+     volatile uint32_t *ddr3_base = (volatile uint32_t *)(0x1000);
+                        ^~~~~~~~~
+src/test_b.c:77:24: note: previous definition of 'ddr3_base' was here
+     volatile uint32_t *ddr3_base = (volatile uint32_t *)(0x1000);
+                        ^~~~~~~~~
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:49:41 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:49:50 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19840 B       128 KB     15.14%
+20:50:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:50:37 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:27:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20048 B       128 KB     15.30%
+16:29:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:29:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:31:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:52:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:52:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:16:08 **** Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:16:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:37:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:42:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:59:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:02:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:05:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:09:52 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:12:36 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:15:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:25:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:26:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:26:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:27:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:28:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:30:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:44:25 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:44:28 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20048 B       128 KB     15.30%
+21:44:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:45:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:12:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:23:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20640 B       128 KB     15.75%
+22:24:05 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:24:07 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20640 B       128 KB     15.75%
+22:24:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:31:27 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:31:38 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:292:29: error: 'eth_rx' undeclared (first use in this function)
+         uint32_t rx_data = *eth_rx;
+                             ^~~~~~
+src/test_b.c:292:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:31:55 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:31:59 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:292:29: error: 'eth_rx' undeclared (first use in this function)
+         uint32_t rx_data = *eth_rx;
+                             ^~~~~~
+src/test_b.c:292:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:33:30 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:33:33 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:292:29: error: 'eth_rx' undeclared (first use in this function)
+         uint32_t rx_data = *eth_rx;
+                             ^~~~~~
+src/test_b.c:292:29: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:35:24 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:35:27 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:         20 KB       128 KB     15.62%
+22:36:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:36:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:37:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:40:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:41:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:43:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+11:51:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+11:51:21 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:         20 KB       128 KB     15.62%
+11:51:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:04:27 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:04:30 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c:156:6: error: redefinition of 'trap'
+ void trap() {
+      ^~~~
+src/test_b.c:145:6: note: previous definition of 'trap' was here
+ void trap(void)
+      ^~~~
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:05:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20032 B       128 KB     15.28%
+12:06:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:21:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:22:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:22:37 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:23:23 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:25:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:25:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:27:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20048 B       128 KB     15.30%
+12:27:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:29:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:57 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:51:00 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20496 B       128 KB     15.64%
+12:51:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:56:31 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:56:34 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20496 B       128 KB     15.64%
+13:20:55 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:20:58 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20496 B       128 KB     15.64%
+13:21:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:21:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:21:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:22:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:23:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:25:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:25:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:26:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:27:37 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20544 B       128 KB     15.67%
+13:27:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:28:46 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:28:49 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20560 B       128 KB     15.69%
+13:29:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:41:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:41:18 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20048 B       128 KB     15.30%
+13:41:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:16 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20080 B       128 KB     15.32%
+13:43:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:43:45 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:43:52 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20080 B       128 KB     15.32%
+13:44:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20224 B       128 KB     15.43%
+13:46:21 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:46:26 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20336 B       128 KB     15.52%
+13:46:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:57:36 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:57:39 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20336 B       128 KB     15.52%
+13:58:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:26:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:71:3: warning: missing terminating ' character
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^
+src/test_b.c:71:3: error: missing terminating ' character
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/test_b.c:71:3: error: expected ';' before '}' token
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^
+   ;
+     } else {
+     ~
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:26:35 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:26:39 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:71:3: warning: missing terminating ' character
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^
+src/test_b.c:71:3: error: missing terminating ' character
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/test_b.c:71:3: error: expected ';' before '}' token
+ 32'hd000        bsp_printf("  ERROR: TX FIFO full, cannot send!\r\n");
+   ^
+   ;
+     } else {
+     ~
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:27:30 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:27:32 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20352 B       128 KB     15.53%
+14:27:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:27:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:28:10 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:28:13 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20352 B       128 KB     15.53%
+14:28:23 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:29:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:43:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:43:15 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20352 B       128 KB     15.53%
+15:50:28 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+15:50:35 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20352 B       128 KB     15.53%
+15:50:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20672 B       128 KB     15.77%
+16:24:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:40:04 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+16:40:08 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+src/test_b.c: In function 'main':
+src/test_b.c:77:23: error: expected ';' before 'bsp_printf'
+     bsp_printf("\r\n")
+                       ^
+                       ;
+src/test_b.c:82:5:
+     bsp_printf("[TEST 1] UART Loopback Test\r\n");
+     ~~~~~~~~~~         
+make: *** [../common/standalone.mk:56: build/obj_files/test_b.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:13:18 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:13:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC src/test_b_OLD_uart_attempt.c
+src/test_b_OLD_uart_attempt.c: In function 'main':
+src/test_b_OLD_uart_attempt.c:77:23: error: expected ';' before 'bsp_printf'
+     bsp_printf("\r\n")
+                       ^
+                       ;
+src/test_b_OLD_uart_attempt.c:82:5:
+     bsp_printf("[TEST 1] UART Loopback Test\r\n");
+     ~~~~~~~~~~         
+make: *** [../common/standalone.mk:56: build/obj_files/test_b_OLD_uart_attempt.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:14:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19728 B       128 KB     15.05%
+17:14:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:15:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:16:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:45:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:45:20 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17232 B       128 KB     13.15%
+17:45:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:33:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17264 B       128 KB     13.17%
+18:33:18 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+18:33:20 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17264 B       128 KB     13.17%
+18:33:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:45:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:46:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:05:40 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:05:44 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17264 B       128 KB     13.17%
+19:05:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:11 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:45:16 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17264 B       128 KB     13.17%
+19:45:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:46:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:47:21 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17328 B       128 KB     13.22%
+19:47:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:06 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:50:09 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17328 B       128 KB     13.22%
+19:50:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:05:19 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:05:21 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17328 B       128 KB     13.22%
+20:16:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:18:15 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17344 B       128 KB     13.23%
+20:18:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:56 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:42:00 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17344 B       128 KB     13.23%
+20:49:41 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:49:57 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17344 B       128 KB     13.23%
+21:40:17 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:40:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17344 B       128 KB     13.23%
+22:14:14 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:14:17 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17344 B       128 KB     13.23%
+09:53:11 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+09:53:14 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:         17 KB       128 KB     13.28%
+09:58:32 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+09:58:35 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:         17 KB       128 KB     13.28%
+09:58:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:07:44 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:07:55 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:07:57 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21536 B       128 KB     16.43%
+12:34:00 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:34:02 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23024 B       128 KB     17.57%
+12:53:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:53:15 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23056 B       128 KB     17.59%
+13:03:38 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:03:41 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21056 B       128 KB     16.06%
+13:04:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:04:32 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:04:37 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21056 B       128 KB     16.06%
+13:05:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:07:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:31:58 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:32:01 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21056 B       128 KB     16.06%
+13:45:27 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:45:33 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21744 B       128 KB     16.59%
+13:45:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:46:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:06:29 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:06:33 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21744 B       128 KB     16.59%
+14:06:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:07:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:10:33 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:10:42 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:10:45 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22256 B       128 KB     16.98%
+14:10:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:15:33 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:15:38 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23296 B       128 KB     17.77%
+14:15:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:21:38 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:21:43 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22128 B       128 KB     16.88%
+14:22:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:24:59 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:25:01 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22608 B       128 KB     17.25%
+14:25:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:30:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:30:19 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20944 B       128 KB     15.98%
+14:30:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:32:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:34:06 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:34:08 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20848 B       128 KB     15.91%
+14:34:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:01 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:42:04 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20352 B       128 KB     15.53%
+14:47:07 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+14:47:10 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20656 B       128 KB     15.76%
+14:47:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:47:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:48:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:01:42 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+15:01:45 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20656 B       128 KB     15.76%
+15:02:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:05:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:28 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+15:18:31 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20688 B       128 KB     15.78%
+15:18:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:22:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:24:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:29:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:45 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:18:47 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20688 B       128 KB     15.78%
+17:40:12 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:40:57 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20688 B       128 KB     15.78%
+17:52:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21312 B       128 KB     16.26%
+17:52:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:52:15 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21312 B       128 KB     16.26%
+17:52:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:57:24 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+17:57:28 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21440 B       128 KB     16.36%
+17:57:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:01:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:20:42 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+18:20:44 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22112 B       128 KB     16.87%
+18:20:56 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:09:41 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:09:44 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22272 B       128 KB     16.99%
+20:36:22 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:36:25 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22560 B       128 KB     17.21%
+21:14:21 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:14:23 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22560 B       128 KB     17.21%
+21:05:49 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:05:52 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+             ram:       28992 B       128 KB     22.12%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:16: multiple definition of `led_pulse'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:24: multiple definition of `uart_drain'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:33: multiple definition of `println'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:34: multiple definition of `print_hex16'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:46: multiple definition of `rtl_physr'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:64: multiple definition of `main'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:212: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:321: multiple definition of `trap'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:380: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:08:26 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:08:28 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+             ram:       28992 B       128 KB     22.12%
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:16: multiple definition of `led_pulse'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:24: multiple definition of `uart_drain'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:33: multiple definition of `println'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:34: multiple definition of `print_hex16'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:46: multiple definition of `rtl_physr'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:64: multiple definition of `main'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:212: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:321: multiple definition of `trap'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:380: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:08:38 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:08:42 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+             ram:       28992 B       128 KB     22.12%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:16: multiple definition of `led_pulse'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:24: multiple definition of `uart_drain'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:33: multiple definition of `println'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:34: multiple definition of `print_hex16'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:46: multiple definition of `rtl_physr'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:64: multiple definition of `main'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:212: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:321: multiple definition of `trap'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:380: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:09:27 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:09:33 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC src/test_b.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+             ram:       28992 B       128 KB     22.12%
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:16: multiple definition of `led_pulse'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:24: multiple definition of `uart_drain'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:33: multiple definition of `println'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:34: multiple definition of `print_hex16'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:46: multiple definition of `rtl_physr'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:64: multiple definition of `main'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:212: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_b.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_b.c:321: multiple definition of `trap'; build/obj_files/test_1g_udp.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:380: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:10:31 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:10:35 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23232 B       128 KB     17.72%
+21:18:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:37 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:57:41 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23744 B       128 KB     18.12%
+22:22:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:22:18 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_1g_udp.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       23312 B       128 KB     17.79%
+22:25:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:26:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:15:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:56 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:54:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:55:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:03:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `write_u32':
+             ram:       29136 B       128 KB     22.23%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: multiple definition of `led_pulse'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:18: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: multiple definition of `uart_drain'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:25: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: multiple definition of `println'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:31: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: multiple definition of `print_hex16'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:32: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:73: multiple definition of `print_hex32'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:33: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: multiple definition of `rtl_physr'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:47: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `rtl_set_rgmii_delay':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:103: multiple definition of `rtl_set_rgmii_delay'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:215: multiple definition of `main'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:124: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:383: multiple definition of `trap'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:249: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:03:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `write_u32':
+             ram:       29136 B       128 KB     22.23%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_on'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: multiple definition of `led_off'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `led_pulse':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:58: multiple definition of `led_pulse'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:18: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: multiple definition of `uart_drain'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:25: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: multiple definition of `print'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:145: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: multiple definition of `println'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:31: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: multiple definition of `print_hex16'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:32: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:73: multiple definition of `print_hex32'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:33: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `mdio_write_reg':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: multiple definition of `bmsr_read'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/mdio_driver.h:78: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `rtl_physr':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:87: multiple definition of `rtl_physr'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:47: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `rtl_set_rgmii_delay':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:103: multiple definition of `rtl_set_rgmii_delay'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:58: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:215: multiple definition of `main'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:124: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:383: multiple definition of `trap'; build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:249: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:04:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22672 B       128 KB     17.30%
+21:04:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:37 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:06:40 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22672 B       128 KB     17.30%
+21:06:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25344 B       128 KB     19.34%
+21:06:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:08:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25168 B       128 KB     19.20%
+21:08:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:11:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+src/test_100mbit_mdio_setup.c: In function 'main':
+src/test_100mbit_mdio_setup.c:281:5: warning: implicit declaration of function 'rtl_force_100m_fd' [-Wimplicit-function-declaration]
+     rtl_force_100m_fd(phy);
+     ^~~~~~~~~~~~~~~~~
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `main':
+             ram:       25920 B       128 KB     19.78%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:249: undefined reference to `rtl_force_100m_fd'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:11:39 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:11:42 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+src/test_100mbit_mdio_setup.c: In function 'main':
+src/test_100mbit_mdio_setup.c:281:5: warning: implicit declaration of function 'rtl_force_100m_fd' [-Wimplicit-function-declaration]
+     rtl_force_100m_fd(phy);
+     ^~~~~~~~~~~~~~~~~
+CC ../common/start.S
+LD test_b
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:249: undefined reference to `rtl_force_100m_fd'
+Memory region         Used Size  Region Size  %age Used
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+             ram:       25920 B       128 KB     19.78%
+"make all" terminated with exit code 2. Build might be incomplete.
+21:12:05 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:12:07 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+src/test_100mbit_mdio_setup.c: In function 'main':
+src/test_100mbit_mdio_setup.c:281:5: warning: implicit declaration of function 'rtl_force_100m_fd' [-Wimplicit-function-declaration]
+     rtl_force_100m_fd(phy);
+     ^~~~~~~~~~~~~~~~~
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `main':
+             ram:       25920 B       128 KB     19.78%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:249: undefined reference to `rtl_force_100m_fd'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:12:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25920 B       128 KB     19.78%
+21:12:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:14:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:16:40 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:16:43 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25904 B       128 KB     19.76%
+21:16:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:20:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25840 B       128 KB     19.71%
+21:21:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:23:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:39:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:39:13 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:39:16 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25840 B       128 KB     19.71%
+22:39:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:40:53 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:40:55 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       25840 B       128 KB     19.71%
+19:41:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:52:16 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:52:19 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `print':
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:29: undefined reference to `usleep'
+             ram:       26176 B       128 KB     19.97%
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `uart_mini_tx_ready':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:62: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:62: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:31: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `uart_mini_get_status':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:52: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:52: more undefined references to `usleep' follow
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:52:40 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:52:49 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `print':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:29: undefined reference to `usleep'
+             ram:       26176 B       128 KB     19.97%
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `uart_mini_tx_ready':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:62: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: /home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:62: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_100mbit_mdio_setup.c:31: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o: in function `uart_mini_get_status':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:52: undefined reference to `usleep'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_100mbit_mdio_setup.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:52: more undefined references to `usleep' follow
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:53:25 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+19:53:27 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       26512 B       128 KB     20.23%
+19:53:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:08:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:08:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:22:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:22:09 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:22:12 **** Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       26512 B       128 KB     20.23%
+20:22:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:35:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:35:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:48:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       26512 B       128 KB     20.23%
+20:49:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       26544 B       128 KB     20.25%
+20:56:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:59:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/test_100mbit_mdio_setup.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       26544 B       128 KB     20.25%
+20:59:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:55:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+18:55:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:28:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:29:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:33:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:42:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:51:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:57:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:23:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:32:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:33:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:38:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:54:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:29:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:29:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:29:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:31:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:45:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:47:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:21:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:21:56 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+src/t120_camera.c: In function 'i2c_init_100khz':
+src/t120_camera.c:97:35: error: invalid suffix "_000_000" on integer constant
+     const uint32_t fclk_hz      = 50_000_000;
+                                   ^~~~~~~~~~
+src/t120_camera.c:98:46: error: invalid suffix "_000_000" on integer constant
+     const uint32_t cycles_per_us = fclk_hz / 1_000_000;  // 50 cycles per µs
+                                              ^~~~~~~~~
+src/t120_camera.c: In function 'cam_read_reg8':
+src/t120_camera.c:198:5: warning: implicit declaration of function 'i2c_rxByte'; did you mean 'i2c_txByte'? [-Wimplicit-function-declaration]
+     i2c_rxByte(SYSTEM_I2C_0_IO_CTRL);
+     ^~~~~~~~~~
+     i2c_txByte
+make: *** [../common/standalone.mk:56: build/obj_files/t120_camera.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:23:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+src/t120_camera.c: In function 'cam_read_reg8':
+src/t120_camera.c:198:5: warning: implicit declaration of function 'i2c_rxByte'; did you mean 'i2c_txByte'? [-Wimplicit-function-declaration]
+     i2c_rxByte(SYSTEM_I2C_0_IO_CTRL);
+     ^~~~~~~~~~
+     i2c_txByte
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+             ram:       18880 B       128 KB     14.40%
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:23:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       18880 B       128 KB     14.40%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:23:55 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:23:59 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       18880 B       128 KB     14.40%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:24:53 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:24:55 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19936 B       128 KB     15.21%
+20:26:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:47:00 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:47:03 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20096 B       128 KB     15.33%
+20:50:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:50:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:55:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20816 B       128 KB     15.88%
+20:55:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:59:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20736 B       128 KB     15.82%
+21:13:36 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:32:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22896 B       128 KB     17.47%
+21:34:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:35:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+makefile:7: *** recipe commences before first target.  Stop.
+"make all" terminated with exit code 2. Build might be incomplete.
+21:41:36 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+makefile:7: *** recipe commences before first target.  Stop.
+"make clean" terminated with exit code 2. Build might be incomplete.
+21:41:55 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:41:59 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:43:23 **** Incremental Build of configuration Default for project test_b ****
+make all 
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19872 B       128 KB     15.16%
+21:45:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:55:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:00:59 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:01:03 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19904 B       128 KB     15.19%
+22:01:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_cam_v1.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19904 B       128 KB     15.19%
+22:04:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+11:26:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+src/camera_v2.c: In function 'camera_v2_probe':
+src/camera_v2.c:29:5: warning: implicit declaration of function 'i2c_masterReset'; did you mean 'i2c_masterRestart'? [-Wimplicit-function-declaration]
+     i2c_masterReset(i2c_base);
+     ^~~~~~~~~~~~~~~
+     i2c_masterRestart
+src/camera_v2.c:40:11: warning: implicit declaration of function 'i2c_busy' [-Wimplicit-function-declaration]
+     while(i2c_busy(i2c_base));
+           ^~~~~~~~
+LD test_b
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/camera_v2.o: in function `camera_v2_probe':
+             ram:       17392 B       128 KB     13.27%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/camera_v2.c:25: undefined reference to `i2c_masterReset'
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/camera_v2.o: in function `write_u32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../driver/io.h:38: undefined reference to `i2c_busy'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:27:34 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+11:27:37 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       17392 B       128 KB     13.27%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:28:12 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+11:28:14 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17936 B       128 KB     13.68%
+11:29:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:37:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:38:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:41:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:42:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:42:50 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:42:53 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17904 B       128 KB     13.66%
+12:42:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:43:29 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:43:31 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17792 B       128 KB     13.57%
+12:43:36 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:44:51 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:48:04 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17936 B       128 KB     13.68%
+12:50:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:50:43 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+12:50:45 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       17936 B       128 KB     13.68%
+12:50:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:05:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18064 B       128 KB     13.78%
+13:06:20 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:06:23 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18064 B       128 KB     13.78%
+13:06:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:30:43 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:31:10 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18176 B       128 KB     13.87%
+13:33:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:58:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18144 B       128 KB     13.84%
+13:58:16 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:58:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:59:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+13:59:19 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:59:21 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18144 B       128 KB     13.84%
+13:59:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:00:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:49:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:49:24 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:49:30 **** Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18144 B       128 KB     13.84%
+20:49:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:52:14 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:52:19 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:53:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_cam_v1.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       18912 B       128 KB     14.43%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:54:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:54:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/camera_v2.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       18144 B       128 KB     13.84%
+20:54:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:55:02 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:55:05 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+             ram:       19680 B       128 KB     15.01%
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:55:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       22928 B       128 KB     17.49%
+20:55:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:02 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:56:03 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19904 B       128 KB     15.19%
+20:56:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:22 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:56:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_cam_v1.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       19904 B       128 KB     15.19%
+20:56:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:07:10 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:07:10 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:08:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/start.o: in function `.L0 ':
+             ram:       19680 B       128 KB     15.01%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../common/start.S:73: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:10:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20736 B       128 KB     15.82%
+21:10:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:13:07 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:13:07 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20736 B       128 KB     15.82%
+21:16:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:18:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:57:37 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:57:37 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20896 B       128 KB     15.94%
+06:48:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21104 B       128 KB     16.10%
+19:49:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21104 B       128 KB     16.10%
+19:50:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:50:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:07:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:07:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21104 B       128 KB     16.10%
+21:41:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:41:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:49:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:31:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21104 B       128 KB     16.10%
+06:32:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:51:45 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+06:51:46 **** Build of configuration Default for project test_b ****
+make all 
+CC src/t120_cam_b1.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       20816 B       128 KB     15.88%
+06:52:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:55:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:56:00 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+06:56:00 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21104 B       128 KB     16.10%
+06:56:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:59:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+07:00:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+07:20:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+11:50:10 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21200 B       128 KB     16.17%
+11:56:56 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:16:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21168 B       128 KB     16.15%
+12:16:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:17:52 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:18:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:19:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:20:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:44:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21200 B       128 KB     16.17%
+19:45:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:46:27 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:06:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21840 B       128 KB     16.66%
+20:06:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:07:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:18:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21840 B       128 KB     16.66%
+20:19:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:19:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:03:37 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21840 B       128 KB     16.66%
+21:03:47 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:09:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21840 B       128 KB     16.66%
+21:09:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:17:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21840 B       128 KB     16.66%
+21:17:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:46:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+19:33:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+19:34:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+19:34:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:11:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:11:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:41:21 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:51:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:51:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:53:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:53:28 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:54:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:55:23 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:56:37 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:56:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+20:58:00 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+20:58:00 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+20:58:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:04:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+21:05:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:05:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:39:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:52:48 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:52:48 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+21:52:52 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:21 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+21:53:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+21:59:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:00:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:00:19 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:01:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:02:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:04:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:08:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:08:28 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:08:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:13:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:18:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:18:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:32:42 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:33:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:33:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:35:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:35:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+22:35:45 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+22:35:45 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+22:35:51 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:21:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:21:41 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+06:21:41 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+06:22:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:22:19 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+06:22:20 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+06:23:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:27:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:28:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+06:36:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+06:36:36 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+06:36:56 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:27:23 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+09:27:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:28:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+09:28:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:30:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+09:30:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+09:32:03 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:34:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+09:34:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+09:39:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+11:23:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+12:44:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+12:44:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:45:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:46:29 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+12:46:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:47:58 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+12:48:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:53:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21232 B       128 KB     16.20%
+14:53:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21232 B       128 KB     16.20%
+14:57:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:16:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:31:18 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:31:22 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:31:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:33:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:35:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:35:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:37:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:37:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:39:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:39:49 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:40:01 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:40:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:41:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:42:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:42:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:54 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:44:00 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+15:57:06 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+15:58:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:05:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:06:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:07:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:08:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:09:48 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:10:16 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:11:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:13:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:13:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:14:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:15:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:15:31 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:17:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:17:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:18:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:19:04 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:24:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:24:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:25:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:27:53 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:28:14 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:41 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:28:52 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:39:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:39:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:41:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+16:42:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+17:07:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+17:08:07 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:08:11 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:08:46 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:09:13 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:11:20 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+17:11:44 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:39 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+17:14:08 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:17:43 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+17:18:02 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:18:09 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:32:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+21:31:35 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       21216 B       128 KB     16.19%
+13:22:59 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/test_1g_udp.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_drain':
+             ram:       28800 B       128 KB     21.97%
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: multiple definition of `uart_drain'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:93: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:157: multiple definition of `print'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:157: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: multiple definition of `println'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:102: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: multiple definition of `print_hex16'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:114: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:73: multiple definition of `print_hex32'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:119: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:215: multiple definition of `main'; build/obj_files/main.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/main.c:48: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:383: multiple definition of `trap'; build/obj_files/main.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/main.c:97: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:23:21 **** Clean-only build of configuration Default for project test_b ****
+make clean 
+13:23:22 **** Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+CC src/t120_camera.c
+CC src/test_1g_udp.c
+CC ../common/start.S
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_drain':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:65: multiple definition of `uart_drain'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:93: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `uart_mini_tx_string':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:157: multiple definition of `print'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//../../../bsp/efinix/EfxSapphireSoc/include/uart_mini_driver.h:157: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `println':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:71: multiple definition of `println'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:102: first defined here
+             ram:       28800 B       128 KB     21.97%
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex16':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:72: multiple definition of `print_hex16'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:114: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `print_hex32':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:73: multiple definition of `print_hex32'; build/obj_files/t120_camera.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/t120_camera.c:119: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `main':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:215: multiple definition of `main'; build/obj_files/main.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/main.c:48: first defined here
+/home/olle/efinity/efinity-riscv-ide-2025.2/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld: build/obj_files/test_1g_udp.o: in function `trap':
+/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/test_1g_udp.c:383: multiple definition of `trap'; build/obj_files/main.o:/home/olle/efinity_p2/BRAM/T120F324_A/embedded_sw/RISC_mini/software/standalone/test_b//src/main.c:97: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/test_b.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+13:37:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/main.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+15:45:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+16:09:45 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:21:24 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:28:38 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:43:17 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:50:34 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:56:33 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+16:56:50 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:00:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:07:55 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:13:25 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:13:40 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:13:57 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:19:12 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:19:32 **** Incremental Build of configuration Default for project test_b ****
+make all 
+make: Nothing to be done for 'all'.
+17:23:15 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:28:05 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+17:42:30 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%
+18:03:26 **** Incremental Build of configuration Default for project test_b ****
+make all 
+CC src/t120_camera.c
+LD test_b
+Memory region         Used Size  Region Size  %age Used
+             ram:       24464 B       128 KB     18.66%

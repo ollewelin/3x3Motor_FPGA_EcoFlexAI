@@ -1,0 +1,429 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="generator" content="DITA-OT"><meta name="description" content=""><meta name="prodname" content="Efinity"><meta name="version" content="UG-CORE-MIPI-D-PHY-TX-v1.8"><meta name="rights" content="© 2025 Efinix, Inc."><title>MIPI D-PHY TX Controller Core User Guide</title>
+	<link href="../../../../../../../doc/css/efx-styles.css" rel="stylesheet">
+	<link href="../../../../../../../doc/css/bootstrap.css" rel="stylesheet">
+	<script src="../../../../../../../doc/js/jquery-3.4.1.min.js"></script>
+	<script src="../../../../../../../doc/js/bootstrap.js"></script>
+</head><body><header role="banner"><div>
+  <script>
+    function store_nav_state(clicked_id) {
+    var id = $(clicked_id).attr("id");
+    var div_id = id.replace(/^btn-/, 'drop-');
+    // alert(div_id);
+    
+    if ( $('#'+div_id).hasClass( "in" ) ) {
+    // trigger is opposite of what you would think
+    localStorage.removeItem(div_id);
+    $('#'+id).children('span').addClass("glyphicon-plus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-minus-sign");
+    
+    $('#'+id).children('span').addClass("black");
+    $('#'+id).children('span').removeClass("blue");
+    }
+    else {
+    localStorage.setItem(div_id, "in");
+    $('#'+id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+id).children('span').addClass("blue");
+    $('#'+id).children('span').removeClass("black");
+    }
+    }
+    
+    $(function(){
+    
+    $( "div[id^=drop-]" ).each(function( index ) {
+    var drop_id = $(this).attr("id");	
+    var btn_id = drop_id.replace(/^drop-/, 'btn-');
+    // console.log( index + ": " + drop_id);	
+    
+    var nav_stored = localStorage.getItem(drop_id);
+    if (nav_stored == "in") {
+    // console.log( index + ": " + drop_id);
+    $( '#'+drop_id ).last().addClass( "in" );
+    
+    $('#'+btn_id).children('span').addClass("glyphicon-minus-sign");
+    $('#'+btn_id).children('span').removeClass("glyphicon-plus-sign");
+    
+    $('#'+btn_id).children('span').addClass("blue");
+    }
+    });
+    });
+  </script>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="../../../../../../../doc/topics/efnug-intro.html"><img src="../../../../../../../doc/logo/efinity-help.png" alt="Efinix, Inc."></a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="defaultNavbar1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Efinity Help<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/topics/efnug-intro.html">Overview</a></li>
+            <li><a href="../../../../../../../doc/topics/efnug-new.html">New in This Release</a></li> 
+			      <li><a href="../../../../../../../doc/topics/efn-quickstart.html">Quick Start</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-hwsw-req.html">Hardware and Software Requirements</a></li>
+			  
+			       <li class="divider"></li>
+			  
+			      <li><a href="../../../../../../../doc/topics/efn-proj-prefs.html">Projects and Preferences</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-running-tool-flow.html">Running the Flow</a></li>
+            <li><a href="../../../../../../../doc/topics/ip-packager-intro.html">IP Packager</a></li>
+            <li><a href="../../../../../../../doc/topics/ipmgr.html">IP Manager</a></li>
+            <li><a href="../../../../../../../doc/topics/syn-intro.html">Synthesis</a></li>
+            <li><a href="../../../../../../../pt/doc/topics/hlp-id-intro.html">Interface Designer</a></li>
+            <li><a href="../../../../../../../doc/topics/tim-intro.html">Timing</a></li>
+			      <li><a href="../../../../../../../doc/topics/efn-simulating.html">Simulation</a></li>
+			      <li><a href="../../../../../../../pgm/doc/topics/hlp-pg-intro.html">Programmer</a></li>
+			      <li><a href="../../../../../../../debugger/doc/topics/hlp-dbg-intro.html">Debugger</a></li>
+			  
+            <li class="divider"></li>
+            <li><a href="../../../../../../../doc/topics/efinity-files.html">Reference: Efinity Project Files</a></li>
+            
+			<li class="divider"></li>
+			<li><a href="../../../../../../../doc/topics/efn-tut-intro.html">Tutorial</a></li>
+          </ul>
+        </li>
+		  
+        <li><a href="../../../../../../../doc/topics/ipmgr-supported-ip-byfamily.html">IP Help</a></li>
+     
+		
+      	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PDFs<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+			      <li><a href="../../../../../../../doc/pdf/efinity-ug.pdf" target="_blank">Efinity Software User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-installation.pdf" target="_blank">Efinity Installation User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-tutorial-trion.pdf" target="_blank">Efinity Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-tutorial-debugger.pdf" target="_blank">Efinity Debugger Tutorial</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-ti-primitives-ug.pdf" target="_blank">Quantum Titanium Primitives User Guide</a></li>
+            <li><a href="../../../../../../../doc/pdf/efinity-quantum-tz-primitives-ug.pdf" target="_blank">Quantum Topaz Primitives User Guide</a></li>
+			      <li><a href="../../../../../../../doc/pdf/efinity-quantum-primitives-ug.pdf" target="_blank">Quantum Trion Primitives User Guide</a></li>
+			       <li class="divider"></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-synthesis.pdf" target="_blank">Efinity Synthesis User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-timing-closure.pdf" target="_blank">Efinity Timing Closure User Guide</a></li>
+			       <li><a href="../../../../../../../doc/pdf/efinity-python-api.pdf" target="_blank">Efinity Python API</a></li>
+          </ul>
+        </li>
+		
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Support<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="https://www.efinixinc.com/support/index.php">Support Center</a></li>
+            <li><a href="https://www.efinixinc.com/products-efinity-training.html">Training Videos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+	
+</div></header><div class="col-xs-12 col-md-4"><nav class="toc" role="navigation"><ul id="toc"><li class="active"><a href="../topics/hlp-mipi-dphy-tx.html#hlp_mipi_dphy_tx">MIPI D-PHY TX Controller Core User Guide</a><button class="btn btn-default btn-xs dropdown-toggle btn-leftnav" data-toggle="collapse" aria-expanded="false" onClick="store_nav_state(this)" data-target="#drop-mipidphy" id="btn-mipidphy"><span class="glyphicon glyphicon-plus-sign"></span></button><div class="collapse" id="drop-mipidphy"><ul><li class="nav-item"><a href="../topics/hlp-mipi-dphy-tx.html#mipi_dphy_tx_core_features">Features</a></li><li class="nav-item"><a href="../topics/hlp-mipi-dphy-tx.html#mipi_dphy_tx_fd">Functional Description</a></li><li class="nav-item"><a href="../topics/hlp-mipi-dphy-tx.html#ipm_main_mipi_temp">IP Manager</a></li><li class="nav-item"><a href="../topics/hlp-mipi-dphy-tx.html#mipi_dphy_tx_core_customizing">Customizing the MIPI D-PHY TX Controller</a></li></ul></div></li></ul></nav></div><div class="col-xs-12 col-md-8"><main role="main"><article role="article" aria-labelledby="ariaid-title1"><article class="nested0" aria-labelledby="ariaid-title1" id="hlp_mipi_dphy_tx">
+    <h1 class="title topictitle1" id="ariaid-title1"><span class="ph"><span class="ph">MIPI D-PHY TX Controller</span> Core User Guide</span></h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p">The MIPI D-PHY is a scalable physical layer for interfacing various components such as
+            cameras and displays to host devices. The <span class="ph">MIPI D-PHY TX Controller</span> core allows you to
+            control and configure the <span class="ph">MIPI D-PHY</span> TX interface. You use the <span class="ph">MIPI D-PHY TX Controller</span> core with the <span class="keyword">Titanium</span> HSIO pins
+            configured as MIPI TX lanes to build a custom MIPI interface.</p>
+        <p class="p" id="hlp_mipi_dphy_tx__ipmgr">Use the IP Manager to select IP, customize it, and generate files. The
+                <span class="keyword">MIPI D-PHY TX Controller</span> core has an interactive wizard to help you set
+            parameters. The wizard also has options to create a testbench and/or example design
+            targeting an <span class="ph">Efinix®</span> development board.</p>
+        <p class="p">This help gives you an overview of the <span class="keyword">MIPI D-PHY TX Controller</span> core
+            and how to configure it with the IP Manager. For detailed information, refer to <a class="xref" href="https://www.efinixinc.com/support/docsdl.php?s=ef&amp;pn=MIPI-D-PHY-TX-CORE" target="_blank" rel="external noopener"><span class="keyword">MIPI D-PHY TX Controller</span> User Guide</a> in
+            the Support Center.</p>
+    </div>
+<article class="topic concept nested1" aria-labelledby="ariaid-title2" id="mipi_dphy_tx_core_features">
+    <h2 class="title topictitle2" id="ariaid-title2">Features</h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <div class="p">
+            <ul class="ul" id="mipi_dphy_tx_core_features__ul_byk_n23_z3b">
+                <li class="li">1, 2, 4, or 8 configurable data lanes</li>
+                <li class="li">Unidirectional (CSI) and bidirectional (DSI) data lane</li>
+                <li class="li">High-speed (HS) mode for data communication and low-power (LP) mode for data
+                    communication</li>
+                <li class="li">100 MHz core clock frequency</li>
+                <li class="li">HS byte clock frequency from 10 MHz up to 187 MHz (from 80 Mbps up to 1,500 Mbps
+                    data rate)<a name="fnsrc_1" href="#fntarg_1"><sup>1</sup></a></li>
+                <li class="li">Continuous HS byte clock and discontinuous HS byte clock</li>
+                <li class="li">Supports 8 bits HS data width</li>
+                <li class="li">Supports D-PHY-only, D-PHY with CSI, or D-PHY with DSI</li>
+                <li class="li">Supports PHY protocol interface (PPI)</li>
+                <li class="li">Supports end-of-transmission error, start-of-transmission sync error, control
+                    error, and LP escape error</li>
+            </ul>
+        </div>
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title3" id="mipi_dphy_tx_fd">
+    <h2 class="title topictitle2" id="ariaid-title3">Functional Description</h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p">The <span class="keyword">MIPI D-PHY TX Controller</span> consists of a fault detection block, HS data de-skew
+            calibration block, data lane FSM block, and clock lane FSM block.</p>
+        <div class="p">
+            <figure class="fig fignone" id="mipi_dphy_tx_fd__fig_akd_pf3_z3b"><figcaption><span class="fig--title-label">Figure 1. </span><span class="keyword">MIPI D-PHY TX Controller</span> System Block Diagram</figcaption>
+                
+                <img class="image" id="mipi_dphy_tx_fd__image_o3c_hsm_npb" src="../art/mipi-dphy-controller-tx-bd.svg">
+            </figure>
+        </div>
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title4" id="ipm_main_mipi_temp">
+    <h2 class="title topictitle2" id="ariaid-title4">IP Manager</h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <section class="section" id="ipm_main_mipi_temp__section_bcl_5t3_snb">
+            <p class="p">The <span class="ph">Efinity®</span> IP Manager is an
+            interactive wizard that helps you customize and generate <span class="ph">Efinix®</span> IP cores. The IP Manager performs
+            validation checks on the parameters you set to ensure that your selections are valid.
+            When you generate the IP core, you can optionally generate an example design targeting
+            an <span class="ph">Efinix</span> development board and/or a
+            testbench. This wizard is helpful in situations in which you use several IP cores,
+            multiple instances of an IP core with different parameters, or the same IP core for
+            different projects.</p>
+            <div class="note note note_note"><span class="note__title">Note:</span> Not all <span class="ph">Efinix</span> IP cores include
+            an example design or a testbench.</div>
+            <p class="p">The IP Manager is included with the <span class="ph">Efinity</span> software v2020.2 and higher.</p>
+  
+            <div class="p">The IP Manager consists of:<ul class="ul" id="ipm_main_mipi_temp__ul_fm2_553_snb">
+                <li class="li"><em class="ph i">IP Catalog</em>—Provides a catalog of IP cores you can select. Open the IP
+                    Catalog using the toolbar button or using <span class="ph menucascade"><span class="ph uicontrol">Tools</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Open IP Catalog</span></span>.</li>
+                <li class="li"><em class="ph i">IP Configuration</em>—Wizard to customize IP core parameters, select IP core
+                    deliverables, review the IP core settings, and generate the custom
+                    variation.</li>
+                <li class="li"><em class="ph i">IP Editor</em>—Helps you manage IP, add IP, and import IP into your
+                    project.</li>
+            </ul></div>
+        </section>
+        <section class="section" id="ipm_main_mipi_temp__section_o4q_vv3_snb"><h3 class="title sectiontitle">Generating a Core with the IP Manager</h3>
+            
+            
+            <div class="p">The following steps explain how to customize an IP core with the IP
+            Configuration wizard.<ol class="ol" id="ipm_main_mipi_temp__ol_gtf_cw3_snb">
+                <li class="li">Open the IP Catalog.</li>
+                <li class="li">Choose an IP core and click <span class="ph uicontrol">Next</span>. The <span class="ph uicontrol">IP
+                        Configuration</span> wizard opens.</li>
+                <li class="li">Enter the module name in the <span class="ph uicontrol">Module Name</span> box.<div class="note note note_note"><span class="note__title">Note:</span> You
+                        cannot generate the core without a module name.</div></li>
+                <li class="li">Customize the IP core using the options shown in the wizard. For detailed
+                    information on the options, refer to the IP core's user guide or on-line
+                    help.</li>
+                <li class="li">(Optional) In the <span class="ph uicontrol">Deliverables</span> tab, specify whether to
+                    generate an IP core example design targeting an <span class="ph">Efinix®</span> development board and/or
+                    testbench. For SoCs, you can also optionally generate embedded software example
+                    code. These options are turned on by default.</li>
+                <li class="li">(Optional) In the <span class="ph uicontrol">Summary</span> tab, review your
+                    selections.</li>
+                <li class="li">Click <span class="ph uicontrol">Generate</span> to generate the IP core and other selected
+                    deliverables. </li>
+                <li class="li">In the <span class="ph uicontrol">Review configuration generation</span> dialog box, click
+                        <span class="ph uicontrol">Generate</span>. The Console in the
+                        <span class="ph uicontrol">Summary</span> tab shows the generation status.<div class="note note note_note"><span class="note__title">Note:</span> You can
+                        disable the <span class="ph uicontrol">Review configuration generation</span> dialog
+                        box by turning off the <span class="ph uicontrol">Show Confirmation Box</span> option
+                        in the wizard.</div></li>
+                <li class="li">When generation finishes, the wizard displays the <span class="ph uicontrol">Generation
+                        Success</span> dialog box. Click <span class="ph uicontrol">OK</span> to close the
+                    wizard. </li>
+            </ol></div>
+  
+            <p class="p">The wizard adds the IP to your project and displays it under <span class="ph uicontrol">IP</span> in
+            the Project pane.</p>
+
+        </section>
+        <section class="section" id="ipm_main_mipi_temp__section_pnq_5t3_snb"><h3 class="title sectiontitle">Generated Files</h3>
+            
+            <div class="p" id="ipm_main_mipi_temp__files">The IP Manager generates these files and directories:<ul class="ul" id="ipm_main_mipi_temp__ul_vhg_3yn_vkb">
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_define.vh</span>—Contains the customized
+                        parameters.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_tmpl.v</span>—Verilog HDL instantiation
+                        template.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;_tmpl.vhd</span>—VHDL instantiation
+                        template.</li>
+                    <li class="li"><span class="ph filepath">&lt;module name&gt;.v</span>—IP source code.</li>
+                    <li class="li"><span class="ph filepath">settings.json</span>—Configuration file.</li>
+                    <li class="li"><span class="ph filepath">&lt;kit name&gt;_devkit</span>—Has generated RTL, example design,
+                        and <span class="ph">Efinity®</span> project targeting
+                        a specific development board.</li>
+                </ul></div>
+        </section>
+        <section class="section" id="ipm_main_mipi_temp__section_xlj_33l_wnb">
+            <div class="note note note_note"><span class="note__title">Note:</span> Refer to the IP Manager chapter of the <span class="keyword">Efinity®</span> Software
+                User Guide for more information about the <span class="keyword">Efinity®</span> IP
+                Manager.</div>
+        </section>
+        
+        <section class="section" id="ipm_main_mipi_temp__section_pnq_5t3_sb"><h3 class="title sectiontitle">Instantiating the IP</h3>
+            
+        </section>
+        
+        <section class="section">
+            <div class="p">The IP Manager creates these template files in the
+                &lt;<em class="ph i">project</em>&gt;<span class="ph filepath">/ip/</span>&lt;<em class="ph i">module name</em>&gt; directory:<ul class="ul" id="ipm_main_mipi_temp__ul_kym_qng_xnb">
+                    <li class="li">&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span><span class="ph filepath">_tmpl.sv</span>
+                        is the Verilog HDL module.</li>
+                    <li class="li">&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span><span class="ph filepath">_tmpl.vhd</span>
+                        is the VHDL component declaration and instantiation template.</li>
+                </ul>To use the IP, copy and paste the code from the template file into your design and
+                update the signal names to instantiate the IP.</div>
+            <div class="note important note_important"><span class="note__title">Important:</span> When you generate the IP, the software automatically adds the
+                module file (&lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span>) to your project and
+                lists it in the <span class="ph uicontrol">IP</span> folder in the Project pane. Do not add the
+                    &lt;<em class="ph i">module name</em>&gt;<span class="ph filepath">.v</span> file manually (for example, by
+                adding it using the Project Editor); otherwise the <span class="ph">Efinity®</span> software will issue errors
+                during compilation. <figure class="fig fignone" id="ipm_main_mipi_temp__fig_z4q_dfh_xnb">
+                    
+                    <img class="image" id="ipm_main_mipi_temp__image_qt3_2fh_xnb" src="../art/efinity/ip-folder.png" height="1867" width="2680">
+                </figure></div>
+        </section>
+        
+    </div>
+</article><article class="topic concept nested1" aria-labelledby="ariaid-title5" id="mipi_dphy_tx_core_customizing">
+    <h2 class="title topictitle2" id="ariaid-title5">Customizing the <span class="keyword">MIPI D-PHY TX Controller</span></h2>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <section class="section" id="mipi_dphy_tx_core_customizing__section_z2f_hl4_snb">
+            
+            <p class="p">You can choose to generate the testbench when generating the core in the IP Manager
+                Configuration window. To generate testbench, the <span class="ph uicontrol">Testbench Deliverables
+                    Option</span> signals must be enabled.</p>
+            <div class="note note note_note"><span class="note__title">Note:</span> You must include all <span class="ph filepath">.v</span> files generated in the
+                    <span class="ph filepath">/Testbench</span> directory in your simulation.</div>
+            <div class="note important note_important" id="mipi_dphy_tx_core_customizing__note_vxn_gvx_51c"><span class="note__title">Important:</span> <span class="keyword"></span> tested the
+                testbench generated with the default parameter options only.</div>
+            <p class="p"><span class="keyword"></span> provides a simulation script for you to run the testbench
+                quickly using the Modelsim software. To run the Modelsim testbench script, run
+                    <code class="ph codeph">vsim -do modelsim.do</code> in a terminal application. You must have
+                Modelsim installed on your computer to use this script.</p>
+        </section>
+        <section class="section" id="mipi_dphy_tx_core_customizing__section_hnx_cl4_snb">
+            <table class="table frame-all" id="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb"><caption><span class="table--title-label">Table 1. </span><span class="title"><span class="keyword">MIPI D-PHY TX Controller</span> Core Parameter</span></caption><colgroup><col style="width:27.27272727272727%"><col style="width:27.27272727272727%"><col style="width:45.45454545454545%"></colgroup><thead class="thead">
+                        <tr class="row">
+                            <th class="entry colsep-1 rowsep-1" id="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">Name</th>
+                            <th class="entry align-center colsep-1 rowsep-1" id="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Option</th>
+                            <th class="entry colsep-1 rowsep-1" id="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">LPX</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 50</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">HS BYTECLK (MHz)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">10 – 187</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">MIPI parallel clock frequency in MHz to support data rate of 80
+                                Mbps to 1,500 Mbps.<div class="div">Default: 100</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">Data Lane</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">1, 2, 4, 8</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Number of data lanes.<div class="div">Default: 4</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">DPHY Clock Mode</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Continuous, Discontinuous</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Enables discontinuous or continuous HS clock.<div class="div">Default:
+                                    continuous</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">LP_EXIT</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 100</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">WAKEUP</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default:
+                                1000</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">HS_EXIT</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 100</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">HS_ZERO</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 105</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">HS_TRAIL</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns before adding 4UI.<div class="div">Actual
+                                    THS TRAIL = tHS_TRAIL_NS + 4UI or 8UI (whichever
+                                    bigger).</div><div class="div">Default: 60</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">CLK_ZERO</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 262</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">CLK_TRAIL</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 60</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">CLK_POST</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns before adding 52 UI
+                                    .<div class="div">Default: 60</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">CLK_PREPARE</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default: 38</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">CLK_PRE</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns .<div class="div">Default: 10</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">Bus Turnaround Timeout (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">–</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Bus turnaround timeout parameter in ns. If the D-PHY RX does not
+                                respond within this period, D-PHY TX ends the turnaround
+                                    request.<div class="div">Applicable to bidirectional mode
+                                    only.</div><div class="div">Default: 100000</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">D_TERM_EN</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI D-PHY specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Applicable to
+                                    bidirectional mode only.</div><div class="div">Default: 35</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">HS_PREPARE_ZERO</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI D-PHY specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Applicable to
+                                    bidirectional mode only.</div><div class="div">Default: 145</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">Enable Bidir Mode</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">0 or 1</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Enable bidirectional data lane. <div class="div">Applicable to bidirectional
+                                    mode only.</div><div class="div">Default: 1</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">CLOCK_FREQ_MHZ</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">40 - 100</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Core clock frequency in MHz.<div class="div">Default: 100</div></td>
+                        </tr>
+                        <tr class="row">
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__1">t<sub class="ph sub">HS_PREPARE</sub> (ns)</td>
+                            <td class="entry align-center colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__2">Values according to MIPI <span class="ph">D-PHY</span> specifications.</td>
+                            <td class="entry colsep-1 rowsep-1" headers="mipi_dphy_tx_core_customizing__table_vjf_bry_jpb__entry__3">Soft D-PHY timing parameter in ns.<div class="div">Default:
+                                    40</div></td>
+                        </tr>
+                    </tbody></table>
+        </section>
+    </div>
+</article></article><div class="fn"><a name="fntarg_1" href="#fnsrc_1"><sup>1</sup></a>  The maximum data rate of IP depends on the devices. Refer to the
+                        respective device data sheet for more accurate information.</div></article></main></div><footer role="contentinfo"><div class="footer navbar-fixed-bottom">
+    <p id="copyright">Copyright (c) 2025 | All Rights Reserved</p>
+</div></footer></body></html>

@@ -1,0 +1,119 @@
+{
+    "tabs": [
+        {
+            "name": "General",
+            "widgets": [
+                {
+                    "param_name": "HS_BYTECLK_MHZ",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "CLOCK_FREQ_MHZ",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "NUM_DATA_LANE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "DPHY_CLOCK_MODE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "ENABLE_BIDIR",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "tLPX_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tLP_EXIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_ZERO_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_TRAIL_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_POST_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_PREPARE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tCLK_PRE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "BTA_TIMEOUT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tD_TERM_EN_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tWAKEUP_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_EXIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_ZERO_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_PREPARE_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_TRAIL_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "tHS_PREPARE_ZERO_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                }
+            ]
+        }
+    ]
+}

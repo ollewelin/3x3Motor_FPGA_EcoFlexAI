@@ -1,0 +1,321 @@
+////////////////////////////////////////////////////////////////////////////////
+// test_b.c - MDIO PHY Diagnostic Test (v5)
+// 
+// Strategy: cable detect -> loopback -> 60s silent AN -> forced 10M
+// Also reads RGMII delay config, interrupt status, PHYSR, SSR
+////////////////////////////////////////////////////////////////////////////////
+#include <stdint.h>
+#include "bsp.h"
+#include "gpio.h"
+#include "uart_mini_driver.h"
+#include "mdio_driver.h"
+
+// LED helpers
+void led_on(void)  { gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x1); }
+void led_off(void) { gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0); }
+void led_pulse(int ms) {
+    led_on();
+    bsp_uDelay(ms * 1000);
+    led_off();
+    bsp_uDelay(ms * 1000);
+}
+
+// Wait for TX FIFO to fully drain (all bytes shifted out)
+void uart_drain(void) {
+    while (!(uart_mini_get_status() & UART_STATUS_TX_EMPTY)) {
+        // spin
+    }
+    bsp_uDelay(2000);  // 2ms margin for last byte to finish
+}
+
+// Print helpers (always drain after newline for safety)
+void print(const char *s)       { uart_mini_tx_string(s); }
+void println(const char *s)     { print(s); uart_mini_newline(); uart_drain(); }
+void print_hex16(uint16_t val)  { uart_mini_tx_string("0x"); uart_mini_print_hex16(val); }
+
+// Safe BMSR read: double-read (latch-on-read), reject 0xFFFF (bus error)
+uint16_t bmsr_read(uint8_t phy) {
+    uint16_t v;
+    mdio_read(phy, PHY_REG_BMSR);  // first read latches
+    v = mdio_read(phy, PHY_REG_BMSR);
+    if (v == 0xFFFF) return 0;  // reject bus garbage
+    return v;
+}
+
+// Read RTL8211F PHYSR from page 0xa43, reg 0x1A
+uint16_t rtl_physr(uint8_t phy) {
+    mdio_write(phy, 0x1F, 0x0a43);
+    bsp_uDelay(1000);
+    uint16_t v = mdio_read(phy, 0x1A);
+    mdio_write(phy, 0x1F, 0x0000);
+    return v;
+}
+
+// Read RTL8211F RGMII delay config from page 0xd08, reg 0x11
+uint16_t rtl_rgmii_delay(uint8_t phy) {
+    mdio_write(phy, 0x1F, 0x0d08);
+    bsp_uDelay(1000);
+    uint16_t v = mdio_read(phy, 0x11);
+    mdio_write(phy, 0x1F, 0x0000);
+    return v;
+}
+
+void main(void)
+{
+    bsp_init();
+    gpio_setOutputEnable(SYSTEM_GPIO_0_IO_CTRL, 0x1);
+    gpio_setOutput(SYSTEM_GPIO_0_IO_CTRL, 0x0);
+
+    // Phase 1: LED blink (3x fast)
+    for (int i = 0; i < 3; i++) {
+        led_pulse(200);
+    }
+
+    println("==PHY Test v5==");
+
+    // Phase 2: HW reset PHY
+    print("HW RST...");
+    uart_drain();
+    mdio_phy_reset_assert();
+    bsp_uDelay(50000);         // 50ms in reset
+    mdio_phy_reset_release();
+    bsp_uDelay(300000);        // 300ms for PHY boot + PLL lock
+    println(" OK");
+
+    // Phase 3: Quick ID check
+    uint16_t id1 = mdio_read(0x01, PHY_REG_PHYID1);
+    uint16_t id2 = mdio_read(0x01, PHY_REG_PHYID2);
+    print("ID="); print_hex16(id1); print("/"); print_hex16(id2); println("");
+    
+    uint8_t phy = 0x01;
+    uint16_t bmcr, bmsr;
+    
+    // =========================================================================
+    // Phase 4: Dump ALL default registers (no writes yet!)
+    // =========================================================================
+    println("=DEFAULTS=");
+    bmcr = mdio_read(phy, PHY_REG_BMCR);
+    print("BMCR="); print_hex16(bmcr); println("");
+    bmsr = bmsr_read(phy);
+    print("BMSR="); print_hex16(bmsr); println("");
+    uint16_t anar = mdio_read(phy, PHY_REG_ANAR);
+    print("ANAR="); print_hex16(anar); println("");
+    uint16_t gbcr = mdio_read(phy, PHY_REG_GBCR);
+    print("GBCR="); print_hex16(gbcr); println("");
+    uint16_t phycr1 = mdio_read(phy, 0x18);
+    print("CR1="); print_hex16(phycr1); println("");
+    uint16_t phycr2 = mdio_read(phy, 0x19);
+    print("CR2="); print_hex16(phycr2); println("");
+    // Read RGMII delay config (page 0xd08 reg 0x11)
+    uint16_t rgmii_dly = rtl_rgmii_delay(phy);
+    print("DLY="); print_hex16(rgmii_dly); println("");
+    // PHYSR: bit13=plug, bit2=link-realtime
+    uint16_t physr = rtl_physr(phy);
+    print("PHSR="); print_hex16(physr); println("");
+    // Clear INSR by reading (read-clear register)
+    uint16_t insr = mdio_read(phy, 0x13);
+    print("INSR="); print_hex16(insr); println("");
+
+    // =========================================================================
+    // Phase 4b: Disable Green Ethernet (datasheet 7.10.2)
+    // Default is ENABLED — may impair FLP detection by reducing AFE power
+    // during link-down, which is exactly when AN needs full sensitivity.
+    // =========================================================================
+    println("=DIS GREEN ETH=");
+    mdio_write(phy, 0x1B, 0x8011);   // Reg27 = 0x8011
+    mdio_write(phy, 0x1C, 0x573F);   // Reg28 = 0x573F
+    // Verify
+    uint16_t r27 = mdio_read(phy, 0x1B);
+    uint16_t r28 = mdio_read(phy, 0x1C);
+    print("R27="); print_hex16(r27);
+    print(" R28="); print_hex16(r28); println("");
+
+    // =========================================================================
+    // Phase 5: Cable / PHY supplementary status
+    // =========================================================================
+    println("=CABLE STATUS=");
+    physr = rtl_physr(phy);
+    print("PHSR="); print_hex16(physr);
+    print((physr & (1 << 13)) ? " PLUG" : " NoPLUG");
+    print((physr & (1 << 2))  ? " RtLINK" : " RtNO");
+    println("");
+
+    // SSR: page 0xa43, reg 0x12
+    mdio_write(phy, 0x1F, 0x0a43);
+    bsp_uDelay(1000);
+    uint16_t ssr = mdio_read(phy, 0x12);
+    mdio_write(phy, 0x1F, 0x0000);
+    print("SSR="); print_hex16(ssr); println("");
+
+    int linked = 0;
+    int up_count = 0;
+    uint16_t anlp, aner, gbsr;
+
+    // =========================================================================
+    // Phase 6: Internal loopback test at ALL three speeds
+    // PHY loops TX->RX internally. If BMSR link UP -> digital path OK.
+    //
+    // BMCR bit encoding:
+    //   bit14 = loopback enable
+    //   bit13 = speed LSB (1=100M)
+    //   bit8  = full duplex
+    //   bit6  = speed MSB (1=1000M)
+    //
+    //   10M FD loopback  : 0x4100  (bit14 + bit8)
+    //   100M FD loopback : 0x6100  (bit14 + bit13 + bit8)
+    //   1000M FD loopback: 0x4140  (bit14 + bit8 + bit6)
+    // =========================================================================
+    println("=LOOPBACK TEST=");
+
+    // --- 10M loopback ---
+    mdio_write(phy, PHY_REG_BMCR, 0x4100);
+    bsp_uDelay(500000);  // 500ms settle
+    bmsr = bmsr_read(phy);
+    print("10M  LB: BMSR="); print_hex16(bmsr);
+    println((bmsr & BMSR_LINK_STATUS) ? " UP" : " DN");
+
+    // SW reset between tests to cleanly change speed
+    mdio_write(phy, PHY_REG_BMCR, 0x8000);
+    bsp_uDelay(200000);
+
+    // --- 100M loopback ---
+    mdio_write(phy, PHY_REG_BMCR, 0x6100);
+    bsp_uDelay(500000);
+    bmsr = bmsr_read(phy);
+    print("100M LB: BMSR="); print_hex16(bmsr);
+    println((bmsr & BMSR_LINK_STATUS) ? " UP" : " DN");
+
+    mdio_write(phy, PHY_REG_BMCR, 0x8000);
+    bsp_uDelay(200000);
+
+    // --- 1000M loopback ---
+    mdio_write(phy, PHY_REG_BMCR, 0x4140);
+    bsp_uDelay(500000);
+    bmsr = bmsr_read(phy);
+    print("1G   LB: BMSR="); print_hex16(bmsr);
+    println((bmsr & BMSR_LINK_STATUS) ? " UP" : " DN");
+
+    // Exit loopback via SW reset
+    mdio_write(phy, PHY_REG_BMCR, 0x8000);
+    bsp_uDelay(200000);
+    // Re-apply Green Ethernet disable after SW reset
+    mdio_write(phy, 0x1B, 0x8011);
+    mdio_write(phy, 0x1C, 0x573F);
+
+    // =========================================================================
+    // Phase 7: Auto-negotiation (15s timeout — should complete in ~3s now)
+    // =========================================================================
+    println("=AUTO-NEG=");
+    mdio_write(phy, PHY_REG_GBCR, 0x0200);   // advertise 1000M FD
+    mdio_write(phy, PHY_REG_ANAR, 0x01E1);   // advertise 100/10 all
+    mdio_write(phy, PHY_REG_BMCR, 0x1200);   // AN enable + restart
+    print("Wait");
+    uart_drain();
+    for (int i = 0; i < 15; i++) {
+        bsp_uDelay(1000000);  // 1 second
+        bmsr = bmsr_read(phy);
+        if ((bmsr & BMSR_LINK_STATUS) && (bmsr & BMSR_AN_COMPLETE)) {
+            break;
+        }
+        print("."); uart_drain();
+    }
+    println("");
+
+    bmsr = bmsr_read(phy);
+    anlp = mdio_read(phy, PHY_REG_ANLPAR);
+    aner = mdio_read(phy, 0x06);
+    insr = mdio_read(phy, 0x13);
+    gbsr = mdio_read(phy, 0x0A);
+    physr = rtl_physr(phy);
+    print("B="); print_hex16(bmsr);
+    print((bmsr & BMSR_LINK_STATUS) ? " UP" : " DN");
+    print((bmsr & BMSR_AN_COMPLETE) ? " AN" : " noAN");
+    println("");
+    print("LP="); print_hex16(anlp);
+    print(" E="); print_hex16(aner); println("");
+    print("I="); print_hex16(insr);
+    print(" GS="); print_hex16(gbsr); println("");
+    print("PHSR="); print_hex16(physr); println("");
+
+    if ((bmsr & BMSR_LINK_STATUS) && (bmsr & BMSR_AN_COMPLETE)) {
+        linked = 1;
+    }
+
+    // =========================================================================
+    // Phase 8: Force 10M FD with MDI lock (fallback)
+    // =========================================================================
+    if (!linked) {
+        println("=10M FD=");
+        uint16_t cr1 = mdio_read(phy, 0x18);
+        cr1 |= (1 << 9);   // bit9: Manual MDI config enable
+        cr1 |= (1 << 8);   // bit8: Force MDI (not MDIX)
+        mdio_write(phy, 0x18, cr1);
+        print("CR1="); print_hex16(cr1); println("");
+        mdio_write(phy, PHY_REG_BMCR, 0x0100);
+        mdio_write(phy, PHY_REG_BMCR, 0x8100);  // SW reset to apply MDI
+        bsp_uDelay(100000);
+        mdio_write(phy, PHY_REG_BMCR, 0x0100);  // Re-assert after reset
+        bsp_uDelay(500000);
+
+        up_count = 0;
+        for (int i = 0; i < 100; i++) {
+            bsp_uDelay(100000);
+            bmsr = bmsr_read(phy);
+            if (bmsr & BMSR_LINK_STATUS) {
+                up_count++;
+                if (up_count >= 3) { linked = 1; break; }
+            } else {
+                up_count = 0;
+            }
+            if ((i % 10) == 0) { print("."); uart_drain(); }
+        }
+        println("");
+        print("BMSR="); print_hex16(bmsr);
+        println((bmsr & BMSR_LINK_STATUS) ? " UP!" : " DN");
+    }
+    
+    if (linked) {
+        physr = rtl_physr(phy);
+        print("PHSR="); print_hex16(physr);
+        uint16_t spd = (physr >> 4) & 0x3;
+        if (spd == 0) print(" 10M");
+        else if (spd == 1) print(" 100M");
+        else if (spd == 2) print(" 1000M");
+        print((physr & 0x08) ? " FD" : " HD");
+        println("");
+        println("** LINK OK **");
+    } else {
+        println("No link.");
+    }
+
+    // Monitor -- BMSR only
+    println("--MON--");
+    
+    uint16_t last_bmsr = 0;
+    int loop = 0;
+    
+    while (1) {
+        bmsr = bmsr_read(phy);
+        
+        if (bmsr != last_bmsr || (loop % 30 == 0)) {
+            print("[");
+            uart_mini_print_hex16(loop);
+            print("]=");
+            print_hex16(bmsr);
+            print((bmsr & BMSR_LINK_STATUS) ? " UP" : " DN");
+            println("");
+            last_bmsr = bmsr;
+        }
+        
+        if (bmsr & BMSR_LINK_STATUS) {
+            led_on();
+        } else {
+            led_pulse(100);
+        }
+        
+        bsp_uDelay(1000000);
+        loop++;
+    }
+}
+
+void trap(void) { while(1); }

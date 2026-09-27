@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build (blink_led)",
+      "type": "shell",
+      "command": "make",
+      "options": { "cwd": "${workspaceFolder}/software/standalone/blink_led" },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "Clean (blink_led)",
+      "type": "shell",
+      "command": "make clean",
+      "options": { "cwd": "${workspaceFolder}/software/standalone/blink_led" }
+    }
+  ]
+}

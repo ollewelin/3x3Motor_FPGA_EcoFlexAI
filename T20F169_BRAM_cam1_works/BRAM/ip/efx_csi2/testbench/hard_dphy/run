@@ -1,0 +1,9 @@
+rf *.log *.key transcipt *.history 
+vlib work
+vlog -cover bcsfet -f rtl_list.f -l test.log  -timescale "1ns/1ps" -sv +acc=rnp +define+mti
+vlog -cover bcsfet -f tb_list.f -l test.log -timescale "1ns/1ps" -sv +acc=rnp  +define+mti
+
+xrun -clean -sv -64bit +notimingchecks -ALLOWREDEFINITION +licq -64bit -log test.log /projects/MISC/ip.m31t/MIPI_DPHY/CLN16FFC/RX_latest/verilog_rtl/M31DPHYRX612TL016D_00117701_rtl.vp.nc \
+             /projects/MISC/ip.m31t/MIPI_DPHY/CLN16FFC/RX_latest/verilog_rtl/M31DPHYRX612TL016D_00117701_A.vp.nc \
+             /projects/MISC/ip.m31t/MIPI_DPHY/CLN16FFC/TX_latest/verilog_rtl/M31DPHYTX512TL016D_00117701_rtl.vp.nc \
+			 /projects/MISC/ip.m31t/MIPI_DPHY/CLN16FFC/TX_latest/verilog_rtl/M31DPHYTX512TL016D_00117701_A.vp.nc TI180_MIPI_csi_tb.sv -f rtl_list.f -f tb_list.f -timescale '1ns/1ps' -access +RWC +rwc +ncstatus +libext+.v+.V+.z+.Z+.gz +delay_mode_path +ncmaxdelays +ncgateloopwarn +ncnontcglitch -sysv_ext ".sv .nc" 

@@ -1,0 +1,7 @@
+component test_cnt
+  port (
+    clk : in std_logic;
+    pll_clk : in std_logic;
+    cnt : out STD_LOGIC_VECTOR(26 downto 0)
+  );
+end component;

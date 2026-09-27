@@ -1,0 +1,2419 @@
+Sat August 23 25 12:02:24 - Starting Efinity IP Manager RPC Service...
+
+Sat August 23 25 12:02:28 - IP Manager RPC Server Connected.
+
+DEBUG    : Initialising Efx::ConcurrencyControl with 4 threads [Debug]
+
+INFO     : --max_threads set to 4 
+
+Sat August 23 25 12:04:31 - Project loaded VM : 542.344 MB RSS : 226.66 MB
+
+Sat August 23 25 12:04:32 - Running automated flow starting from synthesis...
+
+
+
+Sat August 23 25 12:04:32 - Floorplan closed VM : 542.344 MB RSS : 226.66 MB
+
+
+
+-------------------------------------------------------------------------
+
+Synthesis
+
+-------------------------------------------------------------------------
+
+Sat August 23 25 12:04:32 - Synthesis flow working directory is /home/olle/efinity_p2/BRAM/work_syn
+
+
+INFO     : --max_threads set to 4 
+
+INFO     : Deleting any pre-existing troute trace files
+
+INFO     : Deleting any pre-existing troute trace files
+
+INFO     : Deleting any pre-existing troute trace files
+
+Sat August 23 25 12:04:33 - /home/olle/efinix/efinity/2025.1/bin/efx_map --project "BRAM" --root "top_level" --write-efx-verilog "/home/olle/efinity_p2/BRAM/outflow/BRAM.map.v" --write-premap-module "/home/olle/efinity_p2/BRAM/outflow/BRAM.elab.vdb" --binary-db "/home/olle/efinity_p2/BRAM/outflow/BRAM.vdb" --device "T20F169" --family "Trion" --veri_option "verilog_mode=verilog_2k,vhdl_mode=vhdl_2008" --work-dir "/home/olle/efinity_p2/BRAM/work_syn" --output-dir "/home/olle/efinity_p2/BRAM/outflow" --project-xml "/home/olle/efinity_p2/BRAM/BRAM.xml" --I "/home/olle/efinity_p2/BRAM" --I "/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes" --I "/home/olle/efinity_p2/BRAM/ip/micro_risc_v1"
+
+Sat August 23 25 12:04:33 - Running /home/olle/efinix/efinity/2025.1/bin/efx_map...
+
+INFO     : Efinix FPGA Synthesis.
+
+
+INFO     : Version: 2025.1.110.2.15
+
+
+INFO     : Compiled: Jun 21 2025.
+
+
+INFO     : 
+
+
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+
+INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+
+
+INFO     : Reading project database "/home/olle/efinity_p2/BRAM/BRAM.xml"
+
+
+INFO     : ***** Beginning Analysis ... *****
+
+
+INFO     : default VHDL library search path is now "/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+
+
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/top_level.vhd' [VHDL-1481]
+
+
+INFO     : Restoring VHDL unit 'ieee.std_logic_1164' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/std_logic_1164.vdb' [VHDL-1493]
+
+
+INFO     : Restoring VHDL unit 'std.standard' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/standard.vdb' [VHDL-1493]
+
+
+INFO     : Restoring VHDL unit 'std.textio' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' [VHDL-1493]
+
+
+INFO     : Restoring VHDL unit 'ieee.numeric_std' from file '/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008/ieee/numeric_std.vdb' [VHDL-1493]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(6): analyzing entity 'top_level' [VHDL-1012]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(48): analyzing architecture 'behavior' [VHDL-1010]
+
+
+INFO     : Analyzing VHDL file '/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd' [VHDL-1481]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(5): analyzing entity 'rmii_udp_tx_top' [VHDL-1012]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(14): analyzing architecture 'rtl' [VHDL-1010]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-1482]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(758): analyzing included file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/bram_ini.vh' [VERI-1328]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(758): back to file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-2320]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(985): analyzing included file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/bram_decompose.vh' [VERI-1328]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v(985): back to file '/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes/BRAM_8192_bytes.v' [VERI-2320]
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/ip/micro_risc_v1/micro_risc_v1.v' [VERI-1482]
+
+
+INFO     : Analysis took 0.166647 seconds.
+
+
+INFO     : 	Analysis took 0.16 seconds (approximately) in total CPU time.
+
+
+INFO     : Analysis virtual memory usage: begin = 124.56 MB, end = 132.752 MB, delta = 8.192 MB
+
+
+INFO     : Analysis resident set memory usage: begin = 72.064 MB, end = 81.024 MB, delta = 8.96 MB
+
+
+INFO     : 	Analysis peak resident set memory usage = 229.732 MB
+
+
+INFO     : ***** Ending Analysis ... *****
+
+
+INFO     : ***** Beginning Elaboration ... *****
+
+
+INFO     : /home/olle/efinity_p2/BRAM/top_level.vhd(6): processing 'top_level(behavior)' [VHDL-1067]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(90): using initial value '0' for 'system_uart_0_io_txd' since it is never assigned [VHDL-1303]
+
+
+INFO     : /home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd(5): processing 'rmii_udp_tx_top(rtl)' [VHDL-1067]
+
+
+INFO     : Elaboration took 0.0623541 seconds.
+
+
+INFO     : 	Elaboration took 0.06 seconds (approximately) in total CPU time.
+
+
+INFO     : Elaboration virtual memory usage: begin = 132.752 MB, end = 138.896 MB, delta = 6.144 MB
+
+
+INFO     : Elaboration resident set memory usage: begin = 81.024 MB, end = 88.96 MB, delta = 7.936 MB
+
+
+INFO     : 	Elaboration peak resident set memory usage = 229.732 MB
+
+
+INFO     : ***** Ending Elaboration ... *****
+
+
+INFO     : ... Setting Synthesis Option: mode=speed
+
+
+INFO     : ***** Beginning Reading Mapping Library ... *****
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+
+
+INFO     : Reading Mapping Library took 0.0188777 seconds.
+
+
+INFO     : 	Reading Mapping Library took 0.02 seconds (approximately) in total CPU time.
+
+
+INFO     : Reading Mapping Library virtual memory usage: begin = 142.992 MB, end = 142.992 MB, delta = 0 MB
+
+
+INFO     : Reading Mapping Library resident set memory usage: begin = 93.056 MB, end = 93.056 MB, delta = 0 MB
+
+
+INFO     : 	Reading Mapping Library peak resident set memory usage = 229.732 MB
+
+
+INFO     : ***** Ending Reading Mapping Library ... *****
+
+
+INFO     : ... Pre-synthesis checks begin
+
+
+WARNING  : The primary output port 'mdc' wire 'mdc' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'mdio_o' wire 'mdio_o' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'mdio_oe' wire 'mdio_oe' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'CAM0_EN' wire 'CAM0_EN' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'CAM1_EN' wire 'CAM1_EN' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'RJ45_led' wire 'RJ45_led' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'jtag_dummy_TDO' wire 'jtag_dummy_TDO' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'led4_OUT' wire 'led4_OUT' is not driven. [EFX-0256]
+
+
+WARNING  : The primary output port 'led4_OE' wire 'led4_OE' is not driven. [EFX-0256]
+
+
+WARNING  : Removing redundant signal : csum[15]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[14]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[13]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[12]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[11]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[10]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[9]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[8]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[7]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[6]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[5]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[4]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[3]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[2]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[1]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : csum[0]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : cf[31]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : cf[30]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : cf[29]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+
+
+WARNING  : Removing redundant signal : cf[28]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+
+
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+
+
+WARNING  : Re-wiring to GND non-driven net 'mdc'. (/home/olle/efinity_p2/BRAM/top_level.vhd:20) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'mdio_o'. (/home/olle/efinity_p2/BRAM/top_level.vhd:22) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'mdio_oe'. (/home/olle/efinity_p2/BRAM/top_level.vhd:23) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'CAM0_EN'. (/home/olle/efinity_p2/BRAM/top_level.vhd:24) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'CAM1_EN'. (/home/olle/efinity_p2/BRAM/top_level.vhd:25) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'RJ45_led'. (/home/olle/efinity_p2/BRAM/top_level.vhd:26) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'jtag_dummy_TDO'. (/home/olle/efinity_p2/BRAM/top_level.vhd:37) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'led4_OUT'. (/home/olle/efinity_p2/BRAM/top_level.vhd:39) [EFX-0201]
+
+
+WARNING  : Re-wiring to GND non-driven net 'led4_OE'. (/home/olle/efinity_p2/BRAM/top_level.vhd:40) [EFX-0201]
+
+
+INFO     : ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... NameSpace init begin
+
+
+INFO     : ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Mapping design "top_level"
+
+
+INFO     : ... Hierarchical pre-synthesis "rmii_udp_tx_top" begin
+
+
+INFO     : ... Hierarchical pre-synthesis "rmii_udp_tx_top" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Hierarchical pre-synthesis "top_level" begin
+
+
+INFO     : ... Clock Enable Synthesis Performed on 230 flops.
+
+
+INFO     : ... Hierarchical pre-synthesis "top_level" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Flat optimizations begin
+
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Flat synthesis begin
+
+
+INFO     : ... Flat synthesis end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Flat optimizations begin
+
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Check and break combinational loops begin
+
+
+INFO     : ... Check and break combinational loops end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Sequential Optimization begin
+
+
+INFO     : ... Clock Network 'clk' with 121 loads will be considered for sequential optimization.
+
+
+INFO     : ... Clock Network 'pll_clk' with 27 loads will be considered for sequential optimization.
+
+
+INFO     : ... Sequential Optimization deduced 128 equivalent points.
+
+
+INFO     : ... Sequential Optimization end (Real time : 4s CPU user time : 4s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Setup for logic synthesis begin
+
+
+INFO     : ... Setup for logic synthesis end (Real time : 0s CPU user time : 4s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... LUT mapping begin
+
+
+INFO     : ... LS, strategy: 3, nd: 351, ed: 1197, lv: 6, pw: 674.97
+
+
+INFO     : ... LUT mapping end (Real time : 3s CPU user time : 8s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Post-synthesis Verific netlist creation begin
+
+
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 8s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ... Postmap Retiming Optimization begin
+
+
+INFO     : ... Clock Network 'clk~clk' with 114 loads will be considered for retiming optimization.
+
+
+INFO     : ... Clock Network 'pll_clk~pll_clk' with 27 loads will be considered for retiming optimization.
+
+
+INFO     : ... Performed 0 retime moves.
+
+
+INFO     : ... Postmap Retiming Optimization end (Real time : 6s CPU user time : 14s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(11): Input/inout port phy_intr_n is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(16): Input/inout port rmii_crs_dv is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(17): Input/inout port rmii_rx_er is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(18): Input/inout port rmii_rxd[1] is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(21): Input/inout port mdio_i is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(27): Input/inout port jtag_dummy_TDI is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(28): Input/inout port jtag_dummy_TCK is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(29): Input/inout port jtag_dummy_TMS is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(30): Input/inout port jtag_dummy_SEL is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(31): Input/inout port jtag_dummy_DRCK is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(32): Input/inout port jtag_dummy_RESET is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(33): Input/inout port jtag_dummy_RUNTEST is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(34): Input/inout port jtag_dummy_CAPTURE is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(35): Input/inout port jtag_dummy_SHIFT is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(36): Input/inout port jtag_dummy_UPDATE is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(38): Input/inout port led4 is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : Found 17 warnings in the post-synthesis netlist.
+
+
+INFO     : VDB Netlist Checker took 0.00147848 seconds.
+
+
+INFO     : 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
+
+
+INFO     : VDB Netlist Checker virtual memory usage: begin = 243.688 MB, end = 243.688 MB, delta = 0 MB
+
+
+INFO     : VDB Netlist Checker resident set memory usage: begin = 151.424 MB, end = 151.424 MB, delta = 0 MB
+
+
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 229.732 MB
+
+
+INFO     : ***** Ending VDB Netlist Checker ... *****
+
+
+INFO     : Resource Summary 
+
+
+INFO     : =============================== 
+
+
+INFO     : EFX_ADD         : 	53
+
+
+INFO     : EFX_LUT4        : 	348
+
+
+INFO     : EFX_FF          : 	140
+
+
+INFO     : EFX_GBUFCE      : 	2
+
+
+INFO     : =============================== 
+
+
+INFO     : ... Post-Map Verilog Writer begin
+
+
+INFO     : Writing netlist 'top_level' to Verilog file '/home/olle/efinity_p2/BRAM/outflow/BRAM.map.v' [VDB-1030]
+
+
+INFO     : ... Post-Map Verilog Writer end (Real time : 0s CPU user time : 14s CPU sys time : 0s MEM : 229732KB)
+
+
+INFO     : The entire flow of EFX_MAP took 14.3019 seconds.
+
+
+INFO     : 	The entire flow of EFX_MAP took 14.61 seconds (approximately) in total CPU time.
+
+
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 88.4 MB, end = 243.688 MB, delta = 155.288 MB
+
+
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 27.392 MB, end = 151.552 MB, delta = 124.16 MB
+
+
+INFO     : 	The entire flow of EFX_MAP peak resident set memory usage = 229.732 MB
+
+
+Sat August 23 25 12:04:47 - /home/olle/efinix/efinity/2025.1/bin/efx_map finished. Exit code = 0 Exit status : Normal
+
+Running synthesis flow done.
+
+Sat August 23 25 12:04:47 - Start Debugger Flow
+
+
+
+-------------------------------------------------------------------------
+
+Debugger
+
+-------------------------------------------------------------------------
+
+Sat August 23 25 12:04:47 - Debugger flow working directory is /home/olle/efinity_p2/BRAM/work_syn
+
+
+INFO     : --max_threads set to 4 
+
+--------------------------------------------------------------
+
+Start Debugger Step Generate Debugger Cores.
+
+Sat August 23 25 12:04:48 - /home/olle/efinix/efinity/2025.1/bin/python3  -m "efx_dbg.DbgWizard" --device  "T20F169" --family  "Trion" --in_profile_name  "/home/olle/efinity_p2/BRAM/debug_profile.wizard.json" --out_dbg_vdb  "debug_top.post.vdb" --out_profile_name  "/home/olle/efinity_p2/BRAM/debug_profile.wizard.json" --out_dir  "work_dbg"
+
+Sat August 23 25 12:04:48 - Running /home/olle/efinix/efinity/2025.1/bin/python3...
+
+Sat August 23 25 12:04:48 - /home/olle/efinix/efinity/2025.1/bin/python3 finished. Exit code = 0 Exit status : Normal
+
+Debugger Step Generate Debugger Cores. Done
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+Start Debugger Step Compile Debugger Cores.
+
+Sat August 23 25 12:04:48 - /home/olle/efinix/efinity/2025.1/bin/efx_map  --allow-const-ram-index "0" --blackbox-error "1" --blast_const_operand_adders "1" --bram_output_regs_packing "1" --bram-push-tco-outreg "0" --create-onehot-fsms "0" --fanout-limit "0" --hdl-compile-unit "1" --hdl-loop-limit "20000" --infer-clk-enable "3" --infer-sync-set-reset "1" --enable-mark-debug "1" --max_ram "-1" --max_mult "-1" --max-bit-blast-mem-size "10240" --min-sr-fanout "0" --min-ce-fanout "0" --mode "speed" --mult-auto-pipeline "0" --mult-decomp-retime "0" --operator-sharing "0" --optimize-adder-tree "0" --optimize-zero-init-rom "1" --peri-syn-instantiation "0" --peri-syn-inference "0" --ram-decomp-mode "0" --retiming "1" --seq_opt "1" --seq-opt-sync-only "0" --use-logic-for-small-mem "64" --use-logic-for-small-rom "64" --max_threads "-1" --mult_input_regs_packing "1" --mult_output_regs_packing "1" --I "/home/olle/efinity_p2/BRAM" --I "/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes" --I "/home/olle/efinity_p2/BRAM/ip/micro_risc_v1" --family "Trion" --device "T20F169" --root "edb_top" --v "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v" --write-postmap-module "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.post.vdb" --gen-mark-debug-json "0" --work-dir "/home/olle/efinity_p2/BRAM/work_dbg" --output-dir "/home/olle/efinity_p2/BRAM/outflow"
+
+Sat August 23 25 12:04:48 - Running /home/olle/efinix/efinity/2025.1/bin/efx_map...
+
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2025.1.110.2.15
+INFO     : Compiled: Jun 21 2025.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+INFO     : ***** Beginning Analysis ... *****
+INFO     : default VHDL library search path is now "/home/olle/efinix/efinity/2025.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file '/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v' [VERI-1482]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4456): undeclared symbol 'la_capture_mask', assumed default net type 'wire' [VERI-2561]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4826): undeclared symbol 'next_segment_pointer_eq', assumed default net type 'wire' [VERI-2561]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4827): undeclared symbol 'next_segment_msb_xor', assumed default net type 'wire' [VERI-2561]
+
+INFO     : Analysis took 0.0719491 seconds.
+INFO     : 	Analysis took 0.07 seconds (approximately) in total CPU time.
+INFO     : Analysis virtual memory usage: begin = 124.564 MB, end = 127.636 MB, delta = 3.072 MB
+INFO     : Analysis resident set memory usage: begin = 71.168 MB, end = 74.752 MB, delta = 3.584 MB
+INFO     : 	Analysis peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+WARNING  : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(170): port 'probe17' remains unconnected for this instance [VERI-1927]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(10): compiling module 'edb_top' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(556): compiling module 'edb_la_top_renamed_due_excessive_length_1' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(245): compiling module 'edb_adbg_crc32' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b01,PIPE=1)' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b011010,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b0100000,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b010,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b01000,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b011,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b0100,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b010000,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b0110,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5557): compiling module 'compare_unit(WIDTH=11'b011000,PIPE=1)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5762): compiling module 'trigger_unit(WIDTH=32'b010001,PIPE=1)' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(5887): compiling module 'trigger_skipper' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4903): compiling module 'la_biu(CAPTURE_WIDTH=32'b010100010)' [VERI-1018]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4645): compiling module 'fifo_with_read(DATA_WIDTH=32'b010100011)' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(4595): compiling module 'fifo_address_trancode_unit' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(466): compiling module 'edb_simple_dual_port_ram(DATA_WIDTH=32'b010100011,ADDR_WIDTH=10,RAM_INIT_FILE="")' [VERI-1018]
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(481): extracting RAM for identifier 'ram' [VERI-2571]
+
+INFO     : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(323): compiling module 'debug_hub' [VERI-1018]
+WARNING  : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(132): input port 'probe17[0]' remains unconnected for this instance [VDB-1053]
+INFO     : Elaboration took 0.672167 seconds.
+INFO     : 	Elaboration took 0.66 seconds (approximately) in total CPU time.
+INFO     : Elaboration virtual memory usage: begin = 127.636 MB, end = 164.5 MB, delta = 36.864 MB
+INFO     : Elaboration resident set memory usage: begin = 74.752 MB, end = 112.896 MB, delta = 38.144 MB
+INFO     : 	Elaboration peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending Elaboration ... *****
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+INFO     : Reading Mapping Library took 0.0180686 seconds.
+INFO     : 	Reading Mapping Library took 0.02 seconds (approximately) in total CPU time.
+INFO     : Reading Mapping Library virtual memory usage: begin = 164.5 MB, end = 164.5 MB, delta = 0 MB
+INFO     : Reading Mapping Library resident set memory usage: begin = 113.408 MB, end = 113.408 MB, delta = 0 MB
+INFO     : 	Reading Mapping Library peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+WARNING  : Removing redundant signal : compared_in[0]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:5563) [EFX-0200]
+WARNING  : Removing redundant signal : mask_in[0]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:5564) [EFX-0200]
+
+WARNING  : Removing redundant signal : trigger_in. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:5774) [EFX-0200]
+INFO     : ... Memory 'ram' is not initialized, assuming empty initial contents. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:481) [EFX-0677]
+WARNING  : Removing redundant signal : din[162]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:4658) [EFX-0200]
+WARNING  : Removing redundant signal : shift_i. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:4923) [EFX-0200]
+WARNING  : Removing redundant signal : trig_out. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:4940) [EFX-0200]
+WARNING  : Removing redundant signal : trig_out_ack. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:4941) [EFX-0200]
+
+WARNING  : Removing redundant signal : bscan_DRCK. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1089) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_RESET. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1090) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_RUNTEST. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1091) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_SEL. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1092) [EFX-0200]
+WARNING  : Removing redundant signal : bscan_TMS. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1096) [EFX-0200]
+WARNING  : Removing redundant signal : trig_in_ack. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:1108) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[16]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[15]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[14]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[13]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[12]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[11]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : Removing redundant signal : mux_capture_cmp[10]. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:3522) [EFX-0200]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+INFO     : Module Instance 'la0' input pin 'trig_in' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'la0' input pin 'trig_out_ack' is tied to constant (=0). [EFX-0266]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe17[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe18[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe19[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe20[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe21[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe22[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe23[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe24[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe25[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'la0.probe26[0]'. (/home/olle/efinity_p2/BRAM/work_dbg/debug_top.v:132) [EFX-0201]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0201]
+INFO     : ... Pre-synthesis checks end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Mapping design "edb_top"
+INFO     : ... Hierarchical pre-synthesis "edb_adbg_crc32" begin
+INFO     : ... Hierarchical pre-synthesis "edb_adbg_crc32" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011010,PIPE=1)" begin
+
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011010,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100000,PIPE=1)" begin
+
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100000,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0100,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010000,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b010000,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0110,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b0110,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011000,PIPE=1)" begin
+
+INFO     : ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b011000,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b010001,PIPE=1)" begin
+INFO     : ... Hierarchical pre-synthesis "trigger_unit(WIDTH=32'b010001,PIPE=1)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "trigger_skipper" begin
+
+INFO     : ... Hierarchical pre-synthesis "trigger_skipper" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "fifo_address_trancode_unit" begin
+
+INFO     : ... Hierarchical pre-synthesis "fifo_address_trancode_unit" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "edb_simple_dual_port_ram(DATA_WIDTH=32'b010100011,ADDR_WIDTH=10,RAM_INIT_FILE="")" begin
+
+INFO     : ... Hierarchical pre-synthesis "edb_simple_dual_port_ram(DATA_WIDTH=32'b010100011,ADDR_WIDTH=10,RAM_INIT_FILE="")" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=32'b010100011)" begin
+
+INFO     : ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=32'b010100011)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=32'b010100010)" begin
+
+INFO     : ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=32'b010100010)" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "edb_la_top_renamed_due_excessive_length_1" begin
+
+INFO     : ... Hierarchical pre-synthesis "edb_la_top_renamed_due_excessive_length_1" end (Real time : 1s CPU user time : 2s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "debug_hub" begin
+
+INFO     : ... Hierarchical pre-synthesis "debug_hub" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "edb_top" begin
+
+INFO     : ... Clock Enable Synthesis Performed on 129 flops.
+
+INFO     : ... Hierarchical pre-synthesis "edb_top" end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat optimizations begin
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat synthesis begin
+
+INFO     : ... Flat synthesis end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat optimizations begin
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Check and break combinational loops begin
+
+INFO     : ... Check and break combinational loops end (Real time : 0s CPU user time : 3s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Sequential Optimization begin
+
+INFO     : ... Clock Network 'la0_clk' with 1415 loads will be considered for sequential optimization.
+
+INFO     : ... Clock Network 'bscan_TCK' with 815 loads will be considered for sequential optimization.
+
+INFO     : ... Sequential Optimization deduced 283 equivalent points.
+
+INFO     : ... Sequential Optimization end (Real time : 8s CPU user time : 12s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Setup for logic synthesis begin
+
+INFO     : ... Setup for logic synthesis end (Real time : 0s CPU user time : 12s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... LUT mapping begin
+
+INFO     : ... LS, strategy: 3, nd: 1952, ed: 6120, lv: 8, pw: 3610.77
+INFO     : ... LUT mapping end (Real time : 8s CPU user time : 22s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Post-synthesis Verific netlist creation begin
+
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 22s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Postmap Retiming Optimization begin
+
+INFO     : ... Clock Network 'la0_clk~la0_clk' with 1415 loads will be considered for retiming optimization.
+
+INFO     : ... Clock Network 'bscan_TCK~bscan_TCK' with 815 loads will be considered for retiming optimization.
+
+INFO     : ... Performed 0 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 8s CPU user time : 29s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(13): Input/inout port bscan_DRCK is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(15): Input/inout port bscan_RUNTEST is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/work_dbg/debug_top.v(20): Input/inout port bscan_TMS is unconnected and will be removed. [VDB-8003]
+
+WARNING  : Found 3 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0150671 seconds.
+INFO     : 	VDB Netlist Checker took 0.02 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 290.312 MB, end = 290.312 MB, delta = 0 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 199.448 MB, end = 199.448 MB, delta = 0 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Resource Summary 
+INFO     : =============================== 
+INFO     : EFX_ADD         : 	155
+INFO     : EFX_LUT4        : 	1936
+INFO     : EFX_FF          : 	2221
+INFO     : EFX_RAM_5K      : 	33
+INFO     : EFX_GBUFCE      : 	2
+INFO     : =============================== 
+
+INFO     : The entire flow of EFX_MAP took 27.9481 seconds.
+INFO     : 	The entire flow of EFX_MAP took 30.34 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 88.404 MB, end = 290.312 MB, delta = 201.908 MB
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 27.264 MB, end = 199.448 MB, delta = 172.184 MB
+INFO     : 	The entire flow of EFX_MAP peak resident set memory usage = 260.048 MB
+
+Sat August 23 25 12:05:16 - /home/olle/efinix/efinity/2025.1/bin/efx_map finished. Exit code = 0 Exit status : Normal
+
+Debugger Step Compile Debugger Cores. Done
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+Start Debugger Step Merge User design with Debugger Cores.
+
+Sat August 23 25 12:05:16 - /home/olle/efinix/efinity/2025.1/bin/efx_map  --family "Trion" --device "T20F169" --gen-mark-debug-json "0" --allow-const-ram-index "0" --blackbox-error "1" --blast_const_operand_adders "1" --bram_output_regs_packing "1" --bram-push-tco-outreg "0" --create-onehot-fsms "0" --fanout-limit "0" --hdl-compile-unit "1" --hdl-loop-limit "20000" --infer-clk-enable "3" --infer-sync-set-reset "1" --enable-mark-debug "1" --max_ram "-1" --max_mult "-1" --max-bit-blast-mem-size "10240" --min-sr-fanout "0" --min-ce-fanout "0" --mode "speed" --mult-auto-pipeline "0" --mult-decomp-retime "0" --operator-sharing "0" --optimize-adder-tree "0" --optimize-zero-init-rom "1" --peri-syn-instantiation "0" --peri-syn-inference "0" --ram-decomp-mode "0" --retiming "1" --seq_opt "1" --seq-opt-sync-only "0" --use-logic-for-small-mem "64" --use-logic-for-small-rom "64" --max_threads "-1" --mult_input_regs_packing "1" --mult_output_regs_packing "1" --I "/home/olle/efinity_p2/BRAM" --I "/home/olle/efinity_p2/BRAM/ip/BRAM_8192_bytes" --I "/home/olle/efinity_p2/BRAM/ip/micro_risc_v1" --root "top_level" --vdb "/home/olle/efinity_p2/BRAM/outflow/BRAM.elab.vdb" --vdb "/home/olle/efinity_p2/BRAM/work_dbg/debug_top.post.vdb" --write-efx-verilog "/home/olle/efinity_p2/BRAM/work_dbg/BRAM.dbg.map.v" --binary-db "/home/olle/efinity_p2/BRAM/work_dbg/BRAM.dbg.vdb" --merge_vdbs=1 --conn "/home/olle/efinity_p2/BRAM/debug_profile.wizard.json" --work-dir "/home/olle/efinity_p2/BRAM/work_dbg" --output-dir "/home/olle/efinity_p2/BRAM/outflow"
+
+Sat August 23 25 12:05:16 - Running /home/olle/efinix/efinity/2025.1/bin/efx_map...
+
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2025.1.110.2.15
+INFO     : Compiled: Jun 21 2025.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(186): compiling module 'EFX_PLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(205): compiling module 'EFX_PLL_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(231): compiling module 'EFX_PLL_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(279): compiling module 'EFX_OSC_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(285): compiling module 'EFX_OSC_V3' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(294): compiling module 'EFX_FPLL_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(348): compiling module 'EFX_JTAG_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(357): compiling module 'EFX_JTAG_CTRL' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(364): compiling module 'EFX_LVDS_RX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(381): compiling module 'EFX_LVDS_TX_V1' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(399): compiling module 'EFX_LVDS_RX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(426): compiling module 'EFX_LVDS_TX_V2' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_peri_lib.v(446): compiling module 'EFX_LVDS_BIDIR_V2' [VERI-1018]
+
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+INFO     : Analyzing Verilog file '/home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+INFO     : /home/olle/efinix/efinity/2025.1/sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+INFO     : Reading Mapping Library took 0.0136437 seconds.
+INFO     : 	Reading Mapping Library took 0.02 seconds (approximately) in total CPU time.
+INFO     : Reading Mapping Library virtual memory usage: begin = 137.872 MB, end = 138.896 MB, delta = 1.024 MB
+INFO     : Reading Mapping Library resident set memory usage: begin = 86.144 MB, end = 86.656 MB, delta = 0.512 MB
+INFO     : 	Reading Mapping Library peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+WARNING  : The primary output port 'mdc' wire 'mdc' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mdio_o' wire 'mdio_o' is not driven. [EFX-0256]
+WARNING  : The primary output port 'mdio_oe' wire 'mdio_oe' is not driven. [EFX-0256]
+WARNING  : The primary output port 'CAM0_EN' wire 'CAM0_EN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'CAM1_EN' wire 'CAM1_EN' is not driven. [EFX-0256]
+WARNING  : The primary output port 'RJ45_led' wire 'RJ45_led' is not driven. [EFX-0256]
+WARNING  : The primary output port 'jtag_dummy_TDO' wire 'jtag_dummy_TDO' is not driven. [EFX-0256]
+WARNING  : The primary output port 'led4_OUT' wire 'led4_OUT' is not driven. [EFX-0256]
+WARNING  : The primary output port 'led4_OE' wire 'led4_OE' is not driven. [EFX-0256]
+
+WARNING  : Removing redundant signal : csum[15]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[14]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[13]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[12]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[11]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[10]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[9]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[8]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[7]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[6]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[5]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[4]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[3]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[2]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[1]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : csum[0]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:151) [EFX-0200]
+WARNING  : Removing redundant signal : cf[31]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+WARNING  : Removing redundant signal : cf[30]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+WARNING  : Removing redundant signal : cf[29]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+WARNING  : Removing redundant signal : cf[28]. (/home/olle/efinity_p2/BRAM/rmii_udp_tx_top.vhd:244) [EFX-0200]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+
+WARNING  : Re-wiring to GND non-driven net 'mdc'. (/home/olle/efinity_p2/BRAM/top_level.vhd:20) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'mdio_o'. (/home/olle/efinity_p2/BRAM/top_level.vhd:22) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'mdio_oe'. (/home/olle/efinity_p2/BRAM/top_level.vhd:23) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'CAM0_EN'. (/home/olle/efinity_p2/BRAM/top_level.vhd:24) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'CAM1_EN'. (/home/olle/efinity_p2/BRAM/top_level.vhd:25) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'RJ45_led'. (/home/olle/efinity_p2/BRAM/top_level.vhd:26) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'jtag_dummy_TDO'. (/home/olle/efinity_p2/BRAM/top_level.vhd:37) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'led4_OUT'. (/home/olle/efinity_p2/BRAM/top_level.vhd:39) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'led4_OE'. (/home/olle/efinity_p2/BRAM/top_level.vhd:40) [EFX-0201]
+INFO     : ... Pre-synthesis checks end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s CPU user time : 0s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Mapping design "top_level"
+INFO     : ... Hierarchical pre-synthesis "rmii_udp_tx_top" begin
+
+INFO     : ... Hierarchical pre-synthesis "rmii_udp_tx_top" end (Real time : 1s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "edb_top" begin
+
+INFO     : ... Hierarchical pre-synthesis "edb_top" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Hierarchical pre-synthesis "top_level" begin
+
+INFO     : ... Clock Enable Synthesis Performed on 230 flops.
+
+INFO     : ... Hierarchical pre-synthesis "top_level" end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat optimizations begin
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat synthesis begin
+
+INFO     : ... Flat synthesis end (Real time : 0s CPU user time : 1s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Flat optimizations begin
+
+INFO     : ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Check and break combinational loops begin
+
+INFO     : ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Sequential Optimization begin
+
+INFO     : ... Clock Network 'clk' with 1542 loads will be considered for sequential optimization.
+
+INFO     : ... Clock Network 'jtag_inst1_TCK' with 808 loads will be considered for sequential optimization.
+
+INFO     : ... Clock Network 'pll_clk' with 27 loads will be considered for sequential optimization.
+
+INFO     : ... Sequential Optimization deduced 234 equivalent points.
+
+INFO     : ... Sequential Optimization end (Real time : 6s CPU user time : 7s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Setup for logic synthesis begin
+
+INFO     : ... Setup for logic synthesis end (Real time : 0s CPU user time : 7s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... LUT mapping begin
+
+INFO     : ... LS, strategy: 3, nd: 351, ed: 1204, lv: 6, pw: 2960.08
+INFO     : ... LUT mapping end (Real time : 4s CPU user time : 11s CPU sys time : 0s MEM : 260048KB)
+INFO     : ... Post-synthesis Verific netlist creation begin
+
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 12s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ... Postmap Retiming Optimization begin
+
+INFO     : ... Clock Network 'clk~clk' with 1434 loads will be considered for retiming optimization.
+
+INFO     : ... Clock Network 'jtag_inst1_TCK~jtag_inst1_TCK' with 808 loads will be considered for retiming optimization.
+
+INFO     : ... Clock Network 'pll_clk~pll_clk' with 27 loads will be considered for retiming optimization.
+
+INFO     : ... Performed 0 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 10s CPU user time : 22s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(16): Input/inout port rmii_crs_dv is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(17): Input/inout port rmii_rx_er is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(18): Input/inout port rmii_rxd[1] is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(21): Input/inout port mdio_i is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(27): Input/inout port jtag_dummy_TDI is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(28): Input/inout port jtag_dummy_TCK is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(29): Input/inout port jtag_dummy_TMS is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(30): Input/inout port jtag_dummy_SEL is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(31): Input/inout port jtag_dummy_DRCK is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(32): Input/inout port jtag_dummy_RESET is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(33): Input/inout port jtag_dummy_RUNTEST is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(34): Input/inout port jtag_dummy_CAPTURE is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(35): Input/inout port jtag_dummy_SHIFT is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(36): Input/inout port jtag_dummy_UPDATE is unconnected and will be removed. [VDB-8003]
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(38): Input/inout port led4 is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_DRCK is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_RUNTEST is unconnected and will be removed. [VDB-8003]
+WARNING  : Input/inout port jtag_inst1_TMS is unconnected and will be removed. [VDB-8003]
+
+WARNING  : Found 19 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0123902 seconds.
+INFO     : 	VDB Netlist Checker took 0.03 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 267.996 MB, end = 267.996 MB, delta = 0 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 178.944 MB, end = 178.944 MB, delta = 0 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 260.048 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+
+INFO     : Resource Summary 
+INFO     : =============================== 
+INFO     : EFX_ADD         : 	207
+INFO     : EFX_LUT4        : 	2264
+INFO     : EFX_FF          : 	2269
+INFO     : EFX_RAM_5K      : 	33
+INFO     : EFX_GBUFCE      : 	3
+INFO     : =============================== 
+INFO     : ... Post-Map Verilog Writer begin
+INFO     : Writing netlist 'top_level' to Verilog file '/home/olle/efinity_p2/BRAM/work_dbg/BRAM.dbg.map.v' [VDB-1030]
+
+INFO     : ... Post-Map Verilog Writer end (Real time : 0s CPU user time : 23s CPU sys time : 0s MEM : 260048KB)
+
+INFO     : The entire flow of EFX_MAP took 22.529 seconds.
+INFO     : 	The entire flow of EFX_MAP took 23.28 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_MAP virtual memory usage: begin = 88.4 MB, end = 267.996 MB, delta = 179.596 MB
+INFO     : The entire flow of EFX_MAP resident set memory usage: begin = 27.392 MB, end = 178.944 MB, delta = 151.552 MB
+INFO     : 	The entire flow of EFX_MAP peak resident set memory usage = 260.048 MB
+
+Sat August 23 25 12:05:39 - /home/olle/efinix/efinity/2025.1/bin/efx_map finished. Exit code = 0 Exit status : Normal
+
+Debugger Step Merge User design with Debugger Cores. Done
+
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+Start Debugger Step Instantiate Jtag.
+
+Sat August 23 25 12:05:39 - /home/olle/efinix/efinity/2025.1/bin/python3  "/home/olle/efinix/efinity/2025.1/scripts/efx_pt_jtag_util.py" --device "T20F169" --project "BRAM" --design_file "/home/olle/efinity_p2/BRAM/BRAM.peri.xml" --action "add" --jtag_user "JTAG_USER1" --output "/home/olle/efinity_p2/BRAM/BRAM.dbg.peri.xml"
+
+Sat August 23 25 12:05:39 - Running /home/olle/efinix/efinity/2025.1/bin/python3...
+
+
+== Load a design from file /home/olle/efinity_p2/BRAM/BRAM.peri.xml
+INFO: Load design...
+INFO: Periphery design is in sync with Efinity project
+INFO: Load design...done.
+
+== Create JTAG with default setting and pin name
+
+== Assign JTAG_USER1 resource to new jtag
+INFO: Check design...
+INFO: Check design...done.
+
+== Save Design to file: /home/olle/efinity_p2/BRAM/BRAM.dbg.peri.xml
+INFO: Save as design...
+INFO: Save as design...done.
+
+Save db version: 20251999
+
+Sat August 23 25 12:05:41 - /home/olle/efinix/efinity/2025.1/bin/python3 finished. Exit code = 0 Exit status : Normal
+
+Debugger Step Instantiate Jtag. Done
+
+--------------------------------------------------------------
+
+Debugger Step Instantiate Jtag. Done
+
+Sat August 23 25 12:05:41 - End Debugger Flow
+
+
+
+-------------------------------------------------------------------------
+
+Placement and Routing
+
+-------------------------------------------------------------------------
+
+Sat August 23 25 12:05:41 - Placement and routing flow working directory is /home/olle/efinity_p2/BRAM/work_pnr
+
+
+INFO     : --max_threads set to 4 
+
+Sat August 23 25 12:05:42 - /home/olle/efinix/efinity/2025.1/bin/python3  "/home/olle/efinix/efinity/2025.1/scripts/efx_run_pt_unified.py"  "BRAM.dbg"  "Trion"  "T20F169"
+
+Sat August 23 25 12:05:42 - Running /home/olle/efinix/efinity/2025.1/bin/python3...
+
+Load design file BRAM.dbg.peri.xml
+Writing out summary report file
+Writing out pinout file
+Writing out interface config file
+Writing out timing related file
+Writing out verilog template file
+Writing out option register file
+Writing out boundary scan description file
+Writing out LPF
+
+Sat August 23 25 12:05:46 - /home/olle/efinix/efinity/2025.1/bin/python3 finished. Exit code = 0 Exit status : Normal
+
+Sat August 23 25 12:05:46 - /home/olle/efinix/efinity/2025.1/bin/efx_pnr --circuit "BRAM" --family "Trion" --device "T20F169" --operating_conditions "C3" --pack --place --route --vdb_file "/home/olle/efinity_p2/BRAM/outflow/BRAM.dbg.vdb" --use_vdb_file "on" --place_file "/home/olle/efinity_p2/BRAM/outflow/BRAM.place" --route_file "/home/olle/efinity_p2/BRAM/outflow/BRAM.route" --sdc_file "/home/olle/efinity_p2/BRAM/const1.sdc" --sync_file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv" --seed "1" --placer_effort_level "2" --max_threads "-1" --print_critical_path "10" --work_dir "/home/olle/efinity_p2/BRAM/work_pnr" --output_dir "/home/olle/efinity_p2/BRAM/outflow" --timing_analysis "on" --load_delay_matrix
+
+Sat August 23 25 12:05:46 - Running /home/olle/efinix/efinity/2025.1/bin/efx_pnr...
+
+INFO     : --max_threads set to 4 
+
+
+           
+
+           Efinix FPGA Placement and Routing.
+
+           Version: 2025.1.110.2.15 
+
+           Compiled: Jun 21 2025.
+
+           
+
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+           
+
+           The Tool Is Based on VPR of University of Toronto,
+
+           a free open source code under MIT license.
+
+           
+
+           
+
+INFO     : Running Placement and Routing for Family "Trion", Device "T20F169" ...
+
+
+           
+
+           ***** Beginning stage netlist pre-processing ... *****
+
+INFO     : Successfully Read in Verific binary Netlist dump file "/home/olle/efinity_p2/BRAM/outflow/BRAM.dbg.vdb".
+
+
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(16): Input/inout port rmii_crs_dv is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(17): Input/inout port rmii_rx_er is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(18): Input/inout port rmii_rxd[1] is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(21): Input/inout port mdio_i is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(27): Input/inout port jtag_dummy_TDI is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(28): Input/inout port jtag_dummy_TCK is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(29): Input/inout port jtag_dummy_TMS is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(30): Input/inout port jtag_dummy_SEL is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(31): Input/inout port jtag_dummy_DRCK is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(32): Input/inout port jtag_dummy_RESET is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(33): Input/inout port jtag_dummy_RUNTEST is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(34): Input/inout port jtag_dummy_CAPTURE is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(35): Input/inout port jtag_dummy_SHIFT is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(36): Input/inout port jtag_dummy_UPDATE is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : /home/olle/efinity_p2/BRAM/top_level.vhd(38): Input/inout port led4 is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : Input/inout port jtag_inst1_DRCK is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : Input/inout port jtag_inst1_RUNTEST is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : Input/inout port jtag_inst1_TMS is unconnected and will be removed. [VDB-8003]
+
+
+WARNING  : Found 19 warnings in the post-synthesis netlist.
+
+
+INFO     : VDB Netlist Checker took 0.0120535 seconds.
+
+
+INFO     : 	VDB Netlist Checker took 0.01 seconds (approximately) in total CPU time.
+
+
+INFO     : VDB Netlist Checker virtual memory usage: begin = 228.656 MB, end = 245.068 MB, delta = 16.412 MB
+
+
+INFO     : VDB Netlist Checker resident set memory usage: begin = 119.424 MB, end = 120.192 MB, delta = 0.768 MB
+
+
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 261.248 MB
+
+
+INFO     : ***** Ending VDB Netlist Checker ... *****
+
+
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Found 0 constant generator nets.
+
+
+INFO     : Pass 0: Swept away 0 nets with no fanout.
+
+
+INFO     : logical_block #7(rmii_crs_dv) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #8(rmii_rx_er) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #9(rmii_rxd[1]) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #10(rmii_rxd[0]) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #14(mdio_i) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #20(jtag_dummy_TDI) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #21(jtag_dummy_TCK) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #22(jtag_dummy_TMS) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #23(jtag_dummy_SEL) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #24(jtag_dummy_DRCK) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #25(jtag_dummy_RESET) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #26(jtag_dummy_RUNTEST) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #27(jtag_dummy_CAPTURE) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #28(jtag_dummy_SHIFT) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #29(jtag_dummy_UPDATE) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #31(led4) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #35(jtag_inst1_DRCK) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #37(jtag_inst1_RUNTEST) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : logical_block #42(jtag_inst1_TMS) has no fanout.
+
+
+INFO     : Removing input.
+
+
+INFO     : Pass 0: Swept away 19 blocks with no fanout.
+
+
+INFO     : Pass 1: Swept away 0 nets with no fanout.
+
+
+INFO     : Pass 1: Swept away 0 blocks with no fanout.
+
+
+INFO     : Swept away 0 nets and 19 blocks in total.
+
+
+INFO     : Removed 0 LUT buffers
+
+
+INFO     : Sweept away 19 nodes
+
+
+INFO     : Successfully created VPR logical netlist from Verific binary DataBase file "/home/olle/efinity_p2/BRAM/outflow/BRAM.dbg.vdb".
+
+
+INFO     : Netlist pre-processing took 0.0920653 seconds.
+
+
+INFO     : 	Netlist pre-processing took 0.1 seconds (approximately) in total CPU time.
+
+
+INFO     : Netlist pre-processing virtual memory usage: begin = 228.656 MB, end = 245.068 MB, delta = 16.412 MB
+
+
+INFO     : Netlist pre-processing resident set memory usage: begin = 118.656 MB, end = 120.576 MB, delta = 1.92 MB
+
+
+INFO     : 	Netlist pre-processing peak resident set memory usage = 261.248 MB
+
+
+           ***** Ending stage netlist pre-processing *****
+
+           
+
+           ***** Beginning stage pre-packing ... *****
+
+           ***** Ending stage pre-packing *****
+
+           
+
+           ***** Beginning stage packing ... *****
+
+INFO     : Generate proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.007833 seconds
+
+
+INFO     : Creating IO constraints file '/home/olle/efinity_p2/BRAM/work_pnr/BRAM.io_place'
+
+
+INFO     : Packing took 0.0272513 seconds.
+
+
+INFO     : 	Packing took 0.03 seconds (approximately) in total CPU time.
+
+
+INFO     : Packing virtual memory usage: begin = 245.068 MB, end = 245.068 MB, delta = 0 MB
+
+
+INFO     : Packing resident set memory usage: begin = 121.344 MB, end = 121.856 MB, delta = 0.512 MB
+
+
+INFO     : 	Packing peak resident set memory usage = 261.248 MB
+
+
+           ***** Ending stage packing *****
+
+           
+
+INFO     : Read proto netlist file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto
+
+
+INFO     : Read proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.006928 seconds
+
+
+INFO     : Setup net and block data structure took 0.099522 seconds
+
+
+WARNING  : Found 19 warnings in the post-synthesis netlist.
+
+
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+           ***** Beginning stage packed netlist loading ... *****
+
+INFO     : Read proto netlist file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto
+
+
+INFO     : Read proto netlist for file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.net_proto" took 0.006881 seconds
+
+
+INFO     : Setup net and block data structure took 0.091061 seconds
+
+
+INFO     : Packed netlist loading took 0.0992243 seconds.
+
+
+INFO     : 	Packed netlist loading took 0.1 seconds (approximately) in total CPU time.
+
+
+INFO     : Packed netlist loading virtual memory usage: begin = 245.068 MB, end = 245.068 MB, delta = 0 MB
+
+
+INFO     : Packed netlist loading resident set memory usage: begin = 123.904 MB, end = 123.904 MB, delta = 0 MB
+
+
+INFO     : 	Packed netlist loading peak resident set memory usage = 261.248 MB
+
+
+           ***** Ending stage packed netlist loading *****
+
+           
+
+           ***** Beginning stage pre-placement ... *****
+
+           
+
+           ***** Ending stage pre-placement *****
+
+           
+
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+
+
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+
+           ***** Beginning stage initial placement ... *****
+
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Writing IO placement constraints to "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.io"
+
+
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.io'.
+
+
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/work_pnr/BRAM.io_place'.
+
+
+WARNING  : jtag_dummy_TDO has no assigned placement; it will be placed randomly.
+
+
+INFO     : 1 IOs will have random placement.
+
+
+WARNING  : Clock source jtag_inst1_TCK does not use a dedicated clock pad, so extra clock insertion delay is added
+
+
+           ***** Ending stage initial placement *****
+
+           
+
+           ***** Beginning stage placement ... *****
+
+INFO     : Starting Global Placer with 4 threads ...
+
+
+            ----------     -------  --------------     -------
+
+             Iteration       WHPWL Worst Slack (ps) Convergence
+
+            ----------     -------  --------------     -------
+
+INFO     :           1     2401712           -2031         1.6%
+
+
+INFO     :           2     3156718           -2031         2.3%
+
+
+INFO     :           3     2686216           -2031         2.7%
+
+
+INFO     :           4     2558342           -2031         3.1%
+
+
+INFO     :           5     1222975           -2031         3.6%
+
+
+INFO     :           6      637468           -2031         6.1%
+
+
+INFO     :           7      321986           -3479        15.4%
+
+
+INFO     :           8      204360           -4994        33.6%
+
+
+INFO     :           9      155808           -4893        49.1%
+
+
+INFO     :          10      145273           -4089        60.5%
+
+
+INFO     :          11      143710           -4361        64.9%
+
+
+INFO     :          12      140199           -4525        66.1%
+
+
+INFO     :          13      137185           -5571        68.7%
+
+
+INFO     :          14      133906           -5555        70.7%
+
+
+INFO     :          15      135157           -5030        71.6%
+
+
+INFO     :          16      131862           -5070        73.2%
+
+
+INFO     :          17      131881           -4075        74.8%
+
+
+INFO     :          18      130944           -4983        76.6%
+
+
+INFO     :          19      128609           -4561        77.5%
+
+
+INFO     :          20      126061           -4857        79.3%
+
+
+INFO     :          21      125604           -4999        80.9%
+
+
+INFO     :          22      124429           -5327        82.1%
+
+
+INFO     :          23      123273           -4846        84.1%
+
+
+INFO     :          24      122665           -4561        84.8%
+
+
+INFO     :          25      122512           -4601        85.5%
+
+
+INFO     :          26      122434           -4911        86.2%
+
+
+INFO     :          27      122757           -3988        86.7%
+
+
+INFO     :          28      122286           -4421        87.9%
+
+
+INFO     :          29      122398           -4999        88.8%
+
+
+INFO     :          30      121945           -4998        90.3%
+
+
+INFO     :          31      122255           -5421        91.0%
+
+
+INFO     :          32      122209           -5555        92.0%
+
+
+INFO     :          33      122352           -4815        92.8%
+
+
+INFO     :          34      122415           -5022        94.2%
+
+
+INFO     :          35      122544           -4816        94.3%
+
+
+INFO     :          36      122687           -4427        95.0%
+
+
+INFO     :          37      123046           -4512        95.3%
+
+
+INFO     :          38      121702           -5388        95.3%
+
+
+INFO     :          39      122093           -5571        96.0%
+
+
+INFO     :          40      122289           -4983        97.1%
+
+
+INFO     :          41      122527           -5512        97.3%
+
+
+INFO     :          42      122763           -5555        97.6%
+
+
+INFO     :          43      123051           -5555        98.4%
+
+
+INFO     :          44      123071           -6056        98.9%
+
+
+INFO     : Starting Annealer
+
+
+            ----------     -------  --------------     -------
+
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+
+            ----------     -------  --------------     -------
+
+INFO     :           0       51482            5987        30.0
+
+
+INFO     :           1       40303            5238        29.6
+
+
+INFO     :           2       32121            5238        29.3
+
+
+INFO     :           3       30030            5238        28.5
+
+
+INFO     :           4       28930            5238        27.8
+
+
+INFO     :           5       28067            5238        26.8
+
+
+INFO     :           6       27763            5238        25.9
+
+
+INFO     :           7       27313            5238        24.9
+
+
+INFO     :           8       26633            5238        23.9
+
+
+INFO     :           9       26366            5155        22.8
+
+
+INFO     :          10       26384            5155        21.9
+
+
+INFO     :          11       25970            5155        20.8
+
+
+INFO     :          12       25241            5155        20.0
+
+
+INFO     :          13       24871            5155        18.9
+
+
+INFO     :          14       24614            5068        18.0
+
+
+INFO     :          15       24495            5068        17.1
+
+
+INFO     :          16       24576            5068        16.2
+
+
+INFO     :          17       24423            5068        15.3
+
+
+INFO     :          18       24062            5068        14.4
+
+
+INFO     :          19       23995            5068        13.5
+
+
+INFO     :          20       23907            5068        12.7
+
+
+INFO     :          21       23735            5155        11.9
+
+
+INFO     :          22       23730            5155        11.2
+
+
+INFO     :          23       23611            5155        10.5
+
+
+INFO     :          24       23399            5135         9.8
+
+
+INFO     :          25       23342            5135         9.2
+
+
+INFO     :          26       23251            5135         8.7
+
+
+INFO     :          27       22983            5135         8.1
+
+
+INFO     :          28       22788            4584         7.6
+
+
+INFO     :          29       22661            5070         7.1
+
+
+INFO     :          30       22527            5070         6.7
+
+
+INFO     :          31       22384            4584         6.2
+
+
+INFO     :          32       22234            4584         5.8
+
+
+INFO     :          33       22073            4585         5.4
+
+
+INFO     :          34       21948            5070         5.1
+
+
+INFO     :          35       21969            5070         4.8
+
+
+INFO     :          36       21861            4994         4.4
+
+
+INFO     :          37       21802            5070         4.1
+
+
+INFO     :          38       21692            4585         3.8
+
+
+INFO     :          39       21589            5070         3.6
+
+
+INFO     :          40       21513            4671         3.3
+
+
+INFO     :          41       21429            4585         3.1
+
+
+INFO     :          42       21348            4585         2.9
+
+
+INFO     :          43       21294            4994         2.7
+
+
+INFO     :          44       21338            4671         2.5
+
+
+INFO     :          45       21281            4671         2.3
+
+
+INFO     :          46       21307            4671         2.1
+
+
+INFO     :          47       21305            4994         1.9
+
+
+INFO     : Counted delay computer calls: 20493
+Placement successful: 3933 cells are placed
+
+
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.207795 at 51,8
+
+
+INFO     : Congestion-weighted HPWL per net: 17.5932
+
+
+INFO     : Post-placement cluster-level checks is successful
+
+
+INFO     : Checks is successful
+
+
+INFO     : Reading placement constraints from '/home/olle/efinity_p2/BRAM/outflow/BRAM.qplace'.
+
+
+INFO     : Finished Realigning Types (393 blocks needed type change)
+
+
+INFO     : Completed placement consistency check successfully.
+
+
+
+
+INFO     : Successfully created FPGA place file '/home/olle/efinity_p2/BRAM/outflow/BRAM.place'
+
+
+INFO     : Placement took 6.41929 seconds.
+
+
+INFO     : 	Placement took 13.44 seconds (approximately) in total CPU time.
+
+
+INFO     : Placement virtual memory usage: begin = 245.068 MB, end = 312.844 MB, delta = 67.776 MB
+
+
+INFO     : Placement resident set memory usage: begin = 124.16 MB, end = 202.368 MB, delta = 78.208 MB
+
+
+INFO     : 	Placement peak resident set memory usage = 261.248 MB
+
+
+           ***** Ending stage placement *****
+
+           
+
+           
+
+           Efinix FPGA Placement and Routing.
+
+           Version: 2025.1.110.2.15 
+
+           Compiled: Jun 21 2025.
+
+           
+
+           Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+           
+
+           The Tool Is Based on VPR of University of Toronto,
+
+           a free open source code under MIT license.
+
+           
+
+           
+
+INFO     : Running Placement and Routing for Family "Trion", Device "T20F169" ...
+
+
+           
+
+           ***** Beginning stage routing graph generation ... *****
+
+INFO     : Read ipin pattern from /home/olle/efinix/efinity/2025.1/arch/./routing/ipin_oph.xml
+
+
+INFO     : Finished parsing ipin pattern file '/home/olle/efinix/efinity/2025.1/arch/./routing/ipin_oph.xdb'.
+
+
+INFO     : Finished parsing switch_block file '/home/olle/efinix/efinity/2025.1/arch/./routing/sb_connectivity_subset.xdb'.
+
+
+INFO     : BuildGraph process took 3.00619 seconds.
+
+
+INFO     : 	BuildGraph process took 2.89 seconds (approximately) in total CPU time.
+
+
+INFO     : BuildGraph process virtual memory usage: begin = 312.844 MB, end = 540.732 MB, delta = 227.888 MB
+
+
+INFO     : BuildGraph process resident set memory usage: begin = 203.008 MB, end = 446.72 MB, delta = 243.712 MB
+
+
+INFO     : 	BuildGraph process peak resident set memory usage = 446.72 MB
+
+
+INFO     : check rr_graph process took 0.148591 seconds.
+
+
+INFO     : 	check rr_graph process took 0.15 seconds (approximately) in total CPU time.
+
+
+INFO     : check rr_graph process virtual memory usage: begin = 568.308 MB, end = 577.508 MB, delta = 9.2 MB
+
+
+INFO     : check rr_graph process resident set memory usage: begin = 474.24 MB, end = 483.584 MB, delta = 9.344 MB
+
+
+INFO     : 	check rr_graph process peak resident set memory usage = 483.584 MB
+
+
+INFO     : Generated 1176331 RR nodes and 4448210 RR edges
+
+
+INFO     : This design has 0 global control net(s). See /home/olle/efinity_p2/BRAM/outflow/BRAM.route.rpt for details.
+
+
+INFO     : Routing graph took 3.24765 seconds.
+
+
+INFO     : 	Routing graph took 3.12 seconds (approximately) in total CPU time.
+
+
+INFO     : Routing graph virtual memory usage: begin = 312.844 MB, end = 577.508 MB, delta = 264.664 MB
+
+
+INFO     : Routing graph resident set memory usage: begin = 202.496 MB, end = 483.712 MB, delta = 281.216 MB
+
+
+INFO     : 	Routing graph peak resident set memory usage = 483.712 MB
+
+
+           ***** Ending stage routing graph generation *****
+
+           
+
+           ***** Beginning stage routing ... *****
+
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+
+
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+
+INFO     :  ---------      -------     --------------      -------------
+
+
+INFO     :  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+
+
+INFO     :  ---------      -------     --------------      -------------
+
+
+INFO     :          1        10975              3.045               2.99
+
+
+INFO     :          2         1282              3.871                1.8
+
+
+INFO     :          3          263              3.871               1.27
+
+
+INFO     :          4            5              3.871              0.689
+
+
+INFO     :          5            1              3.871               0.35
+
+
+INFO     :          6            0              3.871              0.122
+
+
+           
+
+INFO     : Successfully routed netlist after 6 routing iterations and 22170377 heapops
+
+
+INFO     : Completed net delay value cross check successfully.
+
+
+           ***** Beginning stage routing check ... *****
+
+           ***** Ending stage routing check *****
+
+           
+
+INFO     : Serial number (magic cookie) for the routing is: 539135167
+
+
+INFO     : Netlist fully routed.
+
+
+INFO     : Successfully created FPGA route file '/home/olle/efinity_p2/BRAM/outflow/BRAM.route'
+
+
+INFO     : Routing took 7.8633 seconds.
+
+
+INFO     : 	Routing took 7.91 seconds (approximately) in total CPU time.
+
+
+INFO     : Routing virtual memory usage: begin = 577.508 MB, end = 676.62 MB, delta = 99.112 MB
+
+
+INFO     : Routing resident set memory usage: begin = 483.712 MB, end = 558.416 MB, delta = 74.704 MB
+
+
+INFO     : 	Routing peak resident set memory usage = 558.416 MB
+
+
+           ***** Ending stage routing *****
+
+           
+
+           ***** Beginning stage final timing analysis ... *****
+
+INFO     : SDC file '/home/olle/efinity_p2/BRAM/const1.sdc' parsed successfully.
+
+
+INFO     : 2 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+  clk           16.185        61.786         (R-R)
+  pll_clk        4.027       248.324         (R-R)
+
+Geomean max period: 8.073
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+    clk              clk               30.000           13.815           (R-R)
+    pll_clk          clk                1.000           -4.152           (R-R)
+    pll_clk          pll_clk            7.000            2.973           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+    clk              clk               0.000            0.119            (R-R)
+    pll_clk          clk               0.000            0.309            (R-R)
+    pll_clk          pll_clk           0.000            0.307            (R-R)
+
+
+WARNING  : Clock domain between pll_clk (rising) and clk (rising) may not meet (slack: -4.152 ns) the setup (max) timing requirement
+
+
+INFO     : Write Timing Report to "/home/olle/efinity_p2/BRAM/outflow/BRAM.timing.rpt" ...
+
+
+INFO     : final timing analysis took 0.282503 seconds.
+
+
+INFO     : 	final timing analysis took 0.28 seconds (approximately) in total CPU time.
+
+
+INFO     : final timing analysis virtual memory usage: begin = 676.62 MB, end = 676.62 MB, delta = 0 MB
+
+
+INFO     : final timing analysis resident set memory usage: begin = 558.416 MB, end = 558.928 MB, delta = 0.512 MB
+
+
+INFO     : 	final timing analysis peak resident set memory usage = 558.928 MB
+
+
+           ***** Ending stage final timing analysis *****
+
+           
+
+           ***** Beginning stage bitstream generation ... *****
+
+INFO     : Reading core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Successfully read core interface constraints file "/home/olle/efinity_p2/BRAM/outflow/BRAM.interface.csv"
+
+
+INFO     : Finished writing bitstream file /home/olle/efinity_p2/BRAM/work_pnr/BRAM.lbf.
+
+
+INFO     : Bitstream generation took 0.568421 seconds.
+
+
+INFO     : 	Bitstream generation took 0.57 seconds (approximately) in total CPU time.
+
+
+INFO     : Bitstream generation virtual memory usage: begin = 676.62 MB, end = 676.62 MB, delta = 0 MB
+
+
+INFO     : Bitstream generation resident set memory usage: begin = 558.928 MB, end = 559.696 MB, delta = 0.768 MB
+
+
+INFO     : 	Bitstream generation peak resident set memory usage = 559.696 MB
+
+
+           ***** Ending stage bitstream generation *****
+
+           
+
+INFO     : The entire flow of EFX_PNR took 20.5852 seconds.
+
+
+INFO     : 	The entire flow of EFX_PNR took 27.61 seconds (approximately) in total CPU time.
+
+
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 119.632 MB, end = 676.62 MB, delta = 556.988 MB
+
+
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 38.528 MB, end = 559.696 MB, delta = 521.168 MB
+
+
+INFO     : 	The entire flow of EFX_PNR peak resident set memory usage = 559.696 MB
+
+
+Sat August 23 25 12:06:07 - /home/olle/efinix/efinity/2025.1/bin/efx_pnr finished. Exit code = 0 Exit status : Normal
+
+
+
+
+
+-------------------------------------------------------------------------
+
+Generating bitstream
+
+-------------------------------------------------------------------------
+
+Sat August 23 25 12:06:07 - Bitstream generation flow working directory is /home/olle/efinity_p2/BRAM/work_pnr
+
+
+INFO     : --max_threads set to 4 
+
+Sat August 23 25 12:06:08 - /home/olle/efinix/efinity/2025.1/bin/efx_pgm --source "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.lbf" --dest "/home/olle/efinity_p2/BRAM/outflow/BRAM.hex" --device "T20F169" --family "Trion" --periph "/home/olle/efinity_p2/BRAM/outflow/BRAM.lpf" --interface_designer_settings "/home/olle/efinity_p2/BRAM/outflow/BRAM_or.ini" --enable_external_master_clock "off" --oscillator_clock_divider "DIV8" --active_capture_clk_edge "posedge" --spi_low_power_mode "on" --io_weak_pullup "on" --enable_roms "smart" --mode "active" --width "1" --release_tri_then_reset "on"
+
+Sat August 23 25 12:06:08 - Running /home/olle/efinix/efinity/2025.1/bin/efx_pgm...
+
+INFO     : Efinix FPGA Bitstream Generator.
+
+
+INFO     : Version: 2025.1.110.2.15 
+
+
+INFO     : Copyright (C) 2013 - 2025 Efinix, Inc. All rights reserved.
+
+
+INFO     : Compiled: May  7 2025.
+
+
+INFO     : Using source file "/home/olle/efinity_p2/BRAM/work_pnr/BRAM.lbf"
+
+
+INFO     : Generating HEX programming file for device "T20F169", family "Trion"
+
+
+INFO     : Using periphery source file "/home/olle/efinity_p2/BRAM/outflow/BRAM.lpf"
+
+
+INFO     : Generating bit file: "/home/olle/efinity_p2/BRAM/outflow/BRAM.bit"
+
+
+INFO     : HEX Generation Options Summary:
+
+
+INFO     : 	Listing options specified to bitstream generation:
+
+
+INFO     : 	spi_low_power_mode                       = on
+
+
+INFO     : 	oscillator_clock_divider                 = DIV8
+
+
+INFO     : 	io_weak_pullup                           = on
+
+
+INFO     : 	enable_remote_update                     = off
+
+
+INFO     : 	release_tri_then_reset                   = on
+
+
+INFO     : Finished generating "/home/olle/efinity_p2/BRAM/outflow/BRAM.hex"
+
+
+INFO     : Efinix Bitstream Generator took 1.04664 seconds.
+
+
+INFO     : 	Efinix Bitstream Generator took 0.98 seconds (approximately) in total CPU time.
+
+
+INFO     : Efinix Bitstream Generator virtual memory usage: begin = 35.092 MB, end = 93.388 MB, delta = 58.296 MB
+
+
+INFO     : Efinix Bitstream Generator resident set memory usage: begin = 15.104 MB, end = 75.776 MB, delta = 60.672 MB
+
+
+INFO     : 	Efinix Bitstream Generator peak resident set memory usage = 262.672 MB
+
+
+Sat August 23 25 12:06:09 - /home/olle/efinix/efinity/2025.1/bin/efx_pgm finished. Exit code = 0 Exit status : Normal
+
+Running hex generation flow done.
+
+Sat August 23 25 12:06:09 - Running automated flow starting from synthesis done. Total duration = 1m 36.864s
+
+Sat August 23 25 12:40:55 - Floorplan closed VM : 573.212 MB RSS : 262.672 MB
+
+Sat August 23 25 12:40:55 - Project close VM : 573.212 MB RSS : 167.352 MB
+
+

@@ -1,0 +1,53 @@
+Purpose
+- Efinix BSP regeneration may overwrite OpenOCD config files under embedded_sw/.../openocd.
+- This folder stores known-good copies and a restore script.
+
+Symptoms when overwritten
+- OpenOCD errors like:
+  "no device found" / "unable to open ftdi device ... description 'Trion T120F324 Development Board'"
+  "Halt timed out" / "timed out while waiting for target halted" (common if STANDARD_DEBUG is wrong)
+  OpenOCD can also crash with an assertion like:
+    vexriscv_read_memory: Assertion `target->state == TARGET_HALTED' failed
+  This happens when GDB/Eclipse reads memory while the CPU is not halted.
+
+What was fixed
+1) FTDI descriptor mismatch on Linux
+- The board FTDI often enumerates as "Dual RS232-HS" (VID:PID 0403:6010).
+- openocd cfg now defaults to that descriptor, and also supports override:
+  openocd -c "set FTDI_DEVICE_DESC {Dual RS232-HS}" -f ftdi.cfg -f debug.cfg
+
+2) GDB session stability
+- debug.cfg makes halt/resume-on-connect configurable.
+  By default it does NOT halt on connect (because unstable halts cause Eclipse/GDB disconnects).
+  If/when halting is reliable, you can enable it by passing:
+    -c "set GDB_ATTACH_HALT 1"
+    -c "set GDB_DETACH_RESUME 1"
+
+3) Debug interface selection
+- This SoC build debugs reliably using the VexRiscv (non-standard) debug target.
+- Eclipse launch passes: set STANDARD_DEBUG 0
+
+How to restore after BSP regeneration
+1) From repo root, run:
+   bash debugger_settings/openocd_known_good/restore_openocd_cfgs.sh
+
+2) Restart Eclipse/OpenOCD debug.
+
+Files affected (live locations)
+- embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg
+- embedded_sw/RISC_V_standard_A/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg
+- embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/mdio_test_trion.launch
+- embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/mdio_test_trion_attach_only.launch
+
+Notes
+- If halting is unstable, start with the attach-only launch:
+    embedded_sw/RISC_V_standard_A/software/standalone/mdio_test/mdio_test_trion_attach_only.launch
+  It avoids initial reset/halt/stop-at-main and prevents GDB memory probing by default.
+
+- If you want UART output immediately after programming the `.bit` (no debugger),
+  you must rebuild the bitstream with BRAM init files generated from your app `.bin`.
+  Helper script:
+    embedded_sw/RISC_V_standard_A/tool/boot_app_into_bram.sh
+- If your FTDI descriptor is different, update the launch file (FTDI_DEVICE_DESC) or pass a different value on the OpenOCD command line.
+- OpenOCD printing "Listening on port 3333/4444/6666" is the expected steady-state: it is waiting for Eclipse/GDB/telnet/TCL connections.
+- These fixes do not write or reprogram the FT2232/FTDI EEPROM (no renaming/programmer EEPROM changes).

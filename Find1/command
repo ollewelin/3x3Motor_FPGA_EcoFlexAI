@@ -1,0 +1,50 @@
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ python3 read_frame_image.py /dev/ttyACM0 115200 --width 96 --height 96 --out frame.png
+Waiting for 'S' on /dev/ttyACM0 @ 115200...
+'S' seen. Reading 18432 ASCII-HEX decoded bytes...
+Saved frame.png (96x96)
+(base) olle@olle-SSD-256:~/video_dump_test_b/uart_a$ 
+
+ init OK
+Settling...OK
+=CAM2 IMX219 INIT=
+  I2C raw status: [MSTS=0x00000000]   SCL_read=01  SDA_read=01
+  Stop stream... OK
+  Access seq...OK
+  MIPI config...OK
+  Frame timing...OK
+  ROI 96x96...OK
+  Binning/inc...OK
+  CSI fmt RAW8...OK
+  PLL...OK
+  Exposure/gain...OK
+  Start stream...OK
+=CAM2 READY=
+=CAM SETUP COMPLETE=
+Camera initialization complete
+Waiting for UART switch (20 seconds)...
+
+Time: 5 seconds elapsed
+
+
+==T120 CAM2 INIT==
+Enabling CAM2 power...
+Camera initialization starting...
+Init I2C..I2C 100kHz init OK
+Settling...OK
+=CAM2 IMX219 INIT=
+  I2C raw status: [MSTS=0x00000000]   SCL_read=01  SDA_read=01
+  Stop stream... OK
+  Access seq...OK
+  MIPI config...OK
+  Frame timing...OK
+  ROI 96x96...OK
+  Binning/inc...OK
+  CSI fmt RAW10...OK
+  PLL...OK
+  Exposure/gain...OK
+  Start stream...OK
+=CAM2 READY=
+=CAM SETUP COMPLETE=
+Camera initialization complete
+Waiting for UART switch (20 seconds)...
+

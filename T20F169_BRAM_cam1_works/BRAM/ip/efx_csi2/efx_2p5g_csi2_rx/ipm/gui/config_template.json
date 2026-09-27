@@ -1,0 +1,75 @@
+{
+    "tabs": [
+        {
+            "name": "General",
+            "widgets": [
+                {
+                    "param_name": "NUM_DATA_LANE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "CLOCK_FREQ_MHZ",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "PIXEL_FIFO_DEPTH",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "FRAME_MODE",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "ENABLE_VCX",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "AREGISTER",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "ASYNC_STAGE",
+                    "type": "Numeric_Dropdown"
+                },
+                {
+                    "param_name": "tINIT_NS",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "Pack_40",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_48",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_56",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "Pack_64",
+                    "type": "ComboBox"
+                },
+                {
+                    "param_name": "HS_DATA_WIDTH",
+                    "type": "LineEdit",
+                    "data_type": "DECIMAL",
+                    "format": "int"
+                },
+                {
+                    "param_name": "MIPI_CSI2_RX_DEBUG",
+                    "type": "CheckBox",
+                    "text": "enable associated debug ports"
+                },
+                {
+                    "param_name": "MIPI_CSI2_RX_PIXEL_SIDEBAND",
+                    "type": "CheckBox",
+                    "text": "enable additional pixel related output ports"
+                }
+            ]
+        }
+    ]
+}

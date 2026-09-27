@@ -1,0 +1,8 @@
+component rmii_tx_udp_min
+  port (
+    clk50 : in std_logic;
+    rst : in std_logic;
+    rmii_txd : out std_logic_vector(1 downto 0);
+    rmii_tx_en : out std_logic
+  );
+end component;

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;blink_led/build/blink_led.launch&apos;" deleteContents="false" description="Delete resource &apos;blink_led/build/blink_led.launch&apos;" element1="/blink_led/build/blink_led.launch" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1759259606453"/>
+</session>

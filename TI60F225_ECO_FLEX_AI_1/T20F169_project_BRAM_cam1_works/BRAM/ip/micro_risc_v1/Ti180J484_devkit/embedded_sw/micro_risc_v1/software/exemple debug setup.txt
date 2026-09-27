@@ -1,0 +1,126 @@
+
+set mem inaccessible-by-default off
+monitor reset halt
+break main
+continue
+
+
+========================================
+OpenOCD setup:
+
+Execuatable path:
+${eclipse_home}/../openocd/bin/openocd
+
+Actual executable:
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd
+
+Config options:
+-c 'set bsp_loc {/home/olle/efinity_p2/efx_evsoc-v2025.1/T120F324_640_480/embedded_sw/SapphireSoc}'
+-f '/home/olle/efinity_p2/efx_evsoc-v2025.1/T120F324_640_480/embedded_sw/SapphireSoc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg'
+-f '/home/olle/efinity_p2/efx_evsoc-v2025.1/T120F324_640_480/embedded_sw/SapphireSoc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+
+
+
+-c 'set bsp_loc {/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1}'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+
+-f '/home/olle/openocd/olle_ftdi_wrap.cfg'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+-f /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/sapphire_soc_32bit-reg.xml
+
+
+
+==========
+stop start i vart fall men inte med rätt applikation bara förprogrammerad app
+
+-f '/home/olle/openocd/olle_ftdi_wrap.cfg'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+========================================
+
+
+========================================
+GDB client setup:
+
+Execuatable path:
+${eclipse_home}/../toolchain/bin/riscv-none-embed-gdb
+
+Actual executable:
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../toolchain/bin/riscv-none-embed-gdb
+
+commands:
+set mem inaccessible-by-default off
+set arch riscv:rv32
+set remotetimeout 250
+
+register file:
+/home/olle/efinity_p2/efx_evsoc-v2025.1/T120F324_640_480/embedded_sw/SapphireSoc/bsp/efinix/EfxSapphireSoc/openocd/sapphire_soc_32bit-reg.xml
+========================================
+
+
+
+
+=======================
+Detta funkar !
+=======================
+
+Debugger ->
+========================================
+OpenOCD setup:
+
+Execuatable path:
+${eclipse_home}/../openocd/bin/openocd
+
+Actual executable:
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE//../openocd/bin/openocd
+
+Config options:
+-f '/home/olle/openocd/olle_ftdi_wrap.cfg'
+-f '/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg'
+
+=======================================
+
+Startup ->
+=======================================
+Initiaazion command:
+Initial Reset Type: Init
+-
+
+
+Load symbols and execuatbale:
+/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.elf
+
+/home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/software/standalone/blink_led/build/blink_led.elf
+
+Runtime options:
+Debug in Ram 
+=======================================
+
+SVD path ->
+=======================================
+/home/olle/efinity/efinity-riscv-ide-2025.1/Efinity-RISCV-IDE/configuration/org.eclipse.equinox.launcher/com.ashling.riscfree.product_1.2.9.202504300650/splash.bmp
+=======================================
+
+============================================================
+/home/olle/openocd/olle_ftdi_wrap.cfg
+
+# Pull in Efinix FTDI and BSCAN-tunnel setup
+source [find /home/olle/efinity_p2/BRAM/embedded_sw/micro_risc_v1/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg]
+
+# Override USB selection to your FT2232H dongle
+ftdi vid_pid 0x0403 0x6010
+ftdi device_desc "Dual RS232-HS"
+ftdi channel 1
+adapter speed 1000
+
+# RISC-V std debug
+set _CPUTAPID 0x00210a79
+set LEGACY_IDE 0
+set STANDARD_DEBUG 1
+
+============================================================

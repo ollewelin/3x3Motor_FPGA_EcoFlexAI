@@ -1,0 +1,43 @@
+================================================================================
+FIRST LINE ANALYSIS (192 bytes for VSYNC debugging)
+================================================================================
+
+Frame: 192x192 pixels (RAW8)
+First line size: 192 bytes
+Expected: 192 bytes
+
+Statistics:
+  Min value: 0x4B ( 75)
+  Max value: 0xAC (172)
+  Mean value: 121.5
+  All zeros: False
+  All 0xFF: False
+
+Hex dump (16 bytes per line):
+--------------------------------------------------------------------------------
+Pixels   0- 15:  4E 9B 51 9B 4D A1 4F A5 4E 9B 52 9D 51 9C 54 A7
+Pixels  16- 31:  54 9F 52 A0 54 9F 4C AB 52 98 4F 96 4E A1 4E A2
+Pixels  32- 47:  4D AC 53 A8 54 A1 53 A0 51 9F 4F A8 52 96 4F 9D
+Pixels  48- 63:  4B 9F 4C 99 53 A4 4E AA 4E AB 50 A0 51 A6 4F A2
+Pixels  64- 79:  52 A5 54 9C 50 A4 51 9E 58 A3 51 9B 53 A7 50 A4
+Pixels  80- 95:  54 9F 52 A0 54 9F 4C AB 52 98 4F 96 4E A1 4E A2
+Pixels  96-111:  4D AC 53 A8 54 A1 53 A0 51 9F 4F A8 52 96 4F 9D
+Pixels 112-127:  4B 9F 4C 99 53 A4 4E AA 4E AB 50 A0 51 A6 4F A2
+Pixels 128-143:  52 A5 54 9C 50 A4 51 9E 58 A3 51 9B 53 A7 50 A4
+Pixels 144-159:  52 A2 50 A3 59 A6 4C A5 51 A9 4B A1 54 9D 56 A8
+Pixels 160-175:  58 AA 53 9E 4F A2 52 A7 51 AA 4F A8 52 A6 53 A7
+Pixels 176-191:  4E A5 51 AC 5A 9E 58 A6 52 A8 4C A2 52 A8 58 A0
+
+--------------------------------------------------------------------------------
+All bytes in sequence (space-separated hex):
+--------------------------------------------------------------------------------
+4E 9B 51 9B 4D A1 4F A5 4E 9B 52 9D 51 9C 54 A7 54 9F 52 A0 54 9F 4C AB 52 98 4F
+ 96 4E A1 4E A2 4D AC 53 A8 54 A1 53 A0 51 9F 4F A8 52 96 4F 9D 4B 9F 4C 99 53 A
+4 4E AA 4E AB 50 A0 51 A6 4F A2 52 A5 54 9C 50 A4 51 9E 58 A3 51 9B 53 A7 50 A4 
+54 9F 52 A0 54 9F 4C AB 52 98 4F 96 4E A1 4E A2 4D AC 53 A8 54 A1 53 A0 51 9F 4F
+ A8 52 96 4F 9D 4B 9F 4C 99 53 A4 4E AA 4E AB 50 A0 51 A6 4F A2 52 A5 54 9C 50 A
+4 51 9E 58 A3 51 9B 53 A7 50 A4 52 A2 50 A3 59 A6 4C A5 51 A9 4B A1 54 9D 56 A8 
+58 AA 53 9E 4F A2 52 A7 51 AA 4F A8 52 A6 53 A7 4E A5 51 AC 5A 9E 58 A6 52 A8 4C
+ A2 52 A8 58 A0
+
+================================================================================

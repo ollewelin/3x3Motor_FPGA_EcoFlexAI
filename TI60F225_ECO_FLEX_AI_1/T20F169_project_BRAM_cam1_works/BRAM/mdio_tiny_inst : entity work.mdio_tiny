@@ -1,0 +1,21 @@
+mdio_tiny_inst : entity work.mdio_tiny
+  generic map (
+    G_SYS_CLK_HZ => G_SYS_CLK_HZ,
+    G_MDC_HZ => G_MDC_HZ
+  )
+  port map (
+    sys_clk => sys_clk,
+    rst_n => rst_n,
+    start => start,
+    rw => rw,
+    phy_addr => phy_addr,
+    reg_addr => reg_addr,
+    wdata => wdata,
+    busy => busy,
+    done => done,
+    rdata => rdata,
+    mdc => mdc,
+    mdio_i => mdio_i,
+    mdio_o => mdio_o,
+    mdio_oe => mdio_oe
+  );
